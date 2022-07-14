@@ -9,7 +9,7 @@ const morgan = require('morgan');
 const axios = require('axios').default;
 const request = require('request');
 const { response } = require('express');
-const { search } = require('./scripts/prodRequest')
+const { search, getStores } = require('./scripts/prodRequest')
 
 
 // defining the Express app
@@ -32,10 +32,17 @@ app.use(cors());
 // adding morgan to log HTTP requests
 app.use(morgan('combined'));
 
-// defining an endpoint to return all ads
+
 app.get('/', async (req, res) => {
-  const ax = await search('walmart.com', 'bar+soap');
-  
+  const ax = await getStores('bar+soap');
+  console.log(ax)
+
+  res.json(ax)
+});
+
+app.get('/searchAllStores', async (req, res) => {
+  const ax = await getStores('bar+soap');
+  console.log('searched')
   res.json(ax)
 });
 

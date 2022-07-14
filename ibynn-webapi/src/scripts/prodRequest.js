@@ -5,7 +5,7 @@ const getSerpUrl = (storeUrl, query = 'iphone+12') => `https://serpapi.com/searc
 const searchStoreForProduct = async (storeUrl, query) => {
     try {
       const {data:response} = await axios.get(getSerpUrl(storeUrl, query));
-      
+
       return( 
         response.organic_results.filter(item => 
             item.rich_snippet?.top?.detected_extensions?.price
@@ -16,4 +16,25 @@ const searchStoreForProduct = async (storeUrl, query) => {
      }
 }
 
+const getProductAllStores = async (query) => {
+    const results = [];
+    const storeUrls = [
+        "walmart.com",
+        "amazon.com",
+        "target.com"
+    ];
+
+    for await (const url of storeUrls) {
+        const result = await searchStoreForProduct(url)
+        results.push(...result)
+        
+    }
+
+    console.log(results)
+
+    return results;
+
+}
+
  exports.search = searchStoreForProduct;
+ exports.getStores = getProductAllStores;
