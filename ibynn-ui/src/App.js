@@ -6,7 +6,7 @@ import Index from './Pages';
 function App() {
   return (
     <>
-      <Index />
+      <Index  />
     </>
   );
 }
