@@ -11,7 +11,6 @@ const PaymentPage: React.FC = () => {
         <div className="lg:w-[35%] w-full"></div>
         <div className="lg:w-[65%] w-full">
           <div className="p-4 md:px-12 md:py-10 border border-solid border-border-base rounded">
-            <h1>hello</h1>
             <h2 className="font-semibold text-xl text-brand-dark mb-4">
               {t('text-delivery-payment')}
             </h2>
