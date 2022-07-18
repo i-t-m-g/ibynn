@@ -113,13 +113,13 @@ module.exports = _interopRequireDefault;
 
 // https://github.com/zloirock/core-js/issues/86#issuecomment-115759028
 module.exports =
-  // eslint-disable-next-line es/no-global-this -- safe
+  // /-disable-next-line es/no-global-this -- safe
   check(typeof globalThis == 'object' && globalThis) ||
   check(typeof window == 'object' && window) ||
-  // eslint-disable-next-line no-restricted-globals -- safe
+  // /-disable-next-line no-restricted-globals -- safe
   check(typeof self == 'object' && self) ||
   check(typeof global == 'object' && global) ||
-  // eslint-disable-next-line no-new-func -- fallback
+  // /-disable-next-line no-new-func -- fallback
   (function () { return this; })() || Function('return this')();
 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(47)))
@@ -404,7 +404,7 @@ var fails = __webpack_require__(5);
 
 // Detect IE8's incomplete defineProperty implementation
 module.exports = !fails(function () {
-  // eslint-disable-next-line es/no-object-defineproperty -- required for testing
+  // /-disable-next-line es/no-object-defineproperty -- required for testing
   return Object.defineProperty({}, 1, { get: function () { return 7; } })[1] != 7;
 });
 
@@ -436,7 +436,7 @@ var anObject = __webpack_require__(17);
 var toPropertyKey = __webpack_require__(82);
 
 var TypeError = global.TypeError;
-// eslint-disable-next-line es/no-object-defineproperty -- safe
+// /-disable-next-line es/no-object-defineproperty -- safe
 var $defineProperty = Object.defineProperty;
 
 // `Object.defineProperty` method
@@ -573,7 +573,7 @@ module.exports = isObjectLike;
 
 /* globals window, document, navigator, WEBFLOW_ENV_TEST */
 
-/* eslint-disable no-var */
+/* /-disable no-var */
 
 /**
  * Webflow: Core site library
@@ -1605,7 +1605,7 @@ var floor = Math.floor;
 // https://tc39.es/ecma262/#sec-tointegerorinfinity
 module.exports = function (argument) {
   var number = +argument;
-  // eslint-disable-next-line no-self-compare -- safe
+  // /-disable-next-line no-self-compare -- safe
   return number !== number || number === 0 ? 0 : (number > 0 ? floor : ceil)(number);
 };
 
@@ -1868,7 +1868,7 @@ var findClosestElementByClassName = function findClosestElementByClassName(class
 exports.findClosestElementByClassName = findClosestElementByClassName;
 
 var triggerRender = function triggerRender( // FIXME: weak type is used
-// eslint-disable-next-line flowtype/no-weak-types
+// /-disable-next-line flowtype/no-weak-types
 error) {
   var isInitial = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
   var renderEvent = new CustomEvent(_constants.RENDER_TREE_EVENT, {
@@ -2192,7 +2192,7 @@ var fails = __webpack_require__(5);
 module.exports = function (METHOD_NAME, argument) {
   var method = [][METHOD_NAME];
   return !!method && fails(function () {
-    // eslint-disable-next-line no-useless-call,no-throw-literal -- required for testing
+    // /-disable-next-line no-useless-call,no-throw-literal -- required for testing
     method.call(null, argument || function () { throw 1; }, 1);
   });
 };
@@ -2420,7 +2420,7 @@ var classof = __webpack_require__(80);
 
 // `IsArray` abstract operation
 // https://tc39.es/ecma262/#sec-isarray
-// eslint-disable-next-line es/no-array-isarray -- safe
+// /-disable-next-line es/no-array-isarray -- safe
 module.exports = Array.isArray || function isArray(argument) {
   return classof(argument) == 'Array';
 };
@@ -7949,7 +7949,7 @@ var createEventProxy = function createEventProxy(event, currentTarget) {
 };
 
 var EventHandlerProxyWithApolloClient = // FIXME: weak type is used
-// eslint-disable-next-line flowtype/no-weak-types
+// /-disable-next-line flowtype/no-weak-types
 function EventHandlerProxyWithApolloClient(apolloClient, stripeStore) {
   var _this = this;
 
@@ -8244,7 +8244,7 @@ var split = uncurryThis(''.split);
 // fallback for non-array-like ES3 and non-enumerable old V8 strings
 module.exports = fails(function () {
   // throws an error in rhino, see https://github.com/mozilla/rhino/issues/346
-  // eslint-disable-next-line no-prototype-builtins -- safe
+  // /-disable-next-line no-prototype-builtins -- safe
   return !Object('z').propertyIsEnumerable(0);
 }) ? function (it) {
   return classof(it) == 'String' ? split(it, '') : Object(it);
@@ -8820,7 +8820,7 @@ var toPropertyKey = __webpack_require__(82);
 var hasOwn = __webpack_require__(15);
 var IE8_DOM_DEFINE = __webpack_require__(226);
 
-// eslint-disable-next-line es/no-object-getownpropertydescriptor -- safe
+// /-disable-next-line es/no-object-getownpropertydescriptor -- safe
 var $getOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
 
 // `Object.getOwnPropertyDescriptor` method
@@ -8912,7 +8912,7 @@ var hiddenKeys = enumBugKeys.concat('length', 'prototype');
 
 // `Object.getOwnPropertyNames` method
 // https://tc39.es/ecma262/#sec-object.getownpropertynames
-// eslint-disable-next-line es/no-object-getownpropertynames -- safe
+// /-disable-next-line es/no-object-getownpropertynames -- safe
 exports.f = Object.getOwnPropertyNames || function getOwnPropertyNames(O) {
   return internalObjectKeys(O, hiddenKeys);
 };
@@ -9590,7 +9590,7 @@ var timm = {
   replaceAt: replaceAt,
 
   getIn: getIn,
-  // eslint-disable-next-line object-shorthand
+  // /-disable-next-line object-shorthand
   set: set, // so that flow doesn't complain
   setIn: setIn,
   update: update,
@@ -10411,7 +10411,7 @@ function () {
         this.store.elementInstances[index] = {};
       }
     } // FIXME: weak type is used
-    // eslint-disable-next-line flowtype/no-weak-types
+    // /-disable-next-line flowtype/no-weak-types
 
   }, {
     key: "createElement",
@@ -10428,7 +10428,7 @@ function () {
       this.store.elementInstances[index][type] = el;
       return el;
     } // FIXME: weak type is used
-    // eslint-disable-next-line flowtype/no-weak-types
+    // /-disable-next-line flowtype/no-weak-types
 
   }, {
     key: "updateCartPaymentRequest",
@@ -10483,7 +10483,7 @@ function () {
 exports.StripeStore = StripeStore;
 
 var generateDisplayItemsFromOrder = function generateDisplayItemsFromOrder( // FIXME: weak type is used
-// eslint-disable-next-line flowtype/no-weak-types
+// /-disable-next-line flowtype/no-weak-types
 orderData, showExtraItems) {
   return [].concat((0, _toConsumableArray2["default"])(orderData.userItems.map(function (item) {
     return {
@@ -11125,7 +11125,7 @@ var apply = FunctionPrototype.apply;
 var bind = FunctionPrototype.bind;
 var call = FunctionPrototype.call;
 
-// eslint-disable-next-line es/no-reflect -- safe
+// /-disable-next-line es/no-reflect -- safe
 module.exports = typeof Reflect == 'object' && Reflect.apply || (bind ? call.bind(apply) : function () {
   return call.apply(apply, arguments);
 });
@@ -11391,7 +11391,7 @@ var BREAK = exports.BREAK = {};
 function visit(root, visitor) {
   var visitorKeys = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : QueryDocumentKeys;
 
-  /* eslint-disable no-undef-init */
+  /* /-disable no-undef-init */
   var stack = undefined;
   var inArray = Array.isArray(root);
   var keys = [root];
@@ -11403,7 +11403,7 @@ function visit(root, visitor) {
   var path = [];
   var ancestors = [];
   var newRoot = root;
-  /* eslint-enable no-undef-init */
+  /* /-enable no-undef-init */
 
   do {
     index++;
@@ -13774,7 +13774,7 @@ var initializeStripeElements = function initializeStripeElements(store) {
         focus: '-wfp-focus'
       }
     });
-    el.mount(element); // eslint-disable-next-line no-unused-vars
+    el.mount(element); // /-disable-next-line no-unused-vars
 
     var styleMapObserver = new _StyleMapObserver["default"](element, {
       onChange: syncStylesToStripeElement(el)
@@ -13841,7 +13841,7 @@ var errorCodeToCheckoutErrorType = function errorCodeToCheckoutErrorType(code, m
     default:
       return 'info';
   }
-}; // eslint-disable-next-line flowtype/no-weak-types
+}; // /-disable-next-line flowtype/no-weak-types
 
 
 var getErrorType = function getErrorType(error) {
@@ -13855,7 +13855,7 @@ var getErrorType = function getErrorType(error) {
 
   return 'info';
 }; // FIXME: weak type is used
-// eslint-disable-next-line flowtype/no-weak-types
+// /-disable-next-line flowtype/no-weak-types
 
 
 var updateErrorMessage = function updateErrorMessage(element, error) {
@@ -14188,7 +14188,7 @@ var createAttemptSubmitOrderRequest = function createAttemptSubmitOrderRequest(a
     variables: variables
   });
 }; // FIXME: weak type is used
-// eslint-disable-next-line flowtype/no-weak-types
+// /-disable-next-line flowtype/no-weak-types
 
 
 exports.createAttemptSubmitOrderRequest = createAttemptSubmitOrderRequest;
@@ -14206,7 +14206,7 @@ var orderRequiresAdditionalAction = function orderRequiresAdditionalAction(statu
 exports.orderRequiresAdditionalAction = orderRequiresAdditionalAction;
 
 var redirectToOrderConfirmation = function redirectToOrderConfirmation( // FIXME: weak type is used
-// eslint-disable-next-line flowtype/no-weak-types
+// /-disable-next-line flowtype/no-weak-types
 order) {
   var isPayPal = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
   var redirectUrl = "/order-confirmation?orderId=".concat(order.orderId, "&token=").concat(order.token);
@@ -14241,7 +14241,7 @@ exports.applyDiscount = applyDiscount;
 "use strict";
 
 var $propertyIsEnumerable = {}.propertyIsEnumerable;
-// eslint-disable-next-line es/no-object-getownpropertydescriptor -- safe
+// /-disable-next-line es/no-object-getownpropertydescriptor -- safe
 var getOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
 
 // Nashorn ~ JDK8 bug
@@ -14259,11 +14259,11 @@ exports.f = NASHORN_BUG ? function propertyIsEnumerable(V) {
 /* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* eslint-disable es/no-symbol -- required for testing */
+/* /-disable es/no-symbol -- required for testing */
 var V8_VERSION = __webpack_require__(48);
 var fails = __webpack_require__(5);
 
-// eslint-disable-next-line es/no-object-getownpropertysymbols -- required for testing
+// /-disable-next-line es/no-object-getownpropertysymbols -- required for testing
 module.exports = !!Object.getOwnPropertySymbols && !fails(function () {
   var symbol = Symbol();
   // Chrome 38 Symbol has incorrect toString conversion
@@ -14296,7 +14296,7 @@ var store = __webpack_require__(108);
 
 var global = __webpack_require__(1);
 
-// eslint-disable-next-line es/no-object-defineproperty -- safe
+// /-disable-next-line es/no-object-defineproperty -- safe
 var defineProperty = Object.defineProperty;
 
 module.exports = function (key, value) {
@@ -14324,10 +14324,10 @@ var createMethod = function (IS_INCLUDES) {
     var index = toAbsoluteIndex(fromIndex, length);
     var value;
     // Array#includes uses SameValueZero equality algorithm
-    // eslint-disable-next-line no-self-compare -- NaN check
+    // /-disable-next-line no-self-compare -- NaN check
     if (IS_INCLUDES && el != el) while (length > index) {
       value = O[index++];
-      // eslint-disable-next-line no-self-compare -- NaN check
+      // /-disable-next-line no-self-compare -- NaN check
       if (value != value) return true;
     // Array#indexOf ignores holes, Array#includes - not
     } else for (;length > index; index++) {
@@ -14371,7 +14371,7 @@ var enumBugKeys = __webpack_require__(153);
 
 // `Object.keys` method
 // https://tc39.es/ecma262/#sec-object.keys
-// eslint-disable-next-line es/no-object-keys -- safe
+// /-disable-next-line es/no-object-keys -- safe
 module.exports = Object.keys || function keys(O) {
   return internalObjectKeys(O, enumBugKeys);
 };
@@ -14693,7 +14693,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.TRANSFORM_STYLE_PREFIXED = exports.TRANSFORM_PREFIXED = exports.FLEX_PREFIXED = exports.ELEMENT_MATCHES = exports.withBrowser = exports.IS_BROWSER_ENV = void 0;
 
 var _find = _interopRequireDefault(__webpack_require__(158));
-/* eslint-env browser */
+/* /-env browser */
 
 
 var IS_BROWSER_ENV = typeof window !== 'undefined'; // $FlowFixMe
@@ -15922,7 +15922,7 @@ module.exports = CORRECT_PROTOTYPE_GETTER ? Object.getPrototypeOf : function (O)
 /* 184 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* eslint-disable no-proto -- safe */
+/* /-disable no-proto -- safe */
 var uncurryThis = __webpack_require__(3);
 var anObject = __webpack_require__(17);
 var aPossiblePrototype = __webpack_require__(543);
@@ -15930,13 +15930,13 @@ var aPossiblePrototype = __webpack_require__(543);
 // `Object.setPrototypeOf` method
 // https://tc39.es/ecma262/#sec-object.setprototypeof
 // Works with __proto__ only. Old v8 can't work with null proto objects.
-// eslint-disable-next-line es/no-object-setprototypeof -- safe
+// /-disable-next-line es/no-object-setprototypeof -- safe
 module.exports = Object.setPrototypeOf || ('__proto__' in {} ? function () {
   var CORRECT_SETTER = false;
   var test = {};
   var setter;
   try {
-    // eslint-disable-next-line es/no-object-getownpropertydescriptor -- safe
+    // /-disable-next-line es/no-object-getownpropertydescriptor -- safe
     setter = uncurryThis(Object.getOwnPropertyDescriptor(Object.prototype, '__proto__').set);
     setter(test, []);
     CORRECT_SETTER = test instanceof Array;
@@ -15973,7 +15973,7 @@ try {
   iteratorWithReturn[ITERATOR] = function () {
     return this;
   };
-  // eslint-disable-next-line es/no-array-from, no-throw-literal -- required for testing
+  // /-disable-next-line es/no-array-from, no-throw-literal -- required for testing
   Array.from(iteratorWithReturn, function () { throw 2; });
 } catch (error) { /* empty */ }
 
@@ -16010,7 +16010,7 @@ var STRICT_METHOD = arrayMethodIsStrict('forEach');
 // https://tc39.es/ecma262/#sec-array.prototype.foreach
 module.exports = !STRICT_METHOD ? function forEach(callbackfn /* , thisArg */) {
   return $forEach(this, callbackfn, arguments.length > 1 ? arguments[1] : undefined);
-// eslint-disable-next-line es/no-array-prototype-foreach -- safe
+// /-disable-next-line es/no-array-prototype-foreach -- safe
 } : [].forEach;
 
 
@@ -20149,7 +20149,7 @@ var _location = __webpack_require__(344);
  *  strict
  */
 
-function GraphQLError( // eslint-disable-line no-redeclare
+function GraphQLError( // /-disable-line no-redeclare
 message, nodes, source, positions, path, originalError, extensions) {
   // Compute list of blame nodes.
   var _nodes = Array.isArray(nodes) ? nodes.length !== 0 ? nodes : undefined : nodes ? [nodes] : undefined;
@@ -20717,7 +20717,7 @@ var arrayToObject = function arrayToObject(source, options) {
 };
 
 var merge = function merge(target, source, options) {
-    /* eslint no-param-reassign: 0 */
+    /* / no-param-reassign: 0 */
     if (!source) {
         return target;
     }
@@ -20929,9 +20929,9 @@ module.exports = {
 "use strict";
  // @wf-will-never-add-flow-to-this-file
 
-/* eslint-disable eslint-comments/no-unlimited-disable */
+/* /-disable /-comments/no-unlimited-disable */
 
-/* eslint-disable */
+/* /-disable */
 
 /*!
  * tram.js v0.8.2-global
@@ -21819,8 +21819,8 @@ window.tram = function (a) {
 
 /* globals window, document */
 
-/* eslint-disable no-var */
-// eslint-disable-next-line strict
+/* /-disable no-var */
+// /-disable-next-line strict
 
 
 var IXEvents = __webpack_require__(373);
@@ -21917,7 +21917,7 @@ module.exports = function (input, pref) {
 /* 225 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* eslint-disable es/no-symbol -- required for testing */
+/* /-disable es/no-symbol -- required for testing */
 var NATIVE_SYMBOL = __webpack_require__(149);
 
 module.exports = NATIVE_SYMBOL
@@ -21935,7 +21935,7 @@ var createElement = __webpack_require__(110);
 
 // Thank's IE8 for his funny defineProperty
 module.exports = !DESCRIPTORS && !fails(function () {
-  // eslint-disable-next-line es/no-object-defineproperty -- requied for testing
+  // /-disable-next-line es/no-object-defineproperty -- requied for testing
   return Object.defineProperty(createElement('div'), 'a', {
     get: function () { return 7; }
   }).a != 7;
@@ -21950,7 +21950,7 @@ var DESCRIPTORS = __webpack_require__(14);
 var hasOwn = __webpack_require__(15);
 
 var FunctionPrototype = Function.prototype;
-// eslint-disable-next-line es/no-object-getownpropertydescriptor -- safe
+// /-disable-next-line es/no-object-getownpropertydescriptor -- safe
 var getDescriptor = DESCRIPTORS && Object.getOwnPropertyDescriptor;
 
 var EXISTS = hasOwn(FunctionPrototype, 'name');
@@ -22015,7 +22015,7 @@ module.exports = function (object, names) {
 /* 230 */
 /***/ (function(module, exports) {
 
-// eslint-disable-next-line es/no-object-getownpropertysymbols -- safe
+// /-disable-next-line es/no-object-getownpropertysymbols -- safe
 exports.f = Object.getOwnPropertySymbols;
 
 
@@ -22031,7 +22031,7 @@ var objectKeys = __webpack_require__(154);
 
 // `Object.defineProperties` method
 // https://tc39.es/ecma262/#sec-object.defineproperties
-// eslint-disable-next-line es/no-object-defineproperties -- safe
+// /-disable-next-line es/no-object-defineproperties -- safe
 module.exports = DESCRIPTORS ? Object.defineProperties : function defineProperties(O, Properties) {
   anObject(O);
   var props = toIndexedObject(Properties);
@@ -22362,19 +22362,19 @@ __webpack_require__.r(__webpack_exports__);
  * @returns {void}
  */
 function warning(message) {
-  /* eslint-disable no-console */
+  /* /-disable no-console */
   if (typeof console !== 'undefined' && typeof console.error === 'function') {
     console.error(message);
   }
-  /* eslint-enable no-console */
+  /* /-enable no-console */
   try {
     // This error was thrown as a convenience so that if you enable
     // "break on all exceptions" in your console,
     // it would pause the execution at this line.
     throw new Error(message);
-    /* eslint-disable no-empty */
+    /* /-disable no-empty */
   } catch (e) {}
-  /* eslint-enable no-empty */
+  /* /-enable no-empty */
 }
 
 /***/ }),
@@ -23636,7 +23636,7 @@ var _IX2LottieUtils = __webpack_require__(467);
 
 var _constants = __webpack_require__(25);
 
-var _IX2BrowserSupport = __webpack_require__(157); // eslint-disable-next-line webflow/module-top-level-imports, webflow/packages-must-be-defined
+var _IX2BrowserSupport = __webpack_require__(157); // /-disable-next-line webflow/module-top-level-imports, webflow/packages-must-be-defined
 
 
 var pluginMethodMap = (0, _defineProperty2["default"])({}, _constants.ActionTypeConsts.PLUGIN_LOTTIE, {
@@ -23832,7 +23832,7 @@ var _IX2EngineActions = __webpack_require__(175);
 var elementApi = _interopRequireWildcard(__webpack_require__(494));
 
 var _IX2VanillaEvents = _interopRequireDefault(__webpack_require__(495));
-/* eslint-env browser */
+/* /-env browser */
 
 
 var QuickEffectsIdList = Object.keys(_constants.QuickEffectIds);
@@ -25471,7 +25471,7 @@ var FORCED = !IS_CONCAT_SPREADABLE_SUPPORT || !SPECIES_SUPPORT;
 // https://tc39.es/ecma262/#sec-array.prototype.concat
 // with adding support of @@isConcatSpreadable and @@species
 $({ target: 'Array', proto: true, forced: FORCED }, {
-  // eslint-disable-next-line no-unused-vars -- required for `.length`
+  // /-disable-next-line no-unused-vars -- required for `.length`
   concat: function concat(arg) {
     var O = toObject(this);
     var A = arraySpeciesCreate(O, 0);
@@ -25527,7 +25527,7 @@ module.exports = function (originalArray) {
 /* 283 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* eslint-disable es/no-object-getownpropertynames -- safe */
+/* /-disable es/no-object-getownpropertynames -- safe */
 var classof = __webpack_require__(80);
 var toIndexedObject = __webpack_require__(26);
 var $getOwnPropertyNames = __webpack_require__(84).f;
@@ -25719,7 +25719,7 @@ var BUGGY_SAFARI_ITERATORS = false;
 // https://tc39.es/ecma262/#sec-%iteratorprototype%-object
 var IteratorPrototype, PrototypeOfArrayIteratorPrototype, arrayIterator;
 
-/* eslint-disable es/no-array-prototype-keys -- safe */
+/* /-disable es/no-array-prototype-keys -- safe */
 if ([].keys) {
   arrayIterator = [].keys();
   // Safari 8 has buggy iterators w/o `next`
@@ -25936,7 +25936,7 @@ var REQUIRED = false;
 var METADATA = uid('meta');
 var id = 0;
 
-// eslint-disable-next-line es/no-object-isextensible -- safe
+// /-disable-next-line es/no-object-isextensible -- safe
 var isExtensible = Object.isExtensible || function () {
   return true;
 };
@@ -26337,7 +26337,7 @@ var floor = Math.floor;
 
 // `IsIntegralNumber` abstract operation
 // https://tc39.es/ecma262/#sec-isintegralnumber
-// eslint-disable-next-line es/no-number-isinteger -- safe
+// /-disable-next-line es/no-number-isinteger -- safe
 module.exports = Number.isInteger || function isInteger(it) {
   return !isObject(it) && isFinite(it) && floor(it) === it;
 };
@@ -29156,7 +29156,7 @@ if (false) { var proxy; } // Combinators
 
 var identity = function identity(x) {
   return x;
-}; // eslint-disable-next-line no-unused-vars
+}; // /-disable-next-line no-unused-vars
 
 
 exports.identity = identity;
@@ -29325,7 +29325,7 @@ var notNil = complement(isNil);
  * @return {Boolean}
  */
 // FIXME: weak type is used
-// eslint-disable-next-line flowtype/no-weak-types
+// /-disable-next-line flowtype/no-weak-types
 
 exports.notNil = notNil;
 
@@ -29343,7 +29343,7 @@ var either = function either(predicateA, predicateB) {
  * @return {Boolean}
  */
 // FIXME: weak type is used
-// eslint-disable-next-line flowtype/no-weak-types
+// /-disable-next-line flowtype/no-weak-types
 
 
 exports.either = either;
@@ -29395,7 +29395,7 @@ var assocReducer = function assocReducer(acc, key) {
 
 var assoc = function assoc(key) {
   var hasKey = has(key); // FIXME: weak type is used
-  // eslint-disable-next-line flowtype/no-weak-types
+  // /-disable-next-line flowtype/no-weak-types
 
   return function (value) {
     return function (object) {
@@ -30003,7 +30003,7 @@ exports.extractBool = extractBool;
 var extractArray = (0, _option.maybe)(emptyArray)(identity); // Get a function out of an Option, falling back to `identity`
 // in the case of None.
 // FIXME: weak type is used
-// eslint-disable-next-line flowtype/no-weak-types
+// /-disable-next-line flowtype/no-weak-types
 
 exports.extractArray = extractArray;
 var extractFunctionFromOption = (0, _option.maybe)(identity)(identity); // Get a function out of a Result, falling back to `identity`
@@ -31442,7 +31442,7 @@ var isCartOpen = function isCartOpen() {
   var cartContainerEl = (0, _commerceUtils.findElementByNodeType)(_constants.NODE_TYPE_COMMERCE_CART_CONTAINER_WRAPPER);
   if (!cartContainerEl) return false;
   return window.getComputedStyle(cartContainerEl).display !== 'none';
-}; // eslint-disable-next-line flowtype/no-weak-types
+}; // /-disable-next-line flowtype/no-weak-types
 
 
 exports.isCartOpen = isCartOpen;
@@ -31477,7 +31477,7 @@ var errorCodeToCartErrorType = function errorCodeToCartErrorType(code, msg) {
     default:
       return 'general';
   }
-}; // eslint-disable-next-line flowtype/no-weak-types
+}; // /-disable-next-line flowtype/no-weak-types
 
 
 var getErrorType = function getErrorType(error) {
@@ -31652,7 +31652,7 @@ module.exports = __webpack_require__(816);
 
 /* globals document, window, navigator */
 
-/* eslint-disable no-var */
+/* /-disable no-var */
 
 /**
  * Webflow: Brand pages on the subdomain
@@ -31744,7 +31744,7 @@ Webflow.define('brand', module.exports = function ($) {
 
 /* globals window */
 
-/* eslint-disable no-var */
+/* /-disable no-var */
 
 var $ = window.$;
 var tram = __webpack_require__(221) && $.tram;
@@ -31777,26 +31777,26 @@ module.exports = function () {
 
   var breaker = {}; // Save bytes in the minified (but not gzipped) version:
 
-  /* eslint-disable one-var */
+  /* /-disable one-var */
 
   var ArrayProto = Array.prototype,
       ObjProto = Object.prototype,
       FuncProto = Function.prototype;
-  /* eslint-enable one-var */
+  /* /-enable one-var */
   // Create quick reference variables for speed access to core prototypes.
 
-  /* eslint-disable one-var, no-unused-vars */
+  /* /-disable one-var, no-unused-vars */
 
   var push = ArrayProto.push,
       slice = ArrayProto.slice,
       concat = ArrayProto.concat,
       toString = ObjProto.toString,
       hasOwnProperty = ObjProto.hasOwnProperty;
-  /* eslint-enable one-var, no-unused-vars */
+  /* /-enable one-var, no-unused-vars */
   // All **ECMAScript 5** native function implementations that we hope to use
   // are declared here.
 
-  /* eslint-disable one-var, no-unused-vars */
+  /* /-disable one-var, no-unused-vars */
 
   var nativeForEach = ArrayProto.forEach,
       nativeMap = ArrayProto.map,
@@ -31810,7 +31810,7 @@ module.exports = function () {
       nativeIsArray = Array.isArray,
       nativeKeys = Object.keys,
       nativeBind = FuncProto.bind;
-  /* eslint-enable one-var, no-unused-vars */
+  /* /-enable one-var, no-unused-vars */
   // Collection Functions
   // --------------------
   // The cornerstone, an `each` implementation, aka `forEach`.
@@ -31822,13 +31822,13 @@ module.exports = function () {
     if (obj == null) return obj;
 
     if (nativeForEach && obj.forEach === nativeForEach) {
-      obj.forEach(iterator, context); // eslint-disable-next-line no-implicit-coercion
+      obj.forEach(iterator, context); // /-disable-next-line no-implicit-coercion
     } else if (obj.length === +obj.length) {
       for (var i = 0, length = obj.length; i < length; i++) {
         if (iterator.call(context, obj[i], i, obj) === breaker) return;
       }
     } else {
-      var keys = _.keys(obj); // eslint-disable-next-line no-redeclare
+      var keys = _.keys(obj); // /-disable-next-line no-redeclare
 
 
       for (var i = 0, length = keys.length; i < length; i++) {
@@ -31887,14 +31887,14 @@ module.exports = function () {
     each(obj, function (value, index, list) {
       if (result || (result = predicate.call(context, value, index, list))) return breaker;
     });
-    return !!result; // eslint-disable-line no-implicit-coercion
+    return !!result; // /-disable-line no-implicit-coercion
   }; // Determine if the array or object contains a given value (using `===`).
   // Aliased as `include`.
 
 
   _.contains = _.include = function (obj, target) {
     if (obj == null) return false;
-    if (nativeIndexOf && obj.indexOf === nativeIndexOf) // eslint-disable-next-line eqeqeq
+    if (nativeIndexOf && obj.indexOf === nativeIndexOf) // /-disable-next-line eqeqeq
       return obj.indexOf(target) != -1;
     return any(obj, function (value) {
       return value === target;
@@ -31921,7 +31921,7 @@ module.exports = function () {
 
 
   _.throttle = function (func) {
-    // eslint-disable-next-line one-var
+    // /-disable-next-line one-var
     var wait, args, context;
     return function () {
       if (wait) return;
@@ -31940,7 +31940,7 @@ module.exports = function () {
 
 
   _.debounce = function (func, wait, immediate) {
-    // eslint-disable-next-line one-var
+    // /-disable-next-line one-var
     var timeout, args, context, timestamp, result;
 
     var later = function later() {
@@ -31987,7 +31987,7 @@ module.exports = function () {
       var source = arguments[i];
 
       for (var prop in source) {
-        // eslint-disable-next-line no-void
+        // /-disable-next-line no-void
         if (obj[prop] === void 0) obj[prop] = source[prop];
       }
     }
@@ -32087,7 +32087,7 @@ module.exports = function () {
     source = "var __t,__p='',__j=Array.prototype.join," + "print=function(){__p+=__j.call(arguments,'');};\n" + source + 'return __p;\n';
 
     try {
-      // eslint-disable-next-line no-new-func
+      // /-disable-next-line no-new-func
       var render = new Function(settings.variable || 'obj', '_', source);
     } catch (e) {
       e.source = source;
@@ -32107,7 +32107,7 @@ module.exports = function () {
 
   return _;
 }();
-/* eslint-enable */
+/* /-enable */
 
 /***/ }),
 /* 370 */
@@ -32118,7 +32118,7 @@ module.exports = function () {
 
 /* globals window, document */
 
-/* eslint-disable no-var */
+/* /-disable no-var */
 
 /**
  * Webflow: focus-visible
@@ -32405,7 +32405,7 @@ Webflow.define('focus-visible', module.exports = function () {
 
 /* globals window, document */
 
-/* eslint-disable no-var */
+/* /-disable no-var */
 
 /**
  * Webflow: focus-within
@@ -32513,7 +32513,7 @@ Webflow.define('focus-within', module.exports = function () {
 
 /* globals document, MouseEvent */
 
-/* eslint-disable no-var */
+/* /-disable no-var */
 
 /**
  * Webflow: focus
@@ -32621,12 +32621,12 @@ Webflow.define('focus', module.exports = function () {
 
 /* globals window */
 
-/* eslint-disable no-var */
+/* /-disable no-var */
 
 /**
  * Webflow: IX Event triggers for other modules
  */
-// eslint-disable-next-line strict
+// /-disable-next-line strict
 
 
 var $ = window.jQuery;
@@ -32699,7 +32699,7 @@ module.exports = api;
 "use strict";
  // @wf-will-never-add-flow-to-this-file
 
-/* eslint-disable no-var */
+/* /-disable no-var */
 
 /**
  * Webflow: Interactions 2
@@ -35954,7 +35954,7 @@ actionItem) {
 }
 
 var valueUnitPairs = [[CONFIG_X_VALUE, CONFIG_X_UNIT], [CONFIG_Y_VALUE, CONFIG_Y_UNIT], [CONFIG_Z_VALUE, CONFIG_Z_UNIT], [CONFIG_VALUE, CONFIG_UNIT]]; // FIXME: weak type is used
-// eslint-disable-next-line flowtype/no-weak-types
+// /-disable-next-line flowtype/no-weak-types
 
 function pickUnits(actionItem) {
   var config = actionItem.config;
@@ -35983,7 +35983,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.clearPlugin = exports.renderPlugin = exports.createPluginInstance = exports.getPluginDestination = exports.getPluginOrigin = exports.getPluginDuration = exports.getPluginConfig = void 0;
-/* eslint-env browser */
+/* /-env browser */
 // $FlowFixMe
 
 var getPluginConfig = function getPluginConfig(actionItemConfig) {
@@ -36125,7 +36125,7 @@ var _IX2EasingUtils = __webpack_require__(263);
 var _IX2VanillaPlugins = __webpack_require__(265);
 
 var _IX2BrowserSupport = __webpack_require__(157);
-/* eslint-env browser */
+/* /-env browser */
 
 
 var _constants$IX2EngineC = _constants.IX2EngineConstants,
@@ -37595,7 +37595,7 @@ exports["default"] = void 0; // from https://github.com/acdlite/recompose/blob/m
  * @typechecks
  */
 
-/* eslint-disable no-self-compare */
+/* /-disable no-self-compare */
 
 var hasOwnProperty = Object.prototype.hasOwnProperty;
 /**
@@ -37668,7 +37668,7 @@ var _constants = __webpack_require__(25);
 var _shared = __webpack_require__(67);
 
 var _timm = __webpack_require__(86);
-/* eslint-env browser */
+/* /-env browser */
 
 
 var _constants$IX2EngineA = _constants.IX2EngineActionTypes,
@@ -38769,7 +38769,7 @@ exports.getClosestElement = void 0;
 var _shared = __webpack_require__(67);
 
 var _constants = __webpack_require__(25);
-/* eslint-env browser */
+/* /-env browser */
 
 
 var ELEMENT_MATCHES = _shared.IX2BrowserSupport.ELEMENT_MATCHES;
@@ -38970,7 +38970,7 @@ var _IX2VanillaEngine = __webpack_require__(269);
 var _IX2EngineActions = __webpack_require__(175);
 
 var _shared = __webpack_require__(67);
-/* eslint-env browser */
+/* /-env browser */
 
 
 var _constants$EventTypeC = _constants.EventTypeConsts,
@@ -40322,7 +40322,7 @@ module.exports = baseClamp;
 
 /* globals window, document */
 
-/* eslint-disable no-var */
+/* /-disable no-var */
 
 /**
  * Webflow: Auto-select links to current page or section
@@ -40452,7 +40452,7 @@ Webflow.define('links', module.exports = function ($, _) {
 
 /* globals window, document */
 
-/* eslint-disable no-var */
+/* /-disable no-var */
 
 /**
  * Webflow: Smooth scroll
@@ -40707,7 +40707,7 @@ Webflow.define('scroll', module.exports = function ($) {
 
 /* globals document, window */
 
-/* eslint-disable no-var */
+/* /-disable no-var */
 
 /**
  * Webflow: Touch events
@@ -41425,7 +41425,7 @@ if ($stringify) {
   });
 
   $({ target: 'JSON', stat: true, forced: FORCED_JSON_STRINGIFY }, {
-    // eslint-disable-next-line no-unused-vars -- required for `.length`
+    // /-disable-next-line no-unused-vars -- required for `.length`
     stringify: function stringify(it, replacer, space) {
       var args = arraySlice(arguments);
       var $replacer = replacer;
@@ -41444,7 +41444,7 @@ if ($stringify) {
 // https://tc39.es/ecma262/#sec-symbol.prototype-@@toprimitive
 if (!SymbolPrototype[TO_PRIMITIVE]) {
   var valueOf = SymbolPrototype.valueOf;
-  // eslint-disable-next-line no-unused-vars -- required for .length
+  // /-disable-next-line no-unused-vars -- required for .length
   redefine(SymbolPrototype, TO_PRIMITIVE, function (hint) {
     // TODO: improve hint logic
     return call(valueOf, this);
@@ -41757,7 +41757,7 @@ var fails = __webpack_require__(5);
 module.exports = !fails(function () {
   function F() { /* empty */ }
   F.prototype.constructor = null;
-  // eslint-disable-next-line es/no-object-getprototypeof -- required for testing
+  // /-disable-next-line es/no-object-getprototypeof -- required for testing
   return Object.getPrototypeOf(new F()) !== F.prototype;
 });
 
@@ -41938,7 +41938,7 @@ var from = __webpack_require__(555);
 var checkCorrectnessOfIteration = __webpack_require__(185);
 
 var INCORRECT_ITERATION = !checkCorrectnessOfIteration(function (iterable) {
-  // eslint-disable-next-line es/no-array-from -- required for testing
+  // /-disable-next-line es/no-array-from -- required for testing
   Array.from(iterable);
 });
 
@@ -42100,7 +42100,7 @@ var min = Math.min;
 
 // `Array.prototype.copyWithin` method implementation
 // https://tc39.es/ecma262/#sec-array.prototype.copywithin
-// eslint-disable-next-line es/no-array-prototype-copywithin -- safe
+// /-disable-next-line es/no-array-prototype-copywithin -- safe
 module.exports = [].copyWithin || function copyWithin(target /* = 0 */, start /* = 0, end = @length */) {
   var O = toObject(this);
   var len = lengthOfArrayLike(O);
@@ -42330,7 +42330,7 @@ var forEach = __webpack_require__(186);
 
 // `Array.prototype.forEach` method
 // https://tc39.es/ecma262/#sec-array.prototype.foreach
-// eslint-disable-next-line es/no-array-prototype-foreach -- safe
+// /-disable-next-line es/no-array-prototype-foreach -- safe
 $({ target: 'Array', proto: true, forced: [].forEach != forEach }, {
   forEach: forEach
 });
@@ -42342,7 +42342,7 @@ $({ target: 'Array', proto: true, forced: [].forEach != forEach }, {
 
 "use strict";
 
-/* eslint-disable es/no-array-prototype-indexof -- required for testing */
+/* /-disable es/no-array-prototype-indexof -- required for testing */
 var $ = __webpack_require__(2);
 var uncurryThis = __webpack_require__(3);
 var $IndexOf = __webpack_require__(152).indexOf;
@@ -42401,7 +42401,7 @@ var lastIndexOf = __webpack_require__(573);
 
 // `Array.prototype.lastIndexOf` method
 // https://tc39.es/ecma262/#sec-array.prototype.lastindexof
-// eslint-disable-next-line es/no-array-prototype-lastindexof -- required for testing
+// /-disable-next-line es/no-array-prototype-lastindexof -- required for testing
 $({ target: 'Array', proto: true, forced: lastIndexOf !== [].lastIndexOf }, {
   lastIndexOf: lastIndexOf
 });
@@ -42413,7 +42413,7 @@ $({ target: 'Array', proto: true, forced: lastIndexOf !== [].lastIndexOf }, {
 
 "use strict";
 
-/* eslint-disable es/no-array-prototype-lastindexof -- safe */
+/* /-disable es/no-array-prototype-lastindexof -- safe */
 var apply = __webpack_require__(129);
 var toIndexedObject = __webpack_require__(26);
 var toIntegerOrInfinity = __webpack_require__(31);
@@ -42535,7 +42535,7 @@ var test = [1, 2];
 // https://bugs.webkit.org/show_bug.cgi?id=188794
 $({ target: 'Array', proto: true, forced: String(test) === String(test.reverse()) }, {
   reverse: function reverse() {
-    // eslint-disable-next-line no-self-assign -- dirty hack
+    // /-disable-next-line no-self-assign -- dirty hack
     if (isArray(this)) this.length = this.length;
     return un$Reverse(this);
   }
@@ -43087,7 +43087,7 @@ module.exports = function (CONSTRUCTOR_NAME, wrapper, common) {
     // V8 ~ Chromium 40- weak-collections throws on primitives, but should return false
     var THROWS_ON_PRIMITIVES = fails(function () { instance.has(1); });
     // most early implementations doesn't supports iterables, most modern - not close it correctly
-    // eslint-disable-next-line no-new -- required for testing
+    // /-disable-next-line no-new -- required for testing
     var ACCEPT_ITERABLES = checkCorrectnessOfIteration(function (iterable) { new NativeConstructor(iterable); });
     // for early implementations -0 and +0 not the same
     var BUGGY_ZERO = !IS_WEAK && fails(function () {
@@ -43139,7 +43139,7 @@ module.exports = function (CONSTRUCTOR_NAME, wrapper, common) {
 var fails = __webpack_require__(5);
 
 module.exports = !fails(function () {
-  // eslint-disable-next-line es/no-object-isextensible, es/no-object-preventextensions -- required for testing
+  // /-disable-next-line es/no-object-isextensible, es/no-object-preventextensions -- required for testing
   return Object.isExtensible(Object.preventExtensions({}));
 });
 
@@ -43609,7 +43609,7 @@ if (FORCED) {
     }
   };
   PromisePrototype = PromiseConstructor.prototype;
-  // eslint-disable-next-line no-unused-vars -- required for `.length`
+  // /-disable-next-line no-unused-vars -- required for `.length`
   Internal = function Promise(executor) {
     setInternalState(this, {
       type: PROMISE,
@@ -44068,7 +44068,7 @@ if (PassedAsyncIteratorPrototype) {
   AsyncIteratorPrototype = AsyncIterator.prototype;
 } else if (shared[USE_FUNCTION_CONSTRUCTOR] || global[USE_FUNCTION_CONSTRUCTOR]) {
   try {
-    // eslint-disable-next-line no-new-func -- we have no alternatives without usage of modern syntax
+    // /-disable-next-line no-new-func -- we have no alternatives without usage of modern syntax
     prototype = getPrototypeOf(getPrototypeOf(getPrototypeOf(Function('return async function*(){}()')())));
     if (getPrototypeOf(prototype) === Object.prototype) AsyncIteratorPrototype = prototype;
   } catch (error) { /* empty */ }
@@ -44377,7 +44377,7 @@ module.exports = function (Constructor, list) {
 var $ = __webpack_require__(2);
 var isArray = __webpack_require__(43);
 
-// eslint-disable-next-line es/no-object-isfrozen -- safe
+// /-disable-next-line es/no-object-isfrozen -- safe
 var isFrozen = Object.isFrozen;
 
 var isFrozenStringArray = function (array, allowUndefined) {
@@ -44877,7 +44877,7 @@ var globalIsFinite = global.isFinite;
 
 // `Number.isFinite` method
 // https://tc39.es/ecma262/#sec-number.isfinite
-// eslint-disable-next-line es/no-number-isfinite -- safe
+// /-disable-next-line es/no-number-isfinite -- safe
 module.exports = Number.isFinite || function isFinite(it) {
   return typeof it == 'number' && globalIsFinite(it);
 };
@@ -44907,7 +44907,7 @@ var $ = __webpack_require__(2);
 // https://tc39.es/ecma262/#sec-number.isnan
 $({ target: 'Number', stat: true }, {
   isNaN: function isNaN(number) {
-    // eslint-disable-next-line no-self-compare -- NaN check
+    // /-disable-next-line no-self-compare -- NaN check
     return number != number;
   }
 });
@@ -44966,7 +44966,7 @@ var parseFloat = __webpack_require__(650);
 
 // `Number.parseFloat` method
 // https://tc39.es/ecma262/#sec-number.parseFloat
-// eslint-disable-next-line es/no-number-parsefloat -- required for testing
+// /-disable-next-line es/no-number-parsefloat -- required for testing
 $({ target: 'Number', stat: true, forced: Number.parseFloat != parseFloat }, {
   parseFloat: parseFloat
 });
@@ -45009,7 +45009,7 @@ var parseInt = __webpack_require__(304);
 
 // `Number.parseInt` method
 // https://tc39.es/ecma262/#sec-number.parseint
-// eslint-disable-next-line es/no-number-parseint -- required for testing
+// /-disable-next-line es/no-number-parseint -- required for testing
 $({ target: 'Number', stat: true, forced: Number.parseInt != parseInt }, {
   parseInt: parseInt
 });
@@ -45106,7 +45106,7 @@ $({ target: 'Number', proto: true, forced: FORCED }, {
     var e, z, j, k;
 
     if (fractDigits < 0 || fractDigits > 20) throw RangeError('Incorrect fraction digits');
-    // eslint-disable-next-line no-self-compare -- NaN check
+    // /-disable-next-line no-self-compare -- NaN check
     if (number != number) return 'NaN';
     if (number <= -1e21 || number >= 1e21) return String(number);
     if (number < 0) {
@@ -45300,7 +45300,7 @@ var $RangeIterator = createIteratorConstructor(function NumericRangeIterator(sta
   if (step === Infinity || step === -Infinity || (step === zero && start !== end)) {
     throw new RangeError(INCORRECT_RANGE);
   }
-  // eslint-disable-next-line no-self-compare -- NaN check
+  // /-disable-next-line no-self-compare -- NaN check
   var hitsEnd = start != start || end != end || step != step || (end > start) !== (step > zero);
   setInternalState(this, {
     type: NUMERIC_RANGE_ITERATOR,
@@ -54400,7 +54400,7 @@ var getAllVariants = _graphqlTag["default"](_templateObject2(), collectionsQuery
 var getAllVariantsAndMemberships = _graphqlTag["default"](_templateObject3(), collectionsQuery);
 
 var findCollectionItemWrapper = function findCollectionItemWrapper(node) {
-  var dynamoItemSelector = ".".concat(_constants4.CLASS_NAME_DYNAMIC_LIST_ITEM, ":not(.").concat(_constants4.CLASS_NAME_DYNAMIC_LIST_REPEATER_ITEM, ")"); // eslint-disable-next-line no-undef
+  var dynamoItemSelector = ".".concat(_constants4.CLASS_NAME_DYNAMIC_LIST_ITEM, ":not(.").concat(_constants4.CLASS_NAME_DYNAMIC_LIST_REPEATER_ITEM, ")"); // /-disable-next-line no-undef
 
   return $(node).closest(dynamoItemSelector)[0] || document.body;
 };
@@ -54570,7 +54570,7 @@ var queryAllReferenceRepeaters = function queryAllReferenceRepeaters(collectionI
 };
 
 var removeClass = function removeClass(element, className) {
-  element && // eslint-disable-next-line no-undef
+  element && // /-disable-next-line no-undef
   element.classList instanceof DOMTokenList && element.classList.remove(className);
 
   if (element.classList.length === 0) {
@@ -54583,7 +54583,7 @@ var showElement = function showElement(element) {
 };
 
 var hideElement = function hideElement(element) {
-  return element && // eslint-disable-next-line no-undef
+  return element && // /-disable-next-line no-undef
   element.classList instanceof DOMTokenList && element.classList.add('w-dyn-hide');
 };
 
@@ -54597,7 +54597,7 @@ var updateEmptyStateVisibility = function updateEmptyStateVisibility(node, fn1, 
     fn1(n);
     var itemsList = n.parentElement.querySelector('.w-dyn-items');
 
-    if (itemsList && itemsList.dataset && itemsList.dataset.wfCollection && itemsList.dataset.wfCollection === 'f_more_images_4dr' && // eslint-disable-next-line no-undef
+    if (itemsList && itemsList.dataset && itemsList.dataset.wfCollection && itemsList.dataset.wfCollection === 'f_more_images_4dr' && // /-disable-next-line no-undef
     itemsList.classList instanceof DOMTokenList && itemsList.parentElement.classList.contains(_constants4.CLASS_NAME_DYNAMIC_LIST_REPEATER_REF)) {
       return fn2(itemsList);
     }
@@ -58258,7 +58258,7 @@ var ConstType = function ConstType() {
 
 exports.ConstType = ConstType;
 var prototype = {
-  // map(f) { // eslint-disable-line no-unused-vars
+  // map(f) { // /-disable-line no-unused-vars
   map: function map() {
     return this;
   }
@@ -59346,7 +59346,7 @@ var castFieldValue = function castFieldValue(fieldValue, fieldType, timezone) {
             };
           }
 
-          var restOfRef = (0, _objectWithoutPropertiesLoose2["default"])(ref, ["id"]); // eslint-disable-line no-unused-vars
+          var restOfRef = (0, _objectWithoutPropertiesLoose2["default"])(ref, ["id"]); // /-disable-line no-unused-vars
 
           return (0, _extends2["default"])({}, restOfRef, {
             _id: getId(ref)
@@ -59432,10 +59432,10 @@ var EXAMPLE_IMG_URL = 'https://d3e54v103j8qbb.cloudfront.net/img/image-placehold
 exports.EXAMPLE_IMG_URL = EXAMPLE_IMG_URL;
 var OPERATOR_FNS = {
   eq: function eq(a, b) {
-    return a == b; // eslint-disable-line eqeqeq
+    return a == b; // /-disable-line eqeqeq
   },
   ne: function ne(a, b) {
-    return a != b; // eslint-disable-line eqeqeq
+    return a != b; // /-disable-line eqeqeq
   },
   gt: function gt(a, b) {
     return a > b;
@@ -61299,7 +61299,7 @@ var False = {
  */
 
 var is = function is(valueA, valueB) {
-  // eslint-disable-next-line no-self-compare
+  // /-disable-next-line no-self-compare
   if (valueA === valueB || valueA !== valueA && valueB !== valueB) {
     return true;
   }
@@ -61310,7 +61310,7 @@ var is = function is(valueA, valueB) {
 
   if (typeof valueA.valueOf === 'function' && typeof valueB.valueOf === 'function') {
     valueA = valueA.valueOf();
-    valueB = valueB.valueOf(); // eslint-disable-next-line no-self-compare
+    valueB = valueB.valueOf(); // /-disable-next-line no-self-compare
 
     if (valueA === valueB || valueA !== valueA && valueB !== valueB) {
       return true;
@@ -61382,7 +61382,7 @@ var isEqual = function isEqual(a, b) {
   }
 
   return Object.keys(a).length === Object.keys(b).length;
-}; // eslint-disable-next-line flowtype/no-weak-types
+}; // /-disable-next-line flowtype/no-weak-types
 
 
 exports.isEqual = isEqual;
@@ -61396,7 +61396,7 @@ var memoize = function memoize(fn) {
  * is used. The purpose of allowing the app to crash in this situation is to
  * collect data so a root cause might be discovered and addressed.
  */
-// eslint-disable-next-line flowtype/no-weak-types
+// /-disable-next-line flowtype/no-weak-types
 
 
 exports.memoize = memoize;
@@ -61442,7 +61442,7 @@ var createMemoizeFactoryWithDepth = function createMemoizeFactoryWithDepth(depth
    * @param  {Function} fn          The size of the cache.
    * @return {Function}             The memoized function.
    */
-  // eslint-disable-next-line flowtype/no-weak-types
+  // /-disable-next-line flowtype/no-weak-types
   var memoizeFn = function memoizeFn(fn) {
     var cache = new _lruCache["default"]({
       max: depth
@@ -61488,7 +61488,7 @@ var cacheMemo = function cacheMemo(depth) {
    * @param  {Function} fn          The function to memoize.
    * @return {Function}             The memoized function.
    */
-  // eslint-disable-next-line flowtype/no-weak-types
+  // /-disable-next-line flowtype/no-weak-types
   var memoizeFn = function memoizeFn(fn) {
     var cache = new _lruCache["default"]({
       max: depth
@@ -61512,7 +61512,7 @@ var cacheMemo = function cacheMemo(depth) {
 
 
 exports.cacheMemo = cacheMemo;
-var defaultLastArg = Symbol(); // eslint-disable-next-line flowtype/no-weak-types
+var defaultLastArg = Symbol(); // /-disable-next-line flowtype/no-weak-types
 
 var singleMemo = function singleMemo(fn) {
   var lastArg = defaultLastArg;
@@ -63745,7 +63745,7 @@ var replaceDetailPageHrefCollectionSlug = function replaceDetailPageHrefCollecti
   var collectionSlug = collectionSlugMap[collectionId] || originalCollectionSlug;
   return [emptyString, collectionSlug].concat((0, _toConsumableArray2["default"])(rest)).join('/');
 }; // FIXME: weak type is used
-// eslint-disable-next-line flowtype/no-weak-types
+// /-disable-next-line flowtype/no-weak-types
 
 
 var get = function get(obj, key) {
@@ -65220,7 +65220,7 @@ var handleItemRemoved = function handleItemRemoved(event, apolloClient) {
       skuId: skuId,
       count: count
     }
-  }).then( // eslint-disable-next-line no-unused-vars
+  }).then( // /-disable-next-line no-unused-vars
   function (data) {
     (0, _commerceUtils.triggerRender)(null);
   }, function (error) {
@@ -65302,7 +65302,7 @@ var handleItemQuantityChanged = function handleItemQuantityChanged(event, apollo
       skuId: skuId,
       count: count
     }
-  }).then( // eslint-disable-next-line no-unused-vars
+  }).then( // /-disable-next-line no-unused-vars
   function (data) {
     enableAllFormElements(currentTarget.form);
     (0, _commerceUtils.triggerRender)(null);
@@ -66671,7 +66671,7 @@ var _rendering = __webpack_require__(146);
 var _constants = __webpack_require__(22);
 /* globals window, CustomEvent */
 // FIXME: weak type is used
-// eslint-disable-next-line flowtype/no-weak-types
+// /-disable-next-line flowtype/no-weak-types
 
 
 var renderOrderConfirmation = function renderOrderConfirmation(orderConfirmation, data) {
@@ -67121,7 +67121,7 @@ var parseValues = function parseQueryStringValues(str, options) {
                     charset = 'iso-8859-1';
                 }
                 skipIndex = i;
-                i = parts.length; // The eslint settings do not allow break;
+                i = parts.length; // The / settings do not allow break;
             }
         }
     }
@@ -67196,7 +67196,7 @@ var parseObject = function (chain, val, options, valuesParsed) {
             }
         }
 
-        leaf = obj; // eslint-disable-line no-param-reassign
+        leaf = obj; // /-disable-line no-param-reassign
     }
 
     return leaf;
@@ -67279,7 +67279,7 @@ var normalizeParseOptions = function normalizeParseOptions(opts) {
         comma: typeof opts.comma === 'boolean' ? opts.comma : defaults.comma,
         decoder: typeof opts.decoder === 'function' ? opts.decoder : defaults.decoder,
         delimiter: typeof opts.delimiter === 'string' || utils.isRegExp(opts.delimiter) ? opts.delimiter : defaults.delimiter,
-        // eslint-disable-next-line no-implicit-coercion, no-extra-parens
+        // /-disable-next-line no-implicit-coercion, no-extra-parens
         depth: (typeof opts.depth === 'number' || opts.depth === false) ? +opts.depth : defaults.depth,
         ignoreQueryPrefix: opts.ignoreQueryPrefix === true,
         interpretNumericEntities: typeof opts.interpretNumericEntities === 'boolean' ? opts.interpretNumericEntities : defaults.interpretNumericEntities,
@@ -67578,7 +67578,7 @@ Promise._immediateFn =
 
 Promise._unhandledRejectionFn = function _unhandledRejectionFn(err) {
   if (typeof console !== 'undefined' && console) {
-    console.warn('Possible Unhandled Promise Rejection:', err); // eslint-disable-line no-console
+    console.warn('Possible Unhandled Promise Rejection:', err); // /-disable-line no-console
   }
 };
 
@@ -68244,7 +68244,7 @@ exports["default"] = _default;
   WEBFLOW_FORM_OLDIE_HOST
 */
 
-/* eslint-disable no-var */
+/* /-disable no-var */
 
 /**
  * Webflow: Forms
@@ -68845,7 +68845,7 @@ Webflow.define('forms', module.exports = function ($, _) {
 
 /* globals window, document, jQuery */
 
-/* eslint-disable no-var */
+/* /-disable no-var */
 
 /**
  * Webflow: Lightbox component
@@ -69363,7 +69363,7 @@ function createLightbox(window, document, $, container) {
   }
 
   Spinner.prototype.show = function () {
-    // eslint-disable-next-line no-shadow
+    // /-disable-next-line no-shadow
     var spinner = this; // Bail if we are already showing the spinner.
 
     if (spinner.timeoutId) {
@@ -69371,18 +69371,18 @@ function createLightbox(window, document, $, container) {
     }
 
     spinner.timeoutId = setTimeout(function () {
-      spinner.$element.removeClass(spinner.className); // eslint-disable-next-line webflow/no-delete
+      spinner.$element.removeClass(spinner.className); // /-disable-next-line webflow/no-delete
 
       delete spinner.timeoutId;
     }, spinner.delay);
   };
 
   Spinner.prototype.hide = function () {
-    // eslint-disable-next-line no-shadow
+    // /-disable-next-line no-shadow
     var spinner = this;
 
     if (spinner.timeoutId) {
-      clearTimeout(spinner.timeoutId); // eslint-disable-next-line webflow/no-delete
+      clearTimeout(spinner.timeoutId); // /-disable-next-line webflow/no-delete
 
       delete spinner.timeoutId;
       return;
@@ -69633,7 +69633,7 @@ Webflow.define('lightbox', module.exports = function ($) {
 
 /* globals window, document */
 
-/* eslint-disable no-var */
+/* /-disable no-var */
 
 /**
  * Webflow: Navbar component
@@ -70232,7 +70232,7 @@ Webflow.define('navbar', module.exports = function ($, _) {
 
 /* globals window, document */
 
-/* eslint-disable no-var */
+/* /-disable no-var */
 
 /**
  * Webflow: Maps widget
