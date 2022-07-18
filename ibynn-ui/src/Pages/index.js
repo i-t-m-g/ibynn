@@ -8,16 +8,14 @@ import SubscribeSection from "../Components/SubsribeSection";
 
 function Index() {
     return ( 
-        <div className="page-wrapper">
-
+        <div>
+            <TopBar />
             <ScrollSection />
             <PreLoader />
-            <Footer />
-            <TopBar />
             <Hero />
             <MoreAbout />
             <SubscribeSection />
-
+            <Footer />
         </div>
      );
 }
