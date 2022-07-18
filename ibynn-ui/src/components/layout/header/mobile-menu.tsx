@@ -19,14 +19,14 @@ import {
 const social = [
   {
     id: 0,
-    link: 'https://www.facebook.com/redqinc/',
+    link: 'https://www.facebook.com/ITMGinc/',
     icon: <IoLogoFacebook />,
     className: 'facebook',
     title: 'text-facebook',
   },
   {
     id: 1,
-    link: 'https://twitter.com/redqinc',
+    link: 'https://twitter.com/ITMGinc',
     icon: <IoLogoTwitter />,
     className: 'twitter',
     title: 'text-twitter',
@@ -40,7 +40,7 @@ const social = [
   },
   {
     id: 3,
-    link: 'https://www.instagram.com/redqinc/',
+    link: 'https://www.instagram.com/ITMGinc/',
     icon: <IoLogoInstagram />,
     className: 'instagram',
     title: 'text-instagram',

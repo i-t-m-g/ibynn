@@ -124,7 +124,7 @@ export const footer = {
   social: [
     {
       id: 1,
-      path: 'https://www.facebook.com/redqinc/',
+      path: 'https://www.facebook.com/ITMGinc/',
       image: '/assets/images/social/facebook.svg',
       name: 'facebook',
       width: 20,
@@ -132,7 +132,7 @@ export const footer = {
     },
     {
       id: 2,
-      path: 'https://twitter.com/redqinc',
+      path: 'https://twitter.com/ITMGinc',
       image: '/assets/images/social/twitter.svg',
       name: 'twitter',
       width: 20,
@@ -140,7 +140,7 @@ export const footer = {
     },
     {
       id: 3,
-      path: 'https://www.instagram.com/redqinc/',
+      path: 'https://www.instagram.com/ITMGinc/',
       image: '/assets/images/social/instagram.svg',
       name: 'instagram',
       width: 20,

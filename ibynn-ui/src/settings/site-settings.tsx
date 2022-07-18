@@ -6,17 +6,17 @@ import { DEFlag } from '@components/icons/language/DEFlag';
 import { ESFlag } from '@components/icons/language/ESFlag';
 
 export const siteSettings = {
-  name: 'BoroBazar',
+  name: ' IBYNN',
   description:
-    'Fastest E-commerce template built with React, NextJS, TypeScript, React-Query and Tailwind CSS.',
+    'food & groceries haah',
   author: {
-    name: 'RedQ, Inc.',
-    websiteUrl: 'https://redq.io',
+    name: 'ITMG Inc.',
+    websiteUrl: 'https://ITMG.io',
     address: '',
   },
   logo: {
     url: '/assets/images/logo.svg',
-    alt: 'BoroBazar',
+    alt: ' IBYNN',
     href: '/',
     width: 128,
     height: 30,
