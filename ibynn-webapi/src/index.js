@@ -35,14 +35,14 @@ app.use(morgan('combined'));
 
 app.get('/', async (req, res) => {
   const ax = await getStores('bar+soap');
-  console.log(ax)
 
   res.json(ax)
 });
 
 app.get('/searchAllStores', async (req, res) => {
-  const ax = await getStores('bar+soap');
-  console.log('searched')
+  
+  const ax = await getStores(req.query.q);
+
   res.json(ax)
 });
 
