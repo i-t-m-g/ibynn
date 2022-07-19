@@ -80,28 +80,28 @@ export const siteSettings = {
           {
             id: 1,
             path: '/search',
-            label: 'menu-fresh-vegetables',
+            label: 'Home Goods',
           },
           {
             id: 2,
             path: '/search',
-            label: 'menu-diet-nutrition',
+            label: 'Personal Care',
           },
-          {
-            id: 3,
-            path: '/search',
-            label: 'menu-healthy-foods',
-          },
-          {
-            id: 4,
-            path: '/search',
-            label: 'menu-grocery-items',
-          },
-          {
-            id: 5,
-            path: '/search',
-            label: 'menu-beaf-steak',
-          },
+          // {
+          //   id: 3,
+          //   path: '/search',
+          //   label: 'menu-healthy-foods',
+          // },
+          // {
+          //   id: 4,
+          //   path: '/search',
+          //   label: 'menu-grocery-items',
+          // },
+          // {
+          //   id: 5,
+          //   path: '/search',
+          //   label: 'menu-beaf-steak',
+          // },
         ],
       },
       {
