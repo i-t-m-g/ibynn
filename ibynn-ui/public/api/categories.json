@@ -2,45 +2,45 @@
   "data": [
     {
       "id": 1,
-      "name": "Fresh Vegetables",
-      "slug": "fresh-vegetables",
+      "name": "Home Goods",
+      "slug": "Home-goods",
       "image": {
         "id": 1,
-        "thumbnail": "/assets/images/category/fresh-vegetables.png",
-        "original": "/assets/images/category/fresh-vegetables.png"
+        "thumbnail": "/assets/images/category/home-goods.png",
+        "original": "/assets/images/category/home-goods.png"
       },
       "icon": "/assets/images/category/icon/fresh-vegetables.svg",
       "children": [
         {
           "id": 1,
-          "name": "Arugula",
-          "slug": "arugula"
+          "name": "Home & Kitchen",
+          "slug": "Home-&-Kitchen"
         },
         {
           "id": 2,
-          "name": "Asparagus",
-          "slug": "asparagus"
+          "name": "Appliances",
+          "slug": "Appliances"
         },
         {
           "id": 3,
-          "name": "Beets",
-          "slug": "beets"
+          "name": "Tools & Supplies",
+          "slug": "Tools-&-Supplies"
         },
         {
           "id": 4,
-          "name": "Cabbages",
-          "slug": "cabbages"
+          "name": "Health & Households",
+          "slug": "Health-&-Households"
         }
       ]
     },
     {
       "id": 2,
-      "name": "Diet Foods",
-      "slug": "diet-foods",
+      "name": "Personal Care",
+      "slug": "personal-care",
       "image": {
         "id": 1,
-        "thumbnail": "/assets/images/category/diet-foods.png",
-        "original": "/assets/images/category/diet-foods.png"
+        "thumbnail": "/assets/images/category/personal-care.png",
+        "original": "/assets/images/category/personal-care.png"
       },
       "icon": "/assets/images/category/icon/diet-foods.svg",
       "children": [
