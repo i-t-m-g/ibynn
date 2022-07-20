@@ -35,34 +35,64 @@ export const siteSettings = {
         label: 'menu-categories',
         subMenu:[
                 
-                    {
-                      id: 1,
-                      path: '/search',
-                      label: 'Home Goods',
-                    },
+                {
+                  id: 1,
+                  path: '/search',
+                  label: 'Home Goods',
+                  subMenu: 
+                          [
+
+                            {
+                              id: 1,
+                              path: '/search',
+                              label: 'Home & Kitchen',
+                            },
+
+                            {
+                              id: 2,
+                              path: '/search',
+                              label: 'Appliances',
+                            },
+                            
+                            {
+                              id: 3,
+                              path: '/search',
+                              label: 'Tools & Supplies',
+                            },
+
+                            {
+                              id: 4,
+                              path: '/search',
+                              label: 'Health & Households',
+                            },
+
+                          
+                          ],
+                },
 
 
-                    {
-                      id: 2,
-                      path: '/search',
-                      label: 'Personal Care',
-                      subMenu: 
-                              [
+                {
+                  id: 2,
+                  path: '/search',
+                  label: 'Personal Care',
+                  subMenu: 
+                          [
 
-                                {
-                                  id: 1,
-                                  path: '/search',
-                                  label: 'Skin Cream',
-                                },
+                            {
+                              id: 1,
+                              path: '/search',
+                              label: 'Skin Lotion',
+                            },
 
-                                {
-                                  id: 2,
-                                  path: '/search',
-                                  label: 'Wipes',
-                                },
+                            {
+                              id: 2,
+                              path: '/search',
+                              label: 'Bath & Bathing Accesories',
+                            },
 
-                              ],
-                    },
+                          ],
+                },
+                
                 ],
       },
 
