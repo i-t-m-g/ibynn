@@ -1,4 +1,4 @@
-import type { FC } from 'react';
+import { FC, useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 import Alert from '@components/ui/alert';
@@ -9,12 +9,15 @@ import cn from 'classnames';
 import { useProductsQuery } from '@framework/product/get-all-products';
 import { LIMITS } from '@framework/utils/limits';
 import { Product } from '@framework/types';
+import { searchForProduct } from 'src/framework/ibynn-api/product';
+import { Products } from '../../framework/ibynn-api/entities/product';
 
 interface ProductGridProps {
   className?: string;
 }
 
 export const ProductGrid: FC<ProductGridProps> = ({ className = '' }) => {
+  const [data, setData] = useState<Products>();
   const { t } = useTranslation('common');
   const { query } = useRouter();
   const {
@@ -22,9 +25,16 @@ export const ProductGrid: FC<ProductGridProps> = ({ className = '' }) => {
     isFetchingNextPage: loadingMore,
     fetchNextPage,
     hasNextPage,
-    data,
+    //data,
     error,
   } = useProductsQuery({ limit: LIMITS.PRODUCTS_LIMITS, ...query });
+
+  useEffect(() => {
+    if (query.q)
+    {
+      searchForProduct(query.q).then(res => setData(res));
+    }
+  }, [query])
 
   return (
     <>
@@ -38,7 +48,7 @@ export const ProductGrid: FC<ProductGridProps> = ({ className = '' }) => {
           <div className="col-span-full">
             <Alert message={error?.message} />
           </div>
-        ) : isLoading && !data?.pages?.length ? (
+        ) : isLoading && !data?.results?.length ? (
           Array.from({ length: 30 }).map((_, idx) => (
             <ProductCardLoader
               key={`product--key-${idx}`}
@@ -46,13 +56,15 @@ export const ProductGrid: FC<ProductGridProps> = ({ className = '' }) => {
             />
           ))
         ) : (
-          data?.pages?.map((page: any) => {
-            return page?.data?.map((product: Product) => (
-              <ProductCard
-                key={`product--key-${product.id}`}
-                product={product}
-              />
-            ));
+          data?.results?.map((page, index) => {
+            // return page?.data?.map((product: Product) => (
+            if (page.thumbnail) {
+              return (<ProductCard
+                  key={`product--key-${page.position * index}`}
+                  product={page}
+                />)
+            }
+            // ));
           })
         )}
         {/* end of error state */}

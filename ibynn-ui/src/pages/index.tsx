@@ -13,14 +13,24 @@ import CategoryDropdownSidebar from '@components/category/category-dropdown-side
 import BannerCard from '@components/cards/banner-card';
 import { homeTwoBanner as banner } from '@framework/static/banner';
 import Seo from '@components/seo/seo';
+import { useEffect } from 'react';
 import { QueryClient } from 'react-query';
 import { dehydrate } from 'react-query/hydration';
 import { API_ENDPOINTS } from '@framework/utils/api-endpoints';
 import { fetchProducts } from '@framework/product/get-all-products';
 import { fetchCategories } from '@framework/category/get-all-categories';
 import { LIMITS } from '@framework/utils/limits';
+import axios from 'axios';
+import { searchForProduct } from 'src/framework/ibynn-api/product';
 
 export default function Home() {
+
+  useEffect(() => {
+    // searchForProduct('rocks')
+    // .then(res => console.log(res))
+  })
+
+
   return (
     <>
       <Seo
