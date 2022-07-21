@@ -50,11 +50,65 @@
                         "name": "Skin Lotion",
                         "slug": "Skin-Lotion"
                       },
+
                       {
                         "id": 2,
-                        "name": "Bath & Bathing Accessories",
-                        "slug": "Bath-&-Bathing-Accessories"
+                        "name": "Bath & Body",
+                        "slug": "Bath-&-Body"
+                      },
+                      {
+                        "id": 3,
+                        "name": "Baby Care",
+                        "slug": "Baby-Care"
+                      },
+                      {
+                        "id": 4,
+                        "name": "Cotton Balls, Pads & Swabs",
+                        "slug": "Cotton-Balls-Pads-&-Swabs"
+                      },
+
+                      {
+                        "id": 5,
+                        "name": "Deodorants",
+                        "slug": "Deodorants"
+                      },
+
+                      {
+                        "id": 6,
+                        "name": "Facial Tissue",
+                        "slug": "Facial-Tissue"
+                      },
+
+                      {
+                        "id": 7,
+                        "name": "Feminine Products",
+                        "slug": "Feminine-Products"
+                      },
+
+                      {
+                        "id": 8,
+                        "name": "Hair Removal & Shaving Tools",
+                        "slug": "Hair Removal-&-Shaving Tools"
+                      },
+
+                      {
+                        "id": 9,
+                        "name": "Hand Soap & Refills",
+                        "slug": "Hand-soap-refils"
+                      },
+
+                      {
+                        "id": 10,
+                        "name": "Nail Care",
+                        "slug": "Nail-Care"
+                      },
+
+                      {
+                        "id": 11,
+                        "name": "Oral Care",
+                        "slug": "Oral Care"
                       }
+ 
                   ]
     }
 

@@ -55,7 +55,7 @@ const CategoryGridBlock: React.FC<CategoriesProps> = ({
     <div className={className}>
       <SectionHeader
         sectionHeading="text-what-food-you-love"
-        sectionSubHeading="text-favorite-different-categories"
+        sectionSubHeading="Here are just some of our popular categories"
         headingPosition="center"
       />
       <div className="block 2xl:flex justify-center flex-wrap 3xl:-mx-3.5">

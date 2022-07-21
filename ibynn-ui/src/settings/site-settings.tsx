@@ -87,7 +87,60 @@ export const siteSettings = {
                             {
                               id: 2,
                               path: '/search',
-                              label: 'Bath & Bathing Accesories',
+                              label: 'Bath & Body',
+                            },
+
+                            {
+                              id: 3,
+                              path: '/search',
+                              label: 'Baby Care',
+                            },
+                            {
+                              id: 4,
+                              path: '/search',
+                              label: 'Cotton Balls, Pads & Swabs',
+                            },
+
+                            {
+                              id: 5,
+                              path: '/search',
+                              label: 'Deodorants',
+                            },
+
+                            {
+                              id: 6,
+                              path: '/search',
+                              label: 'Facial Tissue',
+                            },
+
+                            {
+                              id: 7,
+                              path: '/search',
+                              label: 'Feminine Products',
+                            },
+
+                            {
+                              id: 8,
+                              path: '/search',
+                              label: 'Hair Removal & Shaving Tools',
+                            },
+                             
+                            {
+                              id: 9,
+                              path: '/search',
+                              label: 'Hand Soap & Refills',
+                            },
+
+                            {
+                              id: 10,
+                              path: '/search',
+                              label: 'Nail Care',
+                            },
+
+                            {
+                              id: 11,
+                              path: '/search',
+                              label: 'Orale Care',
                             },
 
                           ],
