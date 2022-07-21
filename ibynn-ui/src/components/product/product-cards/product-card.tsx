@@ -93,7 +93,7 @@ const ProductCard: React.FC<ProductProps> = ({ product, className }) => {
         // onClick={handlePopupView}
         title={title}>
         <div className="relative shrink-0">
-          <div className="flex place-content-center overflow-hidden max-w-[230px] mx-auto transition duration-200 ease-in-out transform group-hover:scale-150 relative">
+          <div className="flex place-content-center overflow-hidden max-w-[230px] mx-auto">
             <Image
               src={thumbnail ?? productPlaceholder}
               alt={title || 'Product Image'}

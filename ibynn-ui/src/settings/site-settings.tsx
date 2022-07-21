@@ -37,32 +37,32 @@ export const siteSettings = {
                 
                 {
                   id: 1,
-                  path: '/search',
+                  path: '/search?q=Home+Goods',
                   label: 'Home Goods',
                   subMenu: 
                           [
 
                             {
                               id: 1,
-                              path: '/search',
+                              path: '/search?q=Home+Kitchen',
                               label: 'Home & Kitchen',
                             },
 
                             {
                               id: 2,
-                              path: '/search',
+                              path: '/search?q=Appliances',
                               label: 'Appliances',
                             },
                             
                             {
                               id: 3,
-                              path: '/search',
+                              path: '/search?q=Tools+&+Supplies',
                               label: 'Tools & Supplies',
                             },
 
                             {
                               id: 4,
-                              path: '/search',
+                              path: '/search?q=Health+&+Households',
                               label: 'Health & Households',
                             },
 
@@ -73,73 +73,73 @@ export const siteSettings = {
 
                 {
                   id: 2,
-                  path: '/search',
+                  path: '/search?q=Personal+Care',
                   label: 'Personal Care',
                   subMenu: 
                           [
 
                             {
                               id: 1,
-                              path: '/search',
+                              path: '/search?q=Skin+Lotion',
                               label: 'Skin Lotion',
                             },
 
                             {
                               id: 2,
-                              path: '/search',
+                              path: '/search?q=Bath+&+Body',
                               label: 'Bath & Body',
                             },
 
                             {
                               id: 3,
-                              path: '/search',
+                              path: '/search?q=Baby+Care',
                               label: 'Baby Care',
                             },
                             {
                               id: 4,
-                              path: '/search',
+                              path: '/search?q=Cotton+Balls+Pads+&+Swabs',
                               label: 'Cotton Balls, Pads & Swabs',
                             },
 
                             {
                               id: 5,
-                              path: '/search',
+                              path: '/search?q=Deodorants',
                               label: 'Deodorants',
                             },
 
                             {
                               id: 6,
-                              path: '/search',
+                              path: '/search?q=Facial+Tissue',
                               label: 'Facial Tissue',
                             },
 
                             {
                               id: 7,
-                              path: '/search',
+                              path: '/search?q=Feminine+Products',
                               label: 'Feminine Products',
                             },
 
                             {
                               id: 8,
-                              path: '/search',
+                              path: '/search?q=Hair+Removal+&+Shaving+Tools',
                               label: 'Hair Removal & Shaving Tools',
                             },
                              
                             {
                               id: 9,
-                              path: '/search',
+                              path: '/search?q=Hand+Soap+&+Refills',
                               label: 'Hand Soap & Refills',
                             },
 
                             {
                               id: 10,
-                              path: '/search',
+                              path: '/search?q=Nail+Care',
                               label: 'Nail Care',
                             },
 
                             {
                               id: 11,
-                              path: '/search',
+                              path: '/search?q=Orale+Care',
                               label: 'Orale Care',
                             },
 
