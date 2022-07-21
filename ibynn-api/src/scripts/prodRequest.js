@@ -1,5 +1,5 @@
 const { default: axios } = require("axios");
-const api_key = '141760304ba4982e7febed0272c37f20b98852001d7a48a506aba75203fad2ed'
+const api_key = '21d0705d4395e03b02023bc9e08ea06242588a85958ffba5be5375e693873aaf'
 const getSerpUrl = (storeUrl, query = 'iphone+12') => `https://serpapi.com/search.json?num=100&q=${query}+site%3A${storeUrl}&hl=en&gl=us&api_key=${api_key}`
 const getSerpUrlQ = (query = 'iphone+12') => `https://serpapi.com/search.json?num=100&q=${query}&hl=en&gl=us&api_key=${api_key}`
 

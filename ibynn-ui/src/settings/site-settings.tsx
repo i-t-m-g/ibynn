@@ -50,7 +50,7 @@ export const siteSettings = {
 
                             {
                               id: 2,
-                              path: '/search?q=Appliances',
+                              path: '/search?q=home+appliances',
                               label: 'Appliances',
                             },
                             
@@ -145,6 +145,44 @@ export const siteSettings = {
 
                           ],
                 },
+
+
+                {
+                  id: 3,
+                  path: '/search?q=Fresh+Fruits',
+                  label: 'Fresh Fruit',
+                  subMenu: 
+                          [
+
+                            {
+                              id: 1,
+                              path: '/search?q=fresh+apples',
+                              label: 'Apples',
+                            },
+
+                            {
+                              id: 2,
+                              path: '/search?q=fresh+pears',
+                              label: 'Pears',
+                            },
+                            
+                            {
+                              id: 3,
+                              path: '/search?q=fresh+peaches',
+                              label: 'Peaches',
+                            },
+
+                            {
+                              id: 4,
+                              path: '/search?q=fresh+strawberries',
+                              label: 'Strawberries',
+                            },
+
+                          
+                          ],
+                },
+
+
                 
                 ],
       },

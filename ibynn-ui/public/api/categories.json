@@ -3,6 +3,7 @@
     {
       "id": 1,
       "name": "Home Goods",
+      "path": "/search?q=Home+Goods",
       "slug": "Home-goods",
       "image": {
         "id": 1,
@@ -14,21 +15,25 @@
                       {
                         "id": 1,
                         "name": "Home & Kitchen",
+                        "path": "/search?q=Home+Kitchen",
                         "slug": "Home-&-Kitchen"
                       },
                       {
                         "id": 2,
                         "name": "Appliances",
+                        "path": "/search?q=Appliances",
                         "slug": "Appliances"
                       },
                       {
                         "id": 3,
                         "name": "Tools & Supplies",
+                        "path": "/search?q=Tools-&-Supplies",
                         "slug": "Tools-&-Supplies"
                       },
                       {
                         "id": 4,
                         "name": "Health & Households",
+                        "path": "/search?q=Health-&-Households",
                         "slug": "Health-&-Households"
                       }
                   ]
@@ -109,6 +114,45 @@
                         "slug": "Oral Care"
                       }
  
+                  ]
+    },
+
+    {
+      "id": 1,
+      "name": "Fresh Fruits",
+      "path": "/search?q=fresh+fruits",
+      "slug": "Fresh-Fruits",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/category/home-goods.png",
+        "original": "/assets/images/category/home-goods.png"
+      },
+      "icon": "/assets/images/category/icon/fresh-fruits.svg",
+      "children": [
+                      {
+                        "id": 1,
+                        "name": "Apples",
+                        "path": "/search?q=Apples",
+                        "slug": "Apples"
+                      },
+                      {
+                        "id": 2,
+                        "name": "Peaches",
+                        "path": "/search?q=Peaches",
+                        "slug": "Peaches"
+                      },
+                      {
+                        "id": 3,
+                        "name": "Pears",
+                        "path": "/search?q=Pears",
+                        "slug": "Pears"
+                      },
+                      {
+                        "id": 4,
+                        "name": "Strawberries",
+                        "path": "/search?q=Strawberries",
+                        "slug": "Strawberries"
+                      }
                   ]
     }
 
