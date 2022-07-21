@@ -6,7 +6,7 @@ const withPWA = require('next-pwa');
 const runtimeCaching = require('next-pwa/cache');
 module.exports = withPWA({
   images: {
-    domains: ['encrypted-tbn0.gstatic.com', 'serpapi.com']
+    domains: ['encrypted-tbn0.gstatic.com', 'serpapi.com' ]
   },
   reactStrictMode: true,
   pwa: {
