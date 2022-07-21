@@ -10,7 +10,7 @@ import { useCart } from '@contexts/cart/cart.context';
 import { useTranslation } from 'next-i18next';
 import { productPlaceholder } from '@assets/placeholders';
 import dynamic from 'next/dynamic';
-import { Result } from 'src/pages';
+import { Result } from 'src/framework/ibynn-api/entities/product';
 import { useEffect } from 'react';
 import Link from 'next/link';
 const AddToCart = dynamic(() => import('@components/product/add-to-cart'), {

@@ -1,6 +1,6 @@
 import axios from "axios";
 import { ParsedUrlQuery } from "querystring";
-import { Products } from "src/pages";
+import { Products } from "./entities/product";
 
 export const searchForProduct = async (query: string|string[]|undefined) => {
     try {

@@ -10,7 +10,7 @@ import { useProductsQuery } from '@framework/product/get-all-products';
 import { LIMITS } from '@framework/utils/limits';
 import { Product } from '@framework/types';
 import { searchForProduct } from 'src/framework/ibynn-api/product';
-import { Products } from 'src/pages';
+import { Products } from '../../framework/ibynn-api/entities/product';
 
 interface ProductGridProps {
   className?: string;
