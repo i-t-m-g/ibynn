@@ -9,7 +9,7 @@ const morgan = require('morgan');
 const axios = require('axios').default;
 const request = require('request');
 const { response } = require('express');
-const { search, getStores } = require('./scripts/prodRequest')
+const { search, getStores, inOne } = require('./scripts/prodRequest')
 
 
 // defining the Express app
@@ -34,14 +34,14 @@ app.use(morgan('combined'));
 
 
 app.get('/', async (req, res) => {
-  const ax = await getStores('bar+soap');
+  const ax = await inOne('bar+soap');
 
   res.json(ax)
 });
 
 app.get('/searchAllStores', async (req, res) => {
   
-  const ax = await getStores(req.query.q);
+  const ax = await inOne(req.query.q);
 
   res.json(ax)
 });
