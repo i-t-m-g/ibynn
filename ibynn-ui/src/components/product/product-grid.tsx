@@ -33,6 +33,7 @@ export const ProductGrid: FC<ProductGridProps> = ({ className = '' }) => {
     if (query.q)
     {
       searchForProduct(query.q).then(res => setData(res));
+      console.log(data?.results.length)
     }
   }, [query])
 
@@ -58,7 +59,7 @@ export const ProductGrid: FC<ProductGridProps> = ({ className = '' }) => {
         ) : (
           data?.results?.map((page, index) => {
             // return page?.data?.map((product: Product) => (
-            if (page.thumbnail) {
+            if (page) {
               return (<ProductCard
                   key={`product--key-${page.position * index}`}
                   product={page}

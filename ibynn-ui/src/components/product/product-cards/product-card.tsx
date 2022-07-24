@@ -67,6 +67,7 @@ const ProductCard: React.FC<ProductProps> = ({ product, className }) => {
     // baseAmount: product?.price,
     currencyCode: 'USD',
   });
+  
   // const { price: minPrice } = usePrice({
   //   amount: product?.min_price ?? 0,
   //   currencyCode: 'USD',
@@ -75,10 +76,6 @@ const ProductCard: React.FC<ProductProps> = ({ product, className }) => {
   //   amount: product?.max_price ?? 0,
   //   currencyCode: 'USD',
   // });
-
-  useEffect(() => {
-    console.log(thumbnail)
-  }, [])
 
   function handlePopupView() {
     openModal('PRODUCT_VIEW', product);
