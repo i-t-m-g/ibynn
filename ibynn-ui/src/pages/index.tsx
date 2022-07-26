@@ -22,6 +22,7 @@ import { fetchCategories } from '@framework/category/get-all-categories';
 import { LIMITS } from '@framework/utils/limits';
 import axios from 'axios';
 import { searchForProduct } from 'src/framework/ibynn-api/product';
+import { ProductGrid } from '@components/product/product-grid';
 
 export default function Home() {
 
@@ -34,8 +35,8 @@ export default function Home() {
   return (
     <>
       <Seo
-        title="Minimal"
-        description="Fastest E-commerce template built with React, NextJS, TypeScript, React-Query and Tailwind CSS."
+        title="Find Cheap Deals And Compare Prices From Top Brands"
+        description="IBYNN.com is the best online price comparison platform that helps you find and compare prices from leading brands so that you can find the cheapest deals."
         path="minimal"
       />
       <HeroBannerCard
