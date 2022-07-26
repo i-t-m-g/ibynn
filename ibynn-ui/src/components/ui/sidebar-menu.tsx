@@ -28,12 +28,13 @@ function SidebarMenuItem({ className, item, depth = 0 }: any) {
     if (Array.isArray(items) && !!items.length) {
       toggleCollapse();
     } else {
-      const { pathname, query } = router;
+      const pathname = '/search'
+      const { query } = router;
       const { type, ...rest } = query;
       router.push(
         {
           pathname,
-          query: { ...rest, category: slug },
+          query: { ...rest, q: slug },
         },
         undefined,
         {

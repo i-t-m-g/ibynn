@@ -8,7 +8,7 @@ import { ESFlag } from '@components/icons/language/ESFlag';
 export const siteSettings = {
   name: ' IBYNN',
   description:
-    'food & groceries haah',
+    'Find Cheap Deals And Compare Prices From Top Brands',
   author: {
     name: 'ITMG Inc.',
     websiteUrl: 'https://ITMG.io',
@@ -37,36 +37,93 @@ export const siteSettings = {
                 
                 {
                   id: 1,
-                  path: '/search?q=Home+Goods',
-                  label: 'Home Goods',
+                  path: '/search?q=Household+Items',
+                  label: 'Household Items',
                   subMenu: 
                           [
 
                             {
                               id: 1,
-                              path: '/search?q=Home+Kitchen',
-                              label: 'Home & Kitchen',
+                              path: '/search?q=Air+Freshener',
+                              label: 'Air Freshener',
+                              subMenu:
+                                      [
+                                        {
+                                          id: 1,
+                                          path: '/search?q=air+refreshener+refils',
+                                          label: 'Refils',
+                                        },
+
+                                      ],
                             },
+
 
                             {
                               id: 2,
-                              path: '/search?q=home+appliances',
-                              label: 'Appliances',
+                              path: '/search?q=bleach',
+                              label: 'Bleach',
                             },
                             
                             {
                               id: 3,
-                              path: '/search?q=Tools+&+Supplies',
-                              label: 'Tools & Supplies',
+                              path: '/search?q=dishwasher+detergent',
+                              label: 'Dishwasher Detergent',
                             },
 
                             {
                               id: 4,
-                              path: '/search?q=Health+&+Households',
-                              label: 'Health & Households',
+                              path: '/search?q=dishwashing+Soap',
+                              label: 'Dishwashing Soap',
                             },
 
+                            {
+                              id: 5,
+                              path: '/search?q=dryer+sheets',
+                              label: 'Dryer Sheets',
+                            },
+
+                            {
+                              id: 6,
+                              path: '/search?q=Glass+Cleaner',
+                              label: 'Glass Cleaner',
+                            },
                           
+                            {
+                              id: 7,
+                              path: '/search?q=laundry+detergent',
+                              label: 'Laundry Detergent',
+                            },
+
+                            {
+                              id: 8,
+                              path: '/search?q=Sponge',
+                              label: 'Sponge',
+                            },
+
+                            {
+                              id: 9,
+                              path: '/search?q=stain+remover',
+                              label: 'Stain Remover',
+                            },
+
+                            {
+                              id: 10,
+                              path: '/search?q=Tub+Tile+Cleaner',
+                              label: 'Tub & Tile Cleaner',
+                            },
+
+                            {
+                              id: 11,
+                              path: '/search?q=vaccum+bags',
+                              label: 'Vaccum Bags',
+                            },
+
+                            {
+                              id: 12,
+                              path: '/search?q=wipes',
+                              label: 'Wipes',
+                            },
+
                           ],
                 },
 
@@ -158,6 +215,59 @@ export const siteSettings = {
                               id: 1,
                               path: '/search?q=fresh+apples',
                               label: 'Apples',
+                              subMenu:
+                                      [
+
+                                          {
+                                          id: 1,
+                                          path: '/search?q=fuji+apples',
+                                          label: 'Fuji Apples',
+                                          },
+
+                                          {
+                                            id: 2,
+                                            path: '/search?q=granny+smith+apples',
+                                            label: 'Granny Smith Apples',
+                                          },
+
+                                          {
+                                            id: 3,
+                                            path: '/search?q=empire+apples',
+                                            label: 'Empire Apples',
+                                          },
+
+                                          {
+                                            id: 4,
+                                            path: '/search?q=gala+apples',
+                                            label: 'Gala Apples',
+                                          },
+
+                                          {
+                                            id: 5,
+                                            path: '/search?q=honey+crisp+apples',
+                                            label: 'Honey Crisp Apples',
+                                          },  
+
+                                          {
+                                            id: 6,
+                                            path: '/search?q=McIntosh+apples',
+                                            label: 'McIntosh Apples',
+                                          },
+
+                                          {
+                                            id: 7,
+                                            path: '/search?q=golden+delicious+apples',
+                                            label: 'Golden Delicous Apples',
+                                          },
+
+                                          {
+                                            id: 8,
+                                            path: '/search?q=cripps+pink+apples',
+                                            label: 'Cripps Pink Apples',
+                                          },
+
+                                      ]
+                                    
                             },
 
                             {
@@ -176,6 +286,18 @@ export const siteSettings = {
                               id: 4,
                               path: '/search?q=fresh+strawberries',
                               label: 'Strawberries',
+                            },
+
+                            {
+                              id: 5,
+                              path: "/search?q=Mango",
+                              label: "Mango"
+                            },
+      
+                            {
+                              id: 6,
+                              path: "/search?q=Watermelon",
+                              label: "Watermelon"
                             },
 
                           
