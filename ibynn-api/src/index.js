@@ -9,7 +9,8 @@ const morgan = require('morgan');
 const axios = require('axios').default;
 const request = require('request');
 const { response } = require('express');
-const { search, getStores, inOne } = require('./scripts/prodRequest')
+const { search, getStores, inOne, withPagination } = require('./scripts/prodRequest');
+const { getForum, fetchTitles } = require('./scripts/scrapeImg');
 
 
 // defining the Express app
@@ -34,14 +35,18 @@ app.use(morgan('combined'));
 
 
 app.get('/', async (req, res) => {
-  const ax = await inOne('bar+soap');
+  // const ax = await inOne('bar+soap');
 
-  res.json(ax)
+  const ax = await fetchTitles()
+  
+
+  res.send(ax)
 });
 
 app.get('/searchAllStores', async (req, res) => {
   
-  const ax = await inOne(req.query.q);
+  const ax = await withPagination(req.query.q);
+  // const ax = await inOne(req.query.q);
 
   res.json(ax)
 });
