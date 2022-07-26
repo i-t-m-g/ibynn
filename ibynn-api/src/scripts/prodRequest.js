@@ -1,8 +1,10 @@
 const { default: axios } = require("axios");
-const api_key = '21d0705d4395e03b02023bc9e08ea06242588a85958ffba5be5375e693873aaf'
+const { getImage, getImageCheerio } = require("./scrapeImg");
+const api_key = 'efc99c043caba567a9923654f21f4fe7d169df14e912278d1cdbcf475c2a2342'
 const getSerpUrl = (storeUrl, query = 'iphone+12') => `https://serpapi.com/search.json?num=100&q=${query}+site%3A${storeUrl}&hl=en&gl=us&api_key=${api_key}`
 const getSerpUrlQ = (query = 'iphone+12') => `https://serpapi.com/search.json?num=100&q=${query}&hl=en&gl=us&api_key=${api_key}`
 const getSerpUrlPages = (query = 'iphone+12', pageIndex) => `https://serpapi.com/search.json?num=100&q=${query}&hl=en&gl=us&api_key=${api_key}&start=${pageIndex * 100}`
+process.setMaxListeners(0);
 
 const searchStoreForProduct = async (storeUrl, query) => {
     try {
@@ -127,6 +129,18 @@ const getProductsWithPagination = async (query) => {
 
     data.search_info.total_results = data.results.length;
 
+    let i = 0;
+    for await (const prod of data.results) {
+        data.results[i].position = i;
+
+        if (!prod.thumbnail && prod.link.includes('target')) {
+            const thumbnail = await getImageCheerio(prod.link);
+            data.results[i].thumbnail = thumbnail;
+
+        }
+        i++
+    }
+    
     return data;
 
 }
