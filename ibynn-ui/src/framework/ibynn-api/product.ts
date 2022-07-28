@@ -6,7 +6,7 @@ export const searchForProduct = async (query: string|string[]|undefined) => {
     try {
         
         const { data, status } = await axios.get<Products>(
-            `http://localhost:9476/searchAllStores?q=${query}`,
+            `https://oyster-app-xxbzd.ondigitalocean.app:9476/searchAllStores?q=${query}`,
             {
                 headers: {
                 Accept: 'application/json',
