@@ -25,23 +25,17 @@ export const siteSettings = {
   currencyCode: 'USD',
   site_header: {
     menu: [
-     
-
       // Categories Tab
-      
       {
         id: 2,
         path: '/search',
         label: 'menu-categories',
         subMenu:[
-                
                 {
                   id: 1,
                   path: '/search?q=Household+Items',
                   label: 'Household Items',
-                  subMenu: 
-                          [
-
+                  subMenu: [
                             {
                               id: 1,
                               path: '/search?q=Air+Freshener',
@@ -126,8 +120,6 @@ export const siteSettings = {
 
                           ],
                 },
-
-
                 {
                   id: 2,
                   path: '/search?q=Personal+Care',
@@ -202,8 +194,6 @@ export const siteSettings = {
 
                           ],
                 },
-
-
                 {
                   id: 3,
                   path: '/search?q=Fresh+Fruits',
@@ -303,9 +293,6 @@ export const siteSettings = {
                           
                           ],
                 },
-
-
-                
                 ],
       },
 
