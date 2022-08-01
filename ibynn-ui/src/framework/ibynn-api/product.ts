@@ -6,10 +6,10 @@ export const searchForProduct = async (query: string|string[]|undefined) => {
     try {
         
         const { data, status } = await axios.get<Products>(
-            `https:/api.ibynn.com/searchAllStores?q=${query}`,
+            `${process.env.NEXT_PUBLIC_REST_API_ENDPOINT}/searchAllStores?q=${query}`,
             {
                 headers: {
-                Accept: 'application/json',
+                    Accept: 'application/json',
                 },
             },
         );

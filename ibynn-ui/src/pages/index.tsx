@@ -26,12 +26,6 @@ import { ProductGrid } from '@components/product/product-grid';
 
 export default function Home() {
 
-  useEffect(() => {
-    // searchForProduct('rocks')
-    // .then(res => console.log(res))
-  })
-
-
   return (
     <>
       <Seo
