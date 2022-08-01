@@ -50,11 +50,14 @@ app.get('/', async (req, res) => {
 
 app.get('/searchAllStores', async (req, res) => {
   
-  const ax = await withPagination(req.query.q);
-  // const ax = await inOne(req.query.q);
-  console.log('OLD MCDONALD HAD A FARM', process.env.API_KEY, 'EEH AY EHH AY OOH')
+  try {
+    const ax = await withPagination(req.query.q);
+    res.json(ax)
+    
+  } catch (error) {
+    res.send(error)    
+  }
 
-  res.json(ax)
 });
 
 // starting the server
