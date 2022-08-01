@@ -1,7 +1,6 @@
 const { default: axios } = require("axios");
 const { getImage, getImageCheerio } = require("./scrapeImg");
-const api_key = 'efc99c043caba567a9923654f21f4fe7d169df14e912278d1cdbcf475c2a2342'
-//const api_key = '06dd5af9fcf762884fd8bc5d80d9b97a9bfc6981be44be004f1a57c2afef081d'
+const api_key = 'c10e41196b1490589c24487b1d2a34998d6a7fe1b6f137b86d1fa7f881d36d58'
 const getSerpUrl = (storeUrl, query = 'iphone+12') => `https://serpapi.com/search.json?num=100&q=${query}+site%3A${storeUrl}&hl=en&gl=us&api_key=${api_key}`
 const getSerpUrlQ = (query = 'iphone+12') => `https://serpapi.com/search.json?num=100&q=${query}&hl=en&gl=us&api_key=${api_key}`
 const getSerpUrlPages = (query = 'iphone+12', pageIndex) => `https://serpapi.com/search.json?num=100&q=${query}&hl=en&gl=us&api_key=${api_key}&start=${pageIndex * 100}`

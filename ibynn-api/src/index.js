@@ -33,6 +33,10 @@ app.use(cors());
 // adding morgan to log HTTP requests
 app.use(morgan('combined'));
 
+app.get('/json/:jsonFile', (req, res) => {
+  const json = require(`../json/${req.params.jsonFile}.json`);
+  res.json(json);
+})
 
 app.get('/', async (req, res) => {
   // const ax = await inOne('bar+soap');
