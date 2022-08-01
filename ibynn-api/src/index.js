@@ -11,7 +11,8 @@ const request = require('request');
 const { response } = require('express');
 const { search, getStores, inOne, withPagination } = require('./scripts/prodRequest');
 const { getForum, fetchTitles } = require('./scripts/scrapeImg');
-
+const dotenv = require('dotenv');
+dotenv.config();
 
 // defining the Express app
 const app = express();
@@ -51,6 +52,7 @@ app.get('/searchAllStores', async (req, res) => {
   
   const ax = await withPagination(req.query.q);
   // const ax = await inOne(req.query.q);
+  console.log('OLD MCDONALD HAD A FARM', process.env.API_KEY, 'EEH AY EHH AY OOH')
 
   res.json(ax)
 });
