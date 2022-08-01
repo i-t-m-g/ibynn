@@ -24,5 +24,6 @@ export const searchForProduct = async (query: string|string[]|undefined) => {
             console.log('unexpected error: ', error);
             
         }
+        return new Products()
     }
 }

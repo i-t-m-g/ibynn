@@ -13,12 +13,6 @@ const HeroSearchBox = () => {
   function onSubmit(e: React.SyntheticEvent) {
     e.preventDefault();
 
-    let data;
-
-    // searchForProduct(searchTerm)
-    //   .then(res => setData(res))
-    //   .catch(error => console.log(error))
-
     router.push(`/search?q=${searchTerm}`);
   }
   return (

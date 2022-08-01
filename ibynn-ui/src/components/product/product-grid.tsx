@@ -1,5 +1,5 @@
 import { FC, useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
+import Router, { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 import Alert from '@components/ui/alert';
 import Button from '@components/ui/button';
@@ -17,11 +17,13 @@ interface ProductGridProps {
 }
 
 export const ProductGrid: FC<ProductGridProps> = ({ className = '' }) => {
-  const [data, setData] = useState<Products>();
+  const [data, setData] = useState<Products>(new Products());
+  const [isLoading, setIsLoading] = useState(true);
   const { t } = useTranslation('common');
   const { query } = useRouter();
+
   const {
-    isFetching: isLoading,
+    // isFetching: isLoading,
     isFetchingNextPage: loadingMore,
     fetchNextPage,
     hasNextPage,
@@ -29,12 +31,16 @@ export const ProductGrid: FC<ProductGridProps> = ({ className = '' }) => {
     error,
   } = useProductsQuery({ limit: LIMITS.PRODUCTS_LIMITS, ...query });
 
+  const handleit = () => {
+    setData(new Products())
+    setIsLoading(true)
+  }
+
   useEffect(() => {
-    if (query.q)
-    {
-      searchForProduct(query.q).then(res => setData(res));
-      console.log(data?.results.length)
-    }
+    Router.events.on('routeChangeStart', handleit)
+
+    searchForProduct(query.q).then((res) => setData(res));
+
   }, [query])
 
   return (

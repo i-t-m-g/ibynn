@@ -1,8 +1,8 @@
-export interface SearchInfo {
-    organic_results_state: string;
-    query_displayed: string;
-    total_results: number;
-    time_taken_displayed: number;
+export class SearchInfo {
+    organic_results_state?: string;
+    query_displayed?: string;
+    total_results?: number;
+    time_taken_displayed?: number;
 }
 
 export interface DetectedExtensions {
@@ -40,23 +40,23 @@ export interface AboutThisResult {
     related_keywords: string[];
 }
 
-export interface Result {
-    position: number;
-    title: string;
-    link: string;
-    displayed_link: string;
-    thumbnail: string;
-    snippet: string;
-    snippet_highlighted_words: string[];
-    rich_snippet: RichSnippet;
-    about_this_result: AboutThisResult;
-    about_page_link: string;
-    cached_page_link: string;
-    related_pages_link: string;
+export class Result {
+    position?: number;
+    title?: string;
+    link?: string;
+    displayed_link?: string;
+    thumbnail?: string;
+    snippet?: string;
+    snippet_highlighted_words?: string[];
+    rich_snippet?: RichSnippet;
+    about_this_result?: AboutThisResult;
+    about_page_link?: string;
+    cached_page_link?: string;
+    related_pages_link?: string;
 }
 
-export interface Products {
-    search_info: SearchInfo;
-    results: Result[];
+export class Products {
+    search_info: SearchInfo = new SearchInfo();
+    results: Result[] = [];
 }
 

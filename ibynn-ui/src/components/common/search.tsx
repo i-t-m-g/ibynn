@@ -7,6 +7,7 @@ import SearchResultLoader from '@components/ui/loaders/search-result-loader';
 import useFreezeBodyScroll from '@utils/use-freeze-body-scroll';
 import Scrollbar from '@components/ui/scrollbar';
 import { useUI } from '@contexts/ui.context';
+import { useRouter } from 'next/router';
 
 type Props = {
   className?: string;
@@ -31,6 +32,7 @@ const Search = React.forwardRef<HTMLDivElement, Props>(
     } = useUI();
     const [searchText, setSearchText] = useState('');
     const [inputFocus, setInputFocus] = useState<boolean>(false);
+    const router = useRouter();
     const { data, isLoading } = useSearchQuery({
       text: searchText,
     });
@@ -39,6 +41,8 @@ const Search = React.forwardRef<HTMLDivElement, Props>(
     );
     function handleSearch(e: React.SyntheticEvent) {
       e.preventDefault();
+      setInputFocus(false);
+      router.push(`/search?q=${searchText}`);
     }
     function handleAutoSearch(e: React.FormEvent<HTMLInputElement>) {
       setSearchText(e.currentTarget.value);
@@ -66,11 +70,11 @@ const Search = React.forwardRef<HTMLDivElement, Props>(
             'overlay cursor-pointer invisible w-full h-full opacity-0 flex top-0 ltr:left-0 rtl:right-0 transition-all duration-300 fixed',
             {
               open: displayMobileSearch,
-              'input-focus-overlay-open': inputFocus === true,
+              'input-focus-overlay-open': inputFocus,
               'open-search-overlay': displaySearch,
             }
           )}
-          onClick={() => clear()}
+          onClick={() => setInputFocus(false)}
         />
         {/* End of overlay */}
 
@@ -89,7 +93,7 @@ const Search = React.forwardRef<HTMLDivElement, Props>(
           </div>
           {/* End of searchbox */}
 
-          {searchText && (
+          {/* {searchText && (
             <div className="w-full absolute top-[56px] ltr:left-0 rtl:right-0 py-2.5 bg-brand-light rounded-md flex flex-col overflow-hidden shadow-dropDown z-30">
               <Scrollbar className="os-host-flexbox">
                 <div className="w-full h-[380px]">
@@ -117,7 +121,7 @@ const Search = React.forwardRef<HTMLDivElement, Props>(
                 </div>
               </Scrollbar>
             </div>
-          )}
+          )} */}
           {/* End of search result */}
         </div>
       </div>
