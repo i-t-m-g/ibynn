@@ -136,11 +136,10 @@ const getProductsWithPagination = async (query) => {
     for await (const prod of data.results) {
         data.results[i].position = i;
 
-        if (!prod.thumbnail && prod.link.includes('target')) {
-            const thumbnail = await getImageCheerio(prod.link);
-            data.results[i].thumbnail = thumbnail;
-
-        }
+        // if (!prod.thumbnail && prod.link.includes('target')) {
+        //     const thumbnail = await getImageCheerio(prod.link);
+        //     data.results[i].thumbnail = thumbnail;
+        // }
         i++
     }
     

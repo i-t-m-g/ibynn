@@ -37,10 +37,14 @@ export const ProductGrid: FC<ProductGridProps> = ({ className = '' }) => {
   }
 
   useEffect(() => {
-    Router.events.on('routeChangeStart', handleit)
+    setIsLoading(data?.results?.length < 1)
+  },[data]);
 
-    searchForProduct(query.q).then((res) => setData(res));
-
+  useEffect(() => {
+    if (query.q) {
+      setData(new Products())
+      searchForProduct(query.q).then((res) => setData(res));
+    }
   }, [query])
 
   return (
@@ -67,7 +71,7 @@ export const ProductGrid: FC<ProductGridProps> = ({ className = '' }) => {
             // return page?.data?.map((product: Product) => (
             if (page) {
               return (<ProductCard
-                  key={`product--key-${page.position * index}`}
+                  key={`product--key-${index}`}
                   product={page}
                 />)
             }

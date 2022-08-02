@@ -19,12 +19,13 @@ interface ProductFeedProps {
   className?: string;
 }
 const AllProductFeed: FC<ProductFeedProps> = ({ element, className = '' }) => {
-  const [data, setData] = useState<Products>();
+  const [data, setData] = useState<Products>(new Products());
+  const [isLoading, setIsLoading] = useState<Boolean>(true);
   const { t } = useTranslation('common');
 
   const { query } = useRouter();
   const {
-    isFetching: isLoading,
+    // isFetching: isLoading,
     isFetchingNextPage: loadingMore,
     fetchNextPage,
     hasNextPage,
@@ -65,7 +66,7 @@ const AllProductFeed: FC<ProductFeedProps> = ({ element, className = '' }) => {
         (
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 3xl:grid-cols-6 md:gap-4 2xl:gap-5">
           
-          {isLoading && !data?.results?.length ? (
+          {isLoading && data?.results?.length < 1 ? (
             Array.from({ length: LIMITS.PRODUCTS_LIMITS }).map((_, idx) => (
               <ProductCardLoader
                 key={`product--key-${idx}`}
