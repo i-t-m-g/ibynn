@@ -5,6 +5,7 @@ import { useTranslation } from 'next-i18next';
 const CategoryPopup: React.FC = () => {
   const { t } = useTranslation('common');
   const { closeModal } = useModalAction();
+
   return (
     <div className="relative flex flex-col w-full mx-auto overflow-hidden rounded-t bg-brand-light h-inherit">
       <CategoryDropdownSidebar className="w-full" />
