@@ -60,7 +60,6 @@ const AllProductFeed: FC<ProductFeedProps> = ({ element, className = '' }) => {
         <Alert message={error?.message} />
       ) : (
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 3xl:grid-cols-6 md:gap-4 2xl:gap-5">
-          
           {isLoading && data?.results?.length < 1 ? (
             Array.from({ length: LIMITS.PRODUCTS_LIMITS }).map((_, idx) => (
               <ProductCardLoader
