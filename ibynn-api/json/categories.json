@@ -12,35 +12,28 @@
           "name": "Pencils",
           "path": "/search?q=pencils",
           "slug": "Pencils",
-          "icon": "/assets/images/category/icon/bleach-symbol.svg"
+          "icon": "/assets/images/category/icon/pencils-icon.svg"
         },
         {
           "id": 2,
           "name": "Notebooks",
           "path": "/search?q=Notebooks",
           "slug": "Notebooks",
-          "icon": "/assets/images/category/icon/bleach-symbol.svg"
+          "icon": "/assets/images/category/icon/notebook.svg"
         },
         {
           "id": 3,
           "name": "Binders",
           "path": "/search?q=Binders",
           "slug": "Binders",
-          "icon": "/assets/images/category/icon/bleach-symbol.svg"
+          "icon": "/assets/images/category/icon/binder.svg"
         },
         {
           "id": 2,
           "name": "Loose Leaf Paper",
           "path": "/search?q=loose+leaf+binder+paper",
           "slug": "Loose Leaf Paper",
-          "icon": "/assets/images/category/icon/bleach-symbol.svg"
-        },
-        {
-          "id": 2,
-          "name": "Bleach",
-          "path": "/search?q=Bleach",
-          "slug": "Bleach",
-          "icon": "/assets/images/category/icon/bleach-symbol.svg"
+          "icon": "/assets/images/category/icon/sheet.svg"
         }
       ]
     },
