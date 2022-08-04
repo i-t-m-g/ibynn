@@ -34,7 +34,7 @@ const AllProductFeed: FC<ProductFeedProps> = ({ element, className = '' }) => {
   } = useProductsQuery({ limit: LIMITS.PRODUCTS_LIMITS, ...query });
 
   useEffect(() => {
-    searchForProduct('skin+lotion').then((res) => setData(res));
+    searchForProduct('school+supplies').then((res) => setData(res));
   }, [query]);
 
   const { openModal } = useModalAction();
@@ -46,7 +46,7 @@ const AllProductFeed: FC<ProductFeedProps> = ({ element, className = '' }) => {
   return (
     <div className={cn(className)}>
       <div className="flex items-center justify-between pb-0.5 mb-4 lg:mb-5 xl:mb-6">
-        <SectionHeader sectionHeading="Our Top Picks" className="mb-0" />
+        <SectionHeader sectionHeading="Back To School" className="mb-0" />
         <div
           className="lg:hidden transition-all text-brand -mt-1.5 font-semibold text-2xl md:text-20px hover:text-brand-dark"
           role="button"

@@ -50,7 +50,7 @@ const HeroBannerCard: FC<BannerProps> = ({
         <div className="text-center">
           <h2
             className={cn(
-              'text-3xl md:text-4xl font-manrope font-extrabold leading-snug md:leading-tight xl:leading-[1.3em] mb-3 md:mb-4 xl:mb-3 -mt-2 xl:-mt-3 2xl:-mt-4',
+              'pl-4 text-2xl md:text-4xl font-manrope font-extrabold leading-snug md:leading-tight xl:leading-[1.3em] mb-3 md:mb-4 xl:mb-3 -mt-2 xl:-mt-3 2xl:-mt-4',
               {
                 'text-brand-tree-dark xl:text-5xl 2xl:text-[55px]':
                   variant === 'default',
@@ -65,7 +65,7 @@ const HeroBannerCard: FC<BannerProps> = ({
           </h2>
           <p
             className={cn(
-              'text-base md:text-[17px] xl:text-lg leading-7 md:leading-8 xl:leading-[1.92em] xl:px-16',
+              'pl-4 text-xs md:text-[17px] xl:text-lg leading-7 md:leading-8 xl:leading-[1.92em] xl:px-16',
               {
                 'text-brand-dark text-opacity-80 2xl:px-32':
                   variant === 'default',
