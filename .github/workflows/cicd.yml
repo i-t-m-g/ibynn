@@ -31,5 +31,5 @@ jobs:
             script: |
               mkdir test
               cd test
-              git clone https://github.com/i-t-m-g/ibynn/tree/main/ibynn-api
+              git clone https://github.com/i-t-m-g/ibynn
               echo 'Deployed successfully'
