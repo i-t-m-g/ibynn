@@ -71,7 +71,9 @@ const getProductAllStores = async (query) => {
     const storeUrls = [
         "walmart.com",
         "amazon.com",
-        "target.com"
+        "target.com",
+        "bjs.com",
+        "costco.com"
     ];
 
     for await (const url of storeUrls) {
@@ -133,17 +135,26 @@ const getProductsWithPagination = async (query) => {
     data.search_info.total_results = data.results.length;
 
     let i = 0;
-    for await (const prod of data.results) {
-        data.results[i].position = i;
+
+    const sortedArr = data.results.sort((a, b) => {
+        const aPrice = a.rich_snippet?.top?.detected_extensions?.price;
+        const bPrice = b.rich_snippet?.top?.detected_extensions?.price;
+
+        return aPrice - bPrice;
+
+    })
+
+    // for await (const prod of data.results) {
+    //     data.results[i].position = i;
 
         // if (!prod.thumbnail && prod.link.includes('target')) {
         //     const thumbnail = await getImageCheerio(prod.link);
         //     data.results[i].thumbnail = thumbnail;
         // }
-        i++
-    }
+    //     i++
+    // }
     
-    return data;
+    return sortedArr;
 
 }
 

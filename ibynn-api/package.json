@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon src/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -19,6 +20,7 @@
     "helmet": "^5.1.0",
     "morgan": "^1.10.0",
     "puppeteer": "^15.5.0",
+    "redis": "^4.2.0",
     "request": "^2.88.2"
   }
 }
