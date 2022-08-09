@@ -41,7 +41,7 @@ const CategoryGridListBlock: React.FC<CategoriesProps> = ({
       <div className="pt-0.5 pb-1.5">
         <SectionHeader
           sectionHeading="text-choose-categories"
-          sectionSubHeading="text-favorite-different-categories"
+          sectionSubHeading="Here are just some of our popular categories"
           headingPosition="center"
         />
 

@@ -16,7 +16,7 @@ const Layout: React.FC = ({ children }) => {
 
   return (
     <div className="flex flex-col min-h-screen">
-      {highlightedBar !== 'true' && (
+      {/* {highlightedBar !== 'true' && (
         <HighlightedBar
           onClose={() => setHighlightedBar('true')}
           variant="highlightedTwo"
@@ -40,7 +40,7 @@ const Layout: React.FC = ({ children }) => {
           </div>
         </HighlightedBar>
       )}
-      {/* End of highlighted bar  */}
+      End of highlighted bar  */}
 
       <Header />
       <main

@@ -2,13 +2,17 @@ import { useTranslation } from 'next-i18next';
 import SearchIcon from '@components/icons/search-icon';
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
+import { searchForProduct } from 'src/framework/ibynn-api/product';
 
 const HeroSearchBox = () => {
   const { t } = useTranslation('forms');
   const router = useRouter();
   const [searchTerm, setSearchTerm] = useState('');
+  const [data, setData] = useState({});
+
   function onSubmit(e: React.SyntheticEvent) {
     e.preventDefault();
+
     router.push(`/search?q=${searchTerm}`);
   }
   return (

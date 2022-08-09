@@ -41,7 +41,6 @@ const FilterSidebar = () => {
       </Scrollbar>
 
       <div className="flex items-center justify-center leading-4 text-15px md:text-base px-7 shrink-0 h-14 bg-fill-secondary text-brand-dark ">
-        2,683 {t('text-items-found')}
       </div>
     </div>
   );

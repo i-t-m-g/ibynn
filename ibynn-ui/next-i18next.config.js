@@ -1,5 +1,8 @@
 const path = require('path');
 module.exports = {
+  images: {
+    domains: ['encrypted-tbn0.gstatic.com', 'serpapi.com']
+  },
   i18n: {
     locales: ['en', 'de', 'es', 'ar', 'he', 'zh'],
     defaultLocale: 'en',

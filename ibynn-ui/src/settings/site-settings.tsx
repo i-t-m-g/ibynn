@@ -8,7 +8,7 @@ import { ESFlag } from '@components/icons/language/ESFlag';
 export const siteSettings = {
   name: ' IBYNN',
   description:
-    'food & groceries haah',
+    'Find Cheap Deals And Compare Prices From Top Brands',
   author: {
     name: 'ITMG Inc.',
     websiteUrl: 'https://ITMG.io',
@@ -25,187 +25,299 @@ export const siteSettings = {
   currencyCode: 'USD',
   site_header: {
     menu: [
-      {
-        id: 1,
-        path: '/',
-        label: 'menu-demos',
-        subMenu: [
-          {
-            id: 1,
-            path: '/',
-            label: 'menu-modern',
-          },
-          {
-            id: 2,
-            path: '/classic',
-            label: 'menu-classic',
-          },
-          {
-            id: 3,
-            path: '/vintage',
-            label: 'menu-vintage',
-          },
-          {
-            id: 4,
-            path: '/standard',
-            label: 'menu-standard',
-          },
-          {
-            id: 5,
-            path: '/minimal',
-            label: 'menu-minimal',
-          },
-          {
-            id: 6,
-            path: '/trendy',
-            label: 'menu-trendy',
-          },
-          {
-            id: 7,
-            path: '/elegant',
-            label: 'menu-elegant',
-          },
-          {
-            id: 8,
-            path: '/refined',
-            label: 'menu-refined',
-          },
-        ],
-      },
+      // Categories Tab
       {
         id: 2,
         path: '/search',
         label: 'menu-categories',
-        subMenu: [
-          {
-            id: 1,
-            path: '/search',
-            label: 'menu-fresh-vegetables',
-          },
-          {
-            id: 2,
-            path: '/search',
-            label: 'menu-diet-nutrition',
-          },
-          {
-            id: 3,
-            path: '/search',
-            label: 'menu-healthy-foods',
-          },
-          {
-            id: 4,
-            path: '/search',
-            label: 'menu-grocery-items',
-          },
-          {
-            id: 5,
-            path: '/search',
-            label: 'menu-beaf-steak',
-          },
-        ],
+        subMenu:[
+                {
+                  id: 1,
+                  path: '/search?q=Household+Items',
+                  label: 'Household Items',
+                  subMenu: [
+                            {
+                              id: 1,
+                              path: '/search?q=Air+Freshener',
+                              label: 'Air Freshener',
+                              subMenu:
+                                      [
+                                        {
+                                          id: 1,
+                                          path: '/search?q=air+refreshener+refils',
+                                          label: 'Refils',
+                                        },
+
+                                      ],
+                            },
+
+
+                            {
+                              id: 2,
+                              path: '/search?q=bleach',
+                              label: 'Bleach',
+                            },
+                            
+                            {
+                              id: 3,
+                              path: '/search?q=dishwasher+detergent',
+                              label: 'Dishwasher Detergent',
+                            },
+
+                            {
+                              id: 4,
+                              path: '/search?q=dishwashing+Soap',
+                              label: 'Dishwashing Soap',
+                            },
+
+                            {
+                              id: 5,
+                              path: '/search?q=dryer+sheets',
+                              label: 'Dryer Sheets',
+                            },
+
+                            {
+                              id: 6,
+                              path: '/search?q=Glass+Cleaner',
+                              label: 'Glass Cleaner',
+                            },
+                          
+                            {
+                              id: 7,
+                              path: '/search?q=laundry+detergent',
+                              label: 'Laundry Detergent',
+                            },
+
+                            {
+                              id: 8,
+                              path: '/search?q=Sponge',
+                              label: 'Sponge',
+                            },
+
+                            {
+                              id: 9,
+                              path: '/search?q=stain+remover',
+                              label: 'Stain Remover',
+                            },
+
+                            {
+                              id: 10,
+                              path: '/search?q=Tub+Tile+Cleaner',
+                              label: 'Tub & Tile Cleaner',
+                            },
+
+                            {
+                              id: 11,
+                              path: '/search?q=vaccum+bags',
+                              label: 'Vaccum Bags',
+                            },
+
+                            {
+                              id: 12,
+                              path: '/search?q=wipes',
+                              label: 'Wipes',
+                            },
+
+                          ],
+                },
+                {
+                  id: 2,
+                  path: '/search?q=Personal+Care',
+                  label: 'Personal Care',
+                  subMenu: 
+                          [
+
+                            {
+                              id: 1,
+                              path: '/search?q=Skin+Lotion',
+                              label: 'Skin Lotion',
+                            },
+
+                            {
+                              id: 2,
+                              path: '/search?q=Bath+&+Body',
+                              label: 'Bath & Body',
+                            },
+
+                            {
+                              id: 3,
+                              path: '/search?q=Baby+Care',
+                              label: 'Baby Care',
+                            },
+                            {
+                              id: 4,
+                              path: '/search?q=Cotton+Balls+Pads+&+Swabs',
+                              label: 'Cotton Balls, Pads & Swabs',
+                            },
+
+                            {
+                              id: 5,
+                              path: '/search?q=Deodorants',
+                              label: 'Deodorants',
+                            },
+
+                            {
+                              id: 6,
+                              path: '/search?q=Facial+Tissue',
+                              label: 'Facial Tissue',
+                            },
+
+                            {
+                              id: 7,
+                              path: '/search?q=Feminine+Products',
+                              label: 'Feminine Products',
+                            },
+
+                            {
+                              id: 8,
+                              path: '/search?q=Hair+Removal+&+Shaving+Tools',
+                              label: 'Hair Removal & Shaving Tools',
+                            },
+                             
+                            {
+                              id: 9,
+                              path: '/search?q=Hand+Soap+&+Refills',
+                              label: 'Hand Soap & Refills',
+                            },
+
+                            {
+                              id: 10,
+                              path: '/search?q=Nail+Care',
+                              label: 'Nail Care',
+                            },
+
+                            {
+                              id: 11,
+                              path: '/search?q=Orale+Care',
+                              label: 'Orale Care',
+                            },
+
+                          ],
+                },
+                {
+                  id: 3,
+                  path: '/search?q=Fresh+Fruits',
+                  label: 'Fresh Fruit',
+                  subMenu: 
+                          [
+
+                            {
+                              id: 1,
+                              path: '/search?q=fresh+apples',
+                              label: 'Apples',
+                              subMenu:
+                                      [
+
+                                          {
+                                          id: 1,
+                                          path: '/search?q=fuji+apples',
+                                          label: 'Fuji Apples',
+                                          },
+
+                                          {
+                                            id: 2,
+                                            path: '/search?q=granny+smith+apples',
+                                            label: 'Granny Smith Apples',
+                                          },
+
+                                          {
+                                            id: 3,
+                                            path: '/search?q=empire+apples',
+                                            label: 'Empire Apples',
+                                          },
+
+                                          {
+                                            id: 4,
+                                            path: '/search?q=gala+apples',
+                                            label: 'Gala Apples',
+                                          },
+
+                                          {
+                                            id: 5,
+                                            path: '/search?q=honey+crisp+apples',
+                                            label: 'Honey Crisp Apples',
+                                          },  
+
+                                          {
+                                            id: 6,
+                                            path: '/search?q=McIntosh+apples',
+                                            label: 'McIntosh Apples',
+                                          },
+
+                                          {
+                                            id: 7,
+                                            path: '/search?q=golden+delicious+apples',
+                                            label: 'Golden Delicous Apples',
+                                          },
+
+                                          {
+                                            id: 8,
+                                            path: '/search?q=cripps+pink+apples',
+                                            label: 'Cripps Pink Apples',
+                                          },
+
+                                      ]
+                                    
+                            },
+
+                            {
+                              id: 2,
+                              path: '/search?q=fresh+pears',
+                              label: 'Pears',
+                            },
+                            
+                            {
+                              id: 3,
+                              path: '/search?q=fresh+peaches',
+                              label: 'Peaches',
+                            },
+
+                            {
+                              id: 4,
+                              path: '/search?q=fresh+strawberries',
+                              label: 'Strawberries',
+                            },
+
+                            {
+                              id: 5,
+                              path: "/search?q=Mango",
+                              label: "Mango"
+                            },
+      
+                            {
+                              id: 6,
+                              path: "/search?q=Watermelon",
+                              label: "Watermelon"
+                            },
+
+                          
+                          ],
+                },
+                ],
       },
-      {
-        id: 3,
-        path: '/search',
-        label: 'menu-dietary',
-        subMenu: [
-          {
-            id: 1,
-            path: '/search',
-            label: 'menu-vegetarian',
-          },
-          {
-            id: 2,
-            path: '/search',
-            label: 'menu-kakogenic',
-          },
-          {
-            id: 3,
-            path: '/search',
-            label: 'menu-mediterranean',
-          },
-          {
-            id: 4,
-            path: '/search',
-            label: 'menu-organic',
-          },
-        ],
-      },
+
+
+ 
+      // Search Tab
       {
         id: 4,
         path: '/search/',
         label: 'menu-search',
       },
-      {
-        id: 5,
-        path: '/shops/',
-        label: 'menu-shops',
-      },
-      {
-        id: 6,
-        path: '/',
-        label: 'menu-pages',
-        subMenu: [
+    
+
+      // About Us Tab and Template to add other Tabs on Nav Bar
           {
-            id: 1,
-            path: '/',
-            label: 'menu-users',
-            subMenu: [
-              {
-                id: 1,
-                path: '/my-account/account-settings',
-                label: 'menu-my-account',
-              },
-              {
-                id: 2,
-                path: '/signin',
-                label: 'menu-sign-in',
-              },
-              {
-                id: 3,
-                path: '/signup',
-                label: 'menu-sign-up',
-              },
-            ],
-          },
-          {
-            id: 2,
-            path: '/faq',
-            label: 'menu-faq',
-          },
-          {
-            id: 3,
+            id:7,
             path: '/about-us',
             label: 'menu-about-us',
-          },
-          {
-            id: 4,
-            path: '/privacy',
-            label: 'menu-privacy-policy',
-          },
-          {
-            id: 5,
-            path: '/terms',
-            label: 'menu-terms-condition',
-          },
-          {
-            id: 6,
-            path: '/contact-us',
-            label: 'menu-contact-us',
-          },
-          {
-            id: 7,
-            path: '/checkout',
-            label: 'menu-checkout',
-          },
-          {
-            id: 8,
-            path: '/404',
-            label: 'menu-404',
-          },
-        ],
-      },
+          }
+          
+
+
     ],
+
+
     languageMenu: [
       {
         id: 'ar',

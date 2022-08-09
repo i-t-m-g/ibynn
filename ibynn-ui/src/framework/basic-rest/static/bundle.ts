@@ -88,7 +88,7 @@ export const bundleData = [
 export const bundleDataTwo = [
   {
     id: 1,
-    slug: 'spring-cleaning-for-home-appliance',
+    slug: 'All Your Favorite Stores That You Already Shop In',
     image: '/assets/images/bundle/1.png',
     title: 'bundle-title-one',
     description: 'bundle-description',

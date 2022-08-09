@@ -15,6 +15,7 @@ import { API_ENDPOINTS } from '@framework/utils/api-endpoints';
 import { fetchCategories } from '@framework/category/get-all-categories';
 import { fetchProducts } from '@framework/product/get-all-products';
 import { LIMITS } from '@framework/utils/limits';
+import CategoryDropdownSidebar from '@components/category/category-dropdown-sidebar';
 
 export default function Search() {
   return (
@@ -28,7 +29,8 @@ export default function Search() {
       <Container>
         <Element name="grid" className="flex pb-16 pt-7 lg:pt-7 lg:pb-20">
           <div className="sticky hidden h-full lg:pt-4 shrink-0 ltr:pr-8 rtl:pl-8 xl:ltr:pr-16 xl:rtl:pl-16 lg:block w-80 xl:w-96 top-16">
-            <ShopFilters />
+          <CategoryDropdownSidebar className="shrink-0 ltr:pr-8 rtl:pl-8 hidden lg:block w-80 xl:w-[370px] lg:sticky lg:top-20" />
+            {/* <ShopFilters /> */}
           </div>
           <div className="w-full lg:pt-4 lg:ltr:-ml-4 lg:rtl:-mr-2 xl:ltr:-ml-8 xl:rtl:-mr-8 lg:-mt-1">
             <SearchTopBar />

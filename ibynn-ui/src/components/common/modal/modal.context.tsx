@@ -85,5 +85,8 @@ export function useModalAction() {
     closeModal() {
       dispatch({ type: 'close' });
     },
+    closeThisModal(view?: MODAL_VIEWS, payload?: unknown) {
+      dispatch({ type: 'open', view, payload });
+    },
   };
 }

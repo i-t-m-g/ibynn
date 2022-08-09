@@ -5,6 +5,7 @@ import { useUI } from '@contexts/ui.context';
 import { useEffect, useState } from 'react';
 import Image from '@components/ui/image';
 import { useTranslation } from 'next-i18next';
+import { useModalAction } from '@components/common/modal/modal.context';
 
 function SidebarMenuItem({ className, item, depth = 0 }: any) {
   const { t } = useTranslation('common');
@@ -19,6 +20,7 @@ function SidebarMenuItem({ className, item, depth = 0 }: any) {
   }, [isActive]);
   const { slug, name, children: items, icon } = item;
   const { displaySidebar, closeSidebar } = useUI();
+  const { closeModal } = useModalAction();
 
   function toggleCollapse() {
     setOpen((prevValue) => !prevValue);
@@ -28,12 +30,14 @@ function SidebarMenuItem({ className, item, depth = 0 }: any) {
     if (Array.isArray(items) && !!items.length) {
       toggleCollapse();
     } else {
-      const { pathname, query } = router;
+      const pathname = '/search';
+      const { query } = router;
       const { type, ...rest } = query;
+      closeModal();
       router.push(
         {
           pathname,
-          query: { ...rest, category: slug },
+          query: { ...rest, q: slug },
         },
         undefined,
         {
