@@ -22,7 +22,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
         - name: Deploy app
-          uses: appleboy/ssh-action@v.0.1.2
+          uses: appleboy/ssh-action@v0.1.2
           with: 
             host: ${{secrets.SSH_HOST}}
             key: ${{secrets.SSH_KEY}}
