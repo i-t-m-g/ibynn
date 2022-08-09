@@ -7,6 +7,7 @@ import cn from 'classnames';
 type SearchProps = {
   className?: string;
   searchId?: string;
+  enterKeyHint?: 'search';
   onSubmit: (e: React.SyntheticEvent) => void;
   onClear: (e: React.SyntheticEvent) => void;
   onFocus?: (e: React.SyntheticEvent) => void;
@@ -23,6 +24,7 @@ const SearchBox = React.forwardRef<HTMLInputElement, SearchProps>(
       searchId = 'search',
       variant = 'border',
       value,
+      enterKeyHint,
       onSubmit,
       onClear,
       onFocus,

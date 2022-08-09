@@ -1,20 +1,22 @@
-export const homeTwoBanner = {
-  id: 1,
-  title: 'Store Of Fresh Quality Meat',
-  slug: '/search',
-  image: {
-    mobile: {
-      url: '/assets/images/banner/banner-mobile-6.png',
-      width: 450,
-      height: 370,
-    },
-    desktop: {
-      url: '/assets/images/banner/banner-6.png',
-      width: 1460,
-      height: 400,
-    },
-  },
-};
+//The image of meat thats "suposed to be in the bottom of the 'index' page. But its not needed"
+
+// export const homeTwoBanner = {
+//   id: 1,
+//   title: 'Store Of Fresh Quality Meat',
+//   slug: '/search',
+//   image: {
+//     mobile: {
+//       url: '/assets/images/banner/banner-mobile-6.png',
+//       width: 450,
+//       height: 370,
+//     },
+//     desktop: {
+//       url: '/assets/images/banner/banner-6.png',
+//       width: 1460,
+//       height: 400,
+//     },
+//   },
+// };
 
 export const bannersGridHero = [
   {
@@ -284,6 +286,8 @@ export const homeThreeHeroBanner = {
   },
 };
 
+///////////// The Main Page, "landing page," Home Banner, and search box
+
 export const homeFourHeroBanner = {
   id: 1,
   title: 'banner-thousand-grocery-title',
@@ -351,11 +355,13 @@ export const refinedSixHeroBanner = [
   },
 ];
 
+//// The scroling "ad", discount carousel, bar ///////////
+
 export const bannerDiscount = [
   {
     id: 1,
-    title: 'Up to RM10 rebate on groceries!',
-    slug: '/search',
+    title: 'Coming Soon',
+    slug: '/search?q=school+textbooks',
     image: {
       mobile: {
         url: '/assets/images/banner/discount/banner-1.png',
@@ -371,7 +377,7 @@ export const bannerDiscount = [
   },
   {
     id: 2,
-    title: 'Up to 50% off',
+    title: 'Coming Soon',
     slug: '/search',
     image: {
       mobile: {
@@ -388,7 +394,7 @@ export const bannerDiscount = [
   },
   {
     id: 3,
-    title: 'Green tea now with Immunity power',
+    title: 'Comig Soon',
     slug: '/search',
     image: {
       mobile: {
@@ -405,7 +411,7 @@ export const bannerDiscount = [
   },
   {
     id: 4,
-    title: 'Delight your summers',
+    title: 'Coming Soon',
     slug: '/search',
     image: {
       mobile: {
@@ -422,7 +428,7 @@ export const bannerDiscount = [
   },
   {
     id: 5,
-    title: 'Grocery Sale',
+    title: 'Coming Soon',
     slug: '/search',
     image: {
       mobile: {
@@ -441,7 +447,7 @@ export const bannerDiscount = [
 
 export const homeSixBanner = {
   id: 1,
-  title: 'Super Discount 70% Off',
+  title: 'Coming Soon',
   slug: '/search',
   image: {
     mobile: {
@@ -459,7 +465,7 @@ export const homeSixBanner = {
 
 export const homeRefinedBanner = {
   id: 1,
-  title: "Today's best deal",
+  title: 'Coming Soon',
   slug: '/search',
   image: {
     mobile: {
