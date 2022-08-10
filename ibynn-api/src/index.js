@@ -13,19 +13,21 @@ const { getForum, fetchTitles } = require('./scripts/scrapeImg');
 const dotenv = require('dotenv');
 
 dotenv.config();
-var redisConfig = {
+let redisClient;
+const redisConfig = {
   host: process.env.REDIS_HOST,
   port: parseInt(process.env.REDIS_PORT),
   password: process.env.REDIS_PASSWORD,
   username: process.env.REDIS_USERNAME
 };
 
-const client = Redis.createClient({ host: process.env.REDIS_HOST, port: process.env.REDIS_PORT, password: process.env.REDIS_PASSWORD, TLS: true });
-// const client = Redis.createClient();
-// client.connect().catch(err => console.log(err));
-client.on('connect', () => console.log('Connected to Redis!'));
-client.on('error', (err) => console.log('Redis Client Error', err));
+(async () => {
+  redisClient = redis.createClient();
 
+  redisClient.on("error", (error) => console.error(`Error : ${error}`));
+
+  await redisClient.connect();
+})();
 
 const app = express();
 
