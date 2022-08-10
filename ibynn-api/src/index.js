@@ -1,5 +1,5 @@
 const express = require('express');
-const Redis = require('redis');
+const redis = require('redis');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const helmet = require('helmet');
@@ -21,13 +21,11 @@ const redisConfig = {
   username: process.env.REDIS_USERNAME
 };
 
-(async () => {
-  redisClient = redis.createClient();
-
-  redisClient.on("error", (error) => console.error(`Error : ${error}`));
-
-  await redisClient.connect();
-})();
+// const client = Redis.createClient({ host: process.env.REDIS_HOST, port: process.env.REDIS_PORT, password: process.env.REDIS_PASSWORD, TLS: true });
+const client = redis.createClient();
+client.connect().catch(err => console.log(err));
+client.on('connect', () => console.log('Connected to Redis!'));
+client.on('error', (err) => console.log('Redis Client Error', err));
 
 const app = express();
 
