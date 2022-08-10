@@ -80,7 +80,7 @@ const Search = React.forwardRef<HTMLDivElement, Props>(
 
         <div className="relative z-30 flex flex-col justify-center w-full shrink-0">
           <div className="flex flex-col w-full mx-auto">
-            <SearchBox
+            {/* <SearchBox
               searchId={searchId}
               name="search"
               value={searchText}
@@ -89,7 +89,7 @@ const Search = React.forwardRef<HTMLDivElement, Props>(
               onClear={clear}
               onFocus={() => enableInputFocus()}
               variant={variant}
-            />
+            /> */}
           </div>
           {/* End of searchbox */}
 
