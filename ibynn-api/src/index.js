@@ -21,7 +21,8 @@ var redisConfig = {
 };
 
 const client = Redis.createClient({ host: process.env.REDIS_HOST, port: process.env.REDIS_PORT, password: process.env.REDIS_PASSWORD, TLS: true });
-client.connect().catch(err => console.log(err));
+// const client = Redis.createClient();
+// client.connect().catch(err => console.log(err));
 client.on('connect', () => console.log('Connected to Redis!'));
 client.on('error', (err) => console.log('Redis Client Error', err));
 
@@ -56,7 +57,7 @@ app.get('/', async (req, res) => {
   res.send(ax)
 });
 
-app.get('/searchAllStores', caching, async (request, response) => {
+app.get('/searchAllStores', async (request, response) => {
   const query = request.query.q;
 
   try {
