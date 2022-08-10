@@ -59,7 +59,7 @@ app.get('/', async (req, res) => {
   res.send(ax)
 });
 
-app.get('/searchAllStores', async (request, response) => {
+app.get('/searchAllStores', caching, async (request, response) => {
   const query = request.query.q;
 
   try {
