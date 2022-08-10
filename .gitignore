@@ -1,3 +1,4 @@
 node_modules/
 ibynn-api/.env
 ibynn-api/package-lock.json
+package-lock.json
