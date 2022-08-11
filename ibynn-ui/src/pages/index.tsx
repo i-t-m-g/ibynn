@@ -44,7 +44,7 @@ export default function Home() {
               data={bannerDiscount}
               className="mb-12 xl:mb-14"
             />
-            <AllProductFeed
+            <AllProductFeed    
             // element={<BannerCard banner={} className="py-5" />}
             />
           </div>
