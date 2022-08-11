@@ -8,7 +8,7 @@ const axios = require('axios').default;
 const request = require('request');
 const { cacheMiddleware } = require('./middleware/cache');
 const { response } = require('express');
-const { search, getStores, inOne, withPagination } = require('./scripts/prodRequest');
+const { getProductsWP } = require('./scripts/prodRequest');
 const { getForum, fetchTitles } = require('./scripts/scrapeImg');
 const dotenv = require('dotenv');
 
@@ -61,7 +61,7 @@ app.get('/searchAllStores', caching, async (request, response) => {
   const query = request.query.q;
 
   try {
-    const results = await withPagination(query);
+    const results = await getProductsWP(query);
 
     client.setEx(query, 86400, JSON.stringify(results));
 
