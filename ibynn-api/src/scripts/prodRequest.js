@@ -144,6 +144,8 @@ const getProductsWithPagination = async (query) => {
 
     })
 
+    data.results = sortedArr;
+
     // for await (const prod of data.results) {
     //     data.results[i].position = i;
 
@@ -154,7 +156,7 @@ const getProductsWithPagination = async (query) => {
     //     i++
     // }
     
-    return sortedArr;
+    return data;
 
 }
 
