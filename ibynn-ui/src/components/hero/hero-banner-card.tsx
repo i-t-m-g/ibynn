@@ -86,7 +86,7 @@ const HeroBannerCard: FC<BannerProps> = ({
           )}
           {banner.searchBox && (
             <div className="hidden lg:flex max-w-[620px] mx-auto md:pt-1 lg:pt-3">
-              <HeroSearchBox />
+              {/* <HeroSearchBox /> */}
             </div>
           )}
         </div>

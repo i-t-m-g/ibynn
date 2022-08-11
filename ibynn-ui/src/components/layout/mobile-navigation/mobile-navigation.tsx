@@ -51,13 +51,13 @@ const BottomNavigation: React.FC = () => {
         >
           <MenuIcon />
         </button>
-        <button
+        {/* <button
           className="relative flex items-center justify-center h-auto shrink-0 focus:outline-none"
           onClick={toggleMobileSearch}
           aria-label="Search Button"
         >
           <SearchIcon />
-        </button>
+        </button> */}
         <Link href={ROUTES.HOME} className="shrink-0">
           <span className="sr-only">{t('breadcrumb-home')}</span>
           <HomeIcon />
