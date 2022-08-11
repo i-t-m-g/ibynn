@@ -1,62 +1,62 @@
 export class SearchInfo {
-    organic_results_state?: string;
-    query_displayed?: string;
-    total_results?: number;
-    time_taken_displayed?: number;
+  organic_results_state?: string;
+  query_displayed?: string;
+  total_results?: number;
+  time_taken_displayed?: number;
 }
 
 export interface DetectedExtensions {
-    rating?: number;
-    reviews?: number;
-    price: number;
-    currency: string;
+  rating?: number;
+  reviews?: number;
+  price: number;
+  currency: string;
 }
 
 export interface Top {
-    detected_extensions: DetectedExtensions;
-    extensions: any[];
+  detected_extensions: DetectedExtensions;
+  extensions: any[];
 }
 
 export interface Bottom {
-    extensions: any[];
-    detected_extensions: DetectedExtensions;
+  extensions: any[];
+  detected_extensions: DetectedExtensions;
 }
 
 export interface RichSnippet {
-    top: Top;
-    bottom: Bottom;
+  top: Top;
+  bottom: Bottom;
 }
 
 export interface Source {
-    description: string;
-    icon: string;
+  description: string;
+  icon: string;
 }
 
 export interface AboutThisResult {
-    source: Source;
-    keywords: string[];
-    languages: string[];
-    regions: string[];
-    related_keywords: string[];
+  source: Source;
+  keywords: string[];
+  languages: string[];
+  regions: string[];
+  related_keywords: string[];
 }
 
 export class Result {
-    position?: number;
-    title?: string;
-    link?: string;
-    displayed_link?: string;
-    thumbnail?: string;
-    snippet?: string;
-    snippet_highlighted_words?: string[];
-    rich_snippet?: RichSnippet;
-    about_this_result?: AboutThisResult;
-    about_page_link?: string;
-    cached_page_link?: string;
-    related_pages_link?: string;
+  position?: number;
+  title?: string;
+  link?: string;
+  displayed_link?: string;
+  thumbnail?: string;
+  snippet?: string;
+  snippet_highlighted_words?: string[];
+  rich_snippet?: RichSnippet;
+  about_this_result?: AboutThisResult;
+  about_page_link?: string;
+  cached_page_link?: string;
+  related_pages_link?: string;
+  icon?: string;
 }
 
 export class Products {
-    search_info: SearchInfo = new SearchInfo();
-    results: Result[] = [];
+  search_info: SearchInfo = new SearchInfo();
+  results: Result[] = [];
 }
-
