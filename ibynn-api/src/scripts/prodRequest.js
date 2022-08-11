@@ -2,48 +2,23 @@ const { default: axios } = require("axios");
 const { getImage, getImageCheerio } = require("./scrapeImg");
 const dotenv = require('dotenv');
 dotenv.config();
-
-const api_key = process.env.API_KEY;
-const getSerpUrl = (storeUrl, query = 'iphone+12') => `https://serpapi.com/search.json?num=100&q=${query}+site%3A${storeUrl}&hl=en&gl=us&api_key=${api_key}`
-const getSerpUrlQ = (query = 'iphone+12') => `https://serpapi.com/search.json?num=100&q=${query}&hl=en&gl=us&api_key=${api_key}`
-const getSerpUrlPages = (query = 'iphone+12', pageIndex) => `https://serpapi.com/search.json?num=100&q=${query}&hl=en&gl=us&api_key=${api_key}&start=${pageIndex * 100}`
 process.setMaxListeners(0);
 
-const searchStoreForProduct = async (storeUrl, query) => {
-    try {
-        const {data:response} = await axios.get(getSerpUrl(storeUrl, query));
-        
-        const results = response.organic_results.filter(item => item.rich_snippet?.top?.detected_extensions?.price)
-        
-        return {
-            search_information: response.search_information,
-            results: results
-        };
+const api_key = process.env.API_KEY;
+const getSerpUrlPages = (query = 'iphone+12', pageIndex) => `https://serpapi.com/search.json?num=100&q=${query}&hl=en&gl=us&api_key=${api_key}&start=${pageIndex * 100}`
+const storeImages = {
+        target: "https://www.freepnglogos.com/uploads/target-png-logo/target-logo-photo-3.png",
+        amazon: "https://www.freepnglogos.com/uploads/amazon-png-logo-vector/amazon-png-logo-vector-1.png",
+        walmart: "https://www.freepnglogos.com/uploads/walmart-logo-24.jpg"
+};
 
-    } catch (error) {
-      console.log(error);
-     }
-}
+const storeNames = [
+    "target",
+    "amazon",
+    "walmart"
+]
 
-const searchProductAsync = async (query) => {
-    try {
-        const {data:response} = await axios.get(getSerpUrlQ(query));
-        
-        const results = response.organic_results.filter(item => item.rich_snippet?.top?.detected_extensions?.price)
-        
-        const toReturn = {
-            search_information: response.search_information,
-            results: results
-        };
 
-        toReturn.search_information.total_results = results.length
-
-        return toReturn;
-
-    } catch (error) {
-      console.log(error);
-     }
-}
 
 const searchProductPagesAsync = async (query, pageIndex) => {
     try {
@@ -65,47 +40,6 @@ const searchProductPagesAsync = async (query, pageIndex) => {
      }
 }
 
-const getProductAllStores = async (query) => {
-    const results = [];
-    let data = {};
-    const storeUrls = [
-        "walmart.com",
-        "amazon.com",
-        "target.com",
-        "bjs.com",
-        "costco.com"
-    ];
-
-    for await (const url of storeUrls) {
-        const result = await searchStoreForProduct(url, query)
-        results.push(...result.results)
-        data = {
-            search_info: result.search_information,
-            results: results
-        };
-    }
-
-    return data;
-
-}
-
-const getProductAllStoresInOne = async (query) => {
-    let results = [];
-    let data = {};
-    let q = '';
-    const storeUrls = [
-        "walmart.com",
-        "amazon.com",
-        "target.com"
-    ];
-    
-    storeUrls.forEach((url, index) => q = query += `+${index !== 0 ? 'OR' : ''}+site%3A${url}`);
-    results = searchProductAsync(q);
-
-    return results;
-
-}
-
 const getProductsWithPagination = async (query) => {
     let data = {
         search_info: {
@@ -115,6 +49,7 @@ const getProductsWithPagination = async (query) => {
         },
         results: []
     };
+
     let q = '';
     const storeUrls = [
         "walmart.com",
@@ -134,7 +69,6 @@ const getProductsWithPagination = async (query) => {
 
     data.search_info.total_results = data.results.length;
 
-    let i = 0;
 
     const sortedArr = data.results.sort((a, b) => {
         const aPrice = a.rich_snippet?.top?.detected_extensions?.price;
@@ -146,21 +80,25 @@ const getProductsWithPagination = async (query) => {
 
     data.results = sortedArr;
 
-    // for await (const prod of data.results) {
-    //     data.results[i].position = i;
+    let i = 0;
+    for await (const prod of data.results) {
+        // data.results[i].position = i;
+        storeNames.forEach(n => {
+            if (prod.link.includes(n)) {
+                data.results[i].icon = storeImages[n];
+            }
+        })
 
         // if (!prod.thumbnail && prod.link.includes('target')) {
         //     const thumbnail = await getImageCheerio(prod.link);
         //     data.results[i].thumbnail = thumbnail;
         // }
-    //     i++
-    // }
+
+        i++;
+    }
     
     return data;
 
 }
 
- exports.search = searchStoreForProduct;
- exports.getStores = getProductAllStores;
- exports.inOne = getProductAllStoresInOne;
- exports.withPagination = getProductsWithPagination;
+ exports.getProductsWP = getProductsWithPagination;
