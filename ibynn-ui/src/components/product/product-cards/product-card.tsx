@@ -129,7 +129,7 @@ const ProductCard: React.FC<ProductProps> = ({ product, className }) => {
             {title}
           </h2>
           <div className="align-center">
-            <img className="w-16 h-15" src={icon} />
+            <img className="w-16 h-15 justify-center" src={icon} />
           </div>
         </div>
       </article>
