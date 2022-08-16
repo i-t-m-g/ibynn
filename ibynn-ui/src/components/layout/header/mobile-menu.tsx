@@ -7,40 +7,39 @@ import Logo from '@components/ui/logo';
 import { useUI } from '@contexts/ui.context';
 import { useTranslation } from 'next-i18next';
 import cn from 'classnames';
-
+import { IoClose } from 'react-icons/io5';
 import {
   IoLogoInstagram,
   IoLogoTwitter,
-  IoLogoFacebook,
   IoLogoYoutube,
-  IoClose,
-} from 'react-icons/io5';
+  IoLogoFacebook,
+} from 'react-icons/io';
 
 const social = [
-  {
-    id: 0,
-    link: 'https://www.facebook.com/ITMGinc/',
-    icon: <IoLogoFacebook />,
-    className: 'facebook',
-    title: 'text-facebook',
-  },
+  // {
+  //   id: 0,
+  //   link: 'https://www.facebook.com/ITMGinc/',
+  //   icon: <IoLogoFacebook />,
+  //   className: 'facebook',
+  //   title: 'text-facebook',
+  // },
   {
     id: 1,
-    link: 'https://twitter.com/ITMGinc',
+    link: 'https://twitter.com/IBYNN_com',
     icon: <IoLogoTwitter />,
     className: 'twitter',
     title: 'text-twitter',
   },
-  {
-    id: 2,
-    link: 'https://www.youtube.com/channel/UCjld1tyVHRNy_pe3ROLiLhw',
-    icon: <IoLogoYoutube />,
-    className: 'youtube',
-    title: 'text-youtube',
-  },
+  // {
+  //   id: 2,
+  //   link: 'https://www.youtube.com/',
+  //   icon: <IoLogoYoutube />,
+  //   className: 'youtube',
+  //   title: 'text-youtube',
+  // },
   {
     id: 3,
-    link: 'https://www.instagram.com/ITMGinc/',
+    link: 'https://www.instagram.com/ibynn_com/',
     icon: <IoLogoInstagram />,
     className: 'instagram',
     title: 'text-instagram',
