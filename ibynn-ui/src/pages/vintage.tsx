@@ -42,7 +42,7 @@ export default function Home() {
           />
         </Element>
       </Container>
-      <DownloadApps />
+      {/* <DownloadApps /> */}
     </>
   );
 }

@@ -8,7 +8,7 @@ export default function ShopDetailsPage() {
   return (
     <>
       <ShopsSingleDetails />
-      <DownloadApps />
+      {/* <DownloadApps /> */}
     </>
   );
 }

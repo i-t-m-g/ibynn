@@ -10,7 +10,10 @@ import { useCart } from '@contexts/cart/cart.context';
 import { useTranslation } from 'next-i18next';
 import { productPlaceholder } from '@assets/placeholders';
 import dynamic from 'next/dynamic';
-import { Result } from 'src/framework/ibynn-api/entities/product';
+import {
+  Result,
+  ShoppingResult,
+} from 'src/framework/ibynn-api/entities/product';
 import { useEffect } from 'react';
 import Link from 'next/link';
 const AddToCart = dynamic(() => import('@components/product/add-to-cart'), {
@@ -18,7 +21,7 @@ const AddToCart = dynamic(() => import('@components/product/add-to-cart'), {
 });
 
 interface ProductProps {
-  product: Result;
+  product: ShoppingResult;
   className?: string;
 }
 
@@ -55,15 +58,13 @@ function RenderPopupOrAddToCart({ data }: { data: Product }) {
 }
 
 const ProductCard: React.FC<ProductProps> = ({ product, className }) => {
-  const { title, thumbnail, icon, link } = product ?? {};
+  const { title, thumbnail, position, link, icon } = product ?? {};
   const product_type = '';
   // const { name, image, unit, product_type } = product ?? {};
   const { openModal } = useModalAction();
   const { t } = useTranslation('common');
   const { price, basePrice, discount } = usePrice({
-    amount:
-      product?.rich_snippet?.top?.detected_extensions?.price ??
-      product?.rich_snippet?.bottom?.detected_extensions.price,
+    amount: product?.price,
     // baseAmount: product?.price,
     currencyCode: 'USD',
   });
@@ -117,7 +118,7 @@ const ProductCard: React.FC<ProductProps> = ({ product, className }) => {
           <div className="mb-1 lg:mb-1.5 -mx-1">
             <span className="inline-block mx-1 z-0 text-sm font-semibold sm:text-15px lg:text-base text-brand-dark">
               {/* {product_type === 'variable' ? `${minPrice} - ${maxPrice}` : price} */}
-              {price}
+              {product.price}
             </span>
             {basePrice && (
               <del className="mx-1 text-sm text-brand-dark text-opacity-70">
@@ -128,8 +129,8 @@ const ProductCard: React.FC<ProductProps> = ({ product, className }) => {
           <h2 className="text-brand-dark text-13px sm:text-sm lg:text-15px leading-5 sm:leading-6 mb-1.5">
             {title}
           </h2>
-          <div className="align-center">
-            <img className="w-16 h-15 justify-center" src={icon} />
+          <div className="flex justify-center ">
+            <img className="max-h-16  " src={icon} />
           </div>
         </div>
       </article>

@@ -40,7 +40,7 @@ export default function ContactUsPage() {
           showInfoWindow={true}
         />
       </div>
-      <DownloadApps />
+      {/* <DownloadApps /> */}
     </>
   );
 }

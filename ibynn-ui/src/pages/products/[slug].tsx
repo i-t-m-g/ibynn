@@ -22,7 +22,7 @@ export default function ProductPage() {
 
       <RelatedProductFeed uniqueKey="related-products" />
       <PopcornJerkyProductFeed />
-      <DownloadApps />
+      {/* <DownloadApps /> */}
     </>
   );
 }
