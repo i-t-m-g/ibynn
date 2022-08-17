@@ -18,7 +18,7 @@ export default function Bundles() {
           element={<BannerGridTwo data={banners} className="py-5" />}
         />
       </Container>
-      <DownloadApps />
+      {/* <DownloadApps /> */}
     </>
   );
 }

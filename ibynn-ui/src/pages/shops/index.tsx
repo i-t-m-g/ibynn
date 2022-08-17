@@ -25,7 +25,7 @@ export default function ShopsPage() {
         variant="white"
       />
       <ShopsPageContent />
-      <DownloadApps />
+      {/* <DownloadApps /> */}
     </>
   );
 }

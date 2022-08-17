@@ -32,7 +32,7 @@ export default function Products() {
           </div>
         </Element>
       </Container>
-      <DownloadApps />
+      {/* <DownloadApps /> */}
     </>
   );
 }
