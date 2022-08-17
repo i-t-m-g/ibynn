@@ -21,7 +21,7 @@ const CategoryCard: React.FC<Props> = ({ item, href, className }) => {
   return (
     <Link
       href={href}
-      className={cn('group block w-full text-center', className)}
+      className={cn('group block w-1/2 text-center', className)}
     >
       <div className="flex max-w-[178px] max-h-[178px] mb-3.5 xl:mb-4 mx-auto rounded-full overflow-hidden bg-fill-thumbnail">
         <div

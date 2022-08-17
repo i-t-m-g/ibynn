@@ -17,13 +17,20 @@ import { QueryClient } from 'react-query';
 import { dehydrate } from 'react-query/hydration';
 import { API_ENDPOINTS } from '@framework/utils/api-endpoints';
 import { fetchProducts } from '@framework/product/get-all-products';
-import { fetchCategories } from '@framework/category/get-all-categories';
+import {
+  fetchCategories,
+  useCategoriesQuery,
+} from '@framework/category/get-all-categories';
 import { LIMITS } from '@framework/utils/limits';
 import axios from 'axios';
 import { searchForProduct } from 'src/framework/ibynn-api/product';
 import { ProductGrid } from '@components/product/product-grid';
+import CategoryCard from '@components/cards/category-card';
 
 export default function Home() {
+  const { data } = useCategoriesQuery({
+    limit: 100,
+  });
   return (
     <>
       <Seo
@@ -42,15 +49,26 @@ export default function Home() {
           <div className="w-full minimal-main-content">
             <BannerAllCarousel
               data={bannerDiscount}
-              className="mb-12 xl:mb-14"
+              className="mb-12 sm:mb-14"
             />
-            <AllProductFeed    
-            // element={<BannerCard banner={} className="py-5" />}
-            />
+            {data?.categories.data.map((cat) => {
+              return (
+                <div>
+                  {/*
+                   Title for categories. Big categories, or wtvr tf you wanna call them 
+                   */}
+                  <h2 className="font-extrabold text-2xl">{cat.name}</h2>
+                  <BannerAllCarousel
+                    data={cat.children}
+                    className="mb-12 xl:mb-14"
+                  />
+                </div>
+              );
+            })}
           </div>
         </Element>
       </Container>
-      <DownloadApps />
+      {/* <DownloadApps /> */}
     </>
   );
 }

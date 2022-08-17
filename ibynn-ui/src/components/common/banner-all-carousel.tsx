@@ -48,11 +48,12 @@ const BannerAllCarousel: React.FC<BannerProps> = ({
         prevActivateId="all-banner-carousel-button-prev"
         nextActivateId="all-banner-carousel-button-next"
       >
-        {data?.map((banner: any) => (
-          <SwiperSlide key={`all-banner--key${banner.id}`}>
-            <BannerCard banner={banner} effectActive={true} />
-          </SwiperSlide>
-        ))}
+        {data &&
+          data?.map((banner: any) => (
+            <SwiperSlide key={`all-banner--key${banner.id}`}>
+              <BannerCard banner={banner} effectActive={true} />
+            </SwiperSlide>
+          ))}
       </Carousel>
     </div>
   );
