@@ -110,7 +110,8 @@ const getShopping = async (query) => {
         results.search_information = response.search_information;
         results.search_metadata = response.search_metadata;
         results.shopping_results = addIcons(response.shopping_results);
-        
+        results.shopping_results = sortArrByPrice(results.shopping_results);
+
         return results;
     } catch (error) {
         return error;
@@ -131,6 +132,19 @@ const addIcons = (arr) => {
     }
     
     return arr;
+}
+
+const sortArrByPrice = (arr) => {
+    
+    const sortedArr = arr.sort((a, b) => {
+        const aPrice = a.extracted_price;
+        const bPrice = b.extracted_price;
+
+        return aPrice - bPrice;
+
+    })
+
+    return sortedArr;
 }
 
 exports.getShopping = getShopping;

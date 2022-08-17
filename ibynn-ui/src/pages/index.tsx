@@ -53,7 +53,7 @@ export default function Home() {
             />
             {data?.categories.data.map((cat) => {
               return (
-                <div>
+                <div key={cat.id}>
                   {/*
                    Title for categories. Big categories, or wtvr tf you wanna call them 
                    */}
