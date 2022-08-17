@@ -6,7 +6,7 @@ export const searchForProduct = async (query: string|string[]|undefined) => {
     try {
         
         const { data, status } = await axios.get<Products>(
-            `${process.env.NEXT_PUBLIC_REST_API_ENDPOINT}/searchAllStores?q=${query}`,
+            `${process.env.NEXT_PUBLIC_REST_API_ENDPOINT}/shopping?q=${query}`,
             {
                 headers: {
                     Accept: 'application/json',

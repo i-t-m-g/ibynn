@@ -37,7 +37,7 @@ export const ProductGrid: FC<ProductGridProps> = ({ className = '' }) => {
   }
 
   useEffect(() => {
-    setIsLoading(data?.results?.length < 1)
+    setIsLoading(data?.shopping_results?.length < 1)
   },[data]);
 
   useEffect(() => {
@@ -59,7 +59,7 @@ export const ProductGrid: FC<ProductGridProps> = ({ className = '' }) => {
           <div className="col-span-full">
             <Alert message={error?.message} />
           </div>
-        ) : isLoading && !data?.results?.length ? (
+        ) : isLoading && !data?.shopping_results?.length ? (
           Array.from({ length: 30 }).map((_, idx) => (
             <ProductCardLoader
               key={`product--key-${idx}`}
@@ -67,7 +67,7 @@ export const ProductGrid: FC<ProductGridProps> = ({ className = '' }) => {
             />
           ))
         ) : (
-          data?.results?.map((page, index) => {
+          data?.shopping_results?.map((page, index) => {
             // return page?.data?.map((product: Product) => (
             if (page) {
               return (<ProductCard

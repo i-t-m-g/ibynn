@@ -8,9 +8,11 @@ const axios = require('axios').default;
 const request = require('request');
 const { cacheMiddleware } = require('./middleware/cache');
 const { response } = require('express');
-const { getProductsWP } = require('./scripts/prodRequest');
+const scraperapiClient = require('scraperapi-sdk')('472253292751579ad5961341544b769f')
+const { getProductsWP, getShopping } = require('./scripts/prodRequest');
 const { getForum, fetchTitles } = require('./scripts/scrapeImg');
 const dotenv = require('dotenv');
+const cheerio = require('cheerio');
 
 dotenv.config();
 let redisClient;
@@ -56,6 +58,23 @@ app.get('/', async (req, res) => {
 
   res.send(ax)
 });
+
+app.get('/shopping', caching, async (req, res) => {
+  const query = req.query.q;
+
+  try {
+    const results = await getShopping(query);
+
+    client.setEx(query, 86400, JSON.stringify(results));
+
+    res.send(results);
+    
+  } catch (error) {
+    res.send(error)    
+  }
+
+
+})
 
 app.get('/searchAllStores', caching, async (request, response) => {
   const query = request.query.q;
