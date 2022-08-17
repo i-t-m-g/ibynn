@@ -5,17 +5,18 @@ dotenv.config();
 process.setMaxListeners(0);
 
 const api_key = process.env.API_KEY;
+const getShoppingUrl = (query = 'iphone+12') => `https://serpapi.com/search.json?q=${query}&engine=google&google_domain=google.com&gl=us&hl=en&tbs=mr%3A1%2Cmerchagg%3Ag113872638%7Cg8299768%7Cg784994%7Cm114193152%7Cm7388148%7Cm125210027%7Cm120798572%7Cm127713402%7Cm431991540%7Cm463001233%7Cm10046&tbm=shop&tbs=mr%3A1%2Cmerchagg%3Ag113872638%7Cg8299768%7Cg784994%7Cm114193152%7Cm7388148%7Cm125210027%7Cm120798572%7Cm127713402%7Cm431991540%7Cm463001233%7Cm10046&api_key=${api_key}`
 const getSerpUrlPages = (query = 'iphone+12', pageIndex) => `https://serpapi.com/search.json?num=100&q=${query}&hl=en&gl=us&api_key=${api_key}&start=${pageIndex * 100}`
 const storeImages = {
-        target: "https://www.freepnglogos.com/uploads/target-png-logo/target-logo-photo-3.png",
-        amazon: "https://www.freepnglogos.com/uploads/amazon-png-logo-vector/amazon-png-logo-vector-1.png",
-        walmart: "https://www.freepnglogos.com/uploads/walmart-logo-24.jpg"
+        Target: "https://www.freepnglogos.com/uploads/target-png-logo/target-logo-photo-3.png",
+        Amazon: "https://www.freepnglogos.com/uploads/amazon-png-logo-vector/amazon-png-logo-vector-1.png",
+        Walmart: "https://www.freepnglogos.com/uploads/walmart-logo-24.jpg"
 };
 
 const storeNames = [
-    "target",
-    "amazon",
-    "walmart"
+    "Target",
+    "Amazon",
+    "Walmart"
 ]
 
 
@@ -101,4 +102,36 @@ const getProductsWithPagination = async (query) => {
 
 }
 
- exports.getProductsWP = getProductsWithPagination;
+const getShopping = async (query) => {
+    try {
+        const {data:response} = await axios.get(getShoppingUrl(query));
+        let results = {};
+
+        results.search_information = response.search_information;
+        results.search_metadata = response.search_metadata;
+        results.shopping_results = addIcons(response.shopping_results);
+        
+        return results;
+    } catch (error) {
+        return error;
+    }        
+}
+
+const addIcons = (arr) => {
+    if (arr) {
+        let i = 0;
+        for (const prod of arr) {
+            storeNames.forEach(n => {
+                if (prod.source.includes(n)) {
+                    arr[i].icon = storeImages[n];
+                }
+            })
+            i++;
+        }
+    }
+    
+    return arr;
+}
+
+exports.getShopping = getShopping;
+exports.getProductsWP = getProductsWithPagination;

@@ -56,7 +56,62 @@ export class Result {
 }
 
 export class Products {
-    search_info: SearchInfo = new SearchInfo();
-    results: Result[] = [];
+    search_info?: SearchInformation;
+    search_metadata?: SearchMetadata;
+    shopping_results: ShoppingResult[] = [];
+}
+
+export class ShoppingResult {
+    position?: number;
+    title?: string;
+    link?: string;
+    product_link?: string;
+    product_id?: string;
+    serpapi_product_api?: string;
+    source?: string;
+    price?: string;
+    extracted_price?: number;
+    rating?: number;
+    reviews?: number;
+    thumbnail?: string;
+    tag?: string;
+    delivery?: string;
+    icon?: string;
+    extensions?: string[];
+}
+
+
+export class SearchMetadata {
+    id?: string;
+    status?: string;
+    json_endpoint?: string;
+    created_at?: string;
+    processed_at?: string;
+    google_url?: string;
+    raw_html_file?: string;
+    total_time_taken?: number;
+}
+
+
+export interface SearchInformation {
+    shopping_results_state: string;
+    query_displayed: string;
+    menu_items: MenuItem[];
+}
+
+export interface MenuItem {
+    position: number;
+    title: string;
+    link: string;
+    serpapi_link: string;
+}
+
+
+
+
+export interface RootObject {
+    search_information: SearchInformation;
+    search_metadata: SearchMetadata;
+    shopping_results: ShoppingResult[];
 }
 

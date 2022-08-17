@@ -17,27 +17,26 @@
         {
           "id": 2,
           "name": "Notebooks",
-          "path": "/search?q=Notebooks",
+          "path": "/search?q=notebooks",
           "slug": "Notebooks",
           "icon": "/assets/images/category/icon/notebook.svg"
         },
         {
           "id": 3,
           "name": "Binders",
-          "path": "/search?q=Binders",
+          "path": "/search?q=ring+binders",
           "slug": "Binders",
           "icon": "/assets/images/category/icon/binder.svg"
         },
         {
           "id": 2,
           "name": "Loose Leaf Paper",
-          "path": "/search?q=loose+leaf+binder+paper",
+          "path": "/search?q=loose+leaf+paper",
           "slug": "Loose Leaf Paper",
           "icon": "/assets/images/category/icon/sheet.svg"
         }
       ]
     },
-
     {
       "id": 2,
       "name": "Household Items",
@@ -53,7 +52,7 @@
         {
           "id": 1,
           "name": "Air Freshener",
-          "path": "/search?q=Air+Freshener",
+          "path": "/search?q=air+freshener",
           "slug": "Air+Freshener",
           "icon": "/assets/images/category/icon/air-freshener.svg",
           "children": [
@@ -69,15 +68,15 @@
         {
           "id": 2,
           "name": "Bleach",
-          "path": "/search?q=Bleach",
+          "path": "/search?q=cleaning+bleach",
           "slug": "Bleach",
           "icon": "/assets/images/category/icon/bleach-symbol.svg"
         },
 
         {
           "id": 3,
-          "name": "Dishwasher Detergent",
-          "path": "/search?q=Dishwasher+Detergent",
+          "name": "Dishwashing Detergent",
+          "path": "/search?q=dishwashing+detergent",
           "slug": "Dishwasher+Detergent",
           "icon": "/assets/images/category/icon/dishwasher-symbol.svg"
         },
@@ -100,8 +99,8 @@
 
         {
           "id": 6,
-          "name": "Glass Cleaner",
-          "path": "/search?q=glass+cleaner",
+          "name": "Window Cleaner",
+          "path": "/search?q=window+cleaner",
           "slug": "glass+cleaner",
           "icon": "/assets/images/category/icon/glass-cleaner.svg"
         },
@@ -117,7 +116,7 @@
         {
           "id": 8,
           "name": "Sponge",
-          "path": "/search?q=sponge",
+          "path": "/search?q=cleaning+sponge",
           "slug": "sponge",
           "icon": "/assets/images/category/icon/sponge.svg"
         },
@@ -133,29 +132,28 @@
         {
           "id": 10,
           "name": "Tub & Tile Cleaner",
-          "path": "/search?q=Tub+Tile+Cleaner",
+          "path": "/search?q=tub+tile+cleaner",
           "slug": "Tub+Tile+Cleaner",
           "icon": "/assets/images/category/icon/floor-cleaning.svg"
         },
 
         {
           "id": 11,
-          "name": "Vaccum Bags",
-          "path": "/search?q=vaccum+bags",
+          "name": "Vacuum Bags",
+          "path": "/search?q=vacuum+bags",
           "slug": "vaccum+bags",
           "icon": "/assets/images/category/icon/vacuum-cleaner.svg"
         },
 
         {
           "id": 12,
-          "name": "Wipes",
-          "path": "/search?q=wipes",
+          "name": "Bath Wipes",
+          "path": "/search?q=bath+wipes",
           "slug": "wipes",
           "icon": "/assets/images/category/icon/wipes.svg"
         }
       ]
     },
-
     {
       "id": 3,
       "name": "Personal Care",
