@@ -4,8 +4,20 @@ import { CNFlag } from '@components/icons/language/CNFlag';
 import { USFlag } from '@components/icons/language/USFlag';
 import { DEFlag } from '@components/icons/language/DEFlag';
 import { ESFlag } from '@components/icons/language/ESFlag';
+import { API_ENDPOINTS } from '@framework/utils/api-endpoints';
+import axios from 'axios';
 
-export const siteSettings = {
+const http = axios.create({
+  baseURL: process.env.NEXT_PUBLIC_REST_API_ENDPOINT,
+  timeout: 30000,
+  headers: {
+    Accept: 'application/json',
+    'Content-Type': 'application/json',
+  },
+});
+
+
+export const siteSettings: SiteSettings = {
   name: ' IBYNN',
   description: 'Find Cheap Deals And Compare Prices From Top Brands',
   author: {
@@ -27,253 +39,248 @@ export const siteSettings = {
       // Categories Tab
       {
         id: 2,
-        path: '/search',
-        label: 'menu-categories',
-        subMenu: [
+        slug: '/',
+        name: 'menu-categories',
+        children: [
           {
             id: 1,
-            path: '/search?q=Household+Items',
-            label: 'Household Items',
-            subMenu: [
+            slug: '/search?q=Household+Items',
+            name: 'Household Items',
+            children: [
               {
                 id: 1,
-                path: '/search?q=Air+Freshener',
-                label: 'Air Freshener',
-                subMenu: [
+                slug: '/search?q=Air+Freshener',
+                name: 'Air Freshener',
+                children: [
                   {
                     id: 1,
-                    path: '/search?q=air+refreshener+refils',
-                    label: 'Refils',
+                    slug: '/search?q=air+refreshener+refils',
+                    name: 'Refils',
                   },
                 ],
               },
 
               {
                 id: 2,
-                path: '/search?q=bleach',
-                label: 'Bleach',
+                slug: '/search?q=bleach',
+                name: 'Bleach',
               },
 
               {
                 id: 3,
-                path: '/search?q=dishwasher+detergent',
-                label: 'Dishwasher Detergent',
+                slug: '/search?q=dishwasher+detergent',
+                name: 'Dishwasher Detergent',
               },
 
               {
                 id: 4,
-                path: '/search?q=dishwashing+Soap',
-                label: 'Dishwashing Soap',
+                slug: '/search?q=dishwashing+Soap',
+                name: 'Dishwashing Soap',
               },
 
               {
                 id: 5,
-                path: '/search?q=dryer+sheets',
-                label: 'Dryer Sheets',
+                slug: '/search?q=dryer+sheets',
+                name: 'Dryer Sheets',
               },
 
               {
                 id: 6,
-                path: '/search?q=Glass+Cleaner',
-                label: 'Glass Cleaner',
+                slug: '/search?q=Glass+Cleaner',
+                name: 'Glass Cleaner',
               },
 
               {
                 id: 7,
-                path: '/search?q=laundry+detergent',
-                label: 'Laundry Detergent',
+                slug: '/search?q=laundry+detergent',
+                name: 'Laundry Detergent',
               },
 
               {
                 id: 8,
-                path: '/search?q=Sponge',
-                label: 'Sponge',
+                slug: '/search?q=Sponge',
+                name: 'Sponge',
               },
 
               {
                 id: 9,
-                path: '/search?q=stain+remover',
-                label: 'Stain Remover',
+                slug: '/search?q=stain+remover',
+                name: 'Stain Remover',
               },
 
               {
                 id: 10,
-                path: '/search?q=Tub+Tile+Cleaner',
-                label: 'Tub & Tile Cleaner',
+                slug: '/search?q=Tub+Tile+Cleaner',
+                name: 'Tub & Tile Cleaner',
               },
 
               {
                 id: 11,
-                path: '/search?q=vaccum+bags',
-                label: 'Vaccum Bags',
+                slug: '/search?q=vaccum+bags',
+                name: 'Vaccum Bags',
               },
 
               {
                 id: 12,
-                path: '/search?q=wipes',
-                label: 'Wipes',
+                slug: '/search?q=wipes',
+                name: 'Wipes',
               },
             ],
           },
           {
             id: 2,
-            path: '/search?q=Personal+Care',
-            label: 'Personal Care',
-            subMenu: [
+            slug: '/search?q=Personal+Care',
+            name: 'Personal Care',
+            children: [
               {
                 id: 1,
-                path: '/search?q=Skin+Lotion',
-                label: 'Skin Lotion',
+                slug: '/search?q=Skin+Lotion',
+                name: 'Skin Lotion',
               },
 
               {
                 id: 2,
-                path: '/search?q=Bath+&+Body',
-                label: 'Bath & Body',
+                slug: '/search?q=Bath+&+Body',
+                name: 'Bath & Body',
               },
 
               {
                 id: 3,
-                path: '/search?q=Baby+Care',
-                label: 'Baby Care',
+                slug: '/search?q=Baby+Care',
+                name: 'Baby Care',
               },
               {
                 id: 4,
-                path: '/search?q=Cotton+Balls+Pads+&+Swabs',
-                label: 'Cotton Balls, Pads & Swabs',
+                slug: '/search?q=Cotton+Balls+Pads+&+Swabs',
+                name: 'Cotton Balls, Pads & Swabs',
               },
 
               {
                 id: 5,
-                path: '/search?q=Deodorants',
-                label: 'Deodorants',
+                slug: '/search?q=Deodorants',
+                name: 'Deodorants',
               },
 
               {
                 id: 6,
-                path: '/search?q=Facial+Tissue',
-                label: 'Facial Tissue',
+                slug: '/search?q=Facial+Tissue',
+                name: 'Facial Tissue',
               },
 
               {
                 id: 7,
-                path: '/search?q=Feminine+Products',
-                label: 'Feminine Products',
+                slug: '/search?q=Feminine+Products',
+                name: 'Feminine Products',
               },
 
               {
                 id: 8,
-                path: '/search?q=Hair+Removal+&+Shaving+Tools',
-                label: 'Hair Removal & Shaving Tools',
+                slug: '/search?q=Hair+Removal+&+Shaving+Tools',
+                name: 'Hair Removal & Shaving Tools',
               },
 
               {
                 id: 9,
-                path: '/search?q=Hand+Soap+&+Refills',
-                label: 'Hand Soap & Refills',
+                slug: '/search?q=Hand+Soap+&+Refills',
+                name: 'Hand Soap & Refills',
               },
 
               {
                 id: 10,
-                path: '/search?q=Nail+Care',
-                label: 'Nail Care',
+                slug: '/search?q=Nail+Care',
+                name: 'Nail Care',
               },
 
               {
                 id: 11,
-                path: '/search?q=Orale+Care',
-                label: 'Orale Care',
+                slug: '/search?q=Orale+Care',
+                name: 'Orale Care',
               },
             ],
           },
           {
             id: 3,
-            path: '/search?q=Fresh+Fruits',
-            label: 'Fresh Fruit',
-            subMenu: [
+            slug: '/search?q=Fresh+Fruits',
+            name: 'Fresh Fruit',
+            children: [
               {
                 id: 1,
-                path: '/search?q=fresh+apples',
-                label: 'Apples',
-                subMenu: [
+                slug: '/search?q=fresh+apples',
+                name: 'Apples',
+                children: [
                   {
                     id: 1,
-                    path: '/search?q=fuji+apples',
-                    label: 'Fuji Apples',
+                    slug: '/search?q=fuji+apples',
+                    name: 'Fuji Apples',
                   },
 
                   {
                     id: 2,
-                    path: '/search?q=granny+smith+apples',
-                    label: 'Granny Smith Apples',
+                    slug: '/search?q=granny+smith+apples',
+                    name: 'Granny Smith Apples',
                   },
 
                   {
                     id: 3,
-                    path: '/search?q=empire+apples',
-                    label: 'Empire Apples',
+                    slug: '/search?q=empire+apples',
+                    name: 'Empire Apples',
                   },
 
                   {
                     id: 4,
-                    path: '/search?q=gala+apples',
-                    label: 'Gala Apples',
+                    slug: '/search?q=gala+apples',
+                    name: 'Gala Apples',
                   },
 
                   {
                     id: 5,
-                    path: '/search?q=honey+crisp+apples',
-                    label: 'Honey Crisp Apples',
+                    slug: '/search?q=honey+crisp+apples',
+                    name: 'Honey Crisp Apples',
                   },
 
                   {
                     id: 6,
-                    path: '/search?q=McIntosh+apples',
-                    label: 'McIntosh Apples',
+                    slug: '/search?q=McIntosh+apples',
+                    name: 'McIntosh Apples',
                   },
 
                   {
                     id: 7,
-                    path: '/search?q=golden+delicious+apples',
-                    label: 'Golden Delicous Apples',
+                    slug: '/search?q=golden+delicious+apples',
+                    name: 'Golden Delicous Apples',
                   },
 
                   {
                     id: 8,
-                    path: '/search?q=cripps+pink+apples',
-                    label: 'Cripps Pink Apples',
+                    slug: '/search?q=cripps+pink+apples',
+                    name: 'Cripps Pink Apples',
                   },
                 ],
               },
-
               {
                 id: 2,
-                path: '/search?q=fresh+pears',
-                label: 'Pears',
+                slug: '/search?q=fresh+pears',
+                name: 'Pears',
               },
-
               {
                 id: 3,
-                path: '/search?q=fresh+peaches',
-                label: 'Peaches',
+                slug: '/search?q=fresh+peaches',
+                name: 'Peaches',
               },
-
               {
                 id: 4,
-                path: '/search?q=fresh+strawberries',
-                label: 'Strawberries',
+                slug: '/search?q=fresh+strawberries',
+                name: 'Strawberries',
               },
-
               {
                 id: 5,
-                path: '/search?q=Mango',
-                label: 'Mango',
+                slug: '/search?q=Mango',
+                name: 'Mango',
               },
-
               {
                 id: 6,
-                path: '/search?q=Watermelon',
-                label: 'Watermelon',
+                slug: '/search?q=Watermelon',
+                name: 'Watermelon',
               },
             ],
           },
@@ -283,55 +290,65 @@ export const siteSettings = {
       // Search Tab
       // {
       //   id: 4,
-      //   path: '/search/',
-      //   label: 'menu-search',
+      //   slug: '/search/',
+      //   name: 'menu-search',
       // },
 
       // About Us Tab and Template to add other Tabs on Nav Bar
       {
         id: 7,
-        path: '/about-us',
-        label: 'menu-about-us',
+        slug: '/about-us',
+        name: 'menu-about-us',
       },
-    ],
-
-    languageMenu: [
-      {
-        id: 'ar',
-        name: 'عربى - AR',
-        value: 'ar',
-        icon: <SAFlag />,
-      },
-      {
-        id: 'zh',
-        name: '中国人 - ZH',
-        value: 'zh',
-        icon: <CNFlag />,
-      },
-      {
-        id: 'en',
-        name: 'English - EN',
-        value: 'en',
-        icon: <USFlag />,
-      },
-      {
-        id: 'de',
-        name: 'Deutsch - DE',
-        value: 'de',
-        icon: <DEFlag />,
-      },
-      {
-        id: 'he',
-        name: 'rעברית - HE',
-        value: 'he',
-        icon: <ILFlag />,
-      },
-      {
-        id: 'es',
-        name: 'Español - ES',
-        value: 'es',
-        icon: <ESFlag />,
-      },
-    ],
+    ]
   },
 };
+
+
+(async function getData() {
+  const {data: { data }} = await http.get(API_ENDPOINTS.CATEGORIES);
+  siteSettings.site_header.menu[0].children = [...data];
+})();
+
+  export interface Author {
+      name: string;
+      websiteUrl: string;
+      address: string;
+  }
+
+  export interface Logo {
+      url: string;
+      alt: string;
+      href: string;
+      width: number;
+      height: number;
+  }
+
+  export interface Child {
+      id: number;
+      slug: string;
+      name: string;
+      children?: Child[];
+  }
+
+  export interface Menu {
+      id: number;
+      slug: string;
+      name: string;
+      children?: Child[];
+  }
+
+  export interface SiteHeader {
+      menu: Menu[];
+  }
+
+  export interface SiteSettings {
+      name: string;
+      description: string;
+      author: Author;
+      logo: Logo;
+      defaultLanguage: string;
+      currencyCode: string;
+      site_header: SiteHeader;
+  }
+

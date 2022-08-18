@@ -62,10 +62,14 @@ app.get("/shopping", caching, async (req, res) => {
 
   try {
     const results = await getShopping(query);
+    if (results.shopping_results) 
+    {
+      client.setEx(query, 86400, JSON.stringify(results));
+      res.send(results);
+    } else {
+      throw results;
+    }
 
-    client.setEx(query, 86400, JSON.stringify(results));
-
-    res.send(results);
   } catch (error) {
     res.send(error);
   }

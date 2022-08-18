@@ -1,24 +1,33 @@
 import { useTranslation } from 'next-i18next';
 import { IoIosArrowForward } from 'react-icons/io';
 import Link from '@components/ui/link';
+import { Menu } from '@settings/site-settings';
 
-const ListMenu = ({ dept, data, hasSubMenu, menuIndex }: any) => {
+interface ListMenuProps {
+  dept: any, 
+  data: Menu, 
+  hasSubMenu: any, 
+  menuIndex: any,
+  menuName?: any
+}
+
+const ListMenu = ({ dept, data, hasSubMenu, menuIndex }: ListMenuProps) => {
   const { t } = useTranslation('menu');
   return (
     <li className="relative">
       <Link
-        href={data.path}
+        href={data.slug}
         className="flex items-center justify-between py-2 ltr:pl-5 rtl:pr-5 xl:ltr:pl-7 xl:rtl:pr-7 ltr:pr-3 rtl:pl-3 xl:ltr:pr-3.5 xl:rtl:pl-3.5 hover:bg-fill-dropdown-hover hover:text-brand-dark"
       >
-        {t(data.label)}
-        {data.subMenu && (
+        {t(data.name)}
+        {data.children && (
           <span className="text-sm mt-0.5 shrink-0">
             <IoIosArrowForward className="transition duration-300 ease-in-out text-body group-hover:text-brand-dark" />
           </span>
         )}
       </Link>
       {hasSubMenu && (
-        <SubMenu dept={dept} data={data.subMenu} menuIndex={menuIndex} />
+        <SubMenu dept={dept} data={data.children} menuIndex={menuIndex} />
       )}
     </li>
   );
@@ -34,7 +43,7 @@ const SubMenu: React.FC<any> = ({ dept, data, menuIndex }) => {
           <ListMenu
             dept={dept}
             data={menu}
-            hasSubMenu={menu.subMenu}
+            hasSubMenu={menu.children}
             menuName={menuName}
             key={menuName}
             menuIndex={index}

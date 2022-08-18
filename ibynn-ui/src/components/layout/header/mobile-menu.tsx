@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Link from '@components/ui/link';
-import { siteSettings } from '@settings/site-settings';
+import { Menu, siteSettings } from '@settings/site-settings';
 import Scrollbar from '@components/ui/scrollbar';
 import { IoIosArrowDown } from 'react-icons/io';
 import Logo from '@components/ui/logo';
@@ -116,14 +116,14 @@ export default function MobileMenu() {
 
     return (
       <ul className={cn('mobile-sub-menu', dept > 2 && 'ltr:-ml-4 rtl:-mr-4')}>
-        {data?.map((menu: any, index: number) => {
+        {data?.map((menu: Menu, index: number) => {
           const menuName: string = `sidebar-submenu-${dept}-${menuIndex}-${index}`;
 
           return (
             <ListMenu
               dept={dept}
               data={menu}
-              hasSubMenu={menu.subMenu}
+              hasSubMenu={menu.children}
               menuName={menuName}
               key={menuName}
               menuIndex={index}
@@ -166,7 +166,7 @@ export default function MobileMenu() {
                   <ListMenu
                     dept={dept}
                     data={menu}
-                    hasSubMenu={menu.subMenu}
+                    hasSubMenu={menu.children}
                     menuName={menuName}
                     key={menuName}
                     menuIndex={index}
