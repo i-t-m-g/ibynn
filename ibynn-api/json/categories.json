@@ -31,6 +31,24 @@
         },
         {
           "id": 2,
+          "name": "Pens",
+          "slug": "/search?q=writing+pens",
+          "icon": "/assets/images/category/icon/pen.svg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/pens.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/pens.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+        {
+          "id": 3,
           "name": "Notebooks",
           "slug": "/search?q=Notebooks",
           "icon": "/assets/images/category/icon/notebook.svg",
@@ -48,7 +66,7 @@
           }
         },
         {
-          "id": 3,
+          "id": 4,
           "name": "Binders",
           "slug": "/search?q=Binders",
           "icon": "/assets/images/category/icon/binder.svg",
@@ -66,7 +84,7 @@
           }
         },
         {
-          "id": 2,
+          "id": 5,
           "name": "Loose Leaf Paper",
           "slug": "/search?q=loose+leaf+binder+paper",
           "icon": "/assets/images/category/icon/sheet.svg",
@@ -78,6 +96,42 @@
             },
             "desktop": {
               "url": "/assets/images/category/papers.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+        {
+          "id": 6,
+          "name": "Stapler",
+          "slug": "/search?q=paper+stapler",
+          "icon": "/assets/images/category/icon/stapler.svg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/stapler.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/stapler.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+        {
+          "id": 7,
+          "name": "Hole Puncher",
+          "slug": "/search?q=hole+puncher",
+          "icon": "/assets/images/category/icon/hole-puncher.svg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/hole-puncher.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/hole-puncher.png",
               "width": 475,
               "height": 250
             }
