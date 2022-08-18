@@ -114,7 +114,7 @@ const ProductCard: React.FC<ProductProps> = ({ product, className }) => {
           </div>
         </div>
 
-        <div className="flex flex-col px-3 md:px-4 lg:px-[18px] pb-5 lg:pb-6 lg:pt-1.5 h-full">
+        <div className="flex flex-col justify-end px-3 md:px-4 lg:px-[18px] lg:pt-1.5 h-60">
           <div className="mb-1 lg:mb-1.5 -mx-1">
             <span className="inline-block mx-1 z-0 text-sm font-semibold sm:text-15px lg:text-base text-brand-dark">
               {/* {product_type === 'variable' ? `${minPrice} - ${maxPrice}` : price} */}
@@ -129,8 +129,8 @@ const ProductCard: React.FC<ProductProps> = ({ product, className }) => {
           <h2 className="text-brand-dark text-13px sm:text-sm lg:text-15px leading-5 sm:leading-6 mb-1.5">
             {title}
           </h2>
-          <div className="flex justify-center ">
-            <img className="max-h-16  " src={icon} />
+          <div className="flex place-self-center">
+            <img className="max-h-16" src={icon} />
           </div>
         </div>
       </article>

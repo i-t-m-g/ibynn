@@ -64,23 +64,30 @@ export default function MobileMenu() {
     setActiveMenus(newActiveMenus);
   };
 
+  interface ListMenuProps {
+    dept: any, 
+    data: Menu, 
+    hasSubMenu: any, 
+    menuIndex: any,
+    menuName?: any,
+    className?: any
+  }
+
   const ListMenu = ({
     dept,
     data,
     hasSubMenu,
     menuName,
     menuIndex,
-    className = '',
-  }: any) =>
-    data.label && (
+    className = '',}: ListMenuProps) => (
       <li className={`transition-colors duration-200 ${className}`}>
         <div className="relative flex items-center justify-between">
           <Link
-            href={data.path}
+            href={data.slug}
             className="relative w-full py-4 transition duration-300 ease-in-out menu-item ltr:pl-5 rtl:pr-5 md:ltr:pl-7 md:rtl:pr-7 ltr:pr-4 rtl:pl-4 text-brand-dark"
           >
             <span className="block w-full" onClick={closeSidebar}>
-              {t(`${data.label}`)}
+              {t(`${data.name}`)}
             </span>
           </Link>
           {hasSubMenu && (
@@ -99,7 +106,7 @@ export default function MobileMenu() {
         {hasSubMenu && (
           <SubMenu
             dept={dept}
-            data={data.subMenu}
+            data={data.children}
             toggle={activeMenus.includes(menuName)}
             menuIndex={menuIndex}
           />
