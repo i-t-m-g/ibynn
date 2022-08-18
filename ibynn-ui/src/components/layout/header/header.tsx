@@ -69,7 +69,8 @@ const Header: React.FC = () => {
 
           <div className="flex shrink-0 -mx-2.5 xl:-mx-3.5">
             <div className="xl:mx-3.5 mx-2.5">
-              <LanguageSwitcher />
+                              {/* <LanguageSwitcher /> */}
+
             </div>
             <CartButton className="hidden lg:flex mx-2.5 xl:mx-3.5" />
             <div className="items-center hidden lg:flex shrink-0 mx-2.5 xl:mx-3.5">
