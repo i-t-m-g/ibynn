@@ -32,20 +32,20 @@ export const ProductGrid: FC<ProductGridProps> = ({ className = '' }) => {
   } = useProductsQuery({ limit: LIMITS.PRODUCTS_LIMITS, ...query });
 
   const handleit = () => {
-    setData(new Products())
-    setIsLoading(true)
-  }
+    setData(new Products());
+    setIsLoading(true);
+  };
 
   useEffect(() => {
-    setIsLoading(data?.shopping_results?.length < 1)
-  },[data]);
+    setIsLoading(data?.shopping_results?.length < 1);
+  }, [data]);
 
   useEffect(() => {
     if (query.q) {
-      setData(new Products())
+      setData(new Products());
       searchForProduct(query.q).then((res) => setData(res));
     }
-  }, [query])
+  }, [query]);
 
   return (
     <>
@@ -70,27 +70,15 @@ export const ProductGrid: FC<ProductGridProps> = ({ className = '' }) => {
           data?.shopping_results?.map((page, index) => {
             // return page?.data?.map((product: Product) => (
             if (page) {
-              return (<ProductCard
-                  key={`product--key-${index}`}
-                  product={page}
-                />)
+              return (
+                <ProductCard key={`product--key-${index}`} product={page} />
+              );
             }
             // ));
           })
         )}
         {/* end of error state */}
       </div>
-      {hasNextPage && (
-        <div className="text-center pt-8 xl:pt-10">
-          <Button
-            loading={loadingMore}
-            disabled={loadingMore}
-            onClick={() => fetchNextPage()}
-          >
-            {t('button-load-more')}
-          </Button>
-        </div>
-      )}
     </>
   );
 };
