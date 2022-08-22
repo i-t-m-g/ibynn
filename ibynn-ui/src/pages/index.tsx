@@ -17,6 +17,7 @@ import { QueryClient } from 'react-query';
 import { dehydrate } from 'react-query/hydration';
 import { API_ENDPOINTS } from '@framework/utils/api-endpoints';
 import { fetchProducts } from '@framework/product/get-all-products';
+import newDiscountBanner from '@components/common/new-discount-banner';
 import {
   fetchCategories,
   useCategoriesQuery,
@@ -26,6 +27,7 @@ import axios from 'axios';
 import { searchForProduct } from 'src/framework/ibynn-api/product';
 import { ProductGrid } from '@components/product/product-grid';
 import CategoryCard from '@components/cards/category-card';
+import NewDiscountBanner from '@components/common/new-discount-banner';
 
 export default function Home() {
   const { data } = useCategoriesQuery({
@@ -47,9 +49,9 @@ export default function Home() {
         <Element name="grid" className="flex mb-11 md:mb-14 xl:mb-16 pb-2.5">
           <CategoryDropdownSidebar className="shrink-0 ltr:pr-8 rtl:pl-8 hidden lg:block w-80 xl:w-[370px] lg:sticky lg:top-20" />
           <div className="w-full minimal-main-content">
-            <BannerAllCarousel
+            <NewDiscountBanner
               data={bannerDiscount}
-              className="mb-12 sm:mb-14"
+              className="mb-12 sm:mb-14 "
             />
             {data?.categories.data.map((cat) => {
               return (
