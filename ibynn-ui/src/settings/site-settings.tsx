@@ -16,13 +16,12 @@ const http = axios.create({
   },
 });
 
-
 export const siteSettings: SiteSettings = {
   name: ' IBYNN',
   description: 'Find Cheap Deals And Compare Prices From Top Brands',
   author: {
-    name: 'ITMG Inc.',
-    websiteUrl: 'https://ITMG.io',
+    name: 'https://ibynn.com/',
+    websiteUrl: 'https://ibynn.com/',
     address: '',
   },
   logo: {
@@ -41,7 +40,7 @@ export const siteSettings: SiteSettings = {
         id: 2,
         slug: '/',
         name: 'menu-categories',
-        children: []
+        children: [],
       },
 
       // Search Tab
@@ -57,55 +56,55 @@ export const siteSettings: SiteSettings = {
         slug: '/about-us',
         name: 'menu-about-us',
       },
-    ]
+    ],
   },
 };
 
-
 (async function getData() {
-  const {data: { data }} = await http.get(API_ENDPOINTS.CATEGORIES);
+  const {
+    data: { data },
+  } = await http.get(API_ENDPOINTS.CATEGORIES);
   siteSettings.site_header.menu[0].children = [...data];
 })();
 
-  export interface Author {
-      name: string;
-      websiteUrl: string;
-      address: string;
-  }
+export interface Author {
+  name: string;
+  websiteUrl: string;
+  address: string;
+}
 
-  export interface Logo {
-      url: string;
-      alt: string;
-      href: string;
-      width: number;
-      height: number;
-  }
+export interface Logo {
+  url: string;
+  alt: string;
+  href: string;
+  width: number;
+  height: number;
+}
 
-  export interface Child {
-      id: number;
-      slug: string;
-      name: string;
-      children?: Child[];
-  }
+export interface Child {
+  id: number;
+  slug: string;
+  name: string;
+  children?: Child[];
+}
 
-  export interface Menu {
-      id: number;
-      slug: string;
-      name: string;
-      children?: Child[];
-  }
+export interface Menu {
+  id: number;
+  slug: string;
+  name: string;
+  children?: Child[];
+}
 
-  export interface SiteHeader {
-      menu: Menu[];
-  }
+export interface SiteHeader {
+  menu: Menu[];
+}
 
-  export interface SiteSettings {
-      name: string;
-      description: string;
-      author: Author;
-      logo: Logo;
-      defaultLanguage: string;
-      currencyCode: string;
-      site_header: SiteHeader;
-  }
-
+export interface SiteSettings {
+  name: string;
+  description: string;
+  author: Author;
+  logo: Logo;
+  defaultLanguage: string;
+  currencyCode: string;
+  site_header: SiteHeader;
+}

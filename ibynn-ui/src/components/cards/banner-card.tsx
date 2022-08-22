@@ -42,7 +42,7 @@ const BannerCard: React.FC<BannerProps> = ({
               ? //
                 // if no image found from the api (from categories.json) then a place holder image will be displayed
                 selectedImage.url
-              : 'https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png'
+              : ''
           }
           alt={title}
           className="rounded-tl-3xl rounded-br-3xl"

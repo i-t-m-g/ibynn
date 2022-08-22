@@ -8,7 +8,7 @@ export const DefaultSeo = () => {
       titleTemplate={`${siteSettings.name} | %s`}
       defaultTitle={siteSettings.name}
       description={siteSettings.description}
-      canonical="https://pixer.vercel.app/"
+      canonical="https://ibynn.com/"
       openGraph={{
         type: 'website',
         locale: 'en_IE',
