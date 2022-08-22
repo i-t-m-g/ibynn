@@ -20,8 +20,8 @@ export default function ShopsPage() {
       />
       <PageHeroSection
         heroTitle="text-shop-page"
-        backgroundThumbnail="/assets/images/shop-page-hero-bg.jpg"
-        mobileBackgroundThumbnail="/assets/images/shop-page-hero-mobile-bg.png"
+        backgroundThumbnail=""
+        mobileBackgroundThumbnail=""
         variant="white"
       />
       <ShopsPageContent />
