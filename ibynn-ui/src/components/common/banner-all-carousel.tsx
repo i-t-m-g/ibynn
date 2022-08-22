@@ -43,11 +43,11 @@ const BannerAllCarousel: React.FC<BannerProps> = ({
   return (
     <div className={className}>
       <Carousel
-        autoplay={true}
+        autoplay={false}
         breakpoints={breakpoints}
-        buttonSize={buttonSize}
-        prevActivateId="all-banner-carousel-button-prev"
-        nextActivateId="all-banner-carousel-button-next"
+        // buttonSize={buttonSize}
+        // prevActivateId="all-banner-carousel-button-prev"
+        // nextActivateId="all-banner-carousel-button-next"
       >
         {data &&
           data?.map((banner: any) => (
