@@ -361,7 +361,7 @@ export const bannerDiscount = [
   {
     id: 1,
     title: 'Coming Soon',
-    slug: '/search?q=school+textbooks',
+    slug: '/',
     image: {
       mobile: {
         url: '/assets/images/banner/discount/banner-1.png',
@@ -378,7 +378,7 @@ export const bannerDiscount = [
   {
     id: 2,
     title: 'Coming Soon',
-    slug: '/search',
+    slug: '/',
     image: {
       mobile: {
         url: '/assets/images/banner/discount/banner-2.png',
@@ -395,7 +395,7 @@ export const bannerDiscount = [
   {
     id: 3,
     title: 'Comig Soon',
-    slug: '/search',
+    slug: '/',
     image: {
       mobile: {
         url: '/assets/images/banner/discount/banner-3.png',
@@ -412,7 +412,7 @@ export const bannerDiscount = [
   {
     id: 4,
     title: 'Coming Soon',
-    slug: '/search',
+    slug: '/',
     image: {
       mobile: {
         url: '/assets/images/banner/discount/banner-4.png',
@@ -429,7 +429,7 @@ export const bannerDiscount = [
   {
     id: 5,
     title: 'Coming Soon',
-    slug: '/search',
+    slug: '/',
     image: {
       mobile: {
         url: '/assets/images/banner/discount/banner-5.png',
@@ -448,7 +448,7 @@ export const bannerDiscount = [
 export const homeSixBanner = {
   id: 1,
   title: 'Coming Soon',
-  slug: '/search',
+  slug: '/',
   image: {
     mobile: {
       url: '/assets/images/banner/banner-mobile-7.png',
@@ -466,7 +466,7 @@ export const homeSixBanner = {
 export const homeRefinedBanner = {
   id: 1,
   title: 'Coming Soon',
-  slug: '/search',
+  slug: '/',
   image: {
     mobile: {
       url: '/assets/images/banner/banner-12.jpg',
