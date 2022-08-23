@@ -132,10 +132,25 @@ const ProductCard: React.FC<ProductProps> = ({ product, className }) => {
           <div className="flex place-self-center">
             <img className="max-h-16" src={icon} />
           </div>
+          <button
+            style={buttonStyles.button}
+            className="text-white font-bold py-2 px-4 rounded-full"
+          >
+            Buy Now
+          </button>
         </div>
       </article>
     </a>
   );
+};
+
+const buttonStyles = {
+  button: {
+    backgroundColor: '#02B290',
+    '&:hover': {
+      backgroundColor: '#02B29f',
+    },
+  },
 };
 
 export default ProductCard;
