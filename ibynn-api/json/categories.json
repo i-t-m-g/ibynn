@@ -2,6 +2,315 @@
   "data": [
     {
       "id": 1,
+      "name": "Household Items",
+      "slug": "/search?q=household+items",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/category/home-goods.png",
+        "original": "/assets/images/category/home-goods.png"
+      },
+      "icon": "/assets/images/category/icon/home-goods.svg",
+      "children": [
+        {
+          "id": 1,
+          "name": "Air Freshener",
+          "slug": "/search?q=Air+Freshener",
+          "icon": "/assets/images/category/icon/air-freshener.png",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/Air Freshener.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/Air Freshener.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+
+        {
+          "id": 2,
+          "name": "Bleach",
+          "slug": "/search?q=Bleach",
+          "icon": "/assets/images/category/icon/bleach.jpg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/Bleach.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/Bleach.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+
+        {
+          "id": 3,
+          "name": "Dishwasher Detergent",
+          "slug": "/search?q=Dishwasher+Detergent",
+          "icon": "/assets/images/category/icon/dishwasher-symbol.svg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/dishwasher detergent.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/dishwasher detergent.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+
+        {
+          "id": 4,
+          "name": "Dryer Sheets",
+          "slug": "/search?q=dryer+sheets",
+          "icon": "/assets/images/category/icon/dryer-symbol.svg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/dryer sheets.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/dryer sheets.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+        {
+          "id": 5,
+          "name": "Fabric Softner",
+          "slug": "/search?q=fabric+softner",
+          "icon": "/assets/images/category/icon/fabric-softner.png",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/fabric softner.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/fabric softner.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+        {
+          "id": 6,
+          "name": "Cleaning Supplies",
+          "slug": "/search?q=cleaning+supplies",
+          "icon": "/assets/images/category/icon/cleaning-supplies.jpg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/cleaning supplies.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/cleaning supplies.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+        {
+          "id": 7,
+          "name": "Glass Cleaner",
+          "slug": "/search?q=glass+cleaner",
+          "icon": "/assets/images/category/icon/glass-cleaner.jpg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/glass cleaner (2).png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/glass cleaner (2).png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+
+        {
+          "id": 8,
+          "name": "Laundry Detergent",
+          "slug": "/search?q=laundry+detergent",
+          "icon": "/assets/images/category/icon/laundry.svg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/laundry detergent.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/laundry detergent.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+
+        {
+          "id": 9,
+          "name": "Sponge",
+          "slug": "/search?q=sponge",
+          "icon": "/assets/images/category/icon/sponge.svg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/sponge.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/sponge.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+
+        {
+          "id": 10,
+          "name": "Stain Remover",
+          "slug": "/search?q=stain+remover",
+          "icon": "/assets/images/category/icon/cleaning-kit.svg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/stain remover.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/stain remover.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+
+        {
+          "id": 11,
+          "name": "Tub & Tile Cleaner",
+          "slug": "/search?q=Tub+Tile+Cleaner",
+          "icon": "/assets/images/category/icon/floor-cleaning.svg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/tub and tile cleaner.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/tub and tile cleaner.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+
+        {
+          "id": 13,
+          "name": "Wipes",
+          "slug": "/search?q=wipes",
+          "icon": "/assets/images/category/icon/wipes.svg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/wipes.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/wipes.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+        {
+          "id": 14,
+          "name": "Mops",
+          "slug": "/search?q=mops",
+          "icon": "/assets/images/category/icon/mop.png",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/mops.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/mops.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+        {
+          "id": 15,
+          "name": "Brooms",
+          "slug": "/search?q=brooms",
+          "icon": "/assets/images/category/icon/broom.png",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/broom.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/broom.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+        {
+          "id": 16,
+          "name": "Toilet Cleaners",
+          "slug": "/search?q=toilet+cleaner",
+          "icon": "/assets/images/category/icon/toilet-cleaner.png",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/toilet cleaner.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/toilet cleaner.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+        {
+          "id": 17,
+          "name": "Foil",
+          "slug": "/search?q=aluminum+foil",
+          "icon": "/assets/images/category/icon/toilet-cleaner.png",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/foil.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/foil.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
       "name": "School Supplies",
       "slug": "/search?q=school+supplies",
       "image": {
