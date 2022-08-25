@@ -21,11 +21,11 @@ const breakpoints = {
   },
   '520': {
     slidesPerView: 2.5,
-    spaceBetween: 18,
+    spaceBetween: 20,
   },
   '0': {
     slidesPerView: 2.5,
-    spaceBetween: 11,
+    spaceBetween: 20,
   },
 };
 

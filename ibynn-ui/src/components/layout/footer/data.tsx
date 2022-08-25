@@ -15,11 +15,6 @@ export const footer = {
           path: '/contact-us',
         },
         {
-          id: 3,
-          title: 'link-about-team',
-          path: '/about-us',
-        },
-        {
           id: 4,
           title: 'link-customer-support',
           path: '/contact-us',
@@ -44,37 +39,6 @@ export const footer = {
           id: 3,
           title: 'link-return-policy',
           path: '/privacy',
-        },
-        {
-          id: 4,
-          title: 'link-site-map',
-          path: '/',
-        },
-      ],
-    },
-    {
-      id: 3,
-      widgetTitle: 'widget-title-community',
-      lists: [
-        {
-          id: 1,
-          title: 'link-announcements',
-          path: '/',
-        },
-        {
-          id: 2,
-          title: 'link-answer-center',
-          path: '/',
-        },
-        {
-          id: 3,
-          title: 'link-discussion-boards',
-          path: '/',
-        },
-        {
-          id: 4,
-          title: 'link-giving-works',
-          path: '/',
         },
       ],
     },
@@ -102,22 +66,6 @@ export const footer = {
       image: '/assets/images/payment/paypal.svg',
       name: 'payment-paypal',
       width: 76,
-      height: 20,
-    },
-    {
-      id: 4,
-      path: '/',
-      image: '/assets/images/payment/jcb.svg',
-      name: 'payment-jcb',
-      width: 26,
-      height: 20,
-    },
-    {
-      id: 5,
-      path: '/',
-      image: '/assets/images/payment/skrill.svg',
-      name: 'payment-skrill',
-      width: 39,
       height: 20,
     },
   ],
