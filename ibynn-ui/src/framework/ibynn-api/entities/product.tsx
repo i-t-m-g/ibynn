@@ -78,6 +78,8 @@ export class ShoppingResult {
     delivery?: string;
     icon?: string;
     extensions?: string[];
+    unit_price?: number;
+    unit_price_displayed?: string;
 }
 
 

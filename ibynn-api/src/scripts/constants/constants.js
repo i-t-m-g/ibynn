@@ -14,7 +14,9 @@ const amounts = [
     "count",
     "ct",
     "pk",
-    "pack"
+    "pack",
+    "pieces",
+    "pcs"
 ]
 
 exports.storeImages = storeImages;
