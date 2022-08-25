@@ -38,6 +38,7 @@ export const ProductGrid: FC<ProductGridProps> = ({ className = '' }) => {
 
   useEffect(() => {
     setIsLoading(data?.shopping_results?.length < 1);
+    console.log(data)
   }, [data]);
 
   useEffect(() => {

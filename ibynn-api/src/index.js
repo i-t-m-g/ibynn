@@ -44,6 +44,11 @@ app.use(morgan("combined"));
 
 var caching = cacheMiddleware(client);
 
+//reverses a string
+String.prototype.reverse = function () {
+	return this.split('').reverse().join('');
+};
+
 app.get("/json/:jsonFile", (req, res) => {
   const json = require(`../json/${req.params.jsonFile}.json`);
   res.json(json);
@@ -59,9 +64,10 @@ app.get("/", async (req, res) => {
 
 app.get("/shopping", caching, async (req, res) => {
   const query = req.query.q;
-
+  const sortBy = req.query.q;
+  
   try {
-    const results = await getShopping(query);
+    const results = await getShopping(query, sortBy);
     if (results.shopping_results) 
     {
       client.setEx(query, 86400, JSON.stringify(results));
@@ -88,6 +94,29 @@ app.get("/searchAllStores", caching, async (request, response) => {
     response.send(error);
   }
 });
+
+app.get("/tester", (req, res) => {
+  let sendMatch;
+  const title = "Pen+gear Retractable Ballpoint Pens, Assorted Colors, Count 18".toLowerCase().reverse()
+  const a = "count"
+
+  const pattern = new RegExp(`\\d+(?=\\s*${a})`);
+  const reversedPattern = new RegExp(`\\d+(?=\\s*${a.reverse()})`);
+
+  const match = title.match(pattern);
+  const reversedMatch = title.match(reversedPattern);
+
+
+  
+
+
+  if (match) sendMatch = match[0]
+  else if (reversedMatch) sendMatch = reversedMatch[0].reverse()
+
+
+
+  res.send(sendMatch)
+})
 
 // starting the server
 app.listen(9476, () => {

@@ -14,6 +14,28 @@ export const searchForProduct = async (query: string|string[]|undefined) => {
             },
         );
 
+        const sortedData = data.shopping_results.sort((a, b) => {
+            if (a.unit_price && b.unit_price)
+            {
+                const aPrice = a.unit_price;
+                const bPrice = b.unit_price;
+        
+                return aPrice - bPrice;
+            }
+
+            if (a.extracted_price && b.extracted_price) {
+                const aPrice = a.extracted_price;
+                const bPrice = b.extracted_price;
+        
+                return aPrice - bPrice;
+            }
+
+            return 0;
+            
+            }
+        );
+
+        data.shopping_results = sortedData;
         return data;
 
     } catch (error) {
