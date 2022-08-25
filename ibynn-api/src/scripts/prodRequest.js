@@ -1,5 +1,6 @@
 const { default: axios } = require("axios");
 const { getImage, getImageCheerio } = require("./scrapeImg");
+const { storeImages, storeNames, amounts } = require("./constants/constants");
 const dotenv = require('dotenv');
 dotenv.config();
 process.setMaxListeners(0);
@@ -7,19 +8,11 @@ process.setMaxListeners(0);
 const api_key = process.env.API_KEY;
 const getShoppingUrl = (query = 'iphone+12') => `https://serpapi.com/search.json?q=${query}&engine=google&google_domain=google.com&gl=us&hl=en&tbs=mr%3A1%2Cmerchagg%3Ag113872638%7Cg8299768%7Cg784994%7Cm114193152%7Cm7388148%7Cm125210027%7Cm120798572%7Cm127713402%7Cm431991540%7Cm463001233%7Cm10046&tbm=shop&tbs=mr%3A1%2Cmerchagg%3Ag113872638%7Cg8299768%7Cg784994%7Cm114193152%7Cm7388148%7Cm125210027%7Cm120798572%7Cm127713402%7Cm431991540%7Cm463001233%7Cm10046&api_key=${api_key}`
 const getSerpUrlPages = (query = 'iphone+12', pageIndex) => `https://serpapi.com/search.json?num=100&q=${query}&hl=en&gl=us&api_key=${api_key}&start=${pageIndex * 100}`
-const storeImages = {
-        Target: "https://www.freepnglogos.com/uploads/target-png-logo/target-logo-photo-3.png",
-        Amazon: "https://www.freepnglogos.com/uploads/amazon-png-logo-vector/amazon-png-logo-vector-1.png",
-        Walmart: "https://www.freepnglogos.com/uploads/walmart-logo-24.jpg"
+
+//reverses a string
+String.prototype.reverse = function () {
+	return this.split('').reverse().join('');
 };
-
-const storeNames = [
-    "Target",
-    "Amazon",
-    "Walmart"
-]
-
-
 
 const searchProductPagesAsync = async (query, pageIndex) => {
     try {
@@ -102,15 +95,14 @@ const getProductsWithPagination = async (query) => {
 
 }
 
-const getShopping = async (query) => {
+const getShopping = async (query, sortBy = "") => {
     try {
         const {data:response} = await axios.get(getShoppingUrl(query));
         let results = {};
-
         results.search_information = response.search_information;
         results.search_metadata = response.search_metadata;
         results.shopping_results = addIcons(response.shopping_results);
-        results.shopping_results = sortArrByPrice(results.shopping_results);
+        results.shopping_results = sortArrByPrice(results.shopping_results, sortBy);
 
         return results;
     } catch (error) {
@@ -134,15 +126,49 @@ const addIcons = (arr) => {
     return arr;
 }
 
-const sortArrByPrice = (arr) => {
-    
-    const sortedArr = arr.sort((a, b) => {
-        const aPrice = a.extracted_price;
-        const bPrice = b.extracted_price;
+const sortArrByPrice = (arr, sortBy) => {
+    let sortedArr = arr;
 
-        return aPrice - bPrice;
+    if (sortBy) {
+        for (const item of sortedArr) {
+            
+            for (const a of amounts) {
+                const title = item.title.toLowerCase();
+                const reversedTitle = title.reverse();
+                
+                if (title.includes(a)) {
+                    // const match = title.match(pattern);
+                    let unit_price;
 
-    })
+                    const pattern = new RegExp(`\\d+(?=(\\s|-)*${a})`);
+                    const reversedPattern = new RegExp(`\\d+(?=(\\s|-)*${a.reverse()})`);
+
+                    
+                    const match = title.match(pattern);
+                    const reversedMatch = reversedTitle.match(reversedPattern);
+
+                    if (match) {
+                        unit_price = (item.extracted_price / parseFloat(match[0])).toFixed(2);
+                        item.unit_price = parseFloat(unit_price);
+                        item.unit_price_displayed = `$${unit_price}/each`
+                    } else if (reversedMatch) {
+                        unit_price = (item.extracted_price / parseFloat(reversedMatch[0].reverse())).toFixed(2);
+                        item.unit_price = parseFloat(unit_price);
+                        item.unit_price_displayed = `$${unit_price.reverse()}/each`
+                    }
+                    
+                }
+            }
+        }
+    }
+
+    // const sortedArr = arr.sort((a, b) => {
+    //     const aPrice = a.extracted_price;
+    //     const bPrice = b.extracted_price;
+
+    //     return aPrice - bPrice;
+
+    // })
 
     return sortedArr;
 }
