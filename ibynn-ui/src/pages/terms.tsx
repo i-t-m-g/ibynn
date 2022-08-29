@@ -42,7 +42,7 @@ export default function TermsPage() {
           </div>
         </Container>
       </div>
-      <{/* <DownloadApps /> */} />
+      {/* <DownloadApps /> */}
     </>
   );
 }
