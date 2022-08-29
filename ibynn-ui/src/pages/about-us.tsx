@@ -3,7 +3,7 @@ import Container from '@components/ui/container';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 import { GetStaticProps } from 'next';
-import DownloadApps from '@components/common/download-apps';
+import /* <DownloadApps /> */ '@components/common/download-apps';
 import { aboutSetting } from '@settings/about-setting';
 import Image from '@components/ui/image';
 import Seo from '@components/seo/seo';
@@ -128,7 +128,7 @@ export default function TermsPage() {
         </Container>
       </div>
 
-      {/* <DownloadApps /> */}
+      {/* <{/* <DownloadApps /> */}
     </>
   );
 }

@@ -13,7 +13,7 @@ import { fetchProducts } from '@framework/product/get-all-products';
 import { fetchCategories } from '@framework/category/get-all-categories';
 import { LIMITS } from '@framework/utils/limits';
 import RefinedSidebar from '@components/common/refined-sidebar';
-import DownloadAppsTwo from '@components/common/download-apps-two';
+import {/* <DownloadApps /> */}Two from '@components/common/download-apps-two';
 import RefinedAllProductFeed from '@components/product/feeds/refined-all-products-feed';
 import HeroCarouselBlock from '@components/hero/hero-carousel-block';
 
@@ -34,7 +34,7 @@ export default function Home() {
           <RefinedSidebar className="w-full md:w-[300px] lg:w-[350px] mt-10 md:mt-0 md:sticky md:top-16 lg:top-20" />
         </Element>
       </Container>
-      <DownloadAppsTwo />
+      <{/* <DownloadApps /> */}Two />
     </>
   );
 }

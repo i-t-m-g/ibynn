@@ -1,7 +1,7 @@
 import Layout from '@components/layout/layout-four';
 import Container from '@components/ui/container';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import DownloadApps from '@components/common/download-apps';
+import /* <DownloadApps /> */ '@components/common/download-apps';
 import { homeFourHeroBanner as heroBanner } from '@framework/static/banner';
 import HeroBannerCard from '@components/hero/hero-banner-card';
 import { GetStaticProps } from 'next';

@@ -1,7 +1,7 @@
 import Container from '@components/ui/container';
 import Layout from '@components/layout/layout';
 import ProductSingleDetails from '@components/product/product';
-import DownloadApps from '@components/common/download-apps';
+import {/* <DownloadApps /> */} from '@components/common/download-apps';
 import PopcornJerkyProductFeed from '@components/product/feeds/popcorn-jerky-product-feed';
 import RelatedProductFeed from '@components/product/feeds/related-product-feed';
 import Breadcrumb from '@components/ui/breadcrumb';
@@ -22,7 +22,7 @@ export default function ProductPage() {
 
       <RelatedProductFeed uniqueKey="related-products" />
       <PopcornJerkyProductFeed />
-      {/* <DownloadApps /> */}
+      {/* <{/* <DownloadApps /> */} /> */}
     </>
   );
 }

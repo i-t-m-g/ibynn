@@ -1,7 +1,7 @@
 import Layout from '@components/layout/layout-five';
 import Container from '@components/ui/container';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import DownloadAppsTwo from '@components/common/download-apps-two';
+import {/* <DownloadApps /> */}Two from '@components/common/download-apps-two';
 import BundleGrid from '@components/bundle/bundle-grid-two';
 import CollectionGrid from '@components/common/collection-grid';
 import BestSellerGroceryProductFeed from '@components/product/feeds/best-seller-grocery-product-feed';
@@ -54,7 +54,7 @@ export default function Home() {
         headingPosition="center"
         className="pb-1 lg:pb-0 mb-12 lg:mb-14 xl:mb-16 2xl:mb-20"
       />
-      <DownloadAppsTwo />
+      <{/* <DownloadApps /> */}Two />
     </>
   );
 }

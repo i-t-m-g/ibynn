@@ -3,7 +3,7 @@ import AllProductFeed from '@components/product/feeds/all-products-feed';
 import Layout from '@components/layout/layout';
 import Container from '@components/ui/container';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import DownloadApps from '@components/common/download-apps';
+import {/* <DownloadApps /> */} from '@components/common/download-apps';
 import { homeTwoHeroBanner as heroBanner } from '@framework/static/banner';
 import { homeTwoBanner as banner } from '@framework/static/banner';
 import BannerCard from '@components/cards/banner-card';
@@ -42,7 +42,7 @@ export default function Home() {
           />
         </Element>
       </Container>
-      {/* <DownloadApps /> */}
+      {/* <{/* <DownloadApps /> */} /> */}
     </>
   );
 }
