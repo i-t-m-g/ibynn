@@ -51,7 +51,7 @@ export default function Home() {
         headingPosition="center"
         className="mb-12 pb-1 lg:pb-0 lg:mb-14 xl:mb-16 2xl:pt-4"
       />
-      <{/* <DownloadApps /> */} />
+      {/* <DownloadApps /> */}
     </>
   );
 }

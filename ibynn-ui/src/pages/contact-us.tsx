@@ -3,7 +3,7 @@ import Layout from '@components/layout/layout';
 import Map from '@components/ui/map';
 import PageContactHeroSection from '@components/ui/page-contact-hero-section';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import {/* <DownloadApps /> */} from '@components/common/download-apps';
+import /* <DownloadApps /> */ '@components/common/download-apps';
 import ContactForm from '@components/common/form/contact-form';
 import ContactSupport from '@components/contact/contact-support';
 import ContactInformation from '@components/contact/contact-information';
@@ -40,7 +40,7 @@ export default function ContactUsPage() {
           showInfoWindow={true}
         />
       </div>
-      {/* <{/* <DownloadApps /> */} /> */}
+      {/* <{/* <DownloadApps /> */}
     </>
   );
 }
