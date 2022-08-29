@@ -7,7 +7,7 @@ import { Link, Element } from 'react-scroll';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 import { GetStaticProps } from 'next';
-import {/* <DownloadApps /> */} from '@components/common/download-apps';
+import /* <DownloadApps /> */ '@components/common/download-apps';
 import Seo from '@components/seo/seo';
 
 function makeTitleToDOMId(title: string) {
@@ -72,7 +72,7 @@ export default function PrivacyPage() {
           </div>
         </Container>
       </div>
-      <{/* <DownloadApps /> */} />
+      {/* <DownloadApps /> */}
     </>
   );
 }

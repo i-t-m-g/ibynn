@@ -44,7 +44,7 @@ export default function Home() {
       <CollectionGrid className="mb-12 lg:mb-14 xl:mb-16" />
       <CookiesProductFeed />
       <PopcornJerkyProductFeed />
-      {/* <{/* <DownloadApps /> */} /> */}
+      {/* <{/* <DownloadApps /> */}
     </>
   );
 }

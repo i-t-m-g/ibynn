@@ -3,7 +3,7 @@ import Layout from '@components/layout/layout';
 import { ShopFilters } from '@components/search/filters';
 import { ProductGrid } from '@components/product/product-grid';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import {/* <DownloadApps /> */} from '@components/common/download-apps';
+import /* <DownloadApps /> */ '@components/common/download-apps';
 import { GetStaticProps } from 'next';
 import PageHeroSection from '@components/ui/page-hero-section';
 import { useTranslation } from 'next-i18next';
@@ -32,7 +32,7 @@ export default function Products() {
           </div>
         </Element>
       </Container>
-      {/* <{/* <DownloadApps /> */} /> */}
+      {/* <{/* <DownloadApps /> */}
     </>
   );
 }
