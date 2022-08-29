@@ -1,12 +1,13 @@
 const { default: axios } = require("axios");
 const { getImage, getImageCheerio } = require("./scrapeImg");
-const { storeImages, storeNames, amounts } = require("./constants/constants");
+const convert = require('convert-units')
+const { storeImages, storeNames, per_type, measurements } = require("./constants/constants");
 const dotenv = require('dotenv');
 dotenv.config();
 process.setMaxListeners(0);
 
 const api_key = process.env.API_KEY;
-const getShoppingUrl = (query = 'iphone+12') => `https://serpapi.com/search.json?q=${query}&engine=google&google_domain=google.com&gl=us&hl=en&tbs=mr%3A1%2Cmerchagg%3Ag113872638%7Cg8299768%7Cg784994%7Cm114193152%7Cm7388148%7Cm125210027%7Cm120798572%7Cm127713402%7Cm431991540%7Cm463001233%7Cm10046&tbm=shop&tbs=mr%3A1%2Cmerchagg%3Ag113872638%7Cg8299768%7Cg784994%7Cm114193152%7Cm7388148%7Cm125210027%7Cm120798572%7Cm127713402%7Cm431991540%7Cm463001233%7Cm10046&api_key=${api_key}`
+const getShoppingUrl = (query = 'iphone+12') => `https://serpapi.com/search.json?q=${query}&engine=google&google_domain=google.com&gl=us&hl=en&tbs=mr:1,merchagg:g113872638|g8299768|g784994|m114193152|m7388148|m125210027|m120798572|m127713402|m431991540|m463001233|m10046,avg_rating:400&tbm=shop&api_key=${api_key}`
 const getSerpUrlPages = (query = 'iphone+12', pageIndex) => `https://serpapi.com/search.json?num=100&q=${query}&hl=en&gl=us&api_key=${api_key}&start=${pageIndex * 100}`
 
 //reverses a string
@@ -126,51 +127,76 @@ const addIcons = (arr) => {
     return arr;
 }
 
-const sortArrByPrice = (arr, sortBy) => {
+const sortArrByPrice = (arr, sortBy, inEach) => {
     let sortedArr = arr;
 
     if (sortBy) {
         for (const item of sortedArr) {
-            
-            for (const a of amounts) {
+
+            for (const a of measurements[sortBy]) {
                 const title = item.title.toLowerCase();
                 const reversedTitle = title.reverse();
                 
                 if (title.includes(a)) {
                     // const match = title.match(pattern);
-                    let unit_price;
+                    try {
+                        let unit_price;
 
-                    const pattern = new RegExp(`\\d+(?=(\\s|-)*${a})`);
-                    const reversedPattern = new RegExp(`\\d+(?=(\\s|-)*${a.reverse()})`);
+                        const pattern = new RegExp(`\\d+\\.?\\d*(?=(\\s|-)*${a})`);
+                        const reversedPattern = new RegExp(`\\d+\\.?\\d*(?=(\\s|-)*${a.reverse()})`);
 
-                    
-                    const match = title.match(pattern);
-                    const reversedMatch = reversedTitle.match(reversedPattern);
+                        
+                        const match = title.match(pattern);
+                        const reversedMatch = reversedTitle.match(reversedPattern);
 
-                    if (match) {
-                        unit_price = (item.extracted_price / parseFloat(match[0])).toFixed(2);
-                        item.unit_price = parseFloat(unit_price);
-                        item.unit_price_displayed = `$${unit_price}/each`
-                    } else if (reversedMatch) {
-                        unit_price = (item.extracted_price / parseFloat(reversedMatch[0].reverse())).toFixed(2);
-                        item.unit_price = parseFloat(unit_price);
-                        item.unit_price_displayed = `$${unit_price.reverse()}/each`
+                        if (match) calculations(item, match[0], sortBy, a)
+                        if (reversedMatch) calculations(item, match[0].reverse(), sortBy, a)
+                    } catch (error) {
+                        console.log(error)
                     }
+
+                    // if (match) {
+                    //     unit_price = (item.extracted_price / parseFloat(match[0])).toFixed(2);
+                    //     item.unit_price = parseFloat(unit_price);
+                    //     item.unit_price_displayed = `$${unit_price}/${per_type[sortBy]}`
+                    // } else if (reversedMatch) {
+                    //     unit_price = (item.extracted_price / parseFloat(reversedMatch[0].reverse())).toFixed(2);
+                    //     item.unit_price = parseFloat(unit_price);
+                    //     item.unit_price_displayed = `$${unit_price.reverse()}/${per_type[sortBy]}`
+                    // }
                     
                 }
             }
         }
     }
 
-    // const sortedArr = arr.sort((a, b) => {
-    //     const aPrice = a.extracted_price;
-    //     const bPrice = b.extracted_price;
-
-    //     return aPrice - bPrice;
-
-    // })
-
     return sortedArr;
+}
+
+
+const calculations = (item, match, sortBy, unit) => {
+    let unit_price;
+    if (sortBy === 'amount') 
+    {
+        unit_price = (item.extracted_price / parseFloat(match)).toFixed(2);
+        item.unit_price = parseFloat(unit_price);
+        item.unit_price_displayed = `$${unit_price}/${per_type[sortBy]}`
+    } else if (sortBy === 'weight') 
+    {
+        if (unit) {
+            
+            const weight = convert(match).from(unit).to('oz')
+            unit_price = (item.extracted_price / parseFloat(weight)).toFixed(2);
+            item.unit_price = parseFloat(unit_price);
+            item.unit_price_displayed = `$${unit_price}/${per_type[sortBy]}`
+        }
+
+    } else if (sortBy === 'volume') 
+    {
+        unit_price = (item.extracted_price / parseFloat(match)).toFixed(2);
+        item.unit_price = parseFloat(unit_price);
+        item.unit_price_displayed = `$${unit_price}/${per_type[sortBy]}`
+    }
 }
 
 exports.getShopping = getShopping;

@@ -64,13 +64,13 @@ app.get("/", async (req, res) => {
 
 app.get("/shopping", caching, async (req, res) => {
   const query = req.query.q;
-  const sortBy = req.query.q;
+  const sortBy = req.query.sortBy;
   
   try {
     const results = await getShopping(query, sortBy);
     if (results.shopping_results) 
     {
-      client.setEx(query, 86400, JSON.stringify(results));
+      client.setEx(query, 172800, JSON.stringify(results));
       res.send(results);
     } else {
       throw results;
@@ -83,11 +83,11 @@ app.get("/shopping", caching, async (req, res) => {
 
 app.get("/searchAllStores", caching, async (request, response) => {
   const query = request.query.q;
-
+  
   try {
     const results = await getProductsWP(query);
 
-    client.setEx(query, 86400, JSON.stringify(results));
+    client.setEx(query, 172800, JSON.stringify(results));
 
     response.send(results);
   } catch (error) {
