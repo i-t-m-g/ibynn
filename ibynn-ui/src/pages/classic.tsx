@@ -4,7 +4,7 @@ import FeatureGrid from '@components/common/featured-grid';
 import Layout from '@components/layout/layout';
 import Container from '@components/ui/container';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import DownloadApps from '@components/common/download-apps';
+import {/* <DownloadApps /> */} from '@components/common/download-apps';
 import BestSellerProductFeed from '@components/product/feeds/best-seller-product-feed';
 import FreshVegetablesProductFeed from '@components/product/feeds/fresh-vegetables-product-feed';
 import CookiesProductFeed from '@components/product/feeds/cookies-product-feed';
@@ -44,7 +44,7 @@ export default function Home() {
       <CollectionGrid className="mb-12 lg:mb-14 xl:mb-16" />
       <CookiesProductFeed />
       <PopcornJerkyProductFeed />
-      {/* <DownloadApps /> */}
+      {/* <{/* <DownloadApps /> */} /> */}
     </>
   );
 }

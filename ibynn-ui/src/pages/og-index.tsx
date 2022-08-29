@@ -1,7 +1,7 @@
 import Layout from '@components/layout/layout-two';
 import Container from '@components/ui/container';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import DownloadApps from '@components/common/download-apps';
+import {/* <DownloadApps /> */} from '@components/common/download-apps';
 import BundleGrid from '@components/bundle/bundle-grid';
 import CollectionGrid from '@components/common/collection-grid';
 import HeroBannerCard from '@components/hero/hero-banner-card';
@@ -52,7 +52,7 @@ export default function Home() {
         headingPosition="center"
         className="pb-1 mb-12 xl:pt-2 2xl:pt-4 3xl:pt-6 lg:pb-0 lg:mb-14 xl:mb-16 2xl:mb-20"
       />
-      <DownloadApps />
+      <{/* <DownloadApps /> */} />
     </>
   );
 }

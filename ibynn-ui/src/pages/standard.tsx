@@ -2,7 +2,7 @@ import BannerGrid from '@components/common/banner-grid';
 import Layout from '@components/layout/layout-two';
 import Container from '@components/ui/container';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import DownloadApps from '@components/common/download-apps';
+import {/* <DownloadApps /> */} from '@components/common/download-apps';
 import CategoryGridListBlock from '@components/common/category-grid-list-block';
 import BundleGrid from '@components/bundle/bundle-grid';
 import { bannerGridThree as banners } from '@framework/static/banner';
@@ -51,7 +51,7 @@ export default function Home() {
         headingPosition="center"
         className="mb-12 pb-1 lg:pb-0 lg:mb-14 xl:mb-16 2xl:pt-4"
       />
-      <DownloadApps />
+      <{/* <DownloadApps /> */} />
     </>
   );
 }
