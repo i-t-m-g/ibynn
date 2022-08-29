@@ -2,7 +2,7 @@ import Layout from '@components/layout/layout';
 import { GetStaticProps } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import ShopsPageContent from '@components/shops/shops-page-content';
-import DownloadApps from '@components/common/download-apps';
+import /* <DownloadApps /> */ '@components/common/download-apps';
 import PageHeroSection from '@components/ui/page-hero-section';
 import Seo from '@components/seo/seo';
 import { fetchShops } from '@framework/shop/get-shops';
@@ -25,7 +25,7 @@ export default function ShopsPage() {
         variant="white"
       />
       <ShopsPageContent />
-      {/* <DownloadApps /> */}
+      {/* <{/* <DownloadApps /> */}
     </>
   );
 }

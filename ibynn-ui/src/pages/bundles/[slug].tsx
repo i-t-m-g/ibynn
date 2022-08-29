@@ -2,7 +2,7 @@ import Container from '@components/ui/container';
 import Layout from '@components/layout/layout';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { GetServerSideProps } from 'next';
-import DownloadApps from '@components/common/download-apps';
+import {/* <DownloadApps /> */} from '@components/common/download-apps';
 import ProductBundleGrid from '@components/product/product-bundle-grid';
 import BundleHeroSection from '@components/bundle/bundle-hero-section';
 import BannerGridTwo from '@components/common/banner-grid-two';
@@ -18,7 +18,7 @@ export default function Bundles() {
           element={<BannerGridTwo data={banners} className="py-5" />}
         />
       </Container>
-      {/* <DownloadApps /> */}
+      {/* <{/* <DownloadApps /> */} /> */}
     </>
   );
 }

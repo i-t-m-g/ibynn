@@ -2,7 +2,7 @@ import BannerGrid from '@components/common/banner-grid';
 import Layout from '@components/layout/layout-three';
 import Container from '@components/ui/container';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import DownloadApps from '@components/common/download-apps';
+import /* <DownloadApps /> */ '@components/common/download-apps';
 import { bannerGridThree as banners } from '@framework/static/banner';
 import CollectionGrid from '@components/common/collection-grid';
 import BestSellerGroceryProductFeed from '@components/product/feeds/best-seller-grocery-product-feed';
@@ -39,7 +39,7 @@ export default function Home() {
         <PopularProductFeed className="mb-12 lg:mb-14 xl:mb-16 2xl:mb-20 3xl:pb-2" />
       </Container>
       <CollectionGrid headingPosition="center" />
-      <DownloadApps />
+      {/* <DownloadApps /> */}
     </>
   );
 }
