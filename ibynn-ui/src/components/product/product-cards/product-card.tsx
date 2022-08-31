@@ -118,7 +118,7 @@ const ProductCard: React.FC<ProductProps> = ({ product, className }) => {
 
           <div className="mb-1 lg:mb-1.5 -mx-1">
             <span className="inline-block mx-1 z-0 text-sm font-semibold sm:text-15px lg:text-base text-brand-dark">
-              {product.price}
+              ${product.extracted_price?.toFixed(2)}
             </span>
             <span className="text-sm font-medium md:text-15px ml-2">
               {product.unit_price_displayed}

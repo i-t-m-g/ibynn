@@ -44,7 +44,7 @@ export const ProductGrid: FC<ProductGridProps> = ({ className = '' }) => {
   useEffect(() => {
     if (query.q) {
       setData(new Products());
-      searchForProduct(query.q).then((res) => setData(res));
+      searchForProduct(query).then((res) => setData(res));
     }
   }, [query]);
 

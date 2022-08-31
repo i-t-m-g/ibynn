@@ -3,6 +3,7 @@ const { getImage, getImageCheerio } = require("./scrapeImg");
 const convert = require('convert-units')
 const { storeImages, storeNames, per_type, measurements } = require("./constants/constants");
 const dotenv = require('dotenv');
+const { compareDocumentPosition } = require("domutils");
 dotenv.config();
 process.setMaxListeners(0);
 
@@ -102,7 +103,13 @@ const getShopping = async (query, sortBy = "") => {
         let results = {};
         results.search_information = response.search_information;
         results.search_metadata = response.search_metadata;
-        results.shopping_results = addIcons(response.shopping_results);
+        
+        results.shopping_results = 
+            response.inline_shopping_results ? 
+            [...response.inline_shopping_results, ...response.shopping_results] : 
+            response.shopping_results;
+
+        results.shopping_results = addIcons(results.shopping_results);
         results.shopping_results = sortArrByPrice(results.shopping_results, sortBy);
 
         return results;
@@ -130,9 +137,9 @@ const addIcons = (arr) => {
 const sortArrByPrice = (arr, sortBy, inEach) => {
     let sortedArr = arr;
 
+
     if (sortBy) {
         for (const item of sortedArr) {
-
             for (const a of measurements[sortBy]) {
                 const title = item.title.toLowerCase();
                 const reversedTitle = title.reverse();
@@ -151,6 +158,10 @@ const sortArrByPrice = (arr, sortBy, inEach) => {
 
                         if (match) calculations(item, match[0], sortBy, a)
                         if (reversedMatch) calculations(item, match[0].reverse(), sortBy, a)
+                        console.log("hello")
+                        console.log("hello")
+                        console.log("hello")
+                        console.log("hello")
                     } catch (error) {
                         console.log(error)
                     }
@@ -207,6 +218,7 @@ const calculations = (item, match, sortBy, unit) => {
         if (unit) {
             let massVolume;
 
+
             if (convert().describe(unit.replace(/\s/g, '')).measure === 'mass') {
                 massVolume = convert(match).from(unit.replace(/\s/g)).to('oz');
             }
@@ -214,9 +226,6 @@ const calculations = (item, match, sortBy, unit) => {
             if (convert().describe(unit.replace(/\s/g, '')).measure === 'volume') {
                 massVolume = convert(match).from(unit === 'floz'||'fl oz' ? 'fl-oz' : unit).to('fl-oz');
             }
-
-
-            console.log(massVolume)
 
             unit_price = (item.extracted_price / parseFloat(massVolume)).toFixed(2);
             item.unit_price = parseFloat(unit_price);
