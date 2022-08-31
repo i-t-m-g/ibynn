@@ -34,16 +34,7 @@ function SidebarMenuItem({ className, item, depth = 0 }: any) {
       const { query } = router;
       const { type, ...rest } = query;
       closeModal();
-      router.push(
-        {
-          pathname,
-          query: { ...rest, q: slug },
-        },
-        undefined,
-        {
-          scroll: false,
-        }
-      );
+      router.push(slug);
       displaySidebar && closeSidebar();
     }
   }

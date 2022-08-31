@@ -67,7 +67,7 @@ export default function TermsPage() {
                 __html: t(aboutSetting.descriptionTwo),
               }}
             />
-            <div className="flex flex-col grid-cols-3 gap-4 my-8 lg:my-14 sm:grid">
+            {/* <div className="flex flex-col grid-cols-3 gap-4 my-8 lg:my-14 sm:grid">
               <Image
                 src={aboutUs3}
                 alt={t('text-map')}
@@ -89,14 +89,14 @@ export default function TermsPage() {
                 width={379}
                 height={262}
               />
-            </div>
+            </div> */}
             <div
               className="text-sm leading-7 text-brand-dark opacity-70 lg:text-15px lg:leading-loose"
               dangerouslySetInnerHTML={{
                 __html: t(aboutSetting.descriptionThree),
               }}
             />
-            <div className="flex mt-8 mb-6 lg:mt-14 lg:mb-10">
+            {/* <div className="flex mt-8 mb-6 lg:mt-14 lg:mb-10">
               <Image
                 src={aboutUs6}
                 alt={t('text-map')}
@@ -104,7 +104,7 @@ export default function TermsPage() {
                 height={400}
                 width={1200}
               />
-            </div>
+            </div> */}
             <h2 className="text-lg md:text-xl lg:text-[24px] text-brand-dark font-semibold mb-4 lg:mb-7">
               {t(aboutSetting.titleTwo)}
             </h2>

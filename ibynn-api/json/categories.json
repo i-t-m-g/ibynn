@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Household Items",
-      "slug": "/search?q=household+items",
+      "slug": "/search?q=household+items&sortBy=amount",
       "image": {
         "id": 1,
         "thumbnail": "/assets/images/category/home-goods.png",
@@ -14,7 +14,7 @@
         {
           "id": 1,
           "name": "Air Freshener",
-          "slug": "/search?q=Air+Freshener",
+          "slug": "/search?q=Air+Freshener&sortBy=massVolume",
           "icon": "/assets/images/category/icon/air-freshener.png",
           "image": {
             "mobile": {
@@ -33,7 +33,7 @@
         {
           "id": 2,
           "name": "Bleach",
-          "slug": "/search?q=Bleach",
+          "slug": "/search?q=cleaning+Bleach&sortBy=massVolume",
           "icon": "/assets/images/category/icon/bleach.jpg",
           "image": {
             "mobile": {
@@ -52,7 +52,7 @@
         {
           "id": 3,
           "name": "Dishwasher Detergent",
-          "slug": "/search?q=Dishwasher+Detergent",
+          "slug": "/search?q=Dishwasher+Detergent&sortBy=massVolume",
           "icon": "/assets/images/category/icon/dishwasher-symbol.svg",
           "image": {
             "mobile": {
@@ -71,7 +71,7 @@
         {
           "id": 4,
           "name": "Dryer Sheets",
-          "slug": "/search?q=dryer+sheets",
+          "slug": "/search?q=dryer+sheets&sortBy=amount",
           "icon": "/assets/images/category/icon/dryer-symbol.svg",
           "image": {
             "mobile": {
@@ -89,7 +89,7 @@
         {
           "id": 5,
           "name": "Fabric Softner",
-          "slug": "/search?q=fabric+softner",
+          "slug": "/search?q=fabric+softner&sortBy=massVolume",
           "icon": "/assets/images/category/icon/fabric-softner.png",
           "image": {
             "mobile": {
@@ -107,7 +107,7 @@
         {
           "id": 6,
           "name": "Cleaning Supplies",
-          "slug": "/search?q=cleaning+supplies",
+          "slug": "/search?q=cleaning+supplies&sortBy=amount",
           "icon": "/assets/images/category/icon/cleaning-supplies.jpg",
           "image": {
             "mobile": {
@@ -125,7 +125,7 @@
         {
           "id": 7,
           "name": "Glass Cleaner",
-          "slug": "/search?q=glass+cleaner",
+          "slug": "/search?q=glass+cleaner&sortBy=massVolume",
           "icon": "/assets/images/category/icon/glass-cleaner.jpg",
           "image": {
             "mobile": {
@@ -144,7 +144,7 @@
         {
           "id": 8,
           "name": "Laundry Detergent",
-          "slug": "/search?q=laundry+detergent",
+          "slug": "/search?q=laundry+detergent&sortBy=massVolume",
           "icon": "/assets/images/category/icon/laundry.svg",
           "image": {
             "mobile": {
@@ -163,7 +163,7 @@
         {
           "id": 9,
           "name": "Sponge",
-          "slug": "/search?q=sponge",
+          "slug": "/search?q=sponge&sortBy=amount",
           "icon": "/assets/images/category/icon/sponge.svg",
           "image": {
             "mobile": {
@@ -182,7 +182,7 @@
         {
           "id": 10,
           "name": "Stain Remover",
-          "slug": "/search?q=stain+remover",
+          "slug": "/search?q=stain+remover&sortBy=massVolume",
           "icon": "/assets/images/category/icon/cleaning-kit.svg",
           "image": {
             "mobile": {
@@ -201,7 +201,7 @@
         {
           "id": 11,
           "name": "Tub & Tile Cleaner",
-          "slug": "/search?q=Tub+Tile+Cleaner",
+          "slug": "/search?q=Tub+Tile+Cleaner&sortBy=massVolume",
           "icon": "/assets/images/category/icon/floor-cleaning.svg",
           "image": {
             "mobile": {
@@ -220,7 +220,7 @@
         {
           "id": 13,
           "name": "Wipes",
-          "slug": "/search?q=wipes",
+          "slug": "/search?q=wipes&sortBy=amount",
           "icon": "/assets/images/category/icon/wipes.svg",
           "image": {
             "mobile": {
@@ -238,7 +238,7 @@
         {
           "id": 14,
           "name": "Mops",
-          "slug": "/search?q=mops",
+          "slug": "/search?q=mops&sortBy=amount",
           "icon": "/assets/images/category/icon/mop.png",
           "image": {
             "mobile": {
@@ -256,7 +256,7 @@
         {
           "id": 15,
           "name": "Brooms",
-          "slug": "/search?q=brooms",
+          "slug": "/search?q=brooms&sortBy=amount",
           "icon": "/assets/images/category/icon/broom.png",
           "image": {
             "mobile": {
@@ -274,7 +274,7 @@
         {
           "id": 16,
           "name": "Toilet Cleaners",
-          "slug": "/search?q=toilet+cleaner",
+          "slug": "/search?q=toilet+cleaner&sortBy=massVolume",
           "icon": "/assets/images/category/icon/toilet-cleaner.png",
           "image": {
             "mobile": {
@@ -291,8 +291,8 @@
         },
         {
           "id": 17,
-          "name": "Foil",
-          "slug": "/search?q=aluminum+foil",
+          "name": "Aluminum Foil",
+          "slug": "/search?q=aluminum+foil&sortBy=amount",
           "icon": "/assets/images/category/icon/toilet-cleaner.png",
           "image": {
             "mobile": {
@@ -312,7 +312,7 @@
     {
       "id": 2,
       "name": "School Supplies",
-      "slug": "/search?q=school+supplies",
+      "slug": "/search?q=school+supplies&sortBy=amount",
       "image": {
         "id": 1,
         "thumbnail": "/assets/images/category/home-goods.png",
@@ -323,7 +323,7 @@
         {
           "id": 1,
           "name": "Pencils",
-          "slug": "/search?q=pencils",
+          "slug": "/search?q=pencils&sortBy=amount",
           "icon": "/assets/images/category/icon/pencils-icon.svg",
           "image": {
             "mobile": {
@@ -341,7 +341,7 @@
         {
           "id": 2,
           "name": "Pens",
-          "slug": "/search?q=writing+pens",
+          "slug": "/search?q=writing+pens&sortBy=amount",
           "icon": "/assets/images/category/icon/pen.svg",
           "image": {
             "mobile": {
@@ -359,7 +359,7 @@
         {
           "id": 3,
           "name": "Notebooks",
-          "slug": "/search?q=writing+notebooks",
+          "slug": "/search?q=writing+notebooks&sortBy=amount",
           "icon": "/assets/images/category/icon/notebook.svg",
           "image": {
             "mobile": {
@@ -377,7 +377,7 @@
         {
           "id": 4,
           "name": "Binders",
-          "slug": "/search?q=paper+binders",
+          "slug": "/search?q=paper+binders&sortBy=amount",
           "icon": "/assets/images/category/icon/binder.svg",
           "image": {
             "mobile": {
@@ -395,7 +395,7 @@
         {
           "id": 5,
           "name": "Loose Leaf Paper",
-          "slug": "/search?q=loose+leaf+paper",
+          "slug": "/search?q=loose+leaf+paper&sortBy=amount",
           "icon": "/assets/images/category/icon/sheet.svg",
           "image": {
             "mobile": {
@@ -413,7 +413,7 @@
         {
           "id": 6,
           "name": "Stapler",
-          "slug": "/search?q=paper+stapler",
+          "slug": "/search?q=paper+stapler&sortBy=amount",
           "icon": "/assets/images/category/icon/stapler.svg",
           "image": {
             "mobile": {
@@ -431,7 +431,7 @@
         {
           "id": 7,
           "name": "Hole Puncher",
-          "slug": "/search?q=hole+puncher",
+          "slug": "/search?q=hole+puncher&sortBy=amount",
           "icon": "/assets/images/category/icon/hole-puncher.svg",
           "image": {
             "mobile": {

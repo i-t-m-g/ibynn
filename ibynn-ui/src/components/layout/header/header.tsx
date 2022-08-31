@@ -11,7 +11,6 @@ import Logo from '@components/ui/logo';
 import HeaderMenu from '@components/layout/header/header-menu';
 import Search from '@components/common/search';
 import LanguageSwitcher from '@components/ui/language-switcher';
-import UserIcon from '@components/icons/user-icon';
 import SearchIcon from '@components/icons/search-icon';
 import { useModalAction } from '@components/common/modal/modal.context';
 import useOnClickOutside from '@utils/use-click-outside';
@@ -68,24 +67,9 @@ const Header: React.FC = () => {
           {/* End of search */}
 
           <div className="flex shrink-0 -mx-2.5 xl:-mx-3.5">
-            <div className="xl:mx-3.5 mx-2.5">
-                              {/* <LanguageSwitcher /> */}
-
-            </div>
-            <CartButton className="hidden lg:flex mx-2.5 xl:mx-3.5" />
-            <div className="items-center hidden lg:flex shrink-0 mx-2.5 xl:mx-3.5">
-              <UserIcon className="text-brand-dark text-opacity-40" />
-              <AuthMenu
-                isAuthorized={isAuthorized}
-                href={ROUTES.ACCOUNT}
-                btnProps={{
-                  children: t('text-sign-in'),
-                  onClick: handleLogin,
-                }}
-              >
-                {t('text-account')}
-              </AuthMenu>
-            </div>
+            <div className="xl:mx-3.5 mx-2.5">{/* <LanguageSwitcher /> */}</div>
+            {/* <CartButton className="hidden lg:flex mx-2.5 xl:mx-3.5" /> */}
+            <div className="items-center hidden lg:flex shrink-0 mx-2.5 xl:mx-3.5"></div>
           </div>
           {/* End of auth & lang */}
         </Container>
@@ -112,7 +96,7 @@ const Header: React.FC = () => {
             )}
             {/* End of conditional search  */}
 
-            <div className="flex items-center ltr:ml-auto rtl:mr-auto shrink-0">
+            {/* <div className="flex items-center ltr:ml-auto rtl:mr-auto shrink-0">
               <Delivery />
               <div className="flex items-center w-0 py-4 overflow-hidden transition-all duration-200 ease-in-out opacity-0 navbar-right">
                 <button
@@ -124,27 +108,8 @@ const Header: React.FC = () => {
                 >
                   <SearchIcon className="w-[22px] h-[22px] text-brand-dark text-opacity-40" />
                 </button>
-                {/* End of search handler btn */}
-
-                <CartButton />
-                {/* End of cart btn */}
-
-                <div className="flex items-center shrink-0 ltr:ml-7 rtl:mr-7">
-                  <UserIcon className="text-brand-dark text-opacity-40" />
-                  <AuthMenu
-                    isAuthorized={isAuthorized}
-                    href={ROUTES.ACCOUNT}
-                    btnProps={{
-                      children: t('text-sign-in'),
-                      onClick: handleLogin,
-                    }}
-                  >
-                    {t('text-account')}
-                  </AuthMenu>
-                </div>
-                {/* End of auth */}
               </div>
-            </div>
+            </div> */}
           </Container>
         </div>
         {/* End of menu part */}
