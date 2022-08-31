@@ -60,7 +60,7 @@ const measurements = {
         "ft3",
         "yd3"
     ],
-    volToWeight: [
+    massVolume: [
         
         "mm3",
         "cm3",
@@ -73,6 +73,8 @@ const measurements = {
         "Tbs",
         "in3",
         "fl-oz",
+        "fl oz",
+        "floz",
         "cup",
         "pnt",
         "qt",
@@ -92,7 +94,8 @@ const measurements = {
 const per_type = {
     amount: "each",
     weight: "oz",
-    volume: "fl-oz"
+    volume: "fl-oz",
+    massVolume: "oz"
 }
 
 exports.storeImages = storeImages;
