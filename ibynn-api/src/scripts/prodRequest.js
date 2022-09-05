@@ -8,7 +8,8 @@ dotenv.config();
 process.setMaxListeners(0);
 
 const api_key = process.env.API_KEY;
-const getShoppingUrl = (query = 'iphone+12') => `https://serpapi.com/search.json?q=${query}&engine=google&google_domain=google.com&gl=us&hl=en&tbs=mr:1,merchagg:g113872638|g8299768|g784994|m114193152|m7388148|m125210027|m120798572|m127713402|m431991540|m463001233|m10046,avg_rating:400&tbm=shop&api_key=${api_key}`
+const getShoppingUrl = (query = 'iphone+12') => `https://serpapi.com/search.json?q=${query}&engine=google&google_domain=google.com&gl=us&hl=en&tbs=mr:1,merchagg:g113872638|g8299768|g784994|m114193152|m7388148|m125210027|m120798572|m127713402|m431991540|m463001233|m10046,avg_rating:400&num=100&tbm=shop&api_key=${api_key}`
+const getShoppingUrlPages = (query, start = '0') => `https://serpapi.com/search.json?q=${query}&engine=google&google_domain=google.com&gl=us&hl=en&tbs=mr:1,merchagg:g113872638|g8299768|g784994|m114193152|m7388148|m125210027|m120798572|m127713402|m431991540|m463001233|m10046,avg_rating:400&num=100&tbm=shop&start=${start}&api_key=${api_key}`
 const getSerpUrlPages = (query = 'iphone+12', pageIndex) => `https://serpapi.com/search.json?num=100&q=${query}&hl=en&gl=us&api_key=${api_key}&start=${pageIndex * 100}`
 
 //reverses a string
@@ -97,9 +98,9 @@ const getProductsWithPagination = async (query) => {
 
 }
 
-const getShopping = async (query, sortBy = "") => {
+const getShopping = async (query, sortBy = "", start = "0") => {
     try {
-        const {data:response} = await axios.get(getShoppingUrl(query));
+        const {data:response} = await axios.get(getShoppingUrlPages(query, start));
         let results = {};
         results.search_information = response.search_information;
         results.search_metadata = response.search_metadata;
@@ -158,10 +159,6 @@ const sortArrByPrice = (arr, sortBy, inEach) => {
 
                         if (match) calculations(item, match[0], sortBy, a)
                         if (reversedMatch) calculations(item, match[0].reverse(), sortBy, a)
-                        console.log("hello")
-                        console.log("hello")
-                        console.log("hello")
-                        console.log("hello")
                     } catch (error) {
                         console.log(error)
                     }
@@ -183,7 +180,6 @@ const sortArrByPrice = (arr, sortBy, inEach) => {
 
     return sortedArr;
 }
-
 
 const calculations = (item, match, sortBy, unit) => {
     let unit_price;
@@ -235,5 +231,31 @@ const calculations = (item, match, sortBy, unit) => {
     }
 }
 
+const paginateShopping = async (query, sortBy = "") => {
+    let data = {
+        search_information: {},
+        search_metadata: {},
+        shopping_results: []
+    }
+    
+
+
+    for await (const i of [0, 1]) {
+        let results = await getShopping(query, sortBy, i * 100);
+        
+        data.search_information = results.search_information;
+        data.search_metadata = results.search_metadata;
+        data.shopping_results = [...data.shopping_results, ...results.shopping_results];
+
+        console.log(`PAGE NUMBER ${i+1} has ${results.shopping_results.length} number of results`)
+
+
+    };
+
+    return data;
+
+}
+
 exports.getShopping = getShopping;
+exports.paginateShopping = paginateShopping;
 exports.getProductsWP = getProductsWithPagination;

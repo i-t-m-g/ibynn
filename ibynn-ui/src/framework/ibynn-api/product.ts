@@ -14,18 +14,32 @@ export const searchForProduct = async (query: ParsedUrlQuery) => {
             },
         );
 
-        const sortedData = data.shopping_results.sort((a, b) => {
-            console.log(a.unit_price_displayed)
-            if (a.extracted_price && b.extracted_price) {
-                return a.extracted_price - b.extracted_price;
+        
+
+        let sortedData = data.shopping_results.sort((a,b) => {
+            if (a.title) {
+                if (a.title.length > 75) {
+                   a.title = a.title.substring(0, 75) + '...';
+                }
             }
 
+            if (a.extracted_price && b.extracted_price) return a.extracted_price - b.extracted_price
             return 0;
-            
+        });
+        
+        sortedData = sortedData.sort((a, b) => {
+            if (a.unit_price && b.unit_price) return a.unit_price - b.unit_price
+            if (!b.unit_price) return -1
+            if (!a.unit_price) return 1
+
+            return 0;
             }
         );
 
         data.shopping_results = sortedData;
+
+        console.log(sortedData.length)
+
         return data;
 
     } catch (error) {

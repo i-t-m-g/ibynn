@@ -8,7 +8,7 @@ const axios = require("axios").default;
 const request = require("request");
 const { cacheMiddleware } = require("./middleware/cache");
 const { response } = require("express");
-const { getProductsWP, getShopping } = require("./scripts/prodRequest");
+const { getProductsWP, getShopping, paginateShopping } = require("./scripts/prodRequest");
 const { getForum, fetchTitles } = require("./scripts/scrapeImg");
 const dotenv = require("dotenv");
 const cheerio = require("cheerio");
@@ -67,7 +67,7 @@ app.get("/shopping", caching, async (req, res) => {
   const sortBy = req.query.sortBy;
   
   try {
-    const results = await getShopping(query, sortBy);
+    const results = await paginateShopping(query, sortBy);
     if (results.shopping_results) 
     {
       client.setEx(query, 172800, JSON.stringify(results));
