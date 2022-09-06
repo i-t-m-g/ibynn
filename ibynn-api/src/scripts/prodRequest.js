@@ -111,7 +111,8 @@ const getShopping = async (query, sortBy = "", start = "0") => {
             response.shopping_results;
 
         results.shopping_results = addIcons(results.shopping_results);
-        results.shopping_results = sortArrByPrice(results.shopping_results, sortBy);
+        
+        if (sortBy) results.shopping_results = sortArrByPrice(results.shopping_results, sortBy);
 
         return results;
     } catch (error) {
