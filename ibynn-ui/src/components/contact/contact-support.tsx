@@ -49,8 +49,7 @@ const ContactSupport: FC<Props> = () => {
           <Link
             href={item.slug}
             key={idx}
-            className="mx-1 transition-all shrink-0 hover:opacity-90"
-          >
+            className="mx-1 transition-all shrink-0 hover:opacity-90" target={''} rel={''}          >
             <Image
               src={item.thumbnail}
               alt={item.name}

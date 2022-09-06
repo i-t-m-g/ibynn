@@ -21,7 +21,7 @@ const FeaturedCard: React.FC<Props> = ({ item, className }) => {
   const { t } = useTranslation('common');
   const { icon, title, href, bgColor } = item;
   return (
-    <Link href={href}>
+    <Link href={href} target={''} rel={''}>
       <div
         className={cn('group p-5 xl:p-6 3xl:p-7 flex items-center', className)}
         style={{ backgroundColor: bgColor }}

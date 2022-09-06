@@ -22,7 +22,7 @@ const CategoryListCard: React.FC<Props> = ({
   const { name, icon } = category;
   const { t } = useTranslation('common');
   return (
-    <Link href={href}>
+    <Link href={href} target={''} rel={''}>
       <a
         className={cn(
           'group flex justify-between items-center px-3.5 2xl:px-4 transition',

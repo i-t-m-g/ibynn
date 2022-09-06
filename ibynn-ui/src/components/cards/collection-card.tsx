@@ -29,6 +29,8 @@ const CollectionCard: React.FC<Props> = ({
     <Link
       href={href}
       className="flex flex-col overflow-hidden rounded-md group shadow-card "
+      target={''}
+      rel={''}
     >
       <Image
         src={image ?? collectionPlaceholder}

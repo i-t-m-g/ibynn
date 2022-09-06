@@ -21,8 +21,7 @@ function SidebarMenuItem({ className, item, depth = 0 }: any) {
           href={ROUTES.SEARCH}
           className={cn(
             'flex items-center w-full ltr:text-left rtl:text-right outline-none focus:outline-none focus:ring-0 focus:text-brand-dark'
-          )}
-        >
+          )} target={''} rel={''}        >
           {icon && (
             <div className="inline-flex w-8 shrink-0 3xl:h-auto">
               <Image

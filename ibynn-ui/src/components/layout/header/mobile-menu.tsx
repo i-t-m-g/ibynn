@@ -65,12 +65,12 @@ export default function MobileMenu() {
   };
 
   interface ListMenuProps {
-    dept: any, 
-    data: Menu, 
-    hasSubMenu: any, 
-    menuIndex: any,
-    menuName?: any,
-    className?: any
+    dept: any;
+    data: Menu;
+    hasSubMenu: any;
+    menuIndex: any;
+    menuName?: any;
+    className?: any;
   }
 
   const ListMenu = ({
@@ -79,40 +79,43 @@ export default function MobileMenu() {
     hasSubMenu,
     menuName,
     menuIndex,
-    className = '',}: ListMenuProps) => (
-      <li className={`transition-colors duration-200 ${className}`}>
-        <div className="relative flex items-center justify-between">
-          <Link
-            href={data.slug}
-            className="relative w-full py-4 transition duration-300 ease-in-out menu-item ltr:pl-5 rtl:pr-5 md:ltr:pl-7 md:rtl:pr-7 ltr:pr-4 rtl:pl-4 text-brand-dark"
-          >
-            <span className="block w-full" onClick={closeSidebar}>
-              {t(`${data.name}`)}
-            </span>
-          </Link>
-          {hasSubMenu && (
-            <div
-              className="cursor-pointer w-full h-8 text-[17px] px-5 shrink-0 flex items-center justify-end text-brand-dark text-opacity-80 absolute ltr:right-0 rtl:left-0 top-1/2 transform -translate-y-1/2"
-              onClick={() => handleArrowClick(menuName)}
-            >
-              <IoIosArrowDown
-                className={`transition duration-200 ease-in-out transform ${
-                  activeMenus.includes(menuName) ? '-rotate-180' : 'rotate-0'
-                }`}
-              />
-            </div>
-          )}
-        </div>
+    className = '',
+  }: ListMenuProps) => (
+    <li className={`transition-colors duration-200 ${className}`}>
+      <div className="relative flex items-center justify-between">
+        <Link
+          href={data.slug}
+          className="relative w-full py-4 transition duration-300 ease-in-out menu-item ltr:pl-5 rtl:pr-5 md:ltr:pl-7 md:rtl:pr-7 ltr:pr-4 rtl:pl-4 text-brand-dark"
+          target={''}
+          rel={''}
+        >
+          <span className="block w-full" onClick={closeSidebar}>
+            {t(`${data.name}`)}
+          </span>
+        </Link>
         {hasSubMenu && (
-          <SubMenu
-            dept={dept}
-            data={data.children}
-            toggle={activeMenus.includes(menuName)}
-            menuIndex={menuIndex}
-          />
+          <div
+            className="cursor-pointer w-full h-8 text-[17px] px-5 shrink-0 flex items-center justify-end text-brand-dark text-opacity-80 absolute ltr:right-0 rtl:left-0 top-1/2 transform -translate-y-1/2"
+            onClick={() => handleArrowClick(menuName)}
+          >
+            <IoIosArrowDown
+              className={`transition duration-200 ease-in-out transform ${
+                activeMenus.includes(menuName) ? '-rotate-180' : 'rotate-0'
+              }`}
+            />
+          </div>
         )}
-      </li>
-    );
+      </div>
+      {hasSubMenu && (
+        <SubMenu
+          dept={dept}
+          data={data.children}
+          toggle={activeMenus.includes(menuName)}
+          menuIndex={menuIndex}
+        />
+      )}
+    </li>
+  );
 
   const SubMenu = ({ dept, data, toggle, menuIndex }: any) => {
     if (!toggle) {
@@ -190,6 +193,8 @@ export default function MobileMenu() {
               href={item.link}
               className={`text-heading mx-3 transition duration-300 ease-in text-brand-dark text-opacity-60 hover:bg-brand ${item.className}`}
               key={index}
+              target={''}
+              rel={''}
             >
               <span className="sr-only">{t(`${item.title}`)}</span>
               {item.icon}

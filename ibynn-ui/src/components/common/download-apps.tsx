@@ -49,8 +49,7 @@ const DownloadApps: React.FC<Props> = ({ className = 'pt-1.5 md:pt-0' }) => {
                 <Link
                   key={item.id}
                   href={item.slug}
-                  className="inline-flex transition duration-200 ease-in hover:box-shadow hover:opacity-80 mx-1 md:mx-1.5"
-                >
+                  className="inline-flex transition duration-200 ease-in hover:box-shadow hover:opacity-80 mx-1 md:mx-1.5" target={''} rel={''}                >
                   <Image
                     src={item.appButton}
                     alt={t(item.altText)}

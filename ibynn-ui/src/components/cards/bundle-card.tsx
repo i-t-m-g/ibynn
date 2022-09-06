@@ -30,7 +30,12 @@ const BundleCard: React.FC<Props> = ({
   const { image, title, description, bgColor } = bundle;
   const { t } = useTranslation('common');
   return (
-    <Link href={href} className={cn('group flex', className)}>
+    <Link
+      href={href}
+      className={cn('group flex', className)}
+      target={''}
+      rel={''}
+    >
       <div
         className="relative flex items-center w-full overflow-hidden"
         style={{ backgroundColor: bgColor }}

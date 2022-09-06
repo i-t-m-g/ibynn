@@ -4,11 +4,11 @@ import Link from '@components/ui/link';
 import { Menu } from '@settings/site-settings';
 
 interface ListMenuProps {
-  dept: any, 
-  data: Menu, 
-  hasSubMenu: any, 
-  menuIndex: any,
-  menuName?: any
+  dept: any;
+  data: Menu;
+  hasSubMenu: any;
+  menuIndex: any;
+  menuName?: any;
 }
 
 const ListMenu = ({ dept, data, hasSubMenu, menuIndex }: ListMenuProps) => {
@@ -18,6 +18,8 @@ const ListMenu = ({ dept, data, hasSubMenu, menuIndex }: ListMenuProps) => {
       <Link
         href={data.slug}
         className="flex items-center justify-between py-2 ltr:pl-5 rtl:pr-5 xl:ltr:pl-7 xl:rtl:pr-7 ltr:pr-3 rtl:pl-3 xl:ltr:pr-3.5 xl:rtl:pl-3.5 hover:bg-fill-dropdown-hover hover:text-brand-dark"
+        target={''}
+        rel={''}
       >
         {t(data.name)}
         {data.children && (
