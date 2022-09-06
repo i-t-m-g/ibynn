@@ -115,7 +115,6 @@ const ProductCard: React.FC<ProductProps> = ({ product, className }) => {
         </div>
 
         <div className="flex flex-col justify-between px-3 md:px-4 lg:px-[18px] lg:pt-1.5 h-60">
-
           <div className="mb-1 lg:mb-1.5 -mx-1">
             <span className="inline-block mx-1 z-0 text-sm font-semibold sm:text-15px lg:text-base text-brand-dark">
               ${product.extracted_price?.toFixed(2)}
@@ -137,9 +136,7 @@ const ProductCard: React.FC<ProductProps> = ({ product, className }) => {
               Buy Now
             </button>
           </div>
-
         </div>
-
       </article>
     </a>
   );
