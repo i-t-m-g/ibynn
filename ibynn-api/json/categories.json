@@ -328,17 +328,17 @@
           "icon": "/assets/images/category/icon/skin.svg",
           "image": {
             "mobile": {
-              "url": "/assets/images/category/notebooks.png",
+              "url": "/assets/images/category/lotion.png",
               "width": 475,
               "height": 250
             },
             "desktop": {
-              "url": "/assets/images/category/notebooks.png",
+              "url": "/assets/images/category/lotion.png",
               "width": 475,
               "height": 250
             }
           }
-        },        
+        },
         {
           "id": 2,
           "name": "Bath & Body",
@@ -346,29 +346,30 @@
           "icon": "/assets/images/category/icon/bath-and-body.svg",
           "image": {
             "mobile": {
-              "url": "/assets/images/category/notebooks.png",
+              "url": "/assets/images/category/bath and body.png",
               "width": 475,
               "height": 250
             },
             "desktop": {
-              "url": "/assets/images/category/notebooks.png",
+              "url": "/assets/images/category/bath and body.png",
               "width": 475,
               "height": 250
             }
           }
-        },        {
+        },
+        {
           "id": 3,
           "name": "Baby Care",
           "slug": "/search?q=baby+care&sortBy=massVolume",
           "icon": "/assets/images/category/icon/diaper.svg",
           "image": {
             "mobile": {
-              "url": "/assets/images/category/notebooks.png",
+              "url": "/assets/images/category/baby care.png",
               "width": 475,
               "height": 250
             },
             "desktop": {
-              "url": "/assets/images/category/notebooks.png",
+              "url": "/assets/images/category/baby care.png",
               "width": 475,
               "height": 250
             }
@@ -381,131 +382,138 @@
           "icon": "/assets/images/category/icon/cotton-swabs.svg",
           "image": {
             "mobile": {
-              "url": "/assets/images/category/notebooks.png",
+              "url": "/assets/images/category/cotton swabs.png",
               "width": 475,
               "height": 250
             },
             "desktop": {
-              "url": "/assets/images/category/notebooks.png",
+              "url": "/assets/images/category/cotton swabs.png",
               "width": 475,
               "height": 250
             }
           }
-        },        {
+        },
+        {
           "id": 5,
           "name": "Deodorants",
           "slug": "/search?q=deodorants&sortBy=massVolume",
           "icon": "/assets/images/category/icon/deodorant.svg",
           "image": {
             "mobile": {
-              "url": "/assets/images/category/notebooks.png",
+              "url": "/assets/images/category/deodarants.png",
               "width": 475,
               "height": 250
             },
             "desktop": {
-              "url": "/assets/images/category/notebooks.png",
+              "url": "/assets/images/category/deodarants.png",
               "width": 475,
               "height": 250
             }
           }
-        },        {
+        },
+        {
           "id": 6,
           "name": "Facial Tissue",
           "slug": "/search?q=facial+tissues&sortBy=massVolume",
           "icon": "/assets/images/category/icon/tissues.svg",
           "image": {
             "mobile": {
-              "url": "/assets/images/category/notebooks.png",
+              "url": "/assets/images/category/tissues.png",
               "width": 475,
               "height": 250
             },
             "desktop": {
-              "url": "/assets/images/category/notebooks.png",
+              "url": "/assets/images/category/tissues.png",
               "width": 475,
               "height": 250
             }
           }
-        },        {
+        },
+        {
           "id": 7,
           "name": "Feminine Products",
           "slug": "/search?q=feminine+products&sortBy=massVolume",
           "icon": "/assets/images/category/icon/female-products.svg",
           "image": {
             "mobile": {
-              "url": "/assets/images/category/notebooks.png",
+              "url": "/assets/images/category/feminine products.png",
               "width": 475,
               "height": 250
             },
             "desktop": {
-              "url": "/assets/images/category/notebooks.png",
+              "url": "/assets/images/category/feminine products.png",
               "width": 475,
               "height": 250
             }
           }
-        },        {
+        },
+        {
           "id": 8,
           "name": "Hair Removal & Shaving Tools",
           "slug": "/search?q=Hair+Removal+&+Shaving+Tools&sortBy=massVolume",
           "icon": "/assets/images/category/icon/shaving.svg",
           "image": {
             "mobile": {
-              "url": "/assets/images/category/notebooks.png",
+              "url": "/assets/images/category/shaving.png",
               "width": 475,
               "height": 250
             },
             "desktop": {
-              "url": "/assets/images/category/notebooks.png",
+              "url": "/assets/images/category/shaving.png",
               "width": 475,
               "height": 250
             }
           }
-        },        {
+        },
+        {
           "id": 9,
           "name": "Hand Soap & Refills",
           "slug": "/search?q=Hand+Soap+&+Refills&sortBy=massVolume",
           "icon": "/assets/images/category/icon/soap.svg",
           "image": {
             "mobile": {
-              "url": "/assets/images/category/notebooks.png",
+              "url": "/assets/images/category/soap.png",
               "width": 475,
               "height": 250
             },
             "desktop": {
-              "url": "/assets/images/category/notebooks.png",
+              "url": "/assets/images/category/soap.png",
               "width": 475,
               "height": 250
             }
           }
-        },        {
+        },
+        {
           "id": 10,
           "name": "Nail Care",
           "slug": "/search?q=Nail+Care&sortBy=massVolume",
           "icon": "/assets/images/category/icon/nail-polish.svg",
           "image": {
             "mobile": {
-              "url": "/assets/images/category/notebooks.png",
+              "url": "/assets/images/category/nailcare.png",
               "width": 475,
               "height": 250
             },
             "desktop": {
-              "url": "/assets/images/category/notebooks.png",
+              "url": "/assets/images/category/nailcare.png",
               "width": 475,
               "height": 250
             }
           }
-        },        {
+        },
+        {
           "id": 11,
           "name": "Oral Care",
           "slug": "/search?q=Oral+Care&sortBy=massVolume",
           "icon": "/assets/images/category/icon/toothbrush.svg",
           "image": {
             "mobile": {
-              "url": "/assets/images/category/notebooks.png",
+              "url": "/assets/images/category/oralcare.png",
               "width": 475,
               "height": 250
             },
             "desktop": {
-              "url": "/assets/images/category/notebooks.png",
+              "url": "/assets/images/category/oralcare.png",
               "width": 475,
               "height": 250
             }
@@ -523,13 +531,13 @@
         "slug": "/search?q=&sortBy=massVolume",
         "original": "/assets/images/category/personal-care.png"
       },
-      "icon": "/assets/images/category/icon/personal-care.svg",
+      "icon": "/assets/images/category/icon/laptop.svg",
       "children": [
         {
           "id": 1,
           "name": "TVs",
           "slug": "/search?q=televisions  ",
-          "icon": "/assets/images/category/icon/skin.svg",
+          "icon": "/assets/images/category/icon/television.svg",
           "image": {
             "mobile": {
               "url": "/assets/images/category/notebooks.png",
@@ -542,12 +550,12 @@
               "height": 250
             }
           }
-        },        
+        },
         {
           "id": 2,
           "name": "Computers",
           "slug": "/search?q=computers",
-          "icon": "/assets/images/category/icon/bath-and-body.svg",
+          "icon": "/assets/images/category/icon/laptop.svg",
           "image": {
             "mobile": {
               "url": "/assets/images/category/notebooks.png",
@@ -560,12 +568,12 @@
               "height": 250
             }
           }
-        },        
+        },
         {
           "id": 3,
           "name": "Cameras",
           "slug": "/search?q=Cameras",
-          "icon": "/assets/images/category/icon/diaper.svg",
+          "icon": "/assets/images/category/icon/security-camera.svg",
           "image": {
             "mobile": {
               "url": "/assets/images/category/notebooks.png",
@@ -583,7 +591,7 @@
           "id": 4,
           "name": "Wearable Technology",
           "slug": "/search?q=wearable+technology",
-          "icon": "/assets/images/category/icon/cotton-swabs.svg",
+          "icon": "/assets/images/category/icon/smartwatch.svg",
           "image": {
             "mobile": {
               "url": "/assets/images/category/notebooks.png",
@@ -596,12 +604,12 @@
               "height": 250
             }
           }
-        },        
+        },
         {
           "id": 5,
           "name": "Speakers",
           "slug": "/search?q=audio+speakers",
-          "icon": "/assets/images/category/icon/deodorant.svg",
+          "icon": "/assets/images/category/icon/speakers.svg",
           "image": {
             "mobile": {
               "url": "/assets/images/category/notebooks.png",
@@ -614,12 +622,12 @@
               "height": 250
             }
           }
-        },        
+        },
         {
           "id": 6,
           "name": "Smart Phones",
           "slug": "/search?q=smart+phones",
-          "icon": "/assets/images/category/icon/tissues.svg",
+          "icon": "/assets/images/category/icon/smartphone.svg",
           "image": {
             "mobile": {
               "url": "/assets/images/category/notebooks.png",
