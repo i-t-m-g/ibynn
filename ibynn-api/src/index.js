@@ -67,7 +67,7 @@ app.get("/shopping", caching, async (req, res) => {
   const sortBy = req.query.sortBy;
   
   try {
-    const results = await paginateShopping(query, sortBy);
+    const results = await paginateShopping(query, sortBy ?? null);
     if (results.shopping_results) 
     {
       client.setEx(query, 172800, JSON.stringify(results));

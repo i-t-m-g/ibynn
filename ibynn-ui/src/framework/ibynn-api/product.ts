@@ -6,7 +6,7 @@ export const searchForProduct = async (query: ParsedUrlQuery) => {
     try {
         
         const { data, status } = await axios.get<Products>(
-            `${process.env.NEXT_PUBLIC_REST_API_ENDPOINT}/shopping?q=${query.q}&sortBy=${query.sortBy}`,
+            `${process.env.NEXT_PUBLIC_REST_API_ENDPOINT}/shopping?q=${query.q}${query.sortBy ?`&sortBy=${query.sortBy}`: ''}`,
             {
                 headers: {
                     Accept: 'application/json',

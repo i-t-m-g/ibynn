@@ -77,11 +77,9 @@ export default function Cart() {
             className={cn(
               'w-full px-5 py-3 md:py-4 flex items-center justify-center bg-heading rounded font-semibold text-sm sm:text-15px text-brand-light bg-brand focus:outline-none transition duration-300 hover:bg-opacity-90',
               {
-                'cursor-not-allowed !text-brand-dark !text-opacity-25 bg-fill-four hover:bg-fill-four':
-                  isEmpty,
+                'cursor-not-allowed !text-brand-dark !text-opacity-25 bg-fill-four hover:bg-fill-four': isEmpty,
               }
-            )}
-          >
+            )} target={''} rel={''}          >
             <span className="py-0.5">{t('text-proceed-to-checkout')}</span>
           </Link>
         </div>

@@ -31,6 +31,8 @@ const BannerCard: React.FC<BannerProps> = ({
     <div className="w-50px h-40px">
       <Link
         href={slug}
+        target="_blank"
+        rel="noreferrer"
         className={cn(
           'h-full group flex justify-center overflow-hidden',
           classNameInner
@@ -45,7 +47,7 @@ const BannerCard: React.FC<BannerProps> = ({
               : ''
           }
           alt={title}
-          className="rounded-tl-3xl rounded-br-3xl"
+          className="border-solid border-4 border-gray-200 rounded-tl-3xl rounded-br-3xl"
         />
       </Link>
 

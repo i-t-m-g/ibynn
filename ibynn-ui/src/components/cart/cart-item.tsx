@@ -45,8 +45,7 @@ const CartItem: React.FC<CartItemProps> = ({ item }) => {
         <div className="ltr:pl-3 rtl:pr-3 md:ltr:pl-4 md:rtl:pr-4">
           <Link
             href={`${ROUTES.PRODUCT}/${item?.slug}`}
-            className="block leading-5 transition-all text-brand-dark text-13px sm:text-sm lg:text-15px hover:text-brand"
-          >
+            className="block leading-5 transition-all text-brand-dark text-13px sm:text-sm lg:text-15px hover:text-brand" target={''} rel={''}          >
             {item?.name}
           </Link>
           <div className="text-13px sm:text-sm text-brand-muted mt-1.5 block mb-2">

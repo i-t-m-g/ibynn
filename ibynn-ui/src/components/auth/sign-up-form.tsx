@@ -138,8 +138,7 @@ const SignUpForm: React.FC<SignUpFormProps> = ({
                 >
                   <Link
                     href={ROUTES.PRIVACY}
-                    className="text-sm ltr:text-right rtl:text-left text-heading ltr:pl-3 lg:rtl:pr-3 hover:no-underline hover:text-brand-dark focus:outline-none focus:text-brand-dark"
-                  >
+                    className="text-sm ltr:text-right rtl:text-left text-heading ltr:pl-3 lg:rtl:pr-3 hover:no-underline hover:text-brand-dark focus:outline-none focus:text-brand-dark" target={''} rel={''}                  >
                     {t('common:text-privacy-and-policy')}
                   </Link>
                 </div>

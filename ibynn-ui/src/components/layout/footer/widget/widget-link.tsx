@@ -38,6 +38,8 @@ const WidgetLink: React.FC<Props> = ({ className, data }) => {
             <Link
               href={list.path ? list.path : '#!'}
               className="transition-colors duration-200 hover:text-brand-dark"
+              target={''}
+              rel={''}
             >
               {t(`${list.title}`)}
             </Link>

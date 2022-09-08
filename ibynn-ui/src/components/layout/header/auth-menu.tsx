@@ -16,8 +16,7 @@ const AuthMenu: React.FC<Props> = ({
   return isAuthorized ? (
     <Link
       href={href}
-      className="text-sm font-normal lg:text-15px text-brand-dark focus:outline-none ltr:ml-2 rtl:mr-2"
-    >
+      className="text-sm font-normal lg:text-15px text-brand-dark focus:outline-none ltr:ml-2 rtl:mr-2" target={''} rel={''}    >
       {children}
     </Link>
   ) : (

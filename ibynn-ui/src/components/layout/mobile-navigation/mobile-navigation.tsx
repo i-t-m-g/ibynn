@@ -58,7 +58,7 @@ const BottomNavigation: React.FC = () => {
         >
           <SearchIcon />
         </button> */}
-        <Link href={ROUTES.HOME} className="shrink-0">
+        <Link href={ROUTES.HOME} className="shrink-0" target={''} rel={''}>
           <span className="sr-only">{t('breadcrumb-home')}</span>
           <HomeIcon />
         </Link>
