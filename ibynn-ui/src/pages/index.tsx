@@ -51,7 +51,7 @@ export default function Home() {
           <div className="w-full minimal-main-content">
             <NewDiscountBanner
               data={bannerDiscount}
-              className="mb-12 sm:mb-14 "
+              className="mb-16 sm:mb-18 "
             />
             {data?.categories.data.map((cat) => {
               return (
@@ -62,7 +62,7 @@ export default function Home() {
                   <h2 className="font-extrabold text-2xl">{cat.name}</h2>
                   <BannerAllCarousel
                     data={cat.children}
-                    className="mb-12 xl:mb-14"
+                    className="mb-18 xl:mb-20"
                   />
                 </div>
               );
