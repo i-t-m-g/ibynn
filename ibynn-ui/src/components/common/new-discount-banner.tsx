@@ -1,6 +1,7 @@
 import BannerCard from '@components/cards/banner-card';
 import Carousel from '@components/ui/carousel/carousel';
 import { SwiperSlide } from 'swiper/react';
+import { FreeMode, Pagination } from 'swiper';
 
 const breakpoints = {
   '1536': {
@@ -44,6 +45,7 @@ const NewDiscountBanner: React.FC<BannerProps> = ({
     <div className={className}>
       <Carousel
         autoplay={true}
+        freemode={true}
         breakpoints={breakpoints}
         // buttonSize={buttonSize}
         // prevActivateId="all-banner-carousel-button-prev"

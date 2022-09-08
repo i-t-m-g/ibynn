@@ -44,6 +44,7 @@ const BannerAllCarousel: React.FC<BannerProps> = ({
     <div className={className}>
       <Carousel
         autoplay={false}
+        freemode={true}
         breakpoints={breakpoints}
         // buttonSize={buttonSize}
         // prevActivateId="all-banner-carousel-button-prev"

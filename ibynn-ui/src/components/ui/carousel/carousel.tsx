@@ -7,6 +7,7 @@ import {
   Navigation,
   Autoplay,
   Pagination,
+  FreeMode,
   Grid,
 } from '@components/ui/carousel/slider';
 import { useRouter } from 'next/router';
@@ -30,6 +31,7 @@ type CarouselPropsType = {
   navigation?: {} | any;
   autoplay?: {} | any;
   grid?: {} | any;
+  freemode?: {} | any;
 };
 
 const Carousel: React.FunctionComponent<CarouselPropsType> = ({
@@ -47,6 +49,7 @@ const Carousel: React.FunctionComponent<CarouselPropsType> = ({
   loop = false,
   grid,
   autoplay,
+  freemode,
   ...props
 }) => {
   const { locale } = useRouter();
@@ -70,10 +73,11 @@ const Carousel: React.FunctionComponent<CarouselPropsType> = ({
       }`}
     >
       <Swiper
-        modules={[Navigation, Autoplay, Pagination, Grid]}
+        modules={[Navigation, Autoplay, Pagination, Grid, FreeMode]}
         autoplay={autoplay}
         breakpoints={breakpoints}
         dir={dir}
+        freeMode={freemode}
         pagination={pagination}
         grid={grid}
         navigation={
