@@ -34,7 +34,7 @@ const BannerCard: React.FC<BannerProps> = ({
         target="_blank"
         rel="noreferrer"
         className={cn(
-          'h-full group flex justify-center overflow-hidden',
+          'h-28 group flex justify-center overflow-hidden',
           classNameInner
         )}
       >
