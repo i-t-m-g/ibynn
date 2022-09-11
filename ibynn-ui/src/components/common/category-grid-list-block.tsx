@@ -8,6 +8,9 @@ import { SwiperSlide } from 'swiper/react';
 import useWindowSize from '@utils/use-window-size';
 import cn from 'classnames';
 import { ROUTES } from '@utils/routes';
+import { useState } from "react";
+import { useRouter } from 'next/router';
+import { useModalAction } from './modal/modal.context';
 
 interface CategoriesProps {
   className?: string;
@@ -31,10 +34,13 @@ const breakpoints = {
 const CategoryGridListBlock: React.FC<CategoriesProps> = ({
   className = 'mb-12 lg:mb-14 xl:mb-16 2xl:mb-20',
 }) => {
+  const router = useRouter(); 
   const { width } = useWindowSize();
+  const { closeModal } = useModalAction();
   const { data, isLoading, error } = useCategoriesQuery({
     limit: 16,
   });
+
 
   return (
     <div className={cn(className)}>
@@ -50,13 +56,13 @@ const CategoryGridListBlock: React.FC<CategoriesProps> = ({
             <Alert message={error?.message} />
           ) : width! < 1280 ? (
             <>
-              <Carousel
+              {/* <Carousel
                 breakpoints={breakpoints}
                 grid={{ rows: 3, fill: 'row' }}
                 className="-mx-1.5 md:-mx-2"
                 prevButtonClassName="ltr:-left-2 rtl:-right-2 md:ltr:-left-2.5 md:rtl:-right-2.5"
                 nextButtonClassName="ltr:-right-2 rtl:-left-2 lg:ltr:-right-2.5 lg:rtl:-left-2.5"
-              >
+              > */}
                 {isLoading && !data
                   ? Array.from({ length: 18 }).map((_, idx) => {
                       return (
@@ -85,7 +91,7 @@ const CategoryGridListBlock: React.FC<CategoriesProps> = ({
                         />
                       </SwiperSlide>
                     ))}
-              </Carousel>
+              {/* </Carousel> */}
             </>
           ) : (
             <div className="flex-wrap justify-center -mx-1 xl:flex">

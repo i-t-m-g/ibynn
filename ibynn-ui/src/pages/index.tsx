@@ -28,11 +28,16 @@ import { searchForProduct } from 'src/framework/ibynn-api/product';
 import { ProductGrid } from '@components/product/product-grid';
 import CategoryCard from '@components/cards/category-card';
 import NewDiscountBanner from '@components/common/new-discount-banner';
+import CategoryGridListBlock from '@components/common/category-grid-list-block';
+import useWindowSize from '@utils/use-window-size';
 
 export default function Home() {
   const { data } = useCategoriesQuery({
     limit: 100,
   });
+  const { width } = useWindowSize();
+
+
   return (
     <>
       <Seo
@@ -53,12 +58,10 @@ export default function Home() {
               data={bannerDiscount}
               className="mb-16 sm:mb-18 "
             />
-            {data?.categories.data.map((cat) => {
+
+            {width > 1280 ? data?.categories.data.map((cat) => {
               return (
                 <div key={cat.id}>
-                  {/*
-                   Title for categories. Big categories, or wtvr tf you wanna call them 
-                   */}
                   <h2 className="font-extrabold text-2xl">{cat.name}</h2>
                   <BannerAllCarousel
                     data={cat.children}
@@ -66,7 +69,10 @@ export default function Home() {
                   />
                 </div>
               );
-            })}
+            }) : <CategoryGridListBlock />}
+          
+
+
           </div>
         </Element>
       </Container>

@@ -19,6 +19,7 @@ const CategoryDropdownSidebar: React.FC<CategorySidebarProps> = ({
   } = useCategoriesQuery({
     limit: 10,
   });
+  
 
   return (
     <aside className={cn('category-mobile-sidebar', className)}>
