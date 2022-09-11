@@ -28,10 +28,7 @@ const SearchTopBar = () => {
         </div>
         <ListBox
           options={[
-            { name: 'text-lowest-price', value: 'lowest' },
-            { name: 'text-highest-price', value: 'highest' },
-            { name: 'text-new-arrival', value: 'new-arrival' },
-            { name: 'text-most-order', value: 'most-order' },
+            { name: 'text-lowest-price', value: 'lowest' }
           ]}
         />
       </div>

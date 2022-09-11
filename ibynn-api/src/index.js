@@ -12,6 +12,7 @@ const { getProductsWP, getShopping, paginateShopping } = require("./scripts/prod
 const { getForum, fetchTitles } = require("./scripts/scrapeImg");
 const dotenv = require("dotenv");
 const cheerio = require("cheerio");
+const { callApi } = require("./scripts/periodicFunction.js");
 
 dotenv.config();
 let redisClient;
@@ -81,41 +82,8 @@ app.get("/shopping", caching, async (req, res) => {
   }
 });
 
-app.get("/searchAllStores", caching, async (request, response) => {
-  const query = request.query.q;
-  
-  try {
-    const results = await getProductsWP(query);
-
-    client.setEx(query, 172800, JSON.stringify(results));
-
-    response.send(results);
-  } catch (error) {
-    response.send(error);
-  }
-});
-
-app.get("/tester", (req, res) => {
-  let sendMatch;
-  const title = "Pen+gear Retractable Ballpoint Pens, Assorted Colors, Count 18".toLowerCase().reverse()
-  const a = "count"
-
-  const pattern = new RegExp(`\\d+(?=\\s*${a})`);
-  const reversedPattern = new RegExp(`\\d+(?=\\s*${a.reverse()})`);
-
-  const match = title.match(pattern);
-  const reversedMatch = title.match(reversedPattern);
-
-
-  
-
-
-  if (match) sendMatch = match[0]
-  else if (reversedMatch) sendMatch = reversedMatch[0].reverse()
-
-
-
-  res.send(sendMatch)
+app.get("/test", (req, res) => {
+  res.send(callApi());
 })
 
 // starting the server

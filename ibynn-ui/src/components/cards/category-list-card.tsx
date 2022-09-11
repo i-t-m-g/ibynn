@@ -1,10 +1,14 @@
 import Link from 'next/link';
 import Image from '@components/ui/image';
-import { IoIosArrowForward } from 'react-icons/io';
+import { IoIosArrowDown, IoIosArrowForward } from 'react-icons/io';
 import { Category } from '@framework/types';
 import cn from 'classnames';
 import { useTranslation } from 'next-i18next';
 import { LinkProps } from 'next/link';
+import { useState } from "react";
+import { useRouter } from 'next/router';
+import { useModalAction } from '@components/common/modal/modal.context';
+import { useUI } from '@contexts/ui.context';
 
 interface Props {
   category: Category;
@@ -21,8 +25,34 @@ const CategoryListCard: React.FC<Props> = ({
 }) => {
   const { name, icon } = category;
   const { t } = useTranslation('common');
+  const router = useRouter();
+  const [isOpen, setOpen] = useState(false);
+  const { closeModal } = useModalAction();
+  const { displaySidebar, closeSidebar } = useUI();
+
+  
+  function toggleCollapse() {
+    setOpen((prevValue) => !prevValue);
+  }
+
+  function onClick() {
+    if (Array.isArray(category.children) && category.children.length > 1) {
+      console.log(category)
+      toggleCollapse();
+    } 
+    else {
+      const pathname = '/search';
+      const { query } = router;
+      const { type, ...rest } = query;
+      closeModal();
+      router.push(category.slug);
+      displaySidebar && closeSidebar();
+    }
+  }
+
+
   return (
-    <Link href={href} target={''} rel={''}>
+    <div onClick={onClick} rel={''}>
       <a
         className={cn(
           'group flex justify-between items-center px-3.5 2xl:px-4 transition',
@@ -51,10 +81,33 @@ const CategoryListCard: React.FC<Props> = ({
           </h3>
         </div>
         <div className="flex items-center transition-all transform group-hover:translate-x-1">
-          <IoIosArrowForward className="text-base text-brand-dark text-opacity-40" />
+          <IoIosArrowDown className="text-base text-brand-dark text-opacity-40" />
         </div>
       </a>
-    </Link>
+      {Array.isArray(category.children) && isOpen ? (
+        <li className='list-none'>
+          <ul
+            key="content"
+            className="py-3 text-xs border-t border-border-base"
+          >
+            {category.children?.map((currentItem) => {
+              // const childDepth = depth + 1;
+              return (
+                <CategoryListCard
+                  key={`${currentItem.name}${currentItem.slug}`}
+                  category={currentItem}
+                  href={"/"}
+                  // depth={childDepth}
+                  className={cn(
+                    'text-sm ltr:pl-14 rtl:pr-14 py-2.5 ltr:pr-4 rtl:pl-4'
+                  )}
+                />
+              );
+            })}
+          </ul>
+        </li>
+      ) : null}
+    </div>
   );
 };
 
