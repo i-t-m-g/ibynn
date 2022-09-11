@@ -112,7 +112,9 @@ const getShopping = async (query, sortBy = "", start = "0") => {
 
         results.shopping_results = addIcons(results.shopping_results);
         
-        if (sortBy) results.shopping_results = sortArrByPrice(results.shopping_results, sortBy);
+        if (sortBy) results.shopping_results = findSorters(results.shopping_results, sortBy);
+
+        sortArr(results);
 
         return results;
     } catch (error) {
@@ -136,7 +138,7 @@ const addIcons = (arr) => {
     return arr;
 }
 
-const sortArrByPrice = (arr, sortBy, inEach) => {
+const findSorters = (arr, sortBy, inEach) => {
     let sortedArr = arr;
 
 
@@ -180,6 +182,28 @@ const sortArrByPrice = (arr, sortBy, inEach) => {
     }
 
     return sortedArr;
+}
+
+const sortArr = (arr) => {
+    let sortedData = arr.shopping_results.sort((a,b) => {
+        if (a.title) {
+            if (a.title.length > 75) {
+               a.title = a.title.substring(0, 75) + '...';
+            }
+        }
+
+        if (a.extracted_price && b.extracted_price) return b.extracted_price - a.extracted_price
+        return 0;
+    });
+    
+    sortedData = sortedData.sort((a, b) => {
+        if (a.unit_price && b.unit_price) return a.unit_price - b.unit_price
+        if (!b.unit_price) return -1
+        if (!a.unit_price) return 1
+
+        return 0;
+        }
+    );
 }
 
 const calculations = (item, match, sortBy, unit) => {
