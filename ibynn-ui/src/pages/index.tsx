@@ -30,6 +30,9 @@ import CategoryCard from '@components/cards/category-card';
 import NewDiscountBanner from '@components/common/new-discount-banner';
 import CategoryGridListBlock from '@components/common/category-grid-list-block';
 import useWindowSize from '@utils/use-window-size';
+import CategoryListCard from '@components/cards/category-list-card';
+import { SwiperSlide } from 'swiper/react';
+import Carousel from '@components/ui/carousel/carousel';
 
 export default function Home() {
   const { data } = useCategoriesQuery({
@@ -37,6 +40,33 @@ export default function Home() {
   });
   const { width } = useWindowSize();
 
+  
+const breakpoints = {
+  '1536': {
+    slidesPerView: 3.5,
+    spaceBetween: 20,
+  },
+  '1280': {
+    slidesPerView: 5,
+    spaceBetween: 0,
+  },
+  '1024': {
+    slidesPerView: 3.5,
+    spaceBetween: 18,
+  },
+  '768': {
+    slidesPerView: 3.5,
+    spaceBetween: 18,
+  },
+  '520': {
+    slidesPerView: 2.5,
+    spaceBetween: 20,
+  },
+  '0': {
+    slidesPerView: 2.5,
+    spaceBetween: 20,
+  },
+};
 
   return (
     <>
@@ -59,17 +89,45 @@ export default function Home() {
               className="mb-16 sm:mb-18 "
             />
 
-            {width > 1280 ? data?.categories.data.map((cat) => {
+            {data?.categories.data.map((cat) => {
               return (
                 <div key={cat.id}>
                   <h2 className="font-extrabold text-2xl">{cat.name}</h2>
-                  <BannerAllCarousel
+                  {/* <BannerAllCarousel
                     data={cat.children}
                     className="mb-18 xl:mb-20"
-                  />
+                  /> */}
+                  <Carousel
+                    autoplay={false}
+                    freemode={true}
+                    breakpoints={breakpoints}
+                    // buttonSize={buttonSize}
+                    // prevActivateId="all-banner-carousel-button-prev"
+                    // nextActivateId="all-banner-carousel-button-next"
+                  >
+                  {cat.children && cat.children.map(category => {
+                    return (
+                      
+                      <SwiperSlide
+                     
+                        key={`category--key-${category.name}`}
+                        className="p-1.5 md:p-2">
+                        <CategoryListCard
+                          key={category.name}
+                          category={category}
+                          href={{
+                            // pathname: ROUTES.SEARCH,
+                            query: { category: category.slug },
+                          }}
+                          className="rounded-md text-brand-light shadow-category"
+                        />
+                      </SwiperSlide>
+                    )
+                  })}
+                  </Carousel>
                 </div>
               );
-            }) : <CategoryGridListBlock />}
+            })}
           
 
 
