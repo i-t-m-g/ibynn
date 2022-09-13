@@ -1,0 +1,789 @@
+{
+  "data": [
+    {
+      "id": 2,
+      "name": "Electronics",
+      "slug": "/search?q=electronics&sortBy=massVolume",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/category/personal-care.png",
+        "slug": "/search?q=&sortBy=massVolume",
+        "original": "/assets/images/category/personal-care.png"
+      },
+      "icon": "/assets/images/category/icon/laptop.svg",
+      "children": [
+        {
+          "id": 1,
+          "name": "TVs",
+          "slug": "/search?q=televisions  ",
+          "icon": "/assets/images/category/icon/television.svg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/tv.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/tv.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+        {
+          "id": 2,
+          "name": "Computers",
+          "slug": "/search?q=computers",
+          "icon": "/assets/images/category/icon/laptop.svg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/laptop.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/laptop.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+        {
+          "id": 3,
+          "name": "Cameras",
+          "slug": "/search?q=picture+Cameras",
+          "icon": "/assets/images/category/icon/camera.svg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/camera.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/camera.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+        {
+          "id": 4,
+          "name": "Wearable Technology",
+          "slug": "/search?q=wearable+technology",
+          "icon": "/assets/images/category/icon/smartwatch.svg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/wearable tech.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/wearable tech.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+        {
+          "id": 5,
+          "name": "Speakers",
+          "slug": "/search?q=audio+speakers",
+          "icon": "/assets/images/category/icon/speakers.svg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/speakers.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/speakers.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+        {
+          "id": 6,
+          "name": "Smart Phones",
+          "slug": "/search?q=smart+phones",
+          "icon": "/assets/images/category/icon/smartphone.svg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/Smartphones.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/Smartphones.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "id": 1,
+      "name": "Household Items",
+      "slug": "/search?q=household+items&sortBy=amount",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/category/home-goods.png",
+        "original": "/assets/images/category/home-goods.png"
+      },
+      "icon": "/assets/images/category/icon/home-goods.svg",
+      "children": [
+        {
+          "id": 1,
+          "name": "Air Freshener",
+          "slug": "/search?q=Air+Freshener+Spray",
+          "icon": "/assets/images/category/icon/air-freshener.png",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/Air Freshener.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/Air Freshener.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+
+        {
+          "id": 2,
+          "name": "Bleach",
+          "slug": "/search?q=cleaning+Bleach&sortBy=massVolume",
+          "icon": "/assets/images/category/icon/bleach.jpg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/Bleach.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/Bleach.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+
+        {
+          "id": 3,
+          "name": "Dishwasher Detergent",
+          "slug": "/search?q=Dishwasher+Detergent&sortBy=massVolume",
+          "icon": "/assets/images/category/icon/dishwasher-symbol.svg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/dishwasher detergent.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/dishwasher detergent.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+
+        {
+          "id": 4,
+          "name": "Dryer Sheets",
+          "slug": "/search?q=dryer+sheets&sortBy=amount",
+          "icon": "/assets/images/category/icon/dryer-symbol.svg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/dryer sheets.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/dryer sheets.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+        {
+          "id": 5,
+          "name": "Fabric Softner",
+          "slug": "/search?q=fabric+softner&sortBy=massVolume",
+          "icon": "/assets/images/category/icon/fabric-softner.png",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/fabric softner.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/fabric softner.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+        {
+          "id": 6,
+          "name": "Cleaning Supplies",
+          "slug": "/search?q=cleaning+supplies&sortBy=amount",
+          "icon": "/assets/images/category/icon/cleaning-supplies.jpg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/cleaning supplies.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/cleaning supplies.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+        {
+          "id": 7,
+          "name": "Glass Cleaner",
+          "slug": "/search?q=glass+cleaner&sortBy=massVolume",
+          "icon": "/assets/images/category/icon/glass-cleaner.jpg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/glass cleaner (2).png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/glass cleaner (2).png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+
+        {
+          "id": 8,
+          "name": "Laundry Detergent",
+          "slug": "/search?q=laundry+detergent&sortBy=massVolume",
+          "icon": "/assets/images/category/icon/laundry.svg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/laundry detergent.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/laundry detergent.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+
+        {
+          "id": 9,
+          "name": "Sponge",
+          "slug": "/search?q=scrub+sponge&sortBy=amount",
+          "icon": "/assets/images/category/icon/sponge.svg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/sponge.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/sponge.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+
+        {
+          "id": 10,
+          "name": "Stain Remover",
+          "slug": "/search?q=stain+remover&sortBy=massVolume",
+          "icon": "/assets/images/category/icon/cleaning-kit.svg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/stain remover.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/stain remover.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+
+        {
+          "id": 11,
+          "name": "Tub & Tile Cleaner",
+          "slug": "/search?q=Tub+Tile+Cleaner&sortBy=massVolume",
+          "icon": "/assets/images/category/icon/floor-cleaning.svg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/tub and tile cleaner.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/tub and tile cleaner.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+
+        {
+          "id": 13,
+          "name": "Wipes",
+          "slug": "/search?q=wipes&sortBy=amount",
+          "icon": "/assets/images/category/icon/wipes.svg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/wipes.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/wipes.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+        {
+          "id": 14,
+          "name": "Mops",
+          "slug": "/search?q=mops&sortBy=amount",
+          "icon": "/assets/images/category/icon/mop.png",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/mops.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/mops.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+        {
+          "id": 15,
+          "name": "Brooms",
+          "slug": "/search?q=brooms&sortBy=amount",
+          "icon": "/assets/images/category/icon/broom.png",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/broom.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/broom.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+        {
+          "id": 16,
+          "name": "Toilet Cleaners",
+          "slug": "/search?q=toilet+cleaner&sortBy=massVolume",
+          "icon": "/assets/images/category/icon/toilet-cleaner.png",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/toilet cleaner.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/toilet cleaner.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+        {
+          "id": 17,
+          "name": "Aluminum Foil",
+          "slug": "/search?q=aluminum+foil&sortBy=amount",
+          "icon": "/assets/images/category/icon/toilet-cleaner.png",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/foil.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/foil.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "id": 3,
+      "name": "Personal Care",
+      "slug": "/search?q=personal+care&sortBy=massVolume",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/category/personal-care.png",
+        "slug": "/search?q=&sortBy=massVolume",
+        "original": "/assets/images/category/personal-care.png"
+      },
+      "icon": "/assets/images/category/icon/personal-care.svg",
+      "children": [
+        {
+          "id": 1,
+          "name": "Skin Lotion",
+          "slug": "/search?q=skin+lotion&sortBy=massVolume",
+          "icon": "/assets/images/category/icon/skin.svg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/lotion.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/lotion.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+        {
+          "id": 2,
+          "name": "Bath & Body",
+          "slug": "/search?q=bath+products&sortBy=massVolume",
+          "icon": "/assets/images/category/icon/bath-and-body.svg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/bath and body.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/bath and body.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+        {
+          "id": 3,
+          "name": "Baby Care",
+          "slug": "/search?q=baby+care&sortBy=massVolume",
+          "icon": "/assets/images/category/icon/diaper.svg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/baby care.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/baby care.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+        {
+          "id": 4,
+          "name": "Cotton Balls, Pads & Swabs",
+          "slug": "/search?q=cotton+balls+pads+swabs&sortBy=massVolume",
+          "icon": "/assets/images/category/icon/cotton-swabs.svg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/cotton swabs.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/cotton swabs.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+        {
+          "id": 5,
+          "name": "Deodorants",
+          "slug": "/search?q=deodorants&sortBy=massVolume",
+          "icon": "/assets/images/category/icon/deodorant.svg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/deodarants.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/deodarants.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+        {
+          "id": 6,
+          "name": "Facial Tissue",
+          "slug": "/search?q=facial+tissues&sortBy=massVolume",
+          "icon": "/assets/images/category/icon/tissues.svg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/tissues.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/tissues.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+        {
+          "id": 7,
+          "name": "Feminine Products",
+          "slug": "/search?q=feminine+products&sortBy=massVolume",
+          "icon": "/assets/images/category/icon/female-products.svg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/feminine products.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/feminine products.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+        {
+          "id": 8,
+          "name": "Hair Removal & Shaving Tools",
+          "slug": "/search?q=Hair+Removal+&+Shaving+Tools&sortBy=massVolume",
+          "icon": "/assets/images/category/icon/shaving.svg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/shaving.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/shaving.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+        {
+          "id": 9,
+          "name": "Hand Soap & Refills",
+          "slug": "/search?q=Hand+Soap+&+Refills&sortBy=massVolume",
+          "icon": "/assets/images/category/icon/soap.svg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/soap.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/soap.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+        {
+          "id": 10,
+          "name": "Nail Care",
+          "slug": "/search?q=Nail+Care&sortBy=massVolume",
+          "icon": "/assets/images/category/icon/nail-polish.svg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/nailcare.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/nailcare.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+        {
+          "id": 11,
+          "name": "Oral Care",
+          "slug": "/search?q=Oral+Care&sortBy=massVolume",
+          "icon": "/assets/images/category/icon/toothbrush.svg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/oralcare.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/oralcare.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "id": 2,
+      "name": "School Supplies",
+      "slug": "/search?q=school+supplies&sortBy=amount",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/category/home-goods.png",
+        "original": "/assets/images/category/school-supplies.jpg"
+      },
+      "icon": "/assets/images/category/icon/pencils.svg",
+      "children": [
+        {
+          "id": 1,
+          "name": "Pencils",
+          "slug": "/search?q=pencils&sortBy=amount",
+          "icon": "/assets/images/category/icon/pencils-icon.svg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/pencils.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/pencils.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+        {
+          "id": 2,
+          "name": "Pens",
+          "slug": "/search?q=writing+pens&sortBy=amount",
+          "icon": "/assets/images/category/icon/pen.svg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/pens.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/pens.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+        {
+          "id": 3,
+          "name": "Notebooks",
+          "slug": "/search?q=writing+notebooks&sortBy=amount",
+          "icon": "/assets/images/category/icon/notebook.svg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/notebooks.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/notebooks.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+        {
+          "id": 4,
+          "name": "Binders",
+          "slug": "/search?q=3+ring+binders&sortBy=amount",
+          "icon": "/assets/images/category/icon/binder.svg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/binders.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/binders.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+        {
+          "id": 5,
+          "name": "Loose Leaf Paper",
+          "slug": "/search?q=loose+leaf+binder+paper&sortBy=amount",
+          "icon": "/assets/images/category/icon/sheet.svg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/papers.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/papers.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+        {
+          "id": 6,
+          "name": "Stapler",
+          "slug": "/search?q=paper+stapler&sortBy=amount",
+          "icon": "/assets/images/category/icon/stapler.svg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/stapler.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/stapler.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        },
+        {
+          "id": 7,
+          "name": "Hole Puncher",
+          "slug": "/search?q=paper+hole+puncher&sortBy=amount",
+          "icon": "/assets/images/category/icon/hole-puncher.svg",
+          "image": {
+            "mobile": {
+              "url": "/assets/images/category/hole-puncher.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "/assets/images/category/hole-puncher.png",
+              "width": 475,
+              "height": 250
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
