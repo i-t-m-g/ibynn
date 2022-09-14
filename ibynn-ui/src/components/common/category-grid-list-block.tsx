@@ -51,7 +51,7 @@ const CategoryGridListBlock: React.FC<CategoriesProps> = ({
           headingPosition="center"
         />
 
-        <div className="-mt-1.5 md:-mt-2">
+        <div className="-mt-1.5 md:-mt-2 place-content-center" style={{display: 'flex', flexWrap: 'wrap', flexDirection: 'row'}}>
           {error ? (
             <Alert message={error?.message} />
           ) : width! < 1280 ? (
@@ -77,10 +77,11 @@ const CategoryGridListBlock: React.FC<CategoriesProps> = ({
                       );
                     })
                   : data?.categories?.data?.map((category) => (
-                      <SwiperSlide
-                        key={`category--key-${category.id}`}
-                        className="p-1.5 md:p-2"
-                      >
+                      // <SwiperSlide
+                      //   key={`category--key-${category.id}`}
+                      //   className="p-1.5 md:p-2"
+                      // >
+                      <>
                         <CategoryListCard
                           category={category}
                           href={{
@@ -89,7 +90,8 @@ const CategoryGridListBlock: React.FC<CategoriesProps> = ({
                           }}
                           className="rounded-md text-brand-light shadow-category"
                         />
-                      </SwiperSlide>
+                      </>
+                      // </SwiperSlide>
                     ))}
               {/* </Carousel> */}
             </>
