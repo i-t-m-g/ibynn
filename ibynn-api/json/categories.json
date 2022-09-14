@@ -2118,7 +2118,7 @@
               "height": 250
             }
           },
-          "icon": "/assets/images/category/icon/home-goods.svg",
+          "icon": "/assets/images/category/icon/audio.png",
           "children": [
             {
               "id": 1,
@@ -3134,7 +3134,7 @@
               "height": 250
             }
           },
-          "icon": "/assets/images/category/icon/home-goods.svg"
+          "icon": "/assets/images/category/icon/walkie.png"
         },
         {
           "id": 1,
