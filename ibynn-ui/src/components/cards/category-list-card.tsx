@@ -29,8 +29,8 @@ const CategoryListCard: React.FC<Props> = ({
 }) => {
   const { icon } = category;
   let name: string =
-    category?.name.length > 20
-      ? category.name.substring(0, 20) + '...'
+    category?.name.length > 10
+      ? category.name.substring(0, 10) + '...'
       : category.name;
   const { t } = useTranslation('common');
   const router = useRouter();
@@ -77,8 +77,8 @@ const CategoryListCard: React.FC<Props> = ({
         <Image
           src={icon ?? '/assets/placeholder/category-small.svg'}
           alt={name || t('text-category-thumbnail')}
-          width={60}
-          height={60}
+          width={100}
+          height={100}
         />
         {/* </div> */}
         {/* {category.children && category.children.length > 0 && <div className="flex items-center transition-all transform group-hover:translate-x-1"> */}
