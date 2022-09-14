@@ -77,8 +77,8 @@ const CategoryListCard: React.FC<Props> = ({
         <Image
           src={icon ?? '/assets/placeholder/category-small.svg'}
           alt={name || t('text-category-thumbnail')}
-          width={80}
-          height={80}
+          width={60}
+          height={60}
         />
         {/* </div> */}
         {/* {category.children && category.children.length > 0 && <div className="flex items-center transition-all transform group-hover:translate-x-1"> */}
