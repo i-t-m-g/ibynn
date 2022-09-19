@@ -2,7 +2,7 @@ import SectionHeader from '@components/common/section-header';
 import CategoryListCardLoader from '@components/ui/loaders/category-list-card-loader';
 import { useCategoriesQuery } from '@framework/category/get-all-categories';
 import Alert from '@components/ui/alert';
-import CategoryListCard from '@components/cards/category-list-card';
+import CategoryListCard, { LongCategoryListCard } from '@components/cards/category-list-card';
 import Carousel from '@components/ui/carousel/carousel';
 import { SwiperSlide } from 'swiper/react';
 import useWindowSize from '@utils/use-window-size';
@@ -115,7 +115,7 @@ const CategoryGridListBlock: React.FC<CategoriesProps> = ({
                       key={`category--key-${category.id}`}
                       className="w-[25%] 2xl:w-[20%] 3xl:w-[16.666%] shrink-0 p-2"
                     >
-                      <CategoryListCard
+                      <LongCategoryListCard
                         category={category}
                         href={{
                           pathname: ROUTES.SEARCH,

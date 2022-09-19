@@ -1,7 +1,7 @@
 import CategoryListCardLoader from '@components/ui/loaders/category-list-card-loader';
 import { useCategoriesQuery } from '@framework/category/get-all-categories';
 import Alert from '@components/ui/alert';
-import CategoryListCard from '@components/cards/category-list-card';
+import CategoryListCard, { LongCategoryListCard } from '@components/cards/category-list-card';
 import Scrollbar from '@components/ui/scrollbar';
 import cn from 'classnames';
 import { ROUTES } from '@utils/routes';
@@ -9,20 +9,22 @@ import { ROUTES } from '@utils/routes';
 interface CategoriesProps {
   className?: string;
   limit?: number;
+  data?: any;
 }
 
 const CategoryGridList: React.FC<CategoriesProps> = ({
   className = '',
   limit,
+  data
 }) => {
-  const { data, isLoading, error } = useCategoriesQuery({
+  const { isLoading, error } = useCategoriesQuery({
     limit: limit,
   });
 
   return (
     <aside
       className={cn(
-        'sticky top-22 h-full hidden xl:block text-brand-light',
+        'sticky top-22 h-full xl:block text-brand-light',
         className
       )}
     >
@@ -41,8 +43,8 @@ const CategoryGridList: React.FC<CategoriesProps> = ({
                 );
               })
             ) : (
-              data?.categories?.data?.map((category) => (
-                <CategoryListCard
+              data.map((category: any) => (
+                <LongCategoryListCard
                   key={`category--key-${category.id}`}
                   category={category}
                   href={{
