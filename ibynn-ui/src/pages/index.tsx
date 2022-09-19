@@ -12,16 +12,13 @@ import { bannerDiscount } from '@framework/static/banner';
 import CategoryDropdownSidebar from '@components/category/category-dropdown-sidebar';
 import BannerCard from '@components/cards/banner-card';
 import Seo from '@components/seo/seo';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { QueryClient } from 'react-query';
 import { dehydrate } from 'react-query/hydration';
 import { API_ENDPOINTS } from '@framework/utils/api-endpoints';
 import { fetchProducts } from '@framework/product/get-all-products';
 import newDiscountBanner from '@components/common/new-discount-banner';
-import {
-  fetchCategories,
-  useCategoriesQuery,
-} from '@framework/category/get-all-categories';
+import {fetchCategories,useCategoriesQuery} from '@framework/category/get-all-categories';
 import { LIMITS } from '@framework/utils/limits';
 import axios from 'axios';
 import { searchForProduct } from 'src/framework/ibynn-api/product';
@@ -33,40 +30,49 @@ import useWindowSize from '@utils/use-window-size';
 import CategoryListCard from '@components/cards/category-list-card';
 import { SwiperSlide } from 'swiper/react';
 import Carousel from '@components/ui/carousel/carousel';
+import CategoryGridList from '@components/common/category-grid-list';
+import { categoryPlaceholder } from '@assets/placeholders';
 
 export default function Home() {
   const { data } = useCategoriesQuery({
     limit: 100,
   });
   const { width } = useWindowSize();
-
+  const [dropdownData, setDropdownData] = useState<any>([]);
   
-const breakpoints = {
-  '1536': {
-    slidesPerView: 3.5,
-    spaceBetween: 20,
-  },
-  '1280': {
-    slidesPerView: 5,
-    spaceBetween: 0,
-  },
-  '1024': {
-    slidesPerView: 3.5,
-    spaceBetween: 18,
-  },
-  '768': {
-    slidesPerView: 3.5,
-    spaceBetween: 18,
-  },
-  '520': {
-    slidesPerView: 2.5,
-    spaceBetween: 20,
-  },
-  '0': {
-    slidesPerView: 2.5,
-    spaceBetween: 20,
-  },
-};
+  const breakpoints = {
+    '1536': {
+      slidesPerView: 3.5,
+      spaceBetween: 20,
+    },
+    '1280': {
+      slidesPerView: 5,
+      spaceBetween: 0,
+    },
+    '1024': {
+      slidesPerView: 3.5,
+      spaceBetween: 18,
+    },
+    '768': {
+      slidesPerView: 3.5,
+      spaceBetween: 18,
+    },
+    '520': {
+      slidesPerView: 2.5,
+      spaceBetween: 20,
+    },
+    '0': {
+      slidesPerView: 2.5,
+      spaceBetween: 20,
+    },
+  };
+
+  const getCategoryGridList = (category: any) => {
+    if (category.name === dropdownData.parent) {
+      return <CategoryGridList data={dropdownData.children} />
+    }
+
+  }
 
   return (
     <>
@@ -91,6 +97,7 @@ const breakpoints = {
 
             {data?.categories.data.map((cat) => {
               return (
+                <>
                 <div key={cat.id}>
                   <h2 className="font-extrabold text-2xl">{cat.name}</h2>
                   {/* <BannerAllCarousel
@@ -105,32 +112,33 @@ const breakpoints = {
                     // prevActivateId="all-banner-carousel-button-prev"
                     // nextActivateId="all-banner-carousel-button-next"
                   >
-                  {cat.children && cat.children.map(category => {
-                    return (
-                      
-                      <SwiperSlide
-                     
-                        key={`category--key-${category.name}`}
-                        className="p-1.5 md:p-2">
-                        <CategoryListCard
-                          key={category.name}
-                          category={category}
-                          href={{
-                            // pathname: ROUTES.SEARCH,
-                            query: { category: category.slug },
-                          }}
-                          className="rounded-md text-brand-light shadow-category"
-                        />
-                      </SwiperSlide>
-                    )
-                  })}
+                    {cat.children && cat.children.map(category => {
+                      return (
+                        <>
+                          <SwiperSlide
+                            key={`category--key-${category.name}`}
+                            className="p-1.5 md:p-2">
+                            <CategoryListCard
+                              setDropdownData={setDropdownData}
+                              dropdownData={dropdownData?.children}
+                              key={category.name}
+                              category={category}
+                              href={{
+                                // pathname: ROUTES.SEARCH,
+                                query: { category: category.slug },
+                              }}
+                              className="rounded-md text-brand-light shadow-category"
+                            />
+                          </SwiperSlide>
+                        </>
+                      )
+                    })}
+                    {dropdownData?.children?.length > 0 && dropdownData.name && getCategoryGridList(cat)}
                   </Carousel>
                 </div>
+                </>
               );
             })}
-          
-
-
           </div>
         </Element>
       </Container>
