@@ -60,8 +60,7 @@ const CategoryListCard: React.FC<Props> = ({
       // else {
       //   setDropdownData(category);
       // }
-      
-      
+
       // toggleCollapse();
     } else {
       const pathname = '/search';
@@ -80,7 +79,7 @@ const CategoryListCard: React.FC<Props> = ({
         onClick={onClick}
         style={{
           width: '100%',
-          minHeight: '150px',
+          minHeight: '200px',
           cursor: 'pointer',
           margin: '5px',
           padding: '10px',
@@ -99,12 +98,14 @@ const CategoryListCard: React.FC<Props> = ({
           height={120}
         />
         {/* </div> */}
-        {category.children && category.children.length > 0 && <div className="flex items-center transition-all transform group-hover:translate-x-1">
-        <IoIosArrowDown className="text-lg text-brand-dark" />
-        </div>}
+        {category.children && category.children.length > 0 && (
+          <div className="flex items-center transition-all transform group-hover:translate-x-1">
+            <IoIosArrowDown className="text-lg text-brand-dark" />
+          </div>
+        )}
       </div>
       {Array.isArray(category.children) && isOpen ? (
-        <li className="list-none" style={{width: '25vw'}}>
+        <li className="list-none" style={{ width: '25vw' }}>
           <ul
             key="content"
             className="py-3 text-xs border-t border-border-base"
@@ -131,7 +132,6 @@ const CategoryListCard: React.FC<Props> = ({
   );
 };
 
-
 export const LongCategoryListCard: React.FC<any> = ({
   category,
   className,
@@ -141,7 +141,10 @@ export const LongCategoryListCard: React.FC<any> = ({
   const { name, icon } = category;
   const { t } = useTranslation('common');
   return (
-    <div style={{width: '100%'}} className="border-t border-border-base first:border-t-0 px-3.5 2xl:px-4 py-3 xl:py-3.5 2xl:py-2.5 3xl:py-3">
+    <div
+      style={{ width: '100%' }}
+      className="border-t border-border-base first:border-t-0 px-3.5 2xl:px-4 py-3 xl:py-3.5 2xl:py-2.5 3xl:py-3"
+    >
       <Link href={href}>
         <a
           className={cn(
@@ -156,7 +159,8 @@ export const LongCategoryListCard: React.FC<any> = ({
           <div className="flex items-center">
             <div
               className={cn('inline-flex shrink-0 w-9 h-9', {
-                '2xl:w-12 3xl:w-auto 2xl:h-12 3xl:h-auto': variant === 'default',
+                '2xl:w-12 3xl:w-auto 2xl:h-12 3xl:h-auto':
+                  variant === 'default',
               })}
             >
               <Image
@@ -171,9 +175,11 @@ export const LongCategoryListCard: React.FC<any> = ({
             </h3>
           </div>
           <div className="flex items-center transition-all transform group-hover:translate-x-1">
-          {category.children && category.children.length > 0 ?
-          <IoIosArrowDown className="text-base text-brand-dark text-opacity-40" /> :
-          <IoIosArrowForward className="text-base text-brand-dark text-opacity-40" />}
+            {category.children && category.children.length > 0 ? (
+              <IoIosArrowDown className="text-base text-brand-dark text-opacity-40" />
+            ) : (
+              <IoIosArrowForward className="text-base text-brand-dark text-opacity-40" />
+            )}
           </div>
         </a>
       </Link>
