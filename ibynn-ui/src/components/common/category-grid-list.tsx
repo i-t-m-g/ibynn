@@ -10,11 +10,15 @@ interface CategoriesProps {
   className?: string;
   limit?: number;
   data?: any;
+  setDropdownData?: any;
+  ref?: any;
 }
 
 const CategoryGridList: React.FC<CategoriesProps> = ({
   className = '',
   limit,
+  setDropdownData,
+  ref,
   data
 }) => {
   const { isLoading, error } = useCategoriesQuery({
@@ -45,7 +49,8 @@ const CategoryGridList: React.FC<CategoriesProps> = ({
             ) : (
               data.map((category: any) => (
                 <LongCategoryListCard
-                  key={`category--key-${category.id}`}
+                  setDropdownData={setDropdownData}
+                  key={`category--key-${category.name+category.id}`}
                   category={category}
                   href={{
                     pathname: ROUTES.SEARCH,

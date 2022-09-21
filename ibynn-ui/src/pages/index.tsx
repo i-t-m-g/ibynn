@@ -12,7 +12,7 @@ import { bannerDiscount } from '@framework/static/banner';
 import CategoryDropdownSidebar from '@components/category/category-dropdown-sidebar';
 import BannerCard from '@components/cards/banner-card';
 import Seo from '@components/seo/seo';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { QueryClient } from 'react-query';
 import { dehydrate } from 'react-query/hydration';
 import { API_ENDPOINTS } from '@framework/utils/api-endpoints';
@@ -39,7 +39,8 @@ export default function Home() {
   });
   const { width } = useWindowSize();
   const [dropdownData, setDropdownData] = useState<any>([]);
-  
+  const gridListRef = useRef<any>();
+
   const breakpoints = {
     '1536': {
       slidesPerView: 3.5,
@@ -58,18 +59,18 @@ export default function Home() {
       spaceBetween: 18,
     },
     '520': {
-      slidesPerView: 2.5,
-      spaceBetween: 20,
+      slidesPerView: 3.2,
+      spaceBetween: 0,
     },
     '0': {
-      slidesPerView: 2.5,
-      spaceBetween: 20,
+      slidesPerView: 3.2,
+      spaceBetween: 0,
     },
   };
 
   const getCategoryGridList = (category: any) => {
     if (category.name === dropdownData.parent) {
-      return <CategoryGridList data={dropdownData.children} />
+      return <CategoryGridList setDropdownData={setDropdownData} data={dropdownData.children} />
     }
 
   }
@@ -100,10 +101,6 @@ export default function Home() {
                 <>
                 <div key={cat.id}>
                   <h2 className="font-extrabold text-2xl">{cat.name}</h2>
-                  {/* <BannerAllCarousel
-                    data={cat.children}
-                    className="mb-18 xl:mb-20"
-                  /> */}
                   <Carousel
                     autoplay={false}
                     freemode={true}
@@ -119,6 +116,7 @@ export default function Home() {
                             key={`category--key-${category.name}`}
                             className="p-1.5 md:p-2">
                             <CategoryListCard
+                              // ref={gridListRef}
                               setDropdownData={setDropdownData}
                               dropdownData={dropdownData?.children}
                               key={category.name}
@@ -142,7 +140,6 @@ export default function Home() {
           </div>
         </Element>
       </Container>
-      {/* <DownloadApps /> */}
     </>
   );
 }
