@@ -46,6 +46,7 @@ const CategoryListCard: React.FC<Props> = ({
     setOpen((prevValue) => !prevValue);
   }
 
+  
   function onClick(e: any) {
     if (Array.isArray(category.children) && category.children.length > 1) {
       if (dropdownData?.length > 0) {
