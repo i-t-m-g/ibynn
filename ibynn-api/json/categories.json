@@ -365,65 +365,6 @@
         {
           "id": 1,
           "parent": "Electronics",
-          "slug": "/search?q=Arcade Equipment&sortBy=amount",
-          "name": "Arcade Equipment",
-          "image": {
-            "mobile": {
-              "url": "/assets/images/category/camera.png",
-              "width": 475,
-              "height": 250
-            },
-            "desktop": {
-              "url": "/assets/images/category/camera.png",
-              "width": 475,
-              "height": 250
-            }
-          },
-          "icon": "/assets/images/category/icon/arcade.png",
-          "children": [
-            {
-              "id": 1,
-              "parent": "Arcade Equipment",
-              "slug": "/search?q=Basketball Arcade Games&sortBy=amount",
-              "name": "Basketball Arcade Games",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Arcade Equipment",
-              "slug": "/search?q=Pinball Machines&sortBy=amount",
-              "name": "Pinball Machines",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            }
-          ]
-        },
-        {
-          "id": 1,
-          "parent": "Electronics",
           "slug": "/search?q=Audio&sortBy=amount",
           "name": "Audio",
           "image": {
@@ -440,464 +381,6 @@
           },
           "icon": "/assets/images/category/icon/audio.png",
           "children": [
-            {
-              "id": 1,
-              "parent": "Audio",
-              "slug": "/search?q=Audio Accessories&sortBy=amount",
-              "name": "Audio Accessories",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg",
-              "children": [
-                {
-                  "id": 1,
-                  "parent": "Audio Accessories",
-                  "slug": "/search?q=Audio & Video Receiver Accessories&sortBy=amount",
-                  "name": "Audio & Video Receiver Accessories",
-                  "image": {
-                    "mobile": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    },
-                    "desktop": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    }
-                  },
-                  "icon": "/assets/images/category/icon/home-goods.svg"
-                },
-                {
-                  "id": 1,
-                  "parent": "Audio Accessories",
-                  "slug": "/search?q=Headphone & Headset Accessories&sortBy=amount",
-                  "name": "Headphone & Headset Accessories",
-                  "image": {
-                    "mobile": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    },
-                    "desktop": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    }
-                  },
-                  "icon": "/assets/images/category/icon/home-goods.svg"
-                },
-                {
-                  "id": 1,
-                  "parent": "Audio Accessories",
-                  "slug": "/search?q=Headphone Cushions & Tips&sortBy=amount",
-                  "name": "Headphone Cushions & Tips",
-                  "image": {
-                    "mobile": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    },
-                    "desktop": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    }
-                  },
-                  "icon": "/assets/images/category/icon/home-goods.svg"
-                },
-                {
-                  "id": 1,
-                  "parent": "Audio Accessories",
-                  "slug": "/search?q=Karaoke System Accessories&sortBy=amount",
-                  "name": "Karaoke System Accessories",
-                  "image": {
-                    "mobile": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    },
-                    "desktop": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    }
-                  },
-                  "icon": "/assets/images/category/icon/home-goods.svg"
-                },
-                {
-                  "id": 1,
-                  "parent": "Audio Accessories",
-                  "slug": "/search?q=Karaoke Chips&sortBy=amount",
-                  "name": "Karaoke Chips",
-                  "image": {
-                    "mobile": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    },
-                    "desktop": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    }
-                  },
-                  "icon": "/assets/images/category/icon/home-goods.svg"
-                },
-                {
-                  "id": 1,
-                  "parent": "Audio Accessories",
-                  "slug": "/search?q=MP3 Player Cases&sortBy=amount",
-                  "name": "MP3 Player Cases",
-                  "image": {
-                    "mobile": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    },
-                    "desktop": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    }
-                  },
-                  "icon": "/assets/images/category/icon/home-goods.svg"
-                },
-                {
-                  "id": 1,
-                  "parent": "Audio Accessories",
-                  "slug": "/search?q=Microphone Accessories&sortBy=amount",
-                  "name": "Microphone Accessories",
-                  "image": {
-                    "mobile": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    },
-                    "desktop": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    }
-                  },
-                  "icon": "/assets/images/category/icon/home-goods.svg"
-                },
-                {
-                  "id": 1,
-                  "parent": "Audio Accessories",
-                  "slug": "/search?q=Microphone Stands&sortBy=amount",
-                  "name": "Microphone Stands",
-                  "image": {
-                    "mobile": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    },
-                    "desktop": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    }
-                  },
-                  "icon": "/assets/images/category/icon/home-goods.svg"
-                },
-                {
-                  "id": 1,
-                  "parent": "Audio Accessories",
-                  "slug": "/search?q=Speaker Accessories&sortBy=amount",
-                  "name": "Speaker Accessories",
-                  "image": {
-                    "mobile": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    },
-                    "desktop": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    }
-                  },
-                  "icon": "/assets/images/category/icon/home-goods.svg"
-                },
-                {
-                  "id": 1,
-                  "parent": "Audio Accessories",
-                  "slug": "/search?q=Speaker Bags, Covers & Cases&sortBy=amount",
-                  "name": "Speaker Bags, Covers & Cases",
-                  "image": {
-                    "mobile": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    },
-                    "desktop": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    }
-                  },
-                  "icon": "/assets/images/category/icon/home-goods.svg"
-                },
-                {
-                  "id": 1,
-                  "parent": "Audio Accessories",
-                  "slug": "/search?q=Speaker Components & Kits&sortBy=amount",
-                  "name": "Speaker Components & Kits",
-                  "image": {
-                    "mobile": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    },
-                    "desktop": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    }
-                  },
-                  "icon": "/assets/images/category/icon/home-goods.svg"
-                },
-                {
-                  "id": 1,
-                  "parent": "Audio Accessories",
-                  "slug": "/search?q=Speaker Stands & Mounts&sortBy=amount",
-                  "name": "Speaker Stands & Mounts",
-                  "image": {
-                    "mobile": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    },
-                    "desktop": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    }
-                  },
-                  "icon": "/assets/images/category/icon/home-goods.svg"
-                },
-                {
-                  "id": 1,
-                  "parent": "Audio Accessories",
-                  "slug": "/search?q=Tactile Transducers&sortBy=amount",
-                  "name": "Tactile Transducers",
-                  "image": {
-                    "mobile": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    },
-                    "desktop": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    }
-                  },
-                  "icon": "/assets/images/category/icon/home-goods.svg"
-                },
-                {
-                  "id": 1,
-                  "parent": "Audio Accessories",
-                  "slug": "/search?q=Turntable Accessories&sortBy=amount",
-                  "name": "Turntable Accessories",
-                  "image": {
-                    "mobile": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    },
-                    "desktop": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    }
-                  },
-                  "icon": "/assets/images/category/icon/home-goods.svg"
-                },
-                {
-                  "id": 1,
-                  "parent": "Audio Accessories",
-                  "slug": "/search?q=Audio & Video Receivers&sortBy=amount",
-                  "name": "Audio & Video Receivers",
-                  "image": {
-                    "mobile": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    },
-                    "desktop": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    }
-                  },
-                  "icon": "/assets/images/category/icon/home-goods.svg"
-                },
-                {
-                  "id": 1,
-                  "parent": "Audio Accessories",
-                  "slug": "/search?q=Audio Amplifiers&sortBy=amount",
-                  "name": "Audio Amplifiers",
-                  "image": {
-                    "mobile": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    },
-                    "desktop": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    }
-                  },
-                  "icon": "/assets/images/category/icon/home-goods.svg"
-                },
-                {
-                  "id": 1,
-                  "parent": "Audio Accessories",
-                  "slug": "/search?q=Headphone Amplifiers&sortBy=amount",
-                  "name": "Headphone Amplifiers",
-                  "image": {
-                    "mobile": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    },
-                    "desktop": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    }
-                  },
-                  "icon": "/assets/images/category/icon/home-goods.svg"
-                },
-                {
-                  "id": 1,
-                  "parent": "Audio Accessories",
-                  "slug": "/search?q=Power Amplifiers&sortBy=amount",
-                  "name": "Power Amplifiers",
-                  "image": {
-                    "mobile": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    },
-                    "desktop": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    }
-                  },
-                  "icon": "/assets/images/category/icon/home-goods.svg"
-                },
-                {
-                  "id": 1,
-                  "parent": "Audio Accessories",
-                  "slug": "/search?q=Audio Mixers&sortBy=amount",
-                  "name": "Audio Mixers",
-                  "image": {
-                    "mobile": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    },
-                    "desktop": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    }
-                  },
-                  "icon": "/assets/images/category/icon/home-goods.svg"
-                },
-                {
-                  "id": 1,
-                  "parent": "Audio Accessories",
-                  "slug": "/search?q=Audio Transmitters&sortBy=amount",
-                  "name": "Audio Transmitters",
-                  "image": {
-                    "mobile": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    },
-                    "desktop": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    }
-                  },
-                  "icon": "/assets/images/category/icon/home-goods.svg"
-                },
-                {
-                  "id": 1,
-                  "parent": "Audio Accessories",
-                  "slug": "/search?q=Bluetooth Transmitters&sortBy=amount",
-                  "name": "Bluetooth Transmitters",
-                  "image": {
-                    "mobile": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    },
-                    "desktop": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    }
-                  },
-                  "icon": "/assets/images/category/icon/home-goods.svg"
-                },
-                {
-                  "id": 1,
-                  "parent": "Audio Accessories",
-                  "slug": "/search?q=FM Transmitters&sortBy=amount",
-                  "name": "FM Transmitters",
-                  "image": {
-                    "mobile": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    },
-                    "desktop": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    }
-                  },
-                  "icon": "/assets/images/category/icon/home-goods.svg"
-                },
-                {
-                  "id": 1,
-                  "parent": "Audio Accessories",
-                  "slug": "/search?q=Direct Boxes&sortBy=amount",
-                  "name": "Direct Boxes",
-                  "image": {
-                    "mobile": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    },
-                    "desktop": {
-                      "url": "/assets/images/category/camera.png",
-                      "width": 475,
-                      "height": 250
-                    }
-                  },
-                  "icon": "/assets/images/category/icon/home-goods.svg"
-                }
-              ]
-            },
             {
               "id": 1,
               "parent": "Audio Accessories",
@@ -936,82 +419,7 @@
               },
               "icon": "/assets/images/category/icon/home-goods.svg"
             },
-            {
-              "id": 1,
-              "parent": "Audio Accessories",
-              "slug": "/search?q=Signal Processors&sortBy=amount",
-              "name": "Signal Processors",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Audio Accessories",
-              "slug": "/search?q=Crossovers&sortBy=amount",
-              "name": "Crossovers",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Audio Accessories",
-              "slug": "/search?q=Effects Processors&sortBy=amount",
-              "name": "Effects Processors",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Audio Accessories",
-              "slug": "/search?q=Equalizers&sortBy=amount",
-              "name": "Equalizers",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
+
             {
               "id": 1,
               "parent": "Audio Accessories",
@@ -1129,25 +537,6 @@
             {
               "id": 1,
               "parent": "Audio Accessories",
-              "slug": "/search?q=Jukeboxes&sortBy=amount",
-              "name": "Jukeboxes",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Audio Accessories",
               "slug": "/search?q=Karaoke Systems&sortBy=amount",
               "name": "Karaoke Systems",
               "image": {
@@ -1186,65 +575,8 @@
             {
               "id": 1,
               "parent": "Audio Accessories",
-              "slug": "/search?q=Multitrack Recorders&sortBy=amount",
-              "name": "Multitrack Recorders",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Audio Accessories",
               "slug": "/search?q=Radios&sortBy=amount",
               "name": "Radios",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Audio Accessories",
-              "slug": "/search?q=Stereo Systems&sortBy=amount",
-              "name": "Stereo Systems",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Audio Accessories",
-              "slug": "/search?q=Turntables & Record Players&sortBy=amount",
-              "name": "Turntables & Record Players",
               "image": {
                 "mobile": {
                   "url": "/assets/images/category/camera.png",
@@ -1800,25 +1132,6 @@
             {
               "id": 1,
               "parent": "Printing",
-              "slug": "/search?q=3D Printer Accessories&sortBy=amount",
-              "name": "3D Printer Accessories",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Printing",
               "slug": "/search?q=3D Printers&sortBy=amount",
               "name": "3D Printers",
               "image": {
@@ -1838,8 +1151,8 @@
             {
               "id": 1,
               "parent": "Printing",
-              "slug": "/search?q=Printer, Copier & Fax Machine Accessories&sortBy=amount",
-              "name": "Printer, Copier & Fax Machine Accessories",
+              "slug": "/search?q=Paper+Printer+Toner+Inkjet+Cartridges&sortBy=amount",
+              "name": "Toner, Cartridges & Refils",
               "image": {
                 "mobile": {
                   "url": "/assets/images/category/camera.png",
@@ -1857,235 +1170,7 @@
             {
               "id": 1,
               "parent": "Printing",
-              "slug": "/search?q=Printer Consumables&sortBy=amount",
-              "name": "Printer Consumables",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Printing",
-              "slug": "/search?q=Printer Drums & Drum Kits&sortBy=amount",
-              "name": "Printer Drums & Drum Kits",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Printing",
-              "slug": "/search?q=Printer Filters&sortBy=amount",
-              "name": "Printer Filters",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Printing",
-              "slug": "/search?q=Printer Maintenance Kits&sortBy=amount",
-              "name": "Printer Maintenance Kits",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Printing",
-              "slug": "/search?q=Printer Ribbons&sortBy=amount",
-              "name": "Printer Ribbons",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Printing",
-              "slug": "/search?q=Printheads&sortBy=amount",
-              "name": "Printheads",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Printing",
-              "slug": "/search?q=Toner & Inkjet Cartridge Refills&sortBy=amount",
-              "name": "Toner & Inkjet Cartridge Refills",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Printing",
-              "slug": "/search?q=Toner & Inkjet Cartridges&sortBy=amount",
-              "name": "Toner & Inkjet Cartridges",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Printing",
-              "slug": "/search?q=Printer Duplexers&sortBy=amount",
-              "name": "Printer Duplexers",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Printing",
-              "slug": "/search?q=Printer Memory&sortBy=amount",
-              "name": "Printer Memory",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Printing",
-              "slug": "/search?q=Printer Stands&sortBy=amount",
-              "name": "Printer Stands",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Printing",
-              "slug": "/search?q=Printer, Copier & Fax Machine Replacement Parts&sortBy=amount",
-              "name": "Printer, Copier & Fax Machine Replacement Parts",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Printing",
-              "slug": "/search?q=Printers, Copiers & Fax Machines&sortBy=amount",
+              "slug": "/search?q=Printers+Copiers+&+Fax Machines&sortBy=amount",
               "name": "Printers, Copiers & Fax Machines",
               "image": {
                 "mobile": {
@@ -2104,26 +1189,7 @@
             {
               "id": 1,
               "parent": "Printing",
-              "slug": "/search?q=Scanner Accessories&sortBy=amount",
-              "name": "Scanner Accessories",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Printing",
-              "slug": "/search?q=Scanners&sortBy=amount",
+              "slug": "/search?q=home+office+document+Scanners&sortBy=amount",
               "name": "Scanners",
               "image": {
                 "mobile": {
@@ -2144,7 +1210,7 @@
         {
           "id": 1,
           "parent": "Electronics",
-          "slug": "/search?q=Projectors&sortBy=amount",
+          "slug": "/search?q=Multimedia Projectors&sortBy=amount",
           "name": "Projectors",
           "image": {
             "mobile": {
@@ -2158,66 +1224,7 @@
               "height": 250
             }
           },
-          "icon": "/assets/images/category/icon/projector.png",
-          "children": [
-            {
-              "id": 1,
-              "parent": "Projectors",
-              "slug": "/search?q=Multimedia Projectors&sortBy=amount",
-              "name": "Multimedia Projectors",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Electronics",
-              "slug": "/search?q=Overhead Projectors&sortBy=amount",
-              "name": "Overhead Projectors",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Electronics",
-              "slug": "/search?q=Slide Projectors&sortBy=amount",
-              "name": "Slide Projectors",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            }
-          ]
+          "icon": "/assets/images/category/icon/projector.png"
         },
         {
           "id": 1,
@@ -2242,65 +1249,85 @@
               "id": 1,
               "parent": "Televisions",
               "slug": "/search?q=TV & Monitor Mounts&sortBy=amount",
+              "name": "Smart TVs",
+              "image": {
+                "mobile": {
+                  "url": "/assets/images/category/camera.png",
+                  "width": 475,
+                  "height": 250
+                },
+                "desktop": {
+                  "url": "/assets/images/category/camera.png",
+                  "width": 475,
+                  "height": 250
+                }
+              },
+              "icon": "/assets/images/category/icon/home-goods.svg"
+            },
+            {
+              "id": 1,
+              "parent": "Televisions",
+              "slug": "/search?q=TV & Monitor Mounts&sortBy=amount",
+              "name": "Digital Media Player",
+              "image": {
+                "mobile": {
+                  "url": "/assets/images/category/camera.png",
+                  "width": 475,
+                  "height": 250
+                },
+                "desktop": {
+                  "url": "/assets/images/category/camera.png",
+                  "width": 475,
+                  "height": 250
+                }
+              },
+              "icon": "/assets/images/category/icon/home-goods.svg",
+              "children": [
+                {
+                  "id": 1,
+                  "parent": "Digital media player",
+                  "slug": "/search?q=Apple TV&sortBy=amount",
+                  "name": "Apple TV",
+                  "image": {
+                    "mobile": {
+                      "url": "/assets/images/category/camera.png",
+                      "width": 475,
+                      "height": 250
+                    },
+                    "desktop": {
+                      "url": "/assets/images/category/camera.png",
+                      "width": 475,
+                      "height": 250
+                    }
+                  },
+                  "icon": "/assets/images/category/icon/home-goods.svg"
+                },
+                {
+                  "id": 1,
+                  "parent": "Digital media player",
+                  "slug": "/search?q=Chromecast&sortBy=amount",
+                  "name": "Chromecast",
+                  "image": {
+                    "mobile": {
+                      "url": "/assets/images/category/camera.png",
+                      "width": 475,
+                      "height": 250
+                    },
+                    "desktop": {
+                      "url": "/assets/images/category/camera.png",
+                      "width": 475,
+                      "height": 250
+                    }
+                  },
+                  "icon": "/assets/images/category/icon/home-goods.svg"
+                }
+              ]
+            },
+            {
+              "id": 1,
+              "parent": "Televisions",
+              "slug": "/search?q=TV & Monitor Mounts&sortBy=amount",
               "name": "TV & Monitor Mounts",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-
-            {
-              "id": 1,
-              "parent": "Electronics",
-              "slug": "/search?q=TV Converter Boxes&sortBy=amount",
-              "name": "TV Converter Boxes",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Electronics",
-              "slug": "/search?q=TV Replacement Lamps&sortBy=amount",
-              "name": "TV Replacement Lamps",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Electronics",
-              "slug": "/search?q=TV Replacement Speakers&sortBy=amount",
-              "name": "TV Replacement Speakers",
               "image": {
                 "mobile": {
                   "url": "/assets/images/category/camera.png",
