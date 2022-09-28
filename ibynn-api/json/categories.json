@@ -398,7 +398,7 @@
                   "height": 250
                 }
               },
-              "icon": "/assets/images/category/icon/home-goods.svg"
+              "icon": "/assets/images/category/icon/headphones.png"
             },
             {
               "id": 1,
@@ -417,7 +417,7 @@
                   "height": 250
                 }
               },
-              "icon": "/assets/images/category/icon/home-goods.svg"
+              "icon": "/assets/images/category/icon/microphone.png"
             },
 
             {
@@ -437,7 +437,7 @@
                   "height": 250
                 }
               },
-              "icon": "/assets/images/category/icon/home-goods.svg"
+              "icon": "/assets/images/category/icon/speaker.png"
             },
             {
               "id": 1,
@@ -456,7 +456,7 @@
                   "height": 250
                 }
               },
-              "icon": "/assets/images/category/icon/home-goods.svg"
+              "icon": "/assets/images/category/icon/recorder.png"
             },
             {
               "id": 1,
@@ -475,7 +475,7 @@
                   "height": 250
                 }
               },
-              "icon": "/assets/images/category/icon/home-goods.svg"
+              "icon": "/assets/images/category/icon/boombox.png"
             },
             {
               "id": 1,
@@ -494,140 +494,7 @@
                   "height": 250
                 }
               },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Audio Accessories",
-              "slug": "/search?q=Cassette Players & Recorders&sortBy=amount",
-              "name": "Cassette Players & Recorders",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Audio Accessories",
-              "slug": "/search?q=Home Theater Systems&sortBy=amount",
-              "name": "Home Theater Systems",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Audio Accessories",
-              "slug": "/search?q=Karaoke Systems&sortBy=amount",
-              "name": "Karaoke Systems",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Audio Accessories",
-              "slug": "/search?q=MP3 Players&sortBy=amount",
-              "name": "MP3 Players",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Audio Accessories",
-              "slug": "/search?q=Radios&sortBy=amount",
-              "name": "Radios",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Audio Accessories",
-              "slug": "/search?q=Voice Recorders&sortBy=amount",
-              "name": "Voice Recorders",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Audio Accessories",
-              "slug": "/search?q=DJ Systems&sortBy=amount",
-              "name": "DJ Systems",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
+              "icon": "/assets/images/category/icon/cd-player.png"
             }
           ]
         },
@@ -729,352 +596,6 @@
         {
           "id": 1,
           "parent": "Electronics",
-          "slug": "/search?q=Computer Accessories&sortBy=amount",
-          "name": "Computer Accessories",
-          "image": {
-            "mobile": {
-              "url": "/assets/images/category/camera.png",
-              "width": 475,
-              "height": 250
-            },
-            "desktop": {
-              "url": "/assets/images/category/camera.png",
-              "width": 475,
-              "height": 250
-            }
-          },
-          "icon": "/assets/images/category/icon/computer-accessories.png",
-          "children": [
-            {
-              "id": 1,
-              "parent": "Computer Accessories",
-              "slug": "/search?q=Computer Accessory Sets&sortBy=amount",
-              "name": "Computer Accessory Sets",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Computer Accessories",
-              "slug": "/search?q=Computer Covers & Skins&sortBy=amount",
-              "name": "Computer Covers & Skins",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Computer Accessories",
-              "slug": "/search?q=Computer Risers & Stands&sortBy=amount",
-              "name": "Computer Risers & Stands",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Computer Accessories",
-              "slug": "/search?q=Keyboard & Mouse Wrist Rests&sortBy=amount",
-              "name": "Keyboard & Mouse Wrist Rests",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Computer Accessories",
-              "slug": "/search?q=Keyboard Trays & Platforms&sortBy=amount",
-              "name": "Keyboard Trays & Platforms",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Computer Accessories",
-              "slug": "/search?q=Laptop Docking Stations&sortBy=amount",
-              "name": "Laptop Docking Stations",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Computer Accessories",
-              "slug": "/search?q=Mouse Pads&sortBy=amount",
-              "name": "Mouse Pads",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Computer Accessories",
-              "slug": "/search?q=Stylus Pen Nibs & Refills&sortBy=amount",
-              "name": "Stylus Pen Nibs & Refills",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Computer Accessories",
-              "slug": "/search?q=Stylus Pens&sortBy=amount",
-              "name": "Stylus Pens",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Computer Accessories",
-              "slug": "/search?q=Tablet Computer Docks & Stands&sortBy=amount",
-              "name": "Tablet Computer Docks & Stands",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            }
-          ]
-        },
-        {
-          "id": 1,
-          "parent": "Electronics",
-          "slug": "/search?q=Game Controllers&sortBy=amount",
-          "name": "Game Controllers",
-          "image": {
-            "mobile": {
-              "url": "/assets/images/category/camera.png",
-              "width": 475,
-              "height": 250
-            },
-            "desktop": {
-              "url": "/assets/images/category/camera.png",
-              "width": 475,
-              "height": 250
-            }
-          },
-          "icon": "/assets/images/category/icon/controller.png",
-          "children": [
-            {
-              "id": 1,
-              "parent": "Game Controllers",
-              "slug": "/search?q=Game Racing Wheels&sortBy=amount",
-              "name": "Game Racing Wheels",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Game Controllers",
-              "slug": "/search?q=Game Remotes&sortBy=amount",
-              "name": "Game Remotes",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Game Controllers",
-              "slug": "/search?q=Gaming Pads&sortBy=amount",
-              "name": "Gaming Pads",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Game Controllers",
-              "slug": "/search?q=Joystick Controllers&sortBy=amount",
-              "name": "Joystick Controllers",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Game Controllers",
-              "slug": "/search?q=Musical Instrument Game Controllers&sortBy=amount",
-              "name": "Musical Instrument Game Controllers",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            },
-            {
-              "id": 1,
-              "parent": "Game Controllers",
-              "slug": "/search?q=Gesture Control Input Devices&sortBy=amount",
-              "name": "Gesture Control Input Devices",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/home-goods.svg"
-            }
-          ]
-        },
-        {
-          "id": 1,
-          "parent": "Electronics",
           "slug": "/search?q=Wireless Routers&sortBy=amount",
           "name": "Wireless Routers",
           "image": {
@@ -1146,7 +667,7 @@
                   "height": 250
                 }
               },
-              "icon": "/assets/images/category/icon/home-goods.svg"
+              "icon": "/assets/images/category/icon/3d-printer.png"
             },
             {
               "id": 1,
@@ -1165,7 +686,7 @@
                   "height": 250
                 }
               },
-              "icon": "/assets/images/category/icon/home-goods.svg"
+              "icon": "/assets/images/category/icon/cartridge.png"
             },
             {
               "id": 1,
@@ -1184,7 +705,7 @@
                   "height": 250
                 }
               },
-              "icon": "/assets/images/category/icon/home-goods.svg"
+              "icon": "/assets/images/category/icon/copier.png"
             },
             {
               "id": 1,
@@ -1203,7 +724,7 @@
                   "height": 250
                 }
               },
-              "icon": "/assets/images/category/icon/home-goods.svg"
+              "icon": "/assets/images/category/icon/scanner.png"
             }
           ]
         },
@@ -1262,7 +783,7 @@
                   "height": 250
                 }
               },
-              "icon": "/assets/images/category/icon/home-goods.svg"
+              "icon": "/assets/images/category/icon/smart-tv.png"
             },
             {
               "id": 1,
@@ -1281,7 +802,7 @@
                   "height": 250
                 }
               },
-              "icon": "/assets/images/category/icon/home-goods.svg",
+              "icon": "/assets/images/category/icon/digital-media-player.png",
               "children": [
                 {
                   "id": 1,
@@ -1300,7 +821,7 @@
                       "height": 250
                     }
                   },
-                  "icon": "/assets/images/category/icon/home-goods.svg"
+                  "icon": "/assets/images/category/icon/apple-tv.png"
                 },
                 {
                   "id": 1,
@@ -1319,7 +840,7 @@
                       "height": 250
                     }
                   },
-                  "icon": "/assets/images/category/icon/home-goods.svg"
+                  "icon": "/assets/images/category/icon/chromecast.png"
                 }
               ]
             },
@@ -1340,7 +861,7 @@
                   "height": 250
                 }
               },
-              "icon": "/assets/images/category/icon/home-goods.svg"
+              "icon": "/assets/images/category/icon/tv-mount.png"
             }
           ]
         }
