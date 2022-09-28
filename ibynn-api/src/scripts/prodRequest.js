@@ -104,22 +104,56 @@ const getShopping = async (query, sortBy = "", start = "0") => {
         let results = {};
         results.search_information = response.search_information;
         results.search_metadata = response.search_metadata;
+        results.serpapi_pagination = response.serpapi_pagination;
         
         results.shopping_results = 
             response.inline_shopping_results ? 
             [...response.inline_shopping_results, ...response.shopping_results] : 
             response.shopping_results;
 
-        results.shopping_results = addIcons(results.shopping_results);
         
-        if (sortBy) results.shopping_results = findSorters(results.shopping_results, sortBy);
+        // if (sortBy) results.shopping_results = findSorters(results.shopping_results, sortBy);
 
-        sortArr(results);
+        // sortArr(results);
 
         return results;
     } catch (error) {
         return error;
     }        
+}
+
+const paginateShopping = async (query, sortBy = "") => {
+    const serpResponse = await getShopping(query, sortBy, 0);
+    const other_pages = serpResponse?.serpapi_pagination?.other_pages ?? {};
+    const pages = Object.keys(other_pages).length > 3 ? 3 : Object.keys(other_pages).length;
+    let data = {
+        search_information: {},
+        search_metadata: {},
+        shopping_results: []
+    }
+    
+    if (pages) {
+        for (let i = 2; i <= pages; i++) {
+            const {data:response} = await axios.get(`${other_pages[i]}&api_key=${api_key}`);
+            console.log(response.shopping_results.length)
+            data.search_information = response.search_information;
+            data.search_metadata = response.search_metadata;
+            data.shopping_results = [...data.shopping_results, ...response.shopping_results];
+            
+        }
+    }
+    else {
+        console.log(serpResponse.shopping_results)
+        data.shopping_results = serpResponse.shopping_results;
+        data.search_information = serpResponse.search_information;
+        data.search_metadata = serpResponse.search_metadata;
+    }
+    data.shopping_results = addIcons(data.shopping_results);
+    if (sortBy) data.shopping_results = findSorters(data.shopping_results, sortBy);
+    sortArr(data);
+
+    return data;
+
 }
 
 const addIcons = (arr) => {
@@ -256,30 +290,6 @@ const calculations = (item, match, sortBy, unit) => {
     }
 }
 
-const paginateShopping = async (query, sortBy = "") => {
-    let data = {
-        search_information: {},
-        search_metadata: {},
-        shopping_results: []
-    }
-    
-
-
-    for await (const i of [0, 1]) {
-        let results = await getShopping(query, sortBy, i * 100);
-        
-        data.search_information = results.search_information;
-        data.search_metadata = results.search_metadata;
-        data.shopping_results = [...data.shopping_results, ...results.shopping_results];
-
-        console.log(`PAGE NUMBER ${i+1} has ${results.shopping_results.length} number of results`)
-
-
-    };
-
-    return data;
-
-}
 
 exports.getShopping = getShopping;
 exports.paginateShopping = paginateShopping;

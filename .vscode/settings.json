@@ -5,14 +5,6 @@
         "**/.hg": true,
         "**/CVS": true,
         "**/.DS_Store": true,
-        "**/Thumbs.db": true,
-        "[!i]*/**": true,
-        "i[!b]*/**": true,
-        "ib[!y]*/**": true,
-        "iby[!n]*/**": true,
-        "ibyn[!n]*/**": true,
-        "ibynn[!-]*/**": true,
-        "ibynn-[!u]*/**": true,
-        "ibynn-u[!i]*/**": true
+        "**/Thumbs.db": true
     }
 }
