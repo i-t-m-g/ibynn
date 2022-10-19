@@ -1,20 +1,17 @@
-const express = require("express");
-const redis = require("redis");
-const bodyParser = require("body-parser");
-const cors = require("cors");
-const helmet = require("helmet");
-const morgan = require("morgan");
-const axios = require("axios").default;
-const request = require("request");
-const { cacheMiddleware } = require("./middleware/cache");
-const { response } = require("express");
-const { getProductsWP, getShopping, paginateShopping } = require("./scripts/prodRequest");
-const { getForum, fetchTitles } = require("./scripts/scrapeImg");
-const dotenv = require("dotenv");
-const cheerio = require("cheerio");
-const { callApi } = require("./scripts/periodicFunction.js");
+import { createClient } from 'redis';
+import express from "express"
+import bodyParser from "body-parser"
+import cors from "cors"
+import helmet from "helmet"
+import morgan from "morgan"
+import { cache as cacheMiddleware } from "./middleware/cache.js";
+import { paginateShopping } from "./scripts/prodRequest.js";
+import { config } from "dotenv";
+import { getSerpShopping } from "./serp/requests/request.js"
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
 
-dotenv.config();
+config();
 let redisClient;
 const redisConfig = {
   host: process.env.REDIS_HOST,
@@ -23,8 +20,9 @@ const redisConfig = {
   username: process.env.REDIS_USERNAME,
 };
 
+
 // const client = Redis.createClient({ host: process.env.REDIS_HOST, port: process.env.REDIS_PORT, password: process.env.REDIS_PASSWORD, TLS: true });
-const client = redis.createClient();
+const client = createClient();
 client.connect().catch((err) => console.log(err));
 client.on("connect", () => console.log("Connected to Redis!"));
 client.on("error", (err) => console.log("Redis Client Error", err));
@@ -45,30 +43,19 @@ app.use(morgan("combined"));
 
 var caching = cacheMiddleware(client);
 
-//reverses a string
-String.prototype.reverse = function () {
-	return this.split('').reverse().join('');
-};
 
 app.get("/json/:jsonFile", (req, res) => {
   const json = require(`../json/${req.params.jsonFile}.json`);
   res.json(json);
 });
 
-app.get("/", async (req, res) => {
-  // const ax = await inOne('bar+soap');
-
-  const ax = await fetchTitles();
-
-  res.send(ax);
-});
-
 app.get("/shopping", caching, async (req, res) => {
   const query = req.query.q;
   const sortBy = req.query.sortBy;
-  
+  const min_price = req.query.min_price ?? 0;
+  console.log(req.query.min_price, "/search?q=washing+machines&min_price=300")
   try {
-    const results = await paginateShopping(query, sortBy ?? null);
+    const results = await getSerpShopping(query, sortBy ?? null, min_price);
     if (results.shopping_results) 
     {
       client.setEx(query, 172800, JSON.stringify(results));
@@ -82,8 +69,11 @@ app.get("/shopping", caching, async (req, res) => {
   }
 });
 
-app.get("/test", (req, res) => {
-  res.send(callApi());
+app.get("/test", async (req, res) => {
+  const query = req.query.q;
+  const sort_by = req.query.sortBy;
+  const min_price = req.query.min_price ?? 0;
+  res.send(await getSerpShopping(query, sort_by, min_price));
 })
 
 // starting the server

@@ -1,8 +1,10 @@
-const { default: axios } = require("axios");
-// const json = require(`./json/categories.json`);
-const cats = require("../../json/categories.json")
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
+import axios  from "axios"
+// const json from `./json/categories.json`
+const cats = require("../../json/categories.json");
 
-const callApi = () => {
+export const callApi = () => {
     const data = cats.data;
 
     data.forEach(i => {
@@ -25,5 +27,3 @@ const callApi = () => {
 
     return data;
 }
-
-exports.callApi = callApi;

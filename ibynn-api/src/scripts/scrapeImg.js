@@ -2,7 +2,7 @@ const { default: axios } = require("axios");
 const cheerio = require("cheerio");
 const puppeteer = require('puppeteer');
 
-const getImageWithPuppet = async (url) => {
+export const getImageWithPuppet = async (url) => {
     try {
         const browser = await puppeteer.launch();
         const page = await browser.newPage();
@@ -21,7 +21,7 @@ const getImageWithPuppet = async (url) => {
     }
 }
 
-const getImageCheerio = async (url) => {
+export const getImageCheerio = async (url) => {
     try {
         const response = await axios.get(url, {
             headers: {
@@ -42,6 +42,3 @@ const getImageCheerio = async (url) => {
         console.log(error)
     }
 }
-
-exports.getImageWithPuppet = getImageWithPuppet;
-exports.getImageCheerio = getImageCheerio;
