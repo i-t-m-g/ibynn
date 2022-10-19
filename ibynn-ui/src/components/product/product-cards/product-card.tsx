@@ -128,7 +128,7 @@ const ProductCard: React.FC<ProductProps> = ({ product, className }) => {
           </div>
 
           <div className="flex flex-col mb-2">
-            <img alt={title} className="w-16 place-self-center" src={icon} />
+            <img alt={product.source} className="w-16 place-self-center" src={icon} />
             <button
               style={buttonStyles.button}
               className="text-white font-bold py-2 px-4 rounded-full"

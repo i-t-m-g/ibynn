@@ -1,5 +1,4 @@
-
-const cache = (client) => {
+export const cache = (client) => {
     return async function (req, res, next) {
         const q = req.query.q;
     
@@ -20,5 +19,3 @@ const cache = (client) => {
     };
 
 }
-
-exports.cacheMiddleware = cache;

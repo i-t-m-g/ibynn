@@ -22,7 +22,7 @@
           "id": 1,
           "name": "Washing Machines",
           "parent": "Home Appliances",
-          "slug": "/search?q=electric+clothing+home+Washing+Machines&sortBy=amount",
+          "slug": "/search?q=laundry+washing+machines&min_price=300",
           "image": {
             "mobile": {
               "url": "/assets/images/category/camera.png",
@@ -41,7 +41,7 @@
           "id": 1,
           "name": "Dryer Machines",
           "parent": "Home Appliances",
-          "slug": "/search?q=electric+clothing+house+drying+Machines&sortBy=amount",
+          "slug": "/search?q=laundry+dryer+machines&min_price=300",
           "image": {
             "mobile": {
               "url": "/assets/images/category/camera.png",
@@ -60,7 +60,7 @@
           "id": 1,
           "name": "Toaster",
           "parent": "Home Appliances",
-          "slug": "/search?q=bread+toaster&sortBy=amount",
+          "slug": "/search?q=bread+toaster&min_price=30",
           "image": {
             "mobile": {
               "url": "/assets/images/category/camera.png",
@@ -79,7 +79,7 @@
           "id": 1,
           "name": "Refrigerator",
           "parent": "Home Appliances",
-          "slug": "/search?q=food+Refrigerator&sortBy=amount",
+          "slug": "/search?q=refrigerator&min_price=300",
           "image": {
             "mobile": {
               "url": "/assets/images/category/camera.png",
