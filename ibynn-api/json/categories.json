@@ -921,7 +921,7 @@
                   "height": 250
                 }
               },
-              "icon": "/assets/images/category/icon/home-goods.svg"
+              "icon": "/assets/images/category/icon/art-pencils.png"
             },
             {
               "id": 1,
@@ -940,7 +940,7 @@
                   "height": 250
                 }
               },
-              "icon": "/assets/images/category/icon/home-goods.svg"
+              "icon": "/assets/images/category/icon/lead-pencils.png"
             },
             {
               "id": 1,
@@ -959,7 +959,7 @@
                   "height": 250
                 }
               },
-              "icon": "/assets/images/category/icon/home-goods.svg"
+              "icon": "/assets/images/category/icon/wooden-pencil.png"
             }
           ]
         },
