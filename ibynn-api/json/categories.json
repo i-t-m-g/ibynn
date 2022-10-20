@@ -41,7 +41,7 @@
           "id": 1,
           "name": "Dryer Machines",
           "parent": "Home Appliances",
-          "slug": "/search?q=laundry+dryer+machines&min_price=300",
+          "slug": "/search?q=laundry+clothing+dryer&min_price=300",
           "image": {
             "mobile": {
               "url": "/assets/images/category/camera.png",
