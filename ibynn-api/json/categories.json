@@ -98,7 +98,7 @@
           "id": 1,
           "name": "Freezer",
           "parent": "Home Appliances",
-          "slug": "/search?q=home+Freezer&sortBy=amount",
+          "slug": "/search?q=food+Freezer&min_price=350",
           "image": {
             "mobile": {
               "url": "/assets/images/category/camera.png",
@@ -117,7 +117,7 @@
           "id": 1,
           "name": "Air conditioner",
           "parent": "Home Appliances",
-          "slug": "/search?q=home+Air+conditioner&sortBy=amount",
+          "slug": "/search?q=home+Air+conditioner&min_price=250",
           "image": {
             "mobile": {
               "url": "/assets/images/category/camera.png",
@@ -136,7 +136,7 @@
           "id": 1,
           "name": "Fans",
           "parent": "Home Appliances",
-          "slug": "/search?q=house+fans&sortBy=amount",
+          "slug": "/search?q=house+fans&min_price=65",
           "image": {
             "mobile": {
               "url": "/assets/images/category/camera.png",
@@ -155,7 +155,7 @@
           "id": 1,
           "name": "Blender",
           "parent": "Home Appliances",
-          "slug": "/search?q=food+Blender&sortBy=amount",
+          "slug": "/search?q=food+Blender&min_price=50",
           "image": {
             "mobile": {
               "url": "/assets/images/category/camera.png",
@@ -174,7 +174,7 @@
           "id": 1,
           "name": "Coffeemaker",
           "parent": "Home Appliances",
-          "slug": "/search?q=Coffeemaker&sortBy=amount",
+          "slug": "/search?q=Coffeemaker&min_price=75",
           "image": {
             "mobile": {
               "url": "/assets/images/category/camera.png",
@@ -193,7 +193,7 @@
           "id": 1,
           "name": "Dishwasher",
           "parent": "Home Appliances",
-          "slug": "/search?q=home+Dishwasher&sortBy=amount",
+          "slug": "/search?q=home+Dishwasher&min_price=300",
           "image": {
             "mobile": {
               "url": "/assets/images/category/camera.png",
@@ -212,7 +212,7 @@
           "id": 1,
           "name": "Stove",
           "parent": "Home Appliances",
-          "slug": "/search?q=home+cooking+stove&sortBy=amount",
+          "slug": "/search?q=home+cooking+stove&min_price=300",
           "image": {
             "mobile": {
               "url": "/assets/images/category/camera.png",
@@ -231,7 +231,7 @@
           "id": 1,
           "name": "Oven",
           "parent": "Home Appliances",
-          "slug": "/search?q=home+food+oven&sortBy=amount",
+          "slug": "/search?q=food+oven&min_price=300",
           "image": {
             "mobile": {
               "url": "/assets/images/category/camera.png",
@@ -250,7 +250,7 @@
           "id": 1,
           "name": "Food processor",
           "parent": "Home Appliances",
-          "slug": "/search?q=electric+home+Food+processor&sortBy=amount",
+          "slug": "/search?q=electric+Food+processor&min_price=35",
           "image": {
             "mobile": {
               "url": "/assets/images/category/camera.png",
@@ -270,7 +270,7 @@
           "id": 1,
           "name": "Mixer",
           "parent": "Home Appliances",
-          "slug": "/search?q=home+food+electric+mixer&sortBy=amount",
+          "slug": "/search?q=food+electric+mixer&min_price=15",
           "image": {
             "mobile": {
               "url": "/assets/images/category/camera.png",
@@ -308,7 +308,7 @@
           "id": 1,
           "name": "Vacuum cleaner",
           "parent": "Home Appliances",
-          "slug": "/search?q=home+Vacuum+cleaner&sortBy=amount",
+          "slug": "/search?q=home+vacuum+cleaner&min_price=50",
           "image": {
             "mobile": {
               "url": "/assets/images/category/camera.png",
@@ -327,7 +327,7 @@
           "id": 1,
           "name": "Ironer",
           "parent": "Home Appliances",
-          "slug": "/search?q=clothing+ironer&sortBy=amount",
+          "slug": "/search?q=clothing+ironer&min_price=26",
           "image": {
             "mobile": {
               "url": "/assets/images/category/camera.png",
@@ -520,8 +520,8 @@
         {
           "id": 1,
           "parent": "Electronics",
-          "slug": "/search?q=cell+phones&sortBy=amount",
-          "name": "Cell Phones",
+          "slug": "/search?q=smart+phones&min_price=121",
+          "name": "Smart Phones",
           "image": {
             "mobile": {
               "url": "/assets/images/category/camera.png",
@@ -539,7 +539,7 @@
         {
           "id": 1,
           "parent": "Electronics",
-          "slug": "/search?q=Desktop Computers&sortBy=amount",
+          "slug": "/search?q=Desktop+computers&min_price=98",
           "name": "Desktop Computers",
           "image": {
             "mobile": {
@@ -558,7 +558,7 @@
         {
           "id": 1,
           "parent": "Electronics",
-          "slug": "/search?q=Laptops&sortBy=amount",
+          "slug": "/search?q=Laptops&min_price=115",
           "name": "Laptops",
           "image": {
             "mobile": {
