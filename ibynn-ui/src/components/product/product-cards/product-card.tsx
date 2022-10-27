@@ -25,38 +25,6 @@ interface ProductProps {
   className?: string;
 }
 
-function RenderPopupOrAddToCart({ data }: { data: Product }) {
-  const { t } = useTranslation('common');
-  const { id, quantity, product_type } = data ?? {};
-  const { width } = useWindowSize();
-  const { openModal } = useModalAction();
-  const { isInCart, isInStock } = useCart();
-  const iconSize = width! > 1024 ? '19' : '17';
-  const outOfStock = isInCart(id) && !isInStock(id);
-  function handlePopupView() {
-    openModal('PRODUCT_VIEW', data);
-  }
-  if (Number(quantity) < 1 || outOfStock) {
-    return (
-      <span className="text-[11px] md:text-xs font-bold text-brand-light uppercase inline-block bg-brand-danger rounded-full px-2.5 pt-1 pb-[3px] mx-0.5 sm:mx-1">
-        {t('text-out-stock')}
-      </span>
-    );
-  }
-  if (product_type === 'variable') {
-    return (
-      <button
-        className="inline-flex items-center justify-center w-8 h-8 text-4xl rounded-full bg-brand lg:w-10 lg:h-10 text-brand-light focus:outline-none focus-visible:outline-none"
-        aria-label="Count Button"
-        onClick={handlePopupView}
-      >
-        <PlusIcon width={iconSize} height={iconSize} opacity="1" />
-      </button>
-    );
-  }
-  return <AddToCart data={data} />;
-}
-
 const ProductCard: React.FC<ProductProps> = ({ product, className }) => {
   const { title, thumbnail, position, link, icon } = product ?? {};
   const product_type = '';
@@ -82,13 +50,13 @@ const ProductCard: React.FC<ProductProps> = ({ product, className }) => {
     openModal('PRODUCT_VIEW', product);
   }
   return (
-    <a href={link} target="_blank" rel="noreferrer">
+    <div>
       <article
         className={cn(
           'flex flex-col group overflow-hidden rounded-md cursor-pointer transition-all duration-300 shadow-card hover:shadow-cardHover relative h-full',
           className
         )}
-        // onClick={handlePopupView}
+        onClick={handlePopupView}
         title={title}
       >
         <div className="relative shrink-0">
@@ -138,7 +106,7 @@ const ProductCard: React.FC<ProductProps> = ({ product, className }) => {
           </div>
         </div>
       </article>
-    </a>
+    </div>
   );
 };
 

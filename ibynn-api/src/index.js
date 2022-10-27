@@ -7,7 +7,7 @@ import morgan from "morgan"
 import { cache as cacheMiddleware } from "./middleware/cache.js";
 import { paginateShopping } from "./scripts/prodRequest.js";
 import { config } from "dotenv";
-import { getSerpShopping } from "./serp/requests/request.js"
+import * as request from "./serp/requests/request.js";
 import { createRequire } from "module";
 const require = createRequire(import.meta.url);
 
@@ -55,10 +55,11 @@ app.get("/shopping", caching, async (req, res) => {
   const min_price = req.query.min_price ?? 0;
   console.log(req.query.min_price, "/search?q=washing+machines&min_price=300")
   try {
-    const results = await getSerpShopping(query, sortBy ?? null, min_price);
+    const results = await request.getPaginatedSerpShopping(query, sortBy ?? null, min_price);
     if (results.shopping_results) 
     {
       client.setEx(query, 172800, JSON.stringify(results));
+      
       res.send(results);
     } else {
       throw results;
@@ -69,11 +70,17 @@ app.get("/shopping", caching, async (req, res) => {
   }
 });
 
-app.get("/test", async (req, res) => {
+app.get("/compare", async (req, res) => {
   const query = req.query.q;
-  const sort_by = req.query.sortBy;
-  const min_price = req.query.min_price ?? 0;
-  res.send(await getSerpShopping(query, sort_by, min_price));
+  const sort_by = req.query.sort_by;
+
+  let response = await request.getInlineShoppingResults(query);
+  
+  // response = request.addIcons(response);
+  // if (sort_by) response = request.findSorters(response, sort_by);
+  // request.sortArr(response);
+
+  res.send(response);
 })
 
 // starting the server

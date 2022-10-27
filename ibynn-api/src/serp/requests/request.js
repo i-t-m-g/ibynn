@@ -2,8 +2,8 @@ import axios from 'axios';
 import { storeImages, storeNames, measurements, stringReverse, calculations } from '../../scripts/constants/constants.js';
 
 const api_key = process.env.API_KEY;
-const serpShoppingUrl = (query, tbs) => `https://serpapi.com/search.json?q=${query}&${tbs}&api_key=${api_key}&engine=google&google_domain=google.com&gl=us&hl=en&num=100&tbm=shop`
-const getTbs = (min_price) => `tbs=mr:1,price:1,ppr_min:${min_price},merchagg:g8299768|g784994|g7187155|g7432975|g113872638|g9473138|m8175035|m10046|m1311674|m7815|m114193152|m7388148|m10048|m8740|m3368322,avg_rating:400`
+const serpShoppingUrl = (query, tbs) => `https://serpapi.com/search.json?q=${query}${tbs}&api_key=${api_key}&engine=google&google_domain=google.com&gl=us&hl=en&num=100&tbm=shop`
+const getTbs = (min_price) => `&tbs=mr:1,price:1,ppr_min:${min_price},merchagg:g8299768|g784994|g7187155|g7432975|g113872638|g9473138|m8175035|m10046|m1311674|m7815|m114193152|m7388148|m10048|m8740|m3368322,avg_rating:400`
 
 export const addIcons = (arr) => {
     if (arr) {
@@ -89,7 +89,7 @@ export const sortArr = (arr) => {
     );
 }
 
-export async function getSerpShopping (query, sort_by, min_price) {
+export async function getPaginatedSerpShopping(query, sort_by, min_price) {
     const tbs = getTbs(min_price);
     const url = serpShoppingUrl(query, tbs);
     const {data:serpResponse} = await axios.get(url);
@@ -122,4 +122,16 @@ export async function getSerpShopping (query, sort_by, min_price) {
     sortArr(data);
 
     return data;
+}
+
+export async function getInlineShoppingResults(query, sort_by, min_price) {
+    const url = serpShoppingUrl(query);
+    const {data:response} = await axios.get(url);
+    const inline_shopping_results = response.inline_shopping_results;
+
+    if (inline_shopping_results) return inline_shopping_results;
+    sortArr(response);
+
+    return response;
+
 }
