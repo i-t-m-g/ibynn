@@ -37,15 +37,6 @@ const ProductCard: React.FC<ProductProps> = ({ product, className }) => {
     currencyCode: 'USD',
   });
 
-  // const { price: minPrice } = usePrice({
-  //   amount: product?.min_price ?? 0,
-  //   currencyCode: 'USD',
-  // });
-  // const { price: maxPrice } = usePrice({
-  //   amount: product?.max_price ?? 0,
-  //   currencyCode: 'USD',
-  // });
-
   function handlePopupView() {
     openModal('PRODUCT_VIEW', product);
   }
@@ -96,7 +87,7 @@ const ProductCard: React.FC<ProductProps> = ({ product, className }) => {
           </div>
 
           <div className="flex flex-col mb-2">
-            <img alt={product.source} className="w-16 place-self-center" src={icon} />
+            {/* <img alt={product.source} className="w-16 place-self-center" src={icon} /> */}
             <button
               style={buttonStyles.button}
               className="text-white font-bold py-2 px-4 rounded-full"

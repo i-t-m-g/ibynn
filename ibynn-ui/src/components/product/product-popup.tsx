@@ -17,9 +17,10 @@ export default function ProductPopup() {
   const { slug, title } = data;
   const productUrl = `${process.env.NEXT_PUBLIC_WEBSITE_URL}${ROUTES.PRODUCT}/${slug}`;
   const url = `${process.env.NEXT_PUBLIC_REST_API_ENDPOINT}/compare?q=${title}}`;
+  const [product, setProduct] = useState();
 
   useEffect(() => {
-    const response = axios.get(url).then((res) => console.log(res.data));
+    const response = axios.get(url).then((res) => setProduct(res.data));
   }, []);
 
   return (
@@ -38,7 +39,7 @@ export default function ProductPopup() {
                   />
                 </div>
               }
-              <ModalProductDetails />
+              <ModalProductDetails product={product} />
             </div>
           </div>
         </div>
