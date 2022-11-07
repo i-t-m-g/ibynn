@@ -43,8 +43,9 @@ const ProductCard: React.FC<ProductProps> = ({ product, className }) => {
   return (
     <div>
       <article
+        style={{height: '90%'}}
         className={cn(
-          'flex flex-col group overflow-hidden rounded-md cursor-pointer transition-all duration-300 shadow-card hover:shadow-cardHover relative h-full',
+          'flex flex-col group overflow-hidden rounded-md cursor-pointer transition-all duration-300 shadow-card hover:shadow-cardHover relative',
           className
         )}
         onClick={handlePopupView}
@@ -92,7 +93,7 @@ const ProductCard: React.FC<ProductProps> = ({ product, className }) => {
               style={buttonStyles.button}
               className="text-white font-bold py-2 px-4 rounded-full"
             >
-              Buy Now
+              Compare Stores
             </button>
           </div>
         </div>
@@ -107,6 +108,7 @@ const buttonStyles = {
     '&:hover': {
       backgroundColor: '#02B29f',
     },
+    fontSize: '12px'
   },
 };
 
