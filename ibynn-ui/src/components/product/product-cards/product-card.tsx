@@ -43,15 +43,15 @@ const ProductCard: React.FC<ProductProps> = ({ product, className }) => {
   return (
     <div>
       <article
-        style={{height: '90%'}}
+        style={{height: '275px'}}
         className={cn(
-          'flex flex-col group overflow-hidden rounded-md cursor-pointer transition-all duration-300 shadow-card hover:shadow-cardHover relative',
+          'flex flex-col justify-between group overflow-hidden rounded-md cursor-pointer transition-all duration-300 shadow-card hover:shadow-cardHover',
           className
         )}
         onClick={handlePopupView}
         title={title}
       >
-        <div className="relative shrink-0">
+        <div className="">
           <div className="flex place-content-center overflow-hidden max-w-[230px] mx-auto">
             <Image
               src={thumbnail ?? productPlaceholder}
@@ -74,7 +74,7 @@ const ProductCard: React.FC<ProductProps> = ({ product, className }) => {
           </div>
         </div>
 
-        <div className="flex flex-col justify-between px-3 md:px-4 lg:px-[18px] lg:pt-1.5 h-60">
+        <div className="flex justify-between flex-col" style={{height: '100%', padding: '10px'}}>
           <div className="mb-1 lg:mb-1.5 -mx-1">
             <span className="inline-block mx-1 z-0 text-sm font-semibold sm:text-15px lg:text-base text-brand-dark">
               ${product.extracted_price?.toFixed(2)}
