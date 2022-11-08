@@ -122,13 +122,13 @@ export async function getSerpShopping(query, sort_by, min_price) {
 
 export async function getProductPage(product_id, sort_by, min_price) {
   try {
-    let sortedData;
-
+    let sortedData
     const url = productPageUrl(product_id, "");
     const { data: response } = await axios.get(url);
-    sortedData = response
-    sortedData.sellers_results.online_sellers = 
-    sortedData.sellers_results.online_sellers.sort((a, b) => a.total_price - b.total_price);
+    sortedData = response;
+
+    sortedData.sellers_results.online_sellers = response.sellers_results.online_sellers.sort((a, b) => 
+      parseFloat(a.total_price.substring(1)) - parseFloat(b.total_price.substring(1)));
 
     return sortedData;
   } catch (error) {
