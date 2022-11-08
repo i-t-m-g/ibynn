@@ -8,7 +8,6 @@ import { cache as cacheMiddleware } from "./middleware/cache.js";
 import { config } from "dotenv";
 import * as request from "./serp/requests/request.js";
 import { createRequire } from "module";
-import levenshtein from "js-levenshtein";
 
 const require = createRequire(import.meta.url);
 
@@ -84,16 +83,6 @@ app.get("/compare", async (req, res) => {
 
   res.send(response);
 });
-
-app.get("leven", (req, res) => {
-  const q = req.query.q;
-  const shtein = req.query.shtein;
-
-  const leven = levenshtein(q, shtein);
-
-  res.send(leven);
-
-})
 
 // starting the server
 app.listen(9476, () => {
