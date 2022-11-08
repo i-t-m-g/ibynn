@@ -5,10 +5,11 @@ import cors from "cors";
 import helmet from "helmet";
 import morgan from "morgan";
 import { cache as cacheMiddleware } from "./middleware/cache.js";
-import { paginateShopping } from "./scripts/prodRequest.js";
 import { config } from "dotenv";
 import * as request from "./serp/requests/request.js";
 import { createRequire } from "module";
+import levenshtein from "js-levenshtein";
+
 const require = createRequire(import.meta.url);
 
 config();
@@ -51,9 +52,10 @@ app.get("/shopping", caching, async (req, res) => {
   const query = req.query.q;
   const sortBy = req.query.sortBy;
   const min_price = req.query.min_price ?? 0;
-  console.log(req.query.min_price, "/search?q=washing+machines&min_price=300");
+  console.log(req.query)
+
   try {
-    const results = await request.getPaginatedSerpShopping(
+    const results = await request.getSerpShopping(
       query,
       sortBy ?? null,
       min_price
@@ -71,10 +73,10 @@ app.get("/shopping", caching, async (req, res) => {
 });
 
 app.get("/compare", async (req, res) => {
-  const query = req.query.q;
+  const product_id = req.query.product_id;
   const sort_by = req.query.sort_by;
 
-  let response = await request.getInlineShoppingResults(query);
+  let response = await request.getProductPage(product_id);
 
   // response = request.addIcons(response);
   // if (sort_by) response = request.findSorters(response, sort_by);
@@ -82,6 +84,16 @@ app.get("/compare", async (req, res) => {
 
   res.send(response);
 });
+
+app.get("leven", (req, res) => {
+  const q = req.query.q;
+  const shtein = req.query.shtein;
+
+  const leven = levenshtein(q, shtein);
+
+  res.send(leven);
+
+})
 
 // starting the server
 app.listen(9476, () => {

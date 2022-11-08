@@ -16,12 +16,14 @@ export default function ProductPopup() {
   const { closeModal } = useModalAction();
   const { slug, title } = data;
   const productUrl = `${process.env.NEXT_PUBLIC_WEBSITE_URL}${ROUTES.PRODUCT}/${slug}`;
-  const url = `${process.env.NEXT_PUBLIC_REST_API_ENDPOINT}/compare?q=${title}}`;
-  const [product, setProduct] = useState();
+  const url = `${process.env.NEXT_PUBLIC_REST_API_ENDPOINT}/compare?product_id=${data.product_id}`;
+  const [product, setProduct] = useState({});
 
   useEffect(() => {
     const response = axios.get(url).then((res) => setProduct(res.data));
   }, []);
+
+  console.log(product)
 
   return (
     <div className="md:w-[600px] lg:w-[940px] xl:w-[1180px] 2xl:w-[1360px] mx-auto p-1 lg:p-0 xl:p-3 bg-brand-light rounded-md">
