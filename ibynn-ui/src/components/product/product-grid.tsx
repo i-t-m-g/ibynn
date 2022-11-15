@@ -38,7 +38,6 @@ export const ProductGrid: FC<ProductGridProps> = ({ className = '' }) => {
 
   useEffect(() => {
     setIsLoading(data?.shopping_results?.length < 1);
-    console.log(data)
   }, [data]);
 
   useEffect(() => {
@@ -68,17 +67,14 @@ export const ProductGrid: FC<ProductGridProps> = ({ className = '' }) => {
             />
           ))
         ) : (
-          data?.shopping_results?.map((page, index) => {
-            // return page?.data?.map((product: Product) => (
-            if (page) {
+          data?.shopping_results?.map((product, index) => {
+            if (product) {
               return (
-                <ProductCard key={`product--key-${index}`} product={page} />
+                <ProductCard key={`product--key-${index}`} product={product} />
               );
             }
-            // ));
           })
         )}
-        {/* end of error state */}
       </div>
     </>
   );
