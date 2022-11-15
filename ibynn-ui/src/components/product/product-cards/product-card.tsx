@@ -1,24 +1,13 @@
 import cn from 'classnames';
 import Image from '@components/ui/image';
 import usePrice from '@framework/product/use-price';
-import { Product } from '@framework/types';
 import { useModalAction } from '@components/common/modal/modal.context';
-import useWindowSize from '@utils/use-window-size';
-import PlusIcon from '@components/icons/plus-icon';
-import { useCart } from '@contexts/cart/cart.context';
-// import { AddToCart } from '@components/product/add-to-cart';
 import { useTranslation } from 'next-i18next';
 import { productPlaceholder } from '@assets/placeholders';
 import dynamic from 'next/dynamic';
 import {
-  Result,
   ShoppingResult,
 } from 'src/framework/ibynn-api/entities/product';
-import { useEffect } from 'react';
-import Link from 'next/link';
-const AddToCart = dynamic(() => import('@components/product/add-to-cart'), {
-  ssr: false,
-});
 
 interface ProductProps {
   product: ShoppingResult;
@@ -27,50 +16,32 @@ interface ProductProps {
 
 const ProductCard: React.FC<ProductProps> = ({ product, className }) => {
   const { title, thumbnail, position, link, icon } = product ?? {};
-  const product_type = '';
-  // const { name, image, unit, product_type } = product ?? {};
   const { openModal } = useModalAction();
-  const { t } = useTranslation('common');
-  const { price, basePrice, discount } = usePrice({
-    amount: product?.price,
-    // baseAmount: product?.price,
-    currencyCode: 'USD',
-  });
-
-  function handlePopupView() {
+  
+  const handlePopupView = () => {
     openModal('PRODUCT_VIEW', product);
   }
+
   return (
-    <div>
+    <div onClick={handlePopupView}>
       <article
         style={{height: '275px'}}
         className={cn(
-          'flex flex-col justify-between group overflow-hidden rounded-md cursor-pointer transition-all duration-300 shadow-card hover:shadow-cardHover',
+          'flex flex-col justify-between group overflow-hidden rounded-md transition-all duration-300 shadow-card hover:shadow-cardHover',
           className
         )}
-        onClick={handlePopupView}
         title={title}
       >
         <div className="">
-          <div className="flex place-content-center overflow-hidden max-w-[230px] mx-auto">
+          <div className="flex place-content-center cursor-pointer overflow-hidden max-w-[230px] mx-auto">
             <Image
-              src={thumbnail ?? productPlaceholder}
-              alt={title || 'Product Image'}
+              src={product.thumbnail ?? productPlaceholder}
+              alt={product.title || 'Product Image'}
               width={92}
               height={92}
               quality={92}
               className="object-cover z-10 bg-fill-thumbnail"
             />
-          </div>
-          <div className="w-full h-full absolute top-0 pt-2.5 md:pt-3.5 px-3 md:px-4 lg:px-[18px] z-10 -mx-0.5 sm:-mx-1">
-            {discount && (
-              <span className="text-[11px] md:text-xs font-bold text-brand-light uppercase inline-block bg-brand rounded-full px-2.5 pt-1 pb-[3px] mx-0.5 sm:mx-1">
-                {t('text-on-sale')}
-              </span>
-            )}
-            <div className="block product-count-button-position">
-              {/* <RenderPopupOrAddToCart data={product} /> */}
-            </div>
           </div>
         </div>
 
@@ -82,8 +53,8 @@ const ProductCard: React.FC<ProductProps> = ({ product, className }) => {
             <span className="text-sm font-medium md:text-15px ml-2">
               {product.unit_price_displayed}
             </span>
-            <h2 className="text-brand-dark text-13px sm:text-sm lg:text-15px leading-5 sm:leading-6 mb-1.5">
-              {title}
+            <h2 className="text-brand-dark cursor-pointer text-13px sm:text-sm lg:text-15px leading-5 sm:leading-6 mb-1.5">
+              {product.title}
             </h2>
           </div>
 
