@@ -24,17 +24,14 @@ const CollectionCard: React.FC<Props> = ({
   href,
 }) => {
   const { image, title, description } = collection;
-  const { t } = useTranslation('common');
   return (
     <Link
       href={href}
       className="flex flex-col overflow-hidden rounded-md group shadow-card "
-      target={''}
-      rel={''}
     >
       <Image
         src={image ?? collectionPlaceholder}
-        alt={t(title) || t('text-card-thumbnail')}
+        alt={title || 'text-card-thumbnail'}
         width={imgWidth}
         height={imgHeight}
         className="object-cover transition duration-300 ease-in-out transform bg-fill-thumbnail group-hover:opacity-90 group-hover:scale-105"
@@ -44,10 +41,10 @@ const CollectionCard: React.FC<Props> = ({
           variant="title"
           className="mb-1 lg:mb-1.5 truncate group-hover:text-brand"
         >
-          {t(title)}
+          {title}
         </Heading>
         <Text variant="medium" className="truncate">
-          {t(`${description}`)}
+          {description}
         </Text>
       </div>
     </Link>

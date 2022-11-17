@@ -99,10 +99,6 @@ export default function Home() {
         <Element name="grid" className="flex mb-11 md:mb-14 xl:mb-16 pb-2.5">
           <CategoryDropdownSidebar className="shrink-0 ltr:pr-8 rtl:pl-8 hidden lg:block w-80 xl:w-[370px] lg:sticky lg:top-20" />
           <div className="w-full minimal-main-content">
-            <NewDiscountBanner
-              data={bannerDiscount}
-              className="mb-16 sm:mb-18 "
-            />
             <CollectionGrid headingPosition="center" />
             {data?.categories.data.map((cat) => {
               return (
