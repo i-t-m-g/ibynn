@@ -80,11 +80,6 @@ export const findSorters = (arr, sort_by, inEach) => {
 
 export const sortArr = (arr) => {
   let sortedData = arr.shopping_results.sort((a, b) => {
-    if (a.title) {
-      if (a.title.length > 75) {
-        a.title = a.title.substring(0, 75) + "...";
-      }
-    }
 
     if (a.extracted_price && b.extracted_price)
       return b.extracted_price - a.extracted_price;
@@ -128,7 +123,7 @@ export async function getProductPage(product_id, sort_by, min_price) {
     sortedData = response;
 
     sortedData.sellers_results.online_sellers = response.sellers_results.online_sellers.sort((a, b) => 
-      parseFloat(a.total_price.substring(1)) - parseFloat(b.total_price.substring(1)));
+      parseFloat(a.base_price.substring(1)) - parseFloat(b.base_price.substring(1)));
 
     return sortedData;
   } catch (error) {

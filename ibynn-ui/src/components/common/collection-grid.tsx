@@ -5,6 +5,7 @@ import useWindowSize from '@utils/use-window-size';
 import Carousel from '@components/ui/carousel/carousel';
 import { SwiperSlide } from '@components/ui/carousel/slider';
 import { ROUTES } from '@utils/routes';
+import { useEffect, useState } from 'react';
 
 const data = [
   {
@@ -62,6 +63,14 @@ const CollectionGrid: React.FC<Props> = ({
   headingPosition = 'left',
 }) => {
   const { width } = useWindowSize();
+  const [data, setData] = useState<any[]>([]);
+
+  useEffect(() => {
+    fetch(`${process.env.NEXT_PUBLIC_REST_API_ENDPOINT}/json/collections`)
+      .then(res => res.json())
+      .then(data => setData(data.collections));
+  }, [])
+
   return (
     <div className={className}>
       <Container>
@@ -71,16 +80,8 @@ const CollectionGrid: React.FC<Props> = ({
           headingPosition={headingPosition}
         />
         {width! < 1536 ? (
-          <Carousel
-            breakpoints={breakpoints}
-            autoplay={{ delay: 4000 }}
-            prevButtonClassName="ltr:-left-2.5 rtl:-right-2.5 -top-14"
-            nextButtonClassName="ltr:-right-2.5 rtl:-left-2.5 -top-14"
-            className="-mx-1.5 md:-mx-2 xl:-mx-2.5 -my-4"
-            prevActivateId="collection-carousel-button-prev"
-            nextActivateId="collection-carousel-button-next"
-          >
-            {data?.map((item) => (
+          <div>
+            {data.length > 0 && data?.map((item) => (
               <SwiperSlide
                 key={`collection-key-${item.id}`}
                 className="px-1.5 md:px-2 xl:px-2.5 py-4"
@@ -92,10 +93,10 @@ const CollectionGrid: React.FC<Props> = ({
                 />
               </SwiperSlide>
             ))}
-          </Carousel>
+          </div>
         ) : (
           <div className="gap-5 2xl:grid 2xl:grid-cols-4 3xl:gap-7">
-            {data?.map((item) => (
+            {data.length > 0 && data.map((item) => (
               <CollectionCard
                 key={item.id}
                 collection={item}
