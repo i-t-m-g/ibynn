@@ -34,7 +34,7 @@ const SectionHeader: React.FC<Props> = ({
       </Heading>
       {sectionSubHeading && headingPosition === 'center' && (
         <Text variant="medium" className="pb-0.5 mt-1.5 lg:mt-2.5 xl:mt-3">
-          {t(sectionSubHeading)}
+          We have the best items at the cheapest prices
         </Text>
       )}
     </div>

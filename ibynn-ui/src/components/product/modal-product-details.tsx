@@ -8,7 +8,7 @@ const OrderItemCard: React.FC<any> = ({ product }) => {
           {product.name}
         </a>
       </td>
-      <td className="p-4">{product.total_price}</td>
+      <td className="p-4">{product.base_price}</td>
     </tr>
   );
 };
