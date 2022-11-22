@@ -1,32 +1,32 @@
 {
-    "collections": [
-        {
-            "id": 1,
-            "slug": "",
-            "image": "/assets/images/collection/1.png",
-            "title": "Cosmetics",
-            "description": "Skin moisturizers, perfumes, lipsticks, fingernail polishes, eye and facial makeup preparations, shampoos"
-        },
-        {
-            "id": 2,
-            "slug": "",
-            "image": "/assets/images/collection/2.png",
-            "title": "Home Appliances",
-            "description": "Air conditioners, dishwashers, clothes dryers, drying cabinets, freezers, refrigerators, kitchen stoves, water heaters, washing machines, trash compactors, microwave ovens, and induction cookers"
-        },
-        {
-            "id": 3,
-            "slug": "",
-            "image": "/assets/images/collection/3.png",
-            "title": "Electronics",
-            "description": "Computers, mobile devices, and smart televisions"
-        },
-        {
-            "id": 4,
-            "slug": "",
-            "image": "/assets/images/collection/4.png",
-            "title": "Office Supplies",
-            "description": "Staples, paper, ink, pen and pencils, paper clips, binders, file folders, and markers"
-        }
-    ]
+  "collections": [
+    {
+      "id": 1,
+      "slug": "cosmetics",
+      "image": "/assets/images/collection/cosmetics.png",
+      "title": "Cosmetics",
+      "description": "Skin moisturizers, perfumes, lipsticks, fingernail polishes, eye and facial makeup preparations, shampoos"
+    },
+    {
+      "id": 2,
+      "slug": "",
+      "image": "/assets/images/collection/2.png",
+      "title": "Home Appliances",
+      "description": "Air conditioners, dishwashers, clothes dryers, drying cabinets, freezers, refrigerators, kitchen stoves, water heaters, washing machines, trash compactors, microwave ovens, and induction cookers"
+    },
+    {
+      "id": 3,
+      "slug": "",
+      "image": "/assets/images/collection/3.png",
+      "title": "Electronics",
+      "description": "Computers, mobile devices, and smart televisions"
+    },
+    {
+      "id": 4,
+      "slug": "",
+      "image": "/assets/images/collection/4.png",
+      "title": "Office Supplies",
+      "description": "Staples, paper, ink, pen and pencils, paper clips, binders, file folders, and markers"
+    }
+  ]
 }

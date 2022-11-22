@@ -1,5 +1,6 @@
 import { useTranslation } from 'next-i18next';
 import { Attachment } from '@framework/types';
+import { useRouter } from 'next/router';
 
 interface HeroSectionProps {
   backgroundThumbnail?: Attachment;
@@ -8,10 +9,15 @@ interface HeroSectionProps {
 }
 
 const BundleHeroSection: React.FC<HeroSectionProps> = ({
-  backgroundThumbnail = '/assets/images/bundle/attachment/fruits-juice.png',
   heroTitle = 'text-fruits-juice-item',
   heroDescription = 'text-fruits-juice-description',
+  backgroundThumbnail = `/assets/images/bundle/collection/cosmetics.png`,
 }) => {
+  const router = useRouter();
+  const { slug } = router.query;
+
+  console.log(backgroundThumbnail);
+
   const { t } = useTranslation('common');
   return (
     <div
