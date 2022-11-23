@@ -121,10 +121,15 @@ export async function getProductPage(product_id, sort_by, min_price) {
     const url = productPageUrl(product_id, "");
     const { data: response } = await axios.get(url);
     sortedData = response;
-
+    
+    response.sellers_results.online_sellers = response.sellers_results.online_sellers.filter((v, i, arr) => {
+      return i === arr.findIndex((t) => (
+        t.name === v.name
+      ))
+    });
+    
     sortedData.sellers_results.online_sellers = response.sellers_results.online_sellers.sort((a, b) => 
       parseFloat(a.base_price.substring(1)) - parseFloat(b.base_price.substring(1)));
-
     return sortedData;
   } catch (error) {
     return error;

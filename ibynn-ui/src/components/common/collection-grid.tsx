@@ -2,7 +2,6 @@ import CollectionCard from '@components/cards/collection-card';
 import SectionHeader from '@components/common/section-header';
 import Container from '@components/ui/container';
 import useWindowSize from '@utils/use-window-size';
-import Carousel from '@components/ui/carousel/carousel';
 import { SwiperSlide } from '@components/ui/carousel/slider';
 import { ROUTES } from '@utils/routes';
 import { useEffect, useState } from 'react';
@@ -69,7 +68,7 @@ const CollectionGrid: React.FC<Props> = ({
     fetch(`${process.env.NEXT_PUBLIC_REST_API_ENDPOINT}/json/collections`)
       .then(res => res.json())
       .then(data => setData(data.collections));
-  }, [])
+  }, []);
 
   return (
     <div className={className}>
@@ -89,7 +88,7 @@ const CollectionGrid: React.FC<Props> = ({
                 <CollectionCard
                   key={item.id}
                   collection={item}
-                  href={`${ROUTES.BUNDLE}/${item.slug}`}
+                  href={`${ROUTES.BUNDLE}/${item.id}`}
                 />
               </SwiperSlide>
             ))}
@@ -100,7 +99,7 @@ const CollectionGrid: React.FC<Props> = ({
               <CollectionCard
                 key={item.id}
                 collection={item}
-                href={`${ROUTES.BUNDLE}/${item.slug}`}
+                href={`${ROUTES.BUNDLE}/${item.id}`}
               />
             ))}
           </div>

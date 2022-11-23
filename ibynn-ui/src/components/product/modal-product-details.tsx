@@ -8,7 +8,13 @@ const OrderItemCard: React.FC<any> = ({ product }) => {
           {product.name}
         </a>
       </td>
-      <td className="p-4">{product.base_price}</td>
+      <td className="p-4">
+        <p className="text-xs m-1 text-green-700"><span className="font-bold">Item Price:</span> {product.base_price}</p>
+        <p className="text-xs m-1"><span className="font-bold">Shipping:</span> {product.additional_price.shipping}</p>
+        <p className="text-xs m-1"><span className="font-bold">Tax:</span> {product.additional_price.tax}</p>
+        <p className="text-xs m-1"><span className="font-bold">Total Price:</span> {product.total_price}</p>
+      
+      </td>
     </tr>
   );
 };
