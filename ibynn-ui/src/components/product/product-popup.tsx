@@ -33,7 +33,7 @@ export default function ProductPopup() {
               {
                 <div className="flex items-center justify-center w-auto">
                   <img
-                    style={{ width: '250px' }}
+                    style={{ width: '150px' }}
                     src={data.thumbnail}
                     alt={title}
                   />
