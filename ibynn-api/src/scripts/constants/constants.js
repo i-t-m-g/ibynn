@@ -12,6 +12,8 @@ export const storeImages = {
     "https://www.pngkit.com/png/detail/664-6640520_home-depot-logo.png",
   "PC Richard & Son":
     "https://www.pngkit.com/png/detail/530-5300166_pc-richard-son-pc-richards-and-sons-logo.png",
+  "Bed Bath & Beyond":
+    "https://www.pngkit.com/png/full/897-8976060_bed-bath-and-beyond.png",
 };
 
 export const storeNames = [
@@ -22,6 +24,7 @@ export const storeNames = [
   "Best Buy",
   "Home Depot",
   "PC Richard & Son",
+  "Bed Bath & Beyond",
 ];
 
 export const amounts = ["count", "ct", "pk", "pack", "pieces", "pcs", "sheet"];
