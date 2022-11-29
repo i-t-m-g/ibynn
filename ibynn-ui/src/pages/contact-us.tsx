@@ -12,11 +12,7 @@ import Seo from '@components/seo/seo';
 export default function ContactUsPage() {
   return (
     <>
-      <Seo
-        title="Contact Us"
-        description="Fastest E-commerce template built with React, NextJS, TypeScript, React-Query and Tailwind CSS."
-        path="contact-us"
-      />
+      <Seo title="Contact Us" description="" path="contact-us" />
       <PageContactHeroSection />
       <Container>
         <div className="max-w-[1420px] mx-auto mb-12 lg:mb-14 xl:mb-16">
@@ -31,16 +27,6 @@ export default function ContactUsPage() {
         </div>
         <ContactInformation />
       </Container>
-      <div className="mt-12 md:mt-16 xl:mt-20 2xl:mt-24 bg-fill-two relative h-[420px]">
-        <Map
-          lat={1.295831}
-          lng={103.76261}
-          height={'420px'}
-          zoom={15}
-          showInfoWindow={true}
-        />
-      </div>
-      {/* <{/* <DownloadApps /> */}
     </>
   );
 }

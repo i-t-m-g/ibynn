@@ -5,32 +5,35 @@ import Image from '@components/ui/image';
 import Heading from '@components/ui/heading';
 import Link from '@components/ui/link';
 
-const supportData = [
-  {
-    id: 1,
-    slug: '/',
-    name: 'Jessica Twain',
-    thumbnail: '/assets/images/support/1.png',
-  },
-  {
-    id: 1,
-    slug: '/',
-    name: 'Jason',
-    thumbnail: '/assets/images/support/2.png',
-  },
-  {
-    id: 1,
-    slug: '/',
-    name: 'Jessica',
-    thumbnail: '/assets/images/support/3.png',
-  },
-  {
-    id: 1,
-    slug: '/',
-    name: 'Hayden',
-    thumbnail: '/assets/images/support/4.png',
-  },
-];
+//                                Data for Customer Support Agents
+
+//
+// const supportData = [
+// {
+//   id: 1,
+//   slug: '/',
+//   name: 'Jessica Twain',
+//   thumbnail: '/assets/images/support/1.png',
+// },
+// {
+//   id: 1,
+//   slug: '/',
+//   name: 'Jason',
+//   thumbnail: '/assets/images/support/2.png',
+// },
+// {
+//   id: 1,
+//   slug: '/',
+//   name: 'Jessica',
+//   thumbnail: '/assets/images/support/3.png',
+// },
+// {
+//   id: 1,
+//   slug: '/',
+//   name: 'Hayden',
+//   thumbnail: '/assets/images/support/4.png',
+// },
+// ];
 
 interface Props {
   image?: HTMLImageElement;
@@ -44,12 +47,17 @@ const ContactSupport: FC<Props> = () => {
         {t('contact-form-info-title')}
       </Heading>
       <Text className="xl:leading-8">{t('contact-form-info-content')}</Text>
-      <div className="flex mt-5 -mx-1">
+
+      {/* support agents pictures displayed and that data comes from right on top of this file */}
+      {/* <div className="flex mt-5 -mx-1">
         {supportData.map((item, idx) => (
           <Link
             href={item.slug}
             key={idx}
-            className="mx-1 transition-all shrink-0 hover:opacity-90" target={''} rel={''}          >
+            className="mx-1 transition-all shrink-0 hover:opacity-90"
+            target={''}
+            rel={''}
+          >
             <Image
               src={item.thumbnail}
               alt={item.name}
@@ -58,7 +66,7 @@ const ContactSupport: FC<Props> = () => {
             />
           </Link>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };
