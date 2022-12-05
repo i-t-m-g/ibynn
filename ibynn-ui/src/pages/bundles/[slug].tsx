@@ -17,6 +17,7 @@ import CategoryDropdownSidebar from '@components/category/category-dropdown-side
 import { Element } from 'react-scroll';
 import CategoryGridList from '@components/common/category-grid-list';
 import { useRouter } from 'next/router';
+import useWindowSize from '@utils/use-window-size';
 
 export default function Bundles() {
   const [dropdownData, setDropdownData] = useState<any>([]);
@@ -27,17 +28,18 @@ export default function Bundles() {
   const { slug } = router.query;
   const catId = typeof slug === 'string' ? parseInt(slug) - 1 : '';
   const backgroundThumbnail = `/assets/images/collection/${slug}.png`;
+  const windowSize = useWindowSize();
+  const cols = windowSize.width < 900 ? '3' : '6';
   let inputEl = useRef(null);
-
 
   useEffect(() => {
     fetch(`${process.env.NEXT_PUBLIC_REST_API_ENDPOINT}/json/collections`)
-      .then(res => res.json())
-      .then(data => setHeroData(data.collections[catId]));
-    
+      .then((res) => res.json())
+      .then((data) => setHeroData(data.collections[catId]));
+
     fetch(`${process.env.NEXT_PUBLIC_REST_API_ENDPOINT}/json/categories`)
-      .then(res => res.json())
-      .then(({data}) => setCategoryData(data[heroData.cat_index]));
+      .then((res) => res.json())
+      .then(({ data }) => setCategoryData(data[heroData.cat_index]));
   }, [catId, heroData.cat_index]);
 
   const breakpoints = {
@@ -68,66 +70,71 @@ export default function Bundles() {
   };
 
   const getCategoryGridList = () => {
-      return (
-        <CategoryGridList
-          setDropdownData={setDropdownData}
-          data={dropdownData.children}
-        />
-      );
+    return (
+      <CategoryGridList
+        setDropdownData={setDropdownData}
+        data={dropdownData.children}
+      />
+    );
   };
 
   const handleListCard = (e: any) => {
-    console.log(inputEl)
-  }
+    console.log(inputEl);
+  };
 
   const getCategoryRows = () => {
     const catRows = [];
     let index = 0;
-    
-    for (let i = 0; i < categoryData.children.length; i+=3) {
+
+    for (let i = 0; i < categoryData.children.length; i += parseInt(cols)) {
       catRows.push(
-      <div className="grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
-        {categoryData.children.slice(i,i+3).map((category,j) => {
-          return (
-            <>
-              <CategoryListCard
-                row={i}
-                setActiveRow={setActiveRow}
-                categoryData={categoryData}
-                setDropdownData={setDropdownData}
-                dropdownData={dropdownData?.children}
-                key={category.name}
-                category={category}
-                href={{
-                  query: { category: category.slug },
-                }}
-                className="rounded-md text-brand-light shadow-category"
-              />
-            </>
-          );
-        })}
-        {dropdownData?.children?.length > 0 && 
-          <CategoryGridList
-            row={i}
-            activeRow={activeRow}
-            className={`col-span-full`}
-            setDropdownData={setDropdownData}
-            data={dropdownData.children}
-        />}
-      </div>)
+        <div className={`grid grid-cols-${cols} gap-4`}>
+          {categoryData.children.slice(i, i + cols).map((category, j) => {
+            return (
+              <>
+                <CategoryListCard
+                  row={i}
+                  setActiveRow={setActiveRow}
+                  categoryData={categoryData}
+                  setDropdownData={setDropdownData}
+                  dropdownData={dropdownData?.children}
+                  key={category.name}
+                  category={category}
+                  href={{
+                    query: { category: category.slug },
+                  }}
+                  className="rounded-md text-brand-light shadow-category"
+                />
+              </>
+            );
+          })}
+          {dropdownData?.children?.length > 0 && (
+            <CategoryGridList
+              row={i}
+              activeRow={activeRow}
+              className={`col-span-full`}
+              setDropdownData={setDropdownData}
+              data={dropdownData.children}
+            />
+          )}
+        </div>
+      );
       index++;
     }
 
     return catRows;
-  }
+  };
 
   return (
     <>
-      <BundleHeroSection heroData={heroData} backgroundThumbnail={backgroundThumbnail} />
+      <BundleHeroSection
+        heroData={heroData}
+        backgroundThumbnail={backgroundThumbnail}
+      />
       <Container>
-          {/* <CategoryDropdownSidebar className="shrink-0 ltr:pr-8 rtl:pl-8 hidden lg:block w-80 xl:w-[370px] lg:sticky lg:top-20" /> */}
-                <div >
-                  {/* {categoryData && categoryData?.children.map((category) => {
+        {/* <CategoryDropdownSidebar className="shrink-0 ltr:pr-8 rtl:pl-8 hidden lg:block w-80 xl:w-[370px] lg:sticky lg:top-20" /> */}
+        <div>
+          {/* {categoryData && categoryData?.children.map((category) => {
                           return (
                             <>
                               <CategoryListCard
@@ -143,9 +150,8 @@ export default function Bundles() {
                             </>
                           );
                     })} */}
-                  {categoryData?.children?.length > 0 && getCategoryRows()}
-
-                </div>
+          {categoryData?.children?.length > 0 && getCategoryRows()}
+        </div>
       </Container>
     </>
   );
