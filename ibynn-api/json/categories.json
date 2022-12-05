@@ -3571,7 +3571,7 @@
       ]
     },
     {
-      "id": 1,
+      "id": 2,
       "name": "Home Appliances",
       "slug": "/search?q=home+appliances&sortBy=amount",
       "image": {
@@ -3915,7 +3915,7 @@
       ]
     },
     {
-      "id": 1,
+      "id": 3,
       "slug": "/search?q=Electronics&sortBy=amount",
       "name": "Electronics",
       "image": {
@@ -3953,7 +3953,7 @@
           "children": [
             {
               "id": 1,
-              "parent": "Audio Accessories",
+              "parent": "Audio",
               "slug": "/search?q=Headphones & Headsets&sortBy=amount",
               "name": "Headphones & Headsets",
               "image": {
@@ -3972,7 +3972,7 @@
             },
             {
               "id": 1,
-              "parent": "Audio Accessories",
+              "parent": "Audio",
               "slug": "/search?q=Microphones&sortBy=amount",
               "name": "Microphones",
               "image": {
@@ -3992,7 +3992,7 @@
 
             {
               "id": 1,
-              "parent": "Audio Accessories",
+              "parent": "Audio",
               "slug": "/search?q=Speakers&sortBy=amount",
               "name": "Speakers",
               "image": {
@@ -4011,7 +4011,7 @@
             },
             {
               "id": 1,
-              "parent": "Audio Accessories",
+              "parent": "Audio",
               "slug": "/search?q=Audio Players & Recorders&sortBy=amount",
               "name": "Audio Players & Recorders",
               "image": {
@@ -4030,7 +4030,7 @@
             },
             {
               "id": 1,
-              "parent": "Audio Accessories",
+              "parent": "Audio",
               "slug": "/search?q=Boomboxes&sortBy=amount",
               "name": "Boomboxes",
               "image": {
@@ -4049,7 +4049,7 @@
             },
             {
               "id": 1,
-              "parent": "Audio Accessories",
+              "parent": "Audio",
               "slug": "/search?q=CD Players & Recorders&sortBy=amount",
               "name": "CD Players & Recorders",
               "image": {
@@ -4438,7 +4438,7 @@
       ]
     },
     {
-      "id": 1,
+      "id": 4,
       "slug": "/search?q=Office Supplies&sortBy=amount",
       "name": "Office Supplies",
       "image": {
@@ -5049,7 +5049,7 @@
       ]
     },
     {
-      "id": 1,
+      "id": 5,
       "name": "Cosmetics",
       "parent": "Cosmetics",
       "slug": "/search?q=Cosmetics&sortBy=massVolume",
@@ -7132,7 +7132,7 @@
       ]
     },
     {
-      "id": 1,
+      "id": 6,
       "name": "Personal Care",
       "parent": "Personal Care",
       "slug": "/search?q=Personal Care&sortBy=amount",
@@ -7408,7 +7408,7 @@
       ]
     },
     {
-      "id": 1,
+      "id": 7,
       "slug": "/search?q=Health & Beauty&sortBy=amount",
       "name": "Health & Beauty",
       "image": {

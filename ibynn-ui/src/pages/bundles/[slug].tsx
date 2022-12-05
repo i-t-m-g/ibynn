@@ -12,16 +12,34 @@ import Carousel from '@components/ui/carousel/carousel';
 import { SwiperSlide } from 'swiper/react';
 import CategoryListCard from '@components/cards/category-list-card';
 import { useCategoriesQuery } from '@framework/category/get-all-categories';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import CategoryDropdownSidebar from '@components/category/category-dropdown-sidebar';
 import { Element } from 'react-scroll';
 import CategoryGridList from '@components/common/category-grid-list';
+import { useRouter } from 'next/router';
 
 export default function Bundles() {
-  const { data } = useCategoriesQuery({
-    limit: 100,
-  });
   const [dropdownData, setDropdownData] = useState<any>([]);
+  const [heroData, setHeroData] = useState<any>([]);
+  const [categoryData, setCategoryData] = useState<any>([]);
+  const [activeRow, setActiveRow] = useState<number>();
+  const router = useRouter();
+  const { slug } = router.query;
+  const catId = typeof slug === 'string' ? parseInt(slug) - 1 : '';
+  const backgroundThumbnail = `/assets/images/collection/${slug}.png`;
+  let inputEl = useRef(null);
+
+
+  useEffect(() => {
+    fetch(`${process.env.NEXT_PUBLIC_REST_API_ENDPOINT}/json/collections`)
+      .then(res => res.json())
+      .then(data => setHeroData(data.collections[catId]));
+    
+    fetch(`${process.env.NEXT_PUBLIC_REST_API_ENDPOINT}/json/categories`)
+      .then(res => res.json())
+      .then(({data}) => setCategoryData(data[heroData.cat_index]));
+  }, [catId, heroData.cat_index]);
+
   const breakpoints = {
     '1536': {
       slidesPerView: 3.5,
@@ -49,71 +67,85 @@ export default function Bundles() {
     },
   };
 
-  const getCategoryGridList = (category: any) => {
-    if (category.name === dropdownData.parent) {
+  const getCategoryGridList = () => {
       return (
         <CategoryGridList
           setDropdownData={setDropdownData}
           data={dropdownData.children}
         />
       );
-    }
   };
+
+  const handleListCard = (e: any) => {
+    console.log(inputEl)
+  }
+
+  const getCategoryRows = () => {
+    const catRows = [];
+    let index = 0;
+    
+    for (let i = 0; i < categoryData.children.length; i+=3) {
+      catRows.push(
+      <div className="grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
+        {categoryData.children.slice(i,i+3).map((category,j) => {
+          return (
+            <>
+              <CategoryListCard
+                row={i}
+                setActiveRow={setActiveRow}
+                categoryData={categoryData}
+                setDropdownData={setDropdownData}
+                dropdownData={dropdownData?.children}
+                key={category.name}
+                category={category}
+                href={{
+                  query: { category: category.slug },
+                }}
+                className="rounded-md text-brand-light shadow-category"
+              />
+            </>
+          );
+        })}
+        {dropdownData?.children?.length > 0 && 
+          <CategoryGridList
+            row={i}
+            activeRow={activeRow}
+            className={`col-span-full`}
+            setDropdownData={setDropdownData}
+            data={dropdownData.children}
+        />}
+      </div>)
+      index++;
+    }
+
+    return catRows;
+  }
 
   return (
     <>
-      <BundleHeroSection />
+      <BundleHeroSection heroData={heroData} backgroundThumbnail={backgroundThumbnail} />
       <Container>
-        <Element name="grid" className="flex mb-11 md:mb-14 xl:mb-16 pb-2.5">
-          <CategoryDropdownSidebar className="shrink-0 ltr:pr-8 rtl:pl-8 hidden lg:block w-80 xl:w-[370px] lg:sticky lg:top-20" />
-          <div className="w-full minimal-main-content">
-            {data?.categories.data.map((cat) => {
-              return (
-                <>
-                  <div key={cat.id}>
-                    <h2 className="font-extrabold text-2xl">{cat.name}</h2>
-                    <Carousel
-                      autoplay={false}
-                      freemode={true}
-                      breakpoints={breakpoints}
-                      // buttonSize={buttonSize}
-                      // prevActivateId="all-banner-carousel-button-prev"
-                      // nextActivateId="all-banner-carousel-button-next"
-                    >
-                      {cat.children &&
-                        cat.children.map((category) => {
+          {/* <CategoryDropdownSidebar className="shrink-0 ltr:pr-8 rtl:pl-8 hidden lg:block w-80 xl:w-[370px] lg:sticky lg:top-20" /> */}
+                <div >
+                  {/* {categoryData && categoryData?.children.map((category) => {
                           return (
                             <>
-                              <SwiperSlide
-                                key={`category--key-${category.name}`}
-                                className="p-1.5 md:p-2"
-                              >
-                                <CategoryListCard
-                                  // ref={gridListRef}
-                                  setDropdownData={setDropdownData}
-                                  dropdownData={dropdownData?.children}
-                                  key={category.name}
-                                  category={category}
-                                  href={{
-                                    // pathname: ROUTES.SEARCH,
-                                    query: { category: category.slug },
-                                  }}
-                                  className="rounded-md text-brand-light shadow-category"
-                                />
-                              </SwiperSlide>
+                              <CategoryListCard
+                                setDropdownData={setDropdownData}
+                                dropdownData={dropdownData?.children}
+                                key={category.name}
+                                category={category}
+                                href={{
+                                  query: { category: category.slug },
+                                }}
+                                className="rounded-md text-brand-light shadow-category"
+                              />
                             </>
                           );
-                        })}
-                      {dropdownData?.children?.length > 0 &&
-                        dropdownData.name &&
-                        getCategoryGridList(cat)}
-                    </Carousel>
-                  </div>
-                </>
-              );
-            })}
-          </div>
-        </Element>
+                    })} */}
+                  {categoryData?.children?.length > 0 && getCategoryRows()}
+
+                </div>
       </Container>
     </>
   );

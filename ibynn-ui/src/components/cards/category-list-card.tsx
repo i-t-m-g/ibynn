@@ -26,17 +26,15 @@ interface Props {
   ref?: any;
 }
 
-const CategoryListCard: React.FC<Props> = ({
+const CategoryListCard: React.FC<any> = ({
   category,
   setDropdownData,
   dropdownData,
-  className,
-  href,
-  ref,
-  variant = 'default',
+  row,
+  categoryData,
+  setActiveRow
 }) => {
   const { icon } = category;
-  const { t } = useTranslation('common');
   const router = useRouter();
   const [isOpen, setOpen] = useState(false);
   const { closeModal } = useModalAction();
@@ -47,15 +45,15 @@ const CategoryListCard: React.FC<Props> = ({
   }
 
   
-  function onClick(e: any) {
-    if (Array.isArray(category.children) && category.children.length > 1) {
+  function onClick() {
+    setActiveRow(row);
+    if (Array.isArray(category.children) && category.children.length > 0) {
       if (dropdownData?.length > 0) {
-        console.log(dropdownData[0].parent)
         if (dropdownData[0].parent === category.name) {
-          setDropdownData([])
+          setDropdownData([]);
         }
         else {
-          setDropdownData(category)
+          setDropdownData(category);
         }
       }
       else {
@@ -74,10 +72,9 @@ const CategoryListCard: React.FC<Props> = ({
   }
 
   return (
-    <>
       <div
-        className="flex items-center justify-around flex-col shadow-xl shadow-blue-300 border-solid border-2 border-blue-900 rounded-lg"
         onClick={onClick}
+        className="flex items-center justify-around flex-col shadow-xl shadow-blue-300 border-solid border-2 border-blue-900 rounded-lg"
         style={{
           width: '100%',
           minHeight: '160px',
@@ -86,26 +83,19 @@ const CategoryListCard: React.FC<Props> = ({
           padding: '10px',
         }}
       >
-        <span ref={ref} className="text-sm text-brand-dark capitalize">{category.name}</span>
-        {/* <div
-          className={cn('inline-flex shrink-0 w-9 h-9', {
-            '2xl:w-12 3xl:w-auto 2xl:h-12 3xl:h-auto': variant === 'default',
-          })}
-        > */}
+        <span className="text-sm text-brand-dark capitalize">{category.name}</span>
         <Image
           src={icon ?? '/assets/placeholder/category-small.svg'}
           alt={category.name}
           width={120}
           height={120}
         />
-        {/* </div> */}
         {category.children && category.children.length > 0 && (
           <div className="flex items-center transition-all transform group-hover:translate-x-1">
             <IoIosArrowDown className="text-lg text-brand-dark" />
           </div>
         )}
       </div>
-    </>
   );
 };
 

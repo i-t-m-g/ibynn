@@ -100,51 +100,6 @@ export default function Home() {
           <CategoryDropdownSidebar className="shrink-0 ltr:pr-8 rtl:pl-8 hidden lg:block w-80 xl:w-[370px] lg:sticky lg:top-20" />
           <div className="w-full minimal-main-content">
             <CollectionGrid headingPosition="center" />
-            {data?.categories.data.map((cat) => {
-              return (
-                <>
-                  <div key={cat.id}>
-                    <h2 className="font-extrabold text-2xl">{cat.name}</h2>
-                    <Carousel
-                      autoplay={false}
-                      freemode={true}
-                      breakpoints={breakpoints}
-                      // buttonSize={buttonSize}
-                      // prevActivateId="all-banner-carousel-button-prev"
-                      // nextActivateId="all-banner-carousel-button-next"
-                    >
-                      {cat.children &&
-                        cat.children.map((category) => {
-                          return (
-                            <>
-                              <SwiperSlide
-                                key={`category--key-${category.name}`}
-                                className="p-1.5 md:p-2"
-                              >
-                                <CategoryListCard
-                                  // ref={gridListRef}
-                                  setDropdownData={setDropdownData}
-                                  dropdownData={dropdownData?.children}
-                                  key={category.name}
-                                  category={category}
-                                  href={{
-                                    // pathname: ROUTES.SEARCH,
-                                    query: { category: category.slug },
-                                  }}
-                                  className="rounded-md text-brand-light shadow-category"
-                                />
-                              </SwiperSlide>
-                            </>
-                          );
-                        })}
-                      {dropdownData?.children?.length > 0 &&
-                        dropdownData.name &&
-                        getCategoryGridList(cat)}
-                    </Carousel>
-                  </div>
-                </>
-              );
-            })}
           </div>
         </Element>
       </Container>
