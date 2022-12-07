@@ -86,10 +86,10 @@ export default function Bundles() {
     const catRows = [];
     let index = 0;
 
-    for (let i = 0; i < categoryData.children.length; i += parseInt(cols)) {
+    for (let i = 0; i < categoryData.children.length; i+=3) {
       catRows.push(
-        <div className={`grid grid-cols-${cols} gap-4`}>
-          {categoryData.children.slice(i, i + cols).map((category) => {
+        <div className={`grid grid-cols-3 gap-4`}>
+          {categoryData.children.slice(i, i + 3).map((category) => {
             return (
               <>
                 <CategoryListCard
