@@ -6,6 +6,7 @@ import { homeFourHeroBanner as heroBanner } from '@framework/static/banner';
 import HeroBannerCard from '@components/hero/hero-banner-card';
 import { GetStaticProps } from 'next';
 import { Element } from 'react-scroll';
+import BestSellerGroceryProductFeed from '@components/product/feeds/best-seller-grocery-product-feed';
 import AllProductFeed from '@components/product/feeds/all-products-feed';
 import BannerAllCarousel from '@components/common/banner-all-carousel';
 import { bannerDiscount } from '@framework/static/banner';
@@ -36,6 +37,7 @@ import Carousel from '@components/ui/carousel/carousel';
 import CategoryGridList from '@components/common/category-grid-list';
 import { categoryPlaceholder } from '@assets/placeholders';
 import CollectionGrid from '@components/common/collection-grid';
+import Steps from '@components/steps/steps';
 
 export default function Home() {
   const { data } = useCategoriesQuery({
@@ -99,52 +101,9 @@ export default function Home() {
         <Element name="grid" className="flex mb-11 md:mb-14 xl:mb-16 pb-2.5">
           <CategoryDropdownSidebar className="shrink-0 ltr:pr-8 rtl:pl-8 hidden lg:block w-80 xl:w-[370px] lg:sticky lg:top-20" />
           <div className="w-full minimal-main-content">
+            <Steps />
             <CollectionGrid headingPosition="center" />
-            {data?.categories.data.map((cat) => {
-              return (
-                <>
-                  <div key={cat.id}>
-                    <h2 className="font-extrabold text-2xl">{cat.name}</h2>
-                    <Carousel
-                      autoplay={false}
-                      freemode={true}
-                      breakpoints={breakpoints}
-                      // buttonSize={buttonSize}
-                      // prevActivateId="all-banner-carousel-button-prev"
-                      // nextActivateId="all-banner-carousel-button-next"
-                    >
-                      {cat.children &&
-                        cat.children.map((category) => {
-                          return (
-                            <>
-                              <SwiperSlide
-                                key={`category--key-${category.name}`}
-                                className="p-1.5 md:p-2"
-                              >
-                                <CategoryListCard
-                                  // ref={gridListRef}
-                                  setDropdownData={setDropdownData}
-                                  dropdownData={dropdownData?.children}
-                                  key={category.name}
-                                  category={category}
-                                  href={{
-                                    // pathname: ROUTES.SEARCH,
-                                    query: { category: category.slug },
-                                  }}
-                                  className="rounded-md text-brand-light shadow-category"
-                                />
-                              </SwiperSlide>
-                            </>
-                          );
-                        })}
-                      {dropdownData?.children?.length > 0 &&
-                        dropdownData.name &&
-                        getCategoryGridList(cat)}
-                    </Carousel>
-                  </div>
-                </>
-              );
-            })}
+            <BestSellerGroceryProductFeed className="mb-12 lg:mb-14 xl:mb-16 2xl:mb-20" />
           </div>
         </Element>
       </Container>

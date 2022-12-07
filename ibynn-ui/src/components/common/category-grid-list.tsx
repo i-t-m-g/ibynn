@@ -14,21 +14,26 @@ interface CategoriesProps {
   ref?: any;
 }
 
-const CategoryGridList: React.FC<CategoriesProps> = ({
+const CategoryGridList: React.FC<any> = ({
   className = '',
   limit,
   setDropdownData,
   ref,
-  data
+  data,
+  style,
+  row,
+  activeRow
 }) => {
   const { isLoading, error } = useCategoriesQuery({
     limit: limit,
   });
 
+
   return (
     <aside
+      style={style}
       className={cn(
-        'sticky top-22 h-full xl:block text-brand-light',
+        `sticky top-22 h-full xl:block text-brand-light ${row === activeRow ? '' : 'hidden'}`,
         className
       )}
     >

@@ -5,28 +5,32 @@
       "slug": "cosmetics",
       "image": "/assets/images/collection/1.png",
       "title": "Cosmetics",
-      "description": "Skin moisturizers, perfumes, lipsticks, fingernail polishes, eye and facial makeup preparations, shampoos"
+      "description": "Skin moisturizers, perfumes, lipsticks, fingernail polishes, eye and facial makeup preparations, shampoos",
+      "cat_index": 4
     },
     {
       "id": 2,
       "slug": "Home Appliances",
       "image": "/assets/images/collection/2.png",
       "title": "Home Appliances",
-      "description": "Air conditioners, dishwashers, clothes dryers, drying cabinets, freezers, refrigerators, kitchen stoves, water heaters, washing machines, trash compactors, microwave ovens, and induction cookers"
+      "description": "Air conditioners, dishwashers, clothes dryers, drying cabinets, freezers, refrigerators, kitchen stoves, water heaters, washing machines, trash compactors, microwave ovens, and induction cookers",
+      "cat_index": 1
     },
     {
       "id": 3,
       "slug": "Electronics",
       "image": "/assets/images/collection/3.png",
       "title": "Electronics",
-      "description": "Computers, mobile devices, and smart televisions"
+      "description": "Computers, mobile devices, and smart televisions",
+      "cat_index": 2
     },
     {
       "id": 4,
       "slug": "Office Supplies",
       "image": "/assets/images/collection/4.png",
       "title": "Office Supplies",
-      "description": "Staples, paper, ink, pen and pencils, paper clips, binders, file folders, and markers"
+      "description": "Staples, paper, ink, pen and pencils, paper clips, binders, file folders, and markers",
+      "cat_index": 3
     }
   ]
 }

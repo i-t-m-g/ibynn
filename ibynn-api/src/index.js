@@ -60,7 +60,7 @@ app.get("/shopping", caching, async (req, res) => {
       min_price
     );
     if (results.shopping_results) {
-      client.setEx(query, 172800, JSON.stringify(results));
+      client.setEx(query, 604800, JSON.stringify(results));
 
       res.send(results);
     } else {

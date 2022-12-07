@@ -26,15 +26,13 @@ const BannerCard: React.FC<BannerProps> = ({
 }) => {
   const { width } = useWindowSize();
   const { slug, title, image, name } = banner;
-  const selectedImage = getImage(width!, image);
+  const selectedImage = getImage(width, image);
   return (
-    <div className="w-50px h-40px">
+    <div className='mx-auto col-span-6'>
       <Link
         href={slug}
-        target="_blank"
-        rel="noreferrer"
         className={cn(
-          'h-28 group flex justify-center overflow-hidden',
+          'h-full group flex justify-center overflow-hidden',
           classNameInner
         )}
       >
