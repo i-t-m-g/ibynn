@@ -17,7 +17,7 @@ const BannerHeroGrid: React.FC<BannerProps> = ({
   const { width } = useWindowSize();
   return (
     <div className={`heightFull ${className}`}>
-      {width! < 480 ? (
+      {width < 480 ? (
         <Carousel
           prevActivateId="banner-carousel-button-prev"
           nextActivateId="banner-carousel-button-next"

@@ -6,6 +6,7 @@ import { homeFourHeroBanner as heroBanner } from '@framework/static/banner';
 import HeroBannerCard from '@components/hero/hero-banner-card';
 import { GetStaticProps } from 'next';
 import { Element } from 'react-scroll';
+import BestSellerGroceryProductFeed from '@components/product/feeds/best-seller-grocery-product-feed';
 import AllProductFeed from '@components/product/feeds/all-products-feed';
 import BannerAllCarousel from '@components/common/banner-all-carousel';
 import { bannerDiscount } from '@framework/static/banner';
@@ -36,6 +37,7 @@ import Carousel from '@components/ui/carousel/carousel';
 import CategoryGridList from '@components/common/category-grid-list';
 import { categoryPlaceholder } from '@assets/placeholders';
 import CollectionGrid from '@components/common/collection-grid';
+// import Steps from './../components/step/step';
 
 export default function Home() {
   const { data } = useCategoriesQuery({
@@ -100,6 +102,7 @@ export default function Home() {
           <CategoryDropdownSidebar className="shrink-0 ltr:pr-8 rtl:pl-8 hidden lg:block w-80 xl:w-[370px] lg:sticky lg:top-20" />
           <div className="w-full minimal-main-content">
             <CollectionGrid headingPosition="center" />
+            <BestSellerGroceryProductFeed className="mb-12 lg:mb-14 xl:mb-16 2xl:mb-20" />
           </div>
         </Element>
       </Container>

@@ -14,7 +14,7 @@ interface ProductProps {
   className?: string;
 }
 
-const ProductCard: React.FC<ProductProps> = ({ product, className }) => {
+const ProductCard: React.FC<any> = ({ product, className }) => {
   const { thumbnail, position, link, icon } = product ?? {};
   const { openModal } = useModalAction();
   let title = product.title;

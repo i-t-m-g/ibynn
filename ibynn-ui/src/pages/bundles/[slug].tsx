@@ -29,7 +29,7 @@ export default function Bundles() {
   const catId = typeof slug === 'string' ? parseInt(slug) - 1 : '';
   const backgroundThumbnail = `/assets/images/collection/${slug}.png`;
   const windowSize = useWindowSize();
-  const cols = windowSize.width < 900 ? '3' : '6';
+  const cols = windowSize.width < 900 ? '3' : '3';
   let inputEl = useRef(null);
 
   useEffect(() => {
@@ -89,7 +89,7 @@ export default function Bundles() {
     for (let i = 0; i < categoryData.children.length; i += parseInt(cols)) {
       catRows.push(
         <div className={`grid grid-cols-${cols} gap-4`}>
-          {categoryData.children.slice(i, i + cols).map((category, j) => {
+          {categoryData.children.slice(i, i + cols).map((category) => {
             return (
               <>
                 <CategoryListCard
