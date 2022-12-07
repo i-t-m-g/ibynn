@@ -295,10 +295,10 @@ export const homeFourHeroBanner = {
   searchBox: true,
   image: {
     mobile: {
-      url: '/assets/images/hero/banner-3.png',
+      url: '/assets/images/hero/IBYNN.png',
     },
     desktop: {
-      url: '/assets/images/hero/banner-3.png',
+      url: '/assets/images/hero/IBYNN.png',
     },
   },
 };
