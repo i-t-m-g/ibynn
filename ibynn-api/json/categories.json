@@ -5095,14 +5095,14 @@
                 {
                   "id": 5,
                   "name": "Mens",
-                  "parent": "Perfume & Cologne",
+                  "parent": "Eau De Parfume",
                   "slug": "/search?q=mens male Eau De Parfume&sortBy=massVolume",
                   "icon": "/assets/images/category/icon/personal-care.svg"
                 },
                 {
                   "id": 5,
                   "name": "Womens",
-                  "parent": "Perfume & Cologne",
+                  "parent": "Eau De Parfume",
                   "slug": "/search?q=women female Eau De Parfume&sortBy=massVolume",
                   "icon": "/assets/images/category/icon/personal-care.svg"
                 }
@@ -5118,7 +5118,7 @@
                 {
                   "id": 5,
                   "name": "Mens",
-                  "parent": "Perfume & Cologne",
+                  "parent": "Eau De Toilete",
                   "slug": "/search?q=mens male Eau De toilete&sortBy=massVolume",
                   "icon": "/assets/images/category/icon/personal-care.svg"
                 },

@@ -43,12 +43,11 @@ const CategoryListCard: React.FC<any> = ({
   function toggleCollapse() {
     setOpen((prevValue) => !prevValue);
   }
-
   
   function onClick() {
-    setActiveRow(row);
     if (Array.isArray(category.children) && category.children.length > 0) {
       if (dropdownData?.length > 0) {
+        console.log(dropdownData[0].parent, category.name)
         if (dropdownData[0].parent === category.name) {
           setDropdownData([]);
         }
