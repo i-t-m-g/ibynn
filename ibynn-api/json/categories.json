@@ -5071,6 +5071,7 @@
           "id": 1,
           "slug": "/search?q=Perfume & Cologne&sortBy=massVolume",
           "name": "Perfume & Cologne",
+          "parent": "Cosmetics",
           "image": {
             "mobile": {
               "url": "/assets/images/category/camera.png",
@@ -5082,7 +5083,55 @@
               "width": 475,
               "height": 250
             }
-          }
+          },
+          "children": [
+            {
+              "id": 5,
+              "name": "Eau De Parfume",
+              "parent": "Perfume & Cologne",
+              "slug": "/search?q=Eau De Parfume&sortBy=massVolume",
+              "icon": "/assets/images/category/icon/personal-care.svg",
+              "children": [
+                {
+                  "id": 5,
+                  "name": "Mens",
+                  "parent": "Eau De Parfume",
+                  "slug": "/search?q=mens male Eau De Parfume&sortBy=massVolume",
+                  "icon": "/assets/images/category/icon/personal-care.svg"
+                },
+                {
+                  "id": 5,
+                  "name": "Womens",
+                  "parent": "Eau De Parfume",
+                  "slug": "/search?q=women female Eau De Parfume&sortBy=massVolume",
+                  "icon": "/assets/images/category/icon/personal-care.svg"
+                }
+              ]
+            },
+            {
+              "id": 5,
+              "name": "Eau De Toilete",
+              "parent": "Perfume & Cologne",
+              "slug": "/search?q=Cosmetics&sortBy=massVolume",
+              "icon": "/assets/images/category/icon/personal-care.svg",
+              "children": [
+                {
+                  "id": 5,
+                  "name": "Mens",
+                  "parent": "Eau De Toilete",
+                  "slug": "/search?q=mens male Eau De toilete&sortBy=massVolume",
+                  "icon": "/assets/images/category/icon/personal-care.svg"
+                },
+                {
+                  "id": 5,
+                  "name": "Womens",
+                  "parent": "Perfume & Cologne",
+                  "slug": "/search?q=womens female Eau De toilete&sortBy=massVolume",
+                  "icon": "/assets/images/category/icon/personal-care.svg"
+                }
+              ]
+            }
+          ]
         },
         {
           "id": 1,

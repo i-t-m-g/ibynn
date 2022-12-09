@@ -51,7 +51,6 @@ app.get("/shopping", caching, async (req, res) => {
   const query = req.query.q;
   const sortBy = req.query.sortBy;
   const min_price = req.query.min_price ?? 0;
-  console.log(req.query)
 
   try {
     const results = await request.getSerpShopping(
