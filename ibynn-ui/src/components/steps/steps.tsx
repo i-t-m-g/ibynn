@@ -2,16 +2,14 @@ import React from 'react'
 
 export default function Steps() {
   return (
-    <div className="nc-SectionHowItWork" data-nc-id="SectionHowItWork">
-      <div className="relative grid sm:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-16 xl:gap-20">
+      <div className="flex flex-col md:flex-row items-center my-5 py-5">
         <div className="relative flex flex-col items-center max-w-xs mx-auto">
           <div
-            className="nc-NcImage mb-4 sm:mb-10 max-w-[140px] mx-auto"
-            data-nc-id="NcImage">
+            className="mb-4 sm:mb-10 max-w-[140px] mx-auto">
             <img
               src="/assets/images/HowItWorksIcons/filter.png"
               className="rounded-3xl"
-              alt="nc-imgs"
+              alt=""
             />
           </div>
           <div className="text-center mt-auto space-y-5">
@@ -27,14 +25,11 @@ export default function Steps() {
           </div>
         </div>
         <div className="relative flex flex-col items-center max-w-xs mx-auto">
-          <div
-            className="nc-NcImage mb-4 sm:mb-10 max-w-[140px] mx-auto"
-            data-nc-id="NcImage"
-          >
+          <div className="mb-4 sm:mb-10 max-w-[140px] mx-auto">
             <img
               src="/assets/images/HowItWorksIcons/add-to-cart.png"
               className="rounded-3xl"
-              alt="nc-imgs"
+              alt=""
             />
           </div>
           <div className="text-center mt-auto space-y-5">
@@ -48,14 +43,11 @@ export default function Steps() {
           </div>
         </div>
         <div className="relative flex flex-col items-center max-w-xs mx-auto">
-          <div
-            className="nc-NcImage mb-4 sm:mb-10 max-w-[140px] mx-auto"
-            data-nc-id="NcImage"
-          >
+          <div className="mb-4 sm:mb-10 max-w-[140px] mx-auto">
             <img
               src="/assets/images/HowItWorksIcons/checkmark.png"
               className="rounded-3xl"
-              alt="nc-imgs"
+              alt=""
             />
           </div>
           <div className="text-center mt-auto space-y-5">
@@ -69,6 +61,5 @@ export default function Steps() {
           </div>
         </div>
       </div>
-    </div>
   )
 }
