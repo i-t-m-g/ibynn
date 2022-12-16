@@ -201,11 +201,11 @@ const SectionHero2: FC<SectionHero2Props> = ({ className = "" }) => {
             </ButtonPrimary>
           </div>
           <div className="mt-10 lg:mt-0 lg:absolute right-0 bottom-0 top-0 w-full max-w-2xl xl:max-w-3xl 2xl:max-w-4xl">
-            {/* <img
+            <img
               className="w-full h-full object-contain object-right-bottom nc-SectionHero2Item__image"
               src={item.image}
               alt={item.heading}
-            /> */}
+            />
           </div>
         </div>
       </div>

@@ -7,6 +7,7 @@ import department2Png from "images/collections/department2.png";
 import department3Png from "images/collections/department3.png";
 import department4Png from "images/collections/department4.png";
 import { Link } from "react-router-dom";
+import { COLORS, IMAGES } from "./constants";
 
 export interface CardCategoryData {
   name: string;
@@ -14,6 +15,7 @@ export interface CardCategoryData {
   img: string;
   color?: string;
 }
+
 const CATS: CardCategoryData[] = [
   {
     name: "Travel Kits",
@@ -46,6 +48,7 @@ export interface SectionSliderCategoriesProps {
   heading?: string;
   subHeading?: string;
   data?: CardCategoryData[];
+  categories: any;
 }
 
 const SectionSliderCategories: FC<SectionSliderCategoriesProps> = ({
@@ -54,6 +57,7 @@ const SectionSliderCategories: FC<SectionSliderCategoriesProps> = ({
   className = "",
   itemClassName = "",
   data = CATS,
+  categories
 }) => {
   const id = useId();
   const UNIQUE_CLASS = "glidejs" + id.replace(/:/g, "_");
@@ -84,7 +88,7 @@ const SectionSliderCategories: FC<SectionSliderCategoriesProps> = ({
           gap: 20,
           perView: 1.4,
         },
-      },
+      }
     };
 
     let slider = new Glide(`.${UNIQUE_CLASS}`, OPTIONS);
@@ -93,7 +97,6 @@ const SectionSliderCategories: FC<SectionSliderCategoriesProps> = ({
       slider.destroy();
     };
   }, [UNIQUE_CLASS]);
-
   return (
     <div className={`nc-SectionSliderCategories ${className}`}>
       <div className={`${UNIQUE_CLASS} flow-root`}>
@@ -102,13 +105,13 @@ const SectionSliderCategories: FC<SectionSliderCategoriesProps> = ({
         </Heading>
         <div className="glide__track" data-glide-el="track">
           <ul className="glide__slides">
-            {data.map((item, index) => (
+            {categories?.map((item:any, index:any) => (
               <li key={index} className={`glide__slide ${itemClassName}`}>
                 <CardCategory2
-                  featuredImage={item.img}
+                  featuredImage={IMAGES[index]}
                   name={item.name}
-                  desc={item.desc}
-                  bgClass={item.color}
+                  desc={`${item.children.length} categories`}
+                  bgClass={COLORS[index]}
                 />
               </li>
             ))}

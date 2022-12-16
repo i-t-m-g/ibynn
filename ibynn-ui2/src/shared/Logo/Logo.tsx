@@ -19,8 +19,6 @@ const Logo: React.FC<LogoProps> = ({
       to="/"
       className={`ttnc-logo inline-block text-slate-600 ${className}`}
     >
-      {/* THIS USE FOR MY CLIENT */}
-      {/* PLEASE UN COMMENT BELLOW CODE AND USE IT */}
       {img ? (
         <img
           className={`block max-h-8 sm:max-h-10 ${

@@ -8,7 +8,7 @@ export interface CardCategory2Props {
   bgClass?: string;
   featuredImage?: string;
   name: string;
-  desc: string;
+  desc?: string;
 }
 
 const CardCategory2: FC<CardCategory2Props> = ({

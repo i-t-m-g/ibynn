@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import SectionHowItWork from "components/SectionHowItWork/SectionHowItWork";
 import BackgroundSection from "components/BackgroundSection/BackgroundSection";
 import SectionPromo1 from "components/SectionPromo1";
@@ -19,6 +19,14 @@ import ButtonSecondary from "shared/Button/ButtonSecondary";
 import { PRODUCTS, SPORT_PRODUCTS } from "data/data";
 
 function PageHome() {
+  const [categories, setCategories] = useState();
+
+  useEffect(() => {
+    fetch(`http://localhost:9476/json/categories`)
+      .then(res => res.json())
+      .then(categories => setCategories(categories.data));
+  }, []);
+
   return (
     <div className="nc-PageHome relative overflow-hidden">
       <Helmet>
@@ -28,11 +36,14 @@ function PageHome() {
       {/* SECTION HERO */}
       <SectionHero2 />
 
-      <div className="mt-24 lg:mt-32">
-        <DiscoverMoreSlider />
-      </div>
 
       <div className="container relative space-y-24 my-24 lg:space-y-32 lg:my-32">
+        <SectionSliderCategories categories={categories} />
+        
+        <div className="py-24 lg:py-32 border-t border-b border-slate-200 dark:border-slate-700">
+          <SectionHowItWork />
+        </div>
+
         {/* SECTION */}
         <SectionSliderProductCard
           data={[
@@ -44,17 +55,10 @@ function PageHome() {
           ]}
         />
 
-        <div className="py-24 lg:py-32 border-t border-b border-slate-200 dark:border-slate-700">
-          <SectionHowItWork />
-        </div>
-
-        {/* SECTION */}
-        <SectionPromo1 />
-
         {/* SECTION */}
         <div className="relative py-24 lg:py-32">
           <BackgroundSection />
-          <SectionGridMoreExplore />
+          <SectionGridMoreExplore categories={categories} />
         </div>
 
         <SectionSliderProductCard
@@ -68,27 +72,11 @@ function PageHome() {
         {/* SECTION 3 */}
         <SectionSliderLargeProduct cardStyle="style2" />
 
-        {/*  */}
-        <SectionSliderCategories />
-
         {/* SECTION */}
         <SectionPromo3 />
 
         {/* SECTION */}
         <SectionGridFeatureItems />
-
-        <div className="relative py-24 lg:py-32">
-          <BackgroundSection />
-          <div>
-            <Heading rightDescText="From the Ibynn blog">
-              The latest news
-            </Heading>
-            <SectionMagazine5 />
-            <div className="flex mt-16 justify-center">
-              <ButtonSecondary>Show all blog articles</ButtonSecondary>
-            </div>
-          </div>
-        </div>
 
         {/*  */}
         <SectionClientSay />
