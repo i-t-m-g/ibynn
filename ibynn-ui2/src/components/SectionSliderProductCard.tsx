@@ -12,6 +12,7 @@ export interface SectionSliderProductCardProps {
   headingClassName?: string;
   subHeading?: string;
   data?: Product[];
+  products?: any;
 }
 
 const SectionSliderProductCard: FC<SectionSliderProductCardProps> = ({
@@ -22,11 +23,12 @@ const SectionSliderProductCard: FC<SectionSliderProductCardProps> = ({
   heading,
   subHeading = "REY backpacks & bags",
   data = PRODUCTS.filter((_, i) => i < 8 && i > 2),
+  products
 }) => {
   const sliderRef = useRef(null);
   const id = useId();
   const UNIQUE_CLASS = "glidejs" + id.replace(/:/g, "_");
-
+  
   useEffect(() => {
     if (!sliderRef.current) {
       return () => {};
@@ -80,8 +82,8 @@ const SectionSliderProductCard: FC<SectionSliderProductCardProps> = ({
         </Heading>
         <div className="glide__track" data-glide-el="track">
           <ul className="glide__slides">
-            {data.map((item, index) => (
-              <li key={index} className={`glide__slide ${itemClassName}`}>
+            {products?.map((item: any, index: any) => (
+              <li key={index} style={{height: '515px'}} className={`glide__slide h-full ${itemClassName}`}>
                 <ProductCard data={item} />
               </li>
             ))}

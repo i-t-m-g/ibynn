@@ -124,8 +124,8 @@ const SectionGridMoreExplore: FC<SectionGridMoreExploreProps> = ({
   data = DEMO_MORE_EXPLORE_DATA.filter((_, i) => i < 6),
   categories
 }) => {
-  const [tabActive, setTabActive] = useState("Man");
-  const [children, setChildren] = useState<any>();
+  const [tabActive, setTabActive] = useState(categories[0].name);
+  const [children, setChildren] = useState<any>(categories[0].children);
 
   const renderCard = (item: ExploreType) => {
     switch (boxCard) {

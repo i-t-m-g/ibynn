@@ -16,32 +16,6 @@ export interface CardCategoryData {
   color?: string;
 }
 
-const CATS: CardCategoryData[] = [
-  {
-    name: "Travel Kits",
-    desc: "20+ categories",
-    img: department1Png,
-    color: "bg-indigo-100",
-  },
-  {
-    name: "Beauty Products",
-    desc: "10+ categories",
-    img: department2Png,
-    color: "bg-slate-100",
-  },
-  {
-    name: "Sport Kits",
-    desc: "34+ categories",
-    img: department3Png,
-    color: "bg-sky-100",
-  },
-  {
-    name: "Pets Food",
-    desc: "12+ categories",
-    img: department4Png,
-    color: "bg-orange-100",
-  },
-];
 export interface SectionSliderCategoriesProps {
   className?: string;
   itemClassName?: string;
@@ -56,11 +30,11 @@ const SectionSliderCategories: FC<SectionSliderCategoriesProps> = ({
   subHeading = "",
   className = "",
   itemClassName = "",
-  data = CATS,
   categories
 }) => {
   const id = useId();
   const UNIQUE_CLASS = "glidejs" + id.replace(/:/g, "_");
+  console.log(categories)
 
   useEffect(() => {
     // @ts-ignore
@@ -86,7 +60,7 @@ const SectionSliderCategories: FC<SectionSliderCategoriesProps> = ({
         },
         500: {
           gap: 20,
-          perView: 1.4,
+          perView: 1.6,
         },
       }
     };
@@ -105,7 +79,7 @@ const SectionSliderCategories: FC<SectionSliderCategoriesProps> = ({
         </Heading>
         <div className="glide__track" data-glide-el="track">
           <ul className="glide__slides">
-            {categories?.map((item:any, index:any) => (
+            {categories.map((item:any, index:any) => (
               <li key={index} className={`glide__slide ${itemClassName}`}>
                 <CardCategory2
                   featuredImage={IMAGES[index]}
