@@ -24,7 +24,7 @@ export interface SectionHero2Props {
 const DATA: Hero2DataType[] = [
   {
     image: imageRightPng2,
-    heading: "Exclusive collection for everyone",
+    heading: "The ",
     subHeading: "In this season, find the best 🔥",
     btnText: "Explore now",
     btnLink: "/",
@@ -38,8 +38,8 @@ const DATA: Hero2DataType[] = [
   },
   {
     image: imageRightPng,
-    heading: "Exclusive collection for everyone",
-    subHeading: "In this season, find the best 🔥",
+    heading: "The Best Prices From The Stores You Already Love",
+    subHeading: "IBYNN, find the best 🔥",
     btnText: "Explore now",
     btnLink: "/",
   },
