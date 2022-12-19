@@ -5368,8 +5368,8 @@
     },
     {
       "id": 5,
-      "name": "Cosmetics",
-      "parent": "Cosmetics",
+      "name": "Cosmetics & Cologne",
+      "parent": "Cosmetics & Cologne",
       "slug": "/search?q=Cosmetics&sortBy=massVolume",
       "icon": "/assets/images/category/icon/personal-care.svg",
       "image": {
@@ -5389,7 +5389,7 @@
           "id": 1,
           "slug": "/search?q=Perfume & Cologne&sortBy=massVolume",
           "name": "Perfume & Cologne",
-          "parent": "Cosmetics",
+          "parent": "Cosmetics & Cologne",
           "image": {
             "mobile": {
               "url": "/assets/images/category/camera.png",
@@ -5454,7 +5454,7 @@
         {
           "id": 1,
           "name": "Makeup",
-          "parent": "Cosmetics",
+          "parent": "Cosmetics & Cologne",
           "slug": "/search?q=makeup&sortBy=massVolume",
           "image": {
             "mobile": {
@@ -5953,7 +5953,7 @@
         {
           "id": 1,
           "name": "Bath & Body",
-          "parent": "Cosmetics",
+          "parent": "Cosmetics & Cologne",
           "slug": "/search?q=Bath&body&sortBy=massVolume",
           "image": {
             "mobile": {
@@ -6182,7 +6182,7 @@
         {
           "id": 1,
           "name": "Cosmetic Tools",
-          "parent": "Cosmetics",
+          "parent": "Cosmetics & Cologne",
           "slug": "/search?q=Cosmetic Tools&sortBy=massVolume",
           "image": {
             "mobile": {
@@ -6851,7 +6851,7 @@
         {
           "id": 1,
           "name": "Nail Care",
-          "parent": "Cosmetics",
+          "parent": "Cosmetics & Cologne",
           "slug": "/search?q=Nail Care&sortBy=massVolume",
           "image": {
             "mobile": {
@@ -7023,7 +7023,7 @@
         {
           "id": 1,
           "name": "Skin Care",
-          "parent": "Cosmetics",
+          "parent": "Cosmetics & Cologne",
           "slug": "/search?q=Skin Care&sortBy=massVolume",
           "image": {
             "mobile": {

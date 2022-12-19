@@ -6,13 +6,17 @@ import { NavLink } from "react-router-dom";
 import { LocationStates } from "routers/types";
 
 export interface NavItemType {
-  id: string;
-  name: string;
-  href: keyof LocationStates | "#" | "/#";
+  id?: any;
+  name?: any;
+  slug?: any;
+  image?: any;
+  href?: keyof LocationStates | "#" | "/#";
   targetBlank?: boolean;
   children?: NavItemType[];
   type?: "dropdown" | "megaMenu" | "none";
   isNew?: boolean;
+  parent?: any;
+  icon?: any;
 }
 
 export interface NavigationItemProps {
