@@ -14,8 +14,6 @@ import SectionClientSay from "components/SectionClientSay/SectionClientSay";
 import { PRODUCTS, SPORT_PRODUCTS } from "data/data";
 import DataContext from "context/DataContext";
 
-
-
 const PageHome: FC<any> = () => {
   const [categories, setCategories] = useState<any>();
   const [newest, setNewest] = useState<any>();

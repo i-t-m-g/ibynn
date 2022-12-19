@@ -109,6 +109,7 @@ const ProductCard: FC<ProductCardProps> = ({
 
       {/* QUICKVIEW */}
       <ModalQuickView
+        type={'product'}
         product={product}
         show={showModalQuickView}
         onCloseModalQuickView={() => setShowModalQuickView(false)}
