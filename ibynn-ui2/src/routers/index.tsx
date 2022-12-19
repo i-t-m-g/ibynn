@@ -23,6 +23,8 @@ import AccountOrder from "containers/AccountPage/AccountOrder";
 import CartPage from "containers/ProductDetailPage/CartPage";
 import CheckoutPage from "containers/PageCheckout/CheckoutPage";
 import PageCollection2 from "containers/PageCollection2";
+import { createContext } from "vm";
+import { DataContextProvider } from "context/DataContext";
 
 export const pages: Page[] = [
   { path: "/", exact: true, component: PageHome },
@@ -54,24 +56,27 @@ export const pages: Page[] = [
 ];
 
 const Routes = () => {
+
   return (
     <BrowserRouter basename="/Ibynn">
-      <ScrollToTop />
-      <SiteHeader />
-      <Switch>
-        {pages.map(({ component, path, exact }) => {
-          return (
-            <Route
-              key={path}
-              component={component}
-              exact={!!exact}
-              path={path}
-            />
-          );
-        })}
-        <Route component={Page404} />
-      </Switch>
-      <Footer />
+      <DataContextProvider>
+        <ScrollToTop />
+        <SiteHeader />
+        <Switch>
+          {pages.map(({ component, path, exact }) => {
+            return (
+              <Route
+                key={path}
+                component={component}
+                exact={!!exact}
+                path={path}
+              />
+            );
+          })}
+          <Route component={Page404} />
+        </Switch>
+        <Footer />
+      </DataContextProvider>
     </BrowserRouter>
   );
 };

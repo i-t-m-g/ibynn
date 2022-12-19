@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useId } from "react";
+import React, { FC, useContext, useEffect, useId } from "react";
 import Heading from "components/Heading/Heading";
 import Glide from "@glidejs/glide";
 import CardCategory2 from "components/CardCategories/CardCategory2";
@@ -8,6 +8,7 @@ import department3Png from "images/collections/department3.png";
 import department4Png from "images/collections/department4.png";
 import { Link } from "react-router-dom";
 import { COLORS, IMAGES } from "./constants";
+import DataContext from "context/DataContext";
 
 export interface CardCategoryData {
   name: string;
@@ -32,9 +33,9 @@ const SectionSliderCategories: FC<SectionSliderCategoriesProps> = ({
   itemClassName = "",
   categories
 }) => {
+  const dc = useContext<any>(DataContext);
   const id = useId();
   const UNIQUE_CLASS = "glidejs" + id.replace(/:/g, "_");
-  console.log(categories)
 
   useEffect(() => {
     // @ts-ignore
@@ -71,6 +72,11 @@ const SectionSliderCategories: FC<SectionSliderCategoriesProps> = ({
       slider.destroy();
     };
   }, [UNIQUE_CLASS]);
+
+  const handleClick = (item: any) => {
+    dc.setActiveCategory(item);
+  };
+
   return (
     <div className={`nc-SectionSliderCategories ${className}`}>
       <div className={`${UNIQUE_CLASS} flow-root`}>
@@ -80,7 +86,7 @@ const SectionSliderCategories: FC<SectionSliderCategoriesProps> = ({
         <div className="glide__track" data-glide-el="track">
           <ul className="glide__slides">
             {categories.map((item:any, index:any) => (
-              <li key={index} className={`glide__slide ${itemClassName}`}>
+              <li onClick={() => handleClick(item)} key={index} className={`glide__slide ${itemClassName}`}>
                 <CardCategory2
                   featuredImage={IMAGES[index]}
                   name={item.name}
@@ -128,10 +134,6 @@ const SectionSliderCategories: FC<SectionSliderCategoriesProps> = ({
                     </span>
                   </div>
                 </div>
-                <Link
-                  to={"/"}
-                  className="opacity-0 group-hover:opacity-100 absolute inset-0 bg-black bg-opacity-10 transition-opacity"
-                ></Link>
               </div>
             </li>
           </ul>

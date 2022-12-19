@@ -61,7 +61,7 @@ const ModalQuickView: FC<ModalQuickViewProps> = ({
                 </span>
 
                 <div className="flex-1 overflow-y-auto rounded-xl hiddenScrollbar">
-                  {product && <ProductQuickView product={product} />}
+                  {/* {product && <ProductQuickView product={product} />} */}
                 </div>
               </div>
             </div>

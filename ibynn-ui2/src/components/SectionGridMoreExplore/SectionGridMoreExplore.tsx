@@ -127,15 +127,15 @@ const SectionGridMoreExplore: FC<SectionGridMoreExploreProps> = ({
   const [tabActive, setTabActive] = useState(categories[0].name);
   const [children, setChildren] = useState<any>(categories[0].children);
 
-  const renderCard = (item: ExploreType) => {
+  const renderCard = (item: any) => {
     switch (boxCard) {
       case "box1":
         return (
           <CardCategory1
             key={item.id}
             name={item.name}
-            desc={item.desc}
-            featuredImage={item.image}
+            desc={''}
+            featuredImage={item.icon}
           />
         );
 
@@ -143,9 +143,9 @@ const SectionGridMoreExplore: FC<SectionGridMoreExploreProps> = ({
         return (
           <CardCategory4
             name={item.name}
-            desc={item.desc}
+            desc={''}
             bgSVG={item.svgBg}
-            featuredImage={item.image}
+            featuredImage={item.icon}
             key={item.id}
             color={item.color}
           />
@@ -154,9 +154,9 @@ const SectionGridMoreExplore: FC<SectionGridMoreExploreProps> = ({
         return (
           <CardCategory6
             name={item.name}
-            desc={item.desc}
+            desc={''}
             bgSVG={item.svgBg}
-            featuredImage={item.image}
+            featuredImage={item.icon}
             key={item.id}
             color={item.color}
           />
@@ -166,9 +166,9 @@ const SectionGridMoreExplore: FC<SectionGridMoreExploreProps> = ({
         return (
           <CardCategory4
             name={item.name}
-            desc={item.desc}
+            desc={''}
             bgSVG={item.svgBg}
-            featuredImage={item.image}
+            featuredImage={item.icon}
             key={item.id}
             color={item.color}
           />

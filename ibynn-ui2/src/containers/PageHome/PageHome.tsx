@@ -1,4 +1,4 @@
-import React, { useEffect, useState, FC } from "react";
+import React, { useEffect, useState, FC, useContext, createContext } from "react";
 import SectionHowItWork from "components/SectionHowItWork/SectionHowItWork";
 import BackgroundSection from "components/BackgroundSection/BackgroundSection";
 import { Helmet } from "react-helmet";
@@ -10,14 +10,17 @@ import SectionGridMoreExplore from "components/SectionGridMoreExplore/SectionGri
 import SectionPromo2 from "components/SectionPromo2";
 import SectionSliderCategories from "components/SectionSliderCategories/SectionSliderCategories";
 import SectionPromo3 from "components/SectionPromo3";
-
 import SectionClientSay from "components/SectionClientSay/SectionClientSay";
-
 import { PRODUCTS, SPORT_PRODUCTS } from "data/data";
+import DataContext from "context/DataContext";
+
+
 
 const PageHome: FC<any> = () => {
   const [categories, setCategories] = useState<any>();
   const [newest, setNewest] = useState<any>();
+  const [bestSelling, setBestSelling] = useState<any>();
+  const dc = useContext<any>(DataContext);
 
   useEffect(() => {
     fetch(`http://localhost:9476/json/categories`)
@@ -26,7 +29,7 @@ const PageHome: FC<any> = () => {
 
     fetch(`http://localhost:9476/shopping?sortBy=amount&q=new`)
       .then((res) => res.json())
-      .then((products) => setNewest(products.shopping_results));
+      .then((products) => {setNewest(products.shopping_results.splice(0,9)); setBestSelling(products.shopping_results.splice(10,20)); dc.setProducts(products.shopping_results);});
   }, []);
 
   return (
@@ -50,7 +53,7 @@ const PageHome: FC<any> = () => {
         {/* SECTION */}
         {newest && newest.length > 0 && (
           <SectionSliderProductCard
-            products={newest.splice(0, 10)}
+            products={newest}
             data={[
               PRODUCTS[4],
               SPORT_PRODUCTS[5],
@@ -71,7 +74,7 @@ const PageHome: FC<any> = () => {
 
         {newest && newest.length > 0 && (
           <SectionSliderProductCard
-            products={newest.splice(11, 20)}
+            products={bestSelling}
             heading="Best Sellers"
             subHeading="Best selling of the month"
           />
