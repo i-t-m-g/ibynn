@@ -77,6 +77,8 @@ const SectionSliderCategories: FC<SectionSliderCategoriesProps> = ({
     dc.setActiveCategory(item);
   };
 
+  console.log(categories[0])
+
   return (
     <div className={`nc-SectionSliderCategories ${className}`}>
       <div className={`${UNIQUE_CLASS} flow-root`}>
@@ -88,7 +90,7 @@ const SectionSliderCategories: FC<SectionSliderCategoriesProps> = ({
             {categories.map((item:any, index:any) => (
               <li onClick={() => handleClick(item)} key={index} className={`glide__slide ${itemClassName}`}>
                 <CardCategory2
-                  featuredImage={IMAGES[index]}
+                  featuredImage={item.image.desktop.url}
                   name={item.name}
                   desc={`${item.children.length} categories`}
                   bgClass={COLORS[index]}

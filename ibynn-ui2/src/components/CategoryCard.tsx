@@ -11,6 +11,7 @@ export interface CategoryCardProps {
   featuredImage?: string;
   name: string;
   desc?: string;
+  category: any;
 }
 
 const CategoryCard: FC<CategoryCardProps> = ({
@@ -20,6 +21,7 @@ const CategoryCard: FC<CategoryCardProps> = ({
   featuredImage = ".",
   name,
   desc,
+  category,
 }) => {
     const dc = useContext<any>(DataContext);
     const [showModalQuickView, setShowModalQuickView] = useState(false);
@@ -27,8 +29,6 @@ const CategoryCard: FC<CategoryCardProps> = ({
     const handleClick = () => {
         setShowModalQuickView(true);
     };
-
-    console.log(dc.products[9])
 
   return (
     <div onClick={handleClick}>
@@ -53,7 +53,8 @@ const CategoryCard: FC<CategoryCardProps> = ({
         </span>
       </div>
       {dc.products.length > 0 &&<ModalQuickView
-        product={dc.products[0]}
+        type={'category'}
+        category={category}
         show={showModalQuickView}
         onCloseModalQuickView={() => setShowModalQuickView(false)}
       />}

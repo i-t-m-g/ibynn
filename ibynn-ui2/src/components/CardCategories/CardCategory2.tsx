@@ -19,6 +19,9 @@ const CardCategory2: FC<CardCategory2Props> = ({
   name,
   desc,
 }) => {
+
+  console.log(featuredImage)
+
   return (
     <Link
       to={"/page-collection"}
@@ -31,7 +34,7 @@ const CardCategory2: FC<CardCategory2Props> = ({
         <div className="pt-14">
           <NcImage
             containerClassName="w-full h-full flex justify-center"
-            src={featuredImage}
+            src={'/logo192.png'}
             className="object-cover rounded-2xl"
           />
         </div>

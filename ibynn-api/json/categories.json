@@ -6,17 +6,17 @@
       "slug": "/search?q=home+appliances&sortBy=amount",
       "image": {
         "mobile": {
-          "url": "ibynn-ui2/src/images/collections/kitchendepartment.png",
+          "url": "/src/images/collections/kitchendepartment.png",
           "width": 475,
           "height": 250
         },
         "desktop": {
-          "url": "ibynn-ui2/src/images/collections/kitchendepartment.png",
+          "url": "/src/images/collections/kitchendepartment.png",
           "width": 475,
           "height": 250
         }
       },
-      "icon": "ibynn-ui2/src/images/collections/kitchendepartment.png",
+      "icon": "/src/images/collections/kitchendepartment.png",
       "children": [
         {
           "id": 1,
