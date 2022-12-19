@@ -21,7 +21,7 @@ const SectionSliderProductCard: FC<SectionSliderProductCardProps> = ({
   headingFontClassName,
   headingClassName,
   heading,
-  subHeading = "REY backpacks & bags",
+  subHeading = "New Trending Items",
   data = PRODUCTS.filter((_, i) => i < 8 && i > 2),
   products
 }) => {
