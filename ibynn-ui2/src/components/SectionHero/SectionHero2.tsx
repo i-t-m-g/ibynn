@@ -23,26 +23,27 @@ export interface SectionHero2Props {
 
 const DATA: Hero2DataType[] = [
   {
-    image: imageRightPng2,
-    heading: "The ",
-    subHeading: "In this season, find the best 🔥",
-    btnText: "Explore now",
-    btnLink: "/",
-  },
-  {
-    image: imageRightPng3,
-    heading: "Exclusive collection for everyone",
-    subHeading: "In this season, find the best 🔥",
-    btnText: "Explore now",
-    btnLink: "/",
-  },
-  {
     image: imageRightPng,
     heading: "The Best Prices From The Stores You Already Love",
     subHeading: "IBYNN, find the best 🔥",
     btnText: "Explore now",
     btnLink: "/",
   },
+  {
+    image: imageRightPng2,
+    heading: "Get the best deals on your favorite electronics ",
+    subHeading: "Only On IBYNN 🤑",
+    btnText: "Explore now",
+    btnLink: "/",
+  },
+  {
+    image: imageRightPng3,
+    heading: "Cosmetics At The Lowest Prices",
+    subHeading: "IBYNN's Favorites 🧴",
+    btnText: "Explore now",
+    btnLink: "/",
+  },
+  
 ];
 let TIME_OUT: NodeJS.Timeout | null = null;
 
@@ -174,7 +175,7 @@ const SectionHero2: FC<SectionHero2Props> = ({ className = "" }) => {
               </h2>
             </div>
 
-            <ButtonPrimary
+            {/* <ButtonPrimary
               className="nc-SectionHero2Item__button dark:bg-slate-900"
               sizeClass="py-3 px-6 sm:py-5 sm:px-9"
               href={item.btnLink as any}
@@ -198,7 +199,7 @@ const SectionHero2: FC<SectionHero2Props> = ({ className = "" }) => {
                   />
                 </svg>
               </span>
-            </ButtonPrimary>
+            </ButtonPrimary> */}
           </div>
           <div className="mt-10 lg:mt-0 lg:absolute right-0 bottom-0 top-0 w-full max-w-2xl xl:max-w-3xl 2xl:max-w-4xl">
             <img

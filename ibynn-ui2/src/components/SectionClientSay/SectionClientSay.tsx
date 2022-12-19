@@ -20,21 +20,21 @@ export interface SectionClientSayProps {
 const DEMO_DATA = [
   {
     id: 1,
-    clientName: "Tiana Abie",
+    clientName: "Abie James",
     content:
-      "Great quality products, affordable prices, fast and friendly delivery. I very recommend.",
+      "Great product info, very accurate and helped me find my cologne for a very low price.",
   },
   {
     id: 2,
-    clientName: "Lennie Swiffan",
+    clientName: "Lennie Ruzovski",
     content:
-      "Great quality products, affordable prices, fast and friendly delivery. I very recommend.",
+      "I recommend IBYNN to anyone that shops online.",
   },
   {
     id: 3,
-    clientName: "Berta Emili",
+    clientName: "Marc Green",
     content:
-      "Great quality products, affordable prices, fast and friendly delivery. I very recommend.",
+      "After using IBYNN once, I can never go without it.",
   },
 ];
 
@@ -90,7 +90,7 @@ const SectionClientSay: FC<SectionClientSayProps> = ({ className = "" }) => {
       data-nc-id="SectionClientSay"
     >
       <Heading desc="Let's see what people think of Ibynn" isCenter>
-        Good news from far away 🥇
+        See What Our Clients Have To Say For Themselves 🥇
       </Heading>
       <div className="relative md:mb-16 max-w-2xl mx-auto">
         {renderBg()}

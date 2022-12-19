@@ -254,18 +254,5 @@ export const NAVIGATION_DEMO_2: NavItemType[] = [
     href: "/#",
     name: "Sport",
   },
-  {
-    id: ncNanoId(),
-    href: "/#",
-    name: "Templates",
-    type: "megaMenu",
-    children: MEGAMENU_TEMPLATES,
-  },
-  {
-    id: ncNanoId(),
-    href: "#",
-    name: "Explore",
-    type: "dropdown",
-    children: OTHER_PAGE_CHILD,
-  },
+  
 ];

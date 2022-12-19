@@ -28,26 +28,26 @@ const SectionPromo3: FC<SectionPromo3Props> = ({ className = "lg:pt-10" }) => {
             Don't miss out on special offers
           </h2>
           <span className="block mt-5 text-neutral-500 dark:text-neutral-400">
-            Register to receive news about the latest, savings combos, discount
+            Register to receive news about the latest, price updates, discount
             codes...
           </span>
           <ul className="space-y-4 mt-10">
             <li className="flex items-center space-x-4">
               <Badge color="purple" name="01" />
               <span className="font-medium text-neutral-700 dark:text-neutral-300">
-                Savings combos
+                Lowest Prices
               </span>
             </li>
             <li className="flex items-center space-x-4">
               <Badge name="02" />
               <span className="font-medium text-neutral-700 dark:text-neutral-300">
-                Freeship
+                Price Comparison
               </span>
             </li>
             <li className="flex items-center space-x-4">
               <Badge color="red" name="03" />
               <span className="font-medium text-neutral-700 dark:text-neutral-300">
-                Premium magazines
+                Premium Price Alerts
               </span>
             </li>
           </ul>
