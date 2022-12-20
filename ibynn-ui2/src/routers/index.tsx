@@ -25,6 +25,7 @@ import CheckoutPage from "containers/PageCheckout/CheckoutPage";
 import PageCollection2 from "containers/PageCollection2";
 import { createContext } from "vm";
 import { DataContextProvider } from "context/DataContext";
+import ProductCollection from "containers/ProductCollection";
 
 export const pages: Page[] = [
   { path: "/", exact: true, component: PageHome },
@@ -36,6 +37,7 @@ export const pages: Page[] = [
   //
   { path: "/page-collection-2", component: PageCollection2 },
   { path: "/page-collection", component: PageCollection },
+  { path: "/product-collection", component: ProductCollection },
   { path: "/page-search", component: PageSearch },
   //
   { path: "/account", component: AccountPage },

@@ -30,6 +30,8 @@ const PageHome: FC<any> = () => {
       .then((products) => {setNewest(products.shopping_results.splice(0,9)); setBestSelling(products.shopping_results.splice(10,20)); dc.setProducts(products.shopping_results);});
   }, []);
 
+  console.log(dc.products)
+
   return (
     <div className="nc-PageHome relative overflow-hidden">
       <Helmet>

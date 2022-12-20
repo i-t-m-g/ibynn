@@ -132,7 +132,7 @@ const SectionGridMoreExplore: FC<SectionGridMoreExploreProps> = ({
       case "box1":
         return (
           <CardCategory1
-            key={item.id}
+            key={Math.random()}
             name={item.name}
             desc={''}
             featuredImage={item.icon}
@@ -146,7 +146,7 @@ const SectionGridMoreExplore: FC<SectionGridMoreExploreProps> = ({
             desc={''}
             bgSVG={item.svgBg}
             featuredImage={item.icon}
-            key={item.id}
+            key={Math.random()}
             color={item.color}
           />
         );
@@ -157,7 +157,7 @@ const SectionGridMoreExplore: FC<SectionGridMoreExploreProps> = ({
             desc={''}
             bgSVG={item.svgBg}
             featuredImage={item.icon}
-            key={item.id}
+            key={Math.random()}
             color={item.color}
           />
         );
@@ -169,7 +169,7 @@ const SectionGridMoreExplore: FC<SectionGridMoreExploreProps> = ({
             desc={''}
             bgSVG={item.svgBg}
             featuredImage={item.icon}
-            key={item.id}
+            key={Math.random()}
             color={item.color}
           />
         );

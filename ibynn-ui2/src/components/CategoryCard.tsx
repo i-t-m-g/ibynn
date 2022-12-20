@@ -1,6 +1,7 @@
 import React, { FC, useContext, useState } from "react";
 import NcImage from "shared/NcImage/NcImage";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import ModalQuickView from "./ModalQuickView";
 import DataContext from "context/DataContext";
 
@@ -25,9 +26,13 @@ const CategoryCard: FC<CategoryCardProps> = ({
 }) => {
     const dc = useContext<any>(DataContext);
     const [showModalQuickView, setShowModalQuickView] = useState(false);
+    const location = useLocation();
 
-    const handleClick = () => {
-        setShowModalQuickView(true);
+    const link = category?.children?.length > 0 ? '/product-collection' : '';
+
+    function handleClick() {
+      setShowModalQuickView(true);
+      return '';
     };
 
   return (

@@ -4234,8 +4234,8 @@
     },
     {
       "id": 3,
-      "slug": "/search?q=Electronics&sortBy=amount",
       "name": "Electronics",
+      "slug": "/search?q=Electronics&sortBy=amount",
       "image": {
         "mobile": {
           "url": "ibynn-ui2/src/images/collections/electronicsdepartment.png",

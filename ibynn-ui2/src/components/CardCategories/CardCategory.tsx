@@ -34,7 +34,7 @@ const CardCategory: FC<CardCategoryProps> = ({
         <div className="absolute inset-5 sm:inset-8 flex flex-col justify-between">
 
           <div className="">
-            <h2 className={`text-2xl sm:text-3xl font-semibold`}>{name}</h2>
+            {/* <h2 className={`text-2xl sm:text-3xl font-semibold`}>{name}</h2> */}
           </div>
 
           <Link
@@ -46,8 +46,6 @@ const CardCategory: FC<CardCategoryProps> = ({
           </Link>
         </div>
       </div>
-
-      <Link to={"/page-collection"}></Link>
     </div>
   );
 };
