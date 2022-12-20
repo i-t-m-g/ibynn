@@ -26,9 +26,6 @@ const CategoryCard: FC<CategoryCardProps> = ({
 }) => {
     const dc = useContext<any>(DataContext);
     const [showModalQuickView, setShowModalQuickView] = useState(false);
-    const location = useLocation();
-
-    const link = category?.children?.length > 0 ? '/product-collection' : '';
 
     function handleClick() {
       setShowModalQuickView(true);
@@ -36,7 +33,9 @@ const CategoryCard: FC<CategoryCardProps> = ({
     };
 
   return (
-    <div onClick={handleClick}>
+    <div className="relative">
+      {!(category?.children?.length > 0) && <Link to="/product-collection" className="block z-50 absolute w-full h-full"></Link>}
+      {category?.children?.length > 0 && <div onClick={handleClick} className="block cursor-pointer z-50 absolute w-full h-full"></div>}
       <div
         className={`flex-1 relative w-full h-0 rounded-2xl overflow-hidden group ${ratioClass} ${bgClass}`}
       >
