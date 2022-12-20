@@ -10,7 +10,7 @@ export interface NavItemType {
   name?: any;
   slug?: any;
   image?: any;
-  href?: keyof LocationStates | "#" | "/#";
+  href?: any | keyof LocationStates | "#" | "/#";
   targetBlank?: boolean;
   children?: NavItemType[];
   type?: "dropdown" | "megaMenu" | "none";
