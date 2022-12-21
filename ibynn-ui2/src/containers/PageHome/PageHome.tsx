@@ -23,9 +23,8 @@ const PageHome: FC<any> = () => {
   useEffect(() => {
     fetch(`http://localhost:9476/json/categories`)
       .then((res) => res.json())
-      .then((categories) => {setCategories(categories.data);});
-      console.log('cate',dc.categories)
-    setCategories(dc.categories)
+      .then((categories) => setCategories(categories.data));
+
     fetch(`http://localhost:9476/shopping?sortBy=amount&q=new`)
       .then((res) => res.json())
       .then((products) => {setNewest(products.shopping_results.splice(0,9)); setBestSelling(products.shopping_results.splice(10,20)); dc.setProducts(products.shopping_results);});
