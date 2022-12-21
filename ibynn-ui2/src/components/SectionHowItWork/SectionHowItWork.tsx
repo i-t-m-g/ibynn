@@ -60,7 +60,7 @@ const SectionHowItWork: FC<SectionHowItWorkProps> = ({
         />
         {data.map((item: typeof DEMO_DATA[number], index: number) => (
           <div
-            key={item.id}
+            key={Math.random()}
             className="relative flex flex-col items-center max-w-xs mx-auto"
           >
             <NcImage

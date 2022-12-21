@@ -78,7 +78,7 @@ const NavigationItem: FC<NavigationItemProps> = ({ menuItem }) => {
 
   const renderMegaMenuNavlink = (item: NavItemType) => {
     return (
-      <li key={item.id} className={`${item.isNew ? "menuIsNew" : ""}`}>
+      <li key={Math.random()} className={`${item.isNew ? "menuIsNew" : ""}`}>
         <NavLink
           exact
           strict
@@ -150,7 +150,7 @@ const NavigationItem: FC<NavigationItemProps> = ({ menuItem }) => {
     return (
       <Popover
         as="li"
-        key={item.id}
+        key={Math.random()}
         className="menu-item menu-dropdown relative px-2"
         onMouseEnter={() => onMouseEnterMenu(item.id)}
         onMouseLeave={() => onMouseLeaveMenu(item.id)}

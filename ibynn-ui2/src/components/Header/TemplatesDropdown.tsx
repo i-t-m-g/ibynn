@@ -9,7 +9,7 @@ import { NavItemType } from "shared/Navigation/NavigationItem";
 export default function TemplatesDropdown() {
   const renderMegaMenuNavlink = (item: NavItemType) => {
     return (
-      <li key={item.id} className={`${item.isNew ? "menuIsNew" : ""}`}>
+      <li key={Math.random()} className={`${item.isNew ? "menuIsNew" : ""}`}>
         <NavLink
           exact
           strict

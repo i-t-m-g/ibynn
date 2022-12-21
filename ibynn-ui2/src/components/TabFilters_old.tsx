@@ -329,7 +329,7 @@ const TabFilters = () => {
                     {DATA_sortOrderRadios.map((item) => (
                       <Radio
                         id={item.id}
-                        key={item.id}
+                        key={Math.random()}
                         name="radioNameSort"
                         label={item.name}
                         defaultChecked={sortOrderStates === item.id}
@@ -935,7 +935,7 @@ const TabFilters = () => {
                             {DATA_sortOrderRadios.map((item) => (
                               <Radio
                                 id={item.id}
-                                key={item.id}
+                                key={Math.random()}
                                 name="radioNameSort"
                                 label={item.name}
                                 defaultChecked={sortOrderStates === item.id}

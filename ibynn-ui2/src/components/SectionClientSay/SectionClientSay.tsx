@@ -111,7 +111,7 @@ const SectionClientSay: FC<SectionClientSayProps> = ({ className = "" }) => {
             <ul className="glide__slides ">
               {DEMO_DATA.map((item) => (
                 <li
-                  key={item.id}
+                  key={Math.random()}
                   className="glide__slide flex flex-col items-center text-center"
                 >
                   <span className="block text-2xl">{item.content}</span>
@@ -135,7 +135,7 @@ const SectionClientSay: FC<SectionClientSayProps> = ({ className = "" }) => {
           >
             {DEMO_DATA.map((item, index) => (
               <button
-                key={item.id}
+                key={Math.random()}
                 className="glide__bullet w-2 h-2 rounded-full bg-neutral-300 mx-1 focus:outline-none"
                 data-glide-dir={`=${index}`}
               ></button>

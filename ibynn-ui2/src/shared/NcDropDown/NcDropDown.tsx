@@ -71,7 +71,7 @@ const NcDropDown: FC<NcDropDownProps> = ({
             {data.map((item) => (
               <Menu.Item
                 as={"div"}
-                key={item.id}
+                key={Math.random()}
                 data-menu-item-id={item.id}
                 onClick={() => onClick(item)}
               >

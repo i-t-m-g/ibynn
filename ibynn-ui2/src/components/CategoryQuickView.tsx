@@ -25,6 +25,7 @@ const CategoryQuickView: FC<CategoryQuickViewProps> = ({ className = "", categor
         <div className={`grid gap-4 md:gap-7 p-4 grid-cols-1 md:grid-cols-3 xl:grid-cols-3`}>
           {category.children.map((item:any, index:any) => (
             <CardCategory
+              category={item}
               key={index}
               name={item.name}
               desc={''}

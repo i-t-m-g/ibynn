@@ -51,7 +51,7 @@ const SectionFounder = () => {
       </Heading>
       <div className="grid sm:grid-cols-2 gap-x-5 gap-y-8 lg:grid-cols-4 xl:gap-x-8">
         {FOUNDER_DEMO.map((item) => (
-          <div key={item.id} className="max-w-sm">
+          <div key={Math.random()} className="max-w-sm">
             <NcImage
               containerClassName="relative h-0 aspect-h-1 aspect-w-1 rounded-xl overflow-hidden"
               className="absolute inset-0 object-cover"

@@ -19,7 +19,7 @@ export interface PageCollectionProps {
 const PageCollection: FC<PageCollectionProps> = ({ className = "" }) => {
   const dc = useContext<any>(DataContext);
 
-  console.log(dc.products);
+  console.log(dc.activeCategory);
 
   return (
     <div
@@ -35,7 +35,7 @@ const PageCollection: FC<PageCollectionProps> = ({ className = "" }) => {
           {/* HEADING */}
           <div className="max-w-screen-sm">
             <h2 className="block text-2xl sm:text-3xl lg:text-4xl font-semibold">
-              {dc.activeCategory?.name}
+              {dc.activeCategory && dc.activeCategory?.name}
             </h2>
             <span className="block mt-4 text-neutral-500 dark:text-neutral-400 text-sm sm:text-base">
               We not only help you design exceptional products, but also make it

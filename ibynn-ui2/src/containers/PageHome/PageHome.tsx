@@ -16,21 +16,30 @@ import DataContext from "context/DataContext";
 
 const PageHome: FC<any> = () => {
   const [categories, setCategories] = useState<any>();
-  const [newest, setNewest] = useState<any>();
-  const [bestSelling, setBestSelling] = useState<any>();
   const dc = useContext<any>(DataContext);
+  const headings = {
+    heading1: 'Best Sellers',
+    subHeading1: 'Best selling of the month'
+  };
+
+  const getProductCards = (from:number,to:number,heading?:string,subHeading?:string) => {
+    return (
+      <SectionSliderProductCard
+        products={dc.products.splice(from,to)}
+        heading={heading}
+        subHeading={subHeading}
+      />
+    );
+  };
 
   useEffect(() => {
+    dc.fetchProducts('new', null);
+      
     fetch(`http://localhost:9476/json/categories`)
       .then((res) => res.json())
       .then((categories) => setCategories(categories.data));
 
-    fetch(`http://localhost:9476/shopping?sortBy=amount&q=new`)
-      .then((res) => res.json())
-      .then((products) => {setNewest(products.shopping_results.splice(0,9)); setBestSelling(products.shopping_results.splice(10,20)); dc.setProducts(products.shopping_results);});
   }, []);
-
-  console.log(dc.products)
 
   return (
     <div className="nc-PageHome relative overflow-hidden">
@@ -50,19 +59,7 @@ const PageHome: FC<any> = () => {
           <SectionHowItWork />
         </div>
 
-        {/* SECTION */}
-        {newest && newest.length > 0 && (
-          <SectionSliderProductCard
-            products={newest}
-            data={[
-              PRODUCTS[4],
-              SPORT_PRODUCTS[5],
-              PRODUCTS[7],
-              SPORT_PRODUCTS[1],
-              PRODUCTS[6],
-            ]}
-          />
-        )}
+        {dc.products && getProductCards(0,9)}
 
         {/* SECTION */}
         <div className="relative py-24 lg:py-32">
@@ -72,13 +69,7 @@ const PageHome: FC<any> = () => {
           )}
         </div>
 
-        {newest && newest.length > 0 && (
-          <SectionSliderProductCard
-            products={bestSelling}
-            heading="Best Sellers"
-            subHeading="Best selling of the month"
-          />
-        )}
+        {dc.products && getProductCards(10, 19,headings.heading1, headings.subHeading1)}
 
         {/*  */}
         <SectionPromo2 />

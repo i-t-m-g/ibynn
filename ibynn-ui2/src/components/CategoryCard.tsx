@@ -26,6 +26,9 @@ const CategoryCard: FC<CategoryCardProps> = ({
 }) => {
     const dc = useContext<any>(DataContext);
     const [showModalQuickView, setShowModalQuickView] = useState(false);
+    const url = new URL(category.slug, 'https://ibynn.com');
+    const query = url.searchParams.get('q');
+    const sort_by = url.searchParams.get('sortBy');
 
     function handleClick() {
       setShowModalQuickView(true);
@@ -34,8 +37,8 @@ const CategoryCard: FC<CategoryCardProps> = ({
 
   return (
     <div className="relative">
-      {!(category?.children?.length > 0) && <Link to="/product-collection" className="block z-50 absolute w-full h-full"></Link>}
-      {category?.children?.length > 0 && <div onClick={handleClick} className="block cursor-pointer z-50 absolute w-full h-full"></div>}
+      {!(category?.children?.length > 0) && <Link to={`/product-collection?q=${query}${sort_by ? '&sort_by='+sort_by : ''}`} className="block z-10 absolute w-full h-full"></Link>}
+      {category?.children?.length > 0 && <div onClick={handleClick} className="block cursor-pointer z-10 absolute w-full h-full"></div>}
       <div
         className={`flex-1 relative w-full h-0 rounded-2xl overflow-hidden group ${ratioClass} ${bgClass}`}
       >
@@ -56,7 +59,7 @@ const CategoryCard: FC<CategoryCardProps> = ({
           {desc}
         </span>
       </div>
-      {dc.products.length > 0 &&<ModalQuickView
+      {category?.children?.length > 0 &&<ModalQuickView
         type={'category'}
         category={category}
         show={showModalQuickView}
