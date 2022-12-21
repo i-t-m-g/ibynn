@@ -3605,28 +3605,7 @@
               "height": 250
             }
           },
-          "icon": "/assets/images/category/icon/washer.png",
-          "children": [
-            {
-              "id": 1,
-              "name": "Washing Machines",
-              "parent": "Washing Machines",
-              "slug": "/search?q=laundry+washing+machines&min_price=300",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/washer.png"
-            }
-          ]
+          "icon": "/assets/images/category/icon/washer.png"
         },
         {
           "id": 1,
@@ -3645,28 +3624,7 @@
               "height": 250
             }
           },
-          "icon": "/assets/images/category/icon/dryer.png",
-          "children": [
-            {
-              "id": 1,
-              "name": "Dryer Machines",
-              "parent": "Dryer Machines",
-              "slug": "/search?q=laundry+clothing+dryer&min_price=300",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/dryer.png"
-            }
-          ]
+          "icon": "/assets/images/category/icon/dryer.png"
         },
         {
           "id": 1,
@@ -3685,28 +3643,8 @@
               "height": 250
             }
           },
-          "icon": "/assets/images/category/icon/toaster.png",
-          "children": [
-            {
-              "id": 1,
-              "name": "Toaster",
-              "parent": "Toaster",
-              "slug": "/search?q=bread+toaster&min_price=30",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/toaster.png"
-            }
-          ]
+          "icon": "/assets/images/category/icon/toaster.png"
+          
         },
 
         {
@@ -3726,28 +3664,7 @@
               "height": 250
             }
           },
-          "icon": "/assets/images/category/icon/freezer.png",
-          "children": [
-            {
-              "id": 1,
-              "name": "Freezer",
-              "parent": "Freezer",
-              "slug": "/search?q=food+Freezer&min_price=350",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/freezer.png"
-            }
-          ]
+          "icon": "/assets/images/category/icon/freezer.png"
         },
         {
           "id": 1,
@@ -3766,28 +3683,7 @@
               "height": 250
             }
           },
-          "icon": "/assets/images/category/icon/ac.png",
-          "children": [
-            {
-              "id": 1,
-              "name": "Air conditioner",
-              "parent": "Air conditioner",
-              "slug": "/search?q=home+Air+conditioner&min_price=250",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/ac.png"
-            }
-          ]
+          "icon": "/assets/images/category/icon/ac.png"
         },
         {
           "id": 1,
@@ -3806,28 +3702,7 @@
               "height": 250
             }
           },
-          "icon": "/assets/images/category/icon/fan.png",
-          "children": [
-            {
-              "id": 1,
-              "name": "Fans",
-              "parent": "Fans",
-              "slug": "/search?q=house+fans&min_price=65",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/fan.png"
-            }
-          ]
+          "icon": "/assets/images/category/icon/fan.png"
         },
         {
           "id": 1,
@@ -3846,28 +3721,7 @@
               "height": 250
             }
           },
-          "icon": "/assets/images/category/icon/blender.png",
-          "children": [
-            {
-              "id": 1,
-              "name": "Blender",
-              "parent": "Blender",
-              "slug": "/search?q=food+Blender&min_price=50",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/blender.png"
-            }
-          ]
+          "icon": "/assets/images/category/icon/blender.png"
         },
         {
           "id": 1,
@@ -3886,28 +3740,7 @@
               "height": 250
             }
           },
-          "icon": "/assets/images/category/icon/coffee.png",
-          "children": [
-            {
-              "id": 1,
-              "name": "Coffeemaker",
-              "parent": "Coffeemaker",
-              "slug": "/search?q=Coffeemaker&min_price=75",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/coffee.png"
-            }
-          ]
+          "icon": "/assets/images/category/icon/coffee.png"
         },
         {
           "id": 1,
@@ -3926,28 +3759,7 @@
               "height": 250
             }
           },
-          "icon": "/assets/images/category/icon/dishwasher.png",
-          "children": [
-            {
-              "id": 1,
-              "name": "Dishwasher",
-              "parent": "Dishwasher",
-              "slug": "/search?q=home+Dishwasher&min_price=300",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/dishwasher.png"
-            }
-          ]
+          "icon": "/assets/images/category/icon/dishwasher.png"
         },
         {
           "id": 1,
@@ -3966,28 +3778,7 @@
               "height": 250
             }
           },
-          "icon": "/assets/images/category/icon/stove.png",
-          "children": [
-            {
-              "id": 1,
-              "name": "Stove",
-              "parent": "Stove",
-              "slug": "/search?q=home+cooking+stove&min_price=300",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/stove.png"
-            }
-          ]
+          "icon": "/assets/images/category/icon/stove.png"
         },
         {
           "id": 1,
@@ -4006,28 +3797,7 @@
               "height": 250
             }
           },
-          "icon": "/assets/images/category/icon/oven.png",
-          "children": [
-            {
-              "id": 1,
-              "name": "Oven",
-              "parent": "Oven",
-              "slug": "/search?q=food+oven&min_price=300",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/oven.png"
-            }
-          ]
+          "icon": "/assets/images/category/icon/oven.png"
         },
         {
           "id": 1,
@@ -4046,28 +3816,7 @@
               "height": 250
             }
           },
-          "icon": "/assets/images/category/icon/food-processor.png",
-          "children": [
-            {
-              "id": 1,
-              "name": "Food processor",
-              "parent": "Food processor",
-              "slug": "/search?q=electric+Food+processor&min_price=35",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/food-processor.png"
-            }
-          ]
+          "icon": "/assets/images/category/icon/food-processor.png"
         },
 
         {
@@ -4087,28 +3836,7 @@
               "height": 250
             }
           },
-          "icon": "/assets/images/category/icon/mixer.png",
-          "children": [
-            {
-              "id": 1,
-              "name": "Mixer",
-              "parent": "Mixer",
-              "slug": "/search?q=food+electric+mixer&min_price=15",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/mixer.png"
-            }
-          ]
+          "icon": "/assets/images/category/icon/mixer.png"
         },
         {
           "id": 1,
@@ -4127,28 +3855,7 @@
               "height": 250
             }
           },
-          "icon": "/assets/images/category/icon/juicer.png",
-          "children": [
-            {
-              "id": 1,
-              "name": "Juicer",
-              "parent": "Juicer",
-              "slug": "/search?q=electric+home+juicer&sortBy=amount",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/juicer.png"
-            }
-          ]
+          "icon": "/assets/images/category/icon/juicer.png"
         },
         {
           "id": 1,
@@ -4167,28 +3874,7 @@
               "height": 250
             }
           },
-          "icon": "/assets/images/category/icon/vacuum.png",
-          "children": [
-            {
-              "id": 1,
-              "name": "Vacuum cleaner",
-              "parent": "Vacuum cleaner",
-              "slug": "/search?q=home+vacuum+cleaner&min_price=50",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/vacuum.png"
-            }
-          ]
+          "icon": "/assets/images/category/icon/vacuum.png"
         },
         {
           "id": 1,
@@ -4207,28 +3893,7 @@
               "height": 250
             }
           },
-          "icon": "/assets/images/category/icon/ironer.png",
-          "children": [
-            {
-              "id": 1,
-              "name": "Ironer",
-              "parent": "Ironer",
-              "slug": "/search?q=clothing+ironer&min_price=26",
-              "image": {
-                "mobile": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "/assets/images/category/camera.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "/assets/images/category/icon/ironer.png"
-            }
-          ]
+          "icon": "/assets/images/category/icon/ironer.png"
         }
       ]
     },
