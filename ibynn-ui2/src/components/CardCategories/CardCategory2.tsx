@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import NcImage from "shared/NcImage/NcImage";
 import { Link } from "react-router-dom";
+import { IMAGES } from "components/SectionSliderCategories/constants";
 
 export interface CardCategory2Props {
   className?: string;
@@ -34,7 +35,7 @@ const CardCategory2: FC<CardCategory2Props> = ({
         <div className="pt-14">
           <NcImage
             containerClassName="w-full h-full flex justify-center"
-            src={'/logo192.png'}
+            src={featuredImage}
             className="object-cover rounded-2xl"
           />
         </div>

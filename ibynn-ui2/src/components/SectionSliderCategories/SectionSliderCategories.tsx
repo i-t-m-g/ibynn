@@ -90,7 +90,7 @@ const SectionSliderCategories: FC<SectionSliderCategoriesProps> = ({
             {categories.map((item:any, index:any) => (
               <li onClick={() => handleClick(item)} key={index} className={`glide__slide ${itemClassName}`}>
                 <CardCategory2
-                  featuredImage={item.image.desktop.url}
+                  featuredImage={IMAGES[index]}
                   name={item.name}
                   desc={`${item.children.length} categories`}
                   bgClass={COLORS[index]}
