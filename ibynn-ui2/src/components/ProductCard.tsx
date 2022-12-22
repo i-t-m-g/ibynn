@@ -38,7 +38,7 @@ const ProductCard: FC<ProductCardProps> = ({
   const [product, setProduct] = useState<any>();
 
   const handleClick = () => {
-    fetch(`http://localhost:9476/compare?product_id=${product_id}`)
+    fetch(`${process.env.REST_API_ENDPOINT}/compare?product_id=${product_id}`)
       .then(res => res.json())
       .then(product => setProduct(product));
 
@@ -109,6 +109,7 @@ const ProductCard: FC<ProductCardProps> = ({
 
       {/* QUICKVIEW */}
       <ModalQuickView
+        extracted_price={extracted_price}
         type={'product'}
         product={product}
         show={showModalQuickView}

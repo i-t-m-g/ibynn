@@ -11,7 +11,8 @@ export interface ModalQuickViewProps {
   onCloseModalQuickView: () => void;
   product?:any;
   category?:any;
-  type: 'product' | 'category'
+  type: 'product' | 'category';
+  extracted_price?: any;
 }
 
 const ModalQuickView: FC<ModalQuickViewProps> = ({
@@ -19,7 +20,8 @@ const ModalQuickView: FC<ModalQuickViewProps> = ({
   onCloseModalQuickView,
   product,
   category,
-  type
+  type,
+  extracted_price
 }) => {
   const location = useLocation();
 
@@ -67,7 +69,7 @@ const ModalQuickView: FC<ModalQuickViewProps> = ({
 
                 <div className="flex-1 overflow-y-auto rounded-xl hiddenScrollbar">
                   {/* {!product && !category ? 'Loading...' : ''} */}
-                  {product && type === 'product' && <ProductQuickView product={product} />}
+                  {product && type === 'product' && <ProductQuickView extracted_price={extracted_price} product={product} />}
                   {category && type === 'category' && <CategoryQuickView category={category} />}
                 </div>
               </div>
