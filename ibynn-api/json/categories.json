@@ -6,17 +6,17 @@
       "slug": "/search?q=home+appliances&sortBy=amount",
       "image": {
         "mobile": {
-          "url": "/assets/images/category/camera.png",
+          "url": "/src/images/collections/kitchendepartment.png",
           "width": 475,
           "height": 250
         },
         "desktop": {
-          "url": "/assets/images/category/camera.png",
+          "url": "/src/images/collections/kitchendepartment.png",
           "width": 475,
           "height": 250
         }
       },
-      "icon": "/assets/images/category/icon/refrigerator.svg",
+      "icon": "/src/images/collections/kitchendepartment.png",
       "children": [
         {
           "id": 1,
@@ -3576,17 +3576,17 @@
       "slug": "/search?q=home+appliances&sortBy=amount",
       "image": {
         "mobile": {
-          "url": "/assets/images/category/camera.png",
+          "url": "ibynn-ui2/src/images/collections/homedepartment.png",
           "width": 475,
           "height": 250
         },
         "desktop": {
-          "url": "/assets/images/category/camera.png",
+          "url": "ibynn-ui2/src/images/collections/homedepartment.png",
           "width": 475,
           "height": 250
         }
       },
-      "icon": "/assets/images/category/icon/refrigerator.svg",
+      "icon": "ibynn-ui2/src/images/collections/homedepartment.png",
       "children": [
         {
           "id": 1,
@@ -3644,26 +3644,9 @@
             }
           },
           "icon": "/assets/images/category/icon/toaster.png"
+          
         },
-        {
-          "id": 1,
-          "name": "Refrigerator",
-          "parent": "Home Appliances",
-          "slug": "/search?q=refrigerator&min_price=300",
-          "image": {
-            "mobile": {
-              "url": "/assets/images/category/camera.png",
-              "width": 475,
-              "height": 250
-            },
-            "desktop": {
-              "url": "/assets/images/category/camera.png",
-              "width": 475,
-              "height": 250
-            }
-          },
-          "icon": "/assets/images/category/icon/refrigerator.png"
-        },
+
         {
           "id": 1,
           "name": "Freezer",
@@ -3916,21 +3899,21 @@
     },
     {
       "id": 3,
-      "slug": "/search?q=Electronics&sortBy=amount",
       "name": "Electronics",
+      "slug": "/search?q=Electronics&sortBy=amount",
       "image": {
         "mobile": {
-          "url": "/assets/images/category/camera.png",
+          "url": "ibynn-ui2/src/images/collections/electronicsdepartment.png",
           "width": 475,
           "height": 250
         },
         "desktop": {
-          "url": "/assets/images/category/camera.png",
+          "url": "ibynn-ui2/src/images/collections/electronicsdepartment.png",
           "width": 475,
           "height": 250
         }
       },
-      "icon": "/assets/images/category/icon/laptop.svg",
+      "icon": "ibynn-ui2/src/images/collections/electronicsdepartment.png",
       "children": [
         {
           "id": 1,
@@ -4443,12 +4426,12 @@
       "name": "Office Supplies",
       "image": {
         "mobile": {
-          "url": "/assets/images/category/camera.png",
+          "url": "/ibynn-ui2/src/images/collections/officedepartment.png",
           "width": 475,
           "height": 250
         },
         "desktop": {
-          "url": "/assets/images/category/camera.png",
+          "url": "ibynn-ui2/src/images/collections/officedepartment.png",
           "width": 475,
           "height": 250
         }
@@ -5050,18 +5033,18 @@
     },
     {
       "id": 5,
-      "name": "Cosmetics",
-      "parent": "Cosmetics",
+      "name": "Cosmetics & Cologne",
+      "parent": "Cosmetics & Cologne",
       "slug": "/search?q=Cosmetics&sortBy=massVolume",
       "icon": "/assets/images/category/icon/personal-care.svg",
       "image": {
         "mobile": {
-          "url": "/assets/images/category/camera.png",
+          "url": "ibynn-ui2/src/images/collections/cosmeticsdepartment.png",
           "width": 475,
           "height": 250
         },
         "desktop": {
-          "url": "/assets/images/category/camera.png",
+          "url": "ibynn-ui2/src/images/collections/cosmeticsdepartment.png",
           "width": 475,
           "height": 250
         }
@@ -5071,7 +5054,7 @@
           "id": 1,
           "slug": "/search?q=Perfume & Cologne&sortBy=massVolume",
           "name": "Perfume & Cologne",
-          "parent": "Cosmetics",
+          "parent": "Cosmetics & Cologne",
           "image": {
             "mobile": {
               "url": "/assets/images/category/camera.png",
@@ -5125,7 +5108,7 @@
                 {
                   "id": 5,
                   "name": "Womens",
-                  "parent": "Perfume & Cologne",
+                  "parent": "Eau De Toilete",
                   "slug": "/search?q=womens female Eau De toilete&sortBy=massVolume",
                   "icon": "/assets/images/category/icon/personal-care.svg"
                 }
@@ -5136,7 +5119,7 @@
         {
           "id": 1,
           "name": "Makeup",
-          "parent": "Cosmetics",
+          "parent": "Cosmetics & Cologne",
           "slug": "/search?q=makeup&sortBy=massVolume",
           "image": {
             "mobile": {
@@ -5635,7 +5618,7 @@
         {
           "id": 1,
           "name": "Bath & Body",
-          "parent": "Cosmetics",
+          "parent": "Cosmetics & Cologne",
           "slug": "/search?q=Bath&body&sortBy=massVolume",
           "image": {
             "mobile": {
@@ -5864,7 +5847,7 @@
         {
           "id": 1,
           "name": "Cosmetic Tools",
-          "parent": "Cosmetics",
+          "parent": "Cosmetics & Cologne",
           "slug": "/search?q=Cosmetic Tools&sortBy=massVolume",
           "image": {
             "mobile": {
@@ -6533,7 +6516,7 @@
         {
           "id": 1,
           "name": "Nail Care",
-          "parent": "Cosmetics",
+          "parent": "Cosmetics & Cologne",
           "slug": "/search?q=Nail Care&sortBy=massVolume",
           "image": {
             "mobile": {
@@ -6705,7 +6688,7 @@
         {
           "id": 1,
           "name": "Skin Care",
-          "parent": "Cosmetics",
+          "parent": "Cosmetics & Cologne",
           "slug": "/search?q=Skin Care&sortBy=massVolume",
           "image": {
             "mobile": {
@@ -7188,12 +7171,12 @@
       "icon": "/assets/images/category/icon/personal-care.svg",
       "image": {
         "mobile": {
-          "url": "/assets/images/category/camera.png",
+          "url": "ibynn-ui2/src/images/collections/department2.png",
           "width": 475,
           "height": 250
         },
         "desktop": {
-          "url": "/assets/images/category/camera.png",
+          "url": "ibynn-ui2/src/images/collections/department2.png",
           "width": 475,
           "height": 250
         }
@@ -7462,12 +7445,12 @@
       "name": "Health & Beauty",
       "image": {
         "mobile": {
-          "url": "/assets/images/category/camera.png",
+          "url": "ibynn-ui2/src/images/collections/beautydepartment.png",
           "width": 475,
           "height": 250
         },
         "desktop": {
-          "url": "/assets/images/category/camera.png",
+          "url": "ibynn-ui2/src/images/collections/beautydepartment.png",
           "width": 475,
           "height": 250
         }

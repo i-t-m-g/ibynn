@@ -20,11 +20,12 @@ const ProductsGridBlock: React.FC<ProductsProps> = ({
   headingPosition = 'center',
   className = 'mb-12 lg:mb-14 xl:mb-16',
 }) => {
-  const [shoppingResult, setShoppingResult] = useState<Products>();
+  const [shoppingResult, setShoppingResult] = useState<any>();
+  const [x, setX] = useState(0);
 
   useEffect(() => {
     setShoppingResult(new Products());
-    searchForProduct(parse("q=products")).then((res) => setShoppingResult(res));
+    searchForProduct(parse("q=products")).then((res) => setShoppingResult(res.shopping_results.splice(0,20)));
   }, []);
 
   return (
@@ -35,7 +36,7 @@ const ProductsGridBlock: React.FC<ProductsProps> = ({
         headingPosition={headingPosition}
       />
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 3xl:grid-cols-7 md:gap-4 2xl:gap-5">
-        {shoppingResult?.shopping_results?.splice(0,20).map((product: any) => (
+        {shoppingResult?.length > 0 && shoppingResult.map((product: any) => (
             <ProductCard key={`${product.id}`} product={product} />))}
       </div>
     </div>

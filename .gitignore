@@ -3,3 +3,4 @@ ibynn-api/.env
 ibynn-api/package-lock.json
 package-lock.json
 dump.rdb
+ibynn-ui2/.env

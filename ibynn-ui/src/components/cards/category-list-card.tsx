@@ -47,7 +47,7 @@ const CategoryListCard: React.FC<any> = ({
   function onClick() {
     if (Array.isArray(category.children) && category.children.length > 0) {
       if (dropdownData?.length > 0) {
-        console.log(dropdownData[0].parent, category.name)
+        console.log("first child's parent: "+dropdownData[0].parent, "this: "+category.name)
         if (dropdownData[0].parent === category.name) {
           setDropdownData([]);
         }
