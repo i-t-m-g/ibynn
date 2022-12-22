@@ -38,7 +38,7 @@ const ProductCard: FC<ProductCardProps> = ({
   const [product, setProduct] = useState<any>();
 
   const handleClick = () => {
-    fetch(`${process.env.REST_API_ENDPOINT}/compare?product_id=${product_id}`)
+    fetch(`${process.env.REACT_APP_REST_API_ENDPOINT}/compare?product_id=${product_id}`)
       .then(res => res.json())
       .then(product => setProduct(product));
 

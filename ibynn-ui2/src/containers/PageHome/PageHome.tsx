@@ -35,7 +35,7 @@ const PageHome: FC<any> = () => {
   useEffect(() => {
     dc.fetchProducts('new', null);
       
-    fetch(`${process.env.REST_API_ENDPOINT}/json/categories`)
+    fetch(`${process.env.REACT_APP_REST_API_ENDPOINT}/json/categories`)
       .then((res) => res.json())
       .then((categories) => setCategories(categories.data));
 
