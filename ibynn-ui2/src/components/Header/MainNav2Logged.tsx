@@ -88,8 +88,8 @@ const MainNav2Logged: FC<MainNav2LoggedProps> = () => {
               {renderMagnifyingGlassIcon()}
             </button>
           )}
-          <AvatarDropdown />
-          <CartDropdown />
+          {/* <AvatarDropdown /> */}
+          {/* <CartDropdown /> */}
         </div>
       </div>
     );
