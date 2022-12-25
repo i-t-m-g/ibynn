@@ -2,8 +2,6 @@ import { useEffect } from "react";
 import { NavItemType } from "shared/Navigation/NavigationItem";
 import ncNanoId from "utils/ncNanoId";
 
-const MEGAMENU_DEMO: NavItemType[] = [];
-
 export const MEGAMENU_TEMPLATES: NavItemType[] = [
   {
     id: ncNanoId(),
@@ -179,7 +177,6 @@ const OTHER_PAGE_CHILD: NavItemType[] = [
 ];
 
 export const NAVIGATION_DEMO_2: NavItemType[] = [
-  
   {
     id: ncNanoId(),
     href: "/",
@@ -190,9 +187,8 @@ export const NAVIGATION_DEMO_2: NavItemType[] = [
     href: "/#",
     name: "Category",
     type: "megaMenu",
-    children: MEGAMENU_DEMO,
-  },
-  
+    children: [],
+  }
 ];
 function then(arg0: (response: { json: () => any; }) => any) {
   throw new Error("Function not implemented.");

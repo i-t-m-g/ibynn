@@ -24,6 +24,7 @@ import explore7Png from "images/collections/explore7.png";
 import explore8Png from "images/collections/explore8.png";
 import explore9Png from "images/collections/explore9.png";
 import CardCategory6 from "components/CardCategories/CardCategory6";
+import CardCategory from "components/CardCategories/CardCategory";
 
 interface ExploreType {
   id: number;
@@ -37,7 +38,7 @@ interface ExploreType {
 export interface SectionGridMoreExploreProps {
   className?: string;
   gridClassName?: string;
-  boxCard?: "box1" | "box4" | "box6";
+  boxCard?: "box" | "box1" | "box4" | "box6";
   data?: ExploreType[];
   categories?: any
 }
@@ -129,9 +130,9 @@ const SectionGridMoreExplore: FC<SectionGridMoreExploreProps> = ({
 
   const renderCard = (item: any) => {
     switch (boxCard) {
-      case "box1":
+      case "box":
         return (
-          <CardCategory1
+          <CardCategory
             key={Math.random()}
             name={item.name}
             desc={''}
@@ -142,6 +143,7 @@ const SectionGridMoreExplore: FC<SectionGridMoreExploreProps> = ({
       case "box4":
         return (
           <CardCategory4
+            category={item}
             name={item.name}
             desc={''}
             bgSVG={item.svgBg}
