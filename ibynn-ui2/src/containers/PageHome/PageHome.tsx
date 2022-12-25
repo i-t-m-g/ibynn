@@ -72,7 +72,7 @@ const PageHome: FC<any> = () => {
         {dc.products && getProductCards(10, 19,headings.heading1, headings.subHeading1)}
 
         {/*  */}
-        <SectionPromo2 />
+        {/* <SectionPromo2 /> */}
 
         {/* SECTION 3 */}
         <SectionSliderLargeProduct cardStyle="style2" />
