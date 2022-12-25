@@ -75,7 +75,7 @@ const PageHome: FC<any> = () => {
         {/* <SectionPromo2 /> */}
 
         {/* SECTION 3 */}
-        <SectionSliderLargeProduct cardStyle="style2" />
+        {/* <SectionSliderLargeProduct cardStyle="style2" /> */}
 
         {/* SECTION */}
         <SectionPromo3 />
