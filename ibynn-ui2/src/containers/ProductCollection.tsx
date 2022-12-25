@@ -34,7 +34,7 @@ const ProductCollection: FC<ProductCollectionProps> = ({ className = "" }) => {
       data-nc-id="ProductCollection"
     >
       <Helmet>
-        <title>Collection || Ibynn Ecommerce Template</title>
+        <title>Ibynn | Find The Lowest Prices From Top Brands</title>
       </Helmet>
       <div className="container py-16 lg:pb-28 lg:pt-20 space-y-16 sm:space-y-20 lg:space-y-28">
         <div className="space-y-10 lg:space-y-14">
