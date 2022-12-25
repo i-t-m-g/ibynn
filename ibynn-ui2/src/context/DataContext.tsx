@@ -8,7 +8,7 @@ export function DataContextProvider({children}: any) {
 
     const fetchProducts = (query:string, sort_by:'amount'|'massVolume') => {
         if (products && products.length > 0 ) setProducts([]);
-        fetch(`${process.env.REACT_APP_REST_API_ENDPOINT}/shopping?q=${query}&sortBy=${sort_by}`)
+        fetch(`${process.env.REACT_APP_REST_API_ENDPOINT}/shopping?q=${query}${sort_by ? "&sortBy="+sort_by : ""}`)
           .then((res) => res.json())
           .then((products) => setProducts(products.shopping_results));
     };
