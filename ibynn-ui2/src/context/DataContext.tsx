@@ -3,7 +3,7 @@ import React, { useContext, useState, FC, createContext} from 'react'
 const DataContext: any = createContext(null);
 
 export function DataContextProvider({children}: any) {
-    const [activeCategory, setActiveCategory] = useState<any[]>();
+    const [_activeCategory, _setActiveCategory] = useState<any[]>();
     const [products, setProducts] = useState<any[]>();
 
     const fetchProducts = (query:string, sort_by:'amount'|'massVolume') => {
@@ -12,6 +12,14 @@ export function DataContextProvider({children}: any) {
           .then((res) => res.json())
           .then((products) => setProducts(products.shopping_results));
     };
+
+    const setActiveCategory = (state:any) => {
+        const stringifiedState = JSON.stringify(state);
+        window.localStorage.setItem('ACTIVE_CATEGORY', stringifiedState);
+        _setActiveCategory(state);
+    };
+
+    const activeCategory = JSON.parse(window.localStorage.getItem('ACTIVE_CATEGORY')||'');
 
 
 

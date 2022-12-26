@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { NavItemType } from "shared/Navigation/NavigationItem";
 import ncNanoId from "utils/ncNanoId";
 
@@ -176,20 +176,34 @@ const OTHER_PAGE_CHILD: NavItemType[] = [
   },
 ];
 
-export const NAVIGATION_DEMO_2: NavItemType[] = [
-  {
-    id: ncNanoId(),
-    href: "/",
-    name: "Home",
-  },
-  {
-    id: ncNanoId(),
-    href: "/#",
-    name: "Category",
-    type: "megaMenu",
-    children: [],
-  }
-];
+
+export const NAVIGATION_VALUES = ():any[] => {
+  const [kittens, setKittens] = useState<any[]>();
+
+  useEffect(() => {
+    fetch(`${process.env.REACT_APP_REST_API_ENDPOINT}/json/categories`)
+      .then(res => res.json())
+      .then(({data}) => setKittens(data))
+
+  });
+
+  return ([
+    {
+      id: ncNanoId(),
+      href: "/",
+      name: "Home",
+    },
+    {
+      id: ncNanoId(),
+      href: "/#",
+      name: "Category",
+      type: "megaMenu",
+      children: kittens,
+    }
+  ]);
+}
+
+
 function then(arg0: (response: { json: () => any; }) => any) {
   throw new Error("Function not implemented.");
 }

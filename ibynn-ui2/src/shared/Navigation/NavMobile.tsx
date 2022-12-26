@@ -4,11 +4,12 @@ import Logo from "shared/Logo/Logo";
 import { Disclosure } from "@headlessui/react";
 import { NavLink } from "react-router-dom";
 import { NavItemType } from "./NavigationItem";
-import { NAVIGATION_DEMO_2 } from "data/navigation";
+import { NAVIGATION_VALUES } from "data/navigation";
 import ButtonPrimary from "shared/Button/ButtonPrimary";
 import SocialsList from "shared/SocialsList/SocialsList";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import SwitchDarkMode from "shared/SwitchDarkMode/SwitchDarkMode";
+import ncNanoId from "utils/ncNanoId";
 
 export interface NavMobileProps {
   data?: NavItemType[];
@@ -16,7 +17,7 @@ export interface NavMobileProps {
 }
 
 const NavMobile: React.FC<NavMobileProps> = ({
-  data = NAVIGATION_DEMO_2,
+  data = NAVIGATION_VALUES(),
   onClickClose,
 }) => {
   const _renderMenuChild = (
@@ -26,7 +27,7 @@ const NavMobile: React.FC<NavMobileProps> = ({
     return (
       <ul className="nav-mobile-sub-menu pl-6 pb-1 text-base">
         {item.children?.map((i, index) => (
-          <Disclosure key={i.href + index} as="li">
+          <Disclosure key={index} as="li">
             <NavLink
               exact
               strict
