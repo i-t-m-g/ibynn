@@ -16,7 +16,7 @@ const CategoryQuickView: FC<CategoryQuickViewProps> = ({ className = "", categor
   const LIST_IMAGES_DEMO = [detail1JPG, detail2JPG, detail3JPG];
 
   return (
-    <div className={`nc-CategoryQuickView ${className}`}>
+    <div className={`nc-CategoryQuickView overflow-x-hidden	${className}`}>
         <div className="relative">
         <BackgroundSection />
         <h2 style={{opacity: '100%', color: 'red'}} className="p-10 lg:py-20 block text-center opacity-100 text-2xl sm:text-3xl lg:text-4xl font-semibold">
