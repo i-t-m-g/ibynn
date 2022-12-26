@@ -77,8 +77,6 @@ const SectionSliderCategories: FC<SectionSliderCategoriesProps> = ({
     dc.setActiveCategory(item);
   };
 
-  console.log(categories[0])
-
   return (
     <div className={`nc-SectionSliderCategories ${className}`}>
       <div className={`${UNIQUE_CLASS} flow-root`}>

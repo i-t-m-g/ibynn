@@ -185,7 +185,7 @@ export const NAVIGATION_VALUES = ():any[] => {
       .then(res => res.json())
       .then(({data}) => setKittens(data))
 
-  });
+  }, []);
 
   return ([
     {

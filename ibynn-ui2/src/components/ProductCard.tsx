@@ -65,7 +65,7 @@ const ProductCard: FC<ProductCardProps> = ({
     <>
       <div
         onClick={handleClick}
-        className={`nc-ProductCard relative flex flex-col bg-transparent h-full ${className}`}
+        className={`nc-ProductCard items-between relative flex flex-col bg-transparent h-full ${className}`}
         data-nc-id="ProductCard"
       >
 
@@ -83,19 +83,17 @@ const ProductCard: FC<ProductCardProps> = ({
 
           {renderGroupButtons()}
         </div>
-
-        {/* TITLE INFO */}
-        <div className="space-y-4 px-2.5 pt-5 pb-2.5 h-1/4 flex flex-col justify-between">
-          <div className="">
-            <h2
-              className={`nc-ProductCard__title text-base cursor-pointer font-semibold transition-colors`}
-            >
+        
+          <div>
+            <h2 className={`nc-ProductCard__title text-base cursor-pointer font-semibold transition-colors`}>
               {title}
             </h2>
           </div>
 
-          <div className="flex justify-between items-end ">
-            <Prices price={extracted_price} />
+        {/* TITLE INFO */}
+        <div className="h-full flex flex-col justify-end">
+
+          <div className="flex flex-col items-start ">
             <div className="flex items-center mb-0.5">
               <StarIcon className="w-5 h-5 pb-[1px] text-amber-400" />
               <span className="text-sm ml-1 text-slate-500 dark:text-slate-400">
@@ -103,6 +101,7 @@ const ProductCard: FC<ProductCardProps> = ({
                 {reviews} reviews)
               </span>
             </div>
+            <Prices price={extracted_price} />
           </div>
         </div>
       </div>
