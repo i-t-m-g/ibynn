@@ -50,7 +50,6 @@ const PageCollection: FC<PageCollectionProps> = ({ className = "" }) => {
               {dc.activeCategory?.children?.map((item:any, index:any) => (
                 <CategoryCard
                   category={item}
-                  featuredImage={item.icon}
                   name={item.name}
                   desc={item.children?.length > 0 ? `${item.children.length} categories` : ''}
                   bgClass={COLORS[index]}
