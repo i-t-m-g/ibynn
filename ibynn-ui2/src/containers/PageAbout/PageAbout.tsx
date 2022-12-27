@@ -31,7 +31,7 @@ const PageAbout: FC<PageAboutProps> = ({ className = "" }) => {
           rightImg={rightImg}
           heading="👋 About Us."
           btnText=""
-          subHeading="We’re IBYNN. We belieeve that your online shopping experience shouldn't be overwhelming. Easy shopping is at the heart of IBYNN's belefs. Finding the best prices for the best prducts has never been so easy. "
+          subHeading="We’re IBYNN. We believe that your online shopping experience shouldn't be overwhelming. Easy shopping is at the heart of IBYNN's belefs. Finding the best prices for the best prducts has never been so easy. "
         />
 
         <div className="relative py-16">
@@ -39,9 +39,9 @@ const PageAbout: FC<PageAboutProps> = ({ className = "" }) => {
 Welcome to IBYNN! 
 
 
-We are a comparison shopping company based in [location] and have been helping consumers save money and find the best products since [year established]. At IBYNN, we understand that shopping for the perfect product can be overwhelming and time-consuming, which is why we have made it our mission to simplify the process.
+We are a comparison shopping company based in New Yok City and have been helping consumers save money and find the best products since 2020. At IBYNN, we understand that shopping for the perfect product can be overwhelming and time-consuming, which is why we have made it our mission to simplify the process.
 
-Our team of experienced researchers and writers spend countless hours scouring the internet for the latest and greatest products in various categories, including [list some categories]. We then compare the features, prices, and overall value of these products in order to provide our users with unbiased and comprehensive reviews.
+Our team of experienced researchers and writers spend countless hours scouring the internet for the latest and greatest products in various categories, including cosmetics, electronics, personal care, and much more. We then compare the features, prices, and overall value of these products in order to provide our users with unbiased and comprehensive reviews.
 
 In addition to product reviews, we also offer a price comparison tool that allows users to easily compare prices from various retailers. This ensures that our users are getting the best deal possible on the products they want.
 
