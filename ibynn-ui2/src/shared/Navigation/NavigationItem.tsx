@@ -229,10 +229,9 @@ const NavigationItem: FC<NavigationItemProps> = ({ menuItem }) => {
         <NavLink
           exact
           strict
-          target={`/${item.name}`}
           rel="noopener noreferrer"
           className="inline-flex items-center text-sm lg:text-[15px] font-medium text-slate-700 dark:text-slate-300 py-2.5 px-4 xl:px-5 rounded-full hover:text-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 dark:hover:text-slate-200"
-          to={`${item.name}`}
+          to={`${item.href}`}
         >
           {item.name}
           {item.type && (

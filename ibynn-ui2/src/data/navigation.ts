@@ -199,6 +199,11 @@ export const NAVIGATION_VALUES = ():any[] => {
       name: "Category",
       type: "megaMenu",
       children: kittens,
+    },
+    {
+      id: ncNanoId(),
+      href: "/about",
+      name: "About Us",
     }
   ]);
 }
