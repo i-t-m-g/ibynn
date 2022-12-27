@@ -24,7 +24,7 @@ export interface SectionHero2Props {
 const DATA: Hero2DataType[] = [
   {
     image: imageRightPng,
-    heading: "The Best Prices From The Stores You Already Love",
+    heading: "Effortlessly find the best deals, with IBYNN",
     subHeading: "IBYNN, find the best 🔥",
     btnText: "Explore now",
     btnLink: "/",
@@ -38,7 +38,7 @@ const DATA: Hero2DataType[] = [
   },
   {
     image: imageRightPng3,
-    heading: "Cosmetics At The Lowest Prices",
+    heading: "Enhance your natural glow, with IBYNN",
     subHeading: "IBYNN's Favorites 🧴",
     btnText: "Explore now",
     btnLink: "/",
@@ -56,7 +56,7 @@ const SectionHero2: FC<SectionHero2Props> = ({ className = "" }) => {
     () => {
       handleAutoNext();
     },
-    isRunning ? 5500 : null
+    null
   );
   //
 
@@ -107,7 +107,8 @@ const SectionHero2: FC<SectionHero2Props> = ({ className = "" }) => {
       return null;
     }
     return (
-      <div
+      <div 
+        style={{height: '600px'}}
         className={`nc-SectionHero2Item nc-SectionHero2Item--animation flex flex-col-reverse lg:flex-col relative overflow-hidden ${className}`}
         key={index}
       >
@@ -156,13 +157,13 @@ const SectionHero2: FC<SectionHero2Props> = ({ className = "" }) => {
         <div className="absolute inset-0 bg-[#E3FFE6]">
           {/* <div className="absolute inset-0 bg-[#F7F0EA]"> */}
           <img
-            className="absolute w-full h-full object-contain"
+            className="relative w-full h-full object-contain"
             src={backgroundLineSvg}
             alt="hero"
           />
         </div>
 
-        <div className="relative container pb-0 pt-14 sm:pt-20 lg:py-44">
+        <div className="relative container flex flex-col justify-between py-5 pb-0 h-full">
           <div
             className={`relative z-[1] w-full max-w-3xl space-y-8 sm:space-y-14 nc-SectionHero2Item__left`}
           >
