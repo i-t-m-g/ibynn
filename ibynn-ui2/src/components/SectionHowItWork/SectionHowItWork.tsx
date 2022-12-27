@@ -6,6 +6,7 @@ import HIW3img from "images/HIW3img.png";
 import HIW4img from "images/HIW4img.png";
 import VectorImg from "images/VectorHIW.svg";
 import Badge from "shared/Badge/Badge";
+import Heading from "components/Heading/Heading";
 
 export interface SectionHowItWorkProps {
   className?: string;
@@ -51,8 +52,17 @@ const SectionHowItWork: FC<SectionHowItWorkProps> = ({
     <div
       className={`nc-SectionHowItWork ${className}`}
       data-nc-id="SectionHowItWork"
+      
     >
-      <div className="relative grid sm:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-16 xl:gap-20">
+       <Heading
+          className="mb-12 lg:mb-14 text-neutral-900 dark:text-neutral-50"
+          fontClass="text-3xl md:text-4xl 2xl:text-5xl font-semibold"
+          isCenter
+          desc=""
+        >
+          How It Works
+        </Heading>
+      <div className="relative grid grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-16 xl:gap-20">
         <img
           className="hidden md:block absolute inset-x-0 top-5"
           src={VectorImg}
@@ -61,7 +71,7 @@ const SectionHowItWork: FC<SectionHowItWorkProps> = ({
         {data.map((item: typeof DEMO_DATA[number], index: number) => (
           <div
             key={Math.random()}
-            className="relative flex flex-col items-center max-w-xs mx-auto"
+            className="justify-self-auto"
           >
             <NcImage
               containerClassName="mb-4 sm:mb-10 max-w-[140px] mx-auto"
