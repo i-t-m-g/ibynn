@@ -56,7 +56,7 @@ const SectionHero2: FC<SectionHero2Props> = ({ className = "" }) => {
     () => {
       handleAutoNext();
     },
-    null
+    isRunning ? 5500 : null
   );
   //
 
