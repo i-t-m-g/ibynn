@@ -1,11 +1,10 @@
-import React from "react";
 import NavigationItem from "./NavigationItem";
-import { NAVIGATION_DEMO_2 } from "data/navigation";
+import { NAVIGATION_VALUES } from "data/navigation";
 
 function Navigation() {
   return (
     <ul className="nc-Navigation flex items-center">
-      {NAVIGATION_DEMO_2.map((item) => (
+      {NAVIGATION_VALUES().map((item) => (
         <NavigationItem key={Math.random()} menuItem={item} />
       ))}
     </ul>

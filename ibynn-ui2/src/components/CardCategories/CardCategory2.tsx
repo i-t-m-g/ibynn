@@ -21,8 +21,6 @@ const CardCategory2: FC<CardCategory2Props> = ({
   desc,
 }) => {
 
-  console.log(featuredImage)
-
   return (
     <Link
       to={"/page-collection"}

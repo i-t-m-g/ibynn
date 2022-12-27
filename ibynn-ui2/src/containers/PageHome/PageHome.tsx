@@ -23,9 +23,11 @@ const PageHome: FC<any> = () => {
   };
 
   const getProductCards = (from:number,to:number,heading?:string,subHeading?:string) => {
+    const prod = dc.homeProducts.slice(from,to);
+
     return (
       <SectionSliderProductCard
-        products={dc.products.splice(from,to)}
+        products={prod}
         heading={heading}
         subHeading={subHeading}
       />
@@ -33,8 +35,10 @@ const PageHome: FC<any> = () => {
   };
 
   useEffect(() => {
-    dc.fetchProducts('new', null);
-      
+    dc.getHomeProducts('new', null);
+
+    console.log(dc.homeProducts)
+
     fetch(`${process.env.REACT_APP_REST_API_ENDPOINT}/json/categories`)
       .then((res) => res.json())
       .then((categories) => setCategories(categories.data));
@@ -59,7 +63,7 @@ const PageHome: FC<any> = () => {
           <SectionHowItWork />
         </div>
 
-        {dc.products && getProductCards(0,9)}
+        {dc.homeProducts && getProductCards(0,9)}
 
         {/* SECTION */}
         <div className="relative py-24 lg:py-32">
@@ -69,13 +73,13 @@ const PageHome: FC<any> = () => {
           )}
         </div>
 
-        {dc.products && getProductCards(10, 19,headings.heading1, headings.subHeading1)}
+        {dc.homeProducts && getProductCards(10, 19,headings.heading1, headings.subHeading1)}
 
         {/*  */}
-        <SectionPromo2 />
+        {/* <SectionPromo2 /> */}
 
         {/* SECTION 3 */}
-        <SectionSliderLargeProduct cardStyle="style2" />
+        {/* <SectionSliderLargeProduct cardStyle="style2" /> */}
 
         {/* SECTION */}
         <SectionPromo3 />

@@ -65,9 +65,9 @@ const NavigationItem: FC<NavigationItemProps> = ({ menuItem }) => {
                     </div>
                   ))}
                 </div>
-                <div className="w-[40%] xl:w-[35%]">
+                {/* <div className="w-[40%] xl:w-[35%]">
                   <CardCategory3 />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -77,17 +77,18 @@ const NavigationItem: FC<NavigationItemProps> = ({ menuItem }) => {
   };
 
   const renderMegaMenuNavlink = (item: NavItemType) => {
+    const url = new URL(item.slug, 'https://ibynn.com');
+    const query = url.searchParams.get('q');
+    const sort_by = url.searchParams.get('sortBy');
+
     return (
       <li key={Math.random()} className={`${item.isNew ? "menuIsNew" : ""}`}>
         <NavLink
           exact
           strict
-          target={item.targetBlank ? "_blank" : undefined}
           rel="noopener noreferrer"
           className="font-normal text-slate-600 hover:text-black dark:text-slate-400 dark:hover:text-white "
-          to={{
-            pathname: item.href || undefined,
-          }}
+          to={`/product-collection?q=${query}${sort_by ? '&sort_by='+sort_by : ''}`}
         >
           {item.name}
         </NavLink>
@@ -196,16 +197,18 @@ const NavigationItem: FC<NavigationItemProps> = ({ menuItem }) => {
   };
 
   const renderDropdownMenuNavlink = (item: NavItemType) => {
+    const url = new URL(item.slug, 'https://ibynn.com');
+    const query = url.searchParams.get('q');
+    const sort_by = url.searchParams.get('sortBy');
+
     return (
       <NavLink
         exact
         strict
-        target={item.targetBlank ? "_blank" : undefined}
+        target={``}
         rel="noopener noreferrer"
-        className="flex items-center font-normal text-neutral-6000 dark:text-neutral-400 py-2 px-4 rounded-md hover:text-neutral-700 hover:bg-neutral-100 dark:hover:bg-neutral-800 dark:hover:text-neutral-200"
-        to={{
-          pathname: item.href || undefined,
-        }}
+        className="flex text-rose-400	items-center font-normal text-neutral-6000 dark:text-neutral-400 py-2 px-4 rounded-md hover:text-neutral-700 hover:bg-neutral-100 dark:hover:bg-neutral-800 dark:hover:text-neutral-200"
+        to={`/product-collection?q=${query}${sort_by ? '&sort_by='+sort_by : ''}`}
         activeClassName="!font-medium !text-neutral-900 dark:!text-neutral-100"
       >
         {item.name}
@@ -226,12 +229,10 @@ const NavigationItem: FC<NavigationItemProps> = ({ menuItem }) => {
         <NavLink
           exact
           strict
-          target={item.targetBlank ? "_blank" : undefined}
+          target={`/${item.name}`}
           rel="noopener noreferrer"
           className="inline-flex items-center text-sm lg:text-[15px] font-medium text-slate-700 dark:text-slate-300 py-2.5 px-4 xl:px-5 rounded-full hover:text-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 dark:hover:text-slate-200"
-          to={{
-            pathname: item.href || undefined,
-          }}
+          to={`${item.name}`}
         >
           {item.name}
           {item.type && (

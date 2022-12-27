@@ -4,11 +4,12 @@ import Logo from "shared/Logo/Logo";
 import { Disclosure } from "@headlessui/react";
 import { NavLink } from "react-router-dom";
 import { NavItemType } from "./NavigationItem";
-import { NAVIGATION_DEMO_2 } from "data/navigation";
+import { NAVIGATION_VALUES } from "data/navigation";
 import ButtonPrimary from "shared/Button/ButtonPrimary";
 import SocialsList from "shared/SocialsList/SocialsList";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import SwitchDarkMode from "shared/SwitchDarkMode/SwitchDarkMode";
+import ncNanoId from "utils/ncNanoId";
 
 export interface NavMobileProps {
   data?: NavItemType[];
@@ -16,23 +17,25 @@ export interface NavMobileProps {
 }
 
 const NavMobile: React.FC<NavMobileProps> = ({
-  data = NAVIGATION_DEMO_2,
+  data = NAVIGATION_VALUES(),
   onClickClose,
 }) => {
   const _renderMenuChild = (
     item: NavItemType,
     itemClass = " pl-3 text-neutral-900 dark:text-neutral-200 font-medium "
   ) => {
+    const url = new URL(item.slug, 'https://ibynn.com');
+    const query = url.searchParams.get('q');
+    const sort_by = url.searchParams.get('sortBy');
+    
     return (
       <ul className="nav-mobile-sub-menu pl-6 pb-1 text-base">
         {item.children?.map((i, index) => (
-          <Disclosure key={i.href + index} as="li">
+          <Disclosure key={index} as="li">
             <NavLink
               exact
               strict
-              to={{
-                pathname: i.href || undefined,
-              }}
+              to={`/product-collection?q=${query}${sort_by ? '&sort_by='+sort_by : ''}`}
               className={`flex text-sm rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-800 mt-0.5 pr-4 ${itemClass}`}
               activeClassName="text-secondary"
             >

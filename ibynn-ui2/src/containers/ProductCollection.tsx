@@ -34,7 +34,7 @@ const ProductCollection: FC<ProductCollectionProps> = ({ className = "" }) => {
       data-nc-id="ProductCollection"
     >
       <Helmet>
-        <title>Collection || Ibynn Ecommerce Template</title>
+        <title>Ibynn | Find The Lowest Prices From Top Brands</title>
       </Helmet>
       <div className="container py-16 lg:pb-28 lg:pt-20 space-y-16 sm:space-y-20 lg:space-y-28">
         <div className="space-y-10 lg:space-y-14">
@@ -50,7 +50,7 @@ const ProductCollection: FC<ProductCollectionProps> = ({ className = "" }) => {
             {dc.products?.length < 1 && <ButtonPrimary loading>Loading...</ButtonPrimary>}
 
             {/* LOOP ITEMS */}
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-10 mt-8 lg:mt-10">
+            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-10 mt-8 lg:mt-10">
               {dc.products?.map((item:any, index:any) => (
                 <ProductCard data={item} key={index} />
               ))}
