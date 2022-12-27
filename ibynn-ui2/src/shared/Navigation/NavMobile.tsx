@@ -175,7 +175,7 @@ const NavMobile: React.FC<NavMobileProps> = ({
         <Logo />
         <div className="flex flex-col mt-5 text-slate-600 dark:text-slate-300 text-sm">
           <span>
-            Find the Lowest Prices From Top Brands
+            Find the best products, at the best prices, with IBYNN
           </span>
 
           <div className="flex justify-between items-center mt-4">

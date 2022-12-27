@@ -48,7 +48,7 @@ const PageHome: FC<any> = () => {
   return (
     <div className="nc-PageHome relative overflow-hidden">
       <Helmet>
-        <title>Ibynn | Find the Lowest Prices From Top Brands</title>
+        <title>Ibynn | Find the best products, at the best prices, with IBYNN</title>
       </Helmet>
 
       {/* SECTION HERO */}

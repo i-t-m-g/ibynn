@@ -20,7 +20,7 @@ const PageAbout: FC<PageAboutProps> = ({ className = "" }) => {
       data-nc-id="PageAbout"
     >
       <Helmet>
-        <title>About || Find The Lowest Prices From Top Brands</title>
+        <title>About || Find the best products, at the best prices, with IBYNN</title>
       </Helmet>
 
       {/* ======== BG GLASS ======== */}
