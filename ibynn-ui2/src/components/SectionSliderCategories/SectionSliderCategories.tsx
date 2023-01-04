@@ -41,9 +41,11 @@ const SectionSliderCategories: FC<SectionSliderCategoriesProps> = ({
     // @ts-ignore
     const OPTIONS: Glide.Options = {
       perView: 4,
-      gap: 32,
-      bound: true,
-      animationDuration: 200,
+      type: "slider",
+      gap: 45,
+      bound: false,
+      animationDuration: 800,
+      dragThreshold: 10,
       swipeThreshold: 1,
       breakpoints: {
         1280: {
