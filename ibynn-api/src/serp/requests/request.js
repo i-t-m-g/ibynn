@@ -14,7 +14,7 @@ const productPageUrl = (product_id) =>
   `https://serpapi.com/search.json?engine=google_product&product_id=${product_id}&gl=us&hl=en&api_key=${process.env.API_KEY}`;
 
 const getTbs = (min_price) =>
-  `&tbs=mr:1,price:1,ppr_min:${min_price},merchagg:g8299768|g784994|g7187155|g7432975|g113872638|g9473138|m8175035|m10046|m1311674|m7815|m114193152|m7388148|m10048|m8740|m3368322,avg_rating:400`;
+  `tbs=mr:1,price:1,ppr_max:${min_price},merchagg:g10105730%7Cg7187155%7Cg784994%7Cm125210027%7Cm463001233%7Cm530574019%7Cm1172711%7Cm138332207%7Cm1311674%7Cm10046%7Cm1247713,avg_rating:400`;
 
 export const addIcons = (arr) => {
   if (arr) {

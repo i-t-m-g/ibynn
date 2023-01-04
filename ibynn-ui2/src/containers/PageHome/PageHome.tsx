@@ -63,7 +63,7 @@ const PageHome: FC<any> = () => {
           <SectionHowItWork />
         </div>
 
-        {dc.homeProducts && getProductCards(0,9)}
+        {dc.homeProducts && getProductCards(0,5)}
 
         {/* SECTION */}
         <div className="relative py-24 lg:py-32">
@@ -73,7 +73,7 @@ const PageHome: FC<any> = () => {
           )}
         </div>
 
-        {dc.homeProducts && getProductCards(10, 19,headings.heading1, headings.subHeading1)}
+        {dc.homeProducts && getProductCards(6, 10,headings.heading1, headings.subHeading1)}
 
         {/*  */}
         {/* <SectionPromo2 /> */}

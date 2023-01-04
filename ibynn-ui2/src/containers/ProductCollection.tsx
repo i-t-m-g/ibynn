@@ -1,4 +1,4 @@
-import React, { FC, useContext, useEffect } from "react";
+import React, { FC, useContext, useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import Pagination from "shared/Pagination/Pagination";
 import ButtonPrimary from "shared/Button/ButtonPrimary";
@@ -10,6 +10,7 @@ import { PRODUCTS } from "data/data";
 import DataContext from "context/DataContext";
 import { useLocation, useParams } from "react-router-dom";
 import PlaceIcon from "shared/NcImage/PlaceIcon";
+import SearchBar from "components/SearchBar";
 
 export interface ProductCollectionProps {
   className?: string;
@@ -21,12 +22,20 @@ const ProductCollection: FC<ProductCollectionProps> = ({ className = "" }) => {
     const url = new URL(params.pathname+params.search, 'https://ibynn.com');
     const query = url.searchParams.get('q');
     const sort_by = url.searchParams.get('sort_by');
+    const [activeResults, setActiveResults] = useState<any>(dc.products);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-      dc.fetchProducts(query, sort_by);
+      fetch(`${process.env.REACT_APP_REST_API_ENDPOINT}/shopping?q=${query}${sort_by ? "&sortBy="+sort_by : ""}`)
+      .then((res) => res.json())
+      .then((products) => {dc.setProducts(products.shopping_results); setLoading(false);});
     }, []);
 
-    console.log(dc.activeCategory)
+    useEffect(() => {
+      setActiveResults(dc.products);
+    }, dc.products)
+
+    console.log(dc.products)
 
   return (
     <div
@@ -36,6 +45,7 @@ const ProductCollection: FC<ProductCollectionProps> = ({ className = "" }) => {
       <Helmet>
         <title>Ibynn | Find the best products, at the best prices, with IBYNN</title>
       </Helmet>
+      <SearchBar array={dc.products} setActiveResults={setActiveResults} />
       <div className="container py-16 lg:pb-28 lg:pt-20 space-y-16 sm:space-y-20 lg:space-y-28">
         <div className="space-y-10 lg:space-y-14">
           {/* HEADING */}
@@ -47,14 +57,12 @@ const ProductCollection: FC<ProductCollectionProps> = ({ className = "" }) => {
 
           <hr className="border-slate-200 dark:border-slate-700" />
           <main>
-            {dc.products?.length < 1 && <ButtonPrimary loading>Loading...</ButtonPrimary>}
-
-            {/* LOOP ITEMS */}
+            {loading ? <ButtonPrimary loading>Loading...</ButtonPrimary> :
             <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-10 mt-8 lg:mt-10">
-              {dc.products?.map((item:any, index:any) => (
+              {activeResults?.map((item:any, index:any) => (
                 <ProductCard data={item} key={index} />
               ))}
-            </div>
+            </div>}
           </main>
         </div>
       </div>

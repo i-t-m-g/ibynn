@@ -1,13 +1,22 @@
 import convert from "convert-units";
 
 export const storeImages = {
-  Target:
-    "https://www.freepnglogos.com/uploads/target-png-logo/target-logo-photo-3.png",
-  Amazon:
-    "https://www.freepnglogos.com/uploads/amazon-png-logo-vector/amazon-png-logo-vector-1.png",
-  Walmart: "https://www.freepnglogos.com/uploads/walmart-logo-24.jpg",
-  Kmart:
+  "Target": 
+    "https://images.ibynn.com/logos/target.png",
+  "Amazon": 
+    "https://images.ibynn.com/logos/amazon.png",
+  "Walmart": 
+    "https://images.ibynn.com/logos/walmart.png",
+  "Kmart": 
     "https://www.freepnglogos.com/uploads/best-buy-png-logo/kmart-png-logo-27.png",
+  "Big Lots": 
+    "https://images.ibynn.com/logos/big_lots.png",
+  "Office Depot":
+    "https://images.ibynn.com/logos/office_depot.png",
+  "Ebay":
+    "https://images.ibynn.com/logos/ebay.png",
+  "Walgreens":
+    "https://images.ibynn.com/logos/walgreens.png",
   "Best Buy":
     "https://www.freepnglogos.com/uploads/best-buy-png-logo/best-buy-png-logo-vector-0.png",
   "Home Depot":
@@ -23,6 +32,10 @@ export const storeNames = [
   "Amazon",
   "Walmart",
   "Kmart",
+  "Big Lots",
+  "Office Depot",
+  "Ebay",
+  "Walgreens",
   "Best Buy",
   "Home Depot",
   "PC Richard & Son",

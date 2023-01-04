@@ -8,6 +8,7 @@ import { cache as cacheMiddleware } from "./middleware/cache.js";
 import { config } from "dotenv";
 import * as request from "./serp/requests/request.js";
 import { createRequire } from "module";
+import { getCheerio } from "./serp/scrape/scrape.js";
 
 const require = createRequire(import.meta.url);
 
@@ -81,6 +82,12 @@ app.get("/compare", async (req, res) => {
   // request.sortArr(response);
 
   res.send(response);
+});
+
+app.get("/scrape", async (req, res) => {
+  const url = req.query.url;
+  const html = await getCheerio(url);
+  res.send(html)
 });
 
 // starting the server
