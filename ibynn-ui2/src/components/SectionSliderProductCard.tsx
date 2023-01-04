@@ -39,6 +39,8 @@ const SectionSliderProductCard: FC<SectionSliderProductCardProps> = ({
       perView: 4,
       gap: 32,
       bound: true,
+      animationDuration: 200,
+      swipeThreshold: 1,
       breakpoints: {
         1280: {
           perView: 4 - 1,

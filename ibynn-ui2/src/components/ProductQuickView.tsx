@@ -105,7 +105,7 @@ const ProductQuickView: FC<ProductQuickViewProps> = ({ className = "", product, 
         {/* CONTENT */}
         <div className="w-full lg:w-[50%] ">
           {/* HEADING */}
-          {media.length >= 3 && 
+          {media.length >= 2 && 
             <div className="relative">
               <div className="aspect-w-16 aspect-h-16">
                 <img
@@ -118,7 +118,7 @@ const ProductQuickView: FC<ProductQuickViewProps> = ({ className = "", product, 
             </div>
           }
           <div className="hidden lg:grid grid-cols-2 gap-3 mt-3 sm:gap-6 sm:mt-6 xl:gap-5 xl:mt-5">
-            {media.splice(0, 2).map((item:any, index:any) => {
+            {media.splice(0, 1).map((item:any, index:any) => {
               return (
                 <div key={index} className="aspect-w-3 aspect-h-4">
                   <img

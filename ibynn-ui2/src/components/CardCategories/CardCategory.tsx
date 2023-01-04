@@ -16,7 +16,7 @@ export interface CardCategoryProps {
 }
 
 const CardCategory: FC<CardCategoryProps> = ({
-  className = "",
+  className = "shadow-xl",
   bgSVG = explore1Svg,
   name,
   category,
