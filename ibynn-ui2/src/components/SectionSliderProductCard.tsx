@@ -1,8 +1,15 @@
-import React, { FC, useEffect, useId, useRef } from "react";
+import React, { FC, useEffect, useId, useRef, useState } from "react";
 import Heading from "components/Heading/Heading";
 import Glide from "@glidejs/glide";
 import ProductCard from "./ProductCard";
 import { Product, PRODUCTS } from "data/data";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { FreeMode, Navigation } from "swiper";
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { useWindowSize } from "react-use";
 
 export interface SectionSliderProductCardProps {
   className?: string;
@@ -25,72 +32,50 @@ const SectionSliderProductCard: FC<SectionSliderProductCardProps> = ({
   data = PRODUCTS.filter((_, i) => i < 8 && i > 2),
   products
 }) => {
-  const sliderRef = useRef(null);
-  const id = useId();
-  const UNIQUE_CLASS = "glidejs" + id.replace(/:/g, "_");
-  
-  useEffect(() => {
-    if (!sliderRef.current) {
-      return () => {};
+  const { width } = useWindowSize();
+  const [isMobile, setIsMobile] = useState(width < 1024);
+  const breakpoints = {
+    1280: {
+      spaceBetween: 20,
+      slidesPerView: 4,
+    },
+    768: {
+      spaceBetween: 15,
+      slidesPerView: 3.5,
+    },
+    600: {
+      spaceBetween: 10,
+      slidesPerView: 2.7,
+    },
+    300: {
+      spaceBetween: 10,
+      slidesPerView: 1.7,
     }
-
-    // @ts-ignore
-    const OPTIONS: Glide.Options = {
-      perView: 4,
-      gap: 32,
-      bound: true,
-      animationDuration: 200,
-      swipeThreshold: 1,
-      breakpoints: {
-        1280: {
-          perView: 4 - 1,
-        },
-        1024: {
-          gap: 20,
-          perView: 4 - 1,
-        },
-        768: {
-          gap: 20,
-          perView: 4 - 2,
-        },
-        640: {
-          gap: 20,
-          perView: 1.5,
-        },
-        500: {
-          gap: 20,
-          perView: 1.3,
-        },
-      },
-    };
-
-    let slider = new Glide(`.${UNIQUE_CLASS}`, OPTIONS);
-    slider.mount();
-    return () => {
-      slider.destroy();
-    };
-  }, [sliderRef, UNIQUE_CLASS]);
+  };
+  
+  useEffect(() => setIsMobile(width < 1024), [width]);
 
   return (
-    <div className={`nc-SectionSliderProductCard ${className}`}>
-      <div className={`${UNIQUE_CLASS} flow-root`} ref={sliderRef}>
+    <div className={`${className}`}>
+      <div>
         <Heading
           className={headingClassName}
           fontClass={headingFontClassName}
-          rightDescText={subHeading}
-          hasNextPrev
-        >
+          rightDescText={subHeading}>
           {heading || `New Arrivals`}
         </Heading>
-        <div className="glide__track" data-glide-el="track">
-          <ul className="glide__slides">
-            {products?.map((item: any, index: any) => (
-              <li key={index} style={{height: '515px'}} className={`glide__slide h-full ${itemClassName}`}>
+        <Swiper
+          breakpoints={breakpoints}
+          freeMode={isMobile}
+          loop={!isMobile}
+          navigation={!isMobile}
+          modules={[FreeMode, Navigation]}>
+            {products?.map((item:any, index:any) => (
+              <SwiperSlide key={index} style={{height: '515px'}} className={`${itemClassName}`}>
                 <ProductCard data={item} />
-              </li>
+              </SwiperSlide>
             ))}
-          </ul>
-        </div>
+        </Swiper>
       </div>
     </div>
   );
