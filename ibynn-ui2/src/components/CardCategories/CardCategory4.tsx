@@ -3,7 +3,7 @@ import NcImage from "shared/NcImage/NcImage";
 import { Link, useHistory } from "react-router-dom";
 import explore1Svg from "images/collections/explore1.svg";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
-import DataContext from "context/DataContext";
+import DataContext from "context/DataContext/DataContext";
 
 export interface CardCategory4Props {
   className?: string;

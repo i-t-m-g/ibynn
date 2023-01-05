@@ -8,7 +8,7 @@ import department3Png from "images/collections/department3.png";
 import department4Png from "images/collections/department4.png";
 import { Link } from "react-router-dom";
 import { COLORS, IMAGES } from "./constants";
-import DataContext from "context/DataContext";
+import DataContext from "context/DataContext/DataContext";
 
 export interface CardCategoryData {
   name: string;

@@ -12,7 +12,7 @@ import SectionSliderCategories from "components/SectionSliderCategories/SectionS
 import SectionPromo3 from "components/SectionPromo3";
 import SectionClientSay from "components/SectionClientSay/SectionClientSay";
 import { PRODUCTS, SPORT_PRODUCTS } from "data/data";
-import DataContext from "context/DataContext";
+import DataContext from "context/DataContext/DataContext";
 import itmg_ASCII from "../../itmg";
 
 const PageHome: FC<any> = () => {

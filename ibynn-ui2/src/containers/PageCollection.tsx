@@ -7,7 +7,7 @@ import SectionPromo1 from "components/SectionPromo1";
 import ProductCard from "components/ProductCard";
 import TabFilters from "./TabFilters";
 import { PRODUCTS } from "data/data";
-import DataContext from "context/DataContext";
+import DataContext from "context/DataContext/DataContext";
 import CategoryCard from "components/CategoryCard";
 import CardCategory2 from "components/CardCategories/CardCategory2";
 import { COLORS, IMAGES } from "components/SectionSliderCategories/constants";

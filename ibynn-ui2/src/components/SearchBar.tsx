@@ -1,4 +1,4 @@
-import DataContext from 'context/DataContext';
+import DataContext from 'context/DataContext/DataContext';
 import React, { useContext, useState } from 'react'
 
 export default function SearchBar({array, setActiveResults}:any) {

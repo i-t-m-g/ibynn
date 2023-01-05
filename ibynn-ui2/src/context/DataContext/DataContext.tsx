@@ -9,7 +9,6 @@ export function DataContextProvider({children}: any) {
     const homeProducts = parsed_products.value;
     
     const setHomeProducts = (state:any) => {
-        console.log(parsed_products)
         const item = {
             value: state,
             expiry: new Date().getDate()+7
@@ -30,13 +29,31 @@ export function DataContextProvider({children}: any) {
     };
     {/* HOME_PRODUCTS STATE */}
     
+    {/* LOADING STATE */}
+    const [loading, setLoading] = useState(true);
+
+    {/* LOADING STATE */}
+
     {/* PRODUCTS STATE */}
-    const [products, setProducts] = useState<any[]>([]);
+    const [_products, _setProducts] = useState<any[]>([]);
+    const parsed_active_products = JSON.parse(window.localStorage.getItem('ACTIVE_PRODUCTS')||'[]');
+    const products = parsed_active_products;
+
+
+    const setProducts = (state:any) => {
+        const stringifiedState = JSON.stringify(state);
+        window.localStorage.setItem('ACTIVE_PRODUCTS', stringifiedState);
+        _setProducts(state);
+    };
+
+
+
 
     const fetchProducts = (query:string, sort_by:'amount'|'massVolume') => {
+        setLoading(true);
         fetch(`${process.env.REACT_APP_REST_API_ENDPOINT}/shopping?q=${query}${sort_by ? "&sortBy="+sort_by : ""}`)
           .then((res) => res.json())
-          .then((products) => setProducts(products.shopping_results));
+          .then((products) => {setProducts(products.shopping_results);setLoading(false)});
     };
     {/* PRODUCTS STATE */}
 
@@ -59,6 +76,8 @@ export function DataContextProvider({children}: any) {
         setActiveCategory,
         products,
         setProducts,
+        loading,
+        setLoading,
     };
 
     return (

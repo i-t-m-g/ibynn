@@ -3,7 +3,7 @@ import NcImage from "shared/NcImage/NcImage";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import ModalQuickView from "./ModalQuickView";
-import DataContext from "context/DataContext";
+import DataContext from "context/DataContext/DataContext";
 
 export interface CategoryCardProps {
   className?: string;
