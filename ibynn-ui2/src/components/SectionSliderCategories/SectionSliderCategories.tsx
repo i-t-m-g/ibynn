@@ -43,6 +43,7 @@ const SectionSliderCategories: FC<SectionSliderCategoriesProps> = ({
       perView: 4,
       type: "slider",
       gap: 45,
+      animationDuration: 200,
       swipeThreshold: 1,
       breakpoints: {
         1280: {
