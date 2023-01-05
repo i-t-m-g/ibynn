@@ -49,7 +49,7 @@ const SectionSliderProductCard: FC<SectionSliderProductCardProps> = ({
     },
     300: {
       spaceBetween: 10,
-      slidesPerView: 1.7,
+      slidesPerView: 2.7,
     }
   };
   
