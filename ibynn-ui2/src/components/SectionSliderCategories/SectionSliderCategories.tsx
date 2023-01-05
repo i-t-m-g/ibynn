@@ -78,7 +78,7 @@ const SectionSliderCategories: FC<SectionSliderCategoriesProps> = ({
             {categories.map((item:any, index:any) => (
               <SwiperSlide onClick={() => handleClick(item)} key={index} className={`${itemClassName}`}>
                 <CardCategory2
-                  featuredImage={IMAGES[index]}
+                  featuredImage={item.icon}
                   name={item.name}
                   desc={`${item.children.length} categories`}
                   bgClass={COLORS[index]}
