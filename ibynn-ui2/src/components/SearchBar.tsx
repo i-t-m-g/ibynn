@@ -51,7 +51,7 @@ export default function SearchBar({array, setActiveResults}:any) {
             onChange={handleChange}
             type="search"
             placeholder="Search by brand"
-            className="border-none bg-transparent focus:outline-none focus:ring-0 w-full text-sm "
+            className="border-none bg-transparent focus:outline-none focus:ring-0 w-full text-xl font-extrabold"
           />
         </div>
         <input type="submit" hidden value="" />
