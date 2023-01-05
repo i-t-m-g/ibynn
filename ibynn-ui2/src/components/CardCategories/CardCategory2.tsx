@@ -32,6 +32,7 @@ const CardCategory2: FC<CardCategory2Props> = ({
       >
         <div className="pt-14">
           <NcImage
+            loading="eager"
             containerClassName="w-full h-full flex justify-center"
             src={featuredImage}
             className="object-cover rounded-2xl"
