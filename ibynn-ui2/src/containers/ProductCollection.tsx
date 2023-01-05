@@ -7,7 +7,7 @@ import SectionPromo1 from "components/SectionPromo1";
 import ProductCard from "components/ProductCard";
 import TabFilters from "./TabFilters";
 import { PRODUCTS } from "data/data";
-import DataContext from "context/DataContext";
+import DataContext from "context/DataContext/DataContext";
 import { useLocation, useParams } from "react-router-dom";
 import PlaceIcon from "shared/NcImage/PlaceIcon";
 import SearchBar from "components/SearchBar";
@@ -17,26 +17,27 @@ export interface ProductCollectionProps {
 }
 
 const ProductCollection: FC<ProductCollectionProps> = ({ className = "" }) => {
-    const dc = useContext<any>(DataContext);
-    const params = useLocation();
-    const url = new URL(params.pathname+params.search, 'https://ibynn.com');
-    const query = url.searchParams.get('q');
-    const sort_by = url.searchParams.get('sort_by');
-    const [activeResults, setActiveResults] = useState<any>(dc.products);
-    const [loading, setLoading] = useState(true);
+  const dc = useContext<any>(DataContext);
+  const params = useLocation();
+  const url = new URL(params.pathname+params.search, 'https://ibynn.com');
+  const query = url.searchParams.get('q');
+  const sort_by = url.searchParams.get('sort_by');
+  const [activeResults, setActiveResults] = useState<any>();
+  const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-      fetch(`${process.env.REACT_APP_REST_API_ENDPOINT}/shopping?q=${query}${sort_by ? "&sortBy="+sort_by : ""}`)
+  useEffect(() => {
+    dc.setLoading(true);
+    fetch(`${process.env.REACT_APP_REST_API_ENDPOINT}/shopping?q=${query}${sort_by ? "&sortBy="+sort_by : ""}`)
       .then((res) => res.json())
-      .then((products) => {dc.setProducts(products.shopping_results); setLoading(false);});
-    }, []);
+      .then((products) => {dc.setProducts(products.shopping_results); dc.setLoading(false);});
+  }, [query]);
 
-    useEffect(() => {
-      setActiveResults(dc.products);
-    }, dc.products)
 
-    console.log(dc.products)
+  useEffect(() => {
+    setActiveResults(dc.products);
+  }, [dc.products, query]);
 
+  
   return (
     <div
       className={`nc-ProductCollection ${className}`}
@@ -57,7 +58,7 @@ const ProductCollection: FC<ProductCollectionProps> = ({ className = "" }) => {
 
           <hr className="border-slate-200 dark:border-slate-700" />
           <main>
-            {loading ? <ButtonPrimary loading>Loading...</ButtonPrimary> :
+            {dc.loading ? <ButtonPrimary loading>Loading...</ButtonPrimary> :
             <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-10 mt-8 lg:mt-10">
               {activeResults?.map((item:any, index:any) => (
                 <ProductCard data={item} key={index} />

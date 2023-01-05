@@ -24,7 +24,7 @@ import CartPage from "containers/ProductDetailPage/CartPage";
 import CheckoutPage from "containers/PageCheckout/CheckoutPage";
 import PageCollection2 from "containers/PageCollection2";
 import { createContext } from "vm";
-import { DataContextProvider } from "context/DataContext";
+import { DataContextProvider } from "context/DataContext/DataContext";
 import ProductCollection from "containers/ProductCollection";
 
 export const pages: Page[] = [

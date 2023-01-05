@@ -21,7 +21,7 @@ export const addIcons = (arr) => {
     let i = 0;
     for (const prod of arr) {
       storeNames.forEach((n) => {
-        if (prod.source.includes(n)) {
+        if (prod.source.toLowerCase().includes(n.toLowerCase())) {
           arr[i].icon = storeImages[n];
         }
       });
