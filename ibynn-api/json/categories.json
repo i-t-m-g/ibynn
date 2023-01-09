@@ -40,7 +40,7 @@
           "children": [
             {
               "id": 5,
-              "name": "Eau De Parfume",
+              "name": "Parfume",
               "parent": "Perfume & Fragrance",
               "slug": "/search?q=Eau De Parfume&sortBy=massVolume",
               "icon": "https://images.ibynn.com/categories/beautydepartment.png",
@@ -48,14 +48,14 @@
                 {
                   "id": 5,
                   "name": "Mens",
-                  "parent": "Eau De Parfume",
+                  "parent": "Parfume",
                   "slug": "/search?q=mens male Eau De Parfume&sortBy=massVolume",
                   "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
                 },
                 {
                   "id": 5,
                   "name": "Womens",
-                  "parent": "Eau De Parfume",
+                  "parent": "Parfume",
                   "slug": "/search?q=women female Eau De Parfume&sortBy=massVolume",
                   "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
                 }
@@ -63,7 +63,7 @@
             },
             {
               "id": 5,
-              "name": "Eau De Toilete",
+              "name": "Toilete",
               "parent": "Perfume & Fragrance",
               "slug": "/search?q=Cosmetics&sortBy=massVolume",
               "icon": "https://images.ibynn.com/categories/beautydepartment.png",
@@ -71,21 +71,21 @@
                 {
                   "id": 5,
                   "name": "Mens",
-                  "parent": "Eau De Toilete",
+                  "parent": "Toilete",
                   "slug": "/search?q=mens male Eau De toilete&sortBy=massVolume",
                   "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
                 },
                 {
                   "id": 5,
                   "name": "Womens",
-                  "parent": "Eau De Toilete",
+                  "parent": "Toilete",
                   "slug": "/search?q=womens female Eau De toilete&sortBy=massVolume",
                   "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
                 }
               ]
             }
           ]
-        }, 
+        },
         {
           "id": 1,
           "name": "Makeup",
@@ -796,9 +796,9 @@
         },
         {
           "id": 1,
-          "name": "Bath & Body",
+          "name": "Skin Care",
           "parent": "Cosmetics & Fragrance",
-          "slug": "/search?q=Bath&body&sortBy=massVolume",
+          "slug": "/search?q=Skin Care&sortBy=massVolume",
           "image": {
             "mobile": {
               "url": "https://images.ibynn.com/categories/beautydepartment.png",
@@ -814,9 +814,9 @@
           "children": [
             {
               "id": 1,
-              "slug": "/search?q=Adult Hygienic Wipes&sortBy=massVolume",
-              "parent": "Bath & Body",
-              "name": "Adult Hygienic Wipes",
+              "slug": "/search?q=Night Moisturizer Creams&sortBy=massVolume",
+              "parent": "Skin Care",
+              "name": "Night Moisturizer Creams",
               "image": {
                 "mobile": {
                   "url": "https://images.ibynn.com/categories/beautydepartment.png",
@@ -833,9 +833,9 @@
             },
             {
               "id": 1,
-              "slug": "/search?q=Bar Soap&sortBy=massVolume",
-              "parent": "Bath & Body",
-              "name": "Bar Soap",
+              "slug": "/search?q=Lip Balm & Treatments&sortBy=massVolume",
+              "parent": "Skin Care",
+              "name": "Lip Balm & Treatments",
               "image": {
                 "mobile": {
                   "url": "https://images.ibynn.com/categories/beautydepartment.png",
@@ -852,9 +852,9 @@
             },
             {
               "id": 1,
-              "slug": "/search?q=Bath Additives&sortBy=massVolume",
-              "parent": "Bath & Body",
-              "name": "Bath Additives",
+              "slug": "/search?q=Face & Body Sunscreen&sortBy=massVolume",
+              "parent": "Skin Care",
+              "name": "Face & Body Sunscreen",
               "image": {
                 "mobile": {
                   "url": "https://images.ibynn.com/categories/beautydepartment.png",
@@ -871,9 +871,9 @@
             },
             {
               "id": 1,
-              "slug": "/search?q=Bath Brushes&sortBy=massVolume",
-              "parent": "Bath & Body",
-              "name": "Bath Brushes",
+              "slug": "/search?q=Face Oils&sortBy=massVolume",
+              "parent": "Skin Care",
+              "name": "Face Oils",
               "image": {
                 "mobile": {
                   "url": "https://images.ibynn.com/categories/beautydepartment.png",
@@ -890,9 +890,9 @@
             },
             {
               "id": 1,
-              "slug": "/search?q=Bath Sponges & Loofahs&sortBy=massVolume",
-              "parent": "Bath & Body",
-              "name": "Bath Sponges & Loofahs",
+              "slug": "/search?q=BB & CC Creams&sortBy=massVolume",
+              "parent": "Skin Care",
+              "name": "BB & CC Creams",
               "image": {
                 "mobile": {
                   "url": "https://images.ibynn.com/categories/beautydepartment.png",
@@ -909,9 +909,9 @@
             },
             {
               "id": 1,
-              "slug": "/search?q=Body Wash&sortBy=massVolume",
-              "parent": "Bath & Body",
-              "name": "Body Wash",
+              "slug": "/search?q=Face Wash & Cleaners&sortBy=massVolume",
+              "parent": "Skin Care",
+              "name": "Face Wash & Cleaners",
               "image": {
                 "mobile": {
                   "url": "https://images.ibynn.com/categories/beautydepartment.png",
@@ -928,9 +928,9 @@
             },
             {
               "id": 1,
-              "slug": "/search?q=Hand Sanitizers & Wipes&sortBy=massVolume",
-              "parent": "Bath & Body",
-              "name": "Hand Sanitizers & Wipes",
+              "slug": "/search?q=Exfoliators&sortBy=massVolume",
+              "parent": "Skin Care",
+              "name": "Exfoliators",
               "image": {
                 "mobile": {
                   "url": "https://images.ibynn.com/categories/beautydepartment.png",
@@ -947,9 +947,9 @@
             },
             {
               "id": 1,
-              "slug": "/search?q=Liquid Hand Soap&sortBy=massVolume",
-              "parent": "Bath & Body",
-              "name": "Liquid Hand Soap",
+              "slug": "/search?q=Make Up Remover&sortBy=massVolume",
+              "parent": "Skin Care",
+              "name": "Make Up Remover",
               "image": {
                 "mobile": {
                   "url": "https://images.ibynn.com/categories/beautydepartment.png",
@@ -966,9 +966,9 @@
             },
             {
               "id": 1,
-              "slug": "/search?q=Powdered Hand Soap&sortBy=massVolume",
-              "parent": "Bath & Body",
-              "name": "Powdered Hand Soap",
+              "slug": "/search?q=Face Wipes&sortBy=massVolume",
+              "parent": "Skin Care",
+              "name": "Face Wipes",
               "image": {
                 "mobile": {
                   "url": "https://images.ibynn.com/categories/beautydepartment.png",
@@ -985,9 +985,9 @@
             },
             {
               "id": 1,
-              "slug": "/search?q=Shower Caps&sortBy=massVolume",
-              "parent": "Bath & Body",
-              "name": "Shower Caps",
+              "slug": "/search?q=Face Serums&sortBy=massVolume",
+              "parent": "Skin Care",
+              "name": "Face Serums",
               "image": {
                 "mobile": {
                   "url": "https://images.ibynn.com/categories/beautydepartment.png",
@@ -1004,9 +1004,47 @@
             },
             {
               "id": 1,
-              "slug": "/search?q=Bath & Body Gift Sets&sortBy=massVolume",
-              "parent": "Bath & Body",
-              "name": "Bath & Body Gift Sets",
+              "slug": "/search?q=Blemish & Acne Treatments&sortBy=massVolume",
+              "parent": "Skin Care",
+              "name": "Blemish & Acne Treatments",
+              "image": {
+                "mobile": {
+                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
+                  "width": 475,
+                  "height": 250
+                },
+                "desktop": {
+                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
+                  "width": 475,
+                  "height": 250
+                }
+              },
+              "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
+            },
+            {
+              "id": 1,
+              "slug": "/search?q=Facial Peels&sortBy=massVolume",
+              "parent": "Skin Care",
+              "name": "Facial Peels",
+              "image": {
+                "mobile": {
+                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
+                  "width": 475,
+                  "height": 250
+                },
+                "desktop": {
+                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
+                  "width": 475,
+                  "height": 250
+                }
+              },
+              "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
+            },
+            {
+              "id": 1,
+              "slug": "/search?q=Eye Cream & Eye Mask&sortBy=massVolume",
+              "parent": "Skin Care",
+              "name": "Eye Cream & Eye Mask",
               "image": {
                 "mobile": {
                   "url": "https://images.ibynn.com/categories/beautydepartment.png",
@@ -1025,9 +1063,335 @@
         },
         {
           "id": 1,
-          "name": "Cosmetic Tools",
+          "name": "Nail Care",
           "parent": "Cosmetics & Fragrance",
-          "slug": "/search?q=Cosmetic Tools&sortBy=massVolume",
+          "slug": "/search?q=Nail Care&sortBy=massVolume",
+          "image": {
+            "mobile": {
+              "url": "https://images.ibynn.com/categories/beautydepartment.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "https://images.ibynn.com/categories/beautydepartment.png",
+              "width": 475,
+              "height": 250
+            }
+          },
+          "children": [
+            {
+              "id": 1,
+              "slug": "/search?q=Cuticle Cream & Oil&sortBy=massVolume",
+              "parent": "Nail Care",
+              "name": "Cuticle Cream & Oil",
+              "image": {
+                "mobile": {
+                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
+                  "width": 475,
+                  "height": 250
+                },
+                "desktop": {
+                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
+                  "width": 475,
+                  "height": 250
+                }
+              },
+              "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
+            },
+            {
+              "id": 1,
+              "slug": "/search?q=False Nails&sortBy=massVolume",
+              "parent": "Nail Care",
+              "name": "False Nails",
+              "image": {
+                "mobile": {
+                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
+                  "width": 475,
+                  "height": 250
+                },
+                "desktop": {
+                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
+                  "width": 475,
+                  "height": 250
+                }
+              },
+              "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
+            },
+            {
+              "id": 1,
+              "slug": "/search?q=Manicure Glue&sortBy=massVolume",
+              "parent": "Nail Care",
+              "name": "Manicure Glue",
+              "image": {
+                "mobile": {
+                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
+                  "width": 475,
+                  "height": 250
+                },
+                "desktop": {
+                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
+                  "width": 475,
+                  "height": 250
+                }
+              },
+              "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
+            },
+            {
+              "id": 1,
+              "slug": "/search?q=Nail Art Kits & Accessories&sortBy=massVolume",
+              "parent": "Nail Care",
+              "name": "Nail Art Kits & Accessories",
+              "image": {
+                "mobile": {
+                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
+                  "width": 475,
+                  "height": 250
+                },
+                "desktop": {
+                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
+                  "width": 475,
+                  "height": 250
+                }
+              },
+              "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
+            },
+            {
+              "id": 1,
+              "slug": "/search?q=Nail Polish Drying Drops & Sprays&sortBy=massVolume",
+              "parent": "Nail Care",
+              "name": "Nail Polish Drying Drops & Sprays",
+              "image": {
+                "mobile": {
+                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
+                  "width": 475,
+                  "height": 250
+                },
+                "desktop": {
+                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
+                  "width": 475,
+                  "height": 250
+                }
+              },
+              "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
+            },
+            {
+              "id": 1,
+              "slug": "/search?q=Nail Polish Removers&sortBy=massVolume",
+              "parent": "Nail Care",
+              "name": "Nail Polish Removers",
+              "image": {
+                "mobile": {
+                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
+                  "width": 475,
+                  "height": 250
+                },
+                "desktop": {
+                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
+                  "width": 475,
+                  "height": 250
+                }
+              },
+              "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
+            },
+            {
+              "id": 1,
+              "slug": "/search?q=Nail Polish Thinners&sortBy=massVolume",
+              "parent": "Nail Care",
+              "name": "Nail Polish Thinners",
+              "image": {
+                "mobile": {
+                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
+                  "width": 475,
+                  "height": 250
+                },
+                "desktop": {
+                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
+                  "width": 475,
+                  "height": 250
+                }
+              },
+              "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
+            },
+            {
+              "id": 1,
+              "slug": "/search?q=Nail Polishes&sortBy=massVolume",
+              "parent": "Nail Care",
+              "name": "Nail Polishes",
+              "image": {
+                "mobile": {
+                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
+                  "width": 475,
+                  "height": 250
+                },
+                "desktop": {
+                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
+                  "width": 475,
+                  "height": 250
+                }
+              },
+              "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "slug": "/search?q=Hair Care&sortBy=massVolume",
+          "parent": "Bath & Body",
+          "name": "Hair Care",
+          "image": {
+            "mobile": {
+              "url": "https://images.ibynn.com/categories/beautydepartment.png",
+              "width": 475,
+              "height": 250
+            },
+            "desktop": {
+              "url": "https://images.ibynn.com/categories/beautydepartment.png",
+              "width": 475,
+              "height": 250
+            }
+          },
+          "icon": "https://images.ibynn.com/categories/beautydepartment.pngg",
+          "children": [
+            {
+              "id": 1,
+              "slug": "/search?q=Shampoo&sortBy=massVolume",
+              "parent": "Hair Care",
+              "name": "Shampoo",
+              "image": {
+                "mobile": {
+                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
+                  "width": 475,
+                  "height": 250
+                },
+                "desktop": {
+                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
+                  "width": 475,
+                  "height": 250
+                }
+              },
+              "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
+            },
+            {
+              "id": 1,
+              "slug": "/search?q=Conditioner&sortBy=massVolume",
+              "parent": "Hair Care",
+              "name": "Conditioner",
+              "image": {
+                "mobile": {
+                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
+                  "width": 475,
+                  "height": 250
+                },
+                "desktop": {
+                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
+                  "width": 475,
+                  "height": 250
+                }
+              },
+              "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
+            },
+            {
+              "id": 1,
+              "slug": "/search?q=Scalp Scrub&sortBy=massVolume",
+              "parent": "Hair Care",
+              "name": "Scalp Scrub",
+              "image": {
+                "mobile": {
+                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
+                  "width": 475,
+                  "height": 250
+                },
+                "desktop": {
+                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
+                  "width": 475,
+                  "height": 250
+                }
+              },
+              "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
+            },
+            {
+              "id": 1,
+              "slug": "/search?q=Hair Oil&sortBy=massVolume",
+              "parent": "Hair Care",
+              "name": "Hair Oil",
+              "image": {
+                "mobile": {
+                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
+                  "width": 475,
+                  "height": 250
+                },
+                "desktop": {
+                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
+                  "width": 475,
+                  "height": 250
+                }
+              },
+              "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
+            },
+            {
+              "id": 1,
+              "slug": "/search?q=Curling Irons&sortBy=massVolume",
+              "parent": "Hair Care",
+              "name": "Curling Irons",
+              "image": {
+                "mobile": {
+                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
+                  "width": 475,
+                  "height": 250
+                },
+                "desktop": {
+                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
+                  "width": 475,
+                  "height": 250
+                }
+              },
+              "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
+            },
+            {
+              "id": 1,
+              "slug": "/search?q=Hair Dryers&sortBy=massVolume",
+              "parent": "Hair Care",
+              "name": "Hair Dryers",
+              "image": {
+                "mobile": {
+                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
+                  "width": 475,
+                  "height": 250
+                },
+                "desktop": {
+                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
+                  "width": 475,
+                  "height": 250
+                }
+              },
+              "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
+            },
+            {
+              "id": 1,
+              "slug": "/search?q=Hair Straightners & Flat Irons&sortBy=massVolume",
+              "parent": "Hair Care",
+              "name": "Hair Straightners & Flat Irons",
+              "image": {
+                "mobile": {
+                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
+                  "width": 475,
+                  "height": 250
+                },
+                "desktop": {
+                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
+                  "width": 475,
+                  "height": 250
+                }
+              },
+              "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "name": "Cosmetic Tools & Brushes",
+          "parent": "Cosmetics & Fragrance",
+          "slug": "/search?q=Cosmetic Tools & Brushes&sortBy=massVolume",
           "image": {
             "mobile": {
               "url": "https://images.ibynn.com/categories/beautydepartment.png",
@@ -1044,7 +1408,7 @@
             {
               "id": 1,
               "name": "Makeup Tools",
-              "parent": "Cosmetic Tools",
+              "parent": "Cosmetic Tools & Brushes",
               "slug": "/search?q=Makeup Tools&sortBy=massVolume",
               "image": {
                 "mobile": {
@@ -1311,7 +1675,7 @@
             {
               "id": 1,
               "name": "Nail Tools",
-              "parent": "Cosmetic Tools",
+              "parent": "Cosmetic Tools & Brushes",
               "slug": "/search?q=Nail Tools&sortBy=massVolume",
               "image": {
                 "mobile": {
@@ -1520,8 +1884,8 @@
             },
             {
               "id": 1,
-              "name": "Skin Care Tools",
-              "parent": "Cosmetic Tools",
+              "name": "Skin & Hair Care Tools",
+              "parent": "Cosmetic Tools & Brushes",
               "slug": "/search?q=Skin Care Tools&sortBy=massVolume",
               "image": {
                 "mobile": {
@@ -1541,6 +1905,64 @@
                   "slug": "/search?q=Facial Saunas&sortBy=massVolume",
                   "parent": "Skin Care Tools",
                   "name": "Facial Saunas",
+                  "image": {
+                    "mobile": {
+                      "url": "https://images.ibynn.com/categories/beautydepartment.png",
+                      "width": 475,
+                      "height": 250
+                    },
+                    "desktop": {
+                      "url": "https://images.ibynn.com/categories/beautydepartment.png",
+                      "width": 475,
+                      "height": 250
+                    }
+                  },
+                  "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
+                },
+
+                {
+                  "id": 1,
+                  "slug": "/search?q=Curling Irons&sortBy=massVolume",
+                  "parent": "Hair Care",
+                  "name": "Curling Irons",
+                  "image": {
+                    "mobile": {
+                      "url": "https://images.ibynn.com/categories/beautydepartment.png",
+                      "width": 475,
+                      "height": 250
+                    },
+                    "desktop": {
+                      "url": "https://images.ibynn.com/categories/beautydepartment.png",
+                      "width": 475,
+                      "height": 250
+                    }
+                  },
+                  "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
+                },
+                {
+                  "id": 1,
+                  "slug": "/search?q=Hair Dryers&sortBy=massVolume",
+                  "parent": "Hair Care",
+                  "name": "Hair Dryers",
+                  "image": {
+                    "mobile": {
+                      "url": "https://images.ibynn.com/categories/beautydepartment.png",
+                      "width": 475,
+                      "height": 250
+                    },
+                    "desktop": {
+                      "url": "https://images.ibynn.com/categories/beautydepartment.png",
+                      "width": 475,
+                      "height": 250
+                    }
+                  },
+                  "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
+                },
+                {
+                  "id": 1,
+                  "slug": "/search?q=Hair Straightners & Flat Irons&sortBy=massVolume",
+                  "parent": "Hair Care",
+                  "name": "Hair Straightners & Flat Irons",
                   "image": {
                     "mobile": {
                       "url": "https://images.ibynn.com/categories/beautydepartment.png",
@@ -1694,9 +2116,9 @@
         },
         {
           "id": 1,
-          "name": "Nail Care",
+          "name": "Bath & Body",
           "parent": "Cosmetics & Fragrance",
-          "slug": "/search?q=Nail Care&sortBy=massVolume",
+          "slug": "/search?q=Bath&body&sortBy=massVolume",
           "image": {
             "mobile": {
               "url": "https://images.ibynn.com/categories/beautydepartment.png",
@@ -1712,9 +2134,9 @@
           "children": [
             {
               "id": 1,
-              "slug": "/search?q=Cuticle Cream & Oil&sortBy=massVolume",
-              "parent": "Nail Care",
-              "name": "Cuticle Cream & Oil",
+              "slug": "/search?q=Adult Hygienic Wipes&sortBy=massVolume",
+              "parent": "Bath & Body",
+              "name": "Adult Hygienic Wipes",
               "image": {
                 "mobile": {
                   "url": "https://images.ibynn.com/categories/beautydepartment.png",
@@ -1731,9 +2153,9 @@
             },
             {
               "id": 1,
-              "slug": "/search?q=False Nails&sortBy=massVolume",
-              "parent": "Nail Care",
-              "name": "False Nails",
+              "slug": "/search?q=Body Wash & Shower Gel&sortBy=massVolume",
+              "parent": "Bath & Body",
+              "name": "Body Wash & Shower Gel",
               "image": {
                 "mobile": {
                   "url": "https://images.ibynn.com/categories/beautydepartment.png",
@@ -1750,9 +2172,9 @@
             },
             {
               "id": 1,
-              "slug": "/search?q=Manicure Glue&sortBy=massVolume",
-              "parent": "Nail Care",
-              "name": "Manicure Glue",
+              "slug": "/search?q=Shampoo Hair Soap&sortBy=massVolume",
+              "parent": "Bath & Body",
+              "name": "Shampoo & Hair Soap",
               "image": {
                 "mobile": {
                   "url": "https://images.ibynn.com/categories/beautydepartment.png",
@@ -1769,9 +2191,9 @@
             },
             {
               "id": 1,
-              "slug": "/search?q=Nail Art Kits & Accessories&sortBy=massVolume",
-              "parent": "Nail Care",
-              "name": "Nail Art Kits & Accessories",
+              "slug": "/search?q=Bar Soap&sortBy=massVolume",
+              "parent": "Bath & Body",
+              "name": "Bar Soap",
               "image": {
                 "mobile": {
                   "url": "https://images.ibynn.com/categories/beautydepartment.png",
@@ -1788,9 +2210,9 @@
             },
             {
               "id": 1,
-              "slug": "/search?q=Nail Polish Drying Drops & Sprays&sortBy=massVolume",
-              "parent": "Nail Care",
-              "name": "Nail Polish Drying Drops & Sprays",
+              "slug": "/search?q=Bath Additives&sortBy=massVolume",
+              "parent": "Bath & Body",
+              "name": "Bath Additives",
               "image": {
                 "mobile": {
                   "url": "https://images.ibynn.com/categories/beautydepartment.png",
@@ -1807,9 +2229,9 @@
             },
             {
               "id": 1,
-              "slug": "/search?q=Nail Polish Removers&sortBy=massVolume",
-              "parent": "Nail Care",
-              "name": "Nail Polish Removers",
+              "slug": "/search?q=Bath Brushes&sortBy=massVolume",
+              "parent": "Bath & Body",
+              "name": "Bath Brushes",
               "image": {
                 "mobile": {
                   "url": "https://images.ibynn.com/categories/beautydepartment.png",
@@ -1826,9 +2248,9 @@
             },
             {
               "id": 1,
-              "slug": "/search?q=Nail Polish Thinners&sortBy=massVolume",
-              "parent": "Nail Care",
-              "name": "Nail Polish Thinners",
+              "slug": "/search?q=Bath Sponges & Loofahs&sortBy=massVolume",
+              "parent": "Bath & Body",
+              "name": "Bath Sponges & Loofahs",
               "image": {
                 "mobile": {
                   "url": "https://images.ibynn.com/categories/beautydepartment.png",
@@ -1845,48 +2267,9 @@
             },
             {
               "id": 1,
-              "slug": "/search?q=Nail Polishes&sortBy=massVolume",
-              "parent": "Nail Care",
-              "name": "Nail Polishes",
-              "image": {
-                "mobile": {
-                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
-            }
-          ]
-        },
-        {
-          "id": 1,
-          "name": "Skin Care",
-          "parent": "Cosmetics & Fragrance",
-          "slug": "/search?q=Skin Care&sortBy=massVolume",
-          "image": {
-            "mobile": {
-              "url": "https://images.ibynn.com/categories/beautydepartment.png",
-              "width": 475,
-              "height": 250
-            },
-            "desktop": {
-              "url": "https://images.ibynn.com/categories/beautydepartment.png",
-              "width": 475,
-              "height": 250
-            }
-          },
-          "children": [
-            {
-              "id": 1,
-              "slug": "/search?q=Acne Treatments & Kits&sortBy=massVolume",
-              "parent": "Skin Care",
-              "name": "Acne Treatments & Kits",
+              "slug": "/search?q=Deodorant & Antiperspirant&sortBy=massVolume",
+              "parent": "Bath & Body",
+              "name": "Deodorant & Antiperspirant",
               "image": {
                 "mobile": {
                   "url": "https://images.ibynn.com/categories/beautydepartment.png",
@@ -1903,9 +2286,9 @@
             },
             {
               "id": 1,
-              "slug": "/search?q=Anti-Aging Skin Care Kits&sortBy=massVolume",
-              "parent": "Skin Care",
-              "name": "Anti-Aging Skin Care Kits",
+              "slug": "/search?q=Hand Sanitizers & Wipes&sortBy=massVolume",
+              "parent": "Bath & Body",
+              "name": "Hand Sanitizers & Wipes",
               "image": {
                 "mobile": {
                   "url": "https://images.ibynn.com/categories/beautydepartment.png",
@@ -1922,9 +2305,9 @@
             },
             {
               "id": 1,
-              "slug": "/search?q=Body Oil&sortBy=massVolume",
-              "parent": "Skin Care",
-              "name": "Body Oil",
+              "slug": "/search?q=Liquid Hand Soap&sortBy=massVolume",
+              "parent": "Bath & Body",
+              "name": "Liquid Hand Soap",
               "image": {
                 "mobile": {
                   "url": "https://images.ibynn.com/categories/beautydepartment.png",
@@ -1941,9 +2324,9 @@
             },
             {
               "id": 1,
-              "slug": "/search?q=Body Powder&sortBy=massVolume",
-              "parent": "Skin Care",
-              "name": "Body Powder",
+              "slug": "/search?q=Powdered Hand Soap&sortBy=massVolume",
+              "parent": "Bath & Body",
+              "name": "Powdered Hand Soap",
               "image": {
                 "mobile": {
                   "url": "https://images.ibynn.com/categories/beautydepartment.png",
@@ -1960,9 +2343,9 @@
             },
             {
               "id": 1,
-              "slug": "/search?q=Compressed Skin Care Mask Sheets&sortBy=massVolume",
-              "parent": "Skin Care",
-              "name": "Compressed Skin Care Mask Sheets",
+              "slug": "/search?q=Shower Caps&sortBy=massVolume",
+              "parent": "Bath & Body",
+              "name": "Shower Caps",
               "image": {
                 "mobile": {
                   "url": "https://images.ibynn.com/categories/beautydepartment.png",
@@ -1979,351 +2362,9 @@
             },
             {
               "id": 1,
-              "slug": "/search?q=Facial Cleansers&sortBy=massVolume",
-              "parent": "Skin Care",
-              "name": "Facial Cleansers",
-              "image": {
-                "mobile": {
-                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
-            },
-            {
-              "id": 1,
-              "slug": "/search?q=Facial Cleansing Kits&sortBy=massVolume",
-              "parent": "Skin Care",
-              "name": "Facial Cleansing Kits",
-              "image": {
-                "mobile": {
-                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
-            },
-            {
-              "id": 1,
-              "slug": "/search?q=Facial Pore Strips&sortBy=massVolume",
-              "parent": "Skin Care",
-              "name": "Facial Pore Strips",
-              "image": {
-                "mobile": {
-                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
-            },
-            {
-              "id": 1,
-              "slug": "/search?q=Lip Balms & Treatments&sortBy=massVolume",
-              "parent": "Skin Care",
-              "name": "Lip Balms & Treatments",
-              "image": {
-                "mobile": {
-                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
-            },
-            {
-              "id": 1,
-              "slug": "/search?q=Lip Balms&sortBy=massVolume",
-              "parent": "Skin Care",
-              "name": "Lip Balms",
-              "image": {
-                "mobile": {
-                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
-            },
-            {
-              "id": 1,
-              "slug": "/search?q=Medicated Lip Treatments&sortBy=massVolume",
-              "parent": "Skin Care",
-              "name": "Medicated Lip Treatments",
-              "image": {
-                "mobile": {
-                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
-            },
-            {
-              "id": 1,
-              "slug": "/search?q=Lotion & Moisturizer&sortBy=massVolume",
-              "parent": "Skin Care",
-              "name": "Lotion & Moisturizer",
-              "image": {
-                "mobile": {
-                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
-            },
-            {
-              "id": 1,
-              "slug": "/search?q=Makeup Removers&sortBy=massVolume",
-              "parent": "Skin Care",
-              "name": "Makeup Removers",
-              "image": {
-                "mobile": {
-                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
-            },
-            {
-              "id": 1,
-              "slug": "/search?q=Petroleum Jelly&sortBy=massVolume",
-              "parent": "Skin Care",
-              "name": "Petroleum Jelly",
-              "image": {
-                "mobile": {
-                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
-            },
-            {
-              "id": 1,
-              "slug": "/search?q=Skin Care Masks & Peels&sortBy=massVolume",
-              "parent": "Skin Care",
-              "name": "Skin Care Masks & Peels",
-              "image": {
-                "mobile": {
-                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
-            },
-            {
-              "id": 1,
-              "slug": "/search?q=Skin Insect Repellent&sortBy=massVolume",
-              "parent": "Skin Care",
-              "name": "Skin Insect Repellent",
-              "image": {
-                "mobile": {
-                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
-            },
-            {
-              "id": 1,
-              "slug": "/search?q=Sunscreen&sortBy=massVolume",
-              "parent": "Skin Care",
-              "name": "Sunscreen",
-              "image": {
-                "mobile": {
-                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
-            },
-            {
-              "id": 1,
-              "slug": "/search?q=Tanning Products&sortBy=massVolume",
-              "parent": "Skin Care",
-              "name": "Tanning Products",
-              "image": {
-                "mobile": {
-                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
-            },
-            {
-              "id": 1,
-              "slug": "/search?q=Self Tanner&sortBy=massVolume",
-              "parent": "Skin Care",
-              "name": "Self Tanner",
-              "image": {
-                "mobile": {
-                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
-            },
-            {
-              "id": 1,
-              "slug": "/search?q=Tanning Oil & Lotion&sortBy=massVolume",
-              "parent": "Skin Care",
-              "name": "Tanning Oil & Lotion",
-              "image": {
-                "mobile": {
-                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
-            },
-            {
-              "id": 1,
-              "slug": "/search?q=Toners & Astringents&sortBy=massVolume",
-              "parent": "Skin Care",
-              "name": "Toners & Astringents",
-              "image": {
-                "mobile": {
-                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
-            },
-            {
-              "id": 1,
-              "slug": "/search?q=Astringents&sortBy=massVolume",
-              "parent": "Skin Care",
-              "name": "Astringents",
-              "image": {
-                "mobile": {
-                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
-            },
-            {
-              "id": 1,
-              "slug": "/search?q=Toners&sortBy=massVolume",
-              "parent": "Skin Care",
-              "name": "Toners",
-              "image": {
-                "mobile": {
-                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
-                  "width": 475,
-                  "height": 250
-                },
-                "desktop": {
-                  "url": "https://images.ibynn.com/categories/beautydepartment.png",
-                  "width": 475,
-                  "height": 250
-                }
-              },
-              "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
-            },
-            {
-              "id": 1,
-              "slug": "/search?q=Wart Removers&sortBy=massVolume",
-              "parent": "Skin Care",
-              "name": "Wart Removers",
+              "slug": "/search?q=Bath & Body Gift Sets&sortBy=massVolume",
+              "parent": "Bath & Body",
+              "name": "Bath & Body Gift Sets",
               "image": {
                 "mobile": {
                   "url": "https://images.ibynn.com/categories/beautydepartment.png",
@@ -7653,7 +7694,6 @@
             }
           },
           "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
-          
         },
 
         {
