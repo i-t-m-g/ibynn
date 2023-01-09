@@ -13,6 +13,7 @@ export interface CategoryCardProps {
   featuredImage?: string;
   name: string;
   desc?: string;
+  icon? : string;
   category: any;
 }
 
@@ -23,6 +24,7 @@ const CategoryCard: FC<CategoryCardProps> = ({
   featuredImage = ".",
   name,
   desc,
+  icon,
   category,
 }) => {
     const dc = useContext<any>(DataContext);
@@ -52,6 +54,7 @@ const CategoryCard: FC<CategoryCardProps> = ({
               {desc}
             </span>
             <h2 className={`text-2xl sm:text-3xl font-semibold`}>{name}</h2>
+            <h2 className={`text-2xl sm:text-3xl font-semibold`}>{icon}</h2>
           </div>
 
          
