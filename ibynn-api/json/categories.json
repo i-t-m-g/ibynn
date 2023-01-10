@@ -83,6 +83,13 @@
                   "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
                 }
               ]
+            },
+            {
+              "id": 5,
+              "name": "Perfume Oils",
+              "parent": "Perfume & Fragrance",
+              "slug": "/search?q=Perfume Fragrence Oils&sortBy=massVolume",
+              "icon": "https://images.ibynn.com/categories/beautydepartment.pngg"
             }
           ]
         },
