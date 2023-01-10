@@ -5,6 +5,7 @@ import detail2JPG from "images/products/detail2.jpg";
 import detail3JPG from "images/products/detail3.jpg";
 import BackgroundSection from "./BackgroundSection/BackgroundSection";
 import CardCategory from "./CardCategories/CardCategory";
+import SubSubCatCard from "./CardCategories/SubSubCategories";
 
 export interface CategoryQuickViewProps {
   className?: string;
@@ -24,7 +25,7 @@ const CategoryQuickView: FC<CategoryQuickViewProps> = ({ className = "", categor
         </h2>
         <div className={`grid gap-4 md:gap-7 p-4 grid-cols-1 md:grid-cols-3 xl:grid-cols-3`}>
           {category.children.map((item:any, index:any) => (
-            <CardCategory
+            <SubSubCatCard
               category={item}
               key={index}
               name={item.name}
