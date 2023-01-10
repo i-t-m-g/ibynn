@@ -9,6 +9,11 @@ import { config } from "dotenv";
 import * as request from "./serp/requests/request.js";
 import { createRequire } from "module";
 import { getCheerio } from "./serp/scrape/scrape.js";
+import axios from "axios";
+import fs, { read } from "fs";
+import path from "node:path"
+import {fileURLToPath} from 'url';
+
 
 const require = createRequire(import.meta.url);
 
@@ -89,6 +94,88 @@ app.get("/scrape", async (req, res) => {
   const html = await getCheerio(url);
   res.send(html)
 });
+
+const getimage = async (categories,json,tbs) => {
+  const cats = [];
+
+  for await (const cat of categories) {
+    const q = encodeURIComponent(json[cat.name]);
+    const url = request.serpShoppingUrl(q,tbs);
+    const { data:response } = await axios.get(url);
+    const images = response?.shopping_results?.map(r => r.thumbnail);
+    cat.images = images?.length > 0 ? images : [images?.length > 0 ? images : [url]];
+    if (images?.length > 0) console.log(images[0]);
+
+    const image = {
+      "mobile": {
+        "url": images?.length > 0 ? images[0] : "no shopping results",
+        "width": 475,
+        "height": 250
+      },
+      "desktop": {
+        "url": images?.length > 0 ? images[0] : "no shopping results",
+        "width": 475,
+        "height": 250
+      }
+    }
+
+    cat.image = image;
+    cats.push(cat);
+    if (cat?.children?.length > 0) getimage(cat.children,json,tbs);
+  }
+
+  // categories?.forEach(async (cat, i) => {
+  //   const q = encodeURIComponent(json[cat.name]);
+  //   const url = request.serpShoppingUrl(q,tbs);
+  //   const { data:response } = await axios.get(url);
+  //   // const images = response?.shopping_results?.map(r => r.thumbnail);
+  //   // cat.images = images?.length > 0 ? images : [url];
+  //   // console.log(images[0]);
+
+  //   const image = {
+  //     "mobile": {
+  //       "url": url,
+  //       "width": 475,
+  //       "height": 250
+  //     },
+  //     "desktop": {
+  //       "url": url,
+  //       "width": 475,
+  //       "height": 250
+  //     }
+  //   }
+
+  //   cat.image = image;
+  //   cats.push(cat);
+  //   if (cat?.children?.length > 0) getimage(cat.children,json,tbs);
+  // });
+
+  return cats;
+}
+
+app.get("/images", async (req, res) => {
+  const json = require(`../json/cates.json`);
+  const tbs = request.getTbs();
+  const __filename = fileURLToPath(import.meta.url);
+  const __dirname = path.dirname(__filename);
+  const file = path.resolve(__dirname, "../json/categories.json");
+  const readfs = fs.readFileSync(file);
+  const categories = JSON.parse(readfs);
+  
+  const cats = await getimage(categories,json,tbs);
+
+  setTimeout(() => {
+    var newData = JSON.stringify(cats, null, 2);
+    fs.writeFile(file, newData, err => {
+      if(err) throw err;
+          console.log("New data added");
+    });
+    res.send(cats);
+    
+  }, 20000);
+
+
+  });
 
 // starting the server
 app.listen(9476, () => {

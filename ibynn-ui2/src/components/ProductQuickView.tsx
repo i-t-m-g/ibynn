@@ -33,8 +33,6 @@ const ProductQuickView: FC<ProductQuickViewProps> = ({ className = "", product, 
   const LIST_IMAGES_DEMO = [detail1JPG, detail2JPG, detail3JPG];
   const { description, media, rating, reviews, title } = product.product_results;
 
-  console.log(product)
-
   const renderSectionContent = () => {
     return (
       <div className="space-y-8">
