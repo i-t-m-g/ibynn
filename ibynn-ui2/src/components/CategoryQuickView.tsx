@@ -30,7 +30,7 @@ const CategoryQuickView: FC<CategoryQuickViewProps> = ({ className = "", categor
               key={index}
               name={item.name}
               desc={''}
-              featuredImage={item.icon}
+              featuredImage={item.image.desktop.url}
             />
           ))}
         </div>
