@@ -47,6 +47,7 @@ const PageCollection: FC<PageCollectionProps> = ({ className = "" }) => {
                 <CategoryCard
                   category={item}
                   name={item.name}
+                  icon={item.icon}
                   desc={item.children?.length > 0 ? `${item.children.length} categories` : ''}
                   bgClass={COLORS[index]}
                 />
