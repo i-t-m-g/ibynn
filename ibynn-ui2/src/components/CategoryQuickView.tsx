@@ -5,6 +5,7 @@ import detail2JPG from "images/products/detail2.jpg";
 import detail3JPG from "images/products/detail3.jpg";
 import BackgroundSection from "./BackgroundSection/BackgroundSection";
 import CardCategory from "./CardCategories/CardCategory";
+import CardCategory2 from "./CardCategories/CardCategory2";
 
 export interface CategoryQuickViewProps {
   className?: string;
