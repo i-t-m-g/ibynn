@@ -55,18 +55,17 @@ const CategoryCard: FC<CategoryCardProps> = ({
             </div>
           <div className="absolute inset-5 sm:inset-8 flex flex-col justify-self-auto">
           
-          <div className="">
-            <span
-              className={`block mb-2 text-sm text-slate-500 dark:text-slate-400`}
-            >
-              {desc}
-            </span>
-            <h2 className={`text-2xl sm:text-3xl font-semibold`}>{name}</h2>
-
-          </div>
+      
 
          
         </div>
+      </div><div className="mt-5 flex-1 text-center">
+        <h2 className="text-base sm:text-lg text-neutral-900 dark:text-neutral-100 font-semibold">
+          {name}
+        </h2>
+        <span className="block mt-0.5 sm:mt-1.5 text-sm text-neutral-500 dark:text-neutral-400">
+          {desc}
+        </span>
       </div>
       {category?.children?.length > 0 &&<ModalQuickView
         type={'category'}
