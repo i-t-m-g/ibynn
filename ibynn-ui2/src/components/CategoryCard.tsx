@@ -45,6 +45,14 @@ const CategoryCard: FC<CategoryCardProps> = ({
       <div
         className={`flex-1 relative w-full h-0 rounded-2xl overflow-hidden group ${ratioClass} ${bgClass}`}
       >
+            <div className="pt-14">
+
+              <NcImage
+                containerClassName="w-full h-full flex justify-center"
+                src={icon}
+                className="object-cover rounded-2xl"
+              />
+            </div>
           <div className="absolute inset-5 sm:inset-8 flex flex-col justify-self-auto">
           
           <div className="">
@@ -54,7 +62,7 @@ const CategoryCard: FC<CategoryCardProps> = ({
               {desc}
             </span>
             <h2 className={`text-2xl sm:text-3xl font-semibold`}>{name}</h2>
-            <h2 className={`text-2xl sm:text-3xl font-semibold`}>{icon}</h2>
+
           </div>
 
          
