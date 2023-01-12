@@ -105,7 +105,7 @@ const ProductQuickView: FC<ProductQuickViewProps> = ({ className = "", product, 
           {/* HEADING */}
           {media.length >= 2 && 
             <div className="relative">
-              <div className="aspect-w-16 aspect-h-16">
+              <div className="aspect-w-10 aspect-h-8">
                 <img
                   src={media[0].link}
                   className="w-full rounded-xl object-cover"
