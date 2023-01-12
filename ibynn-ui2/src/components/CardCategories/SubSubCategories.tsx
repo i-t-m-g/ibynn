@@ -37,8 +37,7 @@ const SubSubCatCard: FC<SubSubCatCard> = ({
       history.push('/page-collection');
     }
 
-    console.log(category)
-  return (
+      return (
     <div>
         {!(category?.children?.length > 0) && <Link to={`/product-collection?q=${query}${sort_by ? '&sort_by='+sort_by : ''}`} className="block z-10 absolute w-full h-full"></Link>}
         {category?.children?.length > 0 && <div onClick={handleClick}  className="block z-10 absolute w-full h-full"></div>}

@@ -35,9 +35,8 @@ export function DataContextProvider({children}: any) {
     {/* LOADING STATE */}
 
     {/* PRODUCTS STATE */}
-    const [_products, _setProducts] = useState<any[]>([]);
-    const parsed_active_products = JSON.parse(window.localStorage.getItem('ACTIVE_PRODUCTS')||'[]');
-    const products = parsed_active_products;
+    const [products, _setProducts] = useState<any[]>([]);
+    
 
 
     const setProducts = (state:any) => {
@@ -58,8 +57,7 @@ export function DataContextProvider({children}: any) {
     {/* PRODUCTS STATE */}
 
     {/* ACTIVE_CATEGORY STATE */}
-    const [_activeCategory, _setActiveCategory] = useState<any[]>();
-    const activeCategory = JSON.parse(window.localStorage.getItem('ACTIVE_CATEGORY')||'[]');
+    const [activeCategory, _setActiveCategory] = useState<any[]>();
     const setActiveCategory = (state:any) => {
         const stringifiedState = JSON.stringify(state);
         window.localStorage.setItem('ACTIVE_CATEGORY', stringifiedState);
