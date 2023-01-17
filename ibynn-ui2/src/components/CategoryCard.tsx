@@ -19,7 +19,7 @@ export interface CategoryCardProps {
 
 const CategoryCard: FC<CategoryCardProps> = ({
   className = "",
-  ratioClass = "aspect-w-5 aspect-h-3",
+  ratioClass = "aspect-w-5 aspect-h-5",
   bgClass = "bg-orange-50",
   featuredImage = ".",
   name,
@@ -43,9 +43,9 @@ const CategoryCard: FC<CategoryCardProps> = ({
       {!(category?.children?.length > 0) && <Link to={`/product-collection?q=${query}${sort_by ? '&sort_by='+sort_by : ''}`} className="block z-10 absolute w-full h-full"></Link>}
       {category?.children?.length > 0 && <div onClick={handleClick} className="block cursor-pointer z-10 absolute w-full h-full"></div>}
       <div
-        className={`flex-1 relative w-full h-0 rounded-2xl overflow-hidden group ${ratioClass} ${bgClass}`}
+        className={`flex-1 relative w-full h-0 rounded-2xl overflow-hidden group ${ratioClass}`}
       >
-            <div className="pt-14">
+            <div className="">
 
               <NcImage
                 containerClassName="w-full h-full flex justify-center"

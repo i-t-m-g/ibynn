@@ -33,8 +33,6 @@ const CardCategory: FC<CardCategoryProps> = ({
     history.push('/page-collection');
   }
 
-  console.log(category)
-
   return (
     <div
       className={`nc-CardCategory relative w-full aspect-w-12 aspect-h-8 h-0 rounded-3xl overflow-hidden bg-white dark:bg-neutral-900 group hover:nc-shadow-lg transition-shadow ${className}`}
