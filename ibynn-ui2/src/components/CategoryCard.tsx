@@ -39,11 +39,11 @@ const CategoryCard: FC<CategoryCardProps> = ({
     };
 
   return (
-    <div className="relative">
+    <div className="relative p-3 border rounded-2xl shadow-md">
       {!(category?.children?.length > 0) && <Link to={`/product-collection?q=${query}${sort_by ? '&sort_by='+sort_by : ''}`} className="block z-10 absolute w-full h-full"></Link>}
       {category?.children?.length > 0 && <div onClick={handleClick} className="block cursor-pointer z-10 absolute w-full h-full"></div>}
       <div
-        className={`flex-1 relative w-full h-0 rounded-2xl overflow-hidden group ${ratioClass}`}
+        className={`flex-1 relative w-full h-0 rounded-2xl overflow-hidden group  ${ratioClass}`}
       >
             <div className="">
 
