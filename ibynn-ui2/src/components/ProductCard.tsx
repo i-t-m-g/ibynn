@@ -26,6 +26,7 @@ const ProductCard: FC<ProductCardProps> = ({
   isLiked,
 }) => {
   const {
+    unit_price_displayed,
     extracted_price,
     reviews,
     rating,
@@ -80,9 +81,9 @@ const ProductCard: FC<ProductCardProps> = ({
             {title}
           </h2>
         </div>
-        <div className="h-1/4 flex flex-col justify-end">
+        <div className="h-1/2 flex flex-col justify-end">
           <div className="flex flex-col items-start">
-            {icon && <NcImage containerClassName="h-15 my-2" src={icon} className="object-scale-down w-full h-full" style={{ height: 63 }}/>}
+            {icon && <NcImage containerClassName="h-15 my-2" src={icon} className="object-scale-down w-full h-full"/>}
             {!icon && <span>{source}</span>}
             {rating && <div className="flex items-center mb-0.5">
               <StarIcon className="w-5 h-5 pb-[1px] text-amber-400" />
@@ -90,7 +91,9 @@ const ProductCard: FC<ProductCardProps> = ({
                 {(rating).toFixed(1)} ({reviews} reviews)
               </span>
             </div>}
+            {unit_price_displayed}
             <Prices price={extracted_price} />
+            
           </div>
         </div>
       </div>
