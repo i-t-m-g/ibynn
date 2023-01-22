@@ -45,7 +45,7 @@ const CategoryCard: FC<CategoryCardProps> = ({
       {category?.children?.length > 0 && <Link replace  to={"/page-collection"} className="block z-10 absolute w-full h-full"></Link>}
       {/* {category?.children?.length > 0 && <div onClick={handleClick} className="block cursor-pointer z-10 absolute w-full h-full"></div>} */}
       <div
-        className={`flex-1 relative w-full h-0 rounded-2xl overflow-hidden group ${ratioClass}`}
+        className={`flex-1 relative w-full h-0 rounded-2xl overflow-hidden group  ${ratioClass}`}
       >
             <div className="">
 

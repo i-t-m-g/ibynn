@@ -20,10 +20,10 @@ const CategoryQuickView: FC<CategoryQuickViewProps> = ({ className = "", categor
     <div className={`nc-CategoryQuickView overflow-x-hidden	${className}`}>
         <div className="relative">
         <BackgroundSection />
-        <h2 style={{opacity: '100%', color: 'black'}} className="p-10 lg:py-20 block text-center opacity-100 text-2xl sm:text-3xl lg:text-4xl font-semibold">
+        <h2 style={{opacity: '100%', color: 'black'}} className="p-2 lg:py-20 block text-center opacity-100 text-xl sm:text-3xl lg:text-4xl font-semibold">
           {category.name}
         </h2>
-        <div className={`grid gap-4 md:gap-7 p-4 grid-cols-1 md:grid-cols-3 xl:grid-cols-3`}>
+        <div className={`grid gap-4 md:gap-7 p-4 grid-cols-1  md:grid-cols-3 xl:grid-cols-3`}>
           {category.children.map((item:any, index:any) => (
             <SubSubCatCard
               category={item}
