@@ -57,8 +57,8 @@ const ProductCollection: FC<ProductCollectionProps> = ({ className = "" }) => {
           </div>
 
           <hr className="border-slate-200 dark:border-slate-700" />
-          <main>
-            {dc.loading ? <ButtonPrimary loading>Loading...</ButtonPrimary> :
+          <main className="justify-center flex">
+            {dc.loading ? <ButtonPrimary className="place-self-center" loading >Loading...</ButtonPrimary> :
             <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-10 mt-8 lg:mt-10">
               {activeResults?.map((item:any, index:any) => (
                 <ProductCard data={item} key={index} />

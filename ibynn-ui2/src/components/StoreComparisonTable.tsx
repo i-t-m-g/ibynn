@@ -2,8 +2,10 @@ import React, { FC } from 'react';
 import ReactDOMServer from 'react-dom/server'
 
 const StoreComparisonTable = (online_sellers:any):string => {
+    
     const getTableBody = () => {
-        return online_sellers.map((item:any) => (
+        if (!(online_sellers?.length > 0)) return "";
+        return online_sellers?.map((item:any) => (
             <tbody>
                     <tr className="font-normal border-b border-border-base last:border-b-0">
                         <td className="p-4" style={{color: 'blue'}}>

@@ -31,9 +31,10 @@ export interface ProductQuickViewProps {
 const ProductQuickView: FC<ProductQuickViewProps> = ({ className = "", product, extracted_price}) => {
   const { sizes, variants, status, allOfSizes } = PRODUCTS[0];
   const LIST_IMAGES_DEMO = [detail1JPG, detail2JPG, detail3JPG];
-  const { description, media, rating, reviews, title } = product.product_results;
+  const { description, media, rating, reviews, title } = product.product_results ? product.product_results : "";
 
   const renderSectionContent = () => {
+    if (!product.product_results) return <h2 className="w-full font-semibold text-red-600">NO DATA IN TABLE</h2>
     return (
       <div className="space-y-8">
         {/* ---------- 1 HEADING ----------  */}
@@ -84,11 +85,11 @@ const ProductQuickView: FC<ProductQuickViewProps> = ({ className = "", product, 
             {
               name: "Description",
               content:
-                `${description}`,
+                `${description ? description : ''}`,
             },
             {
               name: "Store Comparison",
-              content: StoreComparisonTable(product.sellers_results.online_sellers),
+              content: StoreComparisonTable(product?.sellers_results?.online_sellers ? product?.sellers_results?.online_sellers : ""),
             }
           ]}
         />
@@ -103,7 +104,7 @@ const ProductQuickView: FC<ProductQuickViewProps> = ({ className = "", product, 
         {/* CONTENT */}
         <div className="w-full lg:w-[50%] ">
           {/* HEADING */}
-          {media.length >= 1 && 
+          {media?.length >= 1 && 
             <div className="relative">
               <div className="">
                 <img
@@ -116,7 +117,7 @@ const ProductQuickView: FC<ProductQuickViewProps> = ({ className = "", product, 
             </div>
           }
           <div className="hidden lg:grid grid-cols-2 gap-3 mt-3 sm:gap-6 sm:mt-6 xl:gap-5 xl:mt-5">
-            {media.splice(0, 1).map((item:any, index:any) => {
+            {media?.splice(0, 1).map((item:any, index:any) => {
               return (
                 <div key={index} style={{height:"200px"}} className="aspect-w-2 aspect-h-3">
                   <img
