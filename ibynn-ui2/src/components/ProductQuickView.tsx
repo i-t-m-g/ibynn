@@ -26,15 +26,18 @@ export interface ProductQuickViewProps {
   className?: string;
   product:any;
   extracted_price?:any;
+  link?:any;
+  source?:any;
+  prod_title?:any;
+  thumbnail?:any;
+  price?:any;
 }
 
-const ProductQuickView: FC<ProductQuickViewProps> = ({ className = "", product, extracted_price}) => {
-  const { sizes, variants, status, allOfSizes } = PRODUCTS[0];
-  const LIST_IMAGES_DEMO = [detail1JPG, detail2JPG, detail3JPG];
+const ProductQuickView: FC<ProductQuickViewProps> = ({ className = "", product, extracted_price,link,source,prod_title}) => {
   const { description, media, rating, reviews, title } = product.product_results ? product.product_results : "";
 
   const renderSectionContent = () => {
-    if (!product.product_results) return <h2 className="w-full font-semibold text-red-600">NO DATA IN TABLE</h2>
+    if (!product.product_results) return renderNoResults()
     return (
       <div className="space-y-8">
         {/* ---------- 1 HEADING ----------  */}
@@ -97,6 +100,47 @@ const ProductQuickView: FC<ProductQuickViewProps> = ({ className = "", product, 
     );
   };
 
+
+{/* NO PRODUCT RESULTS */}
+
+
+const renderNoResults = () => {
+  return (
+    <div className="space-y-8">
+      {/* ---------- 1 HEADING ----------  */}
+      <div>
+        <h2 className="text-2xl font-semibold hover:text-primary-6000 transition-colors">
+          <Link to="/product-detail">{prod_title}</Link>
+        </h2>
+
+        <div className="flex items-center mt-5 space-x-4 sm:space-x-5">
+          {/* <div className="flex text-xl font-semibold">$112.00</div> */}
+          <Prices
+            contentClass="py-1 px-2 md:py-1.5 md:px-3 text-lg font-semibold"
+            price={extracted_price}
+          />
+        </div>
+      </div>
+
+      {/*  */}
+      <hr className=" border-slate-200 dark:border-slate-700"></hr>
+      {/*  */}
+
+      {/* ---------- 5 ----------  */}
+      <AccordionInfo
+        data={[
+          {
+            name: "Store Comparison",
+            content: ReactDOMServer.renderToString(<a className="text-blue-600 underline" href={link}>{source}</a>),
+          }
+        ]}
+      />
+    </div>
+  );
+};
+
+{/* NO PRODUCT RESULTS */}
+
   return (
     <div className={`nc-ProductQuickView ${className}`}>
       {/* MAIn */}
@@ -130,7 +174,6 @@ const ProductQuickView: FC<ProductQuickViewProps> = ({ className = "", product, 
             })}
           </div>
         </div>
-
         {/* SIDEBAR */}
         <div className="w-full lg:w-[50%] pt-6 lg:pt-0 lg:pl-7 xl:pl-8">
           {renderSectionContent()}

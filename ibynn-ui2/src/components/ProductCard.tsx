@@ -33,7 +33,8 @@ const ProductCard: FC<ProductCardProps> = ({
     thumbnail,
     product_id,
     icon,
-    source
+    source,
+    link
   } = data;
 
   const title = data.title.length > 55 ? data.title.slice(0, 55)+'...' : data.title;
@@ -98,6 +99,9 @@ const ProductCard: FC<ProductCardProps> = ({
         </div>
       </div>
       <ModalQuickView
+        prod_title={title}
+        source={source}
+        link={link}
         extracted_price={extracted_price}
         type={'product'}
         product={product}
