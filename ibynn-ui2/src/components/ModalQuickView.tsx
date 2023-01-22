@@ -1,6 +1,7 @@
 import { Dialog, Transition } from "@headlessui/react";
 import React, { FC, Fragment, useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
+import ButtonPrimary from "shared/Button/ButtonPrimary";
 import ButtonClose from "shared/ButtonClose/ButtonClose";
 import CategoryQuickView from "./CategoryQuickView";
 import ProductQuickView from "./ProductQuickView";
@@ -67,8 +68,8 @@ const ModalQuickView: FC<ModalQuickViewProps> = ({
                   <ButtonClose onClick={onCloseModalQuickView} />
                 </span>
 
-                <div className="flex-1 overflow-y-auto rounded-xl hiddenScrollbar">
-                  {/* {!product && !category ? 'Loading...' : ''} */}
+                <div className="flex-1 flex justify-center overflow-y-auto rounded-xl hiddenScrollbar">
+                  {!product && !category ? (<ButtonPrimary className="place-self-center" loading>Loading...</ButtonPrimary>) : ''}
                   {product && type === 'product' && <ProductQuickView extracted_price={extracted_price} product={product} />}
                   {category && type === 'category' && <CategoryQuickView category={category} />}
                 </div>
