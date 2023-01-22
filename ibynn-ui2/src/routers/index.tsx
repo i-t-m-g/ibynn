@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route, HashRouter } from "react-router-dom";
 import { Page } from "./types";
 import ScrollToTop from "./ScrollToTop";
 import Footer from "shared/Footer/Footer";
@@ -37,6 +37,7 @@ export const pages: Page[] = [
   //
   { path: "/page-collection-2", component: PageCollection2 },
   { path: "/page-collection", component: PageCollection },
+  { path: "/page-collection/:child", component: PageCollection },
   { path: "/product-collection", component: ProductCollection },
   { path: "/page-search", component: PageSearch },
   //
@@ -60,7 +61,7 @@ export const pages: Page[] = [
 const Routes = () => {
 
   return (
-    <BrowserRouter basename="/Ibynn">
+    <HashRouter basename="/">
       <DataContextProvider>
         <ScrollToTop />
         <SiteHeader />
@@ -79,7 +80,7 @@ const Routes = () => {
         </Switch>
         <Footer />
       </DataContextProvider>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
