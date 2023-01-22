@@ -13,6 +13,7 @@ import axios from "axios";
 import fs, { read } from "fs";
 import path from "node:path"
 import {fileURLToPath} from 'url';
+import FormData from 'form-data';
 
 
 const require = createRequire(import.meta.url);
@@ -56,18 +57,28 @@ app.get("/json/:jsonFile", (req, res) => {
 app.get("/shopping", caching, async (req, res) => {
   const query = req.query.q;
   const sortBy = req.query.sortBy;
+  const page = req.query.page;
   const min_price = req.query.min_price ?? 0;
 
   try {
+
     const results = await request.getSerpShopping(
       query,
-      sortBy ?? null,
-      min_price
+      sortBy ?? null
     );
-    if (results.shopping_results) {
-      client.setEx(query, 604800, JSON.stringify(results));
+    results.position = 1;
 
+    if (results.shopping_results) {
+
+      // res.send(results);
+
+      const pages = await request.retrievePages(results.serpapi_pagination,sortBy);
+      pages.unshift(...results.shopping_results);
+
+      results.shopping_results = pages;
+      client.setEx(query, 604800, JSON.stringify(results));
       res.send(results);
+
     } else {
       throw results;
     }
@@ -94,6 +105,8 @@ app.get("/scrape", async (req, res) => {
   const html = await getCheerio(url);
   res.send(html)
 });
+
+
 
 const getimage = async (categories,json,tbs) => {
   const cats = [];
@@ -176,6 +189,32 @@ app.get("/images", async (req, res) => {
 
 
   });
+
+app.get("/removebg", async (req, res) => {
+  const formData = new FormData();
+  formData.append('size', 'auto');
+  formData.append('image_url', 'https://www.remove.bg/example.jpg');
+
+  axios({
+    method: 'post',
+    url: 'https://api.remove.bg/v1.0/removebg',
+    data: formData,
+    responseType: 'arraybuffer',
+    headers: {
+      ...formData.getHeaders(),
+      'X-Api-Key': 'hSGTFqwM1dJ5tBwkNYCooJX1',
+    },
+    encoding: null
+  })
+  .then((response) => {
+    if(response.status != 200) return console.error('Error:', response.status, response.statusText);
+    fs.writeFileSync("no-bg.png", response.data);
+    })
+  .catch((error) => {
+      return console.error('Request failed:', error);
+  });
+  res.send("hello");
+})
 
 // starting the server
 app.listen(9476, () => {

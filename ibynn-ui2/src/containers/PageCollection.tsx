@@ -18,8 +18,7 @@ export interface PageCollectionProps {
 
 const PageCollection: FC<PageCollectionProps> = ({ className = "" }) => {
   const dc = useContext<any>(DataContext);
-
-  console.log(dc.activeCategory);
+  const handleChildren = (item:any) => {if (item?.children?.length > 0) dc.setActiveCategory(item)};
 
   return (
     <div
@@ -44,6 +43,7 @@ const PageCollection: FC<PageCollectionProps> = ({ className = "" }) => {
             {/* LOOP ITEMS */}
             <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-10 mt-8 lg:mt-10">
               {dc.activeCategory?.children?.map((item:any, index:any) => (
+                <div onClick={() => handleChildren(item)}>
                 <CategoryCard
                   category={item}
                   name={item.name}
@@ -51,6 +51,7 @@ const PageCollection: FC<PageCollectionProps> = ({ className = "" }) => {
                   desc={item.children?.length > 0 ? `${item.children.length} categories` : ''}
                   bgClass={COLORS[index]}
                 />
+                </div>
               ))}
             </div>
           </main>

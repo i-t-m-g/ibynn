@@ -7,14 +7,14 @@ import {
   calculations,
 } from "../../scripts/constants/constants.js";
 
-const api_key = process.env.API_KEY;
-export const serpShoppingUrl = (query, tbs) =>
-  `https://serpapi.com/search.json?q=${query}${tbs}&api_key=${process.env.API_KEY}&engine=google&google_domain=google.com&gl=us&hl=en&num=100&tbm=shop`;
+const api_key = () => "&api_key=" + process.env.API_KEY;
+export const serpShoppingUrl = (query) =>
+  `https://serpapi.com/search.json?q=${query}${api_key()}&engine=google&google_domain=google.com&gl=us&hl=en&num=100&tbm=shop`;
 const productPageUrl = (product_id) =>
   `https://serpapi.com/search.json?engine=google_product&product_id=${product_id}&gl=us&hl=en&api_key=${process.env.API_KEY}`;
 
-export const getTbs = (min_price) =>
-  `tbs=mr:1,price:1,ppr_max:${min_price},merchagg:g10105730%7Cg7187155%7Cg784994%7Cm125210027%7Cm463001233%7Cm530574019%7Cm1172711%7Cm138332207%7Cm1311674%7Cm10046%7Cm1247713,avg_rating:400`;
+export const getTbs = (min_price = 0) =>
+  `&tbs=mr:1,price:1,ppr_max:${min_price},merchagg:g10105730%7Cg7187155%7Cg784994%7Cm125210027%7Cm463001233%7Cm530574019%7Cm1172711%7Cm138332207%7Cm1311674%7Cm10046%7Cm1247713,avg_rating:400`;
 
 export const addIcons = (arr) => {
   if (arr) {
@@ -53,7 +53,7 @@ export const findSorters = (arr, sort_by, inEach) => {
 
             const match = title.match(pattern);
             const reversedMatch = reversedTitle.match(reversedPattern);
-            console.log(match, reversedMatch);
+            
 
             if (match) calculations(item, match[0], sort_by, a);
             if (reversedMatch)
@@ -95,9 +95,30 @@ export const sortArr = (arr) => {
   });
 };
 
-export async function getSerpShopping(query, sort_by, min_price) {
-  const tbs = getTbs(min_price);
-  const url = serpShoppingUrl(query, tbs);
+export const retrievePages = async (serpapi_pagination, sort_by) => {
+  let pages = [];
+
+  try {
+    for (const n of [2,3,4,5]) {
+      const pageUrl = serpapi_pagination.other_pages[n] ?? null;
+      if (pageUrl) {
+        const serp_response = await getPageAtUrl(pageUrl + api_key(), sort_by);
+        serp_response.position = n;
+        pages.push(...serp_response.shopping_results);
+      }
+      else {
+        break;
+      }
+            
+    }
+  } catch (error) {
+    console.log(error)
+  }
+  
+  return pages;
+}
+
+export const getPageAtUrl = async (url,sort_by) => {
   const { data: response } = await axios.get(url);
   const products = {};
 
@@ -116,7 +137,27 @@ export async function getSerpShopping(query, sort_by, min_price) {
   return products;
 }
 
-export async function getProductPage(product_id, sort_by, min_price) {
+export async function getSerpShopping(query, sort_by) {
+    const url = serpShoppingUrl(query);
+  const { data: response } = await axios.get(url);
+  const products = {};
+  products.search_information = response.search_information;
+  products.search_metadata = response.search_metadata;
+  products.shopping_results = response.shopping_results;
+  products.serpapi_pagination = response.serpapi_pagination;
+  products.pagination = response.pagination;
+  if (response.search_parameters)
+    products.search_parameters = response.search_parameters;
+  if (response.filters) products.filters = response.filters;
+  products.shopping_results = addIcons(products.shopping_results);
+  if (sort_by)
+    products.shopping_results = findSorters(products.shopping_results, sort_by);
+  sortArr(products);
+
+  return products;
+}
+
+export async function getProductPage(product_id) {
   try {
     let sortedData;
     const url = productPageUrl(product_id, "");
