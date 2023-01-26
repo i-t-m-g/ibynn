@@ -10,7 +10,7 @@ export interface LocationStates {
   "/product-detail-2"?: {};
   "/product-collection"?: {};
   "/page-collection"?: {};
-  "/page-collection/:child"?: {};
+  "/page-collection/:id"?: {};
   "/page-collection-2"?: {};
   "/page-search"?: {};
   "/home-header-2"?: {};

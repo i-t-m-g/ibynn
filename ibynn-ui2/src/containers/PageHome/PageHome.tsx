@@ -36,7 +36,6 @@ const PageHome: FC<any> = () => {
   };
 
   useEffect(() => {
-    console.log(itmg_ASCII);
     dc.getHomeProducts('new', null);
 
     fetch(`${process.env.REACT_APP_REST_API_ENDPOINT}/json/categories`)

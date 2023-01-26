@@ -1,4 +1,4 @@
-import React, { FC, useContext } from "react";
+import React, { FC, useContext, useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import Pagination from "shared/Pagination/Pagination";
 import ButtonPrimary from "shared/Button/ButtonPrimary";
@@ -11,6 +11,7 @@ import DataContext from "context/DataContext/DataContext";
 import CategoryCard from "components/CategoryCard";
 import CardCategory2 from "components/CardCategories/CardCategory2";
 import { COLORS, IMAGES } from "components/SectionSliderCategories/constants";
+import { useLocation, useParams } from "react-router-dom";
 
 export interface PageCollectionProps {
   className?: string;
@@ -18,7 +19,24 @@ export interface PageCollectionProps {
 
 const PageCollection: FC<PageCollectionProps> = ({ className = "" }) => {
   const dc = useContext<any>(DataContext);
-  const handleChildren = (item:any) => {if (item?.children?.length > 0) dc.setActiveCategory(item)};
+
+  const {pathname} = useLocation();
+  const key = pathname.split("/")[2];
+  const [category, setCategory] = useState<any>(dc.activeCategory(key));
+
+  const handleChildren = (item:any) => {
+    const url = new URL(item.slug, 'https://ibynn.com');
+    const query = url.searchParams.get('q');
+    console.log(query)
+    if (item?.children?.length > 0) dc.setActiveCategory(item,query?.trim());
+    setCategory(item);
+  };
+
+  useEffect(() => {
+    setCategory(dc.activeCategory(key))
+    console.log(dc.activeCategory("Perfume "))
+  },[pathname])
+
 
   return (
     <div
@@ -34,7 +52,7 @@ const PageCollection: FC<PageCollectionProps> = ({ className = "" }) => {
           {/* HEADING */}
           <div className="max-w-screen-sm">
             <h2 className="block text-2xl sm:text-3xl lg:text-4xl font-semibold">
-              {dc.activeCategory && dc.activeCategory?.name}
+              {category && category?.name}
             </h2>
           </div>
 
@@ -42,7 +60,7 @@ const PageCollection: FC<PageCollectionProps> = ({ className = "" }) => {
           <main>
             {/* LOOP ITEMS */}
             <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-10 mt-8 lg:mt-10">
-              {dc.activeCategory?.children?.map((item:any, index:any) => (
+              {category?.children?.map((item:any, index:any) => (
                 <div onClick={() => handleChildren(item)}>
                 <CategoryCard
                   category={item}

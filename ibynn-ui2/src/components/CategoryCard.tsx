@@ -1,6 +1,6 @@
 import React, { FC, useContext, useState } from "react";
 import NcImage from "shared/NcImage/NcImage";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import ModalQuickView from "./ModalQuickView";
 import DataContext from "context/DataContext/DataContext";
@@ -27,6 +27,7 @@ const CategoryCard: FC<CategoryCardProps> = ({
   icon,
   category,
 }) => {
+    const history = useHistory();
     const dc = useContext<any>(DataContext);
     const [showModalQuickView, setShowModalQuickView] = useState(false);
     const url = new URL(category.slug, 'https://ibynn.com');
@@ -34,15 +35,22 @@ const CategoryCard: FC<CategoryCardProps> = ({
     const sort_by = url.searchParams.get('sortBy');
 
     function handleClick() {
-      setShowModalQuickView(true);
-      return '';
+      if (category?.children?.length > 0) {
+        console.log(query)
+        history.push(`/page-collection/${query}`);
+      }
+      else {
+        console.log(query)
+        history.push(`/product-collection?q=${query}${sort_by ? '&sort_by='+sort_by : ''}`);
+      }
+      
     };
 
 
   return (
-    <div className="relative">
-      {!(category?.children?.length > 0) && <Link replace to={`/product-collection?q=${query}${sort_by ? '&sort_by='+sort_by : ''}`} className="block z-10 absolute w-full h-full"></Link>}
-      {category?.children?.length > 0 && <Link replace  to={"/page-collection"} className="block z-10 absolute w-full h-full"></Link>}
+    <div className="relative" onClick={handleClick}>
+      {/* {!(category?.children?.length > 0) && <Link replace to={`/product-collection?q=${query}${sort_by ? '&sort_by='+sort_by : ''}`} className="block z-10 absolute w-full h-full"></Link>}
+      {category?.children?.length > 0 && <Link replace  to={`/page-collection/${query}`} className="block z-10 absolute w-full h-full"></Link>} */}
       {/* {category?.children?.length > 0 && <div onClick={handleClick} className="block cursor-pointer z-10 absolute w-full h-full"></div>} */}
       <div
         className={`flex-1 relative w-full h-0 rounded-2xl overflow-hidden group  ${ratioClass}`}
