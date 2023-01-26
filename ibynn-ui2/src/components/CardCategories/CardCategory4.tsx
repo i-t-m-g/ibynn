@@ -30,7 +30,7 @@ const CardCategory4: FC<CardCategory4Props> = ({
   const sort_by = url.searchParams.get('sortBy');
 
   const handleClick = () => {
-    dc.setActiveCategory(category);
+    dc.setActiveCategory(category,query);
     history.push('/page-collection');
   }
   return (

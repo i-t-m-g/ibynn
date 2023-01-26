@@ -60,7 +60,7 @@ const SectionSliderCategories: FC<SectionSliderCategoriesProps> = ({
   useEffect(() => setIsMobile(width < 1024), [width]);
 
   const handleClick = (item: any) => {
-    dc.setActiveCategory(item);
+    dc.setActiveCategory(item,item.name);
   };
 
   return (

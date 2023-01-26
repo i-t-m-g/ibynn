@@ -23,7 +23,7 @@ const CardCategory2: FC<CardCategory2Props> = ({
 
   return (
     <Link
-      to={"/page-collection"}
+      to={`/page-collection/${name}`}
       className={`nc-CardCategory2 ${className}`}
       data-nc-id="CardCategory2"
     >

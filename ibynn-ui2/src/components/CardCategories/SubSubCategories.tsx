@@ -33,8 +33,8 @@ const SubSubCatCard: FC<SubSubCatCard> = ({
     const sort_by = url.searchParams.get('sortBy');
   
     const handleClick = () => {
-      dc.setActiveCategory(category);
-      history.push('/page-collection');
+      dc.setActiveCategory(category,query);
+      history.push(`/page-collection/${query}`);
     }
 
       return (
