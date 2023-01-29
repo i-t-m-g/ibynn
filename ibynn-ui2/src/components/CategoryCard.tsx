@@ -48,7 +48,7 @@ const CategoryCard: FC<CategoryCardProps> = ({
 
 
   return (
-    <div className="relative" onClick={handleClick}>
+    <div className="relative p-3 border rounded-2xl shadow-md" onClick={handleClick}>
       {/* {!(category?.children?.length > 0) && <Link replace to={`/product-collection?q=${query}${sort_by ? '&sort_by='+sort_by : ''}`} className="block z-10 absolute w-full h-full"></Link>}
       {category?.children?.length > 0 && <Link replace  to={`/page-collection/${query}`} className="block z-10 absolute w-full h-full"></Link>} */}
       {/* {category?.children?.length > 0 && <div onClick={handleClick} className="block cursor-pointer z-10 absolute w-full h-full"></div>} */}
