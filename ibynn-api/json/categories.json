@@ -2,8 +2,8 @@
   "data":[
      {
         "id":1,
-        "name":"Cosmetics & Fragrance",
-        "parent":"Cosmetics & Fragrance",
+        "name":"Cosmetics",
+        "parent":"Cosmetics",
         "slug":"/search?q=Cosmetics&sortBy=massVolume",
         "icon":"https://images.ibynn.com/categories/cosmeticsdepartment.png",
         "image":{
@@ -21,9 +21,9 @@
         "children":[
            {
               "id":1,
-              "slug":"/search?q=Perfume & Fragrance&sortBy=massVolume",
-              "name":"Perfume & Fragrance",
-              "parent":"Cosmetics & Fragrance",
+              "slug":"/search?q=Perfume&sortBy=massVolume",
+              "name":"Perfume",
+              "parent":"Cosmetics",
               "icon":"https://images.ibynn.com/categories/cosmeticsdepartment.png",
               "image":{
                  "mobile":{
@@ -41,7 +41,7 @@
                  {
                     "id":5,
                     "name":"Parfume",
-                    "parent":"Perfume & Fragrance",
+                    "parent":"Perfume",
                     "slug":"/search?q=Eau De Parfume&sortBy=massVolume",
                     "icon":"https://images.ibynn.com/categories/beautydepartment.png",
                     "children":[
@@ -100,7 +100,7 @@
                  {
                     "id":5,
                     "name":"Toilete",
-                    "parent":"Perfume & Fragrance",
+                    "parent":"Perfume",
                     "slug":"/search?q=Cosmetics&sortBy=massVolume",
                     "icon":"https://images.ibynn.com/categories/beautydepartment.png",
                     "children":[
@@ -161,7 +161,7 @@
            {
               "id":1,
               "name":"Makeup",
-              "parent":"Cosmetics & Fragrance",
+              "parent":"Cosmetics",
               "slug":"/search?q=makeup&sortBy=massVolume",
               "image":{
                  "mobile":{
@@ -869,7 +869,7 @@
            {
               "id":1,
               "name":"Skin Care",
-              "parent":"Cosmetics & Fragrance",
+              "parent":"Cosmetics",
               "slug":"/search?q=Skin Care&sortBy=massVolume",
               "image":{
                  "mobile":{
@@ -1136,7 +1136,7 @@
            {
               "id":1,
               "name":"Nail Care",
-              "parent":"Cosmetics & Fragrance",
+              "parent":"Cosmetics",
               "slug":"/search?q=Nail Care&sortBy=massVolume",
               "image":{
                  "mobile":{
@@ -1308,7 +1308,7 @@
            {
               "id":1,
               "slug":"/search?q=Hair Care&sortBy=massVolume",
-              "parent":"Bath & Body",
+              "parent":"Bath and Body",
               "name":"Hair Care",
               "image":{
                  "mobile":{
@@ -1461,9 +1461,9 @@
            },
            {
               "id":1,
-              "name":"Cosmetic Tools & Brushes",
-              "parent":"Cosmetics & Fragrance",
-              "slug":"/search?q=Cosmetic Tools & Brushes&sortBy=massVolume",
+              "name":"Cosmetic Tools and Brushes",
+              "parent":"Cosmetics",
+              "slug":"/search?q=Cosmetic Tools and Brushes&sortBy=massVolume",
               "image":{
                  "mobile":{
                     "url":"https://images.ibynn.com/categories/SubCategories/cosmetic tools.png",
@@ -1480,7 +1480,7 @@
                  {
                     "id":1,
                     "name":"Makeup Tools",
-                    "parent":"Cosmetic Tools & Brushes",
+                    "parent":"Cosmetic Tools and Brushes",
                     "slug":"/search?q=Makeup Tools&sortBy=massVolume",
                     "image":{
                        "mobile":{
@@ -1747,7 +1747,7 @@
                  {
                     "id":1,
                     "name":"Nail Tools",
-                    "parent":"Cosmetic Tools & Brushes",
+                    "parent":"Cosmetic Tools and Brushes",
                     "slug":"/search?q=Nail Tools&sortBy=massVolume",
                     "image":{
                        "mobile":{
@@ -1957,7 +1957,7 @@
                  {
                     "id":1,
                     "name":"Skin & Hair Care Tools",
-                    "parent":"Cosmetic Tools & Brushes",
+                    "parent":"Cosmetic Tools and Brushes",
                     "slug":"/search?q=Skin Care Tools&sortBy=massVolume",
                     "image":{
                        "mobile":{
@@ -2187,8 +2187,8 @@
            },
            {
               "id":1,
-              "name":"Bath & Body",
-              "parent":"Cosmetics & Fragrance",
+              "name":"Bath and Body",
+              "parent":"Cosmetics",
               "slug":"/search?q=Bath&body&sortBy=massVolume",
               "image":{
                  "mobile":{
@@ -2206,7 +2206,7 @@
                  {
                     "id":1,
                     "slug":"/search?q=Adult Hygienic Wipes&sortBy=massVolume",
-                    "parent":"Bath & Body",
+                    "parent":"Bath and Body",
                     "name":"Adult Hygienic Wipes",
                     "image":{
                        "mobile":{
@@ -2225,7 +2225,7 @@
                  {
                     "id":1,
                     "slug":"/search?q=Body Wash & Shower Gel&sortBy=massVolume",
-                    "parent":"Bath & Body",
+                    "parent":"Bath and Body",
                     "name":"Body Wash & Shower Gel",
                     "image":{
                        "mobile":{
@@ -2244,7 +2244,7 @@
                  {
                     "id":1,
                     "slug":"/search?q=Shampoo Hair Soap&sortBy=massVolume",
-                    "parent":"Bath & Body",
+                    "parent":"Bath and Body",
                     "name":"Shampoo & Hair Soap",
                     "image":{
                        "mobile":{
@@ -2263,7 +2263,7 @@
                  {
                     "id":1,
                     "slug":"/search?q=Bar Soap&sortBy=massVolume",
-                    "parent":"Bath & Body",
+                    "parent":"Bath and Body",
                     "name":"Bar Soap",
                     "image":{
                        "mobile":{
@@ -2282,7 +2282,7 @@
                  {
                     "id":1,
                     "slug":"/search?q=Bath Additives&sortBy=massVolume",
-                    "parent":"Bath & Body",
+                    "parent":"Bath and Body",
                     "name":"Bath Additives",
                     "image":{
                        "mobile":{
@@ -2301,7 +2301,7 @@
                  {
                     "id":1,
                     "slug":"/search?q=Bath Brushes&sortBy=massVolume",
-                    "parent":"Bath & Body",
+                    "parent":"Bath and Body",
                     "name":"Bath Brushes",
                     "image":{
                        "mobile":{
@@ -2320,7 +2320,7 @@
                  {
                     "id":1,
                     "slug":"/search?q=Bath Sponges & Loofahs&sortBy=massVolume",
-                    "parent":"Bath & Body",
+                    "parent":"Bath and Body",
                     "name":"Bath Sponges & Loofahs",
                     "image":{
                        "mobile":{
@@ -2339,7 +2339,7 @@
                  {
                     "id":1,
                     "slug":"/search?q=Deodorant & Antiperspirant&sortBy=massVolume",
-                    "parent":"Bath & Body",
+                    "parent":"Bath and Body",
                     "name":"Deodorant & Antiperspirant",
                     "image":{
                        "mobile":{
@@ -2358,7 +2358,7 @@
                  {
                     "id":1,
                     "slug":"/search?q=Hand Sanitizers & Wipes&sortBy=massVolume",
-                    "parent":"Bath & Body",
+                    "parent":"Bath and Body",
                     "name":"Hand Sanitizers & Wipes",
                     "image":{
                        "mobile":{
@@ -2377,7 +2377,7 @@
                  {
                     "id":1,
                     "slug":"/search?q=Liquid Hand Soap&sortBy=massVolume",
-                    "parent":"Bath & Body",
+                    "parent":"Bath and Body",
                     "name":"Liquid Hand Soap",
                     "image":{
                        "mobile":{
@@ -2396,7 +2396,7 @@
                  {
                     "id":1,
                     "slug":"/search?q=Powdered Hand Soap&sortBy=massVolume",
-                    "parent":"Bath & Body",
+                    "parent":"Bath and Body",
                     "name":"Powdered Hand Soap",
                     "image":{
                        "mobile":{
@@ -2415,7 +2415,7 @@
                  {
                     "id":1,
                     "slug":"/search?q=Shower Caps&sortBy=massVolume",
-                    "parent":"Bath & Body",
+                    "parent":"Bath and Body",
                     "name":"Shower Caps",
                     "image":{
                        "mobile":{
@@ -2433,9 +2433,9 @@
                  },
                  {
                     "id":1,
-                    "slug":"/search?q=Bath & Body Gift Sets&sortBy=massVolume",
-                    "parent":"Bath & Body",
-                    "name":"Bath & Body Gift Sets",
+                    "slug":"/search?q=Bath and Body Gift Sets&sortBy=massVolume",
+                    "parent":"Bath and Body",
+                    "name":"Bath and Body Gift Sets",
                     "image":{
                        "mobile":{
                           "url":"https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSGOqvKyo_3ufinUNu4hd0YNoQXuc-mc2AgKraBJzElzlU2j5pByOehh7Lgq91rTwFVRYmW24I&usqp=CAE",
