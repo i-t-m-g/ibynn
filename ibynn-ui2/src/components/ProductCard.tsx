@@ -67,7 +67,7 @@ const ProductCard: FC<ProductCardProps> = ({
 
   return (
     <>
-      <div onClick={handleClick} className={`nc-ProductCard items-between relative flex flex-col bg-transparent h-full  ${className}`} data-nc-id="ProductCard">
+      <div onClick={handleClick} className={`nc-ProductCard items-between relative flex flex-col bg-transparent h-full ${className}`} data-nc-id="ProductCard">
         <div className="relative flex-shrink-0 bg-slate-50 dark:bg-slate-300 rounded-3xl overflow-hidden z-1 group">
           <NcImage
             containerClassName="flex aspect-w-11 aspect-h-12 w-full h-0"
@@ -92,7 +92,9 @@ const ProductCard: FC<ProductCardProps> = ({
                 {(rating).toFixed(1)} ({reviews} reviews)
               </span>
             </div>}
+            <div className="text-green-500">
             {unit_price_displayed}
+            </div>
             <Prices price={extracted_price} />
             
           </div>

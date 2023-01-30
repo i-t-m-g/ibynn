@@ -30,7 +30,7 @@ const ProductQuickView: FC<ProductQuickViewProps> = ({ className = "", product, 
   const renderSectionContent = () => {
     if (!product.product_results) return renderNoResults()
     return (
-      <div className="space-y-8">
+      <div className="space-y-8 p-5">
         {/* ---------- 1 HEADING ----------  */}
         <div>
           <h2 className="text-2xl font-semibold hover:text-primary-6000 transition-colors">
@@ -97,7 +97,7 @@ const ProductQuickView: FC<ProductQuickViewProps> = ({ className = "", product, 
 
 const renderNoResults = () => {
   return (
-    <div className="space-y-8">
+    <div className="space-y-8 p-5">
       {/* ---------- 1 HEADING ----------  */}
       <div>
         <h2 className="text-2xl font-semibold hover:text-primary-6000 transition-colors">
@@ -148,7 +148,6 @@ const renderNoResults = () => {
                   alt="product detail 1"
                 />
               </div>
-              <LikeButton className="absolute right-3 top-3 " />
             </div>
           }
           <div className="hidden lg:grid grid-cols-2 gap-3 mt-3 sm:gap-6 sm:mt-6 xl:gap-5 xl:mt-5">
