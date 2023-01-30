@@ -68,7 +68,7 @@ const ModalQuickView: FC<ModalQuickViewProps> = ({
           >
             <div className="relative inline-flex xl:py-8 place-self-center w-5/6 h-5/6 lg:w-full lg:max-w-5xl lg:max-h-full">
               <div
-                className="flex-1 rounded-2xl flex overflow-hidden max-h-full p-8 w-full text-left align-middle transition-all transform lg:rounded-2xl bg-white 
+                className="flex-1 rounded-2xl flex overflow-hidden w-full text-left align-middle transition-all transform lg:rounded-2xl bg-white 
               dark:bg-neutral-900 dark:border dark:border-slate-700 dark:text-slate-100 shadow-xl"
               >
                 <span className="absolute right-3 top-3 z-50">
