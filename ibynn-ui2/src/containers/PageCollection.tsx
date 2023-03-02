@@ -69,7 +69,7 @@ const PageCollection: FC<PageCollectionProps> = ({ className = "" }) => {
                   // icon={item.image.desktop.url}
                   desc={item.children?.length > 0 ? `${item.children.length} categories` : ''}
                   // bgClass={COLORS[index]}
-                className="border"/>
+                className="border-2"/>
                 </div>
               ))}
             </div>

@@ -44,7 +44,7 @@ const CardCategory4: FC<CardCategory4Props> = ({
   };
   return (
     <div
-    className={`nc-CardCategory relative w-full aspect-w-12 aspect-h-8 h-0 rounded-3xl overflow-hidden bg-white dark:bg-neutral-900 group hover:nc-shadow-lg transition-shadow ${className}`}
+    className={`nc-CardCategory relative w-full aspect-w-14 aspect-h-16 h-0 rounded-3xl overflow-hidden bg-white dark:bg-neutral-900 group hover:nc-shadow-lg transition-shadow ${className}`}
       data-nc-id="CardCategory4"
       onClick={handleClick}
     >
@@ -52,10 +52,10 @@ const CardCategory4: FC<CardCategory4Props> = ({
           {category?.children?.length > 0 && <div onClick={handleClick}  className="block z-10 absolute w-full h-full"></div>} */}
       <div>
         <div className="absolute bottom-0 right-0 max-w-[280px] opacity-80">
-          <img src={bgSVG} alt="" />
+          {/* <img src={bgSVG} alt="" /> */}
         </div>
 
-        <div className="absolute inset-5 sm:inset-8 flex flex-col justify-between">
+        <div className="absolute inset-3 flex flex-col justify-between">
           
 
           <div className="">
@@ -64,7 +64,7 @@ const CardCategory4: FC<CardCategory4Props> = ({
             >
               {desc}
             </span>
-            <h2 className={`text-2xl sm:text-3xl font-semibold`}>{name}</h2>
+            <h2 className={`text-xl font-semibold`}>{name}</h2>
           </div>
 
           <Link
