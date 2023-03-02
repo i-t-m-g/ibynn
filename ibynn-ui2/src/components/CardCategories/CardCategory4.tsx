@@ -76,8 +76,6 @@ const CardCategory4: FC<CardCategory4Props> = ({
           </Link>
         </div>
       </div>
-
-      <Link to={"/page-collection"}></Link>
       {category?.children?.length > 0 &&<ModalQuickView
         type={'category'}
         category={category}
