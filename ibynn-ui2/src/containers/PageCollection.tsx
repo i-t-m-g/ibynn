@@ -12,6 +12,7 @@ import CategoryCard from "components/CategoryCard";
 import CardCategory2 from "components/CardCategories/CardCategory2";
 import { COLORS, IMAGES } from "components/SectionSliderCategories/constants";
 import { useLocation, useParams } from "react-router-dom";
+import CardCategory4 from "components/CardCategories/CardCategory4";
 
 export interface PageCollectionProps {
   className?: string;
@@ -62,13 +63,13 @@ const PageCollection: FC<PageCollectionProps> = ({ className = "" }) => {
             <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-10 mt-8 lg:mt-10">
               {category?.children?.map((item:any, index:any) => (
                 <div onClick={() => handleChildren(item)}>
-                <CategoryCard
+                <CardCategory4
                   category={item}
                   name={item.name}
-                  icon={item.image.desktop.url}
+                  // icon={item.image.desktop.url}
                   desc={item.children?.length > 0 ? `${item.children.length} categories` : ''}
-                  bgClass={COLORS[index]}
-                />
+                  // bgClass={COLORS[index]}
+                className="border"/>
                 </div>
               ))}
             </div>
