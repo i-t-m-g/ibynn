@@ -20,12 +20,9 @@ export const addIcons = (arr) => {
   if (arr) {
     let i = 0;
     for (const prod of arr) {
-      storeNames.forEach((n) => {
-        if (prod.source.toLowerCase().includes(n.toLowerCase())) {
-          arr[i].icon = storeImages[n];
-        }
-      });
-      i++;
+      const url = new URL(prod.link);
+      const favicon = `https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${url}&size=64`;
+      prod.icon = favicon
     }
   }
 
