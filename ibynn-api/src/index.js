@@ -68,15 +68,15 @@ app.get("/shopping", caching, async (req, res) => {
     );
     results.position = 1;
 
-    if (results.shopping_results) {
+    if (results.shopping_results) { 
 
       // res.send(results);
 
-      const pages = await request.retrievePages(results.serpapi_pagination,sortBy);
-      pages.unshift(...results.shopping_results);
+      // const pages = await request.retrievePages(results.serpapi_pagination,sortBy);
+      // pages.unshift(...results.shopping_results);
 
-      results.shopping_results = pages;
-      client.setEx(query, 604800, JSON.stringify(results));
+      // results.shopping_results = pages;
+      // client.setEx(query, 604800, JSON.stringify(results));
       res.send(results);
 
     } else {
