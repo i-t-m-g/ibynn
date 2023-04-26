@@ -31,15 +31,16 @@ const SubSubCatCard: FC<SubSubCatCard> = ({
     const url = new URL(category.slug, 'https://ibynn.com');
     const query = url.searchParams.get('q');
     const sort_by = url.searchParams.get('sortBy');
-  
+    const tbs = url.searchParams.get('tbs');
+
     const handleClick = () => {
       dc.setActiveCategory(category,query);
-      history.push(`/page-collection/${query}`);
+      history.push(`/page-collection/${query}${'&tbs='+tbs}`);
     }
 
       return (
     <div>
-        {!(category?.children?.length > 0) && <Link to={`/product-collection?q=${query}${sort_by ? '&sort_by='+sort_by : ''}`} className="block z-10 absolute w-full h-full"></Link>}
+        {!(category?.children?.length > 0) && <Link to={`/product-collection?q=${query}${sort_by ? '&sort_by='+sort_by : ''}${'&tbs='+tbs}`} className="block z-10 absolute w-full h-full"></Link>}
         {category?.children?.length > 0 && <div onClick={handleClick}  className="block z-10 absolute w-full h-full"></div>}
       <div
         className={`flex-1 relative w-full h-0 rounded-2xl overflow-hidden group ${ratioClass} ${bgClass}`}>

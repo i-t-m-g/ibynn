@@ -27,6 +27,7 @@ const NavMobile: React.FC<NavMobileProps> = ({
     const url = new URL(item.slug, 'https://ibynn.com');
     const query = url.searchParams.get('q');
     const sort_by = url.searchParams.get('sortBy');
+    const tbs = url.searchParams.get('tbs');
     
     return (
       <ul className="nav-mobile-sub-menu pl-6 pb-1 text-base">
@@ -35,7 +36,7 @@ const NavMobile: React.FC<NavMobileProps> = ({
             <NavLink
               exact
               strict
-              to={`/product-collection?q=${query}${sort_by ? '&sort_by='+sort_by : ''}`}
+              to={`/product-collection?q=${query}${sort_by ? '&sort_by='+sort_by : ''}${'&tbs='+tbs}`}
               className={`flex text-sm rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-800 mt-0.5 pr-4 ${itemClass}`}
               activeClassName="text-secondary"
             >
