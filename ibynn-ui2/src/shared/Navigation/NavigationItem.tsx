@@ -80,6 +80,7 @@ const NavigationItem: FC<NavigationItemProps> = ({ menuItem }) => {
     const url = new URL(item.slug, 'https://ibynn.com');
     const query = url.searchParams.get('q');
     const sort_by = url.searchParams.get('sortBy');
+    const tbs = url.searchParams.get('tbs')
 
     return (
       <li key={Math.random()} className={`${item.isNew ? "menuIsNew" : ""}`}>
@@ -88,7 +89,7 @@ const NavigationItem: FC<NavigationItemProps> = ({ menuItem }) => {
           strict
           rel="noopener noreferrer"
           className="font-normal text-slate-600 hover:text-black dark:text-slate-400 dark:hover:text-white "
-          to={`/product-collection?q=${query}${sort_by ? '&sort_by='+sort_by : ''}`}
+          to={`/product-collection?q=${query}${sort_by ? '&sort_by='+sort_by : ''}${'&tbs='+tbs}`}
         >
           {item.name}
         </NavLink>
@@ -200,6 +201,7 @@ const NavigationItem: FC<NavigationItemProps> = ({ menuItem }) => {
     const url = new URL(item.slug, 'https://ibynn.com');
     const query = url.searchParams.get('q');
     const sort_by = url.searchParams.get('sortBy');
+    const tbs = url.searchParams.get('tbs');
 
     return (
       <NavLink
@@ -208,7 +210,7 @@ const NavigationItem: FC<NavigationItemProps> = ({ menuItem }) => {
         target={``}
         rel="noopener noreferrer"
         className="flex text-rose-400	items-center font-normal text-neutral-6000 dark:text-neutral-400 py-2 px-4 rounded-md hover:text-neutral-700 hover:bg-neutral-100 dark:hover:bg-neutral-800 dark:hover:text-neutral-200"
-        to={`/product-collection?q=${query}${sort_by ? '&sort_by='+sort_by : ''}`}
+        to={`/product-collection?q=${query}${sort_by ? '&sort_by='+sort_by : ''}${'&tbs='+tbs}`}
         activeClassName="!font-medium !text-neutral-900 dark:!text-neutral-100"
       >
         {item.name}

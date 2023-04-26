@@ -27,10 +27,11 @@ const CardCategory: FC<CardCategoryProps> = ({
   const url = new URL(category.slug, 'https://ibynn.com');
   const query = url.searchParams.get('q');
   const sort_by = url.searchParams.get('sortBy');
+  const tbs = url.searchParams.get('tbs');
 
   const handleClick = () => {
     dc.setActiveCategory(category,query);
-    history.push(`/page-collection/${query}`);
+    history.push(`/page-collection/${query}${'&tbs='+tbs}`);
   }
 
   return (
@@ -48,7 +49,7 @@ const CardCategory: FC<CardCategoryProps> = ({
           <div className="">
             <h2 className={`text-2xl sm:text-3xl font-semibold`}>{name}</h2>
           </div>
-          {!(category?.children?.length > 0) && <Link to={`/product-collection?q=${query}${sort_by ? '&sort_by='+sort_by : ''}`} className="block z-10 absolute w-full h-full"></Link>}
+          {!(category?.children?.length > 0) && <Link to={`/product-collection?q=${query}${sort_by ? '&sort_by='+sort_by : ''}${'&tbs='+tbs}`} className="block z-10 absolute w-full h-full"></Link>}
           {category?.children?.length > 0 && <div onClick={handleClick}  className="block z-10 absolute w-full h-full"></div>}
 
           <div

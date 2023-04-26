@@ -30,15 +30,16 @@ const CardCategory4: FC<CardCategory4Props> = ({
   const url = new URL(category.slug, 'https://ibynn.com');
   const query = url.searchParams.get('q');
   const sort_by = url.searchParams.get('sortBy');
+  const tbs = url.searchParams.get('tbs');
 
   function handleClick() {
     if (category?.children?.length > 0) {
       console.log(query)
-      history.push(`/page-collection/${query}`);
+      history.push(`/page-collection/${query}${'&tbs='+tbs}`);
     }
     else {
       console.log(query)
-      history.push(`/product-collection?q=${query}${sort_by ? '&sort_by='+sort_by : ''}`);
+      history.push(`/product-collection?q=${query}${sort_by ? '&sort_by='+sort_by : ''}${'&tbs='+tbs}`);
     }
     
   };
