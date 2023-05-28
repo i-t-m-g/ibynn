@@ -1,0 +1,2036 @@
+{
+    "data": [
+        {
+            "name": "Beauty",
+            "children": [
+                {
+                    "name": "Makeup",
+                    "parent": "Health and Beauty",
+                    "slug": "/search?q=Makeup&sortBy=massVolume&tbs=mr:1,root_cat:531520",
+                    "children": [
+                        {
+                            "name": "Foundation",
+                            "parent": "Makeup",
+                            "slug": "/search?q=Foundation&sortBy=massVolume&tbs=mr:1,root_cat:529736"
+                        },
+                        {
+                            "name": "Concealer",
+                            "parent": "Makeup",
+                            "slug": "/search?q=Concealer&sortBy=massVolume&tbs=mr:1,root_cat:529743"
+                        },
+                        {
+                            "name": "Eyeshadow",
+                            "parent": "Makeup",
+                            "slug": "/search?q=Eyeshadow&sortBy=massVolume&tbs=mr:1,root_cat:529740"
+                        },
+                        {
+                            "name": "Cosmetic Gift Sets",
+                            "parent": "Makeup",
+                            "slug": "/search?q=Cosmetic Gift Sets&sortBy=massVolume&tbs=mr:1,root_cat:529741"
+                        },
+                        {
+                            "name": "Under-Eye Concealer",
+                            "parent": "Makeup",
+                            "slug": "/search?q=Under-Eye Concealer&sortBy=massVolume&tbs=mr:1,root_cat:542861"
+                        },
+                        {
+                            "name": "Lipstick",
+                            "parent": "Makeup",
+                            "slug": "/search?q=Lipstick&sortBy=massVolume&tbs=mr:1,root_cat:529731"
+                        },
+                        {
+                            "name": "Eye Palettes",
+                            "parent": "Makeup",
+                            "slug": "/search?q=Eye Palettes&sortBy=massVolume&tbs=mr:1,root_cat:532150"
+                        },
+                        {
+                            "name": "Eye Makeup",
+                            "parent": "Makeup",
+                            "slug": "/search?q=Eye Makeup&sortBy=massVolume&tbs=mr:1,root_cat:531521",
+                            "children": [
+                                {
+                                    "name": "Eyeshadow",
+                                    "parent": "Eye Makeup",
+                                    "slug": "/search?q=Eyeshadow&sortBy=massVolume&tbs=mr:1,root_cat:529740"
+                                },
+                                {
+                                    "name": "Eye Palettes",
+                                    "parent": "Eye Makeup",
+                                    "slug": "/search?q=Eye Palettes&sortBy=massVolume&tbs=mr:1,root_cat:532150"
+                                },
+                                {
+                                    "name": "Under-Eye Concealer",
+                                    "parent": "Eye Makeup",
+                                    "slug": "/search?q=Under-Eye Concealer&sortBy=massVolume&tbs=mr:1,root_cat:542861"
+                                },
+                                {
+                                    "name": "Eyeliner",
+                                    "parent": "Eye Makeup",
+                                    "slug": "/search?q=Eyeliner&sortBy=massVolume&tbs=mr:1,root_cat:529739"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Eyebrow Enhancers",
+                            "parent": "Makeup",
+                            "children": [
+                                {
+                                    "name": "Brow Pencils",
+                                    "parent": "Eyebrow Enhancers",
+                                    "slug": "/search?q=Brow Pencils&sortBy=massVolume&tbs=mr:1,root_cat:542858"
+                                },
+                                {
+                                    "name": "Brow Tinting",
+                                    "parent": "Eyebrow Enhancers",
+                                    "slug": "/search?q=Brow Tinting&sortBy=massVolume&tbs=mr:1,root_cat:542856"
+                                },
+                                {
+                                    "name": "Brow Powder",
+                                    "parent": "Eyebrow Enhancers",
+                                    "slug": "/search?q=Brow Powder&sortBy=massVolume&tbs=mr:1,root_cat:542859"
+                                },
+                                {
+                                    "name": "Brow Wax",
+                                    "parent": "Eyebrow Enhancers",
+                                    "slug": "/search?q=Brow Wax&sortBy=massVolume&tbs=mr:1,root_cat:547104",
+                                    "children": [
+                                        {
+                                            "name": "Brow Tinting",
+                                            "parent": "Brow Wax",
+                                            "slug": "/search?q=Brow Tinting&sortBy=massVolume&tbs=mr:1,root_cat:542856"
+                                        },
+                                        {
+                                            "name": "Brow Pencils",
+                                            "parent": "Brow Wax",
+                                            "slug": "/search?q=Brow Pencils&sortBy=massVolume&tbs=mr:1,root_cat:542858"
+                                        },
+                                        {
+                                            "name": "Brow Powder",
+                                            "parent": "Brow Wax",
+                                            "slug": "/search?q=Brow Powder&sortBy=massVolume&tbs=mr:1,root_cat:542859"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Brow Tattoos",
+                                    "parent": "Eyebrow Enhancers",
+                                    "slug": "/search?q=Brow Tattoos&sortBy=massVolume&tbs=mr:1,root_cat:542855"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Lip Makeup",
+                            "parent": "Health and Beauty",
+                            "children": [
+                                {
+                                    "name": "Lipstick",
+                                    "parent": "Lip Makeup",
+                                    "slug": "/search?q=Lipstick&sortBy=massVolume&tbs=mr:1,root_cat:529731"
+                                },
+                                {
+                                    "name": "Lip Gloss",
+                                    "parent": "Lip Makeup",
+                                    "slug": "/search?q=Lip Gloss&sortBy=massVolume&tbs=mr:1,root_cat:529733"
+                                },
+                                {
+                                    "name": "Lip Palettes",
+                                    "parent": "Lip Makeup",
+                                    "slug": "/search?q=Lip Palettes&sortBy=massVolume&tbs=mr:1,root_cat:532152"
+                                },
+                                {
+                                    "name": "Lip Plumpers",
+                                    "parent": "Lip Makeup",
+                                    "slug": "/search?q=Lip Plumpers&sortBy=massVolume&tbs=mr:1,root_cat:532153"
+                                },
+                                {
+                                    "name": "Lip Stain",
+                                    "parent": "Lip Makeup",
+                                    "slug": "/search?q=Lip Stain&sortBy=massVolume&tbs=mr:1,root_cat:531626"
+                                },
+                                {
+                                    "name": "Lip Liner",
+                                    "parent": "Lip Makeup",
+                                    "slug": "/search?q=Lip Liner&sortBy=massVolume&tbs=mr:1,root_cat:529732"
+                                },
+                                {
+                                    "name": "Lip Balm",
+                                    "parent": "Lip Makeup",
+                                    "slug": "/search?q=Lip Balm&sortBy=massVolume&tbs=mr:1,root_cat:543082"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Cheek",
+                            "parent":"Makeup",
+                            "children": [
+                                {
+                                    "name": "Blush",
+                                    "parent": "Cheek",
+                                    "slug": "/search?q=Blush&sortBy=massVolume&tbs=mr:1,root_cat:542845"
+                                },
+                                {
+                                    "name": "Face Palettes",
+                                    "parent": "Cheek",
+                                    "slug": "/search?q=Face Palettes&sortBy=massVolume&tbs=mr:1,root_cat:532151"
+                                },
+                                {
+                                    "name": "Contouring Makeup",
+                                    "parent": "Cheek",
+                                    "slug": "/search?q=Contouring Makeup&sortBy=massVolume&tbs=mr:1,root_cat:542848"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Skin Care",
+                    "parent": "Health and Beauty",
+                    "children": [
+                        {
+                            "name": "Facial Moisturizers",
+                            "parent": "Skin Care",
+                            "slug": "/search?q=Facial Moisturizers&sortBy=massVolume&tbs=mr:1,root_cat:532203"
+                        },
+                        {
+                            "name": "Skin Care Sets",
+                            "parent": "Skin Care",
+                            "slug": "/search?q=Skin Care Sets&sortBy=massVolume&tbs=mr:1,root_cat:532159"
+                        },
+                        {
+                            "name": "Facial Serums",
+                            "parent": "Skin Care",
+                            "slug": "/search?q=Facial Serums&sortBy=massVolume&tbs=mr:1,root_cat:543043"
+                        },
+                        {
+                            "name": "Body Lotion",
+                            "parent": "Skin Care",
+                            "slug": "/search?q=Body Lotion&sortBy=massVolume&tbs=mr:1,root_cat:532148"
+                        },
+                        {
+                            "name": "Skin Treatments",
+                            "parent": "Skin Care",
+                            "slug": "/search?q=Skin Treatments&sortBy=massVolume&tbs=mr:1,root_cat:542992"
+                        },
+                        {
+                            "name": "Facial Scrubs",
+                            "parent": "Skin Care",
+                            "slug": "/search?q=Facial Scrubs&sortBy=massVolume&tbs=mr:1,root_cat:543092"
+                        },
+                        {
+                            "name": "Lip Treatment",
+                            "parent": "Skin Care",
+                            "children": [
+                                {
+                                    "name": "Lip Balm",
+                                    "parent": "Lip Treatment",
+                                    "slug": "/search?q=Lip Balm&sortBy=massVolume&tbs=mr:1,root_cat:543082"
+                                },
+                                {
+                                    "name": "Lip Plumpers",
+                                    "parent": "Lip Treatment",
+                                    "slug": "/search?q=Lip Plumpers&sortBy=massVolume&tbs=mr:1,root_cat:532153"
+                                },
+                                {
+                                    "name": "Lip Gloss",
+                                    "parent": "Lip Treatment",
+                                    "slug": "/search?q=Lip Gloss&sortBy=massVolume&tbs=mr:1,root_cat:529733"
+                                },
+                                {
+                                    "name": "Lipstick",
+                                    "parent": "Lip Treatment",
+                                    "slug": "/search?q=Lipstick&sortBy=massVolume&tbs=mr:1,root_cat:529731"
+                                },
+                                {
+                                    "name": "Lip Scrubs",
+                                    "parent": "Lip Treatment",
+                                    "slug": "/search?q=Lip Scrubs&sortBy=massVolume&tbs=mr:1,root_cat:543050"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Face Wash and Cleaners",
+                            "parent": "Skin Care",
+                            "children": [
+                                {
+                                    "name": "Face Wash",
+                                    "parent": "Face Wash and Cleaners",
+                                    "slug": "/search?q=Face Wash&sortBy=massVolume&tbs=mr:1,root_cat:542994",
+                                    "children": [
+                                        {
+                                            "name": "Facial Scrubs",
+                                            "parent": "Face Wash",
+                                            "slug": "/search?q=Facial Scrubs&sortBy=massVolume&tbs=mr:1,root_cat:543092"
+                                        },
+                                        {
+                                            "name": "Facial Treatments and Masks",
+                                            "parent": "Face Wash",
+                                            "slug": "/search?q=Facial Treatments and Masks&sortBy=massVolume&tbs=mr:1,root_cat:542999"
+                                        },
+                                        {
+                                            "name": "Acne Treatments",
+                                            "parent": "Face Wash",
+                                            "slug": "/search?q=Acne Treatments&sortBy=massVolume&tbs=mr:1,root_cat:529786"
+                                        },
+                                        {
+                                            "name": "Skin Care Sets",
+                                            "parent": "Face Wash",
+                                            "slug": "/search?q=Skin Care Sets&sortBy=massVolume&tbs=mr:1,root_cat:532159"
+                                        },
+                                        {
+                                            "name": "Skin Care Tools",
+                                            "parent": "Face Wash",
+                                            "slug": "/search?q=Skin Care Tools&sortBy=massVolume&tbs=mr:1,root_cat:530494",
+                                            "children": [
+                                                {
+                                                    "name": "Facial Cleansing Brushes",
+                                                    "parent": "Skin Care Tools",
+                                                    "slug": "/search?q=Facial Cleansing Brushes&sortBy=massVolume&tbs=mr:1,root_cat:532455"
+                                                },
+                                                {
+                                                    "name": "Facial Massagers",
+                                                    "parent": "Skin Care Tools",
+                                                    "slug": "/search?q=Facial Massagers&sortBy=massVolume&tbs=mr:1,root_cat:542780"
+                                                },
+                                                {
+                                                    "name": "Facial Toning Devices",
+                                                    "parent": "Skin Care Tools",
+                                                    "slug": "/search?q=Facial Toning Devices&sortBy=massVolume&tbs=mr:1,root_cat:542784"
+                                                },
+                                                {
+                                                    "name": "Blackhead Treatment Tools",
+                                                    "parent": "Skin Care Tools",
+                                                    "slug": "/search?q=Blackhead Treatment Tools&sortBy=massVolume&tbs=mr:1,root_cat:542782"
+                                                },
+                                                {
+                                                    "name": "Facial Rollers and Microneedling",
+                                                    "parent": "Skin Care Tools",
+                                                    "slug": "/search?q=Facial Rollers and Microneedling&sortBy=massVolume&tbs=mr:1,root_cat:542783"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Facial Scrubs",
+                                    "parent": "Face Wash and Cleaners",
+                                    "slug": "/search?q=Facial Scrubs&sortBy=massVolume&tbs=mr:1,root_cat:543092"
+                                },
+                                {
+                                    "name": "Facial Treatments and Masks",
+                                    "parent": "Face Wash and Cleaners",
+                                    "slug": "/search?q=Facial Treatments and Masks&sortBy=massVolume&tbs=mr:1,root_cat:542999"
+                                },
+                                {
+                                    "name": "Acne Treatments",
+                                    "parent": "Face Wash and Cleaners",
+                                    "slug": "/search?q=Acne Treatments&sortBy=massVolume&tbs=mr:1,root_cat:529786"
+                                },
+                                {
+                                    "name": "Skin Care Sets",
+                                    "parent": "Face Wash and Cleaners",
+                                    "slug": "/search?q=Skin Care Sets&sortBy=massVolume&tbs=mr:1,root_cat:532159"
+                                },
+                                {
+                                    "name": "Skin Care Tools",
+                                    "parent": "Face Wash and Cleaners",
+                                    "slug": "/search?q=Skin Care Tools&sortBy=massVolume&tbs=mr:1,root_cat:530494"
+                                },
+                                {
+                                    "name": "Facial Care Tools",
+                                    "parent": "Face Wash and Cleaners",
+                                    "slug": "/search?q=Facial Care Tools&sortBy=massVolume&tbs=mr:1,root_cat:543006"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Nail Care",
+                    "parent": "Health and Beauty",
+                    "children": [
+                        {
+                            "name": "Nail Polish",
+                            "parent": "Nail Care",
+                            "slug": "/search?q=Nail Polish&sortBy=massVolume&tbs=mr:1,root_cat:529727"
+                        },
+                        {
+                            "name": "False Nails",
+                            "parent": "Nail Care",
+                            "slug": "/search?q=False Nails&sortBy=massVolume&tbs=mr:1,root_cat:532142"
+                        },
+                        {
+                            "name": "Nail Art Accessories",
+                            "parent": "Nail Care",
+                            "slug": "/search?q=Nail Art Accessories&sortBy=massVolume&tbs=mr:1,root_cat:532146"
+                        },
+                        {
+                            "name": "Manicure and Pedicure Kits",
+                            "parent": "Nail Care",
+                            "slug": "/search?q=Manicure and Pedicure Kits&sortBy=massVolume&tbs=mr:1,root_cat:542912",
+                            "children": [
+                                {
+                                    "name": "Nail Polish",
+                                    "parent": "Manicure and Pedicure Kits",
+                                    "slug": "/search?q=Nail Polish&sortBy=massVolume&tbs=mr:1,root_cat:529727"
+                                },
+                                {
+                                    "name": "False Nails",
+                                    "parent": "Manicure and Pedicure Kits",
+                                    "slug": "/search?q=False Nails&sortBy=massVolume&tbs=mr:1,root_cat:532142"
+                                },
+                                {
+                                    "name": "Nail Art Accessories",
+                                    "parent": "Manicure and Pedicure Kits",
+                                    "slug": "/search?q=Nail Art Accessories&sortBy=massVolume&tbs=mr:1,root_cat:532146"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Cuticle Creams and Oils",
+                            "parent": "Nail Care",
+                            "slug": "/search?q=Cuticle Creams and Oils&sortBy=massVolume&tbs=mr:1,root_cat:542910"
+                        }
+                    ]
+                },
+                {
+                    "name": "Hair Care",
+                    "parent": "Health and Beauty",
+                    "children": [
+                        {
+                            "name": "Shampoo",
+                            "parent": "Hair Care",
+                            "slug": "/search?q=Shampoo&sortBy=massVolume&tbs=mr:1,root_cat:532463"
+                        },
+                        {
+                            "name": "Conditioner",
+                            "parent": "Hair Care",
+                            "slug": "/search?q=Conditioner&sortBy=massVolume&tbs=mr:1,root_cat:532462"
+                        },
+                        {
+                            "name": "Hair Masks",
+                            "parent": "Hair Care",
+                            "slug": "/search?q=Hair Masks&sortBy=massVolume&tbs=mr:1,root_cat:532972"
+                        },
+                        {
+                            "name": "Curling Irons",
+                            "parent": "Hair Care",
+                            "children": [
+                                {
+                                    "name": "Curling Irons",
+                                    "parent": "Curling Irons",
+                                    "slug": "/search?q=Curling Irons&sortBy=massVolume&tbs=mr:1,root_cat:529760"
+                                },
+                                {
+                                    "name": "Hair Rollers",
+                                    "parent": "Curling Irons",
+                                    "slug": "/search?q=Hair Rollers&sortBy=massVolume&tbs=mr:1,root_cat:529754"
+                                },
+                                {
+                                    "name": "Hair Crimpers and Wavers",
+                                    "parent": "Curling Irons",
+                                    "slug": "/search?q=Hair Crimpers and Wavers&sortBy=massVolume&tbs=mr:1,root_cat:532197"
+                                },
+                                {
+                                    "name": "Hair Straighteners",
+                                    "parent": "Curling Irons",
+                                    "slug": "/search?q=Hair Straighteners&sortBy=massVolume&tbs=mr:1,root_cat:529752"
+                                },
+                                {
+                                    "name": "Hot Brush Stylers",
+                                    "parent": "Curling Irons",
+                                    "slug": "/search?q=Hot Brush Stylers&sortBy=massVolume&tbs=mr:1,root_cat:543484"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Curling Irons",
+                            "parent": "Hair Care",
+                            "children": [
+                                {
+                                    "name": "Curling Irons",
+                                    "parent": "Curling Irons",
+                                    "slug": "/search?q=Curling Irons&sortBy=massVolume&tbs=mr:1,root_cat:529760"
+                                },
+                                {
+                                    "name": "Hair Rollers",
+                                    "parent": "Curling Irons",
+                                    "slug": "/search?q=Hair Rollers&sortBy=massVolume&tbs=mr:1,root_cat:529754"
+                                },
+                                {
+                                    "name": "Hair Crimpers and Wavers",
+                                    "parent": "Curling Irons",
+                                    "slug": "/search?q=Hair Crimpers and Wavers&sortBy=massVolume&tbs=mr:1,root_cat:532197"
+                                },
+                                {
+                                    "name": "Hair Straighteners",
+                                    "parent": "Curling Irons",
+                                    "slug": "/search?q=Hair Straighteners&sortBy=massVolume&tbs=mr:1,root_cat:529752"
+                                },
+                                {
+                                    "name": "Hot Brush Stylers",
+                                    "parent": "Curling Irons",
+                                    "slug": "/search?q=Hot Brush Stylers&sortBy=massVolume&tbs=mr:1,root_cat:543484"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Cosmetic Tools and Brushes",
+                    "parent": "Health and Beauty",
+                    "children": [
+                        {
+                            "name": "Makeup Brush Sets",
+                            "parent": "Cosmetic Tools and Brushes",
+                            "slug": "/search?q=Makeup Brush Sets&sortBy=massVolume&tbs=mr:1,root_cat:542869"
+                        },
+                        {
+                            "name": "Powder Brushes",
+                            "parent": "Cosmetic Tools and Brushes",
+                            "slug": "/search?q=Powder Brushes&sortBy=massVolume&tbs=mr:1,root_cat:542868"
+                        },
+                        {
+                            "name": "Foundation Brushes",
+                            "parent": "Cosmetic Tools and Brushes",
+                            "slug": "/search?q=Foundation Brushes&sortBy=massVolume&tbs=mr:1,root_cat:543083"
+                        },
+                        {
+                            "name": "Blush Brushes",
+                            "parent": "Cosmetic Tools and Brushes",
+                            "slug": "/search?q=Blush Brushes&sortBy=massVolume&tbs=mr:1,root_cat:542862"
+                        },
+                        {
+                            "name": "Eyeshadow Brushes",
+                            "parent": "Cosmetic Tools and Brushes",
+                            "slug": "/search?q=Eyeshadow Brushes&sortBy=massVolume&tbs=mr:1,root_cat:542864"
+                        },
+                        {
+                            "name": "Concealer Brushes",
+                            "parent": "Cosmetic Tools and Brushes",
+                            "slug": "/search?q=Concealer Brushes&sortBy=massVolume&tbs=mr:1,root_cat:542863"
+                        },
+                        {
+                            "name": "Eyebrow Brushes",
+                            "parent": "Cosmetic Tools and Brushes",
+                            "slug": "/search?q=Eyebrow Brushes&sortBy=massVolume&tbs=mr:1,root_cat:542865"
+                        },
+                        {
+                            "name": "Eyeliner Brushes",
+                            "parent": "Cosmetic Tools and Brushes",
+                            "slug": "/search?q=Eyeliner Brushes&sortBy=massVolume&tbs=mr:1,root_cat:542866"
+                        }
+                    ]
+                },
+                {
+                    "name": "Face Mirrors",
+                    "parent": "Health and Beauty",
+                    "children": [
+                        {
+                            "name": "Magnifying Makeup Mirrors",
+                            "parent": "Face Mirrors",
+                            "slug": "/search?q=Magnifying Makeup Mirrors&sortBy=massVolume&tbs=mr:1,root_cat:543045"
+                        },
+                        {
+                            "name": "Mirror Compacts",
+                            "parent": "Face Mirrors",
+                            "slug": "/search?q=Mirror Compacts&sortBy=massVolume&tbs=mr:1,root_cat:543046"
+                        },
+                        {
+                            "name": "Lighted Makeup Mirrors",
+                            "parent": "Face Mirrors",
+                            "slug": "/search?q=Lighted Makeup Mirrors&sortBy=massVolume&tbs=mr:1,root_cat:543044"
+                        }
+                    ]
+                },
+                {
+                    "name": "False Eyelash Applicators",
+                    "parent": "Health and Beauty",
+                    "children": [
+                        {
+                            "name": "False Eyelashes",
+                            "parent": "False Eyelash Applicators",
+                            "slug": "/search?q=False Eyelashes&sortBy=massVolume&tbs=mr:1,root_cat:529737"
+                        },
+                        {
+                            "name": "False Eyelash Adhesive",
+                            "parent": "False Eyelash Applicators",
+                            "slug": "/search?q=False Eyelash Adhesive&sortBy=massVolume&tbs=mr:1,root_cat:542815"
+                        },
+                        {
+                            "name": "Makeup Brush Sets",
+                            "parent": "False Eyelash Applicators",
+                            "slug": "/search?q=Makeup Brush Sets&sortBy=massVolume&tbs=mr:1,root_cat:542869"
+                        }
+                    ]
+                },
+                {
+                    "name": "False Eyelash Remover",
+                    "parent": "Health and Beauty",
+                    "children": [
+                        {
+                            "name": "False Eyelashes",
+                            "parent": "False Eyelash Remover",
+                            "slug": "/search?q=False Eyelashes&sortBy=massVolume&tbs=mr:1,root_cat:529737"
+                        },
+                        {
+                            "name": "False Eyelash Adhesive",
+                            "parent": "False Eyelash Remover",
+                            "slug": "/search?q=False Eyelash Adhesive&sortBy=massVolume&tbs=mr:1,root_cat:542815"
+                        },
+                        {
+                            "name": "Makeup Remover",
+                            "parent": "False Eyelash Remover",
+                            "slug": "/search?q=Makeup Remover&sortBy=massVolume&tbs=mr:1,root_cat:529729"
+                        }
+                    ]
+                },
+                {
+                    "name": "Makeup Brushes",
+                    "parent": "Health and Beauty",
+                    "children": [
+                        {
+                            "name": "Makeup Brush Sets",
+                            "parent": "Makeup Brushes",
+                            "slug": "/search?q=Makeup Brush Sets&sortBy=massVolume&tbs=mr:1,root_cat:542869"
+                        },
+                        {
+                            "name": "Powder Brushes",
+                            "parent": "Makeup Brushes",
+                            "slug": "/search?q=Powder Brushes&sortBy=massVolume&tbs=mr:1,root_cat:542868"
+                        },
+                        {
+                            "name": "Foundation Brushes",
+                            "parent": "Makeup Brushes",
+                            "slug": "/search?q=Foundation Brushes&sortBy=massVolume&tbs=mr:1,root_cat:543083"
+                        },
+                        {
+                            "name": "Blush Brushes",
+                            "parent": "Makeup Brushes",
+                            "slug": "/search?q=Blush Brushes&sortBy=massVolume&tbs=mr:1,root_cat:542862"
+                        },
+                        {
+                            "name": "Eyeshadow Brushes",
+                            "parent": "Makeup Brushes",
+                            "slug": "/search?q=Eyeshadow Brushes&sortBy=massVolume&tbs=mr:1,root_cat:542864"
+                        },
+                        {
+                            "name": "Concealer Brushes",
+                            "parent": "Makeup Brushes",
+                            "slug": "/search?q=Concealer Brushes&sortBy=massVolume&tbs=mr:1,root_cat:542863"
+                        },
+                        {
+                            "name": "Eyebrow Brushes",
+                            "parent": "Makeup Brushes",
+                            "slug": "/search?q=Eyebrow Brushes&sortBy=massVolume&tbs=mr:1,root_cat:542865"
+                        },
+                        {
+                            "name": "Eyeliner Brushes",
+                            "parent": "Makeup Brushes",
+                            "slug": "/search?q=Eyeliner Brushes&sortBy=massVolume&tbs=mr:1,root_cat:542866"
+                        }
+                    ]
+                },
+                {
+                    "name": "Skin Care Extractors",
+                    "children": [
+                        {
+                            "name": "Blackhead Treatment Tools",
+                            "parent": "Skin Care Extractors",
+                            "slug": "/search?q=Blackhead Treatment Tools&sortBy=massVolume&tbs=mr:1,root_cat:542782"
+                        },
+                        {
+                            "name": "Facial Cleansing Brushes",
+                            "parent": "Skin Care Extractors",
+                            "slug": "/search?q=Facial Cleansing Brushes&sortBy=massVolume&tbs=mr:1,root_cat:532455"
+                        },
+                        {
+                            "name": "Facial Massagers",
+                            "parent": "Skin Care Extractors",
+                            "slug": "/search?q=Facial Massagers&sortBy=massVolume&tbs=mr:1,root_cat:542780"
+                        }
+                    ]
+                },
+                {
+                    "name": "Skin Care Rollers",
+                    "children": [
+                        {
+                            "name": "Facial Cleansing Brushes",
+                            "parent": "Skin Care Rollers",
+                            "slug": "/search?q=Facial Cleansing Brushes&sortBy=massVolume&tbs=mr:1,root_cat:532455"
+                        },
+                        {
+                            "name": "Facial Massagers",
+                            "parent": "Skin Care Rollers",
+                            "slug": "/search?q=Facial Massagers&sortBy=massVolume&tbs=mr:1,root_cat:542780"
+                        },
+                        {
+                            "name": "Facial Rollers and Microneedling",
+                            "parent": "Skin Care Rollers",
+                            "slug": "/search?q=Facial Rollers and Microneedling&sortBy=massVolume&tbs=mr:1,root_cat:542783"
+                        },
+                        {
+                            "name": "Facial Toning Devices",
+                            "parent": "Skin Care Rollers",
+                            "slug": "/search?q=Facial Toning Devices&sortBy=massVolume&tbs=mr:1,root_cat:542784"
+                        }
+                    ]
+                },
+                {
+                    "name": "Skin Cleansing Brush Heads",
+                    "children": [
+                        {
+                            "name": "Facial Cleansing Brushes",
+                            "parent": "Skin Cleansing Brush Heads",
+                            "slug": "/search?q=Facial Cleansing Brushes&sortBy=massVolume&tbs=mr:1,root_cat:532455"
+                        },
+                        {
+                            "name": "Facial Massagers",
+                            "parent": "Skin Cleansing Brush Heads",
+                            "slug": "/search?q=Facial Massagers&sortBy=massVolume&tbs=mr:1,root_cat:542780"
+                        },
+                        {
+                            "name": "Bath Brushes",
+                            "parent": "Skin Cleansing Brush Heads",
+                            "slug": "/search?q=Bath Brushes&sortBy=massVolume&tbs=mr:1,root_cat:532457"
+                        },
+                        {
+                            "name": "Bath Sponges and Loofahs",
+                            "parent": "Skin Cleansing Brush Heads",
+                            "slug": "/search?q=Bath Sponges and Loofahs&sortBy=massVolume&tbs=mr:1,root_cat:532456"
+                        }
+                    ]
+                },
+                {
+                    "name": "Bath Additives",
+                    "children": [
+                        {
+                            "name": "Bath Salts",
+                            "parent": "Bath Additives",
+                            "slug": "/search?q=Bath Salts&sortBy=massVolume&tbs=mr:1,root_cat:543073"
+                        },
+                        {
+                            "name": "Bubble Bath",
+                            "parent": "Bath Additives",
+                            "slug": "/search?q=Bubble Bath&sortBy=massVolume&tbs=mr:1,root_cat:543071"
+                        },
+                        {
+                            "name": "Bath Bombs",
+                            "parent": "Bath Additives",
+                            "slug": "/search?q=Bath Bombs&sortBy=massVolume&tbs=mr:1,root_cat:543072"
+                        }
+                    ]
+                },
+                {
+                    "name": "Personal Care",
+                    "children": [
+                        {
+                            "name": "Facial Care",
+                            "parent": "Personal Care",
+                            "slug": "/search?q=Facial Care&sortBy=massVolume&tbs=mr:1,root_cat:542997"
+                        },
+                        {
+                            "name": "Moisturizers",
+                            "parent": "Personal Care",
+                            "slug": "/search?q=Moisturizers&sortBy=massVolume&tbs=mr:1,root_cat:529783"
+                        },
+                        {
+                            "name": "Skin Care Sets",
+                            "parent": "Personal Care",
+                            "slug": "/search?q=Skin Care Sets&sortBy=massVolume&tbs=mr:1,root_cat:532159"
+                        }
+                    ]
+                },
+                {
+                    "name": "Health and Beauty",
+                    "children": [
+                        {
+                            "name": "Facial Moisturizers",
+                            "parent": "Health and Beauty",
+                            "slug": "/search?q=Facial Moisturizers&sortBy=massVolume&tbs=mr:1,root_cat:532203"
+                        },
+                        {
+                            "name": "Bath and Body",
+                            "parent": "Health and Beauty",
+                            "slug": "/search?q=Bath and Body&sortBy=massVolume&tbs=mr:1,root_cat:529706"
+                        },
+                        {
+                            "name": "Facial Treatments and Masks",
+                            "parent": "Health and Beauty",
+                            "slug": "/search?q=Facial Treatments and Masks&sortBy=massVolume&tbs=mr:1,root_cat:542999"
+                        },
+                        {
+                            "name": "Skin Care Sets",
+                            "parent": "Health and Beauty",
+                            "slug": "/search?q=Skin Care Sets&sortBy=massVolume&tbs=mr:1,root_cat:532159"
+                        },
+                        {
+                            "name": "Eye Makeup",
+                            "parent": "Health and Beauty",
+                            "slug": "/search?q=Eye Makeup&sortBy=massVolume&tbs=mr:1,root_cat:531521"
+                        },
+                        {
+                            "name": "Shampoo",
+                            "parent": "Health and Beauty",
+                            "slug": "/search?q=Shampoo&sortBy=massVolume&tbs=mr:1,root_cat:532463"
+                        },
+                        {
+                            "name": "Foundation",
+                            "parent": "Health and Beauty",
+                            "slug": "/search?q=Foundation&sortBy=massVolume&tbs=mr:1,root_cat:529736"
+                        },
+                        {
+                            "name": "Vitamins and Nutrition",
+                            "parent": "Health and Beauty",
+                            "slug": "/search?q=Vitamins and Nutrition&sortBy=massVolume&tbs=mr:1,root_cat:532483"
+                        }
+                    ]
+                },
+                {
+                    "name": "Jewelry Holders",
+                    "children": [
+                        {
+                            "name": "Jewelry Boxes",
+                            "parent": "Jewelry Holders",
+                            "slug": "/search?q=Jewelry Boxes&sortBy=massVolume&tbs=mr:1,root_cat:532381"
+                        },
+                        {
+                            "name": "Jewelry Stands",
+                            "parent": "Jewelry Holders",
+                            "slug": "/search?q=Jewelry Stands&sortBy=massVolume&tbs=mr:1,root_cat:532379"
+                        },
+                        {
+                            "name": "Jewelry Bags and Cases",
+                            "parent": "Jewelry Holders",
+                            "slug": "/search?q=Jewelry Bags and Cases&sortBy=massVolume&tbs=mr:1,root_cat:532377"
+                        },
+                        {
+                            "name": "Hanging Jewelry Organizers",
+                            "parent": "Jewelry Holders",
+                            "slug": "/search?q=Hanging Jewelry Organizers&sortBy=massVolume&tbs=mr:1,root_cat:532375"
+                        },
+                        {
+                            "name": "Jewelry Trays",
+                            "parent": "Jewelry Holders",
+                            "slug": "/search?q=Jewelry Trays&sortBy=massVolume&tbs=mr:1,root_cat:532378"
+                        },
+                        {
+                            "name": "Ring Holders",
+                            "parent": "Jewelry Holders",
+                            "slug": "/search?q=Ring Holders&sortBy=massVolume&tbs=mr:1,root_cat:532374"
+                        },
+                        {
+                            "name": "Jewelry Wall Racks and Cabinets",
+                            "parent": "Jewelry Holders",
+                            "slug": "/search?q=Jewelry Wall Racks and Cabinets&sortBy=massVolume&tbs=mr:1,root_cat:532376"
+                        }
+                    ]
+                },
+                {
+                    "name": "Jewelry Steam Cleaners",
+                    "children": [
+                        {
+                            "name": "Ultrasonic Jewelry Cleaners",
+                            "parent": "Jewelry Steam Cleaners",
+                            "slug": "/search?q=Ultrasonic Jewelry Cleaners&sortBy=massVolume&tbs=mr:1,root_cat:532369"
+                        },
+                        {
+                            "name": "Jewelry Cleaner",
+                            "parent": "Jewelry Steam Cleaners",
+                            "slug": "/search?q=Jewelry Cleaner&sortBy=massVolume&tbs=mr:1,root_cat:532370"
+                        },
+                        {
+                            "name": "Jewelry Cleaning Tools",
+                            "parent": "Jewelry Steam Cleaners",
+                            "slug": "/search?q=Jewelry Cleaning Tools&sortBy=massVolume&tbs=mr:1,root_cat:532368"
+                        },
+                        {
+                            "name": "Carpet Cleaners",
+                            "parent": "Jewelry Steam Cleaners",
+                            "slug": "/search?q=Carpet Cleaners&sortBy=massVolume&tbs=mr:1,root_cat:534765"
+                        },
+                        {
+                            "name": "Dental Equipment and Supplies",
+                            "parent": "Jewelry Steam Cleaners",
+                            "slug": "/search?q=Dental Equipment and Supplies&sortBy=massVolume&tbs=mr:1,root_cat:544660"
+                        },
+                        {
+                            "name": "Lab Ultrasonic Cleaners",
+                            "parent": "Jewelry Steam Cleaners",
+                            "slug": "/search?q=Lab Ultrasonic Cleaners&sortBy=massVolume&tbs=mr:1,root_cat:544620"
+                        },
+                        {
+                            "name": "Tattooing and Piercing Care and Protection",
+                            "parent": "Jewelry Steam Cleaners",
+                            "slug": "/search?q=Tattooing and Piercing Care and Protection&sortBy=massVolume&tbs=mr:1,root_cat:545383"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Electronics",
+            "children": [
+                {
+                    "name": "Electronic Components & Tools",
+                    "parent": "Electronics",
+                    "slug": "/search?q=Electronic Components & Tools&sortBy=massVolume&tbs=mr:1,root_cat:539185"
+                },
+                {
+                    "name": "Desktop Computer Accessories",
+                    "parent": "Electronics",
+                    "slug": "/search?q=Desktop Computer Accessories&sortBy=massVolume&tbs=mr:1,root_cat:543384"
+                },
+                {
+                    "name": "Audio",
+                    "parent": "Electronics",
+                    "slug": "/search?q=Audio&sortBy=massVolume&tbs=mr:1,root_cat:530626"
+                },
+                {
+                    "name": "TV & Video",
+                    "parent": "Electronics",
+                    "slug": "/search?q=TV & Video&sortBy=massVolume&tbs=mr:1,root_cat:530842"
+                },
+                {
+                    "name": "Keyboards",
+                    "parent": "Electronics",
+                    "slug": "/search?q=Keyboards&sortBy=massVolume&tbs=mr:1,root_cat:529690"
+                },
+                {
+                    "name": "Gaming Platforms",
+                    "parent": "Electronics",
+                    "slug": "/search?q=Gaming Platforms&sortBy=massVolume&tbs=mr:1,root_cat:537447"
+                },
+                {
+                    "name": "Video Games",
+                    "parent": "Electronics",
+                    "slug": "/search?q=Video Games&sortBy=massVolume&tbs=mr:1,root_cat:529654"
+                },
+                {
+                    "name": "Home Theater",
+                    "parent": "Electronics",
+                    "slug": "/search?q=Home Theater&sortBy=massVolume&tbs=mr:1,root_cat:537693"
+                },
+                {
+                    "name": "Smart TVs & Entertainment",
+                    "parent": "Electronics",
+                    "slug": "/search?q=Smart TVs & Entertainment&sortBy=massVolume&tbs=mr:1,root_cat:538316"
+                },
+                {
+                    "name": "Computers & Tablets",
+                    "parent": "Electronics",
+                    "slug": "/search?q=Computers & Tablets&sortBy=massVolume&tbs=mr:1,root_cat:530985"
+                },
+                {
+                    "name": "Audio",
+                    "children": [
+                        {
+                            "name": "Studio Recording",
+                            "parent": "Audio",
+                            "slug": "/search?q=Studio Recording&sortBy=massVolume&tbs=mr:1,root_cat:539008"
+                        },
+                        {
+                            "name": "Live Sound & Stage",
+                            "parent": "Audio",
+                            "slug": "/search?q=Live Sound & Stage&sortBy=massVolume&tbs=mr:1,root_cat:539009"
+                        },
+                        {
+                            "name": "Wireless & Multi-Room Audio",
+                            "parent": "Audio",
+                            "slug": "/search?q=Wireless & Multi-Room Audio&sortBy=massVolume&tbs=mr:1,root_cat:538262"
+                        },
+                        {
+                            "name": "Wireless Speakers",
+                            "parent": "Audio",
+                            "slug": "/search?q=Wireless Speakers&sortBy=massVolume&tbs=mr:1,root_cat:529683"
+                        },
+                        {
+                            "name": "DJ Equipment",
+                            "parent": "Audio",
+                            "slug": "/search?q=DJ Equipment&sortBy=massVolume&tbs=mr:1,root_cat:539007"
+                        },
+                        {
+                            "name": "Portable Audio",
+                            "parent": "Audio",
+                            "slug": "/search?q=Portable Audio&sortBy=massVolume&tbs=mr:1,root_cat:538705"
+                        },
+                        {
+                            "name": "Power Amplifiers",
+                            "parent": "Audio",
+                            "slug": "/search?q=Power Amplifiers&sortBy=massVolume&tbs=mr:1,root_cat:530628"
+                        },
+                        {
+                            "name": "Audio Cables & Adapters",
+                            "parent": "Audio",
+                            "slug": "/search?q=Audio Cables & Adapters&sortBy=massVolume&tbs=mr:1,root_cat:538709"
+                        }
+                    ]
+                },
+                {
+                    "name": "Headphones & Headsets",
+                    "children": [
+                        {
+                            "name": "Wireless Headphones",
+                            "parent": "Headphones & Headsets",
+                            "slug": "/search?q=Wireless Headphones&sortBy=massVolume&tbs=mr:1,root_cat:531596"
+                        },
+                        {
+                            "name": "Earbuds",
+                            "parent": "Headphones & Headsets",
+                            "slug": "/search?q=Earbuds&sortBy=massVolume&tbs=mr:1,root_cat:537603"
+                        },
+                        {
+                            "name": "On-Ear Headphones",
+                            "parent": "Headphones & Headsets",
+                            "slug": "/search?q=On-Ear Headphones&sortBy=massVolume&tbs=mr:1,root_cat:537601"
+                        },
+                        {
+                            "name": "Noise Canceling Headphones",
+                            "parent": "Headphones & Headsets",
+                            "slug": "/search?q=Noise Canceling Headphones&sortBy=massVolume&tbs=mr:1,root_cat:537602"
+                        },
+                        {
+                            "name": "Over-Ear Headphones",
+                            "parent": "Headphones & Headsets",
+                            "slug": "/search?q=Over-Ear Headphones&sortBy=massVolume&tbs=mr:1,root_cat:538247"
+                        },
+                        {
+                            "name": "Studio Headphones",
+                            "parent": "Headphones & Headsets",
+                            "slug": "/search?q=Studio Headphones&sortBy=massVolume&tbs=mr:1,root_cat:530857"
+                        }
+                    ]
+                },
+                {
+                    "name": "Microphones",
+                    "children": [
+                        {
+                            "name": "Studio Microphones",
+                            "parent": "Microphones",
+                            "slug": "/search?q=Studio Microphones&sortBy=massVolume&tbs=mr:1,root_cat:539108"
+                        },
+                        {
+                            "name": "Stage Microphones",
+                            "parent": "Microphones",
+                            "slug": "/search?q=Stage Microphones&sortBy=massVolume&tbs=mr:1,root_cat:539109"
+                        },
+                        {
+                            "name": "Wireless Microphones",
+                            "parent": "Microphones",
+                            "slug": "/search?q=Wireless Microphones&sortBy=massVolume&tbs=mr:1,root_cat:539111"
+                        }
+                    ]
+                },
+                {
+                    "name": "Speakers",
+                    "children": [
+                        {
+                            "name": "Wireless Speakers",
+                            "parent": "Speakers",
+                            "slug": "/search?q=Wireless Speakers&sortBy=massVolume&tbs=mr:1,root_cat:529683"
+                        },
+                        {
+                            "name": "Bookshelf Speakers",
+                            "parent": "Speakers",
+                            "slug": "/search?q=Bookshelf Speakers&sortBy=massVolume&tbs=mr:1,root_cat:537595"
+                        },
+                        {
+                            "name": "Surround Sound Speakers",
+                            "parent": "Speakers",
+                            "slug": "/search?q=Surround Sound Speakers&sortBy=massVolume&tbs=mr:1,root_cat:537591"
+                        },
+                        {
+                            "name": "Floor-standing Speakers",
+                            "parent": "Speakers",
+                            "slug": "/search?q=Floor-standing Speakers&sortBy=massVolume&tbs=mr:1,root_cat:537596"
+                        }
+                    ]
+                },
+                {
+                    "name": "Desktop Computers",
+                    "children": [
+                        {
+                            "name": "Tower Desktop Computers",
+                            "parent": "Desktop Computers",
+                            "slug": "/search?q=Tower Desktop Computers&sortBy=massVolume&tbs=mr:1,root_cat:538979"
+                        },
+                        {
+                            "name": "Mini PCs",
+                            "parent": "Desktop Computers",
+                            "slug": "/search?q=Mini PCs&sortBy=massVolume&tbs=mr:1,root_cat:538980"
+                        },
+                        {
+                            "name": "All-in-One Computers",
+                            "parent": "Desktop Computers",
+                            "slug": "/search?q=All-in-One Computers&sortBy=massVolume&tbs=mr:1,root_cat:531512"
+                        }
+                    ]
+                },
+                {
+                    "name": "Televisions",
+                    "children": [
+                        {
+                            "name": "Smart TVs",
+                            "parent": "Televisions",
+                            "slug": "/search?q=Smart TVs&sortBy=massVolume&tbs=mr:1,root_cat:531593"
+                        },
+                        {
+                            "name": "LCD & LED TVs",
+                            "parent": "Televisions",
+                            "slug": "/search?q=LCD & LED TVs&sortBy=massVolume&tbs=mr:1,root_cat:543498"
+                        },
+                        {
+                            "name": "4K TVs",
+                            "parent": "Televisions",
+                            "slug": "/search?q=4K TVs&sortBy=massVolume&tbs=mr:1,root_cat:537479"
+                        }
+                    ]
+                },
+                {
+                    "name": "TV & Monitor Mounts",
+                    "children": [
+                        {
+                            "name": "Smart TVs",
+                            "parent": "TV & Monitor Mounts",
+                            "slug": "/search?q=Smart TVs&sortBy=massVolume&tbs=mr:1,root_cat:531593"
+                        },
+                        {
+                            "name": "LCD & LED TVs",
+                            "parent": "TV & Monitor Mounts",
+                            "slug": "/search?q=LCD & LED TVs&sortBy=massVolume&tbs=mr:1,root_cat:543498"
+                        },
+                        {
+                            "name": "4K TVs",
+                            "parent": "TV & Monitor Mounts",
+                            "slug": "/search?q=4K TVs&sortBy=massVolume&tbs=mr:1,root_cat:537479"
+                        }
+                    ]
+                },
+                {
+                    "name": "Point & Shoot Film Cameras",
+                    "children": [
+                        {
+                            "name": "Dance",
+                            "parent": "Point & Shoot Film Cameras",
+                            "slug": "/search?q=Dance&sortBy=massVolume&tbs=mr:1,root_cat:535657"
+                        },
+                        {
+                            "name": "Ballet & Pointe Shoes",
+                            "parent": "Point & Shoot Film Cameras",
+                            "slug": "/search?q=Ballet & Pointe Shoes&sortBy=massVolume&tbs=mr:1,root_cat:535751"
+                        },
+                        {
+                            "name": "Women's Accessories",
+                            "parent": "Point & Shoot Film Cameras",
+                            "slug": "/search?q=Women's Accessories&sortBy=massVolume&tbs=mr:1,root_cat:532010"
+                        },
+                        {
+                            "name": "Women's Shoes",
+                            "parent": "Point & Shoot Film Cameras",
+                            "slug": "/search?q=Women's Shoes&sortBy=massVolume&tbs=mr:1,root_cat:530772"
+                        },
+                        {
+                            "name": "Tools",
+                            "parent": "Point & Shoot Film Cameras",
+                            "slug": "/search?q=Tools&sortBy=massVolume&tbs=mr:1,root_cat:529844"
+                        },
+                        {
+                            "name": "Wireless Access Points",
+                            "parent": "Point & Shoot Film Cameras",
+                            "slug": "/search?q=Wireless Access Points&sortBy=massVolume&tbs=mr:1,root_cat:529669"
+                        }
+                    ]
+                },
+                {
+                    "name": "Computer Keyboards",
+                    "children": [
+                        {
+                            "name": "Computer Keyboards",
+                            "parent": "Computer Keyboards",
+                            "slug": "/search?q=Computer Keyboards&sortBy=massVolume&tbs=mr:1,root_cat:539114"
+                        },
+                        {
+                            "name": "Mechanical Keyboards",
+                            "parent": "Computer Keyboards",
+                            "slug": "/search?q=Mechanical Keyboards&sortBy=massVolume&tbs=mr:1,root_cat:539113"
+                        },
+                        {
+                            "name": "Gaming Keyboards",
+                            "parent": "Computer Keyboards",
+                            "slug": "/search?q=Gaming Keyboards&sortBy=massVolume&tbs=mr:1,root_cat:537578"
+                        },
+                        {
+                            "name": "Wireless Keyboards",
+                            "parent": "Computer Keyboards",
+                            "slug": "/search?q=Wireless Keyboards&sortBy=massVolume&tbs=mr:1,root_cat:539116"
+                        },
+                        {
+                            "name": "Tablet Keyboards",
+                            "parent": "Computer Keyboards",
+                            "slug": "/search?q=Tablet Keyboards&sortBy=massVolume&tbs=mr:1,root_cat:539115"
+                        },
+                        {
+                            "name": "Ergonomic Keyboards",
+                            "parent": "Computer Keyboards",
+                            "slug": "/search?q=Ergonomic Keyboards&sortBy=massVolume&tbs=mr:1,root_cat:539112"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Health",
+            "children": [
+                {
+                    "name": "Blood Health",
+                    "children": [
+                        {
+                            "name": "Immune Support Supplements",
+                            "parent": "Blood Health",
+                            "slug": "/search?q=Immune Support Supplements&sortBy=massVolume&tbs=mr:1,root_cat:532093"
+                        },
+                        {
+                            "name": "Herbal Supplements",
+                            "parent": "Blood Health",
+                            "slug": "/search?q=Herbal Supplements&sortBy=massVolume&tbs=mr:1,root_cat:532098"
+                        },
+                        {
+                            "name": "Heart Health Supplements",
+                            "parent": "Blood Health",
+                            "slug": "/search?q=Heart Health Supplements&sortBy=massVolume&tbs=mr:1,root_cat:532094"
+                        }
+                    ]
+                },
+                {
+                    "name": "Fertility",
+                    "children": [
+                        {
+                            "name": "Vitamins",
+                            "parent": "Fertility",
+                            "slug": "/search?q=Vitamins&sortBy=massVolume&tbs=mr:1,root_cat:543238"
+                        },
+                        {
+                            "name": "Immune Support Supplements",
+                            "parent": "Fertility",
+                            "slug": "/search?q=Immune Support Supplements&sortBy=massVolume&tbs=mr:1,root_cat:532093"
+                        },
+                        {
+                            "name": "Herbal Supplements",
+                            "parent": "Fertility",
+                            "slug": "/search?q=Herbal Supplements&sortBy=massVolume&tbs=mr:1,root_cat:532098"
+                        }
+                    ]
+                },
+                {
+                    "name": "Hot and Cold Therapies",
+                    "children": [
+                        {
+                            "name": "Heating Pads",
+                            "parent": "Hot and Cold Therapies",
+                            "slug": "/search?q=Heating Pads&sortBy=massVolume&tbs=mr:1,root_cat:532115"
+                        },
+                        {
+                            "name": "Cold Compresses",
+                            "parent": "Hot and Cold Therapies",
+                            "slug": "/search?q=Cold Compresses&sortBy=massVolume&tbs=mr:1,root_cat:543152"
+                        },
+                        {
+                            "name": "Ice Compression Wraps",
+                            "parent": "Hot and Cold Therapies",
+                            "slug": "/search?q=Ice Compression Wraps&sortBy=massVolume&tbs=mr:1,root_cat:543154"
+                        },
+                        {
+                            "name": "Hot Water Bottles",
+                            "parent": "Hot and Cold Therapies",
+                            "slug": "/search?q=Hot Water Bottles&sortBy=massVolume&tbs=mr:1,root_cat:546462"
+                        }
+                    ]
+                },
+                {
+                    "name": "Ice Packs",
+                    "children": [
+                        {
+                            "name": "Cold Compresses",
+                            "parent": "Ice Packs",
+                            "slug": "/search?q=Cold Compresses&sortBy=massVolume&tbs=mr:1,root_cat:543152"
+                        },
+                        {
+                            "name": "Heating Pads",
+                            "parent": "Ice Packs",
+                            "slug": "/search?q=Heating Pads&sortBy=massVolume&tbs=mr:1,root_cat:532115"
+                        },
+                        {
+                            "name": "Ice Compression Wraps",
+                            "parent": "Ice Packs",
+                            "slug": "/search?q=Ice Compression Wraps&sortBy=massVolume&tbs=mr:1,root_cat:543154"
+                        }
+                    ]
+                },
+                {
+                    "name": "Fitness and Nutrition",
+                    "children": [
+                        {
+                            "name": "Whey Protein",
+                            "parent": "Fitness and Nutrition",
+                            "slug": "/search?q=Whey Protein&sortBy=massVolume&tbs=mr:1,root_cat:543268"
+                        },
+                        {
+                            "name": "Pre-Workout Drinks",
+                            "parent": "Fitness and Nutrition",
+                            "slug": "/search?q=Pre-Workout Drinks&sortBy=massVolume&tbs=mr:1,root_cat:532163"
+                        },
+                        {
+                            "name": "Immune Support Supplements",
+                            "parent": "Fitness and Nutrition",
+                            "slug": "/search?q=Immune Support Supplements&sortBy=massVolume&tbs=mr:1,root_cat:532093"
+                        }
+                    ]
+                },
+                {
+                    "name": "Nutrition Drinks and Shakes",
+                    "children": [
+                        {
+                            "name": "Meal Shakes and Drinks",
+                            "parent": "Nutrition Drinks and Shakes",
+                            "slug": "/search?q=Meal Shakes and Drinks&sortBy=massVolume&tbs=mr:1,root_cat:532166"
+                        },
+                        {
+                            "name": "Whey Protein",
+                            "parent": "Nutrition Drinks and Shakes",
+                            "slug": "/search?q=Whey Protein&sortBy=massVolume&tbs=mr:1,root_cat:543268"
+                        },
+                        {
+                            "name": "Pea Protein",
+                            "parent": "Nutrition Drinks and Shakes",
+                            "slug": "/search?q=Pea Protein&sortBy=massVolume&tbs=mr:1,root_cat:546422"
+                        },
+                        {
+                            "name": "Soy Protein",
+                            "parent": "Nutrition Drinks and Shakes",
+                            "slug": "/search?q=Soy Protein&sortBy=massVolume&tbs=mr:1,root_cat:543272"
+                        },
+                        {
+                            "name": "Pre-Workout Drinks",
+                            "parent": "Nutrition Drinks and Shakes",
+                            "slug": "/search?q=Pre-Workout Drinks&sortBy=massVolume&tbs=mr:1,root_cat:532163"
+                        },
+                        {
+                            "name": "Casein Protein",
+                            "parent": "Nutrition Drinks and Shakes",
+                            "slug": "/search?q=Casein Protein&sortBy=massVolume&tbs=mr:1,root_cat:543269"
+                        },
+                        {
+                            "name": "Condition-specific Supplements",
+                            "parent": "Nutrition Drinks and Shakes",
+                            "slug": "/search?q=Condition-specific Supplements&sortBy=massVolume&tbs=mr:1,root_cat:543237"
+                        },
+                        {
+                            "name": "Nutrition Bars",
+                            "parent": "Nutrition Drinks and Shakes",
+                            "slug": "/search?q=Nutrition Bars&sortBy=massVolume&tbs=mr:1,root_cat:530944"
+                        }
+                    ]
+                },
+                {
+                    "name": "Nutrition Gels and Chews",
+                    "children": [
+                        {
+                            "name": "Immune Support Supplements",
+                            "parent": "Nutrition Gels and Chews",
+                            "slug": "/search?q=Immune Support Supplements&sortBy=massVolume&tbs=mr:1,root_cat:532093"
+                        },
+                        {
+                            "name": "Herbal Supplements",
+                            "parent": "Nutrition Gels and Chews",
+                            "slug": "/search?q=Herbal Supplements&sortBy=massVolume&tbs=mr:1,root_cat:532098"
+                        },
+                        {
+                            "name": "Bone and Joint Health Supplements",
+                            "parent": "Nutrition Gels and Chews",
+                            "slug": "/search?q=Bone and Joint Health Supplements&sortBy=massVolume&tbs=mr:1,root_cat:532096"
+                        },
+                        {
+                            "name": "Heart Health Supplements",
+                            "parent": "Nutrition Gels and Chews",
+                            "slug": "/search?q=Heart Health Supplements&sortBy=massVolume&tbs=mr:1,root_cat:532094"
+                        },
+                        {
+                            "name": "Multivitamins",
+                            "parent": "Nutrition Gels and Chews",
+                            "slug": "/search?q=Multivitamins&sortBy=massVolume&tbs=mr:1,root_cat:532107"
+                        },
+                        {
+                            "name": "Vitamins A-K",
+                            "parent": "Nutrition Gels and Chews",
+                            "slug": "/search?q=Vitamins A-K&sortBy=massVolume&tbs=mr:1,root_cat:532101"
+                        }
+                    ]
+                },
+                {
+                    "name": "Vitamins and Supplements",
+                    "children": [
+                        {
+                            "name": "Multivitamins",
+                            "parent": "Vitamins and Supplements",
+                            "slug": "/search?q=Multivitamins&sortBy=massVolume&tbs=mr:1,root_cat:532107"
+                        },
+                        {
+                            "name": "Immune Support Supplements",
+                            "parent": "Vitamins and Supplements",
+                            "slug": "/search?q=Immune Support Supplements&sortBy=massVolume&tbs=mr:1,root_cat:532093"
+                        },
+                        {
+                            "name": "Bone and Joint Health Supplements",
+                            "parent": "Vitamins and Supplements",
+                            "slug": "/search?q=Bone and Joint Health Supplements&sortBy=massVolume&tbs=mr:1,root_cat:532096"
+                        },
+                        {
+                            "name": "Herbal Supplements",
+                            "parent": "Vitamins and Supplements",
+                            "slug": "/search?q=Herbal Supplements&sortBy=massVolume&tbs=mr:1,root_cat:532098"
+                        },
+                        {
+                            "name": "Heart Health Supplements",
+                            "parent": "Vitamins and Supplements",
+                            "slug": "/search?q=Heart Health Supplements&sortBy=massVolume&tbs=mr:1,root_cat:532094"
+                        },
+                        {
+                            "name": "Vitamins A-K",
+                            "parent": "Vitamins and Supplements",
+                            "slug": "/search?q=Vitamins A-K&sortBy=massVolume&tbs=mr:1,root_cat:532101"
+                        },
+                        {
+                            "name": "Digestive Health Supplements",
+                            "parent": "Vitamins and Supplements",
+                            "slug": "/search?q=Digestive Health Supplements&sortBy=massVolume&tbs=mr:1,root_cat:543239"
+                        },
+                        {
+                            "name": "Hair, Skin and Nail Supplements",
+                            "parent": "Vitamins and Supplements",
+                            "slug": "/search?q=Hair, Skin and Nail Supplements&sortBy=massVolume&tbs=mr:1,root_cat:532104"
+                        }
+                    ]
+                },
+                {
+                    "name": "Pain Killers",
+                    "children": [
+                        {
+                            "name": "Muscle and Joint Pain Relief",
+                            "parent": "Pain Killers",
+                            "slug": "/search?q=Muscle and Joint Pain Relief&sortBy=massVolume&tbs=mr:1,root_cat:543194"
+                        },
+                        {
+                            "name": "Arthritis Pain Relief",
+                            "parent": "Pain Killers",
+                            "slug": "/search?q=Arthritis Pain Relief&sortBy=massVolume&tbs=mr:1,root_cat:543193"
+                        },
+                        {
+                            "name": "Migraine and Headache Pain Relief",
+                            "parent": "Pain Killers",
+                            "slug": "/search?q=Migraine and Headache Pain Relief&sortBy=massVolume&tbs=mr:1,root_cat:543196"
+                        }
+                    ]
+                },
+                {
+                    "name": "Accessibility Equipment",
+                    "children": [
+                        {
+                            "name": "Mobility Aids",
+                            "parent": "Accessibility Equipment",
+                            "slug": "/search?q=Mobility Aids&sortBy=massVolume&tbs=mr:1,root_cat:532185"
+                        },
+                        {
+                            "name": "Personnel Safety",
+                            "parent": "Accessibility Equipment",
+                            "slug": "/search?q=Personnel Safety&sortBy=massVolume&tbs=mr:1,root_cat:545927"
+                        },
+                        {
+                            "name": "Work Safety Harnesses",
+                            "parent": "Accessibility Equipment",
+                            "slug": "/search?q=Work Safety Harnesses&sortBy=massVolume&tbs=mr:1,root_cat:536207"
+                        },
+                        {
+                            "name": "Access Panels",
+                            "parent": "Accessibility Equipment",
+                            "slug": "/search?q=Access Panels&sortBy=massVolume&tbs=mr:1,root_cat:546252"
+                        },
+                        {
+                            "name": "Work Safety Tethers",
+                            "parent": "Accessibility Equipment",
+                            "slug": "/search?q=Work Safety Tethers&sortBy=massVolume&tbs=mr:1,root_cat:536215"
+                        }
+                    ]
+                },
+                {
+                    "name": "Supports and Braces",
+                    "children": [
+                        {
+                            "name": "Leg and Knee Braces",
+                            "parent": "Supports and Braces",
+                            "slug": "/search?q=Leg and Knee Braces&sortBy=massVolume&tbs=mr:1,root_cat:543164"
+                        },
+                        {
+                            "name": "Slings and Splints",
+                            "parent": "Supports and Braces",
+                            "slug": "/search?q=Slings and Splints&sortBy=massVolume&tbs=mr:1,root_cat:543168"
+                        },
+                        {
+                            "name": "Foot and Ankle Braces",
+                            "parent": "Supports and Braces",
+                            "slug": "/search?q=Foot and Ankle Braces&sortBy=massVolume&tbs=mr:1,root_cat:543163"
+                        },
+                        {
+                            "name": "Back Braces",
+                            "parent": "Supports and Braces",
+                            "slug": "/search?q=Back Braces&sortBy=massVolume&tbs=mr:1,root_cat:543167"
+                        },
+                        {
+                            "name": "Hand and Wrist Braces",
+                            "parent": "Supports and Braces",
+                            "slug": "/search?q=Hand and Wrist Braces&sortBy=massVolume&tbs=mr:1,root_cat:543165"
+                        }
+                    ]
+                },
+                {
+                    "name": "Walking Aid Accessories",
+                    "children": [
+                        {
+                            "name": "Walkers",
+                            "parent": "Walking Aid Accessories",
+                            "slug": "/search?q=Walkers&sortBy=massVolume&tbs=mr:1,root_cat:532188"
+                        },
+                        {
+                            "name": "Crutches",
+                            "parent": "Walking Aid Accessories",
+                            "slug": "/search?q=Crutches&sortBy=massVolume&tbs=mr:1,root_cat:532482"
+                        },
+                        {
+                            "name": "Canes and Walking Sticks",
+                            "parent": "Walking Aid Accessories",
+                            "slug": "/search?q=Canes and Walking Sticks&sortBy=massVolume&tbs=mr:1,root_cat:532186"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Kitchen Tools",
+            "children": [
+                {
+                    "name": "Jerky Guns",
+                    "children": [
+                        {
+                            "name": "Beef Jerky",
+                            "parent": "Jerky Guns",
+                            "slug": "/search?q=Beef Jerky&sortBy=massVolume&tbs=mr:1,root_cat:542720"
+                        },
+                        {
+                            "name": "Kitchen & Dining",
+                            "parent": "Jerky Guns",
+                            "slug": "/search?q=Kitchen & Dining&sortBy=massVolume&tbs=mr:1,root_cat:530958"
+                        },
+                        {
+                            "name": "Home Improvement",
+                            "parent": "Jerky Guns",
+                            "slug": "/search?q=Home Improvement&sortBy=massVolume&tbs=mr:1,root_cat:529367"
+                        }
+                    ]
+                },
+                {
+                    "name": "Drinkware Holders",
+                    "children": [
+                        {
+                            "name": "Storage & Organization",
+                            "parent": "Drinkware Holders",
+                            "slug": "/search?q=Storage & Organization&sortBy=massVolume&tbs=mr:1,root_cat:529812"
+                        },
+                        {
+                            "name": "Stemware Racks",
+                            "parent": "Drinkware Holders",
+                            "slug": "/search?q=Stemware Racks&sortBy=massVolume&tbs=mr:1,root_cat:543480"
+                        },
+                        {
+                            "name": "Beer Glasses",
+                            "parent": "Drinkware Holders",
+                            "slug": "/search?q=Beer Glasses&sortBy=massVolume&tbs=mr:1,root_cat:529930"
+                        },
+                        {
+                            "name": "Kitchen Counter Storage",
+                            "parent": "Drinkware Holders",
+                            "slug": "/search?q=Kitchen Counter Storage&sortBy=massVolume&tbs=mr:1,root_cat:531837"
+                        },
+                        {
+                            "name": "Kitchen & Dining Furniture",
+                            "parent": "Drinkware Holders",
+                            "slug": "/search?q=Kitchen & Dining Furniture&sortBy=massVolume&tbs=mr:1,root_cat:529819"
+                        },
+                        {
+                            "name": "Business & Industrial",
+                            "parent": "Drinkware Holders",
+                            "slug": "/search?q=Business & Industrial&sortBy=massVolume&tbs=mr:1,root_cat:544557"
+                        },
+                        {
+                            "name": "Wine Racks",
+                            "parent": "Drinkware Holders",
+                            "slug": "/search?q=Wine Racks&sortBy=massVolume&tbs=mr:1,root_cat:529994"
+                        },
+                        {
+                            "name": "Drinking Glasses",
+                            "parent": "Drinkware Holders",
+                            "slug": "/search?q=Drinking Glasses&sortBy=massVolume&tbs=mr:1,root_cat:529907"
+                        }
+                    ]
+                },
+                {
+                    "name": "Mashers",
+                    "children": [
+                        {
+                            "name": "Potato Mashers & Ricers",
+                            "parent": "Mashers",
+                            "slug": "/search?q=Potato Mashers & Ricers&sortBy=massVolume&tbs=mr:1,root_cat:535488"
+                        },
+                        {
+                            "name": "Garlic, Herb & Oil Tools",
+                            "parent": "Mashers",
+                            "slug": "/search?q=Garlic, Herb & Oil Tools&sortBy=massVolume&tbs=mr:1,root_cat:535365"
+                        },
+                        {
+                            "name": "Fruit & Vegetable Tools",
+                            "parent": "Mashers",
+                            "slug": "/search?q=Fruit & Vegetable Tools&sortBy=massVolume&tbs=mr:1,root_cat:535366"
+                        }
+                    ]
+                },
+                {
+                    "name": "Pastry Cloths",
+                    "children": [
+                        {
+                            "name": "Bakeware Sets",
+                            "parent": "Pastry Cloths",
+                            "slug": "/search?q=Bakeware Sets&sortBy=massVolume&tbs=mr:1,root_cat:530094"
+                        },
+                        {
+                            "name": "Kitchen Towels",
+                            "parent": "Pastry Cloths",
+                            "slug": "/search?q=Kitchen Towels&sortBy=massVolume&tbs=mr:1,root_cat:530071"
+                        },
+                        {
+                            "name": "Cake Decorating",
+                            "parent": "Pastry Cloths",
+                            "slug": "/search?q=Cake Decorating&sortBy=massVolume&tbs=mr:1,root_cat:538353"
+                        },
+                        {
+                            "name": "Baking Pans, Molds & Accessories",
+                            "parent": "Pastry Cloths",
+                            "slug": "/search?q=Baking Pans, Molds & Accessories&sortBy=massVolume&tbs=mr:1,root_cat:538354"
+                        },
+                        {
+                            "name": "Essential Kitchen Tools",
+                            "parent": "Pastry Cloths",
+                            "slug": "/search?q=Essential Kitchen Tools&sortBy=massVolume&tbs=mr:1,root_cat:535371"
+                        },
+                        {
+                            "name": "Piping Bags & Tools",
+                            "parent": "Pastry Cloths",
+                            "slug": "/search?q=Piping Bags & Tools&sortBy=massVolume&tbs=mr:1,root_cat:544172"
+                        },
+                        {
+                            "name": "Baking Mats",
+                            "parent": "Pastry Cloths",
+                            "slug": "/search?q=Baking Mats&sortBy=massVolume&tbs=mr:1,root_cat:531872"
+                        },
+                        {
+                            "name": "Household Supplies",
+                            "parent": "Pastry Cloths",
+                            "slug": "/search?q=Household Supplies&sortBy=massVolume&tbs=mr:1,root_cat:533815"
+                        }
+                    ]
+                },
+                {
+                    "name": "Salad Spinners",
+                    "children": [
+                        {
+                            "name": "Slicers",
+                            "parent": "Salad Spinners",
+                            "slug": "/search?q=Slicers&sortBy=massVolume&tbs=mr:1,root_cat:530072"
+                        },
+                        {
+                            "name": "Fruit & Vegetable Slicers",
+                            "parent": "Salad Spinners",
+                            "slug": "/search?q=Fruit & Vegetable Slicers&sortBy=massVolume&tbs=mr:1,root_cat:535379"
+                        },
+                        {
+                            "name": "Fruit & Vegetable Choppers",
+                            "parent": "Salad Spinners",
+                            "slug": "/search?q=Fruit & Vegetable Choppers&sortBy=massVolume&tbs=mr:1,root_cat:535407"
+                        }
+                    ]
+                },
+                {
+                    "name": "Popcorn & French Fry Scoops",
+                    "children": [
+                        {
+                            "name": "Packaged Popcorn",
+                            "parent": "Popcorn & French Fry Scoops",
+                            "slug": "/search?q=Packaged Popcorn&sortBy=massVolume&tbs=mr:1,root_cat:542709"
+                        },
+                        {
+                            "name": "Popcorn Kernels",
+                            "parent": "Popcorn & French Fry Scoops",
+                            "slug": "/search?q=Popcorn Kernels&sortBy=massVolume&tbs=mr:1,root_cat:542710"
+                        },
+                        {
+                            "name": "Microwave Popcorn",
+                            "parent": "Popcorn & French Fry Scoops",
+                            "slug": "/search?q=Microwave Popcorn&sortBy=massVolume&tbs=mr:1,root_cat:542708"
+                        }
+                    ]
+                },
+                {
+                    "name": "Stemware",
+                    "children": [
+                        {
+                            "name": "Wine Glasses",
+                            "parent": "Stemware",
+                            "slug": "/search?q=Wine Glasses&sortBy=massVolume&tbs=mr:1,root_cat:531785"
+                        },
+                        {
+                            "name": "Beer Glasses",
+                            "parent": "Stemware",
+                            "slug": "/search?q=Beer Glasses&sortBy=massVolume&tbs=mr:1,root_cat:529930"
+                        },
+                        {
+                            "name": "Cocktail Glasses",
+                            "parent": "Stemware",
+                            "slug": "/search?q=Cocktail Glasses&sortBy=massVolume&tbs=mr:1,root_cat:531784"
+                        },
+                        {
+                            "name": "Champagne Flutes",
+                            "parent": "Stemware",
+                            "slug": "/search?q=Champagne Flutes&sortBy=massVolume&tbs=mr:1,root_cat:531788"
+                        }
+                    ]
+                },
+                {
+                    "name": "Forks",
+                    "children": [
+                        {
+                            "name": "Forks",
+                            "parent": "Forks",
+                            "slug": "/search?q=Forks&sortBy=massVolume&tbs=mr:1,root_cat:529920"
+                        },
+                        {
+                            "name": "Flatware Sets",
+                            "parent": "Forks",
+                            "slug": "/search?q=Flatware Sets&sortBy=massVolume&tbs=mr:1,root_cat:529921"
+                        },
+                        {
+                            "name": "Spoons",
+                            "parent": "Forks",
+                            "slug": "/search?q=Spoons&sortBy=massVolume&tbs=mr:1,root_cat:529911"
+                        },
+                        {
+                            "name": "Serving Utensils",
+                            "parent": "Forks",
+                            "slug": "/search?q=Serving Utensils&sortBy=massVolume&tbs=mr:1,root_cat:531789"
+                        },
+                        {
+                            "name": "Carving Forks",
+                            "parent": "Forks",
+                            "slug": "/search?q=Carving Forks&sortBy=massVolume&tbs=mr:1,root_cat:531853"
+                        },
+                        {
+                            "name": "Table Knives",
+                            "parent": "Forks",
+                            "slug": "/search?q=Table Knives&sortBy=massVolume&tbs=mr:1,root_cat:529909"
+                        }
+                    ]
+                },
+                {
+                    "name": "Bakeware",
+                    "children": [
+                        {
+                            "name": "Cake Pans",
+                            "parent": "Bakeware",
+                            "slug": "/search?q=Cake Pans&sortBy=massVolume&tbs=mr:1,root_cat:530091"
+                        },
+                        {
+                            "name": "Baking Dishes",
+                            "parent": "Bakeware",
+                            "slug": "/search?q=Baking Dishes&sortBy=massVolume&tbs=mr:1,root_cat:530090"
+                        },
+                        {
+                            "name": "Baking Molds",
+                            "parent": "Bakeware",
+                            "slug": "/search?q=Baking Molds&sortBy=massVolume&tbs=mr:1,root_cat:531871"
+                        },
+                        {
+                            "name": "Baking Sheets",
+                            "parent": "Bakeware",
+                            "slug": "/search?q=Baking Sheets&sortBy=massVolume&tbs=mr:1,root_cat:530093"
+                        },
+                        {
+                            "name": "Candy & Chocolate Molds",
+                            "parent": "Bakeware",
+                            "slug": "/search?q=Candy & Chocolate Molds&sortBy=massVolume&tbs=mr:1,root_cat:531870"
+                        },
+                        {
+                            "name": "Bakeware Sets",
+                            "parent": "Bakeware",
+                            "slug": "/search?q=Bakeware Sets&sortBy=massVolume&tbs=mr:1,root_cat:530094"
+                        },
+                        {
+                            "name": "Bread & Loaf Pans",
+                            "parent": "Bakeware",
+                            "slug": "/search?q=Bread & Loaf Pans&sortBy=massVolume&tbs=mr:1,root_cat:535084"
+                        },
+                        {
+                            "name": "Pie & Tart Pans",
+                            "parent": "Bakeware",
+                            "slug": "/search?q=Pie & Tart Pans&sortBy=massVolume&tbs=mr:1,root_cat:530086"
+                        },
+                        {
+                            "name": "Muffin & Cupcake Pans",
+                            "parent": "Bakeware",
+                            "slug": "/search?q=Muffin & Cupcake Pans&sortBy=massVolume&tbs=mr:1,root_cat:530087"
+                        }
+                    ]
+                },
+                {
+                    "name": "Bakeware Accessories",
+                    "children": [
+                        {
+                            "name": "Candy & Chocolate Molds",
+                            "parent": "Bakeware Accessories",
+                            "slug": "/search?q=Candy & Chocolate Molds&sortBy=massVolume&tbs=mr:1,root_cat:531870"
+                        },
+                        {
+                            "name": "Baking Molds",
+                            "parent": "Bakeware Accessories",
+                            "slug": "/search?q=Baking Molds&sortBy=massVolume&tbs=mr:1,root_cat:531871"
+                        },
+                        {
+                            "name": "Baking Mats",
+                            "parent": "Bakeware Accessories",
+                            "slug": "/search?q=Baking Mats&sortBy=massVolume&tbs=mr:1,root_cat:531872"
+                        }
+                    ]
+                },
+                {
+                    "name": "Home Appliances",
+                    "children": [
+                        {
+                            "name": "Major Kitchen Appliance Packages",
+                            "parent": "Home Appliances",
+                            "slug": "/search?q=Major Kitchen Appliance Packages&sortBy=massVolume&tbs=mr:1,root_cat:534844"
+                        },
+                        {
+                            "name": "Counter Depth Refrigerators",
+                            "parent": "Home Appliances",
+                            "slug": "/search?q=Counter Depth Refrigerators&sortBy=massVolume&tbs=mr:1,root_cat:534725"
+                        },
+                        {
+                            "name": "Gas Ranges",
+                            "parent": "Home Appliances",
+                            "slug": "/search?q=Gas Ranges&sortBy=massVolume&tbs=mr:1,root_cat:534743"
+                        },
+                        {
+                            "name": "Compact Refrigerators",
+                            "parent": "Home Appliances",
+                            "slug": "/search?q=Compact Refrigerators&sortBy=massVolume&tbs=mr:1,root_cat:535585"
+                        },
+                        {
+                            "name": "Laundry Appliances",
+                            "parent": "Home Appliances",
+                            "slug": "/search?q=Laundry Appliances&sortBy=massVolume&tbs=mr:1,root_cat:534810"
+                        },
+                        {
+                            "name": "Smart Refrigerators",
+                            "parent": "Home Appliances",
+                            "slug": "/search?q=Smart Refrigerators&sortBy=massVolume&tbs=mr:1,root_cat:538315"
+                        },
+                        {
+                            "name": "French Door Refrigerators",
+                            "parent": "Home Appliances",
+                            "slug": "/search?q=French Door Refrigerators&sortBy=massVolume&tbs=mr:1,root_cat:534731"
+                        },
+                        {
+                            "name": "Deep Fryers",
+                            "parent": "Home Appliances",
+                            "slug": "/search?q=Deep Fryers&sortBy=massVolume&tbs=mr:1,root_cat:530391"
+                        }
+                    ]
+                },
+                {
+                    "name": "Dryer Machines",
+                    "children": [
+                        {
+                            "name": "Electric Dryers",
+                            "parent": "Dryer Machines",
+                            "slug": "/search?q=Electric Dryers&sortBy=massVolume&tbs=mr:1,root_cat:534735"
+                        },
+                        {
+                            "name": "Stackable Dryers",
+                            "parent": "Dryer Machines",
+                            "slug": "/search?q=Stackable Dryers&sortBy=massVolume&tbs=mr:1,root_cat:536243"
+                        },
+                        {
+                            "name": "Gas Dryers",
+                            "parent": "Dryer Machines",
+                            "slug": "/search?q=Gas Dryers&sortBy=massVolume&tbs=mr:1,root_cat:534736"
+                        }
+                    ]
+                },
+                {
+                    "name": "Air conditioner",
+                    "children": [
+                        {
+                            "name": "Heat Pumps",
+                            "parent": "Air conditioner",
+                            "slug": "/search?q=Heat Pumps&sortBy=massVolume&tbs=mr:1,root_cat:547207"
+                        },
+                        {
+                            "name": "Portable Air Conditioners",
+                            "parent": "Air conditioner",
+                            "slug": "/search?q=Portable Air Conditioners&sortBy=massVolume&tbs=mr:1,root_cat:534777"
+                        },
+                        {
+                            "name": "Central Air Conditioners",
+                            "parent": "Air conditioner",
+                            "slug": "/search?q=Central Air Conditioners&sortBy=massVolume&tbs=mr:1,root_cat:534784"
+                        },
+                        {
+                            "name": "Mini Split Air Conditioners",
+                            "parent": "Air conditioner",
+                            "slug": "/search?q=Mini Split Air Conditioners&sortBy=massVolume&tbs=mr:1,root_cat:534776"
+                        },
+                        {
+                            "name": "Window Air Conditioners",
+                            "parent": "Air conditioner",
+                            "slug": "/search?q=Window Air Conditioners&sortBy=massVolume&tbs=mr:1,root_cat:534778"
+                        }
+                    ]
+                },
+                {
+                    "name": "Fans",
+                    "children": [
+                        {
+                            "name": "Desk Fans",
+                            "parent": "Fans",
+                            "slug": "/search?q=Desk Fans&sortBy=massVolume&tbs=mr:1,root_cat:534773"
+                        },
+                        {
+                            "name": "Battery Operated Fans",
+                            "parent": "Fans",
+                            "slug": "/search?q=Battery Operated Fans&sortBy=massVolume&tbs=mr:1,root_cat:534769"
+                        },
+                        {
+                            "name": "Handheld Fans",
+                            "parent": "Fans",
+                            "slug": "/search?q=Handheld Fans&sortBy=massVolume&tbs=mr:1,root_cat:534788"
+                        },
+                        {
+                            "name": "Ceiling Fans",
+                            "parent": "Fans",
+                            "slug": "/search?q=Ceiling Fans&sortBy=massVolume&tbs=mr:1,root_cat:529957"
+                        },
+                        {
+                            "name": "Pedestal Fans",
+                            "parent": "Fans",
+                            "slug": "/search?q=Pedestal Fans&sortBy=massVolume&tbs=mr:1,root_cat:534774"
+                        },
+                        {
+                            "name": "Tower Fans",
+                            "parent": "Fans",
+                            "slug": "/search?q=Tower Fans&sortBy=massVolume&tbs=mr:1,root_cat:534770"
+                        },
+                        {
+                            "name": "Clip-on Fans",
+                            "parent": "Fans",
+                            "slug": "/search?q=Clip-on Fans&sortBy=massVolume&tbs=mr:1,root_cat:534768"
+                        },
+                        {
+                            "name": "Bladeless Fans",
+                            "parent": "Fans",
+                            "slug": "/search?q=Bladeless Fans&sortBy=massVolume&tbs=mr:1,root_cat:534771"
+                        },
+                        {
+                            "name": "Tilt Fans",
+                            "parent": "Fans",
+                            "slug": "/search?q=Tilt Fans&sortBy=massVolume&tbs=mr:1,root_cat:534772"
+                        },
+                        {
+                            "name": "Wall Mount Fans",
+                            "parent": "Fans",
+                            "slug": "/search?q=Wall Mount Fans&sortBy=massVolume&tbs=mr:1,root_cat:546102"
+                        },
+                        {
+                            "name": "Box Fans",
+                            "parent": "Fans",
+                            "slug": "/search?q=Box Fans&sortBy=massVolume&tbs=mr:1,root_cat:534775"
+                        }
+                    ]
+                },
+                {
+                    "name": "Blender",
+                    "children": [
+                        {
+                            "name": "Countertop Blenders",
+                            "parent": "Blender",
+                            "slug": "/search?q=Countertop Blenders&sortBy=massVolume&tbs=mr:1,root_cat:534852"
+                        },
+                        {
+                            "name": "Personal Blenders",
+                            "parent": "Blender",
+                            "slug": "/search?q=Personal Blenders&sortBy=massVolume&tbs=mr:1,root_cat:534851"
+                        },
+                        {
+                            "name": "Immersion Blenders",
+                            "parent": "Blender",
+                            "slug": "/search?q=Immersion Blenders&sortBy=massVolume&tbs=mr:1,root_cat:534853"
+                        }
+                    ]
+                },
+                {
+                    "name": "Vacuum cleaner",
+                    "children": [
+                        {
+                            "name": "Cordless Vacuums",
+                            "parent": "Vacuum cleaner",
+                            "slug": "/search?q=Cordless Vacuums&sortBy=massVolume&tbs=mr:1,root_cat:534756"
+                        },
+                        {
+                            "name": "Handheld Vacuums",
+                            "parent": "Vacuum cleaner",
+                            "slug": "/search?q=Handheld Vacuums&sortBy=massVolume&tbs=mr:1,root_cat:534760"
+                        },
+                        {
+                            "name": "Upright Vacuums",
+                            "parent": "Vacuum cleaner",
+                            "slug": "/search?q=Upright Vacuums&sortBy=massVolume&tbs=mr:1,root_cat:534757"
+                        },
+                        {
+                            "name": "Wet/Dry Vacuums",
+                            "parent": "Vacuum cleaner",
+                            "slug": "/search?q=Wet/Dry Vacuums&sortBy=massVolume&tbs=mr:1,root_cat:534754"
+                        },
+                        {
+                            "name": "Stick Vacuums",
+                            "parent": "Vacuum cleaner",
+                            "slug": "/search?q=Stick Vacuums&sortBy=massVolume&tbs=mr:1,root_cat:534758"
+                        },
+                        {
+                            "name": "Canister Vacuums",
+                            "parent": "Vacuum cleaner",
+                            "slug": "/search?q=Canister Vacuums&sortBy=massVolume&tbs=mr:1,root_cat:534762"
+                        },
+                        {
+                            "name": "Robotic Vacuums",
+                            "parent": "Vacuum cleaner",
+                            "slug": "/search?q=Robotic Vacuums&sortBy=massVolume&tbs=mr:1,root_cat:531594"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
