@@ -22,12 +22,13 @@ const ProductCollection: FC<ProductCollectionProps> = ({ className = "" }) => {
   const url = new URL(params.pathname+params.search, 'https://ibynn.com');
   const query = url.searchParams.get('q');
   const sort_by = url.searchParams.get('sort_by');
+  const tbs = url.searchParams.get('tbs');
   const [activeResults, setActiveResults] = useState<any>();
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     dc.setLoading(true);
-    fetch(`${process.env.REACT_APP_REST_API_ENDPOINT}/shopping?q=${query}${sort_by ? "&sortBy="+sort_by : ""}`)
+    fetch(`${process.env.REACT_APP_REST_API_ENDPOINT}/shopping?q=${query}${sort_by ? "&sortBy="+sort_by : ""}${'&&tbs=' + tbs}`)
       .then((res) => res.json())
       .then((products) => {dc.setProducts(products.shopping_results); dc.setLoading(false);});
   }, [query]);

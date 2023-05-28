@@ -54,9 +54,92 @@ app.get("/json/:jsonFile", (req, res) => {
   res.json(json);
 });
 
+app.get("/cat_ids", async (req, res) => {
+  const catIDList = [];
+  const emptySubCats = [];
+  const noSubCats = [];
+  const subCategories = [];
+  const subCatIdList = [];
+  const categories = [
+    "Kitchen",
+    "Kitchen Tools & Utensils",
+    "Aprons",
+    "Baking Peels",
+    "Basters",
+    "Basting Brushes"
+  ];
+
+  try {
+    for (const category of  categories) {
+        const catObj = {
+            "name": category,
+            "children": []
+        };
+        const catidres = await getCatIds(category);
+        catObj.children = catidres;
+        catIDList.push(catObj);
+
+    }
+
+    catIDList.forEach(v => {
+      if (v.title) {
+        const title = v.title.replace(/&/g, "and");
+        subCategories.push(title);
+
+      }
+    });
+
+    for (const subCat of subCategories) {
+      const catidres = await getCatIds(subCat);
+      subCatIdList.push(...catidres);
+    }
+
+    
+
+    res.send(catIDList);
+
+
+  } catch (error) {
+    res.send(error);
+  }
+
+
+});
+
+
+const getCatIds = async (category) => {
+  const catIDList = [];
+  const emptySubCats = [];
+  const noSubCats = [];
+
+    const url = request.serpShoppingUrl(category);
+    const { data: response } = await axios.get(url);
+    const queryResult = response;
+    const categoryResult = queryResult.filters.filter(f => f.type === "Category");
+
+    if (categoryResult.length > 0) {
+      
+      categoryResult[0].options.forEach(o => {
+        let catId = {name: "",parent: "",slug: ""};
+        catId.name = o.text;
+        catId.parent = category;
+        catId.slug = `/search?q=${o.text}&sortBy=massVolume&tbs=` + o.tbs;
+        catIDList.push(catId);
+      });
+
+
+    } else {
+        catIDList.name = category;
+    }
+
+  return catIDList;
+
+}
+
 app.get("/shopping", caching, async (req, res) => {
   const query = req.query.q;
   const sortBy = req.query.sortBy;
+  const tbs = req.query.tbs;
   const page = req.query.page;
   const min_price = req.query.min_price ?? 0;
 
@@ -64,19 +147,20 @@ app.get("/shopping", caching, async (req, res) => {
 
     const results = await request.getSerpShopping(
       query,
-      sortBy ?? null
+      sortBy ?? null,
+      tbs
     );
     results.position = 1;
 
-    if (results.shopping_results) {
+    if (results.shopping_results) { 
 
       // res.send(results);
 
-      const pages = await request.retrievePages(results.serpapi_pagination,sortBy);
-      pages.unshift(...results.shopping_results);
+      // const pages = await request.retrievePages(results.serpapi_pagination,sortBy);
+      // pages.unshift(...results.shopping_results);
 
-      results.shopping_results = pages;
-      client.setEx(query, 604800, JSON.stringify(results));
+      // results.shopping_results = pages;
+      // client.setEx(query, 604800, JSON.stringify(results));
       res.send(results);
 
     } else {

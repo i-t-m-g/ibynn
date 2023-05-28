@@ -18,12 +18,12 @@ export function DataContextProvider({children}: any) {
         _setHomeProducts(state);
     };
 
-    const getHomeProducts = async (query:string, sort_by:'amount'|'massVolume') => {
+    const getHomeProducts = async (query:string, sort_by:'amount'|'massVolume', tbs:string) => {
         if (parsed_products.expiry <= new Date().getDate()) {
             window.localStorage.removeItem('HOME_PRODUCTS');
             return;
         }
-        fetch(`${process.env.REACT_APP_REST_API_ENDPOINT}/shopping?q=${query}${sort_by ? "&sortBy="+sort_by : ""}`)
+        fetch(`${process.env.REACT_APP_REST_API_ENDPOINT}/shopping?q=${query}${sort_by ? "&sortBy="+sort_by : ""}${'&tbs='+tbs}`)
           .then((res) => res.json())
           .then((products) => setHomeProducts(products.shopping_results));
     };
@@ -48,9 +48,9 @@ export function DataContextProvider({children}: any) {
 
 
 
-    const fetchProducts = (query:string, sort_by:'amount'|'massVolume') => {
+    const fetchProducts = (query:string, sort_by:'amount'|'massVolume',tbs:string) => {
         setLoading(true);
-        fetch(`${process.env.REACT_APP_REST_API_ENDPOINT}/shopping?q=${query}${sort_by ? "&sortBy="+sort_by : ""}`)
+        fetch(`${process.env.REACT_APP_REST_API_ENDPOINT}/shopping?q=${query}${sort_by ? "&sortBy="+sort_by : ""}${'&tbs='+tbs}`)
           .then((res) => res.json())
           .then((products) => {setProducts(products.shopping_results);setLoading(false)});
     };

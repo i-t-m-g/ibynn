@@ -7,7 +7,7 @@ dotenv.config();
 process.setMaxListeners(0);
 
 const api_key = process.env.API_KEY;
-const getShoppingUrl = (query = 'iphone+12') => `https://serpapi.com/search.json?q=${query}&engine=google&google_domain=google.com&gl=us&hl=en&tbs=mr:1,merchagg:g113872638|g8299768|g784994|m114193152|m7388148|m125210027|m120798572|m127713402|m431991540|m463001233|m10046,avg_rating:400&num=100&tbm=shop&api_key=${api_key}`
+const getShoppingUrl = (query = 'iphone+12') => `https://serpapi.com/search.json?q=${query}&engine=google&google_domain=google.com&gl=us&hl=en&&tbs=mr:1,merchagg:g113872638|g8299768|g784994|m114193152|m7388148|m125210027|m120798572|m127713402|m431991540|m463001233|m10046,avg_rating:400&num=100&tbm=shop&api_key=${api_key}`
 const getShoppingUrlPages = (query, start = '0', tbs) => `https://serpapi.com/search.json?q=${query}&engine=google&google_domain=google.com&gl=us&hl=en&num=100&tbm=shop&start=${start}&api_key=${api_key}&${tbs}`
 const getSerpUrlPages = (query = 'iphone+12', pageIndex) => `https://serpapi.com/search.json?num=100&q=${query}&hl=en&gl=us&api_key=${api_key}&start=${pageIndex * 100}`
 
@@ -98,7 +98,7 @@ export const getProductsWithPagination = async (query) => {
 }
 
 export const getShopping = async (query, sort_by = "", start = "0", min_price = 0) => {
-    const tbs = `tbs=vw:g,mr:1,price:1,ppr_min:${min_price},merchagg:g113872638%7Cg8299768%7Cg784994%7Cm114193152%7Cm7388148%7Cm125210027%7Cm120798572%7Cm127713402%7Cm431991540%7Cm463001233%7Cm10046,avg_rating:400`
+    const tbs = `&tbs=vw:g,mr:1,price:1,ppr_min:${min_price},merchagg:g113872638%7Cg8299768%7Cg784994%7Cm114193152%7Cm7388148%7Cm125210027%7Cm120798572%7Cm127713402%7Cm431991540%7Cm463001233%7Cm10046,avg_rating:400`
     
     try {
         const {data:response} = await axios.get(getShoppingUrlPages(query, start, tbs));
