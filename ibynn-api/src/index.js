@@ -17,6 +17,13 @@ import FormData from 'form-data';
 
 
 const require = createRequire(import.meta.url);
+const mailchimp = require('@mailchimp/mailchimp_marketing');
+
+mailchimp.setConfig({
+  apiKey: 'edfbb7bf6a52024cd372cf941d429c6c-us21',
+  server: 'us21',
+});
+
 
 config();
 let redisClient;
@@ -53,6 +60,53 @@ app.get("/json/:jsonFile", (req, res) => {
   const json = require(`../json/${req.params.jsonFile}.json`);
   res.json(json);
 });
+
+app.get("/taxes", async (req,res) => {
+  const categories = [
+    "Luggage & Bags",
+    "Luggage & Bags > Backpacks",
+    "Luggage & Bags > Briefcases",
+    "Luggage & Bags > Cosmetic & Toiletry Bags",
+    "Luggage & Bags > Diaper Bags",
+    "Luggage & Bags > Dry Boxes",
+    "Luggage & Bags > Duffel Bags",
+    "Luggage & Bags > Fanny Packs",
+    "Luggage & Bags > Garment Bags",
+    "Luggage & Bags > Luggage Accessories",
+    "Luggage & Bags > Luggage Accessories > Dry Box Liners & Inserts",
+    "Luggage & Bags > Luggage Accessories > Luggage Covers",
+    "Luggage & Bags > Luggage Accessories > Luggage Racks & Stands",
+    "Luggage & Bags > Luggage Accessories > Luggage Straps",
+    "Luggage & Bags > Luggage Accessories > Luggage Tags",
+    "Luggage & Bags > Luggage Accessories > Packing Organizers",
+    "Luggage & Bags > Luggage Accessories > Travel Bottles & Containers",
+    "Luggage & Bags > Luggage Accessories > Travel Pouches",
+    "Luggage & Bags > Messenger Bags",
+    "Luggage & Bags > Shopping Totes",
+    "Luggage & Bags > Suitcases",
+    "Luggage & Bags > Train Cases",
+  ];
+
+  try {
+    for (const category of  categories) {
+        const q = encodeURIComponent(category);
+        const catObj = {
+            "name": category,
+            "children": []
+        };
+        
+        const url = request.serpShoppingUrl(q);
+        const { data: response } = await axios.get(url);
+        const categoryFilter = response.filters.filter(v => v.type = "Category");
+        
+
+    }
+    
+  } catch (error) {
+    
+  }
+  res.send(urls);
+})
 
 app.get("/cat_ids", async (req, res) => {
   const catIDList = [];
@@ -184,12 +238,23 @@ app.get("/compare", async (req, res) => {
   res.send(response);
 });
 
-app.get("/scrape", async (req, res) => {
-  const url = req.query.url;
-  const html = await getCheerio(url);
-  res.send(html)
-});
+app.get("/subscribe", async (req,res) => {
+  const listID = "f38ba58e34";
+  const email = req.query.email;
+  const fName = req.query.fName;
+  const lName = req.query.lName;
+  const jsonData = {
+    email_address: email,
+    status: "subscribed",
+    merge_fields: {
+      FNAME: fName,
+      LNAME: lName
+    }
+  };
 
+  const response = await mailchimp.lists.addListMember(listID, jsonData);
+  res.send(response);
+})
 
 
 const getimage = async (categories,json,tbs) => {
@@ -249,56 +314,6 @@ const getimage = async (categories,json,tbs) => {
 
   return cats;
 }
-
-app.get("/images", async (req, res) => {
-  const json = require(`../json/cates.json`);
-  const tbs = request.getTbs();
-  const __filename = fileURLToPath(import.meta.url);
-  const __dirname = path.dirname(__filename);
-  const file = path.resolve(__dirname, "../json/categories.json");
-  const readfs = fs.readFileSync(file);
-  const categories = JSON.parse(readfs);
-  
-  const cats = await getimage(categories,json,tbs);
-
-  setTimeout(() => {
-    var newData = JSON.stringify(cats, null, 2);
-    fs.writeFile(file, newData, err => {
-      if(err) throw err;
-          console.log("New data added");
-    });
-    res.send(cats);
-    
-  }, 20000);
-
-
-  });
-
-app.get("/removebg", async (req, res) => {
-  const formData = new FormData();
-  formData.append('size', 'auto');
-  formData.append('image_url', 'https://www.remove.bg/example.jpg');
-
-  axios({
-    method: 'post',
-    url: 'https://api.remove.bg/v1.0/removebg',
-    data: formData,
-    responseType: 'arraybuffer',
-    headers: {
-      ...formData.getHeaders(),
-      'X-Api-Key': 'hSGTFqwM1dJ5tBwkNYCooJX1',
-    },
-    encoding: null
-  })
-  .then((response) => {
-    if(response.status != 200) return console.error('Error:', response.status, response.statusText);
-    fs.writeFileSync("no-bg.png", response.data);
-    })
-  .catch((error) => {
-      return console.error('Request failed:', error);
-  });
-  res.send("hello");
-})
 
 // starting the server
 app.listen(9476, () => {
