@@ -2,7 +2,7 @@
     "data": [
         {
             "name": "Apparel & Accessories",
-            "slug": "/search?q=Apparel & Accessories&sortBy=massVolume&tbs=",
+            "slug": "/search?q=Apparel+and+Accessories&sortBy=massVolume&tbs=",
             "tbs": "",
             "children": [
                 {
