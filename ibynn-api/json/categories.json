@@ -1,246 +1,2309 @@
 {
-   "data": [
-      {
-        "name": "Animals and Pet Supplies",
-        "slug":"/search?q=Animals and Pet Supplies&sortBy=massVolume",
-        "icon":"https://images.ibynn.com/categories/cosmeticsdepartment.png",
-        "children": [
-              {
-                  "name": "Pet Carriers",
-            "slug":"/search?&tbs=mr:1,root_cat:533708&q=Pet Carriers&sortBy=massVolume",
-                  "parent": "Animals and Pet Supplies",
-                  "tbs": "mr:1,root_cat:533708"
-              },
-              {
-                  "name": "Pet Playpens",
-            "slug":"/search?&tbs=mr:1,root_cat:530521&q=Pet Playpens&sortBy=massVolume",
-                  "parent": "Animals and Pet Supplies",
-                  "tbs": "mr:1,root_cat:530521"
-              },
-              {
-                  "name": "Pet Veterinary Diets",
-            "slug":"/search?&tbs=mr:1,root_cat:530527&q=Pet Veterinary Diets&sortBy=massVolume",
-                  "parent": "Animals and Pet Supplies",
-                  "tbs": "mr:1,root_cat:530527"
-              },
-              {
-                  "name": "Pet Feeders & Waterers",
-            "slug":"/search?&tbs=mr:1,root_cat:533731&q=Pet Feeders & Waterers&sortBy=massVolume",
-                  "parent": "Animals and Pet Supplies",
-                  "tbs": "mr:1,root_cat:533731"
-              },
-              {
-                  "name": "Pet Collars, Harnesses & Leashes",
-            "slug":"/search?&tbs=mr:1,root_cat:533517&q=Pet Collars, Harnesses & Leashes&sortBy=massVolume",
-                  "parent": "Animals and Pet Supplies",
-                  "tbs": "mr:1,root_cat:533517"
-              }
-        ]
-      },
-      {
-        "name": "Apparel and Accessories",
-        "slug":"/search?q=Apparel and Accessories&sortBy=massVolume",
-        "icon":"https://images.ibynn.com/categories/cosmeticsdepartment.png",
-        "children": [
-              {
-                  "name": "T-Shirts",
-            "slug":"/search?&tbs=mr:1,root_cat:531703&q=T-Shirts&sortBy=massVolume",
-                  "parent": "Apparel and Accessories",
-                  "tbs": "mr:1,root_cat:531703"
-              },
-              {
-                  "name": "Men's Apparel",
-            "slug":"/search?&tbs=mr:1,root_cat:529386&q=Men's Apparel&sortBy=massVolume",
-                  "parent": "Apparel and Accessories",
-                  "tbs": "mr:1,root_cat:529386"
-              },
-              {
-                  "name": "Women's Clothing",
-            "slug":"/search?&tbs=mr:1,root_cat:532011&q=Women's Clothing&sortBy=massVolume",
-                  "parent": "Apparel and Accessories",
-                  "tbs": "mr:1,root_cat:532011"
-              },
-              {
-                  "name": "Exercise & Fitness",
-            "slug":"/search?&tbs=mr:1,root_cat:530098&q=Exercise & Fitness&sortBy=massVolume",
-                  "parent": "Apparel and Accessories",
-                  "tbs": "mr:1,root_cat:530098"
-              },
-              {
-                  "name": "Sneakers",
-            "slug":"/search?&tbs=mr:1,root_cat:531484&q=Sneakers&sortBy=massVolume",
-                  "parent": "Apparel and Accessories",
-                  "tbs": "mr:1,root_cat:531484"
-              }
-        ]
-      },
-      {
-        "name": "Health and Beauty",
-        "slug":"/search?q=Health and Beauty&sortBy=massVolume",
-        "icon":"https://images.ibynn.com/categories/cosmeticsdepartment.png",
-        "children": [
-              {
-                  "name": "Makeup",
-            "slug":"/search?&tbs=mr:1,root_cat:531520&q=Makeup&sortBy=massVolume",
-                  "parent": "Health and Beauty",
-                  "tbs": "mr:1,root_cat:531520",
-                  "children": [
-                      {
-                          "name": "Foundation",
-            "slug":"/search?q=Foundation&&tbs=mr:1,root_cat:529736&sortBy=massVolume",
-                          "parent": "Makeup",
-                          "tbs": "mr:1,root_cat:529736"
-                      },
-                      {
-                          "name": "Concealer",
-            "slug":"/search?q=Concealer&&tbs=mr:1,root_cat:529743&sortBy=massVolume",
-                          "parent": "Makeup",
-                          "tbs": "mr:1,root_cat:529743"
-                      },
-                      {
-                          "name": "Eyeshadow",
-            "slug":"/search?q=Eyeshadow&&tbs=mr:1,root_cat:529740&sortBy=massVolume",
-                          "parent": "Makeup",
-                          "tbs": "mr:1,root_cat:529740"
-                      },
-                      {
-                          "name": "Under-Eye Concealer",
-            "slug":"/search?q=Under-&tbs=mr:1,root_cat:542861&Eye Concealer&sortBy=massVolume",
-                          "parent": "Makeup",
-                          "tbs": "mr:1,root_cat:542861"
-                      },
-                      {
-                          "name": "Cosmetic Gift Sets",
-            "slug":"/search?q=Cosmetic &tbs=mr:1,root_cat:529741&Gift Sets&sortBy=massVolume",
-                          "parent": "Makeup",
-                          "tbs": "mr:1,root_cat:529741"
-                      }
-                  ]
-              },
-              {
-                  "name": "Moisturizers",
-            "slug":"/search?&tbs=mr:1,root_cat:532203&q=Moisturizers&sortBy=massVolume",
-                  "parent": "Health and Beauty",
-                  "tbs": "mr:1,root_cat:532203",
-                  "children": [
-                      {
-                          "name": "Facial Moisturizers",
-            "slug":"/search?q=Facial &tbs=mr:1,root_cat:532203&Moisturizers&sortBy=massVolume",
-                          "parent": "Moisturizers",
-                          "tbs": "mr:1,root_cat:532203"
-                      },
-                      {
-                          "name": "Body Lotion",
-            "slug":"/search?q=Body &tbs=mr:1,root_cat:532148&Lotion&sortBy=massVolume",
-                          "parent": "Moisturizers",
-                          "tbs": "mr:1,root_cat:532148"
-                      },
-                      {
-                          "name": "Hand Cream",
-            "slug":"/search?q=Hand &tbs=mr:1,root_cat:532201&Cream&sortBy=massVolume",
-                          "parent": "Moisturizers",
-                          "tbs": "mr:1,root_cat:532201"
-                      }
-                  ]
-              },
-              {
-                  "name": "Bath Products",
-            "slug":"/search?&tbs=mr:1,root_cat:529706&q=Bath Products&sortBy=massVolume",
-                  "parent": "Health and Beauty",
-                  "tbs": "mr:1,root_cat:529706",
-                  "children": [
-                      {
-                          "name": "Bubble Bath",
-            "slug":"/search?q=Bubble &tbs=mr:1,root_cat:543071&Bath&sortBy=massVolume",
-                          "parent": "Bath Products",
-                          "tbs": "mr:1,root_cat:543071"
-                      },
-                      {
-                          "name": "Bath Salts",
-            "slug":"/search?q=Bath &tbs=mr:1,root_cat:543073&Salts&sortBy=massVolume",
-                          "parent": "Bath Products",
-                          "tbs": "mr:1,root_cat:543073"
-                      },
-                      {
-                          "name": "Bath Bombs",
-            "slug":"/search?q=Bath &tbs=mr:1,root_cat:543072&Bombs&sortBy=massVolume",
-                          "parent": "Bath Products",
-                          "tbs": "mr:1,root_cat:543072"
-                      }
-                  ]
-              },
-              {
-                  "name": "Facial Treatments and Masks",
-            "slug":"/search?&tbs=mr:1,root_cat:542999&q=Facial Treatments and Masks&sortBy=massVolume",
-                  "parent": "Health and Beauty",
-                  "tbs": "mr:1,root_cat:542999",
-                  "children": [
-                      {
-                          "name": "Facial Scrubs",
-            "slug":"/search?q=Facial &tbs=mr:1,root_cat:543092&Scrubs&sortBy=massVolume",
-                          "parent": "Facial Treatments and Masks",
-                          "tbs": "mr:1,root_cat:543092"
-                      },
-                      {
-                          "name": "Exfoliating Masks",
-            "slug":"/search?q=Exfoliating &tbs=mr:1,root_cat:542889&Masks&sortBy=massVolume",
-                          "parent": "Facial Treatments and Masks",
-                          "tbs": "mr:1,root_cat:542889"
-                      },
-                      {
-                          "name": "Sheet Masks",
-            "slug":"/search?q=Sheet &tbs=mr:1,root_cat:542887&Masks&sortBy=massVolume",
-                          "parent": "Facial Treatments and Masks",
-                          "tbs": "mr:1,root_cat:542887"
-                      },
-                      {
-                          "name": "Clay & Mud Masks",
-            "slug":"/search?q=Clay &tbs=mr:1,root_cat:542885&& Mud Masks&sortBy=massVolume",
-                          "parent": "Facial Treatments and Masks",
-                          "tbs": "mr:1,root_cat:542885"
-                      },
-                      {
-                          "name": "Cream Masks",
-            "slug":"/search?q=Cream &tbs=mr:1,root_cat:542888&Masks&sortBy=massVolume",
-                          "parent": "Facial Treatments and Masks",
-                          "tbs": "mr:1,root_cat:542888"
-                      }
-                  ]
-              },
-              {
-                  "name": "Eye Makeup",
-            "slug":"/search?&tbs=mr:1,root_cat:531521&q=Eye Makeup&sortBy=massVolume",
-                  "parent": "Health and Beauty",
-                  "tbs": "mr:1,root_cat:531521",
-                  "children": [
-                      {
-                          "name": "Eyeshadow",
-            "slug":"/search?q=Eyeshadow&&tbs=mr:1,root_cat:529740&sortBy=massVolume",
-                          "parent": "Eye Makeup",
-                          "tbs": "mr:1,root_cat:529740"
-                      },
-                      {
-                          "name": "Eye Palettes",
-            "slug":"/search?q=Eye &tbs=mr:1,root_cat:532150&Palettes&sortBy=massVolume",
-                          "parent": "Eye Makeup",
-                          "tbs": "mr:1,root_cat:532150"
-                      },
-                      {
-                          "name": "Eyeliner",
-            "slug":"/search?q=Eyeliner&&tbs=mr:1,root_cat:529739&sortBy=massVolume",
-                          "parent": "Eye Makeup",
-                          "tbs": "mr:1,root_cat:529739"
-                      },
-                      {
-                          "name": "Under-Eye Concealer",
-            "slug":"/search?q=Under-&tbs=mr:1,root_cat:542861&Eye Concealer&sortBy=massVolume",
-                          "parent": "Eye Makeup",
-                          "tbs": "mr:1,root_cat:542861"
-                      }
-                  ]
-              }
-          ]
-      }
-  ]
+    "data": [
+        {
+            "name": "Apparel & Accessories",
+            "slug": "/search?q=Apparel & Accessories&sortBy=massVolume&tbs=",
+            "tbs": "",
+            "children": [
+                {
+                    "name": "Shirts & Tops",
+                    "slug": "/search?q=Shirts & Tops&sortBy=massVolume&tbs=mr:1,root_cat:531705",
+                    "tbs": "mr:1,root_cat:531705",
+                    "children": [
+                        {
+                            "name": "T-Shirts",
+                            "slug": "/search?q=T-Shirts&sortBy=massVolume&tbs=mr:1,root_cat:531703",
+                            "tbs": "mr:1,root_cat:531703"
+                        },
+                        {
+                            "name": "Blouses",
+                            "slug": "/search?q=Blouses&sortBy=massVolume&tbs=mr:1,root_cat:531696",
+                            "tbs": "mr:1,root_cat:531696"
+                        },
+                        {
+                            "name": "Tanks & Camisoles",
+                            "slug": "/search?q=Tanks & Camisoles&sortBy=massVolume&tbs=mr:1,root_cat:531695",
+                            "tbs": "mr:1,root_cat:531695"
+                        },
+                        {
+                            "name": "Crop Tops",
+                            "slug": "/search?q=Crop Tops&sortBy=massVolume&tbs=mr:1,root_cat:531693",
+                            "tbs": "mr:1,root_cat:531693"
+                        }
+                    ]
+                },
+                {
+                    "name": "Women's Apparel",
+                    "slug": "/search?q=Women's Apparel&sortBy=massVolume&tbs=mr:1,root_cat:529385",
+                    "tbs": "mr:1,root_cat:529385",
+                    "children": [
+                        {
+                            "name": "Shirts & Tops",
+                            "slug": "/search?q=Shirts & Tops&sortBy=massVolume&tbs=mr:1,root_cat:531705",
+                            "tbs": "mr:1,root_cat:531705"
+                        },
+                        {
+                            "name": "Women's Shirts & Tops",
+                            "slug": "/search?q=Women's Shirts & Tops&sortBy=massVolume&tbs=mr:1,root_cat:531725",
+                            "tbs": "mr:1,root_cat:531725"
+                        },
+                        {
+                            "name": "Dresses",
+                            "slug": "/search?q=Dresses&sortBy=massVolume&tbs=mr:1,root_cat:529397",
+                            "tbs": "mr:1,root_cat:529397"
+                        },
+                        {
+                            "name": "Women's Dresses",
+                            "slug": "/search?q=Women's Dresses&sortBy=massVolume&tbs=mr:1,root_cat:529465",
+                            "tbs": "mr:1,root_cat:529465"
+                        },
+                        {
+                            "name": "Sneakers",
+                            "slug": "/search?q=Sneakers&sortBy=massVolume&tbs=mr:1,root_cat:531484",
+                            "tbs": "mr:1,root_cat:531484"
+                        },
+                        {
+                            "name": "Women's Accessories",
+                            "slug": "/search?q=Women's Accessories&sortBy=massVolume&tbs=mr:1,root_cat:532010",
+                            "tbs": "mr:1,root_cat:532010"
+                        },
+                        {
+                            "name": "Women's Shoes",
+                            "slug": "/search?q=Women's Shoes&sortBy=massVolume&tbs=mr:1,root_cat:530772",
+                            "tbs": "mr:1,root_cat:530772"
+                        },
+                        {
+                            "name": "Activewear",
+                            "slug": "/search?q=Activewear&sortBy=massVolume&tbs=mr:1,root_cat:529377",
+                            "tbs": "mr:1,root_cat:529377"
+                        },
+                        {
+                            "name": "Sweatshirts & Hoodies",
+                            "slug": "/search?q=Sweatshirts & Hoodies&sortBy=massVolume&tbs=mr:1,root_cat:531697",
+                            "tbs": "mr:1,root_cat:531697"
+                        },
+                        {
+                            "name": "Women's Sweatshirts & Hoodies",
+                            "slug": "/search?q=Women's Sweatshirts & Hoodies&sortBy=massVolume&tbs=mr:1,root_cat:531723",
+                            "tbs": "mr:1,root_cat:531723"
+                        }
+                    ]
+                },
+                {
+                    "name": "Baby & Toddler Clothing",
+                    "slug": "/search?q=Baby & Toddler Clothing&sortBy=massVolume&tbs=",
+                    "tbs": "",
+                    "children": [
+                        {
+                            "name": "Baby Girl Outfits",
+                            "slug": "/search?q=Baby Girl Outfits&sortBy=massVolume&tbs=mr:1,root_cat:532560",
+                            "tbs": "mr:1,root_cat:532560"
+                        },
+                        {
+                            "name": "Toddler Shoes",
+                            "slug": "/search?q=Toddler Shoes&sortBy=massVolume&tbs=mr:1,root_cat:545122",
+                            "tbs": "mr:1,root_cat:545122"
+                        },
+                        {
+                            "name": "Toddler Girl Outfits",
+                            "slug": "/search?q=Toddler Girl Outfits&sortBy=massVolume&tbs=mr:1,root_cat:532607",
+                            "tbs": "mr:1,root_cat:532607"
+                        },
+                        {
+                            "name": "Toddler Boy Outfits",
+                            "slug": "/search?q=Toddler Boy Outfits&sortBy=massVolume&tbs=mr:1,root_cat:532583",
+                            "tbs": "mr:1,root_cat:532583"
+                        },
+                        {
+                            "name": "Baby One-Pieces",
+                            "slug": "/search?q=Baby One-Pieces&sortBy=massVolume&tbs=mr:1,root_cat:529407",
+                            "tbs": "mr:1,root_cat:529407",
+                            "children": [
+                                {
+                                    "name": "Baby Unisex One-Pieces",
+                                    "slug": "/search?q=Baby Unisex One-Pieces&sortBy=massVolume&tbs=mr:1,root_cat:532692",
+                                    "tbs": "mr:1,root_cat:532692"
+                                },
+                                {
+                                    "name": "Baby Girl One-Pieces",
+                                    "slug": "/search?q=Baby Girl One-Pieces&sortBy=massVolume&tbs=mr:1,root_cat:532562",
+                                    "tbs": "mr:1,root_cat:532562"
+                                },
+                                {
+                                    "name": "Baby Boy One-Pieces",
+                                    "slug": "/search?q=Baby Boy One-Pieces&sortBy=massVolume&tbs=mr:1,root_cat:532550",
+                                    "tbs": "mr:1,root_cat:532550"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Baby Boy Outfits",
+                            "slug": "/search?q=Baby Boy Outfits&sortBy=massVolume&tbs=mr:1,root_cat:532548",
+                            "tbs": "mr:1,root_cat:532548"
+                        },
+                        {
+                            "name": "Baby Tops",
+                            "slug": "/search?q=Baby Tops&sortBy=massVolume&tbs=mr:1,root_cat:545135",
+                            "tbs": "mr:1,root_cat:545135",
+                            "children": [
+                                {
+                                    "name": "Baby Girl Tops",
+                                    "slug": "/search?q=Baby Girl Tops&sortBy=massVolume&tbs=mr:1,root_cat:532557",
+                                    "tbs": "mr:1,root_cat:532557"
+                                },
+                                {
+                                    "name": "Baby Boy Tops",
+                                    "slug": "/search?q=Baby Boy Tops&sortBy=massVolume&tbs=mr:1,root_cat:532545",
+                                    "tbs": "mr:1,root_cat:532545"
+                                },
+                                {
+                                    "name": "Baby Unisex Tops",
+                                    "slug": "/search?q=Baby Unisex Tops&sortBy=massVolume&tbs=mr:1,root_cat:532687",
+                                    "tbs": "mr:1,root_cat:532687"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Shoes",
+                    "slug": "/search?q=Shoes&sortBy=massVolume&tbs=mr:1,root_cat:529382",
+                    "tbs": "mr:1,root_cat:529382",
+                    "children": [
+                        {
+                            "name": "Sneakers",
+                            "slug": "/search?q=Sneakers&sortBy=massVolume&tbs=mr:1,root_cat:531484",
+                            "tbs": "mr:1,root_cat:531484"
+                        },
+                        {
+                            "name": "Running Shoes",
+                            "slug": "/search?q=Running Shoes&sortBy=massVolume&tbs=mr:1,root_cat:532808",
+                            "tbs": "mr:1,root_cat:532808"
+                        },
+                        {
+                            "name": "Clogs & Mules",
+                            "slug": "/search?q=Clogs & Mules&sortBy=massVolume&tbs=mr:1,root_cat:529491",
+                            "tbs": "mr:1,root_cat:529491"
+                        }
+                    ]
+                },
+                {
+                    "name": "Handbags & Accessories",
+                    "slug": "/search?q=Handbags & Accessories&sortBy=massVolume&tbs=mr:1,root_cat:529384",
+                    "tbs": "mr:1,root_cat:529384",
+                    "children": [
+                        {
+                            "name": "Crossbody Bags",
+                            "slug": "/search?q=Crossbody Bags&sortBy=massVolume&tbs=mr:1,root_cat:543707",
+                            "tbs": "mr:1,root_cat:543707"
+                        },
+                        {
+                            "name": "Tote Handbags",
+                            "slug": "/search?q=Tote Handbags&sortBy=massVolume&tbs=mr:1,root_cat:536995",
+                            "tbs": "mr:1,root_cat:536995"
+                        },
+                        {
+                            "name": "Satchel Purses",
+                            "slug": "/search?q=Satchel Purses&sortBy=massVolume&tbs=mr:1,root_cat:543705",
+                            "tbs": "mr:1,root_cat:543705"
+                        }
+                    ]
+                },
+                {
+                    "name": "Clothing Accessories",
+                    "slug": "/search?q=Clothing Accessories&sortBy=massVolume&tbs=",
+                    "tbs": "",
+                    "children": [
+                        {
+                            "name": "Laundry Storage & Organization",
+                            "slug": "/search?q=Laundry Storage & Organization&sortBy=massVolume&tbs=mr:1,root_cat:533946",
+                            "tbs": "mr:1,root_cat:533946"
+                        },
+                        {
+                            "name": "Women's Accessories",
+                            "slug": "/search?q=Women's Accessories&sortBy=massVolume&tbs=mr:1,root_cat:532010",
+                            "tbs": "mr:1,root_cat:532010",
+                            "children": [
+                                {
+                                    "name": "Scarves & Wraps",
+                                    "slug": "/search?q=Scarves & Wraps&sortBy=massVolume&tbs=mr:1,root_cat:529470",
+                                    "tbs": "mr:1,root_cat:529470"
+                                },
+                                {
+                                    "name": "Hats",
+                                    "slug": "/search?q=Hats&sortBy=massVolume&tbs=mr:1,root_cat:529468",
+                                    "tbs": "mr:1,root_cat:529468"
+                                },
+                                {
+                                    "name": "Belts",
+                                    "slug": "/search?q=Belts&sortBy=massVolume&tbs=mr:1,root_cat:529472",
+                                    "tbs": "mr:1,root_cat:529472"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Clothing",
+                            "slug": "/search?q=Clothing&sortBy=massVolume&tbs=mr:1,root_cat:529390",
+                            "tbs": "mr:1,root_cat:529390",
+                            "children": [
+                                {
+                                    "name": "Sweatshirts & Hoodies",
+                                    "slug": "/search?q=Sweatshirts & Hoodies&sortBy=massVolume&tbs=mr:1,root_cat:531697",
+                                    "tbs": "mr:1,root_cat:531697"
+                                },
+                                {
+                                    "name": "T-Shirts",
+                                    "slug": "/search?q=T-Shirts&sortBy=massVolume&tbs=mr:1,root_cat:531703",
+                                    "tbs": "mr:1,root_cat:531703"
+                                },
+                                {
+                                    "name": "Sweaters",
+                                    "slug": "/search?q=Sweaters&sortBy=massVolume&tbs=mr:1,root_cat:531704",
+                                    "tbs": "mr:1,root_cat:531704"
+                                },
+                                {
+                                    "name": "Casual Dresses",
+                                    "slug": "/search?q=Casual Dresses&sortBy=massVolume&tbs=mr:1,root_cat:531649",
+                                    "tbs": "mr:1,root_cat:531649"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Hangers",
+                            "slug": "/search?q=Hangers&sortBy=massVolume&tbs=mr:1,root_cat:533945",
+                            "tbs": "mr:1,root_cat:533945"
+                        },
+                        {
+                            "name": "Buttons",
+                            "slug": "/search?q=Buttons&sortBy=massVolume&tbs=mr:1,root_cat:538119",
+                            "tbs": "mr:1,root_cat:538119"
+                        },
+                        {
+                            "name": "Bucket Hats",
+                            "slug": "/search?q=Bucket Hats&sortBy=massVolume&tbs=mr:1,root_cat:532969",
+                            "tbs": "mr:1,root_cat:532969"
+                        },
+                        {
+                            "name": "Men's Apparel",
+                            "slug": "/search?q=Men's Apparel&sortBy=massVolume&tbs=mr:1,root_cat:529386",
+                            "tbs": "mr:1,root_cat:529386",
+                            "children": [
+                                {
+                                    "name": "Shirts & Tops",
+                                    "slug": "/search?q=Shirts & Tops&sortBy=massVolume&tbs=mr:1,root_cat:531705",
+                                    "tbs": "mr:1,root_cat:531705"
+                                },
+                                {
+                                    "name": "Men's Clothing",
+                                    "slug": "/search?q=Men's Clothing&sortBy=massVolume&tbs=mr:1,root_cat:532009",
+                                    "tbs": "mr:1,root_cat:532009"
+                                },
+                                {
+                                    "name": "Men's Accessories",
+                                    "slug": "/search?q=Men's Accessories&sortBy=massVolume&tbs=mr:1,root_cat:532008",
+                                    "tbs": "mr:1,root_cat:532008"
+                                },
+                                {
+                                    "name": "Sneakers",
+                                    "slug": "/search?q=Sneakers&sortBy=massVolume&tbs=mr:1,root_cat:531484",
+                                    "tbs": "mr:1,root_cat:531484"
+                                },
+                                {
+                                    "name": "Sweatshirts & Hoodies",
+                                    "slug": "/search?q=Sweatshirts & Hoodies&sortBy=massVolume&tbs=mr:1,root_cat:531697",
+                                    "tbs": "mr:1,root_cat:531697"
+                                },
+                                {
+                                    "name": "Men's Sneakers",
+                                    "slug": "/search?q=Men's Sneakers&sortBy=massVolume&tbs=mr:1,root_cat:532660",
+                                    "tbs": "mr:1,root_cat:532660"
+                                },
+                                {
+                                    "name": "Activewear",
+                                    "slug": "/search?q=Activewear&sortBy=massVolume&tbs=mr:1,root_cat:529377",
+                                    "tbs": "mr:1,root_cat:529377"
+                                },
+                                {
+                                    "name": "Men's Activewear",
+                                    "slug": "/search?q=Men's Activewear&sortBy=massVolume&tbs=mr:1,root_cat:529431",
+                                    "tbs": "mr:1,root_cat:529431"
+                                },
+                                {
+                                    "name": "Big & Tall Shirts",
+                                    "slug": "/search?q=Big & Tall Shirts&sortBy=massVolume&tbs=mr:1,root_cat:531707",
+                                    "tbs": "mr:1,root_cat:531707"
+                                },
+                                {
+                                    "name": "Athletic Shoes",
+                                    "slug": "/search?q=Athletic Shoes&sortBy=massVolume&tbs=mr:1,root_cat:531483",
+                                    "tbs": "mr:1,root_cat:531483"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Jewelry",
+                    "slug": "/search?q=Jewelry&sortBy=massVolume&tbs=",
+                    "tbs": "",
+                    "children": [
+                        {
+                            "name": "Jewelry Sets",
+                            "slug": "/search?q=Jewelry Sets&sortBy=massVolume&tbs=mr:1,root_cat:529476",
+                            "tbs": "mr:1,root_cat:529476"
+                        },
+                        {
+                            "name": "Necklaces",
+                            "slug": "/search?q=Necklaces&sortBy=massVolume&tbs=mr:1,root_cat:531459",
+                            "tbs": "mr:1,root_cat:531459"
+                        },
+                        {
+                            "name": "Rings",
+                            "slug": "/search?q=Rings&sortBy=massVolume&tbs=mr:1,root_cat:529480",
+                            "tbs": "mr:1,root_cat:529480"
+                        },
+                        {
+                            "name": "Bracelets",
+                            "slug": "/search?q=Bracelets&sortBy=massVolume&tbs=mr:1,root_cat:529482",
+                            "tbs": "mr:1,root_cat:529482"
+                        }
+                    ]
+                },
+                {
+                    "name": "Hair Accessories",
+                    "slug": "/search?q=Hair Accessories&sortBy=massVolume&tbs=",
+                    "tbs": "",
+                    "children": [
+                        {
+                            "name": "Hair Pins & Clips",
+                            "slug": "/search?q=Hair Pins & Clips&sortBy=massVolume&tbs=mr:1,root_cat:530670",
+                            "tbs": "mr:1,root_cat:530670"
+                        },
+                        {
+                            "name": "Headbands",
+                            "slug": "/search?q=Headbands&sortBy=massVolume&tbs=mr:1,root_cat:530672",
+                            "tbs": "mr:1,root_cat:530672"
+                        },
+                        {
+                            "name": "Hair Ties",
+                            "slug": "/search?q=Hair Ties&sortBy=massVolume&tbs=mr:1,root_cat:530671",
+                            "tbs": "mr:1,root_cat:530671"
+                        }
+                    ]
+                },
+                {
+                    "name": "Sweatshirts & Hoodies",
+                    "slug": "/search?q=Sweatshirts & Hoodies&sortBy=massVolume&tbs=mr:1,root_cat:531697",
+                    "tbs": "mr:1,root_cat:531697"
+                },
+                {
+                    "name": "Men's Clothing",
+                    "slug": "/search?q=Men's Clothing&sortBy=massVolume&tbs=mr:1,root_cat:532009",
+                    "tbs": "mr:1,root_cat:532009",
+                    "children": [
+                        {
+                            "name": "T-Shirts",
+                            "slug": "/search?q=T-Shirts&sortBy=massVolume&tbs=mr:1,root_cat:531703",
+                            "tbs": "mr:1,root_cat:531703"
+                        },
+                        {
+                            "name": "Pants",
+                            "slug": "/search?q=Pants&sortBy=massVolume&tbs=mr:1,root_cat:529395",
+                            "tbs": "mr:1,root_cat:529395"
+                        },
+                        {
+                            "name": "Sweatshirts & Hoodies",
+                            "slug": "/search?q=Sweatshirts & Hoodies&sortBy=massVolume&tbs=mr:1,root_cat:531697",
+                            "tbs": "mr:1,root_cat:531697"
+                        }
+                    ]
+                },
+                {
+                    "name": "Men's Accessories",
+                    "slug": "/search?q=Men's Accessories&sortBy=massVolume&tbs=mr:1,root_cat:532008",
+                    "tbs": "mr:1,root_cat:532008",
+                    "children": [
+                        {
+                            "name": "Ties",
+                            "slug": "/search?q=Ties&sortBy=massVolume&tbs=mr:1,root_cat:531458",
+                            "tbs": "mr:1,root_cat:531458"
+                        },
+                        {
+                            "name": "Hats",
+                            "slug": "/search?q=Hats&sortBy=massVolume&tbs=mr:1,root_cat:529468",
+                            "tbs": "mr:1,root_cat:529468"
+                        },
+                        {
+                            "name": "Belts",
+                            "slug": "/search?q=Belts&sortBy=massVolume&tbs=mr:1,root_cat:529472",
+                            "tbs": "mr:1,root_cat:529472"
+                        },
+                        {
+                            "name": "Wallets",
+                            "slug": "/search?q=Wallets&sortBy=massVolume&tbs=mr:1,root_cat:529471",
+                            "tbs": "mr:1,root_cat:529471"
+                        },
+                        {
+                            "name": "Suspenders",
+                            "slug": "/search?q=Suspenders&sortBy=massVolume&tbs=mr:1,root_cat:529467",
+                            "tbs": "mr:1,root_cat:529467"
+                        }
+                    ]
+                },
+                {
+                    "name": "Exercise & Fitness",
+                    "slug": "/search?q=Exercise & Fitness&sortBy=massVolume&tbs=mr:1,root_cat:530098",
+                    "tbs": "mr:1,root_cat:530098",
+                    "children": [
+                        {
+                            "name": "Strength & Resistance Training",
+                            "slug": "/search?q=Strength & Resistance Training&sortBy=massVolume&tbs=mr:1,root_cat:537103",
+                            "tbs": "mr:1,root_cat:537103"
+                        },
+                        {
+                            "name": "Cardio Machines",
+                            "slug": "/search?q=Cardio Machines&sortBy=massVolume&tbs=mr:1,root_cat:537126",
+                            "tbs": "mr:1,root_cat:537126"
+                        },
+                        {
+                            "name": "Fitness Accessories & Tech",
+                            "slug": "/search?q=Fitness Accessories & Tech&sortBy=massVolume&tbs=mr:1,root_cat:537129",
+                            "tbs": "mr:1,root_cat:537129"
+                        },
+                        {
+                            "name": "Exercise Bikes",
+                            "slug": "/search?q=Exercise Bikes&sortBy=massVolume&tbs=mr:1,root_cat:530163",
+                            "tbs": "mr:1,root_cat:530163"
+                        },
+                        {
+                            "name": "Weightlifting Machines & Racks",
+                            "slug": "/search?q=Weightlifting Machines & Racks&sortBy=massVolume&tbs=mr:1,root_cat:530155",
+                            "tbs": "mr:1,root_cat:530155"
+                        },
+                        {
+                            "name": "Core & Balance Training",
+                            "slug": "/search?q=Core & Balance Training&sortBy=massVolume&tbs=mr:1,root_cat:537274",
+                            "tbs": "mr:1,root_cat:537274"
+                        },
+                        {
+                            "name": "Yoga",
+                            "slug": "/search?q=Yoga&sortBy=massVolume&tbs=mr:1,root_cat:536291",
+                            "tbs": "mr:1,root_cat:536291"
+                        },
+                        {
+                            "name": "Free Weights",
+                            "slug": "/search?q=Free Weights&sortBy=massVolume&tbs=mr:1,root_cat:530161",
+                            "tbs": "mr:1,root_cat:530161"
+                        }
+                    ]
+                },
+                {
+                    "name": "Activewear",
+                    "slug": "/search?q=Activewear&sortBy=massVolume&tbs=mr:1,root_cat:529377",
+                    "tbs": "mr:1,root_cat:529377",
+                    "children": [
+                        {
+                            "name": "Athletic Pants",
+                            "slug": "/search?q=Athletic Pants&sortBy=massVolume&tbs=mr:1,root_cat:529524",
+                            "tbs": "mr:1,root_cat:529524"
+                        },
+                        {
+                            "name": "Athletic Shorts",
+                            "slug": "/search?q=Athletic Shorts&sortBy=massVolume&tbs=mr:1,root_cat:529523",
+                            "tbs": "mr:1,root_cat:529523"
+                        },
+                        {
+                            "name": "Athletic Shirts",
+                            "slug": "/search?q=Athletic Shirts&sortBy=massVolume&tbs=mr:1,root_cat:529522",
+                            "tbs": "mr:1,root_cat:529522"
+                        }
+                    ]
+                },
+                {
+                    "name": "Men's Sneakers",
+                    "slug": "/search?q=Men's Sneakers&sortBy=massVolume&tbs=mr:1,root_cat:532660",
+                    "tbs": "mr:1,root_cat:532660"
+                },
+                {
+                    "name": "Athletics & Team Sports",
+                    "slug": "/search?q=Athletics & Team Sports&sortBy=massVolume&tbs=mr:1,root_cat:530102",
+                    "tbs": "mr:1,root_cat:530102",
+                    "children": [
+                        {
+                            "name": "Basketball",
+                            "slug": "/search?q=Basketball&sortBy=massVolume&tbs=mr:1,root_cat:535679",
+                            "tbs": "mr:1,root_cat:535679"
+                        },
+                        {
+                            "name": "Baseball Apparel & Gear",
+                            "slug": "/search?q=Baseball Apparel & Gear&sortBy=massVolume&tbs=mr:1,root_cat:535691",
+                            "tbs": "mr:1,root_cat:535691"
+                        },
+                        {
+                            "name": "Baseball Bats",
+                            "slug": "/search?q=Baseball Bats&sortBy=massVolume&tbs=mr:1,root_cat:530126",
+                            "tbs": "mr:1,root_cat:530126"
+                        },
+                        {
+                            "name": "Football",
+                            "slug": "/search?q=Football&sortBy=massVolume&tbs=mr:1,root_cat:535676",
+                            "tbs": "mr:1,root_cat:535676"
+                        },
+                        {
+                            "name": "Softball Apparel & Gear",
+                            "slug": "/search?q=Softball Apparel & Gear&sortBy=massVolume&tbs=mr:1,root_cat:535696",
+                            "tbs": "mr:1,root_cat:535696"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Baby & Toddler",
+            "slug": "/search?q=Baby & Toddler&sortBy=massVolume&tbs=",
+            "tbs": "",
+            "children": [
+                {
+                    "name": "Toddler Clothing",
+                    "slug": "/search?q=Toddler Clothing&sortBy=massVolume&tbs=mr:1,root_cat:545121",
+                    "tbs": "mr:1,root_cat:545121"
+                },
+                {
+                    "name": "Baby Outfits",
+                    "slug": "/search?q=Baby Outfits&sortBy=massVolume&tbs=mr:1,root_cat:545131",
+                    "tbs": "mr:1,root_cat:545131",
+                    "children": [
+                        {
+                            "name": "Baby Girl Outfits",
+                            "slug": "/search?q=Baby Girl Outfits&sortBy=massVolume&tbs=mr:1,root_cat:532560",
+                            "tbs": "mr:1,root_cat:532560"
+                        },
+                        {
+                            "name": "Baby Boy Outfits",
+                            "slug": "/search?q=Baby Boy Outfits&sortBy=massVolume&tbs=mr:1,root_cat:532548",
+                            "tbs": "mr:1,root_cat:532548"
+                        },
+                        {
+                            "name": "Baby Unisex Outfits",
+                            "slug": "/search?q=Baby Unisex Outfits&sortBy=massVolume&tbs=mr:1,root_cat:532690",
+                            "tbs": "mr:1,root_cat:532690"
+                        }
+                    ]
+                },
+                {
+                    "name": "Baby Activity & Gear",
+                    "slug": "/search?q=Baby Activity & Gear&sortBy=massVolume&tbs=mr:1,root_cat:529545",
+                    "tbs": "mr:1,root_cat:529545",
+                    "children": [
+                        {
+                            "name": "Gyms & Playmats",
+                            "slug": "/search?q=Gyms & Playmats&sortBy=massVolume&tbs=mr:1,root_cat:529581",
+                            "tbs": "mr:1,root_cat:529581"
+                        },
+                        {
+                            "name": "Baby Jumpers",
+                            "slug": "/search?q=Baby Jumpers&sortBy=massVolume&tbs=mr:1,root_cat:533007",
+                            "tbs": "mr:1,root_cat:533007"
+                        },
+                        {
+                            "name": "Playards",
+                            "slug": "/search?q=Playards&sortBy=massVolume&tbs=mr:1,root_cat:529580",
+                            "tbs": "mr:1,root_cat:529580"
+                        }
+                    ]
+                },
+                {
+                    "name": "Kids",
+                    "slug": "/search?q=Kids&sortBy=massVolume&tbs=mr:1,root_cat:539493",
+                    "tbs": "mr:1,root_cat:539493"
+                },
+                {
+                    "name": "Shoes",
+                    "slug": "/search?q=Shoes&sortBy=massVolume&tbs=mr:1,root_cat:529382",
+                    "tbs": "mr:1,root_cat:529382",
+                    "children": [
+                        {
+                            "name": "Sneakers",
+                            "slug": "/search?q=Sneakers&sortBy=massVolume&tbs=mr:1,root_cat:531484",
+                            "tbs": "mr:1,root_cat:531484"
+                        },
+                        {
+                            "name": "Running Shoes",
+                            "slug": "/search?q=Running Shoes&sortBy=massVolume&tbs=mr:1,root_cat:532808",
+                            "tbs": "mr:1,root_cat:532808"
+                        },
+                        {
+                            "name": "Clogs & Mules",
+                            "slug": "/search?q=Clogs & Mules&sortBy=massVolume&tbs=mr:1,root_cat:529491",
+                            "tbs": "mr:1,root_cat:529491"
+                        }
+                    ]
+                },
+                {
+                    "name": "Kids' Apparel",
+                    "slug": "/search?q=Kids' Apparel&sortBy=massVolume&tbs=mr:1,root_cat:529387",
+                    "tbs": "mr:1,root_cat:529387",
+                    "children": [
+                        {
+                            "name": "Boys' Shirts",
+                            "slug": "/search?q=Boys' Shirts&sortBy=massVolume&tbs=mr:1,root_cat:531713",
+                            "tbs": "mr:1,root_cat:531713"
+                        },
+                        {
+                            "name": "Kids' Sweatshirts & Hoodies",
+                            "slug": "/search?q=Kids' Sweatshirts & Hoodies&sortBy=massVolume&tbs=mr:1,root_cat:545216",
+                            "tbs": "mr:1,root_cat:545216"
+                        },
+                        {
+                            "name": "Girls' Dresses",
+                            "slug": "/search?q=Girls' Dresses&sortBy=massVolume&tbs=mr:1,root_cat:530777",
+                            "tbs": "mr:1,root_cat:530777"
+                        },
+                        {
+                            "name": "Girls' Shirts",
+                            "slug": "/search?q=Girls' Shirts&sortBy=massVolume&tbs=mr:1,root_cat:531710",
+                            "tbs": "mr:1,root_cat:531710"
+                        },
+                        {
+                            "name": "Kids' Outfits",
+                            "slug": "/search?q=Kids' Outfits&sortBy=massVolume&tbs=mr:1,root_cat:545207",
+                            "tbs": "mr:1,root_cat:545207"
+                        },
+                        {
+                            "name": "Kids' Sneakers",
+                            "slug": "/search?q=Kids' Sneakers&sortBy=massVolume&tbs=mr:1,root_cat:545244",
+                            "tbs": "mr:1,root_cat:545244"
+                        }
+                    ]
+                },
+                {
+                    "name": "Baby Tops",
+                    "slug": "/search?q=Baby Tops&sortBy=massVolume&tbs=mr:1,root_cat:545135",
+                    "tbs": "mr:1,root_cat:545135",
+                    "children": [
+                        {
+                            "name": "Baby Girl Tops",
+                            "slug": "/search?q=Baby Girl Tops&sortBy=massVolume&tbs=mr:1,root_cat:532557",
+                            "tbs": "mr:1,root_cat:532557"
+                        },
+                        {
+                            "name": "Baby Boy Tops",
+                            "slug": "/search?q=Baby Boy Tops&sortBy=massVolume&tbs=mr:1,root_cat:532545",
+                            "tbs": "mr:1,root_cat:532545"
+                        },
+                        {
+                            "name": "Baby Unisex Tops",
+                            "slug": "/search?q=Baby Unisex Tops&sortBy=massVolume&tbs=mr:1,root_cat:532687",
+                            "tbs": "mr:1,root_cat:532687"
+                        }
+                    ]
+                },
+                {
+                    "name": "Nursing & Feeding",
+                    "slug": "/search?q=Nursing & Feeding&sortBy=massVolume&tbs=mr:1,root_cat:529543",
+                    "tbs": "mr:1,root_cat:529543"
+                },
+                {
+                    "name": "Toys",
+                    "slug": "/search?q=Toys&sortBy=massVolume&tbs=mr:1,root_cat:530325",
+                    "tbs": "mr:1,root_cat:530325",
+                    "children": [
+                        {
+                            "name": "Action Figures",
+                            "slug": "/search?q=Action Figures&sortBy=massVolume&tbs=mr:1,root_cat:530369",
+                            "tbs": "mr:1,root_cat:530369"
+                        },
+                        {
+                            "name": "STEM Toys",
+                            "slug": "/search?q=STEM Toys&sortBy=massVolume&tbs=mr:1,root_cat:533370",
+                            "tbs": "mr:1,root_cat:533370"
+                        },
+                        {
+                            "name": "Building Sets & Blocks",
+                            "slug": "/search?q=Building Sets & Blocks&sortBy=massVolume&tbs=mr:1,root_cat:532068",
+                            "tbs": "mr:1,root_cat:532068"
+                        },
+                        {
+                            "name": "Play Vehicles",
+                            "slug": "/search?q=Play Vehicles&sortBy=massVolume&tbs=mr:1,root_cat:533349",
+                            "tbs": "mr:1,root_cat:533349"
+                        },
+                        {
+                            "name": "Dolls",
+                            "slug": "/search?q=Dolls&sortBy=massVolume&tbs=mr:1,root_cat:530370",
+                            "tbs": "mr:1,root_cat:530370"
+                        }
+                    ]
+                },
+                {
+                    "name": "Baby Dresses",
+                    "slug": "/search?q=Baby Dresses&sortBy=massVolume&tbs=mr:1,root_cat:545278",
+                    "tbs": "mr:1,root_cat:545278"
+                }
+            ]
+        },
+        {
+            "name": "Electronics",
+            "slug": "/search?q=Electronics&sortBy=massVolume&tbs=",
+            "tbs": "",
+            "children": [
+                {
+                    "name": "Audio",
+                    "slug": "/search?q=Audio&sortBy=massVolume&tbs=mr:1,root_cat:530626",
+                    "tbs": "mr:1,root_cat:530626",
+                    "children": [
+                        {
+                            "name": "Studio Recording",
+                            "slug": "/search?q=Studio Recording&sortBy=massVolume&tbs=mr:1,root_cat:539008",
+                            "tbs": "mr:1,root_cat:539008"
+                        },
+                        {
+                            "name": "Wireless & Multi-Room Audio",
+                            "slug": "/search?q=Wireless & Multi-Room Audio&sortBy=massVolume&tbs=mr:1,root_cat:538262",
+                            "tbs": "mr:1,root_cat:538262"
+                        },
+                        {
+                            "name": "Wireless Speakers",
+                            "slug": "/search?q=Wireless Speakers&sortBy=massVolume&tbs=mr:1,root_cat:529683",
+                            "tbs": "mr:1,root_cat:529683"
+                        },
+                        {
+                            "name": "Live Sound & Stage",
+                            "slug": "/search?q=Live Sound & Stage&sortBy=massVolume&tbs=mr:1,root_cat:539009",
+                            "tbs": "mr:1,root_cat:539009"
+                        },
+                        {
+                            "name": "Audio Accessories",
+                            "slug": "/search?q=Audio Accessories&sortBy=massVolume&tbs=mr:1,root_cat:537636",
+                            "tbs": "mr:1,root_cat:537636"
+                        },
+                        {
+                            "name": "Portable Audio",
+                            "slug": "/search?q=Portable Audio&sortBy=massVolume&tbs=mr:1,root_cat:538705",
+                            "tbs": "mr:1,root_cat:538705"
+                        },
+                        {
+                            "name": "Amplifiers & Effects",
+                            "slug": "/search?q=Amplifiers & Effects&sortBy=massVolume&tbs=mr:1,root_cat:539168",
+                            "tbs": "mr:1,root_cat:539168"
+                        },
+                        {
+                            "name": "Bookshelf Speakers",
+                            "slug": "/search?q=Bookshelf Speakers&sortBy=massVolume&tbs=mr:1,root_cat:537595",
+                            "tbs": "mr:1,root_cat:537595"
+                        },
+                        {
+                            "name": "DJ Equipment",
+                            "slug": "/search?q=DJ Equipment&sortBy=massVolume&tbs=mr:1,root_cat:539007",
+                            "tbs": "mr:1,root_cat:539007"
+                        }
+                    ]
+                },
+                {
+                    "name": "Computers & Tablets",
+                    "slug": "/search?q=Computers & Tablets&sortBy=massVolume&tbs=mr:1,root_cat:530985",
+                    "tbs": "mr:1,root_cat:530985",
+                    "children": [
+                        {
+                            "name": "Laptops",
+                            "slug": "/search?q=Laptops&sortBy=massVolume&tbs=mr:1,root_cat:529675",
+                            "tbs": "mr:1,root_cat:529675"
+                        },
+                        {
+                            "name": "Tablets",
+                            "slug": "/search?q=Tablets&sortBy=massVolume&tbs=mr:1,root_cat:529672",
+                            "tbs": "mr:1,root_cat:529672"
+                        },
+                        {
+                            "name": "Desktop Computers",
+                            "slug": "/search?q=Desktop Computers&sortBy=massVolume&tbs=mr:1,root_cat:531513",
+                            "tbs": "mr:1,root_cat:531513"
+                        }
+                    ]
+                },
+                {
+                    "name": "Cell Phones",
+                    "slug": "/search?q=Cell Phones&sortBy=massVolume&tbs=mr:1,root_cat:529673",
+                    "tbs": "mr:1,root_cat:529673"
+                },
+                {
+                    "name": "Electronics > Communications",
+                    "slug": "/search?q=Electronics > Communications&sortBy=massVolume&tbs=",
+                    "tbs": "",
+                    "children": [
+                        {
+                            "name": "Business & Home Security Electronics",
+                            "slug": "/search?q=Business & Home Security Electronics&sortBy=massVolume&tbs=mr:1,root_cat:538326",
+                            "tbs": "mr:1,root_cat:538326",
+                            "children": [
+                                {
+                                    "name": "Security Systems",
+                                    "slug": "/search?q=Security Systems&sortBy=massVolume&tbs=mr:1,root_cat:529970",
+                                    "tbs": "mr:1,root_cat:529970"
+                                },
+                                {
+                                    "name": "Wireless Security Cameras",
+                                    "slug": "/search?q=Wireless Security Cameras&sortBy=massVolume&tbs=mr:1,root_cat:535615",
+                                    "tbs": "mr:1,root_cat:535615"
+                                },
+                                {
+                                    "name": "Security System DVRs & NVRs",
+                                    "slug": "/search?q=Security System DVRs & NVRs&sortBy=massVolume&tbs=mr:1,root_cat:538345",
+                                    "tbs": "mr:1,root_cat:538345"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "WiFi & Networking",
+                            "slug": "/search?q=WiFi & Networking&sortBy=massVolume&tbs=mr:1,root_cat:530421",
+                            "tbs": "mr:1,root_cat:530421",
+                            "children": [
+                                {
+                                    "name": "Wireless Routers",
+                                    "slug": "/search?q=Wireless Routers&sortBy=massVolume&tbs=mr:1,root_cat:538978",
+                                    "tbs": "mr:1,root_cat:538978"
+                                },
+                                {
+                                    "name": "Wireless Access Points",
+                                    "slug": "/search?q=Wireless Access Points&sortBy=massVolume&tbs=mr:1,root_cat:529669",
+                                    "tbs": "mr:1,root_cat:529669"
+                                },
+                                {
+                                    "name": "USB WiFi Adapters",
+                                    "slug": "/search?q=USB WiFi Adapters&sortBy=massVolume&tbs=mr:1,root_cat:539471",
+                                    "tbs": "mr:1,root_cat:539471"
+                                },
+                                {
+                                    "name": "Whole Home WiFi Systems",
+                                    "slug": "/search?q=Whole Home WiFi Systems&sortBy=massVolume&tbs=mr:1,root_cat:538975",
+                                    "tbs": "mr:1,root_cat:538975"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Office Phones & Communications",
+                            "slug": "/search?q=Office Phones & Communications&sortBy=massVolume&tbs=mr:1,root_cat:538340",
+                            "tbs": "mr:1,root_cat:538340",
+                            "children": [
+                                {
+                                    "name": "Corded Phones",
+                                    "slug": "/search?q=Corded Phones&sortBy=massVolume&tbs=mr:1,root_cat:532023",
+                                    "tbs": "mr:1,root_cat:532023"
+                                },
+                                {
+                                    "name": "Cordless Phones",
+                                    "slug": "/search?q=Cordless Phones&sortBy=massVolume&tbs=mr:1,root_cat:532022",
+                                    "tbs": "mr:1,root_cat:532022"
+                                },
+                                {
+                                    "name": "Conference Phones",
+                                    "slug": "/search?q=Conference Phones&sortBy=massVolume&tbs=mr:1,root_cat:538281",
+                                    "tbs": "mr:1,root_cat:538281"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Radios",
+                            "slug": "/search?q=Radios&sortBy=massVolume&tbs=mr:1,root_cat:530846",
+                            "tbs": "mr:1,root_cat:530846"
+                        },
+                        {
+                            "name": "Computer Accessories & Parts",
+                            "slug": "/search?q=Computer Accessories & Parts&sortBy=massVolume&tbs=mr:1,root_cat:539177",
+                            "tbs": "mr:1,root_cat:539177",
+                            "children": [
+                                {
+                                    "name": "Desktop Computer Accessories",
+                                    "slug": "/search?q=Desktop Computer Accessories&sortBy=massVolume&tbs=mr:1,root_cat:543384",
+                                    "tbs": "mr:1,root_cat:543384"
+                                },
+                                {
+                                    "name": "Fans, Heatsinks & Cooling",
+                                    "slug": "/search?q=Fans, Heatsinks & Cooling&sortBy=massVolume&tbs=mr:1,root_cat:530616",
+                                    "tbs": "mr:1,root_cat:530616"
+                                },
+                                {
+                                    "name": "Keyboards, Mice & Accessories",
+                                    "slug": "/search?q=Keyboards, Mice & Accessories&sortBy=massVolume&tbs=mr:1,root_cat:538974",
+                                    "tbs": "mr:1,root_cat:538974"
+                                },
+                                {
+                                    "name": "Cables, Adapters & Accessories",
+                                    "slug": "/search?q=Cables, Adapters & Accessories&sortBy=massVolume&tbs=mr:1,root_cat:530681",
+                                    "tbs": "mr:1,root_cat:530681"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Telephones & Accessories",
+                            "slug": "/search?q=Telephones & Accessories&sortBy=massVolume&tbs=mr:1,root_cat:537669",
+                            "tbs": "mr:1,root_cat:537669"
+                        },
+                        {
+                            "name": "Speakers, Headphones & Headsets",
+                            "slug": "/search?q=Speakers, Headphones & Headsets&sortBy=massVolume&tbs=mr:1,root_cat:538336",
+                            "tbs": "mr:1,root_cat:538336",
+                            "children": [
+                                {
+                                    "name": "Wireless Headphones",
+                                    "slug": "/search?q=Wireless Headphones&sortBy=massVolume&tbs=mr:1,root_cat:531596",
+                                    "tbs": "mr:1,root_cat:531596"
+                                },
+                                {
+                                    "name": "On-Ear Headphones",
+                                    "slug": "/search?q=On-Ear Headphones&sortBy=massVolume&tbs=mr:1,root_cat:537601",
+                                    "tbs": "mr:1,root_cat:537601"
+                                },
+                                {
+                                    "name": "Earbuds",
+                                    "slug": "/search?q=Earbuds&sortBy=massVolume&tbs=mr:1,root_cat:537603",
+                                    "tbs": "mr:1,root_cat:537603"
+                                },
+                                {
+                                    "name": "Over-Ear Headphones",
+                                    "slug": "/search?q=Over-Ear Headphones&sortBy=massVolume&tbs=mr:1,root_cat:538247",
+                                    "tbs": "mr:1,root_cat:538247"
+                                },
+                                {
+                                    "name": "Noise Canceling Headphones",
+                                    "slug": "/search?q=Noise Canceling Headphones&sortBy=massVolume&tbs=mr:1,root_cat:537602",
+                                    "tbs": "mr:1,root_cat:537602"
+                                },
+                                {
+                                    "name": "Bluetooth Headsets",
+                                    "slug": "/search?q=Bluetooth Headsets&sortBy=massVolume&tbs=mr:1,root_cat:536992",
+                                    "tbs": "mr:1,root_cat:536992"
+                                },
+                                {
+                                    "name": "Computer Headsets",
+                                    "slug": "/search?q=Computer Headsets&sortBy=massVolume&tbs=mr:1,root_cat:537605",
+                                    "tbs": "mr:1,root_cat:537605"
+                                },
+                                {
+                                    "name": "Wireless Speakers",
+                                    "slug": "/search?q=Wireless Speakers&sortBy=massVolume&tbs=mr:1,root_cat:529683",
+                                    "tbs": "mr:1,root_cat:529683"
+                                },
+                                {
+                                    "name": "Gaming Headsets",
+                                    "slug": "/search?q=Gaming Headsets&sortBy=massVolume&tbs=mr:1,root_cat:530851",
+                                    "tbs": "mr:1,root_cat:530851"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Electronic Components & Tools",
+                            "slug": "/search?q=Electronic Components & Tools&sortBy=massVolume&tbs=mr:1,root_cat:539185",
+                            "tbs": "mr:1,root_cat:539185"
+                        },
+                        {
+                            "name": "Cell Phones & Accessories",
+                            "slug": "/search?q=Cell Phones & Accessories&sortBy=massVolume&tbs=mr:1,root_cat:538963",
+                            "tbs": "mr:1,root_cat:538963"
+                        },
+                        {
+                            "name": "Portable Audio",
+                            "slug": "/search?q=Portable Audio&sortBy=massVolume&tbs=mr:1,root_cat:538705",
+                            "tbs": "mr:1,root_cat:538705"
+                        }
+                    ]
+                },
+                {
+                    "name": "TV & Video",
+                    "slug": "/search?q=TV & Video&sortBy=massVolume&tbs=mr:1,root_cat:530842",
+                    "tbs": "mr:1,root_cat:530842",
+                    "children": [
+                        {
+                            "name": "LCD & LED TVs",
+                            "slug": "/search?q=LCD & LED TVs&sortBy=massVolume&tbs=mr:1,root_cat:543498",
+                            "tbs": "mr:1,root_cat:543498"
+                        },
+                        {
+                            "name": "Smart TVs",
+                            "slug": "/search?q=Smart TVs&sortBy=massVolume&tbs=mr:1,root_cat:531593",
+                            "tbs": "mr:1,root_cat:531593"
+                        },
+                        {
+                            "name": "4K TVs",
+                            "slug": "/search?q=4K TVs&sortBy=massVolume&tbs=mr:1,root_cat:537479",
+                            "tbs": "mr:1,root_cat:537479"
+                        }
+                    ]
+                },
+                {
+                    "name": "Smart TVs & Entertainment",
+                    "slug": "/search?q=Smart TVs & Entertainment&sortBy=massVolume&tbs=mr:1,root_cat:538316",
+                    "tbs": "mr:1,root_cat:538316"
+                },
+                {
+                    "name": "Action & Adventure Video Games",
+                    "slug": "/search?q=Action & Adventure Video Games&sortBy=massVolume&tbs=mr:1,root_cat:537446",
+                    "tbs": "mr:1,root_cat:537446"
+                },
+                {
+                    "name": "Cameras & Optics",
+                    "slug": "/search?q=Cameras & Optics&sortBy=massVolume&tbs=mr:1,root_cat:530843",
+                    "tbs": "mr:1,root_cat:530843",
+                    "children": [
+                        {
+                            "name": "Point & Shoot Digital Cameras",
+                            "slug": "/search?q=Point & Shoot Digital Cameras&sortBy=massVolume&tbs=mr:1,root_cat:535437",
+                            "tbs": "mr:1,root_cat:535437"
+                        },
+                        {
+                            "name": "Camera Accessories",
+                            "slug": "/search?q=Camera Accessories&sortBy=massVolume&tbs=mr:1,root_cat:530844",
+                            "tbs": "mr:1,root_cat:530844"
+                        },
+                        {
+                            "name": "DSLR Cameras",
+                            "slug": "/search?q=DSLR Cameras&sortBy=massVolume&tbs=mr:1,root_cat:535439",
+                            "tbs": "mr:1,root_cat:535439"
+                        },
+                        {
+                            "name": "Film Cameras",
+                            "slug": "/search?q=Film Cameras&sortBy=massVolume&tbs=mr:1,root_cat:529647",
+                            "tbs": "mr:1,root_cat:529647"
+                        },
+                        {
+                            "name": "Camera Lenses",
+                            "slug": "/search?q=Camera Lenses&sortBy=massVolume&tbs=mr:1,root_cat:529649",
+                            "tbs": "mr:1,root_cat:529649"
+                        }
+                    ]
+                },
+                {
+                    "name": "Electronics Accessories",
+                    "slug": "/search?q=Electronics Accessories&sortBy=massVolume&tbs=",
+                    "tbs": "",
+                    "children": [
+                        {
+                            "name": "Electrical Supplies",
+                            "slug": "/search?q=Electrical Supplies&sortBy=massVolume&tbs=mr:1,root_cat:546662",
+                            "tbs": "mr:1,root_cat:546662"
+                        },
+                        {
+                            "name": "Electronic Components & Tools",
+                            "slug": "/search?q=Electronic Components & Tools&sortBy=massVolume&tbs=mr:1,root_cat:539185",
+                            "tbs": "mr:1,root_cat:539185"
+                        },
+                        {
+                            "name": "Computer Accessories & Parts",
+                            "slug": "/search?q=Computer Accessories & Parts&sortBy=massVolume&tbs=mr:1,root_cat:539177",
+                            "tbs": "mr:1,root_cat:539177",
+                            "children": [
+                                {
+                                    "name": "Desktop Computer Accessories",
+                                    "slug": "/search?q=Desktop Computer Accessories&sortBy=massVolume&tbs=mr:1,root_cat:543384",
+                                    "tbs": "mr:1,root_cat:543384"
+                                },
+                                {
+                                    "name": "Fans, Heatsinks & Cooling",
+                                    "slug": "/search?q=Fans, Heatsinks & Cooling&sortBy=massVolume&tbs=mr:1,root_cat:530616",
+                                    "tbs": "mr:1,root_cat:530616"
+                                },
+                                {
+                                    "name": "Keyboards, Mice & Accessories",
+                                    "slug": "/search?q=Keyboards, Mice & Accessories&sortBy=massVolume&tbs=mr:1,root_cat:538974",
+                                    "tbs": "mr:1,root_cat:538974"
+                                },
+                                {
+                                    "name": "Cables, Adapters & Accessories",
+                                    "slug": "/search?q=Cables, Adapters & Accessories&sortBy=massVolume&tbs=mr:1,root_cat:530681",
+                                    "tbs": "mr:1,root_cat:530681"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Audio",
+                            "slug": "/search?q=Audio&sortBy=massVolume&tbs=mr:1,root_cat:530626",
+                            "tbs": "mr:1,root_cat:530626",
+                            "children": [
+                                {
+                                    "name": "Studio Recording",
+                                    "slug": "/search?q=Studio Recording&sortBy=massVolume&tbs=mr:1,root_cat:539008",
+                                    "tbs": "mr:1,root_cat:539008"
+                                },
+                                {
+                                    "name": "Wireless & Multi-Room Audio",
+                                    "slug": "/search?q=Wireless & Multi-Room Audio&sortBy=massVolume&tbs=mr:1,root_cat:538262",
+                                    "tbs": "mr:1,root_cat:538262"
+                                },
+                                {
+                                    "name": "Wireless Speakers",
+                                    "slug": "/search?q=Wireless Speakers&sortBy=massVolume&tbs=mr:1,root_cat:529683",
+                                    "tbs": "mr:1,root_cat:529683"
+                                },
+                                {
+                                    "name": "Live Sound & Stage",
+                                    "slug": "/search?q=Live Sound & Stage&sortBy=massVolume&tbs=mr:1,root_cat:539009",
+                                    "tbs": "mr:1,root_cat:539009"
+                                },
+                                {
+                                    "name": "Audio Accessories",
+                                    "slug": "/search?q=Audio Accessories&sortBy=massVolume&tbs=mr:1,root_cat:537636",
+                                    "tbs": "mr:1,root_cat:537636"
+                                },
+                                {
+                                    "name": "Portable Audio",
+                                    "slug": "/search?q=Portable Audio&sortBy=massVolume&tbs=mr:1,root_cat:538705",
+                                    "tbs": "mr:1,root_cat:538705"
+                                },
+                                {
+                                    "name": "Amplifiers & Effects",
+                                    "slug": "/search?q=Amplifiers & Effects&sortBy=massVolume&tbs=mr:1,root_cat:539168",
+                                    "tbs": "mr:1,root_cat:539168"
+                                },
+                                {
+                                    "name": "Bookshelf Speakers",
+                                    "slug": "/search?q=Bookshelf Speakers&sortBy=massVolume&tbs=mr:1,root_cat:537595",
+                                    "tbs": "mr:1,root_cat:537595"
+                                },
+                                {
+                                    "name": "DJ Equipment",
+                                    "slug": "/search?q=DJ Equipment&sortBy=massVolume&tbs=mr:1,root_cat:539007",
+                                    "tbs": "mr:1,root_cat:539007"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Tools",
+                            "slug": "/search?q=Tools&sortBy=massVolume&tbs=mr:1,root_cat:529844",
+                            "tbs": "mr:1,root_cat:529844",
+                            "children": [
+                                {
+                                    "name": "Woodworking Tools",
+                                    "slug": "/search?q=Woodworking Tools&sortBy=massVolume&tbs=mr:1,root_cat:536190",
+                                    "tbs": "mr:1,root_cat:536190"
+                                },
+                                {
+                                    "name": "Hand Tool Sets",
+                                    "slug": "/search?q=Hand Tool Sets&sortBy=massVolume&tbs=mr:1,root_cat:529848",
+                                    "tbs": "mr:1,root_cat:529848"
+                                },
+                                {
+                                    "name": "Electrical Tools & Testers",
+                                    "slug": "/search?q=Electrical Tools & Testers&sortBy=massVolume&tbs=mr:1,root_cat:539236",
+                                    "tbs": "mr:1,root_cat:539236"
+                                },
+                                {
+                                    "name": "Ratchets & Sockets",
+                                    "slug": "/search?q=Ratchets & Sockets&sortBy=massVolume&tbs=mr:1,root_cat:536140",
+                                    "tbs": "mr:1,root_cat:536140"
+                                },
+                                {
+                                    "name": "Cordless Power Tools",
+                                    "slug": "/search?q=Cordless Power Tools&sortBy=massVolume&tbs=mr:1,root_cat:536046",
+                                    "tbs": "mr:1,root_cat:536046"
+                                },
+                                {
+                                    "name": "Wrench Sets",
+                                    "slug": "/search?q=Wrench Sets&sortBy=massVolume&tbs=mr:1,root_cat:536125",
+                                    "tbs": "mr:1,root_cat:536125"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Cameras & Optics",
+                            "slug": "/search?q=Cameras & Optics&sortBy=massVolume&tbs=mr:1,root_cat:530843",
+                            "tbs": "mr:1,root_cat:530843",
+                            "children": [
+                                {
+                                    "name": "Point & Shoot Digital Cameras",
+                                    "slug": "/search?q=Point & Shoot Digital Cameras&sortBy=massVolume&tbs=mr:1,root_cat:535437",
+                                    "tbs": "mr:1,root_cat:535437"
+                                },
+                                {
+                                    "name": "Camera Accessories",
+                                    "slug": "/search?q=Camera Accessories&sortBy=massVolume&tbs=mr:1,root_cat:530844",
+                                    "tbs": "mr:1,root_cat:530844"
+                                },
+                                {
+                                    "name": "DSLR Cameras",
+                                    "slug": "/search?q=DSLR Cameras&sortBy=massVolume&tbs=mr:1,root_cat:535439",
+                                    "tbs": "mr:1,root_cat:535439"
+                                },
+                                {
+                                    "name": "Film Cameras",
+                                    "slug": "/search?q=Film Cameras&sortBy=massVolume&tbs=mr:1,root_cat:529647",
+                                    "tbs": "mr:1,root_cat:529647"
+                                },
+                                {
+                                    "name": "Camera Lenses",
+                                    "slug": "/search?q=Camera Lenses&sortBy=massVolume&tbs=mr:1,root_cat:529649",
+                                    "tbs": "mr:1,root_cat:529649"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Computer Accessories & Parts",
+                    "slug": "/search?q=Computer Accessories & Parts&sortBy=massVolume&tbs=mr:1,root_cat:539177",
+                    "tbs": "mr:1,root_cat:539177",
+                    "children": [
+                        {
+                            "name": "Desktop Computer Accessories",
+                            "slug": "/search?q=Desktop Computer Accessories&sortBy=massVolume&tbs=mr:1,root_cat:543384",
+                            "tbs": "mr:1,root_cat:543384"
+                        },
+                        {
+                            "name": "Fans, Heatsinks & Cooling",
+                            "slug": "/search?q=Fans, Heatsinks & Cooling&sortBy=massVolume&tbs=mr:1,root_cat:530616",
+                            "tbs": "mr:1,root_cat:530616"
+                        },
+                        {
+                            "name": "Keyboards, Mice & Accessories",
+                            "slug": "/search?q=Keyboards, Mice & Accessories&sortBy=massVolume&tbs=mr:1,root_cat:538974",
+                            "tbs": "mr:1,root_cat:538974"
+                        },
+                        {
+                            "name": "Cables, Adapters & Accessories",
+                            "slug": "/search?q=Cables, Adapters & Accessories&sortBy=massVolume&tbs=mr:1,root_cat:530681",
+                            "tbs": "mr:1,root_cat:530681"
+                        }
+                    ]
+                },
+                {
+                    "name": "Print, Copy, Scan & Fax",
+                    "slug": "/search?q=Print, Copy, Scan & Fax&sortBy=massVolume&tbs=",
+                    "tbs": "",
+                    "children": [
+                        {
+                            "name": "All-in-One Printers",
+                            "slug": "/search?q=All-in-One Printers&sortBy=massVolume&tbs=mr:1,root_cat:539072",
+                            "tbs": "mr:1,root_cat:539072"
+                        },
+                        {
+                            "name": "Wireless Printers",
+                            "slug": "/search?q=Wireless Printers&sortBy=massVolume&tbs=mr:1,root_cat:539073",
+                            "tbs": "mr:1,root_cat:539073"
+                        },
+                        {
+                            "name": "Inkjet Printers",
+                            "slug": "/search?q=Inkjet Printers&sortBy=massVolume&tbs=mr:1,root_cat:539074",
+                            "tbs": "mr:1,root_cat:539074"
+                        },
+                        {
+                            "name": "Laser Printers",
+                            "slug": "/search?q=Laser Printers&sortBy=massVolume&tbs=mr:1,root_cat:539075",
+                            "tbs": "mr:1,root_cat:539075"
+                        },
+                        {
+                            "name": "Business Printers",
+                            "slug": "/search?q=Business Printers&sortBy=massVolume&tbs=mr:1,root_cat:539080",
+                            "tbs": "mr:1,root_cat:539080"
+                        },
+                        {
+                            "name": "Ink & Toner",
+                            "slug": "/search?q=Ink & Toner&sortBy=massVolume&tbs=mr:1,root_cat:532046",
+                            "tbs": "mr:1,root_cat:532046"
+                        },
+                        {
+                            "name": "Scanners",
+                            "slug": "/search?q=Scanners&sortBy=massVolume&tbs=mr:1,root_cat:529668",
+                            "tbs": "mr:1,root_cat:529668"
+                        },
+                        {
+                            "name": "Copiers & Fax Machines",
+                            "slug": "/search?q=Copiers & Fax Machines&sortBy=massVolume&tbs=mr:1,root_cat:530434",
+                            "tbs": "mr:1,root_cat:530434"
+                        }
+                    ]
+                },
+                {
+                    "name": "Home Theater",
+                    "slug": "/search?q=Home Theater&sortBy=massVolume&tbs=mr:1,root_cat:537693",
+                    "tbs": "mr:1,root_cat:537693",
+                    "children": [
+                        {
+                            "name": "Home Theater Speakers",
+                            "slug": "/search?q=Home Theater Speakers&sortBy=massVolume&tbs=mr:1,root_cat:538708",
+                            "tbs": "mr:1,root_cat:538708"
+                        },
+                        {
+                            "name": "Home Theater Systems",
+                            "slug": "/search?q=Home Theater Systems&sortBy=massVolume&tbs=mr:1,root_cat:529660",
+                            "tbs": "mr:1,root_cat:529660"
+                        },
+                        {
+                            "name": "Home Theater Projectors & TVs",
+                            "slug": "/search?q=Home Theater Projectors & TVs&sortBy=massVolume&tbs=mr:1,root_cat:538362",
+                            "tbs": "mr:1,root_cat:538362"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Furniture",
+            "slug": "/search?q=Furniture&sortBy=massVolume&tbs=",
+            "tbs": "",
+            "children": [
+                {
+                    "name": "Furniture Sets",
+                    "slug": "/search?q=Furniture Sets&sortBy=massVolume&tbs=mr:1,root_cat:534160",
+                    "tbs": "mr:1,root_cat:534160"
+                },
+                {
+                    "name": "Sofas",
+                    "slug": "/search?q=Sofas&sortBy=massVolume&tbs=mr:1,root_cat:534225",
+                    "tbs": "mr:1,root_cat:534225",
+                    "children": [
+                        {
+                            "name": "Sofas",
+                            "slug": "/search?q=Sofas&sortBy=massVolume&tbs=mr:1,root_cat:534225",
+                            "tbs": "mr:1,root_cat:534225"
+                        },
+                        {
+                            "name": "Sectional Sofas",
+                            "slug": "/search?q=Sectional Sofas&sortBy=massVolume&tbs=mr:1,root_cat:534229",
+                            "tbs": "mr:1,root_cat:534229"
+                        },
+                        {
+                            "name": "Sleeper Sofas",
+                            "slug": "/search?q=Sleeper Sofas&sortBy=massVolume&tbs=mr:1,root_cat:534227",
+                            "tbs": "mr:1,root_cat:534227"
+                        }
+                    ]
+                },
+                {
+                    "name": "Living Room Sets",
+                    "slug": "/search?q=Living Room Sets&sortBy=massVolume&tbs=mr:1,root_cat:529990",
+                    "tbs": "mr:1,root_cat:529990"
+                },
+                {
+                    "name": "Sectional Sofas",
+                    "slug": "/search?q=Sectional Sofas&sortBy=massVolume&tbs=mr:1,root_cat:534229",
+                    "tbs": "mr:1,root_cat:534229"
+                },
+                {
+                    "name": "Bedroom Furniture",
+                    "slug": "/search?q=Bedroom Furniture&sortBy=massVolume&tbs=mr:1,root_cat:529821",
+                    "tbs": "mr:1,root_cat:529821"
+                },
+                {
+                    "name": "Office Furniture",
+                    "slug": "/search?q=Office Furniture&sortBy=massVolume&tbs=mr:1,root_cat:529816",
+                    "tbs": "mr:1,root_cat:529816",
+                    "children": [
+                        {
+                            "name": "Computer Desks",
+                            "slug": "/search?q=Computer Desks&sortBy=massVolume&tbs=mr:1,root_cat:535258",
+                            "tbs": "mr:1,root_cat:535258"
+                        },
+                        {
+                            "name": "Ergonomic Chairs",
+                            "slug": "/search?q=Ergonomic Chairs&sortBy=massVolume&tbs=mr:1,root_cat:535264",
+                            "tbs": "mr:1,root_cat:535264"
+                        },
+                        {
+                            "name": "Office Furniture Sets",
+                            "slug": "/search?q=Office Furniture Sets&sortBy=massVolume&tbs=mr:1,root_cat:529977",
+                            "tbs": "mr:1,root_cat:529977"
+                        },
+                        {
+                            "name": "Swivel Office Chairs",
+                            "slug": "/search?q=Swivel Office Chairs&sortBy=massVolume&tbs=mr:1,root_cat:535269",
+                            "tbs": "mr:1,root_cat:535269"
+                        },
+                        {
+                            "name": "Corner Desks",
+                            "slug": "/search?q=Corner Desks&sortBy=massVolume&tbs=mr:1,root_cat:535260",
+                            "tbs": "mr:1,root_cat:535260"
+                        },
+                        {
+                            "name": "L-Shaped Desks",
+                            "slug": "/search?q=L-Shaped Desks&sortBy=massVolume&tbs=mr:1,root_cat:535255",
+                            "tbs": "mr:1,root_cat:535255"
+                        },
+                        {
+                            "name": "Writing Desks",
+                            "slug": "/search?q=Writing Desks&sortBy=massVolume&tbs=mr:1,root_cat:535259",
+                            "tbs": "mr:1,root_cat:535259"
+                        }
+                    ]
+                },
+                {
+                    "name": "Kitchen & Dining Furniture",
+                    "slug": "/search?q=Kitchen & Dining Furniture&sortBy=massVolume&tbs=mr:1,root_cat:529819",
+                    "tbs": "mr:1,root_cat:529819"
+                },
+                {
+                    "name": "Bath & Shower",
+                    "slug": "/search?q=Bath & Shower&sortBy=massVolume&tbs=mr:1,root_cat:529823",
+                    "tbs": "mr:1,root_cat:529823"
+                },
+                {
+                    "name": "Living Room Furniture",
+                    "slug": "/search?q=Living Room Furniture&sortBy=massVolume&tbs=mr:1,root_cat:529818",
+                    "tbs": "mr:1,root_cat:529818"
+                },
+                {
+                    "name": "Bathroom Furniture",
+                    "slug": "/search?q=Bathroom Furniture&sortBy=massVolume&tbs=mr:1,root_cat:531732",
+                    "tbs": "mr:1,root_cat:531732"
+                },
+                {
+                    "name": "Bedroom Furniture",
+                    "slug": "/search?q=Bedroom Furniture&sortBy=massVolume&tbs=mr:1,root_cat:529821",
+                    "tbs": "mr:1,root_cat:529821"
+                },
+                {
+                    "name": "Cabinets & Storage",
+                    "slug": "/search?q=Cabinets & Storage&sortBy=massVolume&tbs=",
+                    "tbs": "",
+                    "children": [
+                        {
+                            "name": "Storage Furniture",
+                            "slug": "/search?q=Storage Furniture&sortBy=massVolume&tbs=mr:1,root_cat:536925",
+                            "tbs": "mr:1,root_cat:536925"
+                        },
+                        {
+                            "name": "Storage & Utility Cabinets",
+                            "slug": "/search?q=Storage & Utility Cabinets&sortBy=massVolume&tbs=mr:1,root_cat:537189",
+                            "tbs": "mr:1,root_cat:537189"
+                        },
+                        {
+                            "name": "Office Storage & Organization",
+                            "slug": "/search?q=Office Storage & Organization&sortBy=massVolume&tbs=mr:1,root_cat:537145",
+                            "tbs": "mr:1,root_cat:537145"
+                        },
+                        {
+                            "name": "Kitchen & Dining",
+                            "slug": "/search?q=Kitchen & Dining&sortBy=massVolume&tbs=mr:1,root_cat:530958",
+                            "tbs": "mr:1,root_cat:530958"
+                        },
+                        {
+                            "name": "Garage Storage & Organization",
+                            "slug": "/search?q=Garage Storage & Organization&sortBy=massVolume&tbs=mr:1,root_cat:536929",
+                            "tbs": "mr:1,root_cat:536929"
+                        },
+                        {
+                            "name": "Accent Cabinets",
+                            "slug": "/search?q=Accent Cabinets&sortBy=massVolume&tbs=mr:1,root_cat:535182",
+                            "tbs": "mr:1,root_cat:535182"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Health & Beauty",
+            "slug": "/search?q=Health & Beauty&sortBy=massVolume&tbs=",
+            "tbs": "",
+            "children": [
+                {
+                    "name": "Face Makeup",
+                    "slug": "/search?q=Face Makeup&sortBy=massVolume&tbs=mr:1,root_cat:531520",
+                    "tbs": "mr:1,root_cat:531520",
+                    "children": [
+                        {
+                            "name": "Foundation",
+                            "slug": "/search?q=Foundation&sortBy=massVolume&tbs=mr:1,root_cat:529736",
+                            "tbs": "mr:1,root_cat:529736"
+                        },
+                        {
+                            "name": "Concealer",
+                            "slug": "/search?q=Concealer&sortBy=massVolume&tbs=mr:1,root_cat:529743",
+                            "tbs": "mr:1,root_cat:529743"
+                        },
+                        {
+                            "name": "Face Palettes",
+                            "slug": "/search?q=Face Palettes&sortBy=massVolume&tbs=mr:1,root_cat:532151",
+                            "tbs": "mr:1,root_cat:532151"
+                        },
+                        {
+                            "name": "Blush",
+                            "slug": "/search?q=Blush&sortBy=massVolume&tbs=mr:1,root_cat:542845",
+                            "tbs": "mr:1,root_cat:542845"
+                        }
+                    ]
+                },
+                {
+                    "name": "Facial Treatments & Masks",
+                    "slug": "/search?q=Facial Treatments & Masks&sortBy=massVolume&tbs=mr:1,root_cat:542999",
+                    "tbs": "mr:1,root_cat:542999",
+                    "children": [
+                        {
+                            "name": "Exfoliating Masks",
+                            "slug": "/search?q=Exfoliating Masks&sortBy=massVolume&tbs=mr:1,root_cat:542889",
+                            "tbs": "mr:1,root_cat:542889"
+                        },
+                        {
+                            "name": "Sheet Masks",
+                            "slug": "/search?q=Sheet Masks&sortBy=massVolume&tbs=mr:1,root_cat:542887",
+                            "tbs": "mr:1,root_cat:542887"
+                        },
+                        {
+                            "name": "Cream Masks",
+                            "slug": "/search?q=Cream Masks&sortBy=massVolume&tbs=mr:1,root_cat:542888",
+                            "tbs": "mr:1,root_cat:542888"
+                        },
+                        {
+                            "name": "Clay & Mud Masks",
+                            "slug": "/search?q=Clay & Mud Masks&sortBy=massVolume&tbs=mr:1,root_cat:542885",
+                            "tbs": "mr:1,root_cat:542885"
+                        },
+                        {
+                            "name": "Facial Serums",
+                            "slug": "/search?q=Facial Serums&sortBy=massVolume&tbs=mr:1,root_cat:543043",
+                            "tbs": "mr:1,root_cat:543043"
+                        },
+                        {
+                            "name": "Gel Masks",
+                            "slug": "/search?q=Gel Masks&sortBy=massVolume&tbs=mr:1,root_cat:542886",
+                            "tbs": "mr:1,root_cat:542886"
+                        }
+                    ]
+                },
+                {
+                    "name": "Cosmetics",
+                    "slug": "/search?q=Cosmetics&sortBy=massVolume&tbs=",
+                    "tbs": "",
+                    "children": [
+                        {
+                            "name": "Eyeshadow",
+                            "slug": "/search?q=Eyeshadow&sortBy=massVolume&tbs=mr:1,root_cat:529740",
+                            "tbs": "mr:1,root_cat:529740"
+                        },
+                        {
+                            "name": "Eye Palettes",
+                            "slug": "/search?q=Eye Palettes&sortBy=massVolume&tbs=mr:1,root_cat:532150",
+                            "tbs": "mr:1,root_cat:532150"
+                        },
+                        {
+                            "name": "Foundation",
+                            "slug": "/search?q=Foundation&sortBy=massVolume&tbs=mr:1,root_cat:529736",
+                            "tbs": "mr:1,root_cat:529736"
+                        },
+                        {
+                            "name": "Cosmetic Gift Sets",
+                            "slug": "/search?q=Cosmetic Gift Sets&sortBy=massVolume&tbs=mr:1,root_cat:529741",
+                            "tbs": "mr:1,root_cat:529741"
+                        },
+                        {
+                            "name": "Concealer",
+                            "slug": "/search?q=Concealer&sortBy=massVolume&tbs=mr:1,root_cat:529743",
+                            "tbs": "mr:1,root_cat:529743"
+                        },
+                        {
+                            "name": "Lipstick",
+                            "slug": "/search?q=Lipstick&sortBy=massVolume&tbs=mr:1,root_cat:529731",
+                            "tbs": "mr:1,root_cat:529731"
+                        }
+                    ]
+                },
+                {
+                    "name": "Bath & Body",
+                    "slug": "/search?q=Bath & Body&sortBy=massVolume&tbs=mr:1,root_cat:529706",
+                    "tbs": "mr:1,root_cat:529706",
+                    "children": [
+                        {
+                            "name": "Bath & Body Gift Sets",
+                            "slug": "/search?q=Bath & Body Gift Sets&sortBy=massVolume&tbs=mr:1,root_cat:529713",
+                            "tbs": "mr:1,root_cat:529713"
+                        },
+                        {
+                            "name": "Body Wash",
+                            "slug": "/search?q=Body Wash&sortBy=massVolume&tbs=mr:1,root_cat:529712",
+                            "tbs": "mr:1,root_cat:529712"
+                        },
+                        {
+                            "name": "Bubble Bath, Oils & Soaks",
+                            "slug": "/search?q=Bubble Bath, Oils & Soaks&sortBy=massVolume&tbs=mr:1,root_cat:529711",
+                            "tbs": "mr:1,root_cat:529711"
+                        }
+                    ]
+                },
+                {
+                    "name": "Condition-specific Supplements",
+                    "slug": "/search?q=Condition-specific Supplements&sortBy=massVolume&tbs=mr:1,root_cat:543237",
+                    "tbs": "mr:1,root_cat:543237",
+                    "children": [
+                        {
+                            "name": "Immune Support Supplements",
+                            "slug": "/search?q=Immune Support Supplements&sortBy=massVolume&tbs=mr:1,root_cat:532093",
+                            "tbs": "mr:1,root_cat:532093"
+                        },
+                        {
+                            "name": "Herbal Supplements",
+                            "slug": "/search?q=Herbal Supplements&sortBy=massVolume&tbs=mr:1,root_cat:532098",
+                            "tbs": "mr:1,root_cat:532098"
+                        },
+                        {
+                            "name": "Heart Health Supplements",
+                            "slug": "/search?q=Heart Health Supplements&sortBy=massVolume&tbs=mr:1,root_cat:532094",
+                            "tbs": "mr:1,root_cat:532094"
+                        },
+                        {
+                            "name": "Digestive Health Supplements",
+                            "slug": "/search?q=Digestive Health Supplements&sortBy=massVolume&tbs=mr:1,root_cat:543239",
+                            "tbs": "mr:1,root_cat:543239"
+                        },
+                        {
+                            "name": "Bone & Joint Health Supplements",
+                            "slug": "/search?q=Bone & Joint Health Supplements&sortBy=massVolume&tbs=mr:1,root_cat:532096",
+                            "tbs": "mr:1,root_cat:532096"
+                        },
+                        {
+                            "name": "Hair, Skin & Nail Supplements",
+                            "slug": "/search?q=Hair, Skin & Nail Supplements&sortBy=massVolume&tbs=mr:1,root_cat:532104",
+                            "tbs": "mr:1,root_cat:532104"
+                        },
+                        {
+                            "name": "Vitamins A-K",
+                            "slug": "/search?q=Vitamins A-K&sortBy=massVolume&tbs=mr:1,root_cat:532101",
+                            "tbs": "mr:1,root_cat:532101"
+                        }
+                    ]
+                },
+                {
+                    "name": "Health & Beauty > Health Care",
+                    "slug": "/search?q=Health & Beauty > Health Care&sortBy=massVolume&tbs=",
+                    "tbs": "",
+                    "children": [
+                        {
+                            "name": "Condition-specific Supplements",
+                            "slug": "/search?q=Condition-specific Supplements&sortBy=massVolume&tbs=mr:1,root_cat:543237",
+                            "tbs": "mr:1,root_cat:543237",
+                            "children": [
+                                {
+                                    "name": "Immune Support Supplements",
+                                    "slug": "/search?q=Immune Support Supplements&sortBy=massVolume&tbs=mr:1,root_cat:532093",
+                                    "tbs": "mr:1,root_cat:532093"
+                                },
+                                {
+                                    "name": "Herbal Supplements",
+                                    "slug": "/search?q=Herbal Supplements&sortBy=massVolume&tbs=mr:1,root_cat:532098",
+                                    "tbs": "mr:1,root_cat:532098"
+                                },
+                                {
+                                    "name": "Heart Health Supplements",
+                                    "slug": "/search?q=Heart Health Supplements&sortBy=massVolume&tbs=mr:1,root_cat:532094",
+                                    "tbs": "mr:1,root_cat:532094"
+                                },
+                                {
+                                    "name": "Digestive Health Supplements",
+                                    "slug": "/search?q=Digestive Health Supplements&sortBy=massVolume&tbs=mr:1,root_cat:543239",
+                                    "tbs": "mr:1,root_cat:543239"
+                                },
+                                {
+                                    "name": "Bone & Joint Health Supplements",
+                                    "slug": "/search?q=Bone & Joint Health Supplements&sortBy=massVolume&tbs=mr:1,root_cat:532096",
+                                    "tbs": "mr:1,root_cat:532096"
+                                },
+                                {
+                                    "name": "Hair, Skin & Nail Supplements",
+                                    "slug": "/search?q=Hair, Skin & Nail Supplements&sortBy=massVolume&tbs=mr:1,root_cat:532104",
+                                    "tbs": "mr:1,root_cat:532104"
+                                },
+                                {
+                                    "name": "Vitamins A-K",
+                                    "slug": "/search?q=Vitamins A-K&sortBy=massVolume&tbs=mr:1,root_cat:532101",
+                                    "tbs": "mr:1,root_cat:532101"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Bath & Body",
+                            "slug": "/search?q=Bath & Body&sortBy=massVolume&tbs=mr:1,root_cat:529706",
+                            "tbs": "mr:1,root_cat:529706",
+                            "children": [
+                                {
+                                    "name": "Bath & Body Gift Sets",
+                                    "slug": "/search?q=Bath & Body Gift Sets&sortBy=massVolume&tbs=mr:1,root_cat:529713",
+                                    "tbs": "mr:1,root_cat:529713"
+                                },
+                                {
+                                    "name": "Body Wash",
+                                    "slug": "/search?q=Body Wash&sortBy=massVolume&tbs=mr:1,root_cat:529712",
+                                    "tbs": "mr:1,root_cat:529712"
+                                },
+                                {
+                                    "name": "Bubble Bath, Oils & Soaks",
+                                    "slug": "/search?q=Bubble Bath, Oils & Soaks&sortBy=massVolume&tbs=mr:1,root_cat:529711",
+                                    "tbs": "mr:1,root_cat:529711"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Face Makeup",
+                            "slug": "/search?q=Face Makeup&sortBy=massVolume&tbs=mr:1,root_cat:531520",
+                            "tbs": "mr:1,root_cat:531520",
+                            "children": [
+                                {
+                                    "name": "Foundation",
+                                    "slug": "/search?q=Foundation&sortBy=massVolume&tbs=mr:1,root_cat:529736",
+                                    "tbs": "mr:1,root_cat:529736"
+                                },
+                                {
+                                    "name": "Concealer",
+                                    "slug": "/search?q=Concealer&sortBy=massVolume&tbs=mr:1,root_cat:529743",
+                                    "tbs": "mr:1,root_cat:529743"
+                                },
+                                {
+                                    "name": "Face Palettes",
+                                    "slug": "/search?q=Face Palettes&sortBy=massVolume&tbs=mr:1,root_cat:532151",
+                                    "tbs": "mr:1,root_cat:532151"
+                                },
+                                {
+                                    "name": "Blush",
+                                    "slug": "/search?q=Blush&sortBy=massVolume&tbs=mr:1,root_cat:542845",
+                                    "tbs": "mr:1,root_cat:542845"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Facial Treatments & Masks",
+                            "slug": "/search?q=Facial Treatments & Masks&sortBy=massVolume&tbs=mr:1,root_cat:542999",
+                            "tbs": "mr:1,root_cat:542999",
+                            "children": [
+                                {
+                                    "name": "Exfoliating Masks",
+                                    "slug": "/search?q=Exfoliating Masks&sortBy=massVolume&tbs=mr:1,root_cat:542889",
+                                    "tbs": "mr:1,root_cat:542889"
+                                },
+                                {
+                                    "name": "Sheet Masks",
+                                    "slug": "/search?q=Sheet Masks&sortBy=massVolume&tbs=mr:1,root_cat:542887",
+                                    "tbs": "mr:1,root_cat:542887"
+                                },
+                                {
+                                    "name": "Cream Masks",
+                                    "slug": "/search?q=Cream Masks&sortBy=massVolume&tbs=mr:1,root_cat:542888",
+                                    "tbs": "mr:1,root_cat:542888"
+                                },
+                                {
+                                    "name": "Clay & Mud Masks",
+                                    "slug": "/search?q=Clay & Mud Masks&sortBy=massVolume&tbs=mr:1,root_cat:542885",
+                                    "tbs": "mr:1,root_cat:542885"
+                                },
+                                {
+                                    "name": "Facial Serums",
+                                    "slug": "/search?q=Facial Serums&sortBy=massVolume&tbs=mr:1,root_cat:543043",
+                                    "tbs": "mr:1,root_cat:543043"
+                                },
+                                {
+                                    "name": "Gel Masks",
+                                    "slug": "/search?q=Gel Masks&sortBy=massVolume&tbs=mr:1,root_cat:542886",
+                                    "tbs": "mr:1,root_cat:542886"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Sports Health & Nutrition",
+                            "slug": "/search?q=Sports Health & Nutrition&sortBy=massVolume&tbs=mr:1,root_cat:532486",
+                            "tbs": "mr:1,root_cat:532486",
+                            "children": [
+                                {
+                                    "name": "Exercise & Fitness",
+                                    "slug": "/search?q=Exercise & Fitness&sortBy=massVolume&tbs=mr:1,root_cat:530098",
+                                    "tbs": "mr:1,root_cat:530098"
+                                },
+                                {
+                                    "name": "Energy & Sports Performance",
+                                    "slug": "/search?q=Energy & Sports Performance&sortBy=massVolume&tbs=mr:1,root_cat:543275",
+                                    "tbs": "mr:1,root_cat:543275"
+                                },
+                                {
+                                    "name": "Whey Protein",
+                                    "slug": "/search?q=Whey Protein&sortBy=massVolume&tbs=mr:1,root_cat:543268",
+                                    "tbs": "mr:1,root_cat:543268"
+                                },
+                                {
+                                    "name": "Vitamins & Supplements",
+                                    "slug": "/search?q=Vitamins & Supplements&sortBy=massVolume&tbs=mr:1,root_cat:529773",
+                                    "tbs": "mr:1,root_cat:529773"
+                                },
+                                {
+                                    "name": "Sports & Energy Drinks",
+                                    "slug": "/search?q=Sports & Energy Drinks&sortBy=massVolume&tbs=mr:1,root_cat:520272",
+                                    "tbs": "mr:1,root_cat:520272"
+                                },
+                                {
+                                    "name": "Plant-based Protein",
+                                    "slug": "/search?q=Plant-based Protein&sortBy=massVolume&tbs=mr:1,root_cat:543270",
+                                    "tbs": "mr:1,root_cat:543270"
+                                },
+                                {
+                                    "name": "Meal Shakes & Drinks",
+                                    "slug": "/search?q=Meal Shakes & Drinks&sortBy=massVolume&tbs=mr:1,root_cat:532166",
+                                    "tbs": "mr:1,root_cat:532166"
+                                },
+                                {
+                                    "name": "Snacks",
+                                    "slug": "/search?q=Snacks&sortBy=massVolume&tbs=mr:1,root_cat:518674",
+                                    "tbs": "mr:1,root_cat:518674"
+                                },
+                                {
+                                    "name": "Nutrition Bars",
+                                    "slug": "/search?q=Nutrition Bars&sortBy=massVolume&tbs=mr:1,root_cat:530944",
+                                    "tbs": "mr:1,root_cat:530944"
+                                },
+                                {
+                                    "name": "Powdered Beverage Mixes",
+                                    "slug": "/search?q=Powdered Beverage Mixes&sortBy=massVolume&tbs=mr:1,root_cat:544021",
+                                    "tbs": "mr:1,root_cat:544021"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Shampoo",
+                            "slug": "/search?q=Shampoo&sortBy=massVolume&tbs=mr:1,root_cat:532463",
+                            "tbs": "mr:1,root_cat:532463"
+                        },
+                        {
+                            "name": "Medicines & Treatments",
+                            "slug": "/search?q=Medicines & Treatments&sortBy=massVolume&tbs=mr:1,root_cat:531518",
+                            "tbs": "mr:1,root_cat:531518"
+                        },
+                        {
+                            "name": "Facial Moisturizers",
+                            "slug": "/search?q=Facial Moisturizers&sortBy=massVolume&tbs=mr:1,root_cat:532203",
+                            "tbs": "mr:1,root_cat:532203"
+                        }
+                    ]
+                },
+                {
+                    "name": "Oral Care",
+                    "slug": "/search?q=Oral Care&sortBy=massVolume&tbs=",
+                    "tbs": "",
+                    "children": [
+                        {
+                            "name": "Toothpaste",
+                            "slug": "/search?q=Toothpaste&sortBy=massVolume&tbs=mr:1,root_cat:529775",
+                            "tbs": "mr:1,root_cat:529775"
+                        },
+                        {
+                            "name": "Standard Toothbrushes",
+                            "slug": "/search?q=Standard Toothbrushes&sortBy=massVolume&tbs=mr:1,root_cat:542773",
+                            "tbs": "mr:1,root_cat:542773",
+                            "children": [
+                                {
+                                    "name": "Standard Toothbrushes",
+                                    "slug": "/search?q=Standard Toothbrushes&sortBy=massVolume&tbs=mr:1,root_cat:542773",
+                                    "tbs": "mr:1,root_cat:542773"
+                                },
+                                {
+                                    "name": "Electric Toothbrushes",
+                                    "slug": "/search?q=Electric Toothbrushes&sortBy=massVolume&tbs=mr:1,root_cat:542769",
+                                    "tbs": "mr:1,root_cat:542769"
+                                },
+                                {
+                                    "name": "Kids' Toothbrushes",
+                                    "slug": "/search?q=Kids' Toothbrushes&sortBy=massVolume&tbs=mr:1,root_cat:542770",
+                                    "tbs": "mr:1,root_cat:542770"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Mouthwash",
+                            "slug": "/search?q=Mouthwash&sortBy=massVolume&tbs=mr:1,root_cat:529777",
+                            "tbs": "mr:1,root_cat:529777"
+                        },
+                        {
+                            "name": "Electric Toothbrushes",
+                            "slug": "/search?q=Electric Toothbrushes&sortBy=massVolume&tbs=mr:1,root_cat:542769",
+                            "tbs": "mr:1,root_cat:542769"
+                        }
+                    ]
+                },
+                {
+                    "name": "Facial Moisturizers",
+                    "slug": "/search?q=Facial Moisturizers&sortBy=massVolume&tbs=mr:1,root_cat:532203",
+                    "tbs": "mr:1,root_cat:532203"
+                },
+                {
+                    "name": "Shampoo & Conditioner",
+                    "slug": "/search?q=Shampoo & Conditioner&sortBy=massVolume&tbs=mr:1,root_cat:532863",
+                    "tbs": "mr:1,root_cat:532863"
+                },
+                {
+                    "name": "Skin Care Sets",
+                    "slug": "/search?q=Skin Care Sets&sortBy=massVolume&tbs=mr:1,root_cat:532159",
+                    "tbs": "mr:1,root_cat:532159"
+                }
+            ]
+        },
+        {
+            "name": "Home & Garden",
+            "slug": "/search?q=Home & Garden&sortBy=massVolume&tbs=",
+            "tbs": "",
+            "children": [
+                {
+                    "name": "Pots & Planters",
+                    "slug": "/search?q=Pots & Planters&sortBy=massVolume&tbs=mr:1,root_cat:530235",
+                    "tbs": "mr:1,root_cat:530235"
+                },
+                {
+                    "name": "Furniture",
+                    "slug": "/search?q=Furniture&sortBy=massVolume&tbs=mr:1,root_cat:530959",
+                    "tbs": "mr:1,root_cat:530959",
+                    "children": [
+                        {
+                            "name": "Furniture Sets",
+                            "slug": "/search?q=Furniture Sets&sortBy=massVolume&tbs=mr:1,root_cat:534160",
+                            "tbs": "mr:1,root_cat:534160"
+                        },
+                        {
+                            "name": "Sofas",
+                            "slug": "/search?q=Sofas&sortBy=massVolume&tbs=mr:1,root_cat:534225",
+                            "tbs": "mr:1,root_cat:534225"
+                        },
+                        {
+                            "name": "Living Room Sets",
+                            "slug": "/search?q=Living Room Sets&sortBy=massVolume&tbs=mr:1,root_cat:529990",
+                            "tbs": "mr:1,root_cat:529990"
+                        },
+                        {
+                            "name": "Sectional Sofas",
+                            "slug": "/search?q=Sectional Sofas&sortBy=massVolume&tbs=mr:1,root_cat:534229",
+                            "tbs": "mr:1,root_cat:534229"
+                        },
+                        {
+                            "name": "Bedroom Furniture",
+                            "slug": "/search?q=Bedroom Furniture&sortBy=massVolume&tbs=mr:1,root_cat:529821",
+                            "tbs": "mr:1,root_cat:529821"
+                        }
+                    ]
+                },
+                {
+                    "name": "Home Decor",
+                    "slug": "/search?q=Home Decor&sortBy=massVolume&tbs=mr:1,root_cat:529807",
+                    "tbs": "mr:1,root_cat:529807",
+                    "children": [
+                        {
+                            "name": "Decorative Signs",
+                            "slug": "/search?q=Decorative Signs&sortBy=massVolume&tbs=mr:1,root_cat:531956",
+                            "tbs": "mr:1,root_cat:531956"
+                        },
+                        {
+                            "name": "Vases",
+                            "slug": "/search?q=Vases&sortBy=massVolume&tbs=mr:1,root_cat:529933",
+                            "tbs": "mr:1,root_cat:529933"
+                        },
+                        {
+                            "name": "Art Sculptures",
+                            "slug": "/search?q=Art Sculptures&sortBy=massVolume&tbs=mr:1,root_cat:535625",
+                            "tbs": "mr:1,root_cat:535625"
+                        },
+                        {
+                            "name": "Metal Wall Art",
+                            "slug": "/search?q=Metal Wall Art&sortBy=massVolume&tbs=mr:1,root_cat:534411",
+                            "tbs": "mr:1,root_cat:534411"
+                        },
+                        {
+                            "name": "Statues & Figurines",
+                            "slug": "/search?q=Statues & Figurines&sortBy=massVolume&tbs=mr:1,root_cat:545522",
+                            "tbs": "mr:1,root_cat:545522"
+                        }
+                    ]
+                },
+                {
+                    "name": "Decor",
+                    "slug": "/search?q=Decor&sortBy=massVolume&tbs=",
+                    "tbs": "",
+                    "children": [
+                        {
+                            "name": "Art Sculptures",
+                            "slug": "/search?q=Art Sculptures&sortBy=massVolume&tbs=mr:1,root_cat:535625",
+                            "tbs": "mr:1,root_cat:535625"
+                        },
+                        {
+                            "name": "Decorative Signs",
+                            "slug": "/search?q=Decorative Signs&sortBy=massVolume&tbs=mr:1,root_cat:531956",
+                            "tbs": "mr:1,root_cat:531956"
+                        },
+                        {
+                            "name": "Statues & Figurines",
+                            "slug": "/search?q=Statues & Figurines&sortBy=massVolume&tbs=mr:1,root_cat:545522",
+                            "tbs": "mr:1,root_cat:545522"
+                        },
+                        {
+                            "name": "Canvas Wall Art",
+                            "slug": "/search?q=Canvas Wall Art&sortBy=massVolume&tbs=mr:1,root_cat:534410",
+                            "tbs": "mr:1,root_cat:534410"
+                        },
+                        {
+                            "name": "Metal Wall Art",
+                            "slug": "/search?q=Metal Wall Art&sortBy=massVolume&tbs=mr:1,root_cat:534411",
+                            "tbs": "mr:1,root_cat:534411"
+                        }
+                    ]
+                },
+                {
+                    "name": "Household Appliance",
+                    "slug": "/search?q=Household Appliance&sortBy=massVolume&tbs=",
+                    "tbs": "",
+                    "children": [
+                        {
+                            "name": "Small Kitchen Appliances",
+                            "slug": "/search?q=Small Kitchen Appliances&sortBy=massVolume&tbs=mr:1,root_cat:531819",
+                            "tbs": "mr:1,root_cat:531819",
+                            "children": [
+                                {
+                                    "name": "Deep Fryers",
+                                    "slug": "/search?q=Deep Fryers&sortBy=massVolume&tbs=mr:1,root_cat:530391",
+                                    "tbs": "mr:1,root_cat:530391"
+                                },
+                                {
+                                    "name": "Food Cookers & Steamers",
+                                    "slug": "/search?q=Food Cookers & Steamers&sortBy=massVolume&tbs=mr:1,root_cat:534860",
+                                    "tbs": "mr:1,root_cat:534860"
+                                },
+                                {
+                                    "name": "Toaster Ovens",
+                                    "slug": "/search?q=Toaster Ovens&sortBy=massVolume&tbs=mr:1,root_cat:530059",
+                                    "tbs": "mr:1,root_cat:530059"
+                                },
+                                {
+                                    "name": "Air Fryers",
+                                    "slug": "/search?q=Air Fryers&sortBy=massVolume&tbs=mr:1,root_cat:534867",
+                                    "tbs": "mr:1,root_cat:534867"
+                                },
+                                {
+                                    "name": "Coffee, Tea & Espresso Appliances",
+                                    "slug": "/search?q=Coffee, Tea & Espresso Appliances&sortBy=massVolume&tbs=mr:1,root_cat:534818",
+                                    "tbs": "mr:1,root_cat:534818"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Major Kitchen Appliance Packages",
+                            "slug": "/search?q=Major Kitchen Appliance Packages&sortBy=massVolume&tbs=mr:1,root_cat:534844",
+                            "tbs": "mr:1,root_cat:534844"
+                        },
+                        {
+                            "name": "Refrigerators",
+                            "slug": "/search?q=Refrigerators&sortBy=massVolume&tbs=mr:1,root_cat:530043",
+                            "tbs": "mr:1,root_cat:530043",
+                            "children": [
+                                {
+                                    "name": "Counter Depth Refrigerators",
+                                    "slug": "/search?q=Counter Depth Refrigerators&sortBy=massVolume&tbs=mr:1,root_cat:534725",
+                                    "tbs": "mr:1,root_cat:534725"
+                                },
+                                {
+                                    "name": "Side by Side Refrigerators",
+                                    "slug": "/search?q=Side by Side Refrigerators&sortBy=massVolume&tbs=mr:1,root_cat:534730",
+                                    "tbs": "mr:1,root_cat:534730"
+                                },
+                                {
+                                    "name": "French Door Refrigerators",
+                                    "slug": "/search?q=French Door Refrigerators&sortBy=massVolume&tbs=mr:1,root_cat:534731",
+                                    "tbs": "mr:1,root_cat:534731"
+                                },
+                                {
+                                    "name": "Compact Refrigerators",
+                                    "slug": "/search?q=Compact Refrigerators&sortBy=massVolume&tbs=mr:1,root_cat:535585",
+                                    "tbs": "mr:1,root_cat:535585"
+                                },
+                                {
+                                    "name": "Top Freezer Refrigerators",
+                                    "slug": "/search?q=Top Freezer Refrigerators&sortBy=massVolume&tbs=mr:1,root_cat:534729",
+                                    "tbs": "mr:1,root_cat:534729"
+                                },
+                                {
+                                    "name": "Bottom Freezer Refrigerators",
+                                    "slug": "/search?q=Bottom Freezer Refrigerators&sortBy=massVolume&tbs=mr:1,root_cat:534728",
+                                    "tbs": "mr:1,root_cat:534728"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Smart Appliances",
+                            "slug": "/search?q=Smart Appliances&sortBy=massVolume&tbs=mr:1,root_cat:538309",
+                            "tbs": "mr:1,root_cat:538309"
+                        },
+                        {
+                            "name": "Gas Ranges",
+                            "slug": "/search?q=Gas Ranges&sortBy=massVolume&tbs=mr:1,root_cat:534743",
+                            "tbs": "mr:1,root_cat:534743"
+                        }
+                    ]
+                },
+                {
+                    "name": "Cleaning Supplies",
+                    "slug": "/search?q=Cleaning Supplies&sortBy=massVolume&tbs=",
+                    "tbs": "",
+                    "children": [
+                        {
+                            "name": "Bathroom Cleaning Supplies",
+                            "slug": "/search?q=Bathroom Cleaning Supplies&sortBy=massVolume&tbs=mr:1,root_cat:533780",
+                            "tbs": "mr:1,root_cat:533780"
+                        },
+                        {
+                            "name": "Kitchen Cleaning Supplies",
+                            "slug": "/search?q=Kitchen Cleaning Supplies&sortBy=massVolume&tbs=mr:1,root_cat:533781",
+                            "tbs": "mr:1,root_cat:533781"
+                        },
+                        {
+                            "name": "All-purpose Cleaners",
+                            "slug": "/search?q=All-purpose Cleaners&sortBy=massVolume&tbs=mr:1,root_cat:530023",
+                            "tbs": "mr:1,root_cat:530023"
+                        },
+                        {
+                            "name": "Cleaning Tools",
+                            "slug": "/search?q=Cleaning Tools&sortBy=massVolume&tbs=mr:1,root_cat:533850",
+                            "tbs": "mr:1,root_cat:533850"
+                        },
+                        {
+                            "name": "Multi-purpose Degreasers",
+                            "slug": "/search?q=Multi-purpose Degreasers&sortBy=massVolume&tbs=mr:1,root_cat:543509",
+                            "tbs": "mr:1,root_cat:543509"
+                        },
+                        {
+                            "name": "Disinfectant Wipes & Sprays",
+                            "slug": "/search?q=Disinfectant Wipes & Sprays&sortBy=massVolume&tbs=mr:1,root_cat:530025",
+                            "tbs": "mr:1,root_cat:530025"
+                        }
+                    ]
+                },
+                {
+                    "name": "Cookware & Bakeware",
+                    "slug": "/search?q=Cookware & Bakeware&sortBy=massVolume&tbs=",
+                    "tbs": "",
+                    "children": [
+                        {
+                            "name": "Induction Cookware",
+                            "slug": "/search?q=Induction Cookware&sortBy=massVolume&tbs=mr:1,root_cat:543766",
+                            "tbs": "mr:1,root_cat:543766"
+                        },
+                        {
+                            "name": "Cookware Sets",
+                            "slug": "/search?q=Cookware Sets&sortBy=massVolume&tbs=mr:1,root_cat:530089",
+                            "tbs": "mr:1,root_cat:530089"
+                        },
+                        {
+                            "name": "Baking Dishes",
+                            "slug": "/search?q=Baking Dishes&sortBy=massVolume&tbs=mr:1,root_cat:530090",
+                            "tbs": "mr:1,root_cat:530090"
+                        },
+                        {
+                            "name": "Frying Pans & Skillets",
+                            "slug": "/search?q=Frying Pans & Skillets&sortBy=massVolume&tbs=mr:1,root_cat:530082",
+                            "tbs": "mr:1,root_cat:530082"
+                        },
+                        {
+                            "name": "Bakeware Sets",
+                            "slug": "/search?q=Bakeware Sets&sortBy=massVolume&tbs=mr:1,root_cat:530094",
+                            "tbs": "mr:1,root_cat:530094"
+                        },
+                        {
+                            "name": "Microwave Cookware",
+                            "slug": "/search?q=Microwave Cookware&sortBy=massVolume&tbs=mr:1,root_cat:534931",
+                            "tbs": "mr:1,root_cat:534931"
+                        },
+                        {
+                            "name": "Cake Pans",
+                            "slug": "/search?q=Cake Pans&sortBy=massVolume&tbs=mr:1,root_cat:530091",
+                            "tbs": "mr:1,root_cat:530091"
+                        },
+                        {
+                            "name": "Baking Accessories",
+                            "slug": "/search?q=Baking Accessories&sortBy=massVolume&tbs=mr:1,root_cat:535128",
+                            "tbs": "mr:1,root_cat:535128"
+                        }
+                    ]
+                },
+                {
+                    "name": "Lawn & Garden",
+                    "slug": "/search?q=Lawn & Garden&sortBy=massVolume&tbs=",
+                    "tbs": "",
+                    "children": [
+                        {
+                            "name": "Gardening & Landscaping",
+                            "slug": "/search?q=Gardening & Landscaping&sortBy=massVolume&tbs=mr:1,root_cat:530223",
+                            "tbs": "mr:1,root_cat:530223"
+                        },
+                        {
+                            "name": "Lawn Ornaments",
+                            "slug": "/search?q=Lawn Ornaments&sortBy=massVolume&tbs=mr:1,root_cat:530222",
+                            "tbs": "mr:1,root_cat:530222"
+                        },
+                        {
+                            "name": "Outdoor Power Equipment",
+                            "slug": "/search?q=Outdoor Power Equipment&sortBy=massVolume&tbs=mr:1,root_cat:530241",
+                            "tbs": "mr:1,root_cat:530241",
+                            "children": [
+                                {
+                                    "name": "Portable Generators",
+                                    "slug": "/search?q=Portable Generators&sortBy=massVolume&tbs=mr:1,root_cat:536611",
+                                    "tbs": "mr:1,root_cat:536611"
+                                },
+                                {
+                                    "name": "Gas Generators",
+                                    "slug": "/search?q=Gas Generators&sortBy=massVolume&tbs=mr:1,root_cat:539428",
+                                    "tbs": "mr:1,root_cat:539428"
+                                },
+                                {
+                                    "name": "Solar Generators",
+                                    "slug": "/search?q=Solar Generators&sortBy=massVolume&tbs=mr:1,root_cat:538811",
+                                    "tbs": "mr:1,root_cat:538811"
+                                },
+                                {
+                                    "name": "Electric Outdoor Power Equipment",
+                                    "slug": "/search?q=Electric Outdoor Power Equipment&sortBy=massVolume&tbs=mr:1,root_cat:537030",
+                                    "tbs": "mr:1,root_cat:537030"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Grass Seed, Soil & Fertilizers",
+                            "slug": "/search?q=Grass Seed, Soil & Fertilizers&sortBy=massVolume&tbs=mr:1,root_cat:537053",
+                            "tbs": "mr:1,root_cat:537053"
+                        },
+                        {
+                            "name": "Outdoor Living",
+                            "slug": "/search?q=Outdoor Living&sortBy=massVolume&tbs=mr:1,root_cat:530207",
+                            "tbs": "mr:1,root_cat:530207"
+                        },
+                        {
+                            "name": "Lawn Mowers",
+                            "slug": "/search?q=Lawn Mowers&sortBy=massVolume&tbs=mr:1,root_cat:530249",
+                            "tbs": "mr:1,root_cat:530249",
+                            "children": [
+                                {
+                                    "name": "Walk Behind Lawn Mowers",
+                                    "slug": "/search?q=Walk Behind Lawn Mowers&sortBy=massVolume&tbs=mr:1,root_cat:536824",
+                                    "tbs": "mr:1,root_cat:536824"
+                                },
+                                {
+                                    "name": "Riding Lawn Mowers",
+                                    "slug": "/search?q=Riding Lawn Mowers&sortBy=massVolume&tbs=mr:1,root_cat:536823",
+                                    "tbs": "mr:1,root_cat:536823"
+                                },
+                                {
+                                    "name": "Zero Turn Lawn Mowers",
+                                    "slug": "/search?q=Zero Turn Lawn Mowers&sortBy=massVolume&tbs=mr:1,root_cat:536820",
+                                    "tbs": "mr:1,root_cat:536820"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Outdoor Furniture",
+                            "slug": "/search?q=Outdoor Furniture&sortBy=massVolume&tbs=mr:1,root_cat:531072",
+                            "tbs": "mr:1,root_cat:531072"
+                        }
+                    ]
+                },
+                {
+                    "name": "Outdoor Living",
+                    "slug": "/search?q=Outdoor Living&sortBy=massVolume&tbs=mr:1,root_cat:530207",
+                    "tbs": "mr:1,root_cat:530207"
+                },
+                {
+                    "name": "Outdoor Furniture",
+                    "slug": "/search?q=Outdoor Furniture&sortBy=massVolume&tbs=mr:1,root_cat:531072",
+                    "tbs": "mr:1,root_cat:531072"
+                },
+                {
+                    "name": "Plants, Flowers & Seeds",
+                    "slug": "/search?q=Plants, Flowers & Seeds&sortBy=massVolume&tbs=mr:1,root_cat:536777",
+                    "tbs": "mr:1,root_cat:536777"
+                }
+            ]
+        }
+    ]
 }
-
