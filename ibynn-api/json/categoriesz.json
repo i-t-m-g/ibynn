@@ -1,0 +1,246 @@
+{
+   "data": [
+      {
+        "name": "Animals and Pet Supplies",
+        "slug":"/search?q=Animals and Pet Supplies&sortBy=massVolume",
+        "icon":"https://images.ibynn.com/categories/cosmeticsdepartment.png",
+        "children": [
+              {
+                  "name": "Pet Carriers",
+            "slug":"/search?&tbs=mr:1,root_cat:533708&q=Pet Carriers&sortBy=massVolume",
+                  "parent": "Animals and Pet Supplies",
+                  "tbs": "mr:1,root_cat:533708"
+              },
+              {
+                  "name": "Pet Playpens",
+            "slug":"/search?&tbs=mr:1,root_cat:530521&q=Pet Playpens&sortBy=massVolume",
+                  "parent": "Animals and Pet Supplies",
+                  "tbs": "mr:1,root_cat:530521"
+              },
+              {
+                  "name": "Pet Veterinary Diets",
+            "slug":"/search?&tbs=mr:1,root_cat:530527&q=Pet Veterinary Diets&sortBy=massVolume",
+                  "parent": "Animals and Pet Supplies",
+                  "tbs": "mr:1,root_cat:530527"
+              },
+              {
+                  "name": "Pet Feeders & Waterers",
+            "slug":"/search?&tbs=mr:1,root_cat:533731&q=Pet Feeders & Waterers&sortBy=massVolume",
+                  "parent": "Animals and Pet Supplies",
+                  "tbs": "mr:1,root_cat:533731"
+              },
+              {
+                  "name": "Pet Collars, Harnesses & Leashes",
+            "slug":"/search?&tbs=mr:1,root_cat:533517&q=Pet Collars, Harnesses & Leashes&sortBy=massVolume",
+                  "parent": "Animals and Pet Supplies",
+                  "tbs": "mr:1,root_cat:533517"
+              }
+        ]
+      },
+      {
+        "name": "Apparel and Accessories",
+        "slug":"/search?q=Apparel and Accessories&sortBy=massVolume",
+        "icon":"https://images.ibynn.com/categories/cosmeticsdepartment.png",
+        "children": [
+              {
+                  "name": "T-Shirts",
+            "slug":"/search?&tbs=mr:1,root_cat:531703&q=T-Shirts&sortBy=massVolume",
+                  "parent": "Apparel and Accessories",
+                  "tbs": "mr:1,root_cat:531703"
+              },
+              {
+                  "name": "Men's Apparel",
+            "slug":"/search?&tbs=mr:1,root_cat:529386&q=Men's Apparel&sortBy=massVolume",
+                  "parent": "Apparel and Accessories",
+                  "tbs": "mr:1,root_cat:529386"
+              },
+              {
+                  "name": "Women's Clothing",
+            "slug":"/search?&tbs=mr:1,root_cat:532011&q=Women's Clothing&sortBy=massVolume",
+                  "parent": "Apparel and Accessories",
+                  "tbs": "mr:1,root_cat:532011"
+              },
+              {
+                  "name": "Exercise & Fitness",
+            "slug":"/search?&tbs=mr:1,root_cat:530098&q=Exercise & Fitness&sortBy=massVolume",
+                  "parent": "Apparel and Accessories",
+                  "tbs": "mr:1,root_cat:530098"
+              },
+              {
+                  "name": "Sneakers",
+            "slug":"/search?&tbs=mr:1,root_cat:531484&q=Sneakers&sortBy=massVolume",
+                  "parent": "Apparel and Accessories",
+                  "tbs": "mr:1,root_cat:531484"
+              }
+        ]
+      },
+      {
+        "name": "Health and Beauty",
+        "slug":"/search?q=Health and Beauty&sortBy=massVolume",
+        "icon":"https://images.ibynn.com/categories/cosmeticsdepartment.png",
+        "children": [
+              {
+                  "name": "Makeup",
+            "slug":"/search?&tbs=mr:1,root_cat:531520&q=Makeup&sortBy=massVolume",
+                  "parent": "Health and Beauty",
+                  "tbs": "mr:1,root_cat:531520",
+                  "children": [
+                      {
+                          "name": "Foundation",
+            "slug":"/search?q=Foundation&&tbs=mr:1,root_cat:529736&sortBy=massVolume",
+                          "parent": "Makeup",
+                          "tbs": "mr:1,root_cat:529736"
+                      },
+                      {
+                          "name": "Concealer",
+            "slug":"/search?q=Concealer&&tbs=mr:1,root_cat:529743&sortBy=massVolume",
+                          "parent": "Makeup",
+                          "tbs": "mr:1,root_cat:529743"
+                      },
+                      {
+                          "name": "Eyeshadow",
+            "slug":"/search?q=Eyeshadow&&tbs=mr:1,root_cat:529740&sortBy=massVolume",
+                          "parent": "Makeup",
+                          "tbs": "mr:1,root_cat:529740"
+                      },
+                      {
+                          "name": "Under-Eye Concealer",
+            "slug":"/search?q=Under-&tbs=mr:1,root_cat:542861&Eye Concealer&sortBy=massVolume",
+                          "parent": "Makeup",
+                          "tbs": "mr:1,root_cat:542861"
+                      },
+                      {
+                          "name": "Cosmetic Gift Sets",
+            "slug":"/search?q=Cosmetic &tbs=mr:1,root_cat:529741&Gift Sets&sortBy=massVolume",
+                          "parent": "Makeup",
+                          "tbs": "mr:1,root_cat:529741"
+                      }
+                  ]
+              },
+              {
+                  "name": "Moisturizers",
+            "slug":"/search?&tbs=mr:1,root_cat:532203&q=Moisturizers&sortBy=massVolume",
+                  "parent": "Health and Beauty",
+                  "tbs": "mr:1,root_cat:532203",
+                  "children": [
+                      {
+                          "name": "Facial Moisturizers",
+            "slug":"/search?q=Facial &tbs=mr:1,root_cat:532203&Moisturizers&sortBy=massVolume",
+                          "parent": "Moisturizers",
+                          "tbs": "mr:1,root_cat:532203"
+                      },
+                      {
+                          "name": "Body Lotion",
+            "slug":"/search?q=Body &tbs=mr:1,root_cat:532148&Lotion&sortBy=massVolume",
+                          "parent": "Moisturizers",
+                          "tbs": "mr:1,root_cat:532148"
+                      },
+                      {
+                          "name": "Hand Cream",
+            "slug":"/search?q=Hand &tbs=mr:1,root_cat:532201&Cream&sortBy=massVolume",
+                          "parent": "Moisturizers",
+                          "tbs": "mr:1,root_cat:532201"
+                      }
+                  ]
+              },
+              {
+                  "name": "Bath Products",
+            "slug":"/search?&tbs=mr:1,root_cat:529706&q=Bath Products&sortBy=massVolume",
+                  "parent": "Health and Beauty",
+                  "tbs": "mr:1,root_cat:529706",
+                  "children": [
+                      {
+                          "name": "Bubble Bath",
+            "slug":"/search?q=Bubble &tbs=mr:1,root_cat:543071&Bath&sortBy=massVolume",
+                          "parent": "Bath Products",
+                          "tbs": "mr:1,root_cat:543071"
+                      },
+                      {
+                          "name": "Bath Salts",
+            "slug":"/search?q=Bath &tbs=mr:1,root_cat:543073&Salts&sortBy=massVolume",
+                          "parent": "Bath Products",
+                          "tbs": "mr:1,root_cat:543073"
+                      },
+                      {
+                          "name": "Bath Bombs",
+            "slug":"/search?q=Bath &tbs=mr:1,root_cat:543072&Bombs&sortBy=massVolume",
+                          "parent": "Bath Products",
+                          "tbs": "mr:1,root_cat:543072"
+                      }
+                  ]
+              },
+              {
+                  "name": "Facial Treatments and Masks",
+            "slug":"/search?&tbs=mr:1,root_cat:542999&q=Facial Treatments and Masks&sortBy=massVolume",
+                  "parent": "Health and Beauty",
+                  "tbs": "mr:1,root_cat:542999",
+                  "children": [
+                      {
+                          "name": "Facial Scrubs",
+            "slug":"/search?q=Facial &tbs=mr:1,root_cat:543092&Scrubs&sortBy=massVolume",
+                          "parent": "Facial Treatments and Masks",
+                          "tbs": "mr:1,root_cat:543092"
+                      },
+                      {
+                          "name": "Exfoliating Masks",
+            "slug":"/search?q=Exfoliating &tbs=mr:1,root_cat:542889&Masks&sortBy=massVolume",
+                          "parent": "Facial Treatments and Masks",
+                          "tbs": "mr:1,root_cat:542889"
+                      },
+                      {
+                          "name": "Sheet Masks",
+            "slug":"/search?q=Sheet &tbs=mr:1,root_cat:542887&Masks&sortBy=massVolume",
+                          "parent": "Facial Treatments and Masks",
+                          "tbs": "mr:1,root_cat:542887"
+                      },
+                      {
+                          "name": "Clay & Mud Masks",
+            "slug":"/search?q=Clay &tbs=mr:1,root_cat:542885&& Mud Masks&sortBy=massVolume",
+                          "parent": "Facial Treatments and Masks",
+                          "tbs": "mr:1,root_cat:542885"
+                      },
+                      {
+                          "name": "Cream Masks",
+            "slug":"/search?q=Cream &tbs=mr:1,root_cat:542888&Masks&sortBy=massVolume",
+                          "parent": "Facial Treatments and Masks",
+                          "tbs": "mr:1,root_cat:542888"
+                      }
+                  ]
+              },
+              {
+                  "name": "Eye Makeup",
+            "slug":"/search?&tbs=mr:1,root_cat:531521&q=Eye Makeup&sortBy=massVolume",
+                  "parent": "Health and Beauty",
+                  "tbs": "mr:1,root_cat:531521",
+                  "children": [
+                      {
+                          "name": "Eyeshadow",
+            "slug":"/search?q=Eyeshadow&&tbs=mr:1,root_cat:529740&sortBy=massVolume",
+                          "parent": "Eye Makeup",
+                          "tbs": "mr:1,root_cat:529740"
+                      },
+                      {
+                          "name": "Eye Palettes",
+            "slug":"/search?q=Eye &tbs=mr:1,root_cat:532150&Palettes&sortBy=massVolume",
+                          "parent": "Eye Makeup",
+                          "tbs": "mr:1,root_cat:532150"
+                      },
+                      {
+                          "name": "Eyeliner",
+            "slug":"/search?q=Eyeliner&&tbs=mr:1,root_cat:529739&sortBy=massVolume",
+                          "parent": "Eye Makeup",
+                          "tbs": "mr:1,root_cat:529739"
+                      },
+                      {
+                          "name": "Under-Eye Concealer",
+            "slug":"/search?q=Under-&tbs=mr:1,root_cat:542861&Eye Concealer&sortBy=massVolume",
+                          "parent": "Eye Makeup",
+                          "tbs": "mr:1,root_cat:542861"
+                      }
+                  ]
+              }
+          ]
+      }
+  ]
+}
+
