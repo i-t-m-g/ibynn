@@ -8,20 +8,15 @@ import { cache as cacheMiddleware } from "./middleware/cache.js";
 import { config } from "dotenv";
 import * as request from "./serp/requests/request.js";
 import { createRequire } from "module";
-import { getCheerio } from "./serp/scrape/scrape.js";
 import axios from "axios";
-import fs, { read } from "fs";
-import path from "node:path"
-import {fileURLToPath} from 'url';
-import FormData from 'form-data';
 
 
 const require = createRequire(import.meta.url);
 const mailchimp = require('@mailchimp/mailchimp_marketing');
 
 mailchimp.setConfig({
-  apiKey: 'edfbb7bf6a52024cd372cf941d429c6c-us21',
-  server: 'us21',
+  apiKey: "cbde68b8e20004d7478cdddc1f0e2fe7-us21",
+  server: "us21",
 });
 
 
@@ -61,134 +56,36 @@ app.get("/json/:jsonFile", (req, res) => {
   res.json(json);
 });
 
-app.get("/taxes", async (req,res) => {
-  const categories = [
-    "Luggage & Bags",
-    "Luggage & Bags > Backpacks",
-    "Luggage & Bags > Briefcases",
-    "Luggage & Bags > Cosmetic & Toiletry Bags",
-    "Luggage & Bags > Diaper Bags",
-    "Luggage & Bags > Dry Boxes",
-    "Luggage & Bags > Duffel Bags",
-    "Luggage & Bags > Fanny Packs",
-    "Luggage & Bags > Garment Bags",
-    "Luggage & Bags > Luggage Accessories",
-    "Luggage & Bags > Luggage Accessories > Dry Box Liners & Inserts",
-    "Luggage & Bags > Luggage Accessories > Luggage Covers",
-    "Luggage & Bags > Luggage Accessories > Luggage Racks & Stands",
-    "Luggage & Bags > Luggage Accessories > Luggage Straps",
-    "Luggage & Bags > Luggage Accessories > Luggage Tags",
-    "Luggage & Bags > Luggage Accessories > Packing Organizers",
-    "Luggage & Bags > Luggage Accessories > Travel Bottles & Containers",
-    "Luggage & Bags > Luggage Accessories > Travel Pouches",
-    "Luggage & Bags > Messenger Bags",
-    "Luggage & Bags > Shopping Totes",
-    "Luggage & Bags > Suitcases",
-    "Luggage & Bags > Train Cases",
-  ];
+app.get("/get-category", async (req,res) => {
+  const category = "Sporting Goods";
+  const query = encodeURIComponent(category);
+  const url = request.serpShoppingUrl(query);
+  const { data:response } = await axios.get(url);
+  const categoryFilter = response.filters.filter(i => i.type === "Category")[0];
+  const categoryObj = {
+    text: category,
+    tbs: "",
+    children: categoryFilter?.options
+  };
 
-  try {
-    for (const category of  categories) {
-        const q = encodeURIComponent(category);
-        const catObj = {
-            "name": category,
-            "children": []
-        };
-        
-        const url = request.serpShoppingUrl(q);
-        const { data: response } = await axios.get(url);
-        const categoryFilter = response.filters.filter(v => v.type = "Category");
-        
+  const allCats = [categoryObj];
+  let currChildren;
+  let i = 0;
+  do {
+    const cat = categoryObj.children[i].text;
+    const q = encodeURIComponent(cat);
+    const { data:response } = await axios.get(request.serpShoppingUrl(q));
+    const catChildren = response.filters.filter(i => i.type === "Category")[0]?.options;
+    const indx = allCats[0].children.findIndex(i => i.text === cat);
 
-    }
-    
-  } catch (error) {
-    
-  }
-  res.send(urls);
-})
-
-app.get("/cat_ids", async (req, res) => {
-  const catIDList = [];
-  const emptySubCats = [];
-  const noSubCats = [];
-  const subCategories = [];
-  const subCatIdList = [];
-  const categories = [
-    "Kitchen",
-    "Kitchen Tools & Utensils",
-    "Aprons",
-    "Baking Peels",
-    "Basters",
-    "Basting Brushes"
-  ];
-
-  try {
-    for (const category of  categories) {
-        const catObj = {
-            "name": category,
-            "children": []
-        };
-        const catidres = await getCatIds(category);
-        catObj.children = catidres;
-        catIDList.push(catObj);
-
-    }
-
-    catIDList.forEach(v => {
-      if (v.title) {
-        const title = v.title.replace(/&/g, "and");
-        subCategories.push(title);
-
-      }
-    });
-
-    for (const subCat of subCategories) {
-      const catidres = await getCatIds(subCat);
-      subCatIdList.push(...catidres);
-    }
-
-    
-
-    res.send(catIDList);
+    allCats[0].children[indx].children = catChildren;
 
 
-  } catch (error) {
-    res.send(error);
-  }
+    i++;
+  } while (i < categoryObj.children.length);
 
-
+  res.send(allCats);
 });
-
-
-const getCatIds = async (category) => {
-  const catIDList = [];
-  const emptySubCats = [];
-  const noSubCats = [];
-
-    const url = request.serpShoppingUrl(category);
-    const { data: response } = await axios.get(url);
-    const queryResult = response;
-    const categoryResult = queryResult.filters.filter(f => f.type === "Category");
-
-    if (categoryResult.length > 0) {
-      
-      categoryResult[0].options.forEach(o => {
-        let catId = {name: "",parent: "",slug: ""};
-        catId.name = o.text;
-        catId.parent = category;
-        catId.slug = `/search?q=${o.text}&sortBy=massVolume&tbs=` + o.tbs;
-        catIDList.push(catId);
-      });
-
-
-    } else {
-        catIDList.name = category;
-    }
-
-  return catIDList;
-
-}
 
 app.get("/shopping", caching, async (req, res) => {
   const query = req.query.q;
@@ -241,8 +138,8 @@ app.get("/compare", async (req, res) => {
 app.get("/subscribe", async (req,res) => {
   const listID = "f38ba58e34";
   const email = req.query.email;
-  const fName = req.query.fName;
-  const lName = req.query.lName;
+  const fName = req.query.fName || "";
+  const lName = req.query.lName || "";
   const jsonData = {
     email_address: email,
     status: "subscribed",
@@ -255,65 +152,6 @@ app.get("/subscribe", async (req,res) => {
   const response = await mailchimp.lists.addListMember(listID, jsonData);
   res.send(response);
 })
-
-
-const getimage = async (categories,json,tbs) => {
-  const cats = [];
-
-  for await (const cat of categories) {
-    const q = encodeURIComponent(json[cat.name]);
-    const url = request.serpShoppingUrl(q,tbs);
-    const { data:response } = await axios.get(url);
-    const images = response?.shopping_results?.map(r => r.thumbnail);
-    cat.images = images?.length > 0 ? images : [images?.length > 0 ? images : [url]];
-    if (images?.length > 0) console.log(images[0]);
-
-    const image = {
-      "mobile": {
-        "url": images?.length > 0 ? images[0] : "no shopping results",
-        "width": 475,
-        "height": 250
-      },
-      "desktop": {
-        "url": images?.length > 0 ? images[0] : "no shopping results",
-        "width": 475,
-        "height": 250
-      }
-    }
-
-    cat.image = image;
-    cats.push(cat);
-    if (cat?.children?.length > 0) getimage(cat.children,json,tbs);
-  }
-
-  // categories?.forEach(async (cat, i) => {
-  //   const q = encodeURIComponent(json[cat.name]);
-  //   const url = request.serpShoppingUrl(q,tbs);
-  //   const { data:response } = await axios.get(url);
-  //   // const images = response?.shopping_results?.map(r => r.thumbnail);
-  //   // cat.images = images?.length > 0 ? images : [url];
-  //   // console.log(images[0]);
-
-  //   const image = {
-  //     "mobile": {
-  //       "url": url,
-  //       "width": 475,
-  //       "height": 250
-  //     },
-  //     "desktop": {
-  //       "url": url,
-  //       "width": 475,
-  //       "height": 250
-  //     }
-  //   }
-
-  //   cat.image = image;
-  //   cats.push(cat);
-  //   if (cat?.children?.length > 0) getimage(cat.children,json,tbs);
-  // });
-
-  return cats;
-}
 
 // starting the server
 app.listen(9476, () => {
