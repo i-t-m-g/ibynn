@@ -4,6 +4,7 @@
             "name": "Apparel & Accessories",
             "slug": "/search?q=Apparel+and+Accessories&sortBy=massVolume&tbs=",
             "tbs": "",
+            "isMainCat": true,
             "children": [
                 {
                     "name": "Shirts & Tops",
@@ -562,6 +563,7 @@
             "name": "Baby & Toddler",
             "slug": "/search?q=Baby & Toddler&sortBy=massVolume&tbs=",
             "tbs": "",
+            "isMainCat": true,
             "children": [
                 {
                     "name": "Toddler Clothing",
@@ -746,6 +748,7 @@
             "name": "Electronics",
             "slug": "/search?q=Electronics&sortBy=massVolume&tbs=",
             "tbs": "",
+            "isMainCat": true,
             "children": [
                 {
                     "name": "Audio",
@@ -1339,6 +1342,7 @@
             "name": "Furniture",
             "slug": "/search?q=Furniture&sortBy=massVolume&tbs=",
             "tbs": "",
+            "isMainCat": true,
             "children": [
                 {
                     "name": "Furniture Sets",
@@ -1492,6 +1496,7 @@
             "name": "Health & Beauty",
             "slug": "/search?q=Health & Beauty&sortBy=massVolume&tbs=",
             "tbs": "",
+            "isMainCat": true,
             "children": [
                 {
                     "name": "Face Makeup",
@@ -1930,6 +1935,7 @@
             "name": "Home & Garden",
             "slug": "/search?q=Home & Garden&sortBy=massVolume&tbs=",
             "tbs": "",
+            "isMainCat": true,
             "children": [
                 {
                     "name": "Pots & Planters",
