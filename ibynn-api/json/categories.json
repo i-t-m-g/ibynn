@@ -1,9 +1,715 @@
 {
     "data": [
         {
+        "name": "Back To School Supplies",
+        "tbs": "",
+        "slug": "/search?q=Back To School SuppliessortBy=massVolume&tbs=",
+        "children": [
+            {
+                "name": "Book Accessories",
+                "tbs": "",
+                "slug": "/search?q=Book AccessoriessortBy=massVolume&tbs=",
+                "children": [
+                    {
+                        "name": "Book Covers",
+                        "tbs": "",
+                        "slug": "/search?q=Book Covers&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Book Lights",
+                        "tbs": "",
+                        "slug": "/search?q=Book Lights&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Book Stands & Rests",
+                        "tbs": "",
+                        "slug": "/search?q=Book Stands & Rests&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Bookmarks",
+                        "tbs": "",
+                        "slug": "/search?q=Bookmarks&sortBy=massVolume&tbs="
+                    }
+                ]
+            },
+            {
+                "name": "Filing & Organization",
+                "tbs": "",
+                "slug": "/search?q=Filing & OrganizationsortBy=massVolume&tbs=",
+                "children": [
+                    {
+                        "name": "Address Books",
+                        "tbs": "",
+                        "slug": "/search?q=Address Books&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Binding Supplies",
+                        "tbs": "",
+                        "slug": "/search?q=Binding SuppliessortBy=massVolume&tbs=",
+                        "children": [
+                            {
+                                "name": "Binder Accessories",
+                                "tbs": "",
+                                "slug": "/search?q=Binder Accessories&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Binder Rings",
+                                "tbs": "",
+                                "slug": "/search?q=Binder Rings&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Index Dividers",
+                                "tbs": "",
+                                "slug": "/search?q=Index Dividers&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Sheet Protectors",
+                                "tbs": "",
+                                "slug": "/search?q=Sheet Protectors&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Binders",
+                                "tbs": "",
+                                "slug": "/search?q=Binders&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Binding Combs & Spines",
+                                "tbs": "",
+                                "slug": "/search?q=Binding Combs & Spines&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Binding Machines",
+                                "tbs": "",
+                                "slug": "/search?q=Binding Machines&sortBy=massVolume&tbs="
+                            }
+    
+                        ]
+                    },
+                    {
+                        "name": "Business Card Books",
+                        "tbs": "",
+                        "slug": "/search?q=Business Card Books&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Business Card Stands",
+                        "tbs": "",
+                        "slug": "/search?q=Business Card Stands&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "CD/DVD Cases & Organizers",
+                        "tbs": "",
+                        "slug": "/search?q=CD/DVD Cases & Organizers&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Calendars, Organizers & Planners",
+                        "tbs": "",
+                        "slug": "/search?q=Calendars, Organizers & Planners&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Card Files",
+                        "tbs": "",
+                        "slug": "/search?q=Card Files&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Card Sleeves",
+                        "tbs": "",
+                        "slug": "/search?q=Card Sleeves&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Cash Boxes",
+                        "tbs": "",
+                        "slug": "/search?q=Cash Boxes&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Desk Organizers",
+                        "tbs": "",
+                        "slug": "/search?q=Desk Organizers&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "File Boxes",
+                        "tbs": "",
+                        "slug": "/search?q=File Boxes&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "File Folders",
+                        "tbs": "",
+                        "slug": "/search?q=File Folders&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Folders & Report Covers",
+                        "tbs": "",
+                        "slug": "/search?q=Folders & Report Covers&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Pocket Folders",
+                        "tbs": "",
+                        "slug": "/search?q=Pocket Folders&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Report Covers",
+                        "tbs": "",
+                        "slug": "/search?q=Report Covers&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Greeting Card Organizers",
+                        "tbs": "",
+                        "slug": "/search?q=Greeting Card Organizers&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Mail Sorters",
+                        "tbs": "",
+                        "slug": "/search?q=Mail Sorters&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Pen & Pencil Cases",
+                        "tbs": "",
+                        "slug": "/search?q=Pen & Pencil Cases&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Padfolios",
+                        "tbs": "",
+                        "slug": "/search?q=Padfolios&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Portfolios",
+                        "tbs": "",
+                        "slug": "/search?q=Portfolios&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Recipe Card Boxes",
+                        "tbs": "",
+                        "slug": "/search?q=Recipe Card Boxes&sortBy=massVolume&tbs="
+                    }
+    
+                ]
+            },
+            {
+                "name": "General Office Supplies",
+                "tbs": "",
+                "slug": "/search?q=General Office SuppliessortBy=massVolume&tbs=",
+                "children": [
+                    {
+                        "name": "Correction Fluids",
+                        "tbs": "",
+                        "slug": "/search?q=Correction Fluids&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Correction Pens",
+                        "tbs": "",
+                        "slug": "/search?q=Correction Pens&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Correction Tapes",
+                        "tbs": "",
+                        "slug": "/search?q=Correction Tapes&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Erasers",
+                        "tbs": "",
+                        "slug": "/search?q=Erasers&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Labels & Tags",
+                        "tbs": "",
+                        "slug": "/search?q=Labels & TagssortBy=massVolume&tbs=",
+                        "children": [
+                            {
+                                "name": "Address Labels",
+                                "tbs": "",
+                                "slug": "/search?q=Address Labels&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Folder Tabs",
+                                "tbs": "",
+                                "slug": "/search?q=Folder Tabs&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Label Clips",
+                                "tbs": "",
+                                "slug": "/search?q=Label Clips&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Label Tapes & Refill Rolls",
+                                "tbs": "",
+                                "slug": "/search?q=Label Tapes & Refill Rolls&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Shipping Labels",
+                                "tbs": "",
+                                "slug": "/search?q=Shipping Labels&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Shipping Tags",
+                                "tbs": "",
+                                "slug": "/search?q=Shipping Tags&sortBy=massVolume&tbs="
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Laminating Film, Pouches & Sheets",
+                        "tbs": "",
+                        "slug": "/search?q=Laminating Film, Pouches & Sheets&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Mounting Putty",
+                        "tbs": "",
+                        "slug": "/search?q=Mounting Putty&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Office Tape",
+                        "tbs": "",
+                        "slug": "/search?q=Office Tape&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Binder Clips",
+                        "tbs": "",
+                        "slug": "/search?q=Binder Clips&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Paper Clips",
+                        "tbs": "",
+                        "slug": "/search?q=Paper Clips&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Paper Products",
+                        "tbs": "",
+                        "slug": "/search?q=Paper ProductssortBy=massVolume&tbs=",
+                        "children": [
+                            {
+                                "name": "Binder Paper",
+                                "tbs": "",
+                                "slug": "/search?q=Binder Paper&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Blank ID Cards",
+                                "tbs": "",
+                                "slug": "/search?q=Blank ID Cards&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Business Cards",
+                                "tbs": "",
+                                "slug": "/search?q=Business Cards&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Business Forms & Receipts",
+                                "tbs": "",
+                                "slug": "/search?q=Business Forms & Receipts&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Checks",
+                                "tbs": "",
+                                "slug": "/search?q=Checks&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Cover Paper",
+                                "tbs": "",
+                                "slug": "/search?q=Cover Paper&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Envelopes",
+                                "tbs": "",
+                                "slug": "/search?q=Envelopes&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Index Cards",
+                                "tbs": "",
+                                "slug": "/search?q=Index Cards&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Notebooks & Notepads",
+                                "tbs": "",
+                                "slug": "/search?q=Notebooks & Notepads&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Post Cards",
+                                "tbs": "",
+                                "slug": "/search?q=Post Cards&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Printer & Copier Paper",
+                                "tbs": "",
+                                "slug": "/search?q=Printer & Copier Paper&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Receipt & Adding Machine Paper Rolls",
+                                "tbs": "",
+                                "slug": "/search?q=Receipt & Adding Machine Paper Rolls&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Stationery",
+                                "tbs": "",
+                                "slug": "/search?q=Stationery&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Sticky Notes",
+                                "tbs": "",
+                                "slug": "/search?q=Sticky Notes&sortBy=massVolume&tbs="
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Rubber Bands",
+                        "tbs": "",
+                        "slug": "/search?q=Rubber Bands&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Staples",
+                        "tbs": "",
+                        "slug": "/search?q=Staples&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Tacks & Pushpins",
+                        "tbs": "",
+                        "slug": "/search?q=Tacks & Pushpins&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Office Equipment",
+                        "tbs": "",
+                        "slug": "/search?q=Office EquipmentsortBy=massVolume&tbs=",
+                        "children": [
+                            {
+                                "name": "Calculator Accessories",
+                                "tbs": "",
+                                "slug": "/search?q=Calculator Accessories&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Calculators",
+                                "tbs": "",
+                                "slug": "/search?q=Calculators&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Basic Calculators",
+                                "tbs": "",
+                                "slug": "/search?q=Basic Calculators&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Construction Calculators",
+                                "tbs": "",
+                                "slug": "/search?q=Construction Calculators&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Financial Calculators",
+                                "tbs": "",
+                                "slug": "/search?q=Financial Calculators&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Graphing Calculators",
+                                "tbs": "",
+                                "slug": "/search?q=Graphing Calculators&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Scientific Calculators",
+                                "tbs": "",
+                                "slug": "/search?q=Scientific Calculators&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Electronic Dictionaries & Translators",
+                                "tbs": "",
+                                "slug": "/search?q=Electronic Dictionaries & Translators&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Label Makers",
+                                "tbs": "",
+                                "slug": "/search?q=Label Makers&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Laminators",
+                                "tbs": "",
+                                "slug": "/search?q=Laminators&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Office Shredders",
+                                "tbs": "",
+                                "slug": "/search?q=Office Shredders&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Postage Meters",
+                                "tbs": "",
+                                "slug": "/search?q=Postage Meters&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Time & Attendance Clocks",
+                                "tbs": "",
+                                "slug": "/search?q=Time & Attendance Clocks&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Transcribers & Dictation Systems",
+                                "tbs": "",
+                                "slug": "/search?q=Transcribers & Dictation Systems&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Typewriters",
+                                "tbs": "",
+                                "slug": "/search?q=Typewriters&sortBy=massVolume&tbs="
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Office Instruments",
+                "tbs": "",
+                "slug": "/search?q=Office InstrumentssortBy=massVolume&tbs=",
+                "children": [
+                    {
+                        "name": "Call Bells",
+                        "tbs": "",
+                        "slug": "/search?q=Call Bells&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Clipboards",
+                        "tbs": "",
+                        "slug": "/search?q=Clipboards&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Letter Openers",
+                        "tbs": "",
+                        "slug": "/search?q=Letter Openers&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Magnifiers",
+                        "tbs": "",
+                        "slug": "/search?q=Magnifiers&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Office Rubber Stamps",
+                        "tbs": "",
+                        "slug": "/search?q=Office Rubber Stamps&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Pencil Sharpeners",
+                        "tbs": "",
+                        "slug": "/search?q=Pencil Sharpeners&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Staple Removers",
+                        "tbs": "",
+                        "slug": "/search?q=Staple Removers&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Staplers",
+                        "tbs": "",
+                        "slug": "/search?q=Staplers&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Tape Dispensers",
+                        "tbs": "",
+                        "slug": "/search?q=Tape Dispensers&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Writing & Drawing Instrument Accessories",
+                        "tbs": "",
+                        "slug": "/search?q=Writing & Drawing Instrument AccessoriessortBy=massVolume&tbs=",
+                        "children": [
+                            {
+                                "name": "Highlighter Refills",
+                                "tbs": "",
+                                "slug": "/search?q=Highlighter Refills&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Marker Refills",
+                                "tbs": "",
+                                "slug": "/search?q=Marker Refills&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Pen Ink & Refills",
+                                "tbs": "",
+                                "slug": "/search?q=Pen Ink & Refills&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Pencil Lead & Refills",
+                                "tbs": "",
+                                "slug": "/search?q=Pencil Lead & Refills&sortBy=massVolume&tbs="
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Writing & Drawing Instruments",
+                        "tbs": "",
+                        "slug": "/search?q=Writing & Drawing InstrumentssortBy=massVolume&tbs=",
+                        "children": [
+                            {
+                                "name": "Art Charcoals",
+                                "tbs": "",
+                                "slug": "/search?q=Art Charcoals&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Chalk",
+                                "tbs": "",
+                                "slug": "/search?q=Chalk&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Crayons",
+                                "tbs": "",
+                                "slug": "/search?q=Crayons&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Highlighters",
+                                "tbs": "",
+                                "slug": "/search?q=Highlighters&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Markers",
+                                "tbs": "",
+                                "slug": "/search?q=Markers&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Multifunction Writing Instruments",
+                                "tbs": "",
+                                "slug": "/search?q=Multifunction Writing Instruments&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Pastels",
+                                "tbs": "",
+                                "slug": "/search?q=Pastels&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Pens & Pencils",
+                                "tbs": "",
+                                "slug": "/search?q=Pens & PencilssortBy=massVolume&tbs=",
+                                "children": [
+                                    {
+                                        "name": "Pen & Pencil Sets",
+                                        "tbs": "",
+                                        "slug": "/search?q=Pen & Pencil Sets&sortBy=massVolume&tbs="
+                                    },
+                                    {
+                                        "name": "Pencils",
+                                        "tbs": "",
+                                        "slug": "/search?q=Pencils&sortBy=massVolume&tbs="
+                                    },
+                                    {
+                                        "name": "Art Pencils",
+                                        "tbs": "",
+                                        "slug": "/search?q=Art Pencils&sortBy=massVolume&tbs="
+                                    },
+                                    {
+                                        "name": "Writing Pencils",
+                                        "tbs": "",
+                                        "slug": "/search?q=Writing Pencils&sortBy=massVolume&tbs="
+                                    },
+                                    {
+                                        "name": "Mechanical Pencils",
+                                        "tbs": "",
+                                        "slug": "/search?q=Mechanical Pencils&sortBy=massVolume&tbs="
+                                    },
+                                    {
+                                        "name": "Wooden Pencils",
+                                        "tbs": "",
+                                        "slug": "/search?q=Wooden Pencils&sortBy=massVolume&tbs="
+                                    },
+                                    {
+                                        "name": "Pens",
+                                        "tbs": "",
+                                        "slug": "/search?q=Pens&sortBy=massVolume&tbs="
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Presentation Supplies",
+                "tbs": "",
+                "slug": "/search?q=Presentation SuppliessortBy=massVolume&tbs=",
+                "children": [
+                    {
+                        "name": "Chalkboards",
+                        "tbs": "",
+                        "slug": "/search?q=Chalkboards&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Display Boards",
+                        "tbs": "",
+                        "slug": "/search?q=Display BoardssortBy=massVolume&tbs=",
+                        "children": [
+                            {
+                                "name": "Bulletin Board Accessories",
+                                "tbs": "",
+                                "slug": "/search?q=Bulletin Board Accessories&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Bulletin Board Trim",
+                                "tbs": "",
+                                "slug": "/search?q=Bulletin Board Trim&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Bulletin Board Trim Sets",
+                                "tbs": "",
+                                "slug": "/search?q=Bulletin Board Trim Sets&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Bulletin Boards",
+                                "tbs": "",
+                                "slug": "/search?q=Bulletin Boards&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Foam Boards",
+                                "tbs": "",
+                                "slug": "/search?q=Foam Boards&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Mounting Boards",
+                                "tbs": "",
+                                "slug": "/search?q=Mounting Boards&sortBy=massVolume&tbs="
+                            },
+                            {
+                                "name": "Poster Boards",
+                                "tbs": "",
+                                "slug": "/search?q=Poster Boards&sortBy=massVolume&tbs="
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Document Cameras",
+                        "tbs": "",
+                        "slug": "/search?q=Document Cameras&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Dry-Erase Boards",
+                        "tbs": "",
+                        "slug": "/search?q=Dry-Erase Boards&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Easel Pads",
+                        "tbs": "",
+                        "slug": "/search?q=Easel Pads&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Easels",
+                        "tbs": "",
+                        "slug": "/search?q=Easels&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Laser Pointers",
+                        "tbs": "",
+                        "slug": "/search?q=Laser Pointers&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Lecterns",
+                        "tbs": "",
+                        "slug": "/search?q=Lecterns&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Transparencies",
+                        "tbs": "",
+                        "slug": "/search?q=Transparencies&sortBy=massVolume&tbs="
+                    },
+                    {
+                        "name": "Wireless Presenters",
+                        "tbs": "",
+                        "slug": "/search?q=Wireless Presenters&sortBy=massVolume&tbs="
+                    }
+                ]
+            }
+        ]
+    },
+        {
             "name": "Apparel & Accessories",
             "slug": "/search?q=Apparel+and+Accessories&sortBy=massVolume&tbs=",
             "tbs": "",
+            "isMainCat": true,
             "children": [
                 {
                     "name": "Shirts & Tops",
@@ -562,6 +1268,7 @@
             "name": "Baby & Toddler",
             "slug": "/search?q=Baby & Toddler&sortBy=massVolume&tbs=",
             "tbs": "",
+            "isMainCat": true,
             "children": [
                 {
                     "name": "Toddler Clothing",
@@ -746,6 +1453,7 @@
             "name": "Electronics",
             "slug": "/search?q=Electronics&sortBy=massVolume&tbs=",
             "tbs": "",
+            "isMainCat": true,
             "children": [
                 {
                     "name": "Audio",
@@ -827,8 +1535,8 @@
                     "tbs": "mr:1,root_cat:529673"
                 },
                 {
-                    "name": "Electronics > Communications",
-                    "slug": "/search?q=Electronics > Communications&sortBy=massVolume&tbs=",
+                    "name": "Communications",
+                    "slug": "/search?q=Communications&sortBy=massVolume&tbs=",
                     "tbs": "",
                     "children": [
                         {
@@ -1339,6 +2047,7 @@
             "name": "Furniture",
             "slug": "/search?q=Furniture&sortBy=massVolume&tbs=",
             "tbs": "",
+            "isMainCat": true,
             "children": [
                 {
                     "name": "Furniture Sets",
@@ -1492,6 +2201,7 @@
             "name": "Health & Beauty",
             "slug": "/search?q=Health & Beauty&sortBy=massVolume&tbs=",
             "tbs": "",
+            "isMainCat": true,
             "children": [
                 {
                     "name": "Face Makeup",
@@ -1659,8 +2369,8 @@
                     ]
                 },
                 {
-                    "name": "Health & Beauty > Health Care",
-                    "slug": "/search?q=Health & Beauty > Health Care&sortBy=massVolume&tbs=",
+                    "name": "Health Care",
+                    "slug": "/search?q=Health Care&sortBy=massVolume&tbs=",
                     "tbs": "",
                     "children": [
                         {
@@ -1930,6 +2640,7 @@
             "name": "Home & Garden",
             "slug": "/search?q=Home & Garden&sortBy=massVolume&tbs=",
             "tbs": "",
+            "isMainCat": true,
             "children": [
                 {
                     "name": "Pots & Planters",

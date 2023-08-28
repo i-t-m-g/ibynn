@@ -87,6 +87,7 @@ app.get("/get-category", async (req,res) => {
   res.send(allCats);
 });
 
+
 app.get("/shopping", caching, async (req, res) => {
   const query = req.query.q;
   const sortBy = req.query.sortBy;
@@ -95,7 +96,6 @@ app.get("/shopping", caching, async (req, res) => {
   const min_price = req.query.min_price ?? 0;
 
   try {
-
     const results = await request.getSerpShopping(
       query,
       sortBy ?? null,
@@ -104,15 +104,14 @@ app.get("/shopping", caching, async (req, res) => {
     results.position = 1;
 
     if (results.shopping_results) { 
+        res.send(results);
 
-      // res.send(results);
+        const pages = await request.retrievePages(results.serpapi_pagination,sortBy);
+        pages.unshift(...results.shopping_results);
 
-      // const pages = await request.retrievePages(results.serpapi_pagination,sortBy);
-      // pages.unshift(...results.shopping_results);
-
-      // results.shopping_results = pages;
-      // client.setEx(query, 604800, JSON.stringify(results));
-      res.send(results);
+        results.shopping_results = pages;
+        results.length = results.shopping_results.length;
+        client.setEx(query, 604800, JSON.stringify(results));
 
     } else {
       throw results;
