@@ -3,6 +3,7 @@
         {
         "name": "Back To School Supplies",
         "tbs": "",
+        "isMainCat": true,
         "slug": "/search?q=Back To School SuppliessortBy=massVolume&tbs=",
         "children": [
             {
@@ -278,7 +279,7 @@
                             {
                                 "name": "Binder Paper",
                                 "tbs": "",
-                                "slug": "/search?q=Binder Paper&sortBy=massVolume&tbs="
+                                "slug": "/search?q=Binder Paper&sortBy=amount&tbs="
                             },
                             {
                                 "name": "Blank ID Cards",
@@ -303,7 +304,7 @@
                             {
                                 "name": "Cover Paper",
                                 "tbs": "",
-                                "slug": "/search?q=Cover Paper&sortBy=massVolume&tbs="
+                                "slug": "/search?q=Cover Paper&sortBy=amount&tbs="
                             },
                             {
                                 "name": "Envelopes",
@@ -313,7 +314,7 @@
                             {
                                 "name": "Index Cards",
                                 "tbs": "",
-                                "slug": "/search?q=Index Cards&sortBy=massVolume&tbs="
+                                "slug": "/search?q=Index Cards&sortBy=amount&tbs="
                             },
                             {
                                 "name": "Notebooks & Notepads",
