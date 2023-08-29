@@ -708,6 +708,7 @@
         },
         {
             "name":  "Cosmetics",
+            "isMainCat": true,
             "tbs": "",
             "slug": "/search?q=Cosmetics&sortBy=massVolume&tbs=",
             "children": [
