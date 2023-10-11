@@ -9,12 +9,9 @@ import {
 
 const api_key = () => "&api_key=" + process.env.API_KEY;
 export const serpShoppingUrl = (query,tbs, merchagg) =>
-  `https://serpapi.com/search.json?q=${query}${api_key()}&engine=google&google_domain=google.com&gl=us&hl=en&num=100&tbm=shop${`&tbs=mr:1,p_ord:p,avg_rating:400,${tbs},${merchagg}`}`;
+  `https://serpapi.com/search.json?q=${query}${api_key()}&engine=google&google_domain=google.com&gl=us&hl=en&num=100&tbm=shop${`&tbs=mr:1,p_ord:p,avg_rating:200,${tbs},${merchagg}`}`;
 const productPageUrl = (product_id) =>
   `https://serpapi.com/search.json?engine=google_product&product_id=${product_id}&gl=us&hl=en&api_key=${process.env.API_KEY}`;
-
-export const getTbs = (min_price = 0) =>
-  `&&tbs=mr:1,price:1,ppr_max:${min_price},merchagg:g10105730%7Cg7187155%7Cg784994%7Cm125210027%7Cm463001233%7Cm530574019%7Cm1172711%7Cm138332207%7Cm1311674%7Cm10046%7Cm1247713,avg_rating:400`;
 
 export const addIcons = (arr) => {
   if (arr) {
