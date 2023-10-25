@@ -8,8 +8,8 @@ import {
 } from "../../scripts/constants/constants.js";
 
 const api_key = () => "&api_key=" + process.env.API_KEY;
-export const serpShoppingUrl = (query,tbs, merchagg) =>
-  `https://serpapi.com/search.json?q=${query}${api_key()}&engine=google&google_domain=google.com&gl=us&hl=en&num=100&tbm=shop${`&tbs=mr:1,p_ord:p,avg_rating:200,${tbs},${merchagg}`}`;
+export const serpShoppingUrl = (query,tbs, merchagg, p_ord='p') =>
+  `https://serpapi.com/search.json?q=${query}${api_key()}&engine=google&google_domain=google.com&gl=us&hl=en&num=100&tbm=shop${`&tbs=mr:1,p_ord:${p_ord},avg_rating:200,${tbs},${merchagg}`}`;
 const productPageUrl = (product_id) =>
   `https://serpapi.com/search.json?engine=google_product&product_id=${product_id}&gl=us&hl=en&api_key=${process.env.API_KEY}`;
 
@@ -131,9 +131,8 @@ export const getPageAtUrl = async (url,sort_by) => {
   return products;
 }
 
-export async function getSerpShopping(query, sort_by, tbs, merchagg) {
-  const url = serpShoppingUrl(query,tbs, merchagg);
-  console.log(url)
+export async function getSerpShopping(query, sort_by, tbs, merchagg, p_ord='p') {
+  const url = serpShoppingUrl(query,tbs, merchagg, p_ord);
   const { data: response } = await axios.get(url);
   const products = {};
   products.search_information = response.search_information;
