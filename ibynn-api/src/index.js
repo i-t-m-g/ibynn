@@ -123,6 +123,38 @@ app.get("/shopping", caching, async (req, res) => {
   }
 });
 
+app.get("/search-shopping", caching, async (req, res) => {
+  const query = req.query.q;
+  const sortBy = req.query.sortBy;
+  const tbs = req.query.tbs;
+  const merchagg = req.query.merchagg;
+  const page = req.query.page;
+  const min_price = req.query.min_price ?? 0;
+
+  try {
+    const results = await request.getSerpShopping(
+      query,
+      sortBy ?? null,
+      tbs,
+      merchagg ?? null,
+      'r'
+    );
+    results.position = 1;
+
+    if (results.shopping_results) { 
+
+        res.send(results);
+        results.length = results.shopping_results.length;
+        client.setEx(query, 604800, JSON.stringify(results));
+
+    } else {
+      throw results;
+    }
+  } catch (error) {
+    res.send(error);
+  }
+});
+
 app.get("/compare", async (req, res) => {
   const product_id = req.query.product_id;
   const sort_by = req.query.sort_by;
