@@ -2429,6 +2429,483 @@
             ]
         },
         {
+            "name": "Household Appliances",
+            "slug": "/search?q=Household Appliance&sortBy=massVolume&tbs=",
+            "tbs": "",
+            "isMainCat": true,
+            "children": [
+                        {
+                            "name": "Small Kitchen Appliances",
+                            "slug": "/search?q=Small Kitchen Appliances&sortBy=massVolume&tbs=mr:1,root_cat:531819",
+                            "tbs": "mr:1,root_cat:531819",
+                            "children": [
+                                {
+                                    "name": "Air Fryers",
+                                    "slug": "/search?q=Air Fryers&sortBy=massVolume&tbs=mr:1,root_cat:534867",
+                                    "tbs": "mr:1,root_cat:534867"
+                                },
+                                {
+                                    "name": "Cotton Candy Machines",
+                                    "tbs": "",
+                                    "slug": "/search?q=Cotton Candy Machines&sortBy=massVolume"
+                                },
+                                {
+                                    "name": "Deli Slicers",
+                                    "tbs": "",
+                                    "slug": "/search?q=Deli Slicers&sortBy=massVolume"
+                                },
+                                {
+                                    "name": "Electric Griddles & Grills",
+                                    "tbs": "",
+                                    "slug": "/search?q=Electric Griddles & Grills&sortBy=massVolume"
+                                },
+                                {
+                                    "name": "Electric Kettles",
+                                    "tbs": "",
+                                    "slug": "/search?q=Electric Kettles&sortBy=massVolume"
+                                },
+                                {
+                                    "name": "Electric Skillets & Woks",
+                                    "tbs": "",
+                                    "slug": "/search?q=Electric Skillets & Woks&sortBy=massVolume"
+                                },
+                                {
+                                    "name": "Fondue Pots & Sets",
+                                    "tbs": "",
+                                    "slug": "/search?q=Fondue Pots & Sets&sortBy=massVolume"
+                                },
+                                {
+                                    "name": "Food Cookers & Steamers",
+                                    "tbs": "mr:1,root_cat:534860",
+                                    "slug": "/search?q=Food Cookers & Steamers&sortBy=massVolume&tbs=mr:1,root_cat:534860",
+                                    "children": [
+                                        {
+                                            "name": "Egg Cookers",
+                                            "tbs": "",
+                                            "slug": "/search?q=Egg Cookers&sortBy=massVolume"
+                                        },
+                                        {
+                                            "name": "Food Steamers",
+                                            "tbs": "mr:1,root_cat:531798",
+                                            "slug": "/search?q=Food Steamers&sortBy=massVolume&tbs=mr:1,root_cat:531798"
+                                        },
+                                        {
+                                            "name": "Rice Cookers",
+                                            "tbs": "mr:1,root_cat:530042",
+                                            "slug": "/search?q=Rice Cookers&sortBy=massVolume&tbs=mr:1,root_cat:530042"
+                                        },
+                                        {
+                                            "name": "Slow Cookers",
+                                            "tbs": "mr:1,root_cat:530040",
+                                            "slug": "/search?q=Slow Cookers&sortBy=massVolume&tbs=mr:1,root_cat:530040"
+                                        },
+                                        {
+                                            "name": "Thermal Cookers",
+                                            "tbs": "",
+                                            "slug": "/search?q=Thermal Cookers&sortBy=massVolume"
+                                        },
+                                        {
+                                            "name": "Water Ovens",
+                                            "tbs": "",
+                                            "slug": "/search?q=Water Ovens&sortBy=massVolume"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Food Dehydrators",
+                                    "tbs": "",
+                                    "slug": "/search?q=Food Dehydrators&sortBy=massVolume"
+                                },
+                                {
+                                    "name": "Food Grinders & Mills",
+                                    "tbs": "",
+                                    "slug": "/search?q=Food Grinders & Mills&sortBy=massVolume"
+                                },
+                                {
+                                    "name": "Food Mixers & Blenders",
+                                    "tbs": "",
+                                    "slug": "/search?q=Food Mixers & Blenders&sortBy=massVolume"
+                                },
+                                {
+                                    "name": "Food Warmers",
+                                    "tbs": "",
+                                    "slug": "/search?q=Food Warmers&sortBy=massVolume",
+                                    "children": [
+                                        {
+                                            "name": "Chafing Dishes",
+                                            "tbs": "",
+                                            "slug": "/search?q=Chafing Dishes&sortBy=massVolume"
+                                        },
+                                        {
+                                            "name": "Food Heat Lamps",
+                                            "tbs": "",
+                                            "slug": "/search?q=Food Heat Lamps&sortBy=massVolume"
+                                        },
+                                        {
+                                            "name": "Rice Keepers",
+                                            "tbs": "",
+                                            "slug": "/search?q=Rice Keepers&sortBy=massVolume"
+                                        },
+                                        {
+                                            "name": "Steam Tables",
+                                            "tbs": "",
+                                            "slug": "/search?q=Steam Tables&sortBy=massVolume"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Soda Makers",
+                                    "tbs": "",
+                                    "slug": "/search?q=Soda Makers&sortBy=massVolume"
+                                },
+                                {
+                                    "name": "Soy Milk Makers",
+                                    "tbs": "",
+                                    "slug": "/search?q=Soy Milk Makers&sortBy=massVolume"
+                                },
+                                {
+                                    "name": "Tea Makers",
+                                    "tbs": "",
+                                    "slug": "/search?q=Tea Makers&sortBy=massVolume"
+                                },
+                                {
+                                    "name": "Beverage Warmers",
+                                    "tbs": "",
+                                    "slug": "/search?q=Beverage Warmers&sortBy=massVolume"
+                                },
+                                {
+                                    "name": "Breadmakers",
+                                    "tbs": "",
+                                    "slug": "/search?q=Breadmakers&sortBy=massVolume"
+                                },
+                                {
+                                    "name": "Chocolate Tempering Machines",
+                                    "tbs": "",
+                                    "slug": "/search?q=Chocolate Tempering Machines&sortBy=massVolume"
+                                },
+                                {
+                                    "name": "Coffee Makers & Espresso Machines",
+                                    "tbs": "",
+                                    "slug": "/search?q=Coffee Makers & Espresso Machines&sortBy=massVolume",
+                                    "children": [
+                                        {
+                                            "name": "Drip Coffee Makers",
+                                            "tbs": "",
+                                            "slug": "/search?q=Drip Coffee Makers&sortBy=massVolume"
+                                        },
+                                        {
+                                            "name": "Electric & Stovetop Espresso Pots",
+                                            "tbs": "",
+                                            "slug": "/search?q=Electric & Stovetop Espresso Pots&sortBy=massVolume"
+                                        },
+                                        {
+                                            "name": "Espresso Machines",
+                                            "tbs": "",
+                                            "slug": "/search?q=Espresso Machines&sortBy=massVolume"
+                                        },
+                                        {
+                                            "name": "French Presses",
+                                            "tbs": "",
+                                            "slug": "/search?q=French Presses&sortBy=massVolume"
+                                        },
+                                        {
+                                            "name": "Percolators",
+                                            "tbs": "",
+                                            "slug": "/search?q=Percolators&sortBy=massVolume"
+                                        },
+                                        {
+                                            "name": "Vacuum Coffee Makers",
+                                            "tbs": "",
+                                            "slug": "/search?q=Vacuum Coffee Makers&sortBy=massVolume"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Frozen Drink Makers",
+                                    "tbs": "",
+                                    "slug": "/search?q=Frozen Drink Makers&sortBy=massVolume"
+                                },
+                                {
+                                    "name": "Hot Drink Makers",
+                                    "tbs": "",
+                                    "slug": "/search?q=Hot Drink Makers&sortBy=massVolume"
+                                },
+                                {
+                                    "name": "Hot Plates",
+                                    "tbs": "",
+                                    "slug": "/search?q=Hot Plates&sortBy=massVolume"
+                                },
+                                {
+                                    "name": "Ice Cream Makers",
+                                    "tbs": "",
+                                    "slug": "/search?q=Ice Cream Makers&sortBy=massVolume"
+                                },
+                                {
+                                    "name": "Ice Crushers & Shavers",
+                                    "tbs": "",
+                                    "slug": "/search?q=Ice Crushers & Shavers&sortBy=massVolume"
+                                },
+                                {
+                                    "name": "Ice Makers",
+                                    "tbs": "",
+                                    "slug": "/search?q=Ice Makers&sortBy=massVolume"
+                                },
+                                {
+                                    "name": "Juicers",
+                                    "tbs": "",
+                                    "slug": "/search?q=Juicers&sortBy=massVolume"
+                                },
+                                {
+                                    "name": "Knife Sharpeners",
+                                    "tbs": "",
+                                    "slug": "/search?q=Knife Sharpeners&sortBy=massVolume"
+                                },
+                                {
+                                    "name": "Microwave Ovens",
+                                    "tbs": "",
+                                    "slug": "/search?q=Microwave Ovens&sortBy=massVolume"
+                                },
+                                {
+                                    "name": "Milk Frothers & Steamers",
+                                    "tbs": "",
+                                    "slug": "/search?q=Milk Frothers & Steamers&sortBy=massVolume"
+                                },
+                                {
+                                    "name": "Mochi Makers",
+                                    "tbs": "",
+                                    "slug": "/search?q=Mochi Makers&sortBy=massVolume"
+                                },
+                                {
+                                    "name": "Pasta Makers",
+                                    "tbs": "",
+                                    "slug": "/search?q=Pasta Makers&sortBy=massVolume"
+                                },
+                                {
+                                    "name": "Popcorn Makers",
+                                    "tbs": "",
+                                    "slug": "/search?q=Popcorn Makers&sortBy=massVolume"
+                                },
+                                {
+                                    "name": "Portable Cooking Stoves",
+                                    "tbs": "",
+                                    "slug": "/search?q=Portable Cooking Stoves&sortBy=massVolume"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Refrigerators",
+                            "slug": "/search?q=Refrigerators&sortBy=massVolume&tbs=mr:1,root_cat:530043",
+                            "tbs": "mr:1,root_cat:530043",
+                            "children": [
+                                {
+                                    "name": "Counter Depth Refrigerators",
+                                    "slug": "/search?q=Counter Depth Refrigerators&sortBy=massVolume&tbs=mr:1,root_cat:534725",
+                                    "tbs": "mr:1,root_cat:534725"
+                                },
+                                {
+                                    "name": "Side by Side Refrigerators",
+                                    "slug": "/search?q=Side by Side Refrigerators&sortBy=massVolume&tbs=mr:1,root_cat:534730",
+                                    "tbs": "mr:1,root_cat:534730"
+                                },
+                                {
+                                    "name": "French Door Refrigerators",
+                                    "slug": "/search?q=French Door Refrigerators&sortBy=massVolume&tbs=mr:1,root_cat:534731",
+                                    "tbs": "mr:1,root_cat:534731"
+                                },
+                                {
+                                    "name": "Compact Refrigerators",
+                                    "slug": "/search?q=Compact Refrigerators&sortBy=massVolume&tbs=mr:1,root_cat:535585",
+                                    "tbs": "mr:1,root_cat:535585"
+                                },
+                                {
+                                    "name": "Top Freezer Refrigerators",
+                                    "slug": "/search?q=Top Freezer Refrigerators&sortBy=massVolume&tbs=mr:1,root_cat:534729",
+                                    "tbs": "mr:1,root_cat:534729"
+                                },
+                                {
+                                    "name": "Bottom Freezer Refrigerators",
+                                    "slug": "/search?q=Bottom Freezer Refrigerators&sortBy=massVolume&tbs=mr:1,root_cat:534728",
+                                    "tbs": "mr:1,root_cat:534728"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Cooktops",
+                            "tbs": "",
+                            "slug": "/search?q=Cooktops&sortBy=massVolume",
+                            "children": [
+                                {
+                                    "name": "Gas Cooktops",
+                                    "tbs": "mr:1,root_cat:",
+                                    "slug": "/search?q=Gas Cooktops&sortBy=massVolume&tbs=mr:1,root_cat:534752"
+                                },
+                                {
+                                    "name": "Electric Cooktops",
+                                    "tbs": "mr:1,root_cat:",
+                                    "slug": "/search?q=Electric Cooktops&sortBy=massVolume&tbs=mr:1,root_cat:534751"
+                                },
+                                {
+                                    "name": "Induction Cooktops",
+                                    "tbs": "mr:1,root_cat:",
+                                    "slug": "/search?q=Induction Cooktops&sortBy=massVolume&tbs=mr:1,root_cat:543767"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Toasters & Grills",
+                            "tbs": "",
+                            "slug": "/search?q=Toasters & Grills&sortBy=massVolume",
+                            "children": [
+                                {
+                                    "name": "Toaster Ovens",
+                                    "tbs": "mr:1,root_cat:530059",
+                                    "slug": "/search?q=Toaster Ovens&sortBy=massVolume&tbs=mr:1,root_cat:530059"
+                                },
+                                {
+                                    "name": "Donut Makers",
+                                    "tbs": "",
+                                    "slug": "/search?q=Donut Makers&sortBy=massVolume"
+                                },
+                                {
+                                    "name": "Muffin & Cupcake Makers",
+                                    "tbs": "",
+                                    "slug": "/search?q=Muffin & Cupcake Makers&sortBy=massVolume"
+                                },
+                                {
+                                    "name": "Pizza Makers & Ovens",
+                                    "tbs": "",
+                                    "slug": "/search?q=Pizza Makers & Ovens&sortBy=massVolume"
+                                },
+                                {
+                                    "name": "Pizzelle Makers",
+                                    "tbs": "",
+                                    "slug": "/search?q=Pizzelle Makers&sortBy=massVolume"
+                                },
+                                {
+                                    "name": "Pretzel Makers",
+                                    "tbs": "",
+                                    "slug": "/search?q=Pretzel Makers&sortBy=massVolume"
+                                },
+                                {
+                                    "name": "Sandwich Makers",
+                                    "tbs": "",
+                                    "slug": "/search?q=Sandwich Makers&sortBy=massVolume"
+                                },
+                                {
+                                    "name": "Toasters",
+                                    "tbs": "",
+                                    "slug": "/search?q=Toasters&sortBy=massVolume"
+                                },
+                                {
+                                    "name": "Tortilla & Flatbread Makers",
+                                    "tbs": "",
+                                    "slug": "/search?q=Tortilla & Flatbread Makers&sortBy=massVolume"
+                                },
+                                {
+                                    "name": "Waffle Irons",
+                                    "tbs": "",
+                                    "slug": "/search?q=Waffle Irons&sortBy=massVolume"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Ovens",
+                            "tbs": "",
+                            "slug": "/search?q=Ovens&sortBy=massVolume"
+                        },
+                        {
+                            "name": "Outdoor Grills",
+                            "tbs": "",
+                            "slug": "/search?q=Outdoor Grills&sortBy=massVolume"
+                        },
+                        {
+                            "name": "Ranges",
+                            "tbs": "",
+                            "slug": "/search?q=Ranges&sortBy=massVolume"
+                        },
+                        {
+                            "name": "Dishwashers",
+                            "tbs": "",
+                            "slug": "/search?q=Dishwashers&sortBy=massVolume"
+                        },
+                        {
+                            "name": "Deep Fryers",
+                            "slug": "/search?q=Deep Fryers&sortBy=massVolume&tbs=mr:1,root_cat:530391",
+                            "tbs": "mr:1,root_cat:530391"
+                        },
+                        {
+                            "name": "Freezers",
+                            "tbs": "",
+                            "slug": "/search?q=Freezers&sortBy=massVolume"
+                        },
+                        {
+                            "name": "Food Smokers",
+                            "tbs": "",
+                            "slug": "/search?q=Food Smokers&sortBy=massVolume"
+                        },
+                        {
+                            "name": "Garbage Disposals",
+                            "tbs": "",
+                            "slug": "/search?q=Garbage Disposals&sortBy=massVolume"
+                        },
+                        {
+                            "name": "Gas Griddles",
+                            "tbs": "",
+                            "slug": "/search?q=Gas Griddles&sortBy=massVolume"
+                        },
+                        {
+                            "name": "Range Hoods",
+                            "tbs": "",
+                            "slug": "/search?q=Range Hoods&sortBy=massVolume"
+                        },
+                        {
+                            "name": "Roaster Ovens & Rotisseries",
+                            "tbs": "",
+                            "slug": "/search?q=Roaster Ovens & Rotisseries&sortBy=massVolume"
+                        },
+                        {
+                            "name": "Trash Compactors",
+                            "tbs": "",
+                            "slug": "/search?q=Trash Compactors&sortBy=massVolume"
+                        },
+                        {
+                            "name": "Vacuum Sealers",
+                            "tbs": "",
+                            "slug": "/search?q=Vacuum Sealers&sortBy=massVolume"
+                        },
+                        {
+                            "name": "Water Coolers",
+                            "tbs": "",
+                            "slug": "/search?q=Water Coolers&sortBy=massVolume"
+                        },
+                        {
+                            "name": "Water Filters",
+                            "tbs": "",
+                            "slug": "/search?q=Water Filters&sortBy=massVolume"
+                        },
+                        {
+                            "name": "Wine Fridges",
+                            "tbs": "",
+                            "slug": "/search?q=Wine Fridges&sortBy=massVolume"
+                        },
+                        {
+                            "name": "Major Kitchen Appliance Packages",
+                            "slug": "/search?q=Major Kitchen Appliance Packages&sortBy=massVolume&tbs=mr:1,root_cat:534844",
+                            "tbs": "mr:1,root_cat:534844"
+                        },
+                        {
+                            "name": "Smart Appliances",
+                            "slug": "/search?q=Smart Appliances&sortBy=massVolume&tbs=mr:1,root_cat:538309",
+                            "tbs": "mr:1,root_cat:538309"
+                        },
+                        {
+                            "name": "Yogurt Makers",
+                            "tbs": "",
+                            "slug": "/search?q=Yogurt Makers&sortBy=massVolume"
+                        }
+            ]
+        },
+        {
             "name": "Health & Beauty",
             "slug": "/search?q=Health & Beauty&merchagg=merchagg:g102279194%7Cg8666297%7Cg6791503%7Cm6382239%7Cm10037%7Cm1552181%7Cm3748817%7Cm118138822%7Cm10279773%7Cm3646142&sortBy=massVolume&tbs=",
             "tbs": "",
@@ -3726,97 +4203,6 @@
                             "name": "Metal Wall Art",
                             "slug": "/search?q=Metal Wall Art&sortBy=massVolume&tbs=mr:1,root_cat:534411",
                             "tbs": "mr:1,root_cat:534411"
-                        }
-                    ]
-                },
-                {
-                    "name": "Household Appliance",
-                    "slug": "/search?q=Household Appliance&sortBy=massVolume&tbs=",
-                    "tbs": "",
-                    "children": [
-                        {
-                            "name": "Small Kitchen Appliances",
-                            "slug": "/search?q=Small Kitchen Appliances&sortBy=massVolume&tbs=mr:1,root_cat:531819",
-                            "tbs": "mr:1,root_cat:531819",
-                            "children": [
-                                {
-                                    "name": "Deep Fryers",
-                                    "slug": "/search?q=Deep Fryers&sortBy=massVolume&tbs=mr:1,root_cat:530391",
-                                    "tbs": "mr:1,root_cat:530391"
-                                },
-                                {
-                                    "name": "Food Cookers & Steamers",
-                                    "slug": "/search?q=Food Cookers & Steamers&sortBy=massVolume&tbs=mr:1,root_cat:534860",
-                                    "tbs": "mr:1,root_cat:534860"
-                                },
-                                {
-                                    "name": "Toaster Ovens",
-                                    "slug": "/search?q=Toaster Ovens&sortBy=massVolume&tbs=mr:1,root_cat:530059",
-                                    "tbs": "mr:1,root_cat:530059"
-                                },
-                                {
-                                    "name": "Air Fryers",
-                                    "slug": "/search?q=Air Fryers&sortBy=massVolume&tbs=mr:1,root_cat:534867",
-                                    "tbs": "mr:1,root_cat:534867"
-                                },
-                                {
-                                    "name": "Coffee, Tea & Espresso Appliances",
-                                    "slug": "/search?q=Coffee, Tea & Espresso Appliances&sortBy=massVolume&tbs=mr:1,root_cat:534818",
-                                    "tbs": "mr:1,root_cat:534818"
-                                }
-                            ]
-                        },
-                        {
-                            "name": "Major Kitchen Appliance Packages",
-                            "slug": "/search?q=Major Kitchen Appliance Packages&sortBy=massVolume&tbs=mr:1,root_cat:534844",
-                            "tbs": "mr:1,root_cat:534844"
-                        },
-                        {
-                            "name": "Refrigerators",
-                            "slug": "/search?q=Refrigerators&sortBy=massVolume&tbs=mr:1,root_cat:530043",
-                            "tbs": "mr:1,root_cat:530043",
-                            "children": [
-                                {
-                                    "name": "Counter Depth Refrigerators",
-                                    "slug": "/search?q=Counter Depth Refrigerators&sortBy=massVolume&tbs=mr:1,root_cat:534725",
-                                    "tbs": "mr:1,root_cat:534725"
-                                },
-                                {
-                                    "name": "Side by Side Refrigerators",
-                                    "slug": "/search?q=Side by Side Refrigerators&sortBy=massVolume&tbs=mr:1,root_cat:534730",
-                                    "tbs": "mr:1,root_cat:534730"
-                                },
-                                {
-                                    "name": "French Door Refrigerators",
-                                    "slug": "/search?q=French Door Refrigerators&sortBy=massVolume&tbs=mr:1,root_cat:534731",
-                                    "tbs": "mr:1,root_cat:534731"
-                                },
-                                {
-                                    "name": "Compact Refrigerators",
-                                    "slug": "/search?q=Compact Refrigerators&sortBy=massVolume&tbs=mr:1,root_cat:535585",
-                                    "tbs": "mr:1,root_cat:535585"
-                                },
-                                {
-                                    "name": "Top Freezer Refrigerators",
-                                    "slug": "/search?q=Top Freezer Refrigerators&sortBy=massVolume&tbs=mr:1,root_cat:534729",
-                                    "tbs": "mr:1,root_cat:534729"
-                                },
-                                {
-                                    "name": "Bottom Freezer Refrigerators",
-                                    "slug": "/search?q=Bottom Freezer Refrigerators&sortBy=massVolume&tbs=mr:1,root_cat:534728",
-                                    "tbs": "mr:1,root_cat:534728"
-                                }
-                            ]
-                        },
-                        {
-                            "name": "Smart Appliances",
-                            "slug": "/search?q=Smart Appliances&sortBy=massVolume&tbs=mr:1,root_cat:538309",
-                            "tbs": "mr:1,root_cat:538309"
-                        },
-                        {
-                            "name": "Gas Ranges",
-                            "slug": "/search?q=Gas Ranges&sortBy=massVolume&tbs=mr:1,root_cat:534743",
-                            "tbs": "mr:1,root_cat:534743"
                         }
                     ]
                 },
