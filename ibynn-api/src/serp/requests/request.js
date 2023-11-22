@@ -29,10 +29,10 @@ export const addIcons = (arr) => {
 
 export const findSorters = (arr, sort_by) => {
   let sortedArr = [...arr];
-
-  if (sort_by) {
+  if (sort_by === 'massVolume' || sort_by === 'amount') {
     for (const item of sortedArr) {
-      for (const a of measurements[sort_by]) {
+  console.log(typeof sort_by)
+  for (const a of measurements[sort_by]) {
         if (item.title) {
           const title = item.title.toLowerCase();
           const reversedTitle = stringReverse(title);
@@ -134,10 +134,8 @@ export async function getSerpShopping(query, sort_by, tbs, merchagg, p_ord='p') 
 
   if (sort_by) {
     products.shopping_results = findSorters(products.shopping_results, sort_by);
-    sortArr(products);
+    // sortArr(products);
   }
-
-  
 
   return products;
 }
