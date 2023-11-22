@@ -72,7 +72,7 @@ export const measurements = {
     "mm3",
     "cm3",
     "ml",
-    "l ",
+    " l ",
     "kl",
     "m3",
     "km3",
@@ -90,7 +90,7 @@ export const measurements = {
     "yd3",
     "mcg",
     "mg",
-    "g ",
+    " g ",
     "kg",
     "oz",
     "lb",
@@ -111,45 +111,47 @@ export const stringReverse = (str) => {
 
 export const calculations = (item, match, sort_by, unit) => {
   let unit_price;
-  if (sort_by === "amount") {
-    unit_price = (item.extracted_price / parseFloat(match)).toFixed(2);
-    item.unit_price = parseFloat(unit_price);
-    item.unit_price_displayed = `$${unit_price}/${per_type[sort_by]}`;
-  } else if (sort_by === "weight") {
-    if (unit) {
-      const weight = convert(match).from(unit).to("oz");
-      unit_price = (item.extracted_price / parseFloat(weight)).toFixed(2);
+  if (item.extracted_price) {
+    if (sort_by === "amount") {
+      unit_price = (item.extracted_price / parseFloat(match)).toFixed(2);
       item.unit_price = parseFloat(unit_price);
       item.unit_price_displayed = `$${unit_price}/${per_type[sort_by]}`;
-    }
-  } else if (sort_by === "volume") {
-    if (unit) {
-      const volume = convert(match)
-        .from(unit === "floz" || "fl oz" ? "fl-oz" : unit)
-        .to("fl-oz");
-      unit_price = (item.extracted_price / parseFloat(volume)).toFixed(2);
-      item.unit_price = parseFloat(unit_price);
-      item.unit_price_displayed = `$${unit_price}/${per_type[sort_by]}`;
-    }
-  } else if (sort_by === "massVolume") {
-    if (unit === "floz" || unit === "fl oz") unit = "fl-oz";
-
-    if (unit) {
-      let massVolume;
-
-      if (convert().describe(unit.replace(/\s/g, "")).measure === "mass") {
-        massVolume = convert(match).from(unit.replace(/\s/g)).to("oz");
+    } else if (sort_by === "weight") {
+      if (unit) {
+        const weight = convert(match).from(unit).to("oz");
+        unit_price = (item.extracted_price / parseFloat(weight)).toFixed(2);
+        item.unit_price = parseFloat(unit_price);
+        item.unit_price_displayed = `$${unit_price}/${per_type[sort_by]}`;
       }
-
-      if (convert().describe(unit.replace(/\s/g, "")).measure === "volume") {
-        massVolume = convert(match)
+    } else if (sort_by === "volume") {
+      if (unit) {
+        const volume = convert(match)
           .from(unit === "floz" || "fl oz" ? "fl-oz" : unit)
           .to("fl-oz");
+        unit_price = (item.extracted_price / parseFloat(volume)).toFixed(2);
+        item.unit_price = parseFloat(unit_price);
+        item.unit_price_displayed = `$${unit_price}/${per_type[sort_by]}`;
       }
+    } else if (sort_by === "massVolume") {
+      if (unit === "floz" || unit === "fl oz") unit = "fl-oz";
 
-      unit_price = (item.extracted_price / parseFloat(massVolume)).toFixed(2);
-      item.unit_price = parseFloat(unit_price);
-      item.unit_price_displayed = `$${unit_price}/${per_type[sort_by]}`;
+      if (unit) {
+        let massVolume;
+
+        if (convert().describe(unit.replace(/\s/g, "")).measure === "mass") {
+          massVolume = convert(match).from(unit.replace(/\s/g)).to("oz");
+        }
+
+        if (convert().describe(unit.replace(/\s/g, "")).measure === "volume") {
+          massVolume = convert(match)
+            .from(unit === "floz" || "fl oz" ? "fl-oz" : unit)
+            .to("fl-oz");
+        }
+
+        unit_price = (item.extracted_price / parseFloat(massVolume)).toFixed(2);
+        item.unit_price = parseFloat(unit_price);
+        item.unit_price_displayed = `$${unit_price}/${per_type[sort_by]}`;
+      }
     }
   }
 };

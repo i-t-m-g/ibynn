@@ -15,56 +15,36 @@ const productPageUrl = (product_id) =>
 
 export const addIcons = (arr) => {
   if (arr) {
-    let i = 0;
     for (const prod of arr) {
-      const url = new URL(prod.link);
-      const favicon = `https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${url}&size=64`;
-      prod.icon = favicon
+      if (prod.link) {
+        const url = new URL(prod.link);
+        const favicon = `https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${url.origin}&size=64`;
+        prod.icon = favicon;
+      }
     }
   }
 
   return arr;
 };
 
-export const findSorters = (arr, sort_by, inEach) => {
-  let sortedArr = arr;
+export const findSorters = (arr, sort_by) => {
+  let sortedArr = [...arr];
 
   if (sort_by) {
     for (const item of sortedArr) {
       for (const a of measurements[sort_by]) {
-        const title = item.title.toLowerCase();
-        const reversedTitle = stringReverse(title);
+        if (item.title) {
+          const title = item.title.toLowerCase();
+          const reversedTitle = stringReverse(title);
 
-        if (title.includes(a)) {
-          // const match = title.match(pattern);
-          try {
-            let unit_price;
+          if (title.includes(a)) {
+            const pattern = new RegExp(`\\d+\\.?\\d*(?=(\\s|-)*${a.replace(' ', '\\s')})`);
+            const regMatch = title.match(pattern);
+            const reversedMatch = reversedTitle.match(pattern);
 
-            const pattern = new RegExp(`\\d+\\.?\\d*(?=(\\s|-)*${a})`);
-            const reversedPattern = new RegExp(
-              `\\d+\\.?\\d*(?=(\\s|-)*${stringReverse(a)})`
-            );
-
-            const match = title.match(pattern);
-            const reversedMatch = reversedTitle.match(reversedPattern);
-            
-
-            if (match) calculations(item, match[0], sort_by, a);
-            if (reversedMatch)
-              calculations(item, stringReverse(match[0]), sort_by, a);
-          } catch (error) {
-            console.log(error);
+            if (regMatch) calculations(item, regMatch[0], sort_by, a);
+            if (reversedMatch) calculations(item, stringReverse(regMatch[0]), sort_by, a);
           }
-
-          // if (match) {
-          //     unit_price = (item.extracted_price / parseFloat(match[0])).toFixed(2);
-          //     item.unit_price = parseFloat(unit_price);
-          //     item.unit_price_displayed = `$${unit_price}/${per_type[sort_by]}`
-          // } else if (reversedMatch) {
-          //     unit_price = (item.extracted_price / parseFloat(reversedMatch[0].reverse())).toFixed(2);
-          //     item.unit_price = parseFloat(unit_price);
-          //     item.unit_price_displayed = `$${unit_price.reverse()}/${per_type[sort_by]}`
-          // }
         }
       }
     }
@@ -124,29 +104,40 @@ export const getPageAtUrl = async (url,sort_by) => {
     products.search_parameters = response.search_parameters;
   if (response.filters) products.filters = response.filters;
   products.shopping_results = addIcons(products.shopping_results);
-  if (sort_by)
+  
+  if (sort_by) { 
     products.shopping_results = findSorters(products.shopping_results, sort_by);
-  sortArr(products);
-
+    sortArr(products);
+  }
   return products;
 }
 
 export async function getSerpShopping(query, sort_by, tbs, merchagg, p_ord='p') {
   const url = serpShoppingUrl(query,tbs, merchagg, p_ord);
   const { data: response } = await axios.get(url);
+
+
+
   const products = {};
   products.search_information = response.search_information;
   products.search_metadata = response.search_metadata;
   products.shopping_results = response.shopping_results;
   products.serpapi_pagination = response.serpapi_pagination;
   products.pagination = response.pagination;
+
   if (response.search_parameters)
     products.search_parameters = response.search_parameters;
+
   if (response.filters) products.filters = response.filters;
+
   products.shopping_results = addIcons(products.shopping_results);
-  if (sort_by)
+
+  if (sort_by) {
     products.shopping_results = findSorters(products.shopping_results, sort_by);
-  sortArr(products);
+    sortArr(products);
+  }
+
+  
 
   return products;
 }
