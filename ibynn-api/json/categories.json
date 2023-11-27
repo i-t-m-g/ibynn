@@ -937,8 +937,8 @@
             ]
         }, 
         {
-            "name": "Apparel and Accessories",
-            "slug": "/search?q=Apparel and Accessories",
+            "name": "Apparel & Accessories",
+            "slug": "/search?q=Apparel & Accessories",
             "tbs": "",
             "isMainCat": true,
             "children": [
