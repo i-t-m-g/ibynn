@@ -935,563 +935,1147 @@
                     ]
                 }
             ]
-        },
+        }, 
         {
-            "name": "Apparel & Accessories",
-            "slug": "/search?q=Apparel+and+Accessories&sortBy=massVolume&tbs=",
+            "name": "Apparel and Accessories",
+            "slug": "/search?q=Apparel and Accessories",
             "tbs": "",
             "isMainCat": true,
             "children": [
                 {
-                    "name": "Shirts & Tops",
-                    "slug": "/search?q=Shirts & Tops&sortBy=massVolume&tbs=mr:1,root_cat:531705",
-                    "tbs": "mr:1,root_cat:531705",
-                    "children": [
-                        {
-                            "name": "T-Shirts",
-                            "slug": "/search?q=T-Shirts&sortBy=massVolume&tbs=mr:1,root_cat:531703",
-                            "tbs": "mr:1,root_cat:531703"
-                        },
-                        {
-                            "name": "Blouses",
-                            "slug": "/search?q=Blouses&sortBy=massVolume&tbs=mr:1,root_cat:531696",
-                            "tbs": "mr:1,root_cat:531696"
-                        },
-                        {
-                            "name": "Tanks & Camisoles",
-                            "slug": "/search?q=Tanks & Camisoles&sortBy=massVolume&tbs=mr:1,root_cat:531695",
-                            "tbs": "mr:1,root_cat:531695"
-                        },
-                        {
-                            "name": "Crop Tops",
-                            "slug": "/search?q=Crop Tops&sortBy=massVolume&tbs=mr:1,root_cat:531693",
-                            "tbs": "mr:1,root_cat:531693"
-                        }
-                    ]
-                },
-                {
-                    "name": "Women's Apparel",
-                    "slug": "/search?q=Women's Apparel&sortBy=massVolume&tbs=mr:1,root_cat:529385",
-                    "tbs": "mr:1,root_cat:529385",
-                    "children": [
-                        {
-                            "name": "Shirts & Tops",
-                            "slug": "/search?q=Shirts & Tops&sortBy=massVolume&tbs=mr:1,root_cat:531705",
-                            "tbs": "mr:1,root_cat:531705"
-                        },
-                        {
-                            "name": "Women's Shirts & Tops",
-                            "slug": "/search?q=Women's Shirts & Tops&sortBy=massVolume&tbs=mr:1,root_cat:531725",
-                            "tbs": "mr:1,root_cat:531725"
-                        },
-                        {
-                            "name": "Dresses",
-                            "slug": "/search?q=Dresses&sortBy=massVolume&tbs=mr:1,root_cat:529397",
-                            "tbs": "mr:1,root_cat:529397"
-                        },
-                        {
-                            "name": "Women's Dresses",
-                            "slug": "/search?q=Women's Dresses&sortBy=massVolume&tbs=mr:1,root_cat:529465",
-                            "tbs": "mr:1,root_cat:529465"
-                        },
-                        {
-                            "name": "Sneakers",
-                            "slug": "/search?q=Sneakers&sortBy=massVolume&tbs=mr:1,root_cat:531484",
-                            "tbs": "mr:1,root_cat:531484"
-                        },
-                        {
-                            "name": "Women's Accessories",
-                            "slug": "/search?q=Women's Accessories&sortBy=massVolume&tbs=mr:1,root_cat:532010",
-                            "tbs": "mr:1,root_cat:532010"
-                        },
-                        {
-                            "name": "Women's Shoes",
-                            "slug": "/search?q=Women's Shoes&sortBy=massVolume&tbs=mr:1,root_cat:530772",
-                            "tbs": "mr:1,root_cat:530772"
-                        },
-                        {
-                            "name": "Activewear",
-                            "slug": "/search?q=Activewear&sortBy=massVolume&tbs=mr:1,root_cat:529377",
-                            "tbs": "mr:1,root_cat:529377"
-                        },
-                        {
-                            "name": "Sweatshirts & Hoodies",
-                            "slug": "/search?q=Sweatshirts & Hoodies&sortBy=massVolume&tbs=mr:1,root_cat:531697",
-                            "tbs": "mr:1,root_cat:531697"
-                        },
-                        {
-                            "name": "Women's Sweatshirts & Hoodies",
-                            "slug": "/search?q=Women's Sweatshirts & Hoodies&sortBy=massVolume&tbs=mr:1,root_cat:531723",
-                            "tbs": "mr:1,root_cat:531723"
-                        }
-                    ]
-                },
-                {
-                    "name": "Baby & Toddler Clothing",
-                    "slug": "/search?q=Baby & Toddler Clothing&sortBy=massVolume&tbs=",
+                    "name": "Clothing",
+                    "slug": "/search?q=Clothing",
                     "tbs": "",
                     "children": [
                         {
-                            "name": "Baby Girl Outfits",
-                            "slug": "/search?q=Baby Girl Outfits&sortBy=massVolume&tbs=mr:1,root_cat:532560",
-                            "tbs": "mr:1,root_cat:532560"
-                        },
-                        {
-                            "name": "Toddler Shoes",
-                            "slug": "/search?q=Toddler Shoes&sortBy=massVolume&tbs=mr:1,root_cat:545122",
-                            "tbs": "mr:1,root_cat:545122"
-                        },
-                        {
-                            "name": "Toddler Girl Outfits",
-                            "slug": "/search?q=Toddler Girl Outfits&sortBy=massVolume&tbs=mr:1,root_cat:532607",
-                            "tbs": "mr:1,root_cat:532607"
-                        },
-                        {
-                            "name": "Toddler Boy Outfits",
-                            "slug": "/search?q=Toddler Boy Outfits&sortBy=massVolume&tbs=mr:1,root_cat:532583",
-                            "tbs": "mr:1,root_cat:532583"
-                        },
-                        {
-                            "name": "Baby One-Pieces",
-                            "slug": "/search?q=Baby One-Pieces&sortBy=massVolume&tbs=mr:1,root_cat:529407",
-                            "tbs": "mr:1,root_cat:529407",
+                            "name": "Activewear",
+                            "slug": "/search?q=Activewear",
+                            "tbs": "",
                             "children": [
                                 {
-                                    "name": "Baby Unisex One-Pieces",
-                                    "slug": "/search?q=Baby Unisex One-Pieces&sortBy=massVolume&tbs=mr:1,root_cat:532692",
-                                    "tbs": "mr:1,root_cat:532692"
+                                    "name": "American Football Pants",
+                                    "slug": "/search?q=American Football Pants",
+                                    "tbs": ""
                                 },
                                 {
-                                    "name": "Baby Girl One-Pieces",
-                                    "slug": "/search?q=Baby Girl One-Pieces&sortBy=massVolume&tbs=mr:1,root_cat:532562",
-                                    "tbs": "mr:1,root_cat:532562"
+                                    "name": "Bicycle Activewear",
+                                    "slug": "/search?q=Bicycle Activewear",
+                                    "tbs": "",
+                                    "children": [
+                                        {
+                                            "name": "Bicycle Bibs",
+                                            "slug": "/search?q=Bicycle Bibs",
+                                            "tbs": ""
+                                        },
+                                        {
+                                            "name": "Bicycle Jerseys",
+                                            "slug": "/search?q=Bicycle Jerseys",
+                                            "tbs": ""
+                                        },
+                                        {
+                                            "name": "Bicycle Shorts & Briefs",
+                                            "slug": "/search?q=Bicycle Shorts & Briefs",
+                                            "tbs": ""
+                                        },
+                                        {
+                                            "name": "Bicycle Skinsuits",
+                                            "slug": "/search?q=Bicycle Skinsuits",
+                                            "tbs": ""
+                                        },
+                                        {
+                                            "name": "Bicycle Tights",
+                                            "slug": "/search?q=Bicycle Tights",
+                                            "tbs": ""
+                                        }
+                                    ]
                                 },
                                 {
-                                    "name": "Baby Boy One-Pieces",
-                                    "slug": "/search?q=Baby Boy One-Pieces&sortBy=massVolume&tbs=mr:1,root_cat:532550",
-                                    "tbs": "mr:1,root_cat:532550"
+                                    "name": "Boxing Shorts",
+                                    "slug": "/search?q=Boxing Shorts",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Dance Dresses, Skirts & Costumes",
+                                    "slug": "/search?q=Dance Dresses, Skirts & Costumes",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Ghillie Suits",
+                                    "slug": "/search?q=Ghillie Suits",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Hunting & Fishing Vests",
+                                    "slug": "/search?q=Hunting & Fishing Vests",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Hunting & Tactical Pants",
+                                    "slug": "/search?q=Hunting & Tactical Pants",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Martial Arts Shorts",
+                                    "slug": "/search?q=Martial Arts Shorts",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Motorcycle Protective Clothing",
+                                    "slug": "/search?q=Motorcycle Protective Clothing",
+                                    "tbs": "",
+                                    "children": [
+                                        {
+                                            "name": "Motorcycle Jackets",
+                                            "slug": "/search?q=Motorcycle Jackets",
+                                            "tbs": ""
+                                        },
+                                        {
+                                            "name": "Motorcycle Pants",
+                                            "slug": "/search?q=Motorcycle Pants",
+                                            "tbs": ""
+                                        },
+                                        {
+                                            "name": "Motorcycle Suits",
+                                            "slug": "/search?q=Motorcycle Suits",
+                                            "tbs": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Paintball Clothing",
+                                    "slug": "/search?q=Paintball Clothing",
+                                    "tbs": ""
                                 }
                             ]
                         },
                         {
-                            "name": "Baby Boy Outfits",
-                            "slug": "/search?q=Baby Boy Outfits&sortBy=massVolume&tbs=mr:1,root_cat:532548",
-                            "tbs": "mr:1,root_cat:532548"
-                        },
-                        {
-                            "name": "Baby Tops",
-                            "slug": "/search?q=Baby Tops&sortBy=massVolume&tbs=mr:1,root_cat:545135",
-                            "tbs": "mr:1,root_cat:545135",
+                            "name": "Baby & Toddler Clothing",
+                            "slug": "/search?q=Baby & Toddler Clothing",
+                            "tbs": "",
                             "children": [
                                 {
-                                    "name": "Baby Girl Tops",
-                                    "slug": "/search?q=Baby Girl Tops&sortBy=massVolume&tbs=mr:1,root_cat:532557",
-                                    "tbs": "mr:1,root_cat:532557"
+                                    "name": "Baby & Toddler Bottoms",
+                                    "slug": "/search?q=Baby & Toddler Bottoms",
+                                    "tbs": ""
                                 },
                                 {
-                                    "name": "Baby Boy Tops",
-                                    "slug": "/search?q=Baby Boy Tops&sortBy=massVolume&tbs=mr:1,root_cat:532545",
-                                    "tbs": "mr:1,root_cat:532545"
+                                    "name": "Baby & Toddler Diaper Covers",
+                                    "slug": "/search?q=Baby & Toddler Diaper Covers",
+                                    "tbs": ""
                                 },
                                 {
-                                    "name": "Baby Unisex Tops",
-                                    "slug": "/search?q=Baby Unisex Tops&sortBy=massVolume&tbs=mr:1,root_cat:532687",
-                                    "tbs": "mr:1,root_cat:532687"
+                                    "name": "Baby & Toddler Dresses",
+                                    "slug": "/search?q=Baby & Toddler Dresses",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Baby & Toddler Outerwear",
+                                    "slug": "/search?q=Baby & Toddler Outerwear",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Baby & Toddler Outfits",
+                                    "slug": "/search?q=Baby & Toddler Outfits",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Baby & Toddler Sleepwear",
+                                    "slug": "/search?q=Baby & Toddler Sleepwear",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Baby & Toddler Socks & Tights",
+                                    "slug": "/search?q=Baby & Toddler Socks & Tights",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Baby & Toddler Swimwear",
+                                    "slug": "/search?q=Baby & Toddler Swimwear",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Baby & Toddler Tops",
+                                    "slug": "/search?q=Baby & Toddler Tops",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Baby One-Pieces",
+                                    "slug": "/search?q=Baby One-Pieces",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Toddler Underwear",
+                                    "slug": "/search?q=Toddler Underwear",
+                                    "tbs": ""
                                 }
                             ]
-                        }
-                    ]
-                },
-                {
-                    "name": "Shoes",
-                    "slug": "/search?q=Shoes&sortBy=massVolume&tbs=mr:1,root_cat:529382",
-                    "tbs": "mr:1,root_cat:529382",
-                    "children": [
-                        {
-                            "name": "Sneakers",
-                            "slug": "/search?q=Sneakers&sortBy=massVolume&tbs=mr:1,root_cat:531484",
-                            "tbs": "mr:1,root_cat:531484"
                         },
                         {
-                            "name": "Running Shoes",
-                            "slug": "/search?q=Running Shoes&sortBy=massVolume&tbs=mr:1,root_cat:532808",
-                            "tbs": "mr:1,root_cat:532808"
+                            "name": "Dresses",
+                            "slug": "/search?q=Dresses",
+                            "tbs": ""
                         },
                         {
-                            "name": "Clogs & Mules",
-                            "slug": "/search?q=Clogs & Mules&sortBy=massVolume&tbs=mr:1,root_cat:529491",
-                            "tbs": "mr:1,root_cat:529491"
-                        }
-                    ]
-                },
-                {
-                    "name": "Handbags & Accessories",
-                    "slug": "/search?q=Handbags & Accessories&sortBy=massVolume&tbs=mr:1,root_cat:529384",
-                    "tbs": "mr:1,root_cat:529384",
-                    "children": [
-                        {
-                            "name": "Crossbody Bags",
-                            "slug": "/search?q=Crossbody Bags&sortBy=massVolume&tbs=mr:1,root_cat:543707",
-                            "tbs": "mr:1,root_cat:543707"
+                            "name": "One-Pieces",
+                            "slug": "/search?q=One-Pieces",
+                            "tbs": "",
+                            "children": [
+                                {
+                                    "name": "Jumpsuits & Rompers",
+                                    "slug": "/search?q=Jumpsuits & Rompers",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Leotards & Unitards",
+                                    "slug": "/search?q=Leotards & Unitards",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Overalls",
+                                    "slug": "/search?q=Overalls",
+                                    "tbs": ""
+                                }
+                            ]
                         },
                         {
-                            "name": "Tote Handbags",
-                            "slug": "/search?q=Tote Handbags&sortBy=massVolume&tbs=mr:1,root_cat:536995",
-                            "tbs": "mr:1,root_cat:536995"
+                            "name": "Outerwear",
+                            "slug": "/search?q=Outerwear",
+                            "tbs": "",
+                            "children": [
+                                {
+                                    "name": "Chaps",
+                                    "slug": "/search?q=Chaps",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Coats & Jackets",
+                                    "slug": "/search?q=Coats & Jackets",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Rain Pants",
+                                    "slug": "/search?q=Rain Pants",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Rain Suits",
+                                    "slug": "/search?q=Rain Suits",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Snow Pants & Suits",
+                                    "slug": "/search?q=Snow Pants & Suits",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Vests",
+                                    "slug": "/search?q=Vests",
+                                    "tbs": ""
+                                }
+                            ]
                         },
                         {
-                            "name": "Satchel Purses",
-                            "slug": "/search?q=Satchel Purses&sortBy=massVolume&tbs=mr:1,root_cat:543705",
-                            "tbs": "mr:1,root_cat:543705"
+                            "name": "Outfit Sets",
+                            "slug": "/search?q=Outfit Sets",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Pants",
+                            "slug": "/search?q=Pants",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Shirts & Tops",
+                            "slug": "/search?q=Shirts & Tops",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Shorts",
+                            "slug": "/search?q=Shorts",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Skirts",
+                            "slug": "/search?q=Skirts",
+                            "tbs": "",
+                            "children": [
+                                {
+                                    "name": "Knee-Length Skirts",
+                                    "slug": "/search?q=Knee-Length Skirts",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Long Skirts",
+                                    "slug": "/search?q=Long Skirts",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Mini Skirts",
+                                    "slug": "/search?q=Mini Skirts",
+                                    "tbs": ""
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Skorts",
+                            "slug": "/search?q=Skorts",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Sleepwear & Loungewear",
+                            "slug": "/search?q=Sleepwear & Loungewear",
+                            "tbs": "",
+                            "children": [
+                                {
+                                    "name": "Loungewear",
+                                    "slug": "/search?q=Loungewear",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Nightgowns",
+                                    "slug": "/search?q=Nightgowns",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Pajamas",
+                                    "slug": "/search?q=Pajamas",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Robes",
+                                    "slug": "/search?q=Robes",
+                                    "tbs": ""
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Suits",
+                            "slug": "/search?q=Suits",
+                            "tbs": "",
+                            "children": [
+                                {
+                                    "name": "Pant Suits",
+                                    "slug": "/search?q=Pant Suits",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Skirt Suits",
+                                    "slug": "/search?q=Skirt Suits",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Tuxedos",
+                                    "slug": "/search?q=Tuxedos",
+                                    "tbs": ""
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Swimwear",
+                            "slug": "/search?q=Swimwear",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Underwear & Socks",
+                            "slug": "/search?q=Underwear & Socks",
+                            "tbs": "",
+                            "children": [
+                                {
+                                    "name": "Bra Accessories",
+                                    "slug": "/search?q=Bra Accessories",
+                                    "tbs": "",
+                                    "children": [
+                                        {
+                                            "name": "Bra Strap Pads",
+                                            "slug": "/search?q=Bra Strap Pads",
+                                            "tbs": ""
+                                        },
+                                        {
+                                            "name": "Bra Straps & Extenders",
+                                            "slug": "/search?q=Bra Straps & Extenders",
+                                            "tbs": ""
+                                        },
+                                        {
+                                            "name": "Breast Enhancing Inserts",
+                                            "slug": "/search?q=Breast Enhancing Inserts",
+                                            "tbs": ""
+                                        },
+                                        {
+                                            "name": "Breast Petals & Concealers",
+                                            "slug": "/search?q=Breast Petals & Concealers",
+                                            "tbs": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Bras",
+                                    "slug": "/search?q=Bras",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Hosiery",
+                                    "slug": "/search?q=Hosiery",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Jock Straps",
+                                    "slug": "/search?q=Jock Straps",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Lingerie",
+                                    "slug": "/search?q=Lingerie",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Lingerie Accessories",
+                                    "slug": "/search?q=Lingerie Accessories",
+                                    "tbs": "",
+                                    "children": [
+                                        {
+                                            "name": "Garter Belts",
+                                            "slug": "/search?q=Garter Belts",
+                                            "tbs": ""
+                                        },
+                                        {
+                                            "name": "Garters",
+                                            "slug": "/search?q=Garters",
+                                            "tbs": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Long Johns",
+                                    "slug": "/search?q=Long Johns",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Petticoats & Pettipants",
+                                    "slug": "/search?q=Petticoats & Pettipants",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Shapewear",
+                                    "slug": "/search?q=Shapewear",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Socks",
+                                    "slug": "/search?q=Socks",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Undershirts",
+                                    "slug": "/search?q=Undershirts",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Underwear",
+                                    "slug": "/search?q=Underwear",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Underwear Slips",
+                                    "slug": "/search?q=Underwear Slips",
+                                    "tbs": ""
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Uniforms",
+                            "slug": "/search?q=Uniforms",
+                            "tbs": "",
+                            "children": [
+                                {
+                                    "name": "Contractor Pants & Coveralls",
+                                    "slug": "/search?q=Contractor Pants & Coveralls",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Flight Suits",
+                                    "slug": "/search?q=Flight Suits",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Food Service Uniforms",
+                                    "slug": "/search?q=Food Service Uniforms",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Food Service Chef's Hats",
+                                    "slug": "/search?q=Food Service Chef's Hats",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Food Service Chef's Jackets",
+                                    "slug": "/search?q=Food Service Chef's Jackets",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Food Service Chef's Pants",
+                                    "slug": "/search?q=Food Service Chef's Pants",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Military Uniforms",
+                                    "slug": "/search?q=Military Uniforms",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "School Uniforms",
+                                    "slug": "/search?q=School Uniforms",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Security Uniforms",
+                                    "slug": "/search?q=Security Uniforms",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Sports Uniforms",
+                                    "slug": "/search?q=Sports Uniforms",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Sports American Football Uniforms",
+                                    "slug": "/search?q=Sports American Football Uniforms",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Sports Baseball Uniforms",
+                                    "slug": "/search?q=Sports Baseball Uniforms",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Sports Basketball Uniforms",
+                                    "slug": "/search?q=Sports Basketball Uniforms",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Sports Cheerleading Uniforms",
+                                    "slug": "/search?q=Sports Cheerleading Uniforms",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Sports Cricket Uniforms",
+                                    "slug": "/search?q=Sports Cricket Uniforms",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Sports Hockey Uniforms",
+                                    "slug": "/search?q=Sports Hockey Uniforms",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Sports Martial Arts Uniforms",
+                                    "slug": "/search?q=Sports Martial Arts Uniforms",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Sports Officiating Uniforms",
+                                    "slug": "/search?q=Sports Officiating Uniforms",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Sports Soccer Uniforms",
+                                    "slug": "/search?q=Sports Soccer Uniforms",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Sports Softball Uniforms",
+                                    "slug": "/search?q=Sports Softball Uniforms",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Sports Wrestling Uniforms",
+                                    "slug": "/search?q=Sports Wrestling Uniforms",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "White Coats",
+                                    "slug": "/search?q=White Coats",
+                                    "tbs": ""
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Wedding & Bridal Party Dresses",
+                            "slug": "/search?q=Wedding & Bridal Party Dresses",
+                            "tbs": "",
+                            "children": [
+                                {
+                                    "name": "Bridal Party Dresses",
+                                    "slug": "/search?q=Bridal Party Dresses",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Wedding Dresses",
+                                    "slug": "/search?q=Wedding Dresses",
+                                    "tbs": ""
+                                }
+                            ]
                         }
                     ]
                 },
                 {
                     "name": "Clothing Accessories",
-                    "slug": "/search?q=Clothing Accessories&sortBy=massVolume&tbs=",
+                    "slug": "/search?q=Clothing Accessories",
                     "tbs": "",
                     "children": [
                         {
-                            "name": "Laundry Storage & Organization",
-                            "slug": "/search?q=Laundry Storage & Organization&sortBy=massVolume&tbs=mr:1,root_cat:533946",
-                            "tbs": "mr:1,root_cat:533946"
+                            "name": "Arm Warmers & Sleeves",
+                            "slug": "/search?q=Arm Warmers & Sleeves",
+                            "tbs": ""
                         },
                         {
-                            "name": "Women's Accessories",
-                            "slug": "/search?q=Women's Accessories&sortBy=massVolume&tbs=mr:1,root_cat:532010",
-                            "tbs": "mr:1,root_cat:532010",
+                            "name": "Baby & Toddler Clothing Accessories",
+                            "slug": "/search?q=Baby & Toddler Clothing Accessories",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Baby & Toddler Baby & Toddler Belts",
+                            "slug": "/search?q=Baby & Toddler Baby & Toddler Belts",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Baby & Toddler Baby & Toddler Gloves & Mittens",
+                            "slug": "/search?q=Baby & Toddler Baby & Toddler Gloves & Mittens",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Baby & Toddler Baby & Toddler Hats",
+                            "slug": "/search?q=Baby & Toddler Baby & Toddler Hats",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Baby & Toddler Baby Protective Wear",
+                            "slug": "/search?q=Baby & Toddler Baby Protective Wear",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Balaclavas",
+                            "slug": "/search?q=Balaclavas",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Bandanas & Headties",
+                            "slug": "/search?q=Bandanas & Headties",
+                            "tbs": "",
                             "children": [
                                 {
-                                    "name": "Scarves & Wraps",
-                                    "slug": "/search?q=Scarves & Wraps&sortBy=massVolume&tbs=mr:1,root_cat:529470",
-                                    "tbs": "mr:1,root_cat:529470"
+                                    "name": "Bandanas",
+                                    "slug": "/search?q=Bandanas",
+                                    "tbs": ""
                                 },
                                 {
-                                    "name": "Hats",
-                                    "slug": "/search?q=Hats&sortBy=massVolume&tbs=mr:1,root_cat:529468",
-                                    "tbs": "mr:1,root_cat:529468"
-                                },
-                                {
-                                    "name": "Belts",
-                                    "slug": "/search?q=Belts&sortBy=massVolume&tbs=mr:1,root_cat:529472",
-                                    "tbs": "mr:1,root_cat:529472"
+                                    "name": "Hair Care Wraps",
+                                    "slug": "/search?q=Hair Care Wraps",
+                                    "tbs": ""
                                 }
                             ]
                         },
                         {
-                            "name": "Clothing",
-                            "slug": "/search?q=Clothing&sortBy=massVolume&tbs=mr:1,root_cat:529390",
-                            "tbs": "mr:1,root_cat:529390",
+                            "name": "Belt Buckles",
+                            "slug": "/search?q=Belt Buckles",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Belts",
+                            "slug": "/search?q=Belts",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Bridal Accessories",
+                            "slug": "/search?q=Bridal Accessories",
+                            "tbs": "",
                             "children": [
                                 {
-                                    "name": "Sweatshirts & Hoodies",
-                                    "slug": "/search?q=Sweatshirts & Hoodies&sortBy=massVolume&tbs=mr:1,root_cat:531697",
-                                    "tbs": "mr:1,root_cat:531697"
-                                },
-                                {
-                                    "name": "T-Shirts",
-                                    "slug": "/search?q=T-Shirts&sortBy=massVolume&tbs=mr:1,root_cat:531703",
-                                    "tbs": "mr:1,root_cat:531703"
-                                },
-                                {
-                                    "name": "Sweaters",
-                                    "slug": "/search?q=Sweaters&sortBy=massVolume&tbs=mr:1,root_cat:531704",
-                                    "tbs": "mr:1,root_cat:531704"
-                                },
-                                {
-                                    "name": "Casual Dresses",
-                                    "slug": "/search?q=Casual Dresses&sortBy=massVolume&tbs=mr:1,root_cat:531649",
-                                    "tbs": "mr:1,root_cat:531649"
+                                    "name": "Bridal Veils",
+                                    "slug": "/search?q=Bridal Veils",
+                                    "tbs": ""
                                 }
                             ]
                         },
                         {
-                            "name": "Hangers",
-                            "slug": "/search?q=Hangers&sortBy=massVolume&tbs=mr:1,root_cat:533945",
-                            "tbs": "mr:1,root_cat:533945"
+                            "name": "Button Studs",
+                            "slug": "/search?q=Button Studs",
+                            "tbs": ""
                         },
                         {
-                            "name": "Buttons",
-                            "slug": "/search?q=Buttons&sortBy=massVolume&tbs=mr:1,root_cat:538119",
-                            "tbs": "mr:1,root_cat:538119"
+                            "name": "Collar Stays",
+                            "slug": "/search?q=Collar Stays",
+                            "tbs": ""
                         },
                         {
-                            "name": "Bucket Hats",
-                            "slug": "/search?q=Bucket Hats&sortBy=massVolume&tbs=mr:1,root_cat:532969",
-                            "tbs": "mr:1,root_cat:532969"
+                            "name": "Cufflinks",
+                            "slug": "/search?q=Cufflinks",
+                            "tbs": ""
                         },
                         {
-                            "name": "Men's Apparel",
-                            "slug": "/search?q=Men's Apparel&sortBy=massVolume&tbs=mr:1,root_cat:529386",
-                            "tbs": "mr:1,root_cat:529386",
+                            "name": "Decorative Fans",
+                            "slug": "/search?q=Decorative Fans",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Earmuffs",
+                            "slug": "/search?q=Earmuffs",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Gloves & Mittens",
+                            "slug": "/search?q=Gloves & Mittens",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Hair Accessories",
+                            "slug": "/search?q=Hair Accessories",
+                            "tbs": "",
                             "children": [
                                 {
-                                    "name": "Shirts & Tops",
-                                    "slug": "/search?q=Shirts & Tops&sortBy=massVolume&tbs=mr:1,root_cat:531705",
-                                    "tbs": "mr:1,root_cat:531705"
+                                    "name": "Hair Bun & Volume Shapers",
+                                    "slug": "/search?q=Hair Bun & Volume Shapers",
+                                    "tbs": ""
                                 },
                                 {
-                                    "name": "Men's Clothing",
-                                    "slug": "/search?q=Men's Clothing&sortBy=massVolume&tbs=mr:1,root_cat:532009",
-                                    "tbs": "mr:1,root_cat:532009"
+                                    "name": "Hair Combs",
+                                    "slug": "/search?q=Hair Combs",
+                                    "tbs": ""
                                 },
                                 {
-                                    "name": "Men's Accessories",
-                                    "slug": "/search?q=Men's Accessories&sortBy=massVolume&tbs=mr:1,root_cat:532008",
-                                    "tbs": "mr:1,root_cat:532008"
+                                    "name": "Hair Extensions",
+                                    "slug": "/search?q=Hair Extensions",
+                                    "tbs": ""
                                 },
                                 {
-                                    "name": "Sneakers",
-                                    "slug": "/search?q=Sneakers&sortBy=massVolume&tbs=mr:1,root_cat:531484",
-                                    "tbs": "mr:1,root_cat:531484"
+                                    "name": "Hair Forks & Sticks",
+                                    "slug": "/search?q=Hair Forks & Sticks",
+                                    "tbs": ""
                                 },
                                 {
-                                    "name": "Sweatshirts & Hoodies",
-                                    "slug": "/search?q=Sweatshirts & Hoodies&sortBy=massVolume&tbs=mr:1,root_cat:531697",
-                                    "tbs": "mr:1,root_cat:531697"
+                                    "name": "Hair Nets",
+                                    "slug": "/search?q=Hair Nets",
+                                    "tbs": ""
                                 },
                                 {
-                                    "name": "Men's Sneakers",
-                                    "slug": "/search?q=Men's Sneakers&sortBy=massVolume&tbs=mr:1,root_cat:532660",
-                                    "tbs": "mr:1,root_cat:532660"
+                                    "name": "Barrettes",
+                                    "slug": "/search?q=Barrettes",
+                                    "tbs": ""
                                 },
                                 {
-                                    "name": "Activewear",
-                                    "slug": "/search?q=Activewear&sortBy=massVolume&tbs=mr:1,root_cat:529377",
-                                    "tbs": "mr:1,root_cat:529377"
+                                    "name": "Hair Claws & Clips",
+                                    "slug": "/search?q=Hair Claws & Clips",
+                                    "tbs": ""
                                 },
                                 {
-                                    "name": "Men's Activewear",
-                                    "slug": "/search?q=Men's Activewear&sortBy=massVolume&tbs=mr:1,root_cat:529431",
-                                    "tbs": "mr:1,root_cat:529431"
+                                    "name": "Hair Pins",
+                                    "slug": "/search?q=Hair Pins",
+                                    "tbs": ""
                                 },
                                 {
-                                    "name": "Big & Tall Shirts",
-                                    "slug": "/search?q=Big & Tall Shirts&sortBy=massVolume&tbs=mr:1,root_cat:531707",
-                                    "tbs": "mr:1,root_cat:531707"
+                                    "name": "Hair Wreaths",
+                                    "slug": "/search?q=Hair Wreaths",
+                                    "tbs": ""
                                 },
                                 {
-                                    "name": "Athletic Shoes",
-                                    "slug": "/search?q=Athletic Shoes&sortBy=massVolume&tbs=mr:1,root_cat:531483",
-                                    "tbs": "mr:1,root_cat:531483"
+                                    "name": "Headbands",
+                                    "slug": "/search?q=Headbands",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Ponytail Holders",
+                                    "slug": "/search?q=Ponytail Holders",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Tiaras",
+                                    "slug": "/search?q=Tiaras",
+                                    "tbs": ""
+                                },
+                                {
+                                    "name": "Wig Accessories",
+                                    "slug": "/search?q=Wig Accessories",
+                                    "tbs": "",
+                                    "children": [
+                                        {
+                                            "name": "Wig Caps",
+                                            "slug": "/search?q=Wig Caps",
+                                            "tbs": ""
+                                        },
+                                        {
+                                            "name": "Wig Glue & Tape",
+                                            "slug": "/search?q=Wig Glue & Tape",
+                                            "tbs": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Wigs",
+                                    "slug": "/search?q=Wigs",
+                                    "tbs": ""
                                 }
                             ]
+                        },
+                        {
+                            "name": "Hand Muffs",
+                            "slug": "/search?q=Hand Muffs",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Handkerchiefs",
+                            "slug": "/search?q=Handkerchiefs",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Hats",
+                            "slug": "/search?q=Hats",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Headwear",
+                            "slug": "/search?q=Headwear",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Fascinators",
+                            "slug": "/search?q=Fascinators",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Headdresses",
+                            "slug": "/search?q=Headdresses",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Turbans",
+                            "slug": "/search?q=Turbans",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Leg Warmers",
+                            "slug": "/search?q=Leg Warmers",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Leis",
+                            "slug": "/search?q=Leis",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Maternity Belts & Support Bands",
+                            "slug": "/search?q=Maternity Belts & Support Bands",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Neck Gaiters",
+                            "slug": "/search?q=Neck Gaiters",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Neckties",
+                            "slug": "/search?q=Neckties",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Pinback Buttons",
+                            "slug": "/search?q=Pinback Buttons",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Sashes",
+                            "slug": "/search?q=Sashes",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Scarves & Shawls",
+                            "slug": "/search?q=Scarves & Shawls",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Scarves",
+                            "slug": "/search?q=Scarves",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Shawls",
+                            "slug": "/search?q=Shawls",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Sunglasses",
+                            "slug": "/search?q=Sunglasses",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Suspenders",
+                            "slug": "/search?q=Suspenders",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Tie Clips",
+                            "slug": "/search?q=Tie Clips",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Traditional Clothing Accessories",
+                            "slug": "/search?q=Traditional Clothing Accessories",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Traditional Kimono Underclothes",
+                            "slug": "/search?q=Traditional Kimono Underclothes",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Traditional Obi Accessories",
+                            "slug": "/search?q=Traditional Obi Accessories",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Traditional Obis",
+                            "slug": "/search?q=Traditional Obis",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Traditional Tabi Socks",
+                            "slug": "/search?q=Traditional Tabi Socks",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Wristbands",
+                            "slug": "/search?q=Wristbands",
+                            "tbs": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Costumes & Accessories",
+                    "slug": "/search?q=Costumes & Accessories",
+                    "tbs": "",
+                    "children": [
+                        {
+                            "name": "Bald Caps",
+                            "slug": "/search?q=Bald Caps",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Costume Accessory Sets",
+                            "slug": "/search?q=Costume Accessory Sets",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Costume Capes",
+                            "slug": "/search?q=Costume Capes",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Costume Gloves",
+                            "slug": "/search?q=Costume Gloves",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Costume Hats",
+                            "slug": "/search?q=Costume Hats",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Costume Special Effects",
+                            "slug": "/search?q=Costume Special Effects",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Costume Tobacco Products",
+                            "slug": "/search?q=Costume Tobacco Products",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Pretend Jewelry",
+                            "slug": "/search?q=Pretend Jewelry",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Costume Shoes",
+                            "slug": "/search?q=Costume Shoes",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Costumes",
+                            "slug": "/search?q=Costumes",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Masks",
+                            "slug": "/search?q=Masks",
+                            "tbs": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Handbag & Wallet Accessories",
+                    "slug": "/search?q=Handbag & Wallet Accessories",
+                    "tbs": "",
+                    "children": [
+                        {
+                            "name": "Checkbook Covers",
+                            "slug": "/search?q=Checkbook Covers",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Keychains",
+                            "slug": "/search?q=Keychains",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Lanyards",
+                            "slug": "/search?q=Lanyards",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Wallet Chains",
+                            "slug": "/search?q=Wallet Chains",
+                            "tbs": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Handbags, Wallets & Cases",
+                    "slug": "/search?q=Handbags, Wallets & Cases",
+                    "tbs": "",
+                    "children": [
+                        {
+                            "name": "Badge & Pass Holders",
+                            "slug": "/search?q=Badge & Pass Holders",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Business Card Cases",
+                            "slug": "/search?q=Business Card Cases",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Handbags",
+                            "slug": "/search?q=Handbags",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Wallets & Money Clips",
+                            "slug": "/search?q=Wallets & Money Clips",
+                            "tbs": ""
                         }
                     ]
                 },
                 {
                     "name": "Jewelry",
-                    "slug": "/search?q=Jewelry&sortBy=massVolume&tbs=",
+                    "slug": "/search?q=Jewelry",
                     "tbs": "",
                     "children": [
                         {
-                            "name": "Jewelry Sets",
-                            "slug": "/search?q=Jewelry Sets&sortBy=massVolume&tbs=mr:1,root_cat:529476",
-                            "tbs": "mr:1,root_cat:529476"
+                            "name": "Anklets",
+                            "slug": "/search?q=Anklets",
+                            "tbs": ""
                         },
                         {
-                            "name": "Necklaces",
-                            "slug": "/search?q=Necklaces&sortBy=massVolume&tbs=mr:1,root_cat:531459",
-                            "tbs": "mr:1,root_cat:531459"
-                        },
-                        {
-                            "name": "Rings",
-                            "slug": "/search?q=Rings&sortBy=massVolume&tbs=mr:1,root_cat:529480",
-                            "tbs": "mr:1,root_cat:529480"
+                            "name": "Body Jewelry",
+                            "slug": "/search?q=Body Jewelry",
+                            "tbs": ""
                         },
                         {
                             "name": "Bracelets",
-                            "slug": "/search?q=Bracelets&sortBy=massVolume&tbs=mr:1,root_cat:529482",
-                            "tbs": "mr:1,root_cat:529482"
+                            "slug": "/search?q=Bracelets",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Brooches & Lapel Pins",
+                            "slug": "/search?q=Brooches & Lapel Pins",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Charms & Pendants",
+                            "slug": "/search?q=Charms & Pendants",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Earrings",
+                            "slug": "/search?q=Earrings",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Jewelry Sets",
+                            "slug": "/search?q=Jewelry Sets",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Necklaces",
+                            "slug": "/search?q=Necklaces",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Rings",
+                            "slug": "/search?q=Rings",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Watch Accessories",
+                            "slug": "/search?q=Watch Accessories",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Watch Bands",
+                            "slug": "/search?q=Watch Bands",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Watch Stickers & Decals",
+                            "slug": "/search?q=Watch Stickers & Decals",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Watch Winders",
+                            "slug": "/search?q=Watch Winders",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Watches",
+                            "slug": "/search?q=Watches",
+                            "tbs": ""
                         }
                     ]
                 },
                 {
-                    "name": "Hair Accessories",
-                    "slug": "/search?q=Hair Accessories&sortBy=massVolume&tbs=",
+                    "name": "Shoe Accessories",
+                    "slug": "/search?q=Shoe Accessories",
                     "tbs": "",
                     "children": [
                         {
-                            "name": "Hair Pins & Clips",
-                            "slug": "/search?q=Hair Pins & Clips&sortBy=massVolume&tbs=mr:1,root_cat:530670",
-                            "tbs": "mr:1,root_cat:530670"
+                            "name": "Boot Liners",
+                            "slug": "/search?q=Boot Liners",
+                            "tbs": ""
                         },
                         {
-                            "name": "Headbands",
-                            "slug": "/search?q=Headbands&sortBy=massVolume&tbs=mr:1,root_cat:530672",
-                            "tbs": "mr:1,root_cat:530672"
+                            "name": "Gaiters",
+                            "slug": "/search?q=Gaiters",
+                            "tbs": ""
                         },
                         {
-                            "name": "Hair Ties",
-                            "slug": "/search?q=Hair Ties&sortBy=massVolume&tbs=mr:1,root_cat:530671",
-                            "tbs": "mr:1,root_cat:530671"
+                            "name": "Shoe Covers",
+                            "slug": "/search?q=Shoe Covers",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Shoelaces",
+                            "slug": "/search?q=Shoelaces",
+                            "tbs": ""
+                        },
+                        {
+                            "name": "Spurs",
+                            "slug": "/search?q=Spurs",
+                            "tbs": ""
                         }
                     ]
                 },
                 {
-                    "name": "Sweatshirts & Hoodies",
-                    "slug": "/search?q=Sweatshirts & Hoodies&sortBy=massVolume&tbs=mr:1,root_cat:531697",
-                    "tbs": "mr:1,root_cat:531697"
-                },
-                {
-                    "name": "Men's Clothing",
-                    "slug": "/search?q=Men's Clothing&sortBy=massVolume&tbs=mr:1,root_cat:532009",
-                    "tbs": "mr:1,root_cat:532009",
-                    "children": [
-                        {
-                            "name": "T-Shirts",
-                            "slug": "/search?q=T-Shirts&sortBy=massVolume&tbs=mr:1,root_cat:531703",
-                            "tbs": "mr:1,root_cat:531703"
-                        },
-                        {
-                            "name": "Pants",
-                            "slug": "/search?q=Pants&sortBy=massVolume&tbs=mr:1,root_cat:529395",
-                            "tbs": "mr:1,root_cat:529395"
-                        },
-                        {
-                            "name": "Sweatshirts & Hoodies",
-                            "slug": "/search?q=Sweatshirts & Hoodies&sortBy=massVolume&tbs=mr:1,root_cat:531697",
-                            "tbs": "mr:1,root_cat:531697"
-                        }
-                    ]
-                },
-                {
-                    "name": "Men's Accessories",
-                    "slug": "/search?q=Men's Accessories&sortBy=massVolume&tbs=mr:1,root_cat:532008",
-                    "tbs": "mr:1,root_cat:532008",
-                    "children": [
-                        {
-                            "name": "Ties",
-                            "slug": "/search?q=Ties&sortBy=massVolume&tbs=mr:1,root_cat:531458",
-                            "tbs": "mr:1,root_cat:531458"
-                        },
-                        {
-                            "name": "Hats",
-                            "slug": "/search?q=Hats&sortBy=massVolume&tbs=mr:1,root_cat:529468",
-                            "tbs": "mr:1,root_cat:529468"
-                        },
-                        {
-                            "name": "Belts",
-                            "slug": "/search?q=Belts&sortBy=massVolume&tbs=mr:1,root_cat:529472",
-                            "tbs": "mr:1,root_cat:529472"
-                        },
-                        {
-                            "name": "Wallets",
-                            "slug": "/search?q=Wallets&sortBy=massVolume&tbs=mr:1,root_cat:529471",
-                            "tbs": "mr:1,root_cat:529471"
-                        },
-                        {
-                            "name": "Suspenders",
-                            "slug": "/search?q=Suspenders&sortBy=massVolume&tbs=mr:1,root_cat:529467",
-                            "tbs": "mr:1,root_cat:529467"
-                        }
-                    ]
-                },
-                {
-                    "name": "Exercise & Fitness",
-                    "slug": "/search?q=Exercise & Fitness&sortBy=massVolume&tbs=mr:1,root_cat:530098",
-                    "tbs": "mr:1,root_cat:530098",
-                    "children": [
-                        {
-                            "name": "Strength & Resistance Training",
-                            "slug": "/search?q=Strength & Resistance Training&sortBy=massVolume&tbs=mr:1,root_cat:537103",
-                            "tbs": "mr:1,root_cat:537103"
-                        },
-                        {
-                            "name": "Cardio Machines",
-                            "slug": "/search?q=Cardio Machines&sortBy=massVolume&tbs=mr:1,root_cat:537126",
-                            "tbs": "mr:1,root_cat:537126"
-                        },
-                        {
-                            "name": "Fitness Accessories & Tech",
-                            "slug": "/search?q=Fitness Accessories & Tech&sortBy=massVolume&tbs=mr:1,root_cat:537129",
-                            "tbs": "mr:1,root_cat:537129"
-                        },
-                        {
-                            "name": "Exercise Bikes",
-                            "slug": "/search?q=Exercise Bikes&sortBy=massVolume&tbs=mr:1,root_cat:530163",
-                            "tbs": "mr:1,root_cat:530163"
-                        },
-                        {
-                            "name": "Weightlifting Machines & Racks",
-                            "slug": "/search?q=Weightlifting Machines & Racks&sortBy=massVolume&tbs=mr:1,root_cat:530155",
-                            "tbs": "mr:1,root_cat:530155"
-                        },
-                        {
-                            "name": "Core & Balance Training",
-                            "slug": "/search?q=Core & Balance Training&sortBy=massVolume&tbs=mr:1,root_cat:537274",
-                            "tbs": "mr:1,root_cat:537274"
-                        },
-                        {
-                            "name": "Yoga",
-                            "slug": "/search?q=Yoga&sortBy=massVolume&tbs=mr:1,root_cat:536291",
-                            "tbs": "mr:1,root_cat:536291"
-                        },
-                        {
-                            "name": "Free Weights",
-                            "slug": "/search?q=Free Weights&sortBy=massVolume&tbs=mr:1,root_cat:530161",
-                            "tbs": "mr:1,root_cat:530161"
-                        }
-                    ]
-                },
-                {
-                    "name": "Activewear",
-                    "slug": "/search?q=Activewear&sortBy=massVolume&tbs=mr:1,root_cat:529377",
-                    "tbs": "mr:1,root_cat:529377",
-                    "children": [
-                        {
-                            "name": "Athletic Pants",
-                            "slug": "/search?q=Athletic Pants&sortBy=massVolume&tbs=mr:1,root_cat:529524",
-                            "tbs": "mr:1,root_cat:529524"
-                        },
-                        {
-                            "name": "Athletic Shorts",
-                            "slug": "/search?q=Athletic Shorts&sortBy=massVolume&tbs=mr:1,root_cat:529523",
-                            "tbs": "mr:1,root_cat:529523"
-                        },
-                        {
-                            "name": "Athletic Shirts",
-                            "slug": "/search?q=Athletic Shirts&sortBy=massVolume&tbs=mr:1,root_cat:529522",
-                            "tbs": "mr:1,root_cat:529522"
-                        }
-                    ]
-                },
-                {
-                    "name": "Men's Sneakers",
-                    "slug": "/search?q=Men's Sneakers&sortBy=massVolume&tbs=mr:1,root_cat:532660",
-                    "tbs": "mr:1,root_cat:532660"
-                },
-                {
-                    "name": "Athletics & Team Sports",
-                    "slug": "/search?q=Athletics & Team Sports&sortBy=massVolume&tbs=mr:1,root_cat:530102",
-                    "tbs": "mr:1,root_cat:530102",
-                    "children": [
-                        {
-                            "name": "Basketball",
-                            "slug": "/search?q=Basketball&sortBy=massVolume&tbs=mr:1,root_cat:535679",
-                            "tbs": "mr:1,root_cat:535679"
-                        },
-                        {
-                            "name": "Baseball Apparel & Gear",
-                            "slug": "/search?q=Baseball Apparel & Gear&sortBy=massVolume&tbs=mr:1,root_cat:535691",
-                            "tbs": "mr:1,root_cat:535691"
-                        },
-                        {
-                            "name": "Baseball Bats",
-                            "slug": "/search?q=Baseball Bats&sortBy=massVolume&tbs=mr:1,root_cat:530126",
-                            "tbs": "mr:1,root_cat:530126"
-                        },
-                        {
-                            "name": "Football",
-                            "slug": "/search?q=Football&sortBy=massVolume&tbs=mr:1,root_cat:535676",
-                            "tbs": "mr:1,root_cat:535676"
-                        },
-                        {
-                            "name": "Softball Apparel & Gear",
-                            "slug": "/search?q=Softball Apparel & Gear&sortBy=massVolume&tbs=mr:1,root_cat:535696",
-                            "tbs": "mr:1,root_cat:535696"
-                        }
-                    ]
+                    "name": "Shoes",
+                    "slug": "/search?q=Shoes",
+                    "tbs": ""
                 }
             ]
         },
@@ -1748,7 +2332,7 @@
                                 },
                                 {
                                     "name": "Headphone Cushions & Tips",
-                                    "slug": "/search?q=Headphone & Headset Accessories > Headphone Cushions & Tips",
+                                    "slug": "/search?q=Headphone Cushions & Tips",
                                     "tbs": ""
                                 },
                                 {
@@ -1758,7 +2342,7 @@
                                 },
                                 {
                                     "name": "Karaoke Chips",
-                                    "slug": "/search?q=Karaoke System Accessories > Karaoke Chips",
+                                    "slug": "/search?q=Karaoke Chips",
                                     "tbs": ""
                                 },
                                 {
@@ -2818,28 +3402,28 @@
                                     "tbs": ""
                                 },
                                 {
-                                    "name": "Battery Accessories > Battery Charge Controllers",
-                                    "slug": "/search?q=Battery Accessories > Battery Charge Controllers",
+                                    "name": "Battery Charge Controllers",
+                                    "slug": "/search?q=Battery Charge Controllers",
                                     "tbs": ""
                                 },
                                 {
-                                    "name": "Battery Accessories > Battery Holders",
-                                    "slug": "/search?q=Battery Accessories > Battery Holders",
+                                    "name": "Battery Holders",
+                                    "slug": "/search?q=Battery Holders",
                                     "tbs": ""
                                 },
                                 {
-                                    "name": "Battery Accessories > Camera Battery Chargers",
-                                    "slug": "/search?q=Battery Accessories > Camera Battery Chargers",
+                                    "name": "Camera Battery Chargers",
+                                    "slug": "/search?q=Camera Battery Chargers",
                                     "tbs": ""
                                 },
                                 {
-                                    "name": "Battery Accessories > General Purpose Battery Chargers",
-                                    "slug": "/search?q=Battery Accessories > General Purpose Battery Chargers",
+                                    "name": "General Purpose Battery Chargers",
+                                    "slug": "/search?q=General Purpose Battery Chargers",
                                     "tbs": ""
                                 },
                                 {
-                                    "name": "Battery Accessories > General Purpose Battery Testers",
-                                    "slug": "/search?q=Battery Accessories > General Purpose Battery Testers",
+                                    "name": "General Purpose Battery Testers",
+                                    "slug": "/search?q=General Purpose Battery Testers",
                                     "tbs": ""
                                 },
                                 {
@@ -2927,8 +3511,8 @@
                             "tbs": ""
                         },
                         {
-                            "name": "Computer Monitor Accessories > Color Calibrators",
-                            "slug": "/search?q=Computer Monitor Accessories > Color Calibrators",
+                            "name": "Color Calibrators",
+                            "slug": "/search?q=Color Calibrators",
                             "tbs": ""
                         },
                         {
