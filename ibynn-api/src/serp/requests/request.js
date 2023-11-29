@@ -14,12 +14,14 @@ const productPageUrl = (product_id) =>
   `https://serpapi.com/search.json?engine=google_product&product_id=${product_id}&gl=us&hl=en&api_key=${process.env.API_KEY}`;
 
 export const addIcons = (arr) => {
-  if (arr) {
+  if (arr.length > 0) {
     for (const prod of arr) {
-      if (prod.link) {
+      if (prod.link.startsWith('http')) {
         const url = new URL(prod.link);
-        const favicon = `https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${url.origin}&size=64`;
-        prod.icon = favicon;
+        if (url.origin) {
+          const favicon = `https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${url.origin}&size=64`;
+          prod.icon = favicon;
+        }
       }
     }
   }
