@@ -29,30 +29,30 @@ export const addIcons = (arr) => {
   return arr;
 };
 
-export const findSorters = (arr, sort_by) => {
-  let sortedArr = [...arr];
-  if (sort_by === 'massVolume' || sort_by === 'amount') {
-    for (const item of sortedArr) {
-  for (const a of measurements[sort_by]) {
-        if (item.title) {
-          const title = item.title.toLowerCase();
-          const reversedTitle = stringReverse(title);
+// export const findSorters = (arr, sort_by) => {
+//   let sortedArr = [...arr];
+//   if (sort_by === 'massVolume' || sort_by === 'amount') {
+//     for (const item of sortedArr) {
+//   for (const a of measurements[sort_by]) {
+//         if (item.title) {
+//           const title = item.title.toLowerCase();
+//           const reversedTitle = stringReverse(title);
 
-          if (title.includes(a)) {
-            const pattern = new RegExp(`\\d+\\.?\\d*(?=(\\s|-)*${a.replace(' ', '\\s')})`);
-            const regMatch = title.match(pattern);
-            const reversedMatch = reversedTitle.match(pattern);
+//           if (title.includes(a)) {
+//             const pattern = new RegExp(`\\d+\\.?\\d*(?=(\\s|-)*${a.replace(' ', '\\s')})`);
+//             const regMatch = title.match(pattern);
+//             const reversedMatch = reversedTitle.match(pattern);
 
-            if (regMatch) calculations(item, regMatch[0], sort_by, a);
-            if (reversedMatch) calculations(item, stringReverse(regMatch[0]), sort_by, a);
-          }
-        }
-      }
-    }
-  }
+//             if (regMatch) calculations(item, regMatch[0], sort_by, a);
+//             if (reversedMatch) calculations(item, stringReverse(regMatch[0]), sort_by, a);
+//           }
+//         }
+//       }
+//     }
+//   }
 
-  return sortedArr;
-};
+//   return sortedArr;
+// };
 
 export const sortArr = (arr) => {
   let sortedData = arr.shopping_results.sort((a, b) => {
@@ -106,18 +106,17 @@ export const getPageAtUrl = async (url,sort_by) => {
   if (response.filters) products.filters = response.filters;
   products.shopping_results = addIcons(products.shopping_results);
   
-  if (sort_by) { 
-    products.shopping_results = findSorters(products.shopping_results, sort_by);
-    sortArr(products);
-  }
+  // if (sort_by) { 
+  //   products.shopping_results = findSorters(products.shopping_results, sort_by);
+  //   sortArr(products);
+  // }
+
   return products;
 }
 
 export async function getSerpShopping(query, sort_by, tbs, merchagg, p_ord='p') {
   const url = serpShoppingUrl(query,tbs, merchagg, p_ord);
   const { data: response } = await axios.get(url);
-
-
 
   const products = {};
   products.search_information = response.search_information;
@@ -133,10 +132,10 @@ export async function getSerpShopping(query, sort_by, tbs, merchagg, p_ord='p') 
 
   products.shopping_results = addIcons(products.shopping_results);
 
-  if (sort_by) {
-    products.shopping_results = findSorters(products.shopping_results, sort_by);
-    sortArr(products);
-  }
+  // if (sort_by === 'massVolume' || sort_by === 'amount') {
+  //   products.shopping_results = findSorters(products.shopping_results, sort_by);
+  //   sortArr(products);
+  // }
 
   return products;
 }
