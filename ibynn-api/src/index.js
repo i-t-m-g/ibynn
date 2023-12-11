@@ -123,7 +123,7 @@ app.get("/shopping", caching, async (req, res) => {
   }
 });
 
-app.get("/search-shopping", caching, async (req, res) => {
+app.get("/search-shopping", async (req, res) => {
   const query = req.query.q;
   const sortBy = req.query.sortBy;
   const tbs = req.query.tbs;
