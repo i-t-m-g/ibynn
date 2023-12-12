@@ -108,7 +108,7 @@ export const getPageAtUrl = async (url,sort_by) => {
   
   // if (sort_by) { 
   //   products.shopping_results = findSorters(products.shopping_results, sort_by);
-  //   sortArr(products);
+    // sortArr(products);
   // }
 
   return products;
@@ -134,7 +134,7 @@ export async function getSerpShopping(query, sort_by, tbs, merchagg, p_ord='p') 
 
   // if (sort_by === 'massVolume' || sort_by === 'amount') {
   //   products.shopping_results = findSorters(products.shopping_results, sort_by);
-  //   sortArr(products);
+    sortArr(products);
   // }
 
   return products;
