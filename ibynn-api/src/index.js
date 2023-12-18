@@ -89,7 +89,7 @@ app.get("/get-category", async (req,res) => {
 
 
 app.get("/shopping", caching, async (req, res) => {
-  const query = req.query.q;
+  const query = encodeURIComponent(req.query.q);
   const sortBy = req.query.sortBy;
   const tbs = req.query.tbs;
   const merchagg = req.query.merchagg;
@@ -124,7 +124,7 @@ app.get("/shopping", caching, async (req, res) => {
 });
 
 app.get("/search-shopping", async (req, res) => {
-  const query = req.query.q;
+  const query = encodeURIComponent(req.query.q);
   const sortBy = req.query.sortBy;
   const tbs = req.query.tbs;
   const merchagg = req.query.merchagg;
