@@ -108,12 +108,12 @@ app.get("/shopping", caching, async (req, res) => {
     if (results.shopping_results) { 
         res.send(results);
 
-        // const pages = await request.retrievePages(results.serpapi_pagination,sortBy);
-        // pages.unshift(...results.shopping_results);
+        const pages = await request.retrievePages(results.serpapi_pagination,sortBy);
+        pages.unshift(...results.shopping_results);
 
-        // results.shopping_results = pages;
-        // results.length = results.shopping_results.length;
-        // client.setEx(query, 604800, JSON.stringify(results));
+        results.shopping_results = pages;
+        results.length = results.shopping_results.length;
+        client.setEx(query, 604800, JSON.stringify(results));
 
     } else {
       throw results;
@@ -166,29 +166,6 @@ app.get("/compare", async (req, res) => {
   // request.sortArr(response);
 
   res.send(response);
-});
-
-// #!/usr/bin/env node
-// require('request-promise')({
-//     url: 'https://www.google.com/search?q=pizza&tbm=shop',
-//     proxy: ':22225',
-//     rejectUnauthorized: false,
-//     })
-// .then(function(data){ console.log(data); },
-//     function(err){ console.error(err); });
-
-app.get("/bright", async (req,res) => {
-  // const { data } = await axios.get("https://www.google.com/search?q=pizza&tbm=shop")
-  const { data } = await axios(
-  {
-    method: 'get',
-    url: 'https://www.google.com/search?q=pizza&tbm=shop',
-    proxy: {
-      host: 'http://brd-customer-hl_f10cbd3a-zone-serp:fw9lmq9e19br@brd.superproxy.io:22225',
-    }
-  });
-
-  res.send(data);
 });
 
 app.get("/subscribe", async (req,res) => {

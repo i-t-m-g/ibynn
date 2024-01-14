@@ -9,14 +9,14 @@ import {
 
 const api_key = () => "&api_key=" + process.env.API_KEY;
 export const serpShoppingUrl = (query,tbs, merchagg, p_ord='p') =>
-  `https://serpapi.com/search.json?q=${query}${api_key()}&engine=google&google_domain=google.com&gl=us&hl=en&num=100&tbm=shop${`&tbs=mr:1,p_ord:r,avg_rating:200,${tbs},${merchagg}`}`;
+  `https://serpapi.com/search.json?q=${query}${api_key()}&engine=google&google_domain=google.com&gl=us&hl=en&num=100&tbm=shop${`&tbs=mr:1,p_ord:${p_ord},avg_rating:200,${tbs},${merchagg}`}`;
 const productPageUrl = (product_id) =>
   `https://serpapi.com/search.json?engine=google_product&product_id=${product_id}&gl=us&hl=en&api_key=${process.env.API_KEY}`;
 
 export const addIcons = (arr) => {
   if (arr.length > 0) {
     for (const prod of arr) {
-      if (prod.link && prod.link.startsWith('http')) {
+      if (prod.link.startsWith('http')) {
         const url = new URL(prod.link);
         if (url.origin) {
           const favicon = `https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${url.origin}&size=64`;
@@ -118,24 +118,24 @@ export async function getSerpShopping(query, sort_by, tbs, merchagg, p_ord='p') 
   const url = serpShoppingUrl(query,tbs, merchagg, p_ord);
   const { data: response } = await axios.get(url);
 
-  const products = response;
-  // products.search_information = response.search_information;
-  // products.search_metadata = response.search_metadata;
-  // products.shopping_results = response.shopping_results;
-  // products.serpapi_pagination = response.serpapi_pagination;
-  // products.pagination = response.pagination;
+  const products = {};
+  products.search_information = response.search_information;
+  products.search_metadata = response.search_metadata;
+  products.shopping_results = response.shopping_results;
+  products.serpapi_pagination = response.serpapi_pagination;
+  products.pagination = response.pagination;
 
-  // if (response.search_parameters)
-  //   products.search_parameters = response.search_parameters;
+  if (response.search_parameters)
+    products.search_parameters = response.search_parameters;
 
-  // if (response.filters) products.filters = response.filters;
+  if (response.filters) products.filters = response.filters;
 
-  // products.shopping_results = addIcons(products.shopping_results);
+  products.shopping_results = addIcons(products.shopping_results);
 
-  if (sort_by === 'massVolume' || sort_by === 'amount') {
+  // if (sort_by === 'massVolume' || sort_by === 'amount') {
   //   products.shopping_results = findSorters(products.shopping_results, sort_by);
-    // sortArr(products);
-  }
+    sortArr(products);
+  // }
 
   return products;
 }
