@@ -9,7 +9,7 @@ import {
 
 const api_key = () => "&api_key=" + process.env.API_KEY;
 export const serpShoppingUrl = (query,tbs, merchagg, p_ord='p') =>
-  `https://serpapi.com/search.json?q=${query}${api_key()}&engine=google&google_domain=google.com&gl=us&hl=en&num=100&tbm=shop${`&tbs=mr:1,p_ord:${p_ord},avg_rating:200,${tbs},${merchagg}`}`;
+  `https://serpapi.com/search.json?q=${query}${api_key()}&engine=google&google_domain=google.com&gl=us&hl=en&num=100&tbm=shop${`&tbs=mr:1,p_ord:r,avg_rating:200,${tbs},${merchagg}`}`;
 const productPageUrl = (product_id) =>
   `https://serpapi.com/search.json?engine=google_product&product_id=${product_id}&gl=us&hl=en&api_key=${process.env.API_KEY}`;
 
