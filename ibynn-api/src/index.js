@@ -155,17 +155,65 @@ app.get("/search-shopping", async (req, res) => {
   }
 });
 
+app.get("/google-search", async (req, res) => {
+  const query = encodeURIComponent(req.query.q);
+
+  try {
+    const results = await request.getSearch(query);
+
+    res.send(results);
+    
+  } catch (error) {
+    res.send(error);
+  }
+});
+
+app.post("/post-affiliate", (req, res) => {
+  const links = req.body.links;
+  const affiliatedLinks = [];
+
+  for (let i = 0; i < links.length; i++) {
+    const url = links[i].uri;
+    const source = links[i].source;
+    const affiliatedUrl = request.affiliateLink(url, source);
+    const affiliatedLink = {
+      source,
+      affiliatedUrl,
+    }
+
+    affiliatedLinks.push(affiliatedLink);
+  }
+
+  res.send(affiliatedLinks);
+})
+
 app.get("/compare", async (req, res) => {
   const product_id = req.query.product_id;
-  const sort_by = req.query.sort_by;
-
   let response = await request.getProductPage(product_id);
+  let online_sellers = response.sellers_results.online_sellers;
+  const affiliatedLinks = [];
+
+  for (let i = 0; i < online_sellers.length; i++) {
+    const url = online_sellers[i].link;
+    const source = online_sellers[i].name;
+    const affiliatedUrl = request.affiliateLink(url, source);
+    const affiliatedLink = {
+      source,
+      affiliatedUrl,
+    }
+
+    online_sellers[i].link = affiliatedLink.affiliatedUrl;
+    response.sellers_results.online_sellers = online_sellers;
+
+  }
+
+  res.send(response);
+
+  
 
   // response = request.addIcons(response);
   // if (sort_by) response = request.findSorters(response, sort_by);
   // request.sortArr(response);
-
-  res.send(response);
 });
 
 app.get("/subscribe", async (req,res) => {
