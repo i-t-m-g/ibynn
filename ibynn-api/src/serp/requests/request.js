@@ -1,17 +1,12 @@
 import axios from "axios";
-import {
-  storeImages,
-  storeNames,
-  measurements,
-  stringReverse,
-  calculations,
-} from "../../scripts/constants/constants.js";
+import { affiliateLinkAdditions } from "../../scripts/constants/affiliates.js"
 
 const api_key = () => "&api_key=" + process.env.API_KEY;
 export const serpShoppingUrl = (query,tbs, merchagg, p_ord='p') =>
   `https://serpapi.com/search.json?q=${query}${api_key()}&engine=google&google_domain=google.com&gl=us&hl=en&num=100&tbm=shop${`&tbs=${tbs}`}`;
 const productPageUrl = (product_id) =>
   `https://serpapi.com/search.json?engine=google_product&product_id=${product_id}&gl=us&hl=en&api_key=${process.env.API_KEY}`;
+const googleShoppingUrl = (query) => `https://serpapi.com/search.json?sca_esv=0cf1a99061b4d4b8&tbm=shop&sxsrf=ACQVn08l3N2viGeYtABuJIl3tETV5uVPyg:1708097961046&q=${query}&tbs=mr:1,sales:1&sa=X&ved=0ahUKEwiR-tXhmLCEAxVlGFkFHT-VC_kQ7KEGCLcSKAE&biw=1710&bih=862&dpr=2&api_key=${process.env.API_KEY}`
 
 export const addIcons = (arr) => {
   if (arr.length > 0) {
@@ -91,6 +86,31 @@ export const retrievePages = async (serpapi_pagination, sort_by) => {
   }
   
   return pages;
+}
+
+export const getLinkQuery = (link) => {
+  if (link) {
+    const urlQuery = new URL(link);
+    const q = urlQuery.searchParams.get('q');
+    if (q) return q;
+  }
+  return link;
+}
+export const affiliateLink = (url, source) => {
+  const storeUrl = getLinkQuery(url);
+  const linkAddition = affiliateLinkAdditions[Object.keys(affiliateLinkAdditions).find((key) => source.toLowerCase().includes(key))] || '';
+  return storeUrl +  linkAddition;
+  
+}
+
+export const getSearch = async (query) => {
+  const url = googleShoppingUrl(query);
+  const { data } = await axios.get(url);
+  const { shopping_results, immersive_products, inline_products } = data;
+
+  // addIcons(shopping_results);
+  
+  return shopping_results;
 }
 
 export const getPageAtUrl = async (url,sort_by) => {
