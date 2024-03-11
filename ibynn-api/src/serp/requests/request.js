@@ -134,7 +134,7 @@ export const getPageAtUrl = async (url,sort_by) => {
   return products;
 }
 
-export async function getSerpShopping(query, sort_by, tbs, merchagg, p_ord='p') {
+export async function getSerpShopping(query, sort_by, tbs, latlong, merchagg, p_ord='p') {
   const url = serpShoppingUrl(query,tbs, merchagg, p_ord);
   const { data: response } = await axios.get(url);
 
