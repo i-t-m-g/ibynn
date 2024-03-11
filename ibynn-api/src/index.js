@@ -9,6 +9,7 @@ import { config } from "dotenv";
 import * as request from "./serp/requests/request.js";
 import { createRequire } from "module";
 import axios from "axios";
+import { unregisterCustomQueryHandler } from "puppeteer";
 
 
 const require = createRequire(import.meta.url);
@@ -87,12 +88,41 @@ app.get("/get-category", async (req,res) => {
   res.send(allCats);
 });
 
+app.get("/set-conversion", async (req, res) => {
+  const name = req.query.name;
+  const link = req.query.link;
+  const product_id = req.query.product_id;
+  const date = new Date();
+
+  const conversion = {
+    name,
+    product_id,
+    link,
+    date
+  };
+
+  let conversions_response = JSON.parse(await client.get('conversions'));
+
+  if (Array.isArray(conversions_response)) {
+
+    conversions_response.push(conversion);
+
+  } else {
+    conversions_response = [conversion];
+  }
+
+  await client.set('conversions', JSON.stringify(conversions_response));
+
+  
+  res.send(JSON.parse(await client.get('conversions')));
+});
 
 app.get("/shopping", caching, async (req, res) => {
   const query = encodeURIComponent(req.query.q);
   const sortBy = req.query.sortBy;
   const tbs = req.query.tbs;
   const merchagg = req.query.merchagg;
+  const latlong = req.query.location;
   const page = req.query.page;
   const min_price = req.query.min_price ?? 0;
 
@@ -101,6 +131,7 @@ app.get("/shopping", caching, async (req, res) => {
       query,
       sortBy ?? null,
       tbs,
+      latlong,
       merchagg ?? null
     );
     results.position = 1;
