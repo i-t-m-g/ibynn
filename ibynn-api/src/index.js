@@ -10,6 +10,7 @@ import * as request from "./serp/requests/request.js";
 import { createRequire } from "module";
 import axios from "axios";
 import { unregisterCustomQueryHandler } from "puppeteer";
+import { affiliates, makeAffiliateLink } from "./scripts/constants/affiliates.js";
 
 
 const require = createRequire(import.meta.url);
@@ -199,23 +200,29 @@ app.get("/google-search", async (req, res) => {
   }
 });
 
-app.post("/post-affiliate", (req, res) => {
-  const links = req.body.links;
-  const affiliatedLinks = [];
+app.get("/post-affiliate", (req, res) => {
+  const links = req.query.links;
+  const source = req.query.source;
+  // const affiliatedLinks = [];
 
-  for (let i = 0; i < links.length; i++) {
-    const url = links[i].uri;
-    const source = links[i].source;
-    const affiliatedUrl = request.affiliateLink(url, source);
-    const affiliatedLink = {
-      source,
-      affiliatedUrl,
-    }
+  const affiliate = affiliates[Object.keys(affiliates).find((key) => source.toLowerCase().includes(key))] || '';
+  const affiliatedLink = makeAffiliateLink[affiliate](links);
 
-    affiliatedLinks.push(affiliatedLink);
-  }
+  
 
-  res.send(affiliatedLinks);
+  // for (let i = 0; i < links.length; i++) {
+  //   const url = links[i].uri;
+  //   const source = links[i].source;
+  //   const affiliatedUrl = request.affiliateLink(url, source);
+  //   const affiliatedLink = {
+  //     source,
+  //     affiliatedUrl,
+  //   }
+
+  //   affiliatedLinks.push(affiliatedLink);
+  // }
+
+  res.send(affiliatedLink);
 })
 
 app.get("/compare", async (req, res) => {
@@ -225,7 +232,7 @@ app.get("/compare", async (req, res) => {
   const affiliatedLinks = [];
 
   for (let i = 0; i < online_sellers.length; i++) {
-    const url = online_sellers[i].link;
+    const url = decodeURIComponent(online_sellers[i].link);
     const source = online_sellers[i].name;
     const affiliatedUrl = request.affiliateLink(url, source);
     const affiliatedLink = {
