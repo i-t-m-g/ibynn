@@ -1,5 +1,5 @@
 import axios from "axios";
-import { affiliateLinkAdditions } from "../../scripts/constants/affiliates.js"
+import { affiliateLinkAdditions, affiliates, makeAffiliateLink } from "../../scripts/constants/affiliates.js"
 
 const api_key = () => "&api_key=" + process.env.API_KEY;
 export const serpShoppingUrl = (query,tbs, merchagg, p_ord='p') =>
@@ -97,10 +97,11 @@ export const getLinkQuery = (link) => {
   return link;
 }
 export const affiliateLink = (url, source) => {
-  const storeUrl = getLinkQuery(url);
-  const linkAddition = affiliateLinkAdditions[Object.keys(affiliateLinkAdditions).find((key) => source.toLowerCase().includes(key))] || '';
-  return storeUrl +  linkAddition;
-  
+  const link = getLinkQuery(url);
+  const affiliate = affiliates[Object.keys(affiliates).find((key) => source.toLowerCase().includes(key))] || '';
+  const affiliatedLink = makeAffiliateLink[affiliate](link);
+
+  return affiliatedLink;  
 }
 
 export const getSearch = async (query) => {
