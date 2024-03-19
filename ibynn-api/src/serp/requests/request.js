@@ -99,7 +99,10 @@ export const getLinkQuery = (link) => {
 export const affiliateLink = (url, source) => {
   const link = getLinkQuery(url);
   const affiliate = affiliates[Object.keys(affiliates).find((key) => source.toLowerCase().includes(key))] || '';
-  const affiliatedLink = makeAffiliateLink[affiliate](link);
+  let affiliatedLink
+  if (affiliate) {
+    affiliatedLink = makeAffiliateLink[affiliate](link) || null;
+  }
 
   return affiliatedLink;  
 }
@@ -167,6 +170,9 @@ export async function getProductPage(product_id) {
     const url = productPageUrl(product_id, "");
     const { data: response } = await axios.get(url);
     sortedData = response;
+
+
+    if (response.error) return {error:response.error}
 
     response.sellers_results.online_sellers =
       response.sellers_results.online_sellers.filter((v, i, arr) => {

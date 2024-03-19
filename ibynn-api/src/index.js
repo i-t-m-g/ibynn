@@ -94,7 +94,7 @@ app.get("/set-conversion", async (req, res) => {
   const link = req.query.link;
   const product_id = req.query.product_id;
   const date = new Date();
-
+  console.log(product_id)
   const conversion = {
     name,
     product_id,
@@ -228,10 +228,13 @@ app.get("/post-affiliate", (req, res) => {
 app.get("/compare", async (req, res) => {
   const product_id = req.query.product_id;
   let response = await request.getProductPage(product_id);
-  let online_sellers = response.sellers_results.online_sellers;
+  let online_sellers = response?.sellers_results?.online_sellers;
   const affiliatedLinks = [];
 
-  for (let i = 0; i < online_sellers.length; i++) {
+  console.log(response)
+
+
+  for (let i = 0; i < online_sellers?.length; i++) {
     const url = decodeURIComponent(online_sellers[i].link);
     const source = online_sellers[i].name;
     const affiliatedUrl = request.affiliateLink(url, source);
