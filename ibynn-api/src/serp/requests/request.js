@@ -98,8 +98,8 @@ export const getLinkQuery = (link) => {
 }
 export const affiliateLink = (url, source) => {
   const link = getLinkQuery(url);
-  const affiliate = affiliates[Object.keys(affiliates).find((key) => source.toLowerCase().includes(key))] || '';
-  let affiliatedLink
+  const affiliate = affiliates[Object.keys(affiliates).find((key) => source.toLowerCase().includes(key))] || null;
+  let affiliatedLink = link
   if (affiliate) {
     affiliatedLink = makeAffiliateLink[affiliate](link) || null;
   }
